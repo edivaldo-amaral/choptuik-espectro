@@ -1,0 +1,7 @@
+(1) max |L(s+i)[m,m'] - L(s)[m+2,m'+2]| = 1.11e-16;  max |B(m+2<-m'+2) - B(m<-m')| = 0.00e+00
+(2) extremos da parte hermitiana de W L(s) W^-1 (7x12): (0.3+0.1j): [-1.8155100918, 8.9821418782]; (0.3+0.6j): [-1.8155100918, 8.9821418782]; (0.3-0.9j): [-1.8155100918, 8.9821418782]; (2.9+0.75j): [0.7844899082, 11.5821418782]
+(3) max ||R^-1|| / (c/max(mu,|Im sigma|)) em 90 casos (N = 300) = 0.3515  (precisa <= 1)
+(4) cauda_Rinv_disco: max (numerico/cota) = 0.8988 em 10 casos (precisa <= 1)
+(5) eps_mu_L monotona em |Re s| e |Im s| na grade [0,3.2]x[0,1]: True; eps_mu_L(0,75i) = 4.377e-08, (0,25i) = 2.938e-08
+(6) Brauer: polos de D(s) em [0.0, 0.16831], zeros em [(-1-0j), (-0.9999970790022612-0j)] (todos com Im = 0: fora de 1/4 < Im s < 3/4)
+(7) sha256_A nos 22 arquivos de discos: {'70791ce0c30f8065f93770c36ff89c1d8290978c5abf84ab0570313bc09fd002'}; particoes de janelas distintas nas caudas: 1

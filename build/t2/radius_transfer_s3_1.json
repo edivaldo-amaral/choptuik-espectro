@@ -1,0 +1,17 @@
+{
+ "box": [
+  1024,
+  4096
+ ],
+ "spectral_radius": "31/10",
+ "strong_beta": "5191/500",
+ "weak_beta": "420471/21250",
+ "strong_defect": "546021/2048500",
+ "weak_defect": "2188557/2560625",
+ "strong_defect_decimal": 0.266546741518184,
+ "weak_defect_decimal": 0.8546964120087869,
+ "both_contract": true,
+ "preconditioner": "J_mu_true^-1, NOT J_mu_RefA^-1",
+ "conditional_on_published_RT_ball": true,
+ "physical_certificate": false
+}

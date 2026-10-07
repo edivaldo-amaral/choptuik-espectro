@@ -1,0 +1,11 @@
+autovalor da truncagem Z = 20x80: lambda0 = 0.4010247330  [198s]
+  G' = 28x112 (10696), Z = 5400, T = 5296;  residuo relativo: em Z 3.61e-11, fora de Z 8.04e-04  [206s]
+  ||V_b|| 20.67   a_b 0.5552   b 0.5378   alfa 0.8916   ->  ab/(1-alfa) = 2.7550  [267s]
+autovalor da truncagem Z = 24x96: lambda0 = 0.4010247330  [574s]
+  G' = 32x128 (14016), Z = 7824, T = 6192;  residuo relativo: em Z 4.43e-10, fora de Z 1.22e-04  [586s]
+  ||V_b|| 20.67   a_b 0.4767   b 0.4649   alfa 0.7828   ->  ab/(1-alfa) = 1.0202  [713s]
+autovalor da truncagem Z = 28x112: lambda0 = 0.4010247330  [1381s]
+  G' = 36x144 (17784), Z = 10696, T = 7088;  residuo relativo: em Z 4.49e-09, fora de Z 1.78e-05  [1400s]
+  ||V_b|| 20.67   a_b 0.4186   b 0.4093   alfa 0.6990   ->  ab/(1-alfa) = 0.5691  [1635s]
+  theta 0.8912; raio NK previsto (norma de Perron, y) ~ 1.64e-04
+FIM

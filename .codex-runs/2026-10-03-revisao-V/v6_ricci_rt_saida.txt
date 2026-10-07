@@ -1,0 +1,18 @@
+OK  frame g(e0,e0) = -e^{-2z}: 0
+OK  frame g(er,er) = e^{-2z}: 0
+OK  frame g(et,et) = e^{-2z}: 0
+OK  frame g(e0,er) = 0: 0
+OK  Ric(er,er)-2(er phi)^2 = (A+B)/(4xi): 0
+OK  Ric(et,et) = A/(4xi): 0
+OK  Ric(e0,e0)-2(e0 phi)^2: 0
+OK  Ric(e0,er)-2 e0phi er phi: 0
+OK  Ric(e0,et) = 0: 0
+OK  Ric(er,et) = 0: 0
+OK  e^{-2z} Box phi = (O4- + O4+)/(2xi): 0
+OK  def: Omega1^+ - Omega2^+ - Omega2#^+ = 0: 0
+OK  def: Omega1^- - Omega2^- - Omega2#^- = 0: 0
+OK  def: Omega2^- = Omega2^+: 0
+OK  def: Omega3^- = Omega3^+: 0
+OK  def: Omega4^- = Omega4^+: 0
+OK  controle negativo (Omega1 alterado deve falhar): residuo != 0
+TODAS AS VERIFICACOES CONFEREM

@@ -1,0 +1,53 @@
+== centro +0_0000+0_0000i
+p = -0.0000-0.1000i (|p - c| 0.100): Z<-T 0.4278, theta[1] 0.9091, theta[sqrt(u/z)] 0.9586
+p = -0.0000-0.0750i (|p - c| 0.075): Z<-T 0.4239, theta[1] 0.9024, theta[sqrt(u/z)] 0.9513
+p = -0.0000-0.0500i (|p - c| 0.050): Z<-T 0.4201, theta[1] 0.8960, theta[sqrt(u/z)] 0.9442
+p = -0.0000-0.0250i (|p - c| 0.025): Z<-T 0.4164, theta[1] 0.8903, theta[sqrt(u/z)] 0.9371
+p = -0.0000-0.0000i (|p - c| 0.000): Z<-T 0.4127, theta[1] 0.8855, theta[sqrt(u/z)] 0.9302
+p = 0.0000+0.0250i (|p - c| 0.025): Z<-T 0.4161, theta[1] 0.8902, theta[sqrt(u/z)] 0.9370
+p = 0.0000+0.0500i (|p - c| 0.050): Z<-T 0.4195, theta[1] 0.8958, theta[sqrt(u/z)] 0.9440
+p = 0.0000+0.0750i (|p - c| 0.075): Z<-T 0.4230, theta[1] 0.9020, theta[sqrt(u/z)] 0.9510
+p = 0.0000+0.1000i (|p - c| 0.100): Z<-T 0.4266, theta[1] 0.9086, theta[sqrt(u/z)] 0.9582
+p = 0.0000+0.1250i (|p - c| 0.125): Z<-T 0.4302, theta[1] 0.9155, theta[sqrt(u/z)] 0.9654
+pior theta (melhor dos pesos por ponto): 0.9155
+== centro +0_0000+0_2500i
+p = 0.0000+0.1500i (|p - c| 0.100): Z<-T 0.4342, theta[1] 0.9118, theta[sqrt(u/z)] 0.9599
+p = 0.0000+0.1750i (|p - c| 0.075): Z<-T 0.4303, theta[1] 0.9051, theta[sqrt(u/z)] 0.9526
+p = 0.0000+0.2000i (|p - c| 0.050): Z<-T 0.4264, theta[1] 0.8987, theta[sqrt(u/z)] 0.9454
+p = 0.0000+0.2250i (|p - c| 0.025): Z<-T 0.4226, theta[1] 0.8930, theta[sqrt(u/z)] 0.9383
+p = 0.0000+0.2500i (|p - c| 0.000): Z<-T 0.4189, theta[1] 0.8882, theta[sqrt(u/z)] 0.9314
+p = 0.0500+0.2500i (|p - c| 0.050): Z<-T 0.4227, theta[1] 0.8958, theta[sqrt(u/z)] 0.9422
+p = 0.1000+0.2500i (|p - c| 0.100): Z<-T 0.4268, theta[1] 0.9061, theta[sqrt(u/z)] 0.9537
+p = 0.1500+0.2500i (|p - c| 0.150): Z<-T 0.4311, theta[1] 0.9176, theta[sqrt(u/z)] 0.9656
+p = 0.2000+0.2500i (|p - c| 0.200): Z<-T 0.4358, theta[1] 0.9299, theta[sqrt(u/z)] 0.9780
+p = 0.2500+0.2500i (|p - c| 0.250): Z<-T 0.4407, theta[1] 0.9429, theta[sqrt(u/z)] 0.9910
+pior theta (melhor dos pesos por ponto): 0.9429
+== centro +0_0000-0_2500i
+p = -0.0000-0.2500i (|p - c| 0.000): Z<-T 0.4068, theta[1] 0.8829, theta[sqrt(u/z)] 0.9301
+p = -0.0000-0.2250i (|p - c| 0.025): Z<-T 0.4101, theta[1] 0.8876, theta[sqrt(u/z)] 0.9369
+p = -0.0000-0.2000i (|p - c| 0.050): Z<-T 0.4135, theta[1] 0.8933, theta[sqrt(u/z)] 0.9438
+p = -0.0000-0.1750i (|p - c| 0.075): Z<-T 0.4170, theta[1] 0.8996, theta[sqrt(u/z)] 0.9509
+p = -0.0000-0.1500i (|p - c| 0.100): Z<-T 0.4205, theta[1] 0.9062, theta[sqrt(u/z)] 0.9580
+p = -0.0000-0.1250i (|p - c| 0.125): Z<-T 0.4240, theta[1] 0.9131, theta[sqrt(u/z)] 0.9653
+p = 0.0500-0.2500i (|p - c| 0.050): Z<-T 0.4106, theta[1] 0.8906, theta[sqrt(u/z)] 0.9409
+p = 0.1000-0.2500i (|p - c| 0.100): Z<-T 0.4147, theta[1] 0.9010, theta[sqrt(u/z)] 0.9523
+p = 0.1500-0.2500i (|p - c| 0.150): Z<-T 0.4190, theta[1] 0.9125, theta[sqrt(u/z)] 0.9642
+p = 0.2000-0.2500i (|p - c| 0.200): Z<-T 0.4236, theta[1] 0.9249, theta[sqrt(u/z)] 0.9766
+p = 0.2500-0.2500i (|p - c| 0.250): Z<-T 0.4285, theta[1] 0.9379, theta[sqrt(u/z)] 0.9895
+pior theta (melhor dos pesos por ponto): 0.9379
+== centro +0_5500+0_2500i
+p = 0.3500+0.2500i (|p - c| 0.200): Z<-T 0.3993, theta[1] 0.8649, theta[sqrt(u/z)] 0.9295
+p = 0.4500+0.2500i (|p - c| 0.100): Z<-T 0.3817, theta[1] 0.8355, theta[sqrt(u/z)] 0.8987
+p = 0.5500+0.2500i (|p - c| 0.000): Z<-T 0.3655, theta[1] 0.8110, theta[sqrt(u/z)] 0.8693
+p = 0.6500+0.2500i (|p - c| 0.100): Z<-T 0.3713, theta[1] 0.8261, theta[sqrt(u/z)] 0.8881
+p = 0.7500+0.2500i (|p - c| 0.200): Z<-T 0.3778, theta[1] 0.8462, theta[sqrt(u/z)] 0.9085
+pior theta (melhor dos pesos por ponto): 0.8649
+== centro +0_5500-0_2500i
+p = 0.3500-0.2500i (|p - c| 0.200): Z<-T 0.3889, theta[1] 0.8609, theta[sqrt(u/z)] 0.9269
+p = 0.4500-0.2500i (|p - c| 0.100): Z<-T 0.3719, theta[1] 0.8317, theta[sqrt(u/z)] 0.8963
+p = 0.5500-0.2500i (|p - c| 0.000): Z<-T 0.3563, theta[1] 0.8070, theta[sqrt(u/z)] 0.8671
+p = 0.6500-0.2500i (|p - c| 0.100): Z<-T 0.3620, theta[1] 0.8223, theta[sqrt(u/z)] 0.8859
+p = 0.7500-0.2500i (|p - c| 0.200): Z<-T 0.3685, theta[1] 0.8424, theta[sqrt(u/z)] 0.9062
+pior theta (melhor dos pesos por ponto): 0.8609
+
+[exited with code 0]

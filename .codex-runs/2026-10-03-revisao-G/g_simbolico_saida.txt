@@ -1,0 +1,94 @@
+
+[A] metrica de RT a partir do frame, e forma nos nulos
+OK    A: g_{--} = 0 (metrica do frame) 
+OK    A: g_{++} = 0 (metrica do frame) 
+OK    A: g_{-+} = -2 e^{-2zeta}/(mu^2 (u_++u_-)^2) 
+OK    A: g_{theta theta} = e^{-2zeta} xi^2/W^2 
+OK    A: g_{tau theta} = g_{xi theta} = 0 
+OK    A1: sum e_i e_i = mu^2 rr + W^2 (I - rr) em cartesianas 
+OK    A1 (simbolico completo) 
+OK    A1: D^+1 radial = mu d_xi (coef) 
+OK    A1: D^-1 radial = mu d_xi (coef) 
+
+[B] derivada de Lie em coordenadas nulas
+OK    B: (L_X g)_{--} = 2 g_{+-} d_- X^+ 
+OK    B: (L_X g)_{++} = 2 g_{-+} d_+ X^- 
+OK    B: mistas (L_X g)_{+-theta}, _{+-phi} = 0 para X radial 
+OK    B: (L_X g)_{theta phi} = 0 e _{phi phi} = sin^2 * _{theta theta} 
+OK    B: com componentes angulares, (L_X g)_{++} continua 2 g_{-+} d_+ X^- 
+
+[C] delta tau, delta xi (Passo 3)
+OK    C: delta tau = e^{mu tau}[f(u_+) + f(u_-)]/(2 mu) 
+OK    C: delta xi = e^{mu tau}[(1+xi) f(u_-) - (1-xi) f(u_+)]/2 
+OK    C: delta xi em xi=0 = e^{mu tau}[f_-(u) - f_+(u)]/2, u = -e^{-mu tau} 
+OK    C: f=1 -> delta tau = e^{mu tau}/mu 
+OK    C: f=1 -> delta xi = e^{mu tau} xi 
+
+[D] equivariancia e perfis u^n
+OK    D: u_+(tau+4pi) = Lambda u_+ 
+OK    D: u_-(tau+4pi) = Lambda u_- 
+OK    D: (Theta^2)^*X_f = X_{f~}, f~(u) = Lambda^-1 f(Lambda u) [comp. tau] 
+OK    D: idem [comp. xi] 
+OK    D: f=u^0: delta tau = e^(mu(1-n)tau) A_n 
+OK    D: f=u^0: delta xi = e^(mu(1-n)tau) B_n 
+OK    D: f=u^0: f~ = e^(4 pi mu (1-n)) f 
+OK    D: f=u^1: delta tau = e^(mu(1-n)tau) A_n 
+OK    D: f=u^1: delta xi = e^(mu(1-n)tau) B_n 
+OK    D: f=u^1: f~ = e^(4 pi mu (1-n)) f 
+OK    D: f=u^2: delta tau = e^(mu(1-n)tau) A_n 
+OK    D: f=u^2: delta xi = e^(mu(1-n)tau) B_n 
+OK    D: f=u^2: f~ = e^(4 pi mu (1-n)) f 
+OK    D: f=u^3: delta tau = e^(mu(1-n)tau) A_n 
+OK    D: f=u^3: delta xi = e^(mu(1-n)tau) B_n 
+OK    D: f=u^3: f~ = e^(4 pi mu (1-n)) f 
+OK    D: f=u^4: delta tau = e^(mu(1-n)tau) A_n 
+OK    D: f=u^4: delta xi = e^(mu(1-n)tau) B_n 
+OK    D: f=u^4: f~ = e^(4 pi mu (1-n)) f 
+OK    D: f=u^5: delta tau = e^(mu(1-n)tau) A_n 
+OK    D: f=u^5: delta xi = e^(mu(1-n)tau) B_n 
+OK    D: f=u^5: f~ = e^(4 pi mu (1-n)) f 
+
+[E] Passo 5: D^sigma(u) e X(phi)
+OK    E: D^+(u_+) = 0 
+OK    E: D^-(u_-) = 0 
+OK    E: D^+(u_-) = 2 mu e^{-mu tau} 
+OK    E: D^-(u_+) = -2 mu e^{-mu tau} 
+OK    E: X(phi) = (e^{mu tau}/2mu)[f(u_-) omega4^+ - f(u_+) omega4^-] 
+OK    E: [D^+, X0] = e^(mu tau) D^+ 
+OK    E: [D^-, X0] = e^(mu tau) D^- 
+
+[F] admissibilidade de X_f: delta zeta, delta W, delta Q
+OK    F: (L_X g)_{++} = (L_X g)_{--} = 0 para X_f 
+OK    F: delta zeta = X(zeta) + (f_-+f_+)/(u_++u_-) - (f_-'+f_+')/2 
+     delta W - X(W) = (u_m*Derivative(f(u_m), u_m) + u_m*Derivative(f(u_p), u_p) - u_p*Derivative(f(u_m), u_m) - u_p*Derivative(f(u_p), u_p) - 2*f(u_m) + 2*f(u_p))/(2*(u_m - u_p)) * W
+OK    F: f=1 -> delta W = X0(W) (logo delta Q = e^{mu tau}(ZQ + 2Q)) 
+OK    F: f=1 -> delta zeta = X0(zeta) - e^{mu tau} 
+OK    F: X0(mu + xi^2 Q) = xi^2 e^{mu tau}(ZQ + 2Q) 
+     f=u^0: (delta W - X W)/W = 0;  / xi^2 ~ 0
+     f=u^1: (delta W - X W)/W = 0;  / xi^2 ~ 0
+     f=u^2: (delta W - X W)/W = 0;  / xi^2 ~ 0
+     f=u^3: (delta W - X W)/W = 2*xi**2*exp(-2*mu*tau);  / xi^2 ~ 2*exp(-2*mu*tau)
+     f=u^4: (delta W - X W)/W = -8*xi**2*exp(-3*mu*tau);  / xi^2 ~ -8*exp(-3*mu*tau)
+
+[G] delta omega_{X0} = e^{mu tau}(Z + 1) omega  (ekjehee)
+OK    G: delta omega_1 = e^(mu tau)(Z+1) omega_1 
+OK    G: delta omega_2+1 = e^(mu tau)(Z+1) omega_2+1 
+OK    G: delta omega_3+1 = e^(mu tau)(Z+1) omega_3+1 
+OK    G: delta omega_4+1 = e^(mu tau)(Z+1) omega_4+1 
+OK    G: delta omega_2-1 = e^(mu tau)(Z+1) omega_2-1 
+OK    G: delta omega_3-1 = e^(mu tau)(Z+1) omega_3-1 
+OK    G: delta omega_4-1 = e^(mu tau)(Z+1) omega_4-1 
+OK    G: omega_1 invariante por zeta -> zeta + c 
+OK    G: omega_2+1 invariante por zeta -> zeta + c 
+OK    G: omega_3+1 invariante por zeta -> zeta + c 
+OK    G: omega_4+1 invariante por zeta -> zeta + c 
+OK    G: omega_2-1 invariante por zeta -> zeta + c 
+OK    G: omega_3-1 invariante por zeta -> zeta + c 
+OK    G: omega_4-1 invariante por zeta -> zeta + c 
+
+[H] dominio M
+     u_+ < 0  <=> xi > -1
+     u_+ < u_- <=> 0 < xi
+     u_- < -u_+/81 <=> xi < 41/40
+
+RESUMO: 67 de 67 conferencias OK

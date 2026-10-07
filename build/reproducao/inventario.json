@@ -1,0 +1,2387 @@
+[
+ {
+  "passo": "0",
+  "descricao": "existencia do fundo (RT): dados publicados",
+  "artefatos": [
+   {
+    "caminho": ".cache/rt-1203.3766v1/arXiv-1203.3766v1.tar.gz",
+    "papel": "dado externo (RT, arXiv 1203.3766v1)",
+    "tamanho": 63362444,
+    "sha256": "3001c85ab701b60262aa1de7e2f2511e6780d3d7f27cdbcfa9429994423e4295",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": ".cache/rt-1203.3766v1/sourcecode/RefA.dat",
+    "papel": "dado externo (RT, arXiv 1203.3766v1)",
+    "tamanho": 207731,
+    "sha256": "5776e6038f994e06b4b82fc638d797154f630aeee37b251058512d3cb4cd450b",
+    "notebook": true,
+    "laboratorio2": [
+     ".cache/rt-1203.3766v1/sourcecode/RefA.dat"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": ".cache/rt-1203.3766v1/RefAplusB.dat",
+    "papel": "dado externo (RT, arXiv 1203.3766v1)",
+    "tamanho": 129115501,
+    "sha256": "db50272899ebff4a20bb916a3f488a72fff60fa28c0db2c221765fa150efdea9",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   }
+  ]
+ },
+ {
+  "passo": "4",
+  "descricao": "L-real: recuperacao de raio toro <-> RT",
+  "artefatos": [
+   {
+    "caminho": "build/t2/l_real_toro.json",
+    "papel": "saida de l_real_toro.py / radius_transfer.py",
+    "tamanho": 266,
+    "sha256": "04da36395eb438a27b0a7662c90158c39f450da26ac553e86b3e132fcd92f9f2",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/t2/l_real_toro.txt",
+    "papel": "saida de l_real_toro.py / radius_transfer.py",
+    "tamanho": 305,
+    "sha256": "b0c66db80e17962ca8e3be02f690d31b38037d03aabfb7dcf170a7194fce0534",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/t2/radius_transfer_s3_1.json",
+    "papel": "saida de l_real_toro.py / radius_transfer.py",
+    "tamanho": 430,
+    "sha256": "c542e14567d26fad5fcc01505e1220631328feb20d964374fa4b446a12e77feb",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   }
+  ]
+ },
+ {
+  "passo": "5",
+  "descricao": "F3: nada em Re s >= 2,93 (simbolo de L em Arb)",
+  "artefatos": [
+   {
+    "caminho": "build/spectrum/symbol-L-2048x4096.json",
+    "papel": "certificado do simbolo (Arb)",
+    "tamanho": 281,
+    "sha256": "dbb11520fe1df50ccba6be5b9e71cf21700c615fe6c5fa0dddfd8719262f5177",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/spectrum/symbol-L-faixa0.json",
+    "papel": "certificado do simbolo (Arb)",
+    "tamanho": 356,
+    "sha256": "9ad85f0051dbe61b9029a09d1541a714a01726df2bc6be7e9d5fa0c532928748",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/spectrum/symbol-L-faixa1.json",
+    "papel": "certificado do simbolo (Arb)",
+    "tamanho": 359,
+    "sha256": "e2c51742ac8f60af6bfe13cf8958cc2565139292414e89ac66357b74ec7d0ade",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/spectrum/symbol-L-faixa2.json",
+    "papel": "certificado do simbolo (Arb)",
+    "tamanho": 361,
+    "sha256": "c33de082cf12733bac27915498d108d2a48e0d0ab175987adc330063e1051abf",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/spectrum/symbol-L-faixa3.json",
+    "papel": "certificado do simbolo (Arb)",
+    "tamanho": 361,
+    "sha256": "ddfd9a5b78f6ffb098a676b0f2ed9b97f79eaae0f7e2dcb02e9bd4d7edba47fe",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/spectrum/symbol-L-faixa0.log",
+    "papel": "certificado do simbolo (Arb)",
+    "tamanho": 390,
+    "sha256": "4e9d2252527c7ab7c946023727b3f7a595420efec40e7817927179a0042c7de4",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/spectrum/symbol-L-faixa1.log",
+    "papel": "certificado do simbolo (Arb)",
+    "tamanho": 420,
+    "sha256": "3d731078f6914ff8490f64e1dd8914625f45a6d34cfc2c81e1adbfad3bbbbd81",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/spectrum/symbol-L-faixa2.log",
+    "papel": "certificado do simbolo (Arb)",
+    "tamanho": 437,
+    "sha256": "36b77774a2567b7b50fd13cae3502944f64b07e56f611dfdba169959ce274bdd",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/spectrum/symbol-L-faixa3.log",
+    "papel": "certificado do simbolo (Arb)",
+    "tamanho": 437,
+    "sha256": "0562ce9ae84dd45e49a9b90fbeee30bd59777bc978b25ee007896ae19b5b6221",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   }
+  ]
+ },
+ {
+  "passo": "6",
+  "descricao": "faixa A: N_A = 3 (Rouche de L)",
+  "artefatos": [
+   {
+    "caminho": "build/rouche_L_rig/discos_v2/disco_-0_25.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 15087,
+    "sha256": "0ce02249497513b654b0ef367c69f89db26cc10bfd08ff7c5f90897f6e4c9a88",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/z2/joao/rig_+0_0000-0_2500i_v2.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 9773,
+    "sha256": "9527a9df820b0e71af3b42a2f3f68d917ca2bf7c038e66062b14e93972e9538e",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/certF_+0_0000-0_2500i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 655,
+    "sha256": "6c97123ee39caf0dbca98c72aa3aa36619c70542cd358466f7dd6331cec02d66",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L/certF_+0_0000-0_2500i.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/discos_v2/disco_0.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 11401,
+    "sha256": "6ee19b92ca8fd54672189213e3af70dd50479e4f40e2002ba81eb7da802403d8",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/z2/lab2/rig_+0_0000+0_0000i_v2.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 7377,
+    "sha256": "db80252abefab7a685d044a11463f5965a72ee7b0cae16453ecc7c0e7f663ec7",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+0_0000+0_0000i_v2.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/certF_+0_0000+0_0000i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 652,
+    "sha256": "fc5aef934e5c579d13c20f142dad5d7367d154da8b10567c734ee5394a481058",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L/certF_+0_0000+0_0000i.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/discos_v2/disco_0_25.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 16849,
+    "sha256": "6cca2cf83f4d28d1b756b0172b5c94e22159d195a7e0441909b57adac6cca053",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/z2/lab2/rig_+0_0000+0_2500i_v2.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 10933,
+    "sha256": "6049bb89bdacb2a5eeb50519ab9794907c6d4eab4a8fe4a79f3c6b60bf387352",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+0_0000+0_2500i_v2.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/certF_+0_0000+0_2500i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 656,
+    "sha256": "c4e3b4ebdc929cceb2036300a08006ecabaf01e3e20e848f1060b456eff75505",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L/certF_+0_0000+0_2500i.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/discos_v2/disco_0_55-0_25.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 14137,
+    "sha256": "d78b14c0a355be125ed35069ac4ac0f4cff19ceb3277084f3b01722d78446122",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/z2/joao/rig_+0_5500-0_2500i_v2.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 9205,
+    "sha256": "42c4c733e298e317332efbc21d70dc268b697924807dab634a5b0d770d4bf30d",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/certF_+0_5500-0_2500i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 651,
+    "sha256": "9cbe6a120217861377d8db140272a59b9c61a7aadfec1c5b4cc959a160a050a1",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/discos_v2/disco_0_55p0_25.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 14120,
+    "sha256": "1dac23031665becef8f697f52e9974ee31006bf385ef1f8ce01de31e59e2f950",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/z2/lab2/rig_+0_5500+0_2500i_v2.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 9182,
+    "sha256": "25a589f2c9895a98af1939e5b507e522848171d754e2f8ba4af957cf3b936d8d",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+0_5500+0_2500i_v2.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/certF_+0_5500+0_2500i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 653,
+    "sha256": "5e843b17cc133e734a4cb6aaf6d33bfd0c2a63e57245634fc3147976ce1cfe82",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/certF_+0_5500+0_2500i.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/discos_v2/disco_1_0.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 9491,
+    "sha256": "1a8701a7300260a926da2fd3171a84e6c5e0f89034a9db320df688994f144f34",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/z2/lab2/rig_+1_0000+0_0000i_v2.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 6212,
+    "sha256": "cdeea972a95aca35a4a241ebf9a190448818e4c7035b82d50f4271fdf70c5665",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+1_0000+0_0000i_v2.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/certF_+1_0000+0_0000i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 653,
+    "sha256": "8df18edd82eaca6d17a7c594b56d95ba2b4232d962e1281b8904ffe708370c13",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/certF_+1_0000+0_0000i.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/discos_v2/disco_1_5.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 4025,
+    "sha256": "79b8e9af8f73b73068f1cef9233a1ae8c56f879ce9bce8578e25487bc6eb1d40",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/z2/lab2/rig_+1_5000+0_0000i_v2.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 2622,
+    "sha256": "3f5865037cfe21e986b72004e6fcc7b7b91f6908fc3f0e6366f22e0b78b0c149",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+1_5000+0_0000i_v2.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/certF_+1_5000+0_0000i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 652,
+    "sha256": "e4ef543672ffc7ed42840596d4f8f09ffe91a2973189b956fb58ffc5ace33e09",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/certF_+1_5000+0_0000i.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/discos_v2/disco_2_0.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 2090,
+    "sha256": "4e42f22a4fda0a53db4bb418b390df47126c7975a86ff28ec107e8bb6670b8ea",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/z2/lab2/rig_+2_0000+0_0000i_v2.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 1421,
+    "sha256": "08b7dad3975f062fa187dc4f2556bceb68030c2217a1f51414515b07c0b30199",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+2_0000+0_0000i_v2.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/certF_+2_0000+0_0000i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 652,
+    "sha256": "458ab4e6fff3dc1736c0ab51afa1289aed00e71689e7423abe0fac4756fa474f",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/certF_+2_0000+0_0000i.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/discos_v2/disco_2_5.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 2117,
+    "sha256": "b7a5d32837fcad2ee24ba845944b87426ad1c7c7148d2ec845f86455bcb94fae",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/z2/lab2/rig_+2_5000+0_0000i_v2.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 1422,
+    "sha256": "81c11874b8418227e12d949b388f9b73476496b4121c217d48de20e0ed01b3a8",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+2_5000+0_0000i_v2.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/certF_+2_5000+0_0000i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 655,
+    "sha256": "fdd0071818746941c556c38fd988cdec993bd0ca63432166a773f17063b038b7",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/certF_+2_5000+0_0000i.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/discos_v2/disco_3_0.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 2088,
+    "sha256": "76d0a468569aca9596cea57f3351934e7d089c2cf1b22c5631a2b91061148dfc",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/z2/lab2/rig_+3_0000+0_0000i_v2.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 1415,
+    "sha256": "377cacc2e10a6c867595c02da9c03769f48e6fedcf928fb54cad73ea04a30eed",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+3_0000+0_0000i_v2.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/certF_+3_0000+0_0000i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 651,
+    "sha256": "92ea7241dc4600d9aa49b66678df1b0572184ec253a6fe1acd7a3b8e50eec0bc",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/certF_+3_0000+0_0000i.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "A.npy",
+    "papel": "matriz de referencia A (Fourier-Chebyshev, Z = 32x128)",
+    "sha256_esperado": "70791ce0c30f8065f93770c36ff89c1d8290978c5abf84ab0570313bc09fd002",
+    "notebook": false,
+    "laboratorio2": [
+     "build/rouche_L/A.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/F_+0_0000-0_2500i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "03a0b6a53b1011f9bf5ed648ecc8f1fbe9c0e5a16a073528f8550aa7680fff3d",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L/F_+0_0000-0_2500i.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/F_+3_0000+0_0000i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "21c8ef91dbd036ea3e6727ca7e2e112b6988932d697337273ead73ad99e86fc2",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/F_+3_0000+0_0000i.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/F_+2_5000+0_0000i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "3fd05c4c485eb34b5ae43e9ef1e322615e2b510d9897e8139e0399f49d81a918",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/F_+2_5000+0_0000i.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/F_+0_0000+0_2500i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "4c7a7517cb4c15e5b45062632a6654438c68ae6d7844b0e56f21d0d64ac3c8a8",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L/F_+0_0000+0_2500i.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/F_+1_0000+0_0000i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "666eee373c74da4dfe03f8bfe9c0597d4031ea0966b6a5b946175d67c3825f03",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/F_+1_0000+0_0000i.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/F_+0_5500+0_2500i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "75716f46318539462cbaa5e14084478e75432d68b7f32541d2e11a48036ea901",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/F_+0_5500+0_2500i.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/F_+0_0000+0_0000i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "75f8bc16c9b2b72b63e47759c5c39863029515f271414694027e2a23ae4dc5b9",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L/F_+0_0000+0_0000i.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/F_+2_0000+0_0000i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "a20febe1500d6c75100a6f90417716f41ca68e28a8aab12da342e7cb153c99bf",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/F_+2_0000+0_0000i.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/F_+1_5000+0_0000i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "e0eca8a55d64cce86f57118ab26e3f534e7a0b006b690836deb80859be6f3231",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/F_+1_5000+0_0000i.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/F_+0_5500-0_2500i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "f348b31153bad908ca98c4340c668c478335f60f9e49bdc767fccc88054f2388",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/cauda/T3_-0_25.json",
+    "papel": "cauda / janelas / cobertura / contagem",
+    "tamanho": 25236,
+    "sha256": "00a1bdcae7165922bf31b714af06ee727dc871ecfa0e951767d9d6a506be48de",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/cauda/T3_0.json",
+    "papel": "cauda / janelas / cobertura / contagem",
+    "tamanho": 25223,
+    "sha256": "ff6c36dd4c26bda2c962eaba27911253f17b246434941a604933005081b457f7",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/cauda/T3_0_25.json",
+    "papel": "cauda / janelas / cobertura / contagem",
+    "tamanho": 25209,
+    "sha256": "fe7373634f0285312d97e1e4b426f03ac6a36efde0d6d572cac7e60ba2eb61ac",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/cauda/T3_0_55-0_25.json",
+    "papel": "cauda / janelas / cobertura / contagem",
+    "tamanho": 25264,
+    "sha256": "39af959a38994872520f53ce03b8d3358d2df363ad5a663e45ff8fafa6395ea4",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/cauda/T3_0_55p0_25.json",
+    "papel": "cauda / janelas / cobertura / contagem",
+    "tamanho": 25223,
+    "sha256": "5434f00ecbc88ec0ce52edd736737c5a5ac49d1a0fd96922b03878174f5da381",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/cauda/T3_1_0.json",
+    "papel": "cauda / janelas / cobertura / contagem",
+    "tamanho": 25237,
+    "sha256": "1527a56ca362fea174c1279d8bb612a9c421446cd86929807ae063ab7bb3d23a",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/cauda/T3_1_5.json",
+    "papel": "cauda / janelas / cobertura / contagem",
+    "tamanho": 25248,
+    "sha256": "1143e86575f5822f1f65c272e918ca785aff3c511b3777f54300b301c4cc3254",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/cauda/T3_2_0.json",
+    "papel": "cauda / janelas / cobertura / contagem",
+    "tamanho": 25247,
+    "sha256": "72ed580103e341def9ea9a91f459e19611ec55acc0b98d290ff43abb55e03fac",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/cauda/T3_2_5.json",
+    "papel": "cauda / janelas / cobertura / contagem",
+    "tamanho": 25259,
+    "sha256": "732ed020579ad1760aaf6a39376a173301be1ea38d6a54299f0e1900f697c443",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/cauda/T3_3_0.json",
+    "papel": "cauda / janelas / cobertura / contagem",
+    "tamanho": 25256,
+    "sha256": "2d1922fcd41b68c05846d8eca4d4ad74560c52f9256c8153ae229286b576d4c0",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/janelas_v2.json",
+    "papel": "cauda / janelas / cobertura / contagem",
+    "tamanho": 4553,
+    "sha256": "9313b2353f29de632130a6f2d2833b4d16decbfc807bbabcde132f5404846cbb",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/janelas_v2.txt",
+    "papel": "cauda / janelas / cobertura / contagem",
+    "tamanho": 1457,
+    "sha256": "22656d936bc43c77543eeb924d2576e9d2893f3daaba1057c0cc82afaee3fe2c",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/cobertura_v2.txt",
+    "papel": "cauda / janelas / cobertura / contagem",
+    "tamanho": 188,
+    "sha256": "41eb15c99e320484b0bd446888250a011f27e8e27244b5652c3a23a417837904",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/contagem.json",
+    "papel": "cauda / janelas / cobertura / contagem",
+    "tamanho": 1230,
+    "sha256": "8fdaeff2c9acb52d9f1aff0d0e09e6415d06ca1361769f3b31d353708a9fadbc",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L/contagem.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/contagem_rouche_v2.txt",
+    "papel": "cauda / janelas / cobertura / contagem",
+    "tamanho": 209,
+    "sha256": "05b3af208490d7b6586445ebc987d09bf3e8995e088409fede279cfc6a5b8a3f",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/diagT_lab2.npy",
+    "papel": "cauda / janelas / cobertura / contagem",
+    "tamanho": 224384,
+    "sha256": "1da4a1f2f6530e4a13b4d1ecd4c237822b0e32b084f4cf2cb2ff5a2b987f690b",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   }
+  ]
+ },
+ {
+  "passo": "7, 10",
+  "descricao": "faixa B: N_B = 1 e a raiz B simples (NK)",
+  "artefatos": [
+   {
+    "caminho": "build/faixaB/discos/disco_0_25.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 5855,
+    "sha256": "1011bcdadfc53a213b920938d4107bcb82ca6b59cf150745b9d651c8f14b2586",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/z/rig_+0_0000+0_2500i_B.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 3791,
+    "sha256": "5e348ad7a517f879f7514239faf49e8131ce0553474fec57742f586f791cf1b9",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+0_0000+0_2500i_B.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/certF_+0_0000+0_2500i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 656,
+    "sha256": "c4e3b4ebdc929cceb2036300a08006ecabaf01e3e20e848f1060b456eff75505",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L/certF_+0_0000+0_2500i.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/discos/disco_0_5.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 25973,
+    "sha256": "829d39d9721e4f9fe949857a0f5c81de724ca579f02e513bdf6cce4f2353b917",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/z/rig_+0_0000+0_5000i_B.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 16773,
+    "sha256": "852b8604f803748a79b6e2ca9b17c6435b592e90e855da33a6422585374b6d43",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+0_0000+0_5000i_B.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/F/certF_+0_0000+0_5000i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 652,
+    "sha256": "54d04871c4876ef9ece4a35104af49bd441741d1d16e472dc1603521f0ac604e",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/certF_+0_0000+0_5000i.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/discos/disco_0_55p0_75.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 8881,
+    "sha256": "67b94e82e6b10087eb49288ca6c64f7a73af1f4d3509fcc1c55e0ef031234579",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/z/rig_+0_5500+0_7500i_B.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 5601,
+    "sha256": "26ff636002b422fb153b10b04bb970a914d9bf23ba8bef8298e82bb2d7452999",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+0_5500+0_7500i_B.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/F/certF_+0_5500+0_7500i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 653,
+    "sha256": "d2d197ae18818c97767862118afed37831455c2f5d71038bc1a502493ac0849b",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/certF_+0_5500+0_7500i.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/discos/disco_0_55p0_75_b.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 2456,
+    "sha256": "4aa08e80f8a942f163b31ee11bad16bcc114b88463fadb15b55b981f13e1bc82",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/z/rig_+0_5500+0_7500i_B2.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 1417,
+    "sha256": "282f6c9358e6698aca89194bdea595c4b6b65773f54b56bc101b4377dc345de2",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/discos/disco_0_55p0_75_c.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 2443,
+    "sha256": "6531b71effcf3066bc15c97b080dcce3b17faf9df11bf77b624bc673d64eabd4",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/z/rig_+0_5500+0_7500i_B3.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 1414,
+    "sha256": "2473ca18ce08c0a9a48c64c13ff3e20a31e9ea2f7c19df64ad83417807e5f54d",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+0_5500+0_7500i_B3.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/discos/disco_0_5_b.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 2193,
+    "sha256": "6ad6181fe0c125dd3db1ac2ae2720fc6026c06c097b1c2eee9e47ae65b91f8db",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/z/rig_+0_0000+0_5000i_B4.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 1402,
+    "sha256": "29de37fc6ddda2c3773574974bc7f2485bb56a2b0d832cd394fc2538eb9dc159",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+0_0000+0_5000i_B4.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/discos/disco_0_75.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 21570,
+    "sha256": "c2ac405151a051ff257d71ee5fc0695caf35e7f2c0534951e6a2a4bba29cfe0c",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/z/rig_+0_0000+0_7500i_B.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 13920,
+    "sha256": "843fe6fd90c2293d5f8f2903b1897f432a0add54c9cbf0f6d8d48895f2bd3547",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+0_0000+0_7500i_B.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/F/certF_+0_0000+0_7500i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 651,
+    "sha256": "e76a7b258ab1274610d34dbb1b64e360a00e1b3ec3b047093f781276f1f20f06",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/certF_+0_0000+0_7500i.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/discos/disco_1_0.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 1231,
+    "sha256": "fb15de3ef54646b09cb1a3743d21afd3af1290be4139c12e58ee340f6cdb77de",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/teste/rig_+1_0000+0_0000i_Bteste.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 816,
+    "sha256": "e82df54cf93e1ebfcbedae8b203a5ca16480edd173feba036b21ac1d403aa52e",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+1_0000+0_0000i_Bteste.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/certF_+1_0000+0_0000i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 653,
+    "sha256": "8df18edd82eaca6d17a7c594b56d95ba2b4232d962e1281b8904ffe708370c13",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/certF_+1_0000+0_0000i.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/discos/disco_1_5.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 2211,
+    "sha256": "920239e990ab741f29d238f0fb325f480b931e337a1c03b9d302a5e329c8fbb3",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/teste/rig_+1_5000+0_0000i_Bteste.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 1407,
+    "sha256": "d68b8164dc2320c234715ee4e06ba56f5eb96137c0a795eb83fd11b9e0c4bfcb",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+1_5000+0_0000i_Bteste.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/certF_+1_5000+0_0000i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 652,
+    "sha256": "e4ef543672ffc7ed42840596d4f8f09ffe91a2973189b956fb58ffc5ace33e09",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/certF_+1_5000+0_0000i.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/discos/disco_2_0.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 1275,
+    "sha256": "5ad1aba74004cc840258ca0556a8f8ca316ef3908e8dcb3d3e454c70de1ff8aa",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/teste/rig_+2_0000+0_0000i_Bteste.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 818,
+    "sha256": "9dc8c5c26776fbbda171b4290756f86c7cc567cdb855b2f6242f87b68c5d6a29",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+2_0000+0_0000i_Bteste.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/certF_+2_0000+0_0000i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 652,
+    "sha256": "458ab4e6fff3dc1736c0ab51afa1289aed00e71689e7423abe0fac4756fa474f",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/certF_+2_0000+0_0000i.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/discos/disco_2_5.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 1200,
+    "sha256": "83e0b6bc91db8f0ee8d7573837c8222f7ff8770921223798f423749b694251ba",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/z/rig_+2_5000+0_0000i_B.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 815,
+    "sha256": "ebdbccd4e9dec15b244fbaf26ad86438a6b8b8d598f8a926d00293f618787592",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+2_5000+0_0000i_B.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/certF_+2_5000+0_0000i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 655,
+    "sha256": "fdd0071818746941c556c38fd988cdec993bd0ca63432166a773f17063b038b7",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/certF_+2_5000+0_0000i.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/discos/disco_3_0.json",
+    "papel": "disco (montagem Perron por ponto, theta racional)",
+    "tamanho": 2195,
+    "sha256": "8734aaacb171aa5eb42c095d86cb63d7a774df8f6baffb4b4012830e7b3a4c26",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/teste/rig_+3_0000+0_0000i_Bteste.json",
+    "papel": "nivel Z do disco (t_p por Loewner)",
+    "tamanho": 1418,
+    "sha256": "d1dfbef55ba8d0ab46dba0ccb37ec31eebaae4fae8e66cc41b57a0c3f8c05965",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/rig_+3_0000+0_0000i_Bteste.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/certF_+3_0000+0_0000i.json",
+    "papel": "certificado do fator de posto baixo",
+    "tamanho": 651,
+    "sha256": "92ea7241dc4600d9aa49b66678df1b0572184ec253a6fe1acd7a3b8e50eec0bc",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/certF_+3_0000+0_0000i.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "A.npy",
+    "papel": "matriz de referencia A (Fourier-Chebyshev, Z = 32x128)",
+    "sha256_esperado": "70791ce0c30f8065f93770c36ff89c1d8290978c5abf84ab0570313bc09fd002",
+    "notebook": false,
+    "laboratorio2": [
+     "build/rouche_L/A.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/F_+3_0000+0_0000i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "21c8ef91dbd036ea3e6727ca7e2e112b6988932d697337273ead73ad99e86fc2",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/F_+3_0000+0_0000i.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/F_+2_5000+0_0000i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "3fd05c4c485eb34b5ae43e9ef1e322615e2b510d9897e8139e0399f49d81a918",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/F_+2_5000+0_0000i.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/F_+0_0000+0_2500i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "4c7a7517cb4c15e5b45062632a6654438c68ae6d7844b0e56f21d0d64ac3c8a8",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L/F_+0_0000+0_2500i.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "F_+0_0000+0_7500i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "5cebfbd7ba51467d5e3372a0e53a483a8b7f8defe4dd527151abd8cda1925bf1",
+    "notebook": false,
+    "laboratorio2": [
+     "build/rouche_L_v2/F_+0_0000+0_7500i.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/F_+1_0000+0_0000i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "666eee373c74da4dfe03f8bfe9c0597d4031ea0966b6a5b946175d67c3825f03",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/F_+1_0000+0_0000i.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/F_+2_0000+0_0000i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "a20febe1500d6c75100a6f90417716f41ca68e28a8aab12da342e7cb153c99bf",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/F_+2_0000+0_0000i.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "F_+0_5500+0_7500i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "c7d6d61a938a863d45164ffb399c6f1e39930aa8143ded75ccea76754832ad58",
+    "notebook": false,
+    "laboratorio2": [
+     "build/rouche_L_v2/F_+0_5500+0_7500i.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/F/F_+1_5000+0_0000i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "e0eca8a55d64cce86f57118ab26e3f534e7a0b006b690836deb80859be6f3231",
+    "notebook": true,
+    "laboratorio2": [
+     "build/certF_extra/F_+1_5000+0_0000i.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "F_+0_0000+0_5000i.npy",
+    "papel": "fator F do disco (pesado)",
+    "sha256_esperado": "f9e76bc45f71fa43e576f8064579ef5d4b8093cbe3b5f2723e151b367b84c900",
+    "notebook": false,
+    "laboratorio2": [
+     "build/rouche_L_v2/F_+0_0000+0_5000i.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/cauda/T3_0_5.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 25148,
+    "sha256": "9dafe4d13705971905da05139de21f4b18b0db5f2e52808f9b87fd7102466f0f",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/cauda/T3_0_55p0_75.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 25221,
+    "sha256": "18addacdd92564d1021e4158da955a3c24ef43145526e59b860e4895e58a980e",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/cauda/T3_0_55p0_75_lab2.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 25221,
+    "sha256": "18addacdd92564d1021e4158da955a3c24ef43145526e59b860e4895e58a980e",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/cauda/T3_0_55p0_75_labpc.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 25224,
+    "sha256": "40c7af467f6b99716bd5659a5e8d952c7ef05fb0871156c5292afd5f4250b04f",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/cauda/T3_0_75.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 25201,
+    "sha256": "ab87417cd89fe8f6e0f85e0b5a924f64b9b8fc739af2190fd151c7ba38d39be3",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/janelas.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 4549,
+    "sha256": "07853798f22bc72517d7583020ccb51fd551a644d41852aea1cd0a9011cdaf76",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/janelas.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 1667,
+    "sha256": "61df39ac0a671088f005d2d343a67173856ab6ca11969eb6fa5da39382e322c9",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/cobertura.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 188,
+    "sha256": "122095b652df4a44b01ff1c4b18d9fecfc17c2339f7242e08e39d5476af9b4d1",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/contagem_rouche.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 1371,
+    "sha256": "7a4dd1bd87acd6846c71539716b39a218a397e899b5657c08c833bd66b2c4dbc",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/nk/C3.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 2426,
+    "sha256": "0f981c8ea3f289967dcd6024c38b505374b2876881dde8eb032816516bdaeaa9",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/C3.json",
+     "build/nk733/C3.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/nk/D.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 556,
+    "sha256": "613823fbe3a514ffda9efd299d3c4ebb2d6ba808bd864e99118cedab23166e3e",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/D.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/nk/Q.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 167,
+    "sha256": "f142e9b0bcea4d57b02f09279b433775a07e36f1ae1cf101da2b5453e2744a4a",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/Q.json",
+     "build/nk733/Q.json",
+     "build/s4/rig/Q.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/nk/T3.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 24567,
+    "sha256": "358a3603d2a30a94a0937fb6d4a27dd71c1e44c52e86fdcb5f3297b51f315134",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/T3.json",
+     "build/nk733/T3.json",
+     "build/caudaB_rig/0_55p0_75/T3.json",
+     "build/caudaB_rig/0_5/T3.json",
+     "build/caudaB_rig/0_75/T3.json",
+     "build/s4/rig/T3.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/nk/Z.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 770,
+    "sha256": "b254b9250f9972dbb88f83555f5fe360f397a35a6680679ca767921af48ec4e5",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/Z.json",
+     "build/nk733/Z.json",
+     "build/s4/rig/Z.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/nk/etapaA.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 961,
+    "sha256": "d5042f94fd65320f6292138a8720ddf1d2cc106580d30b7e987b49134fc722b8",
+    "notebook": true,
+    "laboratorio2": [
+     "build/nk733/etapaA.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/nk/etapaB.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 5001,
+    "sha256": "128c4ce663123fbda4fc3d91650d65753e532d2c8a002079928ebff24f0a5492",
+    "notebook": true,
+    "laboratorio2": [
+     "build/nk733/etapaB.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/nk/etapaC.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 546,
+    "sha256": "6972c914a4d54333fd8bc47b22d50385fb24dade77774440837cc350bf9f6f6d",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/etapaC.txt",
+     "build/nk733/etapaC.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/nk/etapaD.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 526,
+    "sha256": "9fa65577c9b7efac5f90ed5b0e7c898e98a1e5b5a80bdc228ca209d7304667d4",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/etapaD.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/nk/fim.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 273,
+    "sha256": "05983365a8b1c51b5d2bdfd56b19fcb02c2d11c5af3fee7106d313131427fa80",
+    "notebook": true,
+    "laboratorio2": [
+     "build/caudaB/fim.txt",
+     "build/faixaB/nk/fim.txt",
+     "build/nk733/fim.txt",
+     "build/rouche_L_v2/fim.txt",
+     "build/piloto/fim.txt",
+     "build/s4/fim.txt",
+     "build/certF_v2/fim.txt",
+     "build/rouche_L_phi_esquerdo/fim.txt",
+     "build/rouche_L/fim.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/nk/h0w.npy",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 224384,
+    "sha256": "5fbf30e5a2bf89b556decc82d3881346522931de3b44cef87b8bb08ad0a3cc4a",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/h0w.npy",
+     "build/nk733/h0w.npy",
+     "build/s4/rig/h0w.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/nk/nk3.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 3845,
+    "sha256": "9c5140b66e205570cebd6e6e046b99f9486fcd4283f75daf9de0442d840f010c",
+    "notebook": true,
+    "laboratorio2": [
+     "build/nk733/nk3.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/nk/nk3_B.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 17145,
+    "sha256": "89fd2a90d49d1ff38d01071482132e0058fa4b5b9721f47284880cbfd55b0be5",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/nk3_B.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/nk/nkZ.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 310,
+    "sha256": "930be1c680c78e05f42b829a46c983ea3ef9a75b1f117d48468525d103a0e951",
+    "notebook": true,
+    "laboratorio2": [
+     "build/nk733/nkZ.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/nk/q.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 126,
+    "sha256": "3d346c6339b49649835fe2272366449c1cb90509dfe5c75d01a55324436eb2cf",
+    "notebook": true,
+    "laboratorio2": [
+     "build/nk733/q.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/nk/tQ.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 355,
+    "sha256": "9c6c1565c00a9ed87700a7dc204bdcadeee571dec6edd62f5d970cfce31f5da1",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/tQ.txt",
+     "build/nk733/tQ.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/logs/B_0_55p0_75_lab2.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 4966,
+    "sha256": "d46bba786077b937fe793f06924742863d14a8408da9bd0bf1d6568a4757f072",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/logs/MANIFEST_logs.sha256",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 1399,
+    "sha256": "05179cad464ef124be7765cc071eef3e428d67e3c0bc621b4d022a02410f0627",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/logs/certF_0.55+0.75j.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 1521,
+    "sha256": "f87cf64dcbb03435cdc73776e4def1e7fa9cca8a0099c950eeacef6b17b3ceaf",
+    "notebook": true,
+    "laboratorio2": [
+     "build/caudaB/certF_0.55+0.75j.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/logs/certF_0.5j.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 1497,
+    "sha256": "619324785ec25ec66af3c9bffcd84efce8b2b5aa446df2beacdcd642263aec86",
+    "notebook": true,
+    "laboratorio2": [
+     "build/caudaB/certF_0.5j.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/logs/certF_0.75j.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 1500,
+    "sha256": "ee7c3662d76035f37b9d03725ee7afb4d126dde0bfda2217cb972b848dd9122a",
+    "notebook": true,
+    "laboratorio2": [
+     "build/caudaB/certF_0.75j.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/logs/fator2_lab2.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 585,
+    "sha256": "2e3e4182269b7333233b9643c66f3fcbebc210c1430cdc68cd19919129d150bb",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/logs/fim_caudaB_joao.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 77,
+    "sha256": "cf0422cdc0ec9937784c925b42bed72d8a3a4b9ab2b8b652b7dcde2e86f02ea4",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/logs/fim_caudaB_lab2.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 379,
+    "sha256": "38e21075c5dcd4099c4a2ad1f757535be05932c91fd4328c366c1b9cdb5d47bf",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/logs/rig_B_joao.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 630,
+    "sha256": "86748e90741b97b97a1101b41803820e560dbfd83f5c92facf0219bfb4326cfe",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/logs/rig_B_lab2.txt",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 27213,
+    "sha256": "6cebd27dc1771b25cce8b2f857297e0b74e9d469130b9308b1cac6c343bc9446",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/logs/tp_+0_0000+0_2500i_B.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 427,
+    "sha256": "5a043d6eab991131444fa73280fb769eb396ce56c9cd6a7a04331aa5273304f4",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/tp_+0_0000+0_2500i_B.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/logs/tp_+0_0000+0_5000i_B.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 1741,
+    "sha256": "c89e8106b142c4455a212848172fedb3f82c061efaa550f78f62c4cc939c4a08",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/tp_+0_0000+0_5000i_B.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/logs/tp_+0_0000+0_5000i_B4.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 193,
+    "sha256": "ee416c1809370c656ca59fcd7035f41b63a0274d2f162aedb7d504939ef058f7",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/tp_+0_0000+0_5000i_B4.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/logs/tp_+0_0000+0_7500i_B.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 1437,
+    "sha256": "be48e72061402ffca8ba2f90e8e275d1b6d3db01fbb8d0912127db5848033f06",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/tp_+0_0000+0_7500i_B.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/logs/tp_+0_5500+0_7500i_B.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 619,
+    "sha256": "01ba28156fce24f634fd28da482cee52f1fcf28bf563bdd28398398b012a957b",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/tp_+0_5500+0_7500i_B.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/logs/tp_+0_5500+0_7500i_B3.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 191,
+    "sha256": "c5725820656cdaa25f47060127eadeed6562f64dec5da4b6cd6a7e714ae91bd1",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/tp_+0_5500+0_7500i_B3.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/faixaB/logs/tp_+2_5000+0_0000i_B.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "tamanho": 129,
+    "sha256": "2d506f347dc7650cf35f36336fa923ad97c6b0f775cf2e9637a275e51d06880f",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_v2/tp_+2_5000+0_0000i_B.json"
+    ],
+    "status": "ok"
+   }
+  ]
+ },
+ {
+  "passo": "8",
+  "descricao": "S4: mu* simples, autoespaco span(g*), Dg* = 0",
+  "artefatos": [
+   {
+    "caminho": "build/s4/rig/C3.json",
+    "papel": "NK bordejado de L em mu, identificacao (E), lema de Corr",
+    "tamanho": 2499,
+    "sha256": "93e2b925418d89a13e6fe69e4ecaedd9885416ad0155622082b63565ab563303",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/C3.json",
+     "build/nk733/C3.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s4/rig/E.json",
+    "papel": "NK bordejado de L em mu, identificacao (E), lema de Corr",
+    "tamanho": 681,
+    "sha256": "ce5d4b679ba379d78b373ee337c523c7d762fd6bdeb8710df8af50c7fcb114eb",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s4/rig/Q.json",
+    "papel": "NK bordejado de L em mu, identificacao (E), lema de Corr",
+    "tamanho": 127,
+    "sha256": "16928811e2c210a06149d9996f5cd9ec14bedba6c9077efb1a2d35a8545e8ac7",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/Q.json",
+     "build/nk733/Q.json",
+     "build/s4/rig/Q.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s4/rig/T3.json",
+    "papel": "NK bordejado de L em mu, identificacao (E), lema de Corr",
+    "tamanho": 24037,
+    "sha256": "8ae0e8205e8ae051a651d4bd0a1aaa9f43cf74f04d31387df0959655685e19ab",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/T3.json",
+     "build/nk733/T3.json",
+     "build/caudaB_rig/0_55p0_75/T3.json",
+     "build/caudaB_rig/0_5/T3.json",
+     "build/caudaB_rig/0_75/T3.json",
+     "build/s4/rig/T3.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s4/rig/T3.lab.json",
+    "papel": "NK bordejado de L em mu, identificacao (E), lema de Corr",
+    "tamanho": 4148,
+    "sha256": "4ff48fdf7bb2dc81a0f5b7fec41194cae887f0b68f471ee37cd59cc4006d2dcc",
+    "notebook": true,
+    "laboratorio2": [
+     "build/s4/rig/T3.lab.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s4/rig/T3.lab2.json",
+    "papel": "NK bordejado de L em mu, identificacao (E), lema de Corr",
+    "tamanho": 5347,
+    "sha256": "369c69978d5319e36d3bdb5520fa2fca12cb03addfcf451e438f1725b4569b43",
+    "notebook": true,
+    "laboratorio2": [
+     "build/caudaB_rig/0_5/T3.lab2.json",
+     "build/s4/rig/T3.lab2.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s4/rig/Z.json",
+    "papel": "NK bordejado de L em mu, identificacao (E), lema de Corr",
+    "tamanho": 718,
+    "sha256": "5a83888fe4bdce0472d8fcc18f3e41da8782d99040d9d7ffeadcb124ac261776",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/Z.json",
+     "build/nk733/Z.json",
+     "build/s4/rig/Z.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s4/rig/h0w.npy",
+    "papel": "NK bordejado de L em mu, identificacao (E), lema de Corr",
+    "tamanho": 224384,
+    "sha256": "efea02d730d22308e4abed25d3bbb9354969d3d4fb5945b9ffb081633282c7fd",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/h0w.npy",
+     "build/nk733/h0w.npy",
+     "build/s4/rig/h0w.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s4/corr_gauge.json",
+    "papel": "NK bordejado de L em mu, identificacao (E), lema de Corr",
+    "tamanho": 1119,
+    "sha256": "06c37004e156d54db1276bc238a047e1d21aa81e93c52a51acc4e04da9327b8e",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s4/nk3_mu.json",
+    "papel": "NK bordejado de L em mu, identificacao (E), lema de Corr",
+    "tamanho": 17147,
+    "sha256": "7b031905882043189a043a744c0cffa9620d8d1c9b6a4566b76d257285b2fc65",
+    "notebook": true,
+    "laboratorio2": [
+     "build/s4/nk3_mu.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s4/A.txt",
+    "papel": "NK bordejado de L em mu, identificacao (E), lema de Corr",
+    "tamanho": 585,
+    "sha256": "aec4960fae6ec1a488eb2f6540768820c0d491fdc3e27d540fbf89bd37df1693",
+    "notebook": true,
+    "laboratorio2": [
+     "build/s4/A.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s4/B_final.txt",
+    "papel": "NK bordejado de L em mu, identificacao (E), lema de Corr",
+    "tamanho": 1846,
+    "sha256": "03c03741be33f852ff7ee5fd7405df365243269d5af49812f521e81201aef88b",
+    "notebook": true,
+    "laboratorio2": [
+     "build/s4/B_final.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s4/B_lab.txt",
+    "papel": "NK bordejado de L em mu, identificacao (E), lema de Corr",
+    "tamanho": 2291,
+    "sha256": "58998113a958e64973de1827645b6e59c3a6840fd8910e1b7cc7c9efd9a398b1",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s4/B_lab2.txt",
+    "papel": "NK bordejado de L em mu, identificacao (E), lema de Corr",
+    "tamanho": 2669,
+    "sha256": "5377ad59eb706f67fcddec95f1d282f6297ca372544e0ad31fd6a353afc06157",
+    "notebook": true,
+    "laboratorio2": [
+     "build/s4/B_lab2.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s4/C.txt",
+    "papel": "NK bordejado de L em mu, identificacao (E), lema de Corr",
+    "tamanho": 540,
+    "sha256": "cc7be2ea47055a0e27c408a610bf15431e947a9d7fed642d319ac84454713438",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s4/E.txt",
+    "papel": "NK bordejado de L em mu, identificacao (E), lema de Corr",
+    "tamanho": 452,
+    "sha256": "2713e120f32f930d848741c1e337003fcb0734d5d5e471fa44536bbf095e9296",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s4/nk3_mu.txt",
+    "papel": "NK bordejado de L em mu, identificacao (E), lema de Corr",
+    "tamanho": 3845,
+    "sha256": "b06cda3e79afb650aed8d1566720a055d3e2f1802bc9a642cae37c0ae29592dd",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   }
+  ]
+ },
+ {
+  "passo": "9",
+  "descricao": "s_K simples, viola as constraints (S3b)",
+  "artefatos": [
+   {
+    "caminho": "build/s3b/rig/A.txt",
+    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "tamanho": 586,
+    "sha256": "0cd6efe7726c317d8e61593053f9dec7f6863911e8747c85fbb41c6eca3fac2c",
+    "notebook": true,
+    "laboratorio2": [
+     "build/s4/A.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s3b/rig/B_final.txt",
+    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "tamanho": 1844,
+    "sha256": "89267979f639d9d4b41c6576574192d95d0d5ab0d25ac3b87bb48326c151a67a",
+    "notebook": true,
+    "laboratorio2": [
+     "build/s4/B_final.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s3b/rig/B_gamer.txt",
+    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "tamanho": 4485,
+    "sha256": "35b5075ae35c09be87f5711c975d3a2554caddd0cac55faee1bf128fec83affc",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s3b/rig/C.txt",
+    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "tamanho": 532,
+    "sha256": "31e92307bdb186489281c70e3e25cc8b8647b2627357e396005a818cb2683bfe",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s3b/rig/C3.json",
+    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "tamanho": 2377,
+    "sha256": "b254f330ba625a05e6b095db94da4a629cc7d2d9fed07a1c0cd59476bdae2195",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/C3.json",
+     "build/nk733/C3.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s3b/rig/D.json",
+    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "tamanho": 556,
+    "sha256": "fe0b93510622d51fec270749cdffa8456196ccefe2c64dc272a14122388db92c",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/D.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s3b/rig/D.txt",
+    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "tamanho": 526,
+    "sha256": "397e66fcea45b41fc2218d2d4c619ab3983b71cc0331400240259dbce15e1460",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s3b/rig/Q.json",
+    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "tamanho": 127,
+    "sha256": "da084bbaf16851c9244ef9168d0e723f25ea7609584d3b11c6f01cee10116cc5",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/Q.json",
+     "build/nk733/Q.json",
+     "build/s4/rig/Q.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s3b/rig/T3.gamer.json",
+    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "tamanho": 9509,
+    "sha256": "610e6aa19a7a7f4e45237f4e02647bad07f80459a4a44a642be89b927091d74d",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s3b/rig/T3.json",
+    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "tamanho": 24067,
+    "sha256": "a7b9fea998742a17ad7e6eb519cd5a30b4735afdf78dbb79ee01071daa37b969",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/T3.json",
+     "build/nk733/T3.json",
+     "build/caudaB_rig/0_55p0_75/T3.json",
+     "build/caudaB_rig/0_5/T3.json",
+     "build/caudaB_rig/0_75/T3.json",
+     "build/s4/rig/T3.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s3b/rig/Z.json",
+    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "tamanho": 740,
+    "sha256": "798b6934ce3f727286fa8673f261c63cd4e3704d67ab9465871d270b8c219392",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/Z.json",
+     "build/nk733/Z.json",
+     "build/s4/rig/Z.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s3b/rig/fim.txt",
+    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "tamanho": 11,
+    "sha256": "2193eed4960709ad4959a0d23cc267506ce697de5305cd05f47390ec422167f3",
+    "notebook": true,
+    "laboratorio2": [
+     "build/caudaB/fim.txt",
+     "build/faixaB/nk/fim.txt",
+     "build/nk733/fim.txt",
+     "build/rouche_L_v2/fim.txt",
+     "build/piloto/fim.txt",
+     "build/s4/fim.txt",
+     "build/certF_v2/fim.txt",
+     "build/rouche_L_phi_esquerdo/fim.txt",
+     "build/rouche_L/fim.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s3b/rig/h0w.npy",
+    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "tamanho": 224384,
+    "sha256": "d113646e695da79ee9a51f14ffd38d1556a24c7cc761ab797889f8606e5c0ccf",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/h0w.npy",
+     "build/nk733/h0w.npy",
+     "build/s4/rig/h0w.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s3b/rouche_K_circ.json",
+    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "tamanho": 39708,
+    "sha256": "f7e35e6ceae52031f1b178bc14e1a076ebcbc220ab09a15f90228fbfb57dc031",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s3b/rouche_K_contagem_20x80.json",
+    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "tamanho": 1550,
+    "sha256": "ec901c24637511a737bb05fd10f9ca08736406d7253b697212e87f1399d75174",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/s3b/nk3_32x128.json",
+    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "tamanho": 17152,
+    "sha256": "1ebdba802a15805a3077f4aab75d79e63299af01dc017c92ed381ced85600128",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   }
+  ]
+ },
+ {
+  "passo": "11",
+  "descricao": "K injetivo na faixa A fora de s_K: S3a (tiles), Rouche de K, R# (simbolo de K)",
+  "artefatos": [
+   {
+    "caminho": "build/cobertura_lab/grande-0-0.json",
+    "papel": "tiles de Perron / simbolo de K",
+    "tamanho": 72795,
+    "sha256": "b1bda9126984834f0b8473c6484c6b5c23ed64bd033e5d1ec7cd7cf312986ba3",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/cobertura_lab/grande-1-0.json",
+    "papel": "tiles de Perron / simbolo de K",
+    "tamanho": 58762,
+    "sha256": "6fae81f691f38fbb6ab29c1845fb09d0d760d9b43a6648664cc2293dbb0bb63a",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/cobertura_lab/grande-2-0.json",
+    "papel": "tiles de Perron / simbolo de K",
+    "tamanho": 29608,
+    "sha256": "620347db64d7dd3009fc825874fb246e38fec4cf66d58054d22f3abd5d8405dc",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/cobertura_lab/grande-3-0.json",
+    "papel": "tiles de Perron / simbolo de K",
+    "tamanho": 29594,
+    "sha256": "24360f40d2a06bf9faca8c3ebc6e414f8d245a8bbb29dec58d01732fe82f8e42",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/cobertura_lab/grande-4-0.json",
+    "papel": "tiles de Perron / simbolo de K",
+    "tamanho": 29631,
+    "sha256": "80a7631bcb8e49da79dc5b1454630ae83292dba97fd2b5de33d69dae127d9391",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/cobertura_lab/grande-5-0.json",
+    "papel": "tiles de Perron / simbolo de K",
+    "tamanho": 29635,
+    "sha256": "9e0012c5d2e46146569473a11f5181dcc088226425988be9044c99810c5d0c5b",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/cobertura_lab/grande-6-0.json",
+    "papel": "tiles de Perron / simbolo de K",
+    "tamanho": 29574,
+    "sha256": "9938f71a2d9831ad241f98d024cf70f7c739c557b0f3618020aeefd49ea62ed2",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/cobertura_lab/grande-7-0.json",
+    "papel": "tiles de Perron / simbolo de K",
+    "tamanho": 7807,
+    "sha256": "8af3ccdc623dda06b34f309586344d3c635a024ce3135d5df17dd70241a4f0c3",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/cobertura_local/grande-7-0.json",
+    "papel": "tiles de Perron / simbolo de K",
+    "tamanho": 1738,
+    "sha256": "3fde43038008339080e28e9e707a9a1268214339597e57ee8a7ccb6a6bbfaa10",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/tiles_rig/tile-0_2-r0_04.json",
+    "papel": "tiles de Perron / simbolo de K",
+    "tamanho": 2642,
+    "sha256": "539225f969a5fe9fdd7ed3be0b7d1f8e89ba1bb358b1cf239c785e07c9d11123",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/tiles_rig/tile-0_2-r0_04.log",
+    "papel": "tiles de Perron / simbolo de K",
+    "tamanho": 315,
+    "sha256": "aaa0d8c75470d25a8589124f319000e2007106ebcac7f07ecfd036d5a8c5c2ac",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/spectrum/symbol-K-1024x2048.json",
+    "papel": "tiles de Perron / simbolo de K",
+    "tamanho": 287,
+    "sha256": "2b5d68edf68e6d9f713340e27226a6f85399a6eedd43d305b34afd2c51e8efc4",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/spectrum/symbol-K-1024x2048.log",
+    "papel": "tiles de Perron / simbolo de K",
+    "tamanho": 804,
+    "sha256": "7b3f81f60f7114bbe23e84730abbd6bb9f8db2aad05338e11df621e926bbc874",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   }
+  ]
+ },
+ {
+  "passo": "11a",
+  "descricao": "0,7332 simples (NK de L)",
+  "artefatos": [
+   {
+    "caminho": "build/nk733/C3.json",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 2562,
+    "sha256": "c82a5b54f43bba82948d0a1ce7bebb1a13c6365f77c745b055b173018af67f35",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/C3.json",
+     "build/nk733/C3.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/nk733/MANIFEST.sha256",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 1364,
+    "sha256": "4c1495a20649ece21cb842c3d72b2cc1201c25d7afe9a31d2952102f74f1a182",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/nk733/Q.json",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 155,
+    "sha256": "932003ee66375ee193cd4d784609789a5e8eda7f445f87544ca9243a32b0b70c",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/Q.json",
+     "build/nk733/Q.json",
+     "build/s4/rig/Q.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/nk733/T3.joao.json",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 2600,
+    "sha256": "7b2e6d49b47e22a0fee163f5c3026f3525d5a0b9aca73c2e1dae6cd9fe828824",
+    "notebook": true,
+    "laboratorio2": [
+     "build/nk733/T3.joao.json",
+     "build/caudaB_rig/0_5/T3.joao.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/nk733/T3.json",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 24582,
+    "sha256": "0aeafbd93975898ac94d7b8681dc13f037b996587484b1197bed3555a03e9ab0",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/T3.json",
+     "build/nk733/T3.json",
+     "build/caudaB_rig/0_55p0_75/T3.json",
+     "build/caudaB_rig/0_5/T3.json",
+     "build/caudaB_rig/0_75/T3.json",
+     "build/s4/rig/T3.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/nk733/T3.parcial.json",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 7475,
+    "sha256": "0fa8341ff26e1d30ff59e807aaa89117f46bf238dbac6ca031b37f77f244086a",
+    "notebook": true,
+    "laboratorio2": [
+     "build/nk733/T3.parcial.json",
+     "build/caudaB_rig/0_55p0_75/T3.parcial.json",
+     "build/caudaB_rig/0_75/T3.parcial.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/nk733/Z.json",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 751,
+    "sha256": "f5139254c12cd32f652b7531e3c9d5e964a291488bd936042b40a183a51512ea",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/Z.json",
+     "build/nk733/Z.json",
+     "build/s4/rig/Z.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/nk733/autovalor.txt",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 323,
+    "sha256": "4e6f59f0aefee64d077646327561a595ed119f716e275316715305ab600d0cf3",
+    "notebook": true,
+    "laboratorio2": [
+     "build/nk733/autovalor.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/nk733/etapaA.txt",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 580,
+    "sha256": "9735d8e0f396dc095aaed0b1ebc155fc74afab6c54deb31ceb80accdee4def49",
+    "notebook": true,
+    "laboratorio2": [
+     "build/nk733/etapaA.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/nk733/etapaB.txt",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 5276,
+    "sha256": "46f9c0c783d14eb0d1122796effd3550198aae7315fdcc00b1ccdcc0eab6beda",
+    "notebook": true,
+    "laboratorio2": [
+     "build/nk733/etapaB.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/nk733/etapaB_joao.txt",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 1381,
+    "sha256": "d05f2e9d7de5b8ec4434c39c0b8da90e39c1b0cbab1583ccd210d016b6ec1ab8",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/nk733/etapaC.txt",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 539,
+    "sha256": "9a95e972e070630403207052fca05a946530ae1b4dfd0a0aeef6f169c7a77a1d",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/etapaC.txt",
+     "build/nk733/etapaC.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/nk733/fim.txt",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 263,
+    "sha256": "31089ba0164fa2e5b4123a8f126b7f74b9cd24a9a1529647f7a5c682edb068d4",
+    "notebook": true,
+    "laboratorio2": [
+     "build/caudaB/fim.txt",
+     "build/faixaB/nk/fim.txt",
+     "build/nk733/fim.txt",
+     "build/rouche_L_v2/fim.txt",
+     "build/piloto/fim.txt",
+     "build/s4/fim.txt",
+     "build/certF_v2/fim.txt",
+     "build/rouche_L_phi_esquerdo/fim.txt",
+     "build/rouche_L/fim.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/nk733/h0w.npy",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 224384,
+    "sha256": "afe426551f1f261166dacfac0e8ff1e0fc9fa8ed0d39e51dcb8dff57bd7bb7a7",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/h0w.npy",
+     "build/nk733/h0w.npy",
+     "build/s4/rig/h0w.npy"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/nk733/nk3.json",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 17158,
+    "sha256": "3864aa5a83626a1f0617e92ca002b9a2b3723c12682cc443bd8a8463ec82b7d3",
+    "notebook": true,
+    "laboratorio2": [
+     "build/nk733/nk3.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/nk733/nk3.txt",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 3843,
+    "sha256": "074441b6426a7785ad5c5f00a2dd34829c1c90e0a9f181bb6a356d81729e5b75",
+    "notebook": true,
+    "laboratorio2": [
+     "build/nk733/nk3.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/nk733/nkZ.txt",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 310,
+    "sha256": "465637e2ea0357e3bde76a986d668d9e81b9a75253c8dcb8c07c8fefe3e43cc4",
+    "notebook": true,
+    "laboratorio2": [
+     "build/nk733/nkZ.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/nk733/q.txt",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 126,
+    "sha256": "e4ab67970b8a43d8be942689995c8fb87fe40b8d474e21775bc03d27809e6be1",
+    "notebook": true,
+    "laboratorio2": [
+     "build/nk733/q.txt"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/nk733/tQ.txt",
+    "papel": "NK bordejado de L em 0,7332",
+    "tamanho": 348,
+    "sha256": "080efad6006e5ff1ff6dce71c2d1cf3449417ee0beb781a8aa49c1d83f583c04",
+    "notebook": true,
+    "laboratorio2": [
+     "build/faixaB/nk/tQ.txt",
+     "build/nk733/tQ.txt"
+    ],
+    "status": "ok"
+   }
+  ]
+ },
+ {
+  "passo": "11b",
+  "descricao": "Lema G: fato F1/F1' (omega4 nao nula no centro e no cone)",
+  "artefatos": [
+   {
+    "caminho": "build/t2/gauge_global_centro.json",
+    "papel": "racionais exatos",
+    "tamanho": 939,
+    "sha256": "9c172eef58fb245c24f16b33de29f0fc39528829aa4bede6711ef3ff4a8d11b2",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   }
+  ]
+ },
+ {
+  "passo": "11c",
+  "descricao": "Lema R: R5 (recuperacao de raio de qualquer peso)",
+  "artefatos": [
+   {
+    "caminho": "build/t2/radius_recovery_geral.json",
+    "papel": "racionais exatos",
+    "tamanho": 3557,
+    "sha256": "7f74f3f1df18071f0df75e42f06894570946b3fba10d43e7b08b230790c3a8f4",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   }
+  ]
+ }
+]

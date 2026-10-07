@@ -1,0 +1,69 @@
+{
+  "matrix": "build/spectrum/rt-A-6x18.dat",
+  "sha256": "a3335d9550f9567db287c1ae105674a5914446f9d3772d3955e3628a747c5846",
+  "finite_crown_dimension": 195,
+  "core": [
+    4,
+    12
+  ],
+  "weights": [
+    916,
+    4096,
+    243,
+    1233
+  ],
+  "inverse_free_error": "13/1099511627776",
+  "tiles": [
+    {
+      "center": [
+        "1",
+        "0"
+      ],
+      "center_defect": "11881727/1099511627776",
+      "variation": "2749272565175/549755813888",
+      "radius": "1/16",
+      "uniform_defect": "2749367618991/8796093022208",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1",
+        "1/4"
+      ],
+      "center_defect": "260999117/1099511627776",
+      "variation": "6627705804745/1099511627776",
+      "radius": "1/16",
+      "uniform_defect": "6631881790617/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "1/4"
+      ],
+      "center_defect": "89262860793/1099511627776",
+      "variation": "13631503390959/549755813888",
+      "radius": "1/64",
+      "uniform_defect": "16487914936335/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "0"
+      ],
+      "center_defect": "1400096695/137438953472",
+      "variation": "18414013326487/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "19130862834327/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    }
+  ],
+  "contour_coverage": false,
+  "infinite_tail_bounds": null,
+  "physical_certificate": false
+}

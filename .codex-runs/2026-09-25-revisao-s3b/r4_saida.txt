@@ -1,0 +1,15 @@
+Remontagem propria (pesos 1), sem correcoes (deve reproduzir C3.json):
+  M = [[4.809915e-05 3.789396e-01 5.946247e-03]
+ [5.739051e-01 3.997144e-01 6.398359e-01]
+ [4.423804e-03 9.498022e-02 4.950785e-01]]
+  v = [0.45323 1.      0.28132];  theta = 0.839826;  Z2 = 116.805;  Y = 5.4398e-05 (partes: 5.44e-05, 8.31e-06);  discriminante = 2.398e-04;  r = 6.1936e-04;  |lambda - lambda0| <= 2.807e-04
+Com as correcoes L1-L4:
+  M = [[4.809915e-05 3.789396e-01 5.946247e-03]
+ [5.739051e-01 3.997144e-01 6.398359e-01]
+ [4.423804e-03 9.498022e-02 4.950785e-01]]
+  v = [0.45323 1.      0.28132];  theta = 0.839826;  Z2 = 116.805;  Y = 5.4398e-05 (partes: 5.44e-05, 1.03e-05, 4.24e-06);  discriminante = 2.398e-04;  r = 6.1936e-04;  |lambda - lambda0| <= 2.807e-04
+  => o NK CONTINUA FECHANDO com as correcoes (theta 0.839826 -> 0.839826)
+Sensibilidade (sem correcoes): theta maximo tolerado = 0.840576 (folga 7.50e-04); Y e Z2 podem crescer 0.94% (produto)
+  Y e dominado pelo erro de RT: t_V x 40 eps_omega = 2.4638e-05 de Y_Z = 2.4655e-05 (99.93%); a constante 40 pode ir no maximo a 40.38
+L5: max_(48 <= |m| < 72) ||Q_m|| = 0.17184 (modo 48); usado em a_extra: 0.17199 -> OK
+Qfar: secao finita (n < 1400) max_m ||R_m^-1 P_(n>=400)|| ~ 0.11672  <=  Qfar usado 0.12489: OK

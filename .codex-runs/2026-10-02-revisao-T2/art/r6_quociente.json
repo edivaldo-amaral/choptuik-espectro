@@ -1,0 +1,226 @@
+[
+ {
+  "nome": "K(s0) nao injetivo, bloco 2",
+  "n": 25,
+  "ok": true,
+  "exemplos": [
+   {
+    "ok1": true,
+    "ok2": true,
+    "ok3": true,
+    "ok4": true,
+    "dimE": 3,
+    "rank_DE": 2,
+    "fisico": 1,
+    "injetivo": false,
+    "dimD": 3,
+    "atalho_kerC": 1
+   },
+   {
+    "ok1": true,
+    "ok2": true,
+    "ok3": true,
+    "ok4": true,
+    "dimE": 3,
+    "rank_DE": 2,
+    "fisico": 1,
+    "injetivo": false,
+    "dimD": 3,
+    "atalho_kerC": 1
+   },
+   {
+    "ok1": true,
+    "ok2": true,
+    "ok3": true,
+    "ok4": true,
+    "dimE": 3,
+    "rank_DE": 1,
+    "fisico": 2,
+    "injetivo": false,
+    "dimD": 3,
+    "atalho_kerC": 1
+   },
+   {
+    "ok1": true,
+    "ok2": true,
+    "ok3": true,
+    "ok4": true,
+    "dimE": 3,
+    "rank_DE": 2,
+    "fisico": 1,
+    "injetivo": false,
+    "dimD": 3,
+    "atalho_kerC": 1
+   }
+  ],
+  "atalho_difere": 2
+ },
+ {
+  "nome": "K(s0) injetivo",
+  "n": 25,
+  "ok": true,
+  "exemplos": [
+   {
+    "ok1": true,
+    "ok2": true,
+    "ok3": true,
+    "ok4": true,
+    "dimE": 3,
+    "rank_DE": 0,
+    "fisico": 3,
+    "injetivo": true,
+    "dimD": 0,
+    "atalho_kerC": 2
+   },
+   {
+    "ok1": true,
+    "ok2": true,
+    "ok3": true,
+    "ok4": true,
+    "dimE": 3,
+    "rank_DE": 0,
+    "fisico": 3,
+    "injetivo": true,
+    "dimD": 0,
+    "atalho_kerC": 2
+   },
+   {
+    "ok1": true,
+    "ok2": true,
+    "ok3": true,
+    "ok4": true,
+    "dimE": 3,
+    "rank_DE": 0,
+    "fisico": 3,
+    "injetivo": true,
+    "dimD": 0,
+    "atalho_kerC": 2
+   },
+   {
+    "ok1": true,
+    "ok2": true,
+    "ok3": true,
+    "ok4": true,
+    "dimE": 3,
+    "rank_DE": 0,
+    "fisico": 3,
+    "injetivo": true,
+    "dimD": 0,
+    "atalho_kerC": 2
+   }
+  ],
+  "atalho_difere": 25
+ },
+ {
+  "nome": "K(s0) nao injetivo, simples",
+  "n": 25,
+  "ok": true,
+  "exemplos": [
+   {
+    "ok1": true,
+    "ok2": true,
+    "ok3": true,
+    "ok4": true,
+    "dimE": 1,
+    "rank_DE": 0,
+    "fisico": 1,
+    "injetivo": false,
+    "dimD": 1,
+    "atalho_kerC": 1
+   },
+   {
+    "ok1": true,
+    "ok2": true,
+    "ok3": true,
+    "ok4": true,
+    "dimE": 1,
+    "rank_DE": 1,
+    "fisico": 0,
+    "injetivo": false,
+    "dimD": 1,
+    "atalho_kerC": 0
+   },
+   {
+    "ok1": true,
+    "ok2": true,
+    "ok3": true,
+    "ok4": true,
+    "dimE": 1,
+    "rank_DE": 1,
+    "fisico": 0,
+    "injetivo": false,
+    "dimD": 1,
+    "atalho_kerC": 0
+   },
+   {
+    "ok1": true,
+    "ok2": true,
+    "ok3": true,
+    "ok4": true,
+    "dimE": 1,
+    "rank_DE": 1,
+    "fisico": 0,
+    "injetivo": false,
+    "dimD": 1,
+    "atalho_kerC": 0
+   }
+  ],
+  "atalho_difere": 0
+ },
+ {
+  "nome": "L com Jordan 3, K Jordan 2",
+  "n": 25,
+  "ok": true,
+  "exemplos": [
+   {
+    "ok1": true,
+    "ok2": true,
+    "ok3": true,
+    "ok4": true,
+    "dimE": 3,
+    "rank_DE": 2,
+    "fisico": 1,
+    "injetivo": false,
+    "dimD": 2,
+    "atalho_kerC": 1
+   },
+   {
+    "ok1": true,
+    "ok2": true,
+    "ok3": true,
+    "ok4": true,
+    "dimE": 3,
+    "rank_DE": 2,
+    "fisico": 1,
+    "injetivo": false,
+    "dimD": 2,
+    "atalho_kerC": 1
+   },
+   {
+    "ok1": true,
+    "ok2": true,
+    "ok3": true,
+    "ok4": true,
+    "dimE": 3,
+    "rank_DE": 2,
+    "fisico": 1,
+    "injetivo": false,
+    "dimD": 2,
+    "atalho_kerC": 1
+   },
+   {
+    "ok1": true,
+    "ok2": true,
+    "ok3": true,
+    "ok4": true,
+    "dimE": 3,
+    "rank_DE": 2,
+    "fisico": 1,
+    "injetivo": false,
+    "dimD": 2,
+    "atalho_kerC": 1
+   }
+  ],
+  "atalho_difere": 1
+ }
+]

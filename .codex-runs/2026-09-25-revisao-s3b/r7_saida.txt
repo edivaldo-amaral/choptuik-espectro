@@ -1,0 +1,10 @@
+(1) ||Pi_F C(lambda0) h0|| (montagem propria, F = 12x48) = 0.17174236   (D.json: c_ref >= 0,171739, ja descontados erros)
+    ||h0|| = 1.000000000000;  maior bloco de saida: modo 0
+(2) c_J[32..47] direto (SVD, (792, 11200)) = 5.7303e-09;   D.json: 5.7303e-09
+(2) c_J[-15..0] direto (SVD, (792, 7616)) = 2.4300e-08;   D.json: 3.5413e-07
+(2) c_J[16..31] direto (SVD, (792, 7616)) = 1.1835e-15;   D.json: 1.1400e-11
+    max |coeficiente do fundo| no modo de Fourier d = 0: 1.86e-01
+    max |coeficiente do fundo| no modo de Fourier d = 10: 7.88e-05
+    max |coeficiente do fundo| no modo de Fourier d = 21: 5.93e-08
+    max |coeficiente do fundo| no modo de Fourier d = 30: 6.97e-11
+(3) ||Pi_F C1|| (secao finita, entrada 24x120) = 0.9575   (usado: nC1 = 1,5)

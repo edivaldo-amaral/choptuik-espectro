@@ -1,0 +1,6 @@
+delta registrado = [1.0, 1.1683070790022612];  1 + MU = 1.1683070790022612;  delta_1 == 1 + MU (float): True
+cotas |e_ij|: [['8.01e-09', '1.38e-07'], ['1.15e-09', '1.98e-08']]
+DELTA_MU = 3.88e-11;  min_(Re s >= 0) |q(s)| >= 0.999999968857176 > 0: True
+mu* em [0.168307078963, 0.168307079041] contido em (0, 3): True
+max |s (s - mu) det(I + L^-1 E) - q(s)| em 200 pontos racionais = 0
+Indentacao em 0 (Omega_eps exclui 0): M(L~) = M(L) + [zeros(D) - polos(D)] em Omega_eps = M(L) + (0 - 1)  =>  N(L) = N(L~) + 1

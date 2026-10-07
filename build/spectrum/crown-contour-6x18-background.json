@@ -1,0 +1,1251 @@
+{
+  "matrix": "build/spectrum/rt-A-6x18.dat",
+  "sha256": "a3335d9550f9567db287c1ae105674a5914446f9d3772d3955e3628a747c5846",
+  "finite_crown_dimension": 195,
+  "core": [
+    4,
+    12
+  ],
+  "weights": [
+    916,
+    4096,
+    243,
+    1233
+  ],
+  "inverse_free_error": "13/1099511627776",
+  "tiles": [
+    {
+      "center": [
+        "1/8",
+        "0"
+      ],
+      "center_defect": "16203778175/1099511627776",
+      "parametrix_norm": "15364856078591/1099511627776",
+      "variation": "18414013326487/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "19451055129687/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "1/64"
+      ],
+      "center_defect": "18579666831/1099511627776",
+      "parametrix_norm": "15908081786995/1099511627776",
+      "variation": "9588539990817/549755813888",
+      "radius": "1/64",
+      "uniform_defect": "10183089329409/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "1/32"
+      ],
+      "center_defect": "10424695255/549755813888",
+      "parametrix_norm": "2053851043701/137438953472",
+      "variation": "155779559215/8589934592",
+      "radius": "1/64",
+      "uniform_defect": "83102127235/274877906944",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "3/64"
+      ],
+      "center_defect": "22988755835/1099511627776",
+      "parametrix_norm": "8465601686841/549755813888",
+      "variation": "20668567271417/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "22139847644857/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "1/16"
+      ],
+      "center_defect": "6272992547/274877906944",
+      "parametrix_norm": "8704014316401/549755813888",
+      "variation": "21364474949735/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "22970361041767/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "5/64"
+      ],
+      "center_defect": "27446601401/1099511627776",
+      "parametrix_norm": "17860617871923/1099511627776",
+      "variation": "11013329425597/549755813888",
+      "radius": "1/64",
+      "uniform_defect": "11891620670429/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "3/32"
+      ],
+      "center_defect": "15080244805/549755813888",
+      "parametrix_norm": "18288266521107/1099511627776",
+      "variation": "11327764142297/549755813888",
+      "radius": "1/64",
+      "uniform_defect": "12292899809817/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "7/64"
+      ],
+      "center_defect": "16692540997/549755813888",
+      "parametrix_norm": "2336035656871/137438953472",
+      "variation": "2907268150643/137438953472",
+      "radius": "1/64",
+      "uniform_defect": "3174348806595/8796093022208",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "1/8"
+      ],
+      "center_defect": "9276435315/274877906944",
+      "parametrix_norm": "19059802162983/1099511627776",
+      "variation": "5960543745757/274877906944",
+      "radius": "1/64",
+      "uniform_defect": "6554235605917/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "9/64"
+      ],
+      "center_defect": "41208665279/1099511627776",
+      "parametrix_norm": "9700566302421/549755813888",
+      "variation": "6095936190881/274877906944",
+      "radius": "1/64",
+      "uniform_defect": "6755274835345/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "5/32"
+      ],
+      "center_defect": "5730789309/137438953472",
+      "parametrix_norm": "9856694283965/549755813888",
+      "variation": "6221886774791/274877906944",
+      "radius": "1/64",
+      "uniform_defect": "6955427806343/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "11/64"
+      ],
+      "center_defect": "51380476535/1099511627776",
+      "parametrix_norm": "9997117168445/549755813888",
+      "variation": "25349152096477/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "28637502594717/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "3/16"
+      ],
+      "center_defect": "28705105495/549755813888",
+      "parametrix_norm": "5060496348133/274877906944",
+      "variation": "25779464185357/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "29453717688717/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "13/64"
+      ],
+      "center_defect": "65043919377/1099511627776",
+      "parametrix_norm": "20457786858121/1099511627776",
+      "variation": "3271917283501/137438953472",
+      "radius": "1/64",
+      "uniform_defect": "3792268638517/8796093022208",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "7/32"
+      ],
+      "center_defect": "9243891957/137438953472",
+      "parametrix_norm": "5159963469619/274877906944",
+      "variation": "26558726081291/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "31291598763275/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "15/64"
+      ],
+      "center_defect": "164178849/2147483648",
+      "parametrix_norm": "10395985830357/549755813888",
+      "variation": "6731607591459/274877906944",
+      "radius": "1/64",
+      "uniform_defect": "8076560722467/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "1/4"
+      ],
+      "center_defect": "48037216555/549755813888",
+      "parametrix_norm": "10459597418725/549755813888",
+      "variation": "13631503390959/549755813888",
+      "radius": "1/64",
+      "uniform_defect": "16705885250479/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "9/64",
+        "1/4"
+      ],
+      "center_defect": "85190011251/1099511627776",
+      "parametrix_norm": "20235255584779/1099511627776",
+      "variation": "817141726031/34359738368",
+      "radius": "1/64",
+      "uniform_defect": "987521748533/2199023255552",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "5/32",
+        "1/4"
+      ],
+      "center_defect": "37696992809/549755813888",
+      "parametrix_norm": "1223932521981/68719476736",
+      "variation": "25104470236761/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "29929685316313/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "11/64",
+        "1/4"
+      ],
+      "center_defect": "66428623545/1099511627776",
+      "parametrix_norm": "18960817632469/1099511627776",
+      "variation": "24130190550323/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "28381622457203/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "3/16",
+        "1/4"
+      ],
+      "center_defect": "29197491773/549755813888",
+      "parametrix_norm": "18368246408411/1099511627776",
+      "variation": "11607577916665/549755813888",
+      "radius": "1/64",
+      "uniform_defect": "13476217390137/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "13/64",
+        "1/4"
+      ],
+      "center_defect": "25741760739/549755813888",
+      "parametrix_norm": "17804318564449/1099511627776",
+      "variation": "22346697698709/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "25641643073301/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "7/32",
+        "1/4"
+      ],
+      "center_defect": "2837264307/68719476736",
+      "parametrix_norm": "17268407983431/1099511627776",
+      "variation": "21529331149121/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "24434689799489/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "15/64",
+        "1/4"
+      ],
+      "center_defect": "40102321677/1099511627776",
+      "parametrix_norm": "16757465708717/1099511627776",
+      "variation": "20760101772943/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "23326650360271/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/4",
+        "1/4"
+      ],
+      "center_defect": "35416547959/1099511627776",
+      "parametrix_norm": "16278199850293/1099511627776",
+      "variation": "20030343132463/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "22297002201839/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "17/64",
+        "1/4"
+      ],
+      "center_defect": "31735977203/1099511627776",
+      "parametrix_norm": "988658002881/68719476736",
+      "variation": "2417967715073/137438953472",
+      "radius": "1/64",
+      "uniform_defect": "2671855532697/8796093022208",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "9/32",
+        "1/4"
+      ],
+      "center_defect": "7126530069/274877906944",
+      "parametrix_norm": "7690455111133/549755813888",
+      "variation": "9345664117025/549755813888",
+      "radius": "1/64",
+      "uniform_defect": "10257859965857/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "19/64",
+        "1/4"
+      ],
+      "center_defect": "25550351085/1099511627776",
+      "parametrix_norm": "116892679627/8589934592",
+      "variation": "2258917078567/137438953472",
+      "radius": "1/64",
+      "uniform_defect": "2463319887247/8796093022208",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "5/16",
+        "1/4"
+      ],
+      "center_defect": "5754017509/274877906944",
+      "parametrix_norm": "14585255838789/1099511627776",
+      "variation": "8761494515757/549755813888",
+      "radius": "1/64",
+      "uniform_defect": "9498008756909/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "21/64",
+        "1/4"
+      ],
+      "center_defect": "2594478861/137438953472",
+      "parametrix_norm": "13983051457/1073741824",
+      "variation": "17010658961111/1099511627776",
+      "radius": "1/32",
+      "uniform_defect": "17674845549527/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "23/64",
+        "1/4"
+      ],
+      "center_defect": "4195702479/274877906944",
+      "parametrix_norm": "13825525958003/1099511627776",
+      "variation": "4011498829191/274877906944",
+      "radius": "1/32",
+      "uniform_defect": "4145761308519/8796093022208",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "25/64",
+        "1/4"
+      ],
+      "center_defect": "13649223377/1099511627776",
+      "parametrix_norm": "6677731964495/549755813888",
+      "variation": "3789263182873/274877906944",
+      "radius": "1/32",
+      "uniform_defect": "3898456969889/8796093022208",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "27/64",
+        "1/4"
+      ],
+      "center_defect": "5608468915/549755813888",
+      "parametrix_norm": "403307233949/34359738368",
+      "variation": "14336731762465/1099511627776",
+      "radius": "1/32",
+      "uniform_defect": "14695673773025/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "29/64",
+        "1/4"
+      ],
+      "center_defect": "4800366901/549755813888",
+      "parametrix_norm": "3121161817513/274877906944",
+      "variation": "13578482009685/1099511627776",
+      "radius": "1/32",
+      "uniform_defect": "13885705491349/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "31/64",
+        "1/4"
+      ],
+      "center_defect": "4098131143/549755813888",
+      "parametrix_norm": "3022540526629/274877906944",
+      "variation": "12874143123907/1099511627776",
+      "radius": "1/32",
+      "uniform_defect": "13136423517059/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "33/64",
+        "1/4"
+      ],
+      "center_defect": "7031897795/1099511627776",
+      "parametrix_norm": "11717308236873/1099511627776",
+      "variation": "12222611269801/1099511627776",
+      "radius": "1/32",
+      "uniform_defect": "12447631999241/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "35/64",
+        "1/4"
+      ],
+      "center_defect": "6178870129/1099511627776",
+      "parametrix_norm": "11361243211423/1099511627776",
+      "variation": "22685420043/2147483648",
+      "radius": "1/32",
+      "uniform_defect": "369145590817/1099511627776",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "37/64",
+        "1/4"
+      ],
+      "center_defect": "5485559195/1099511627776",
+      "parametrix_norm": "11025387618947/1099511627776",
+      "variation": "5524990839317/549755813888",
+      "radius": "1/32",
+      "uniform_defect": "5612759786437/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "39/64",
+        "1/4"
+      ],
+      "center_defect": "2485103789/549755813888",
+      "parametrix_norm": "669299593257/68719476736",
+      "variation": "10524204753759/1099511627776",
+      "radius": "1/32",
+      "uniform_defect": "10683251396255/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "41/64",
+        "1/4"
+      ],
+      "center_defect": "4529178561/1099511627776",
+      "parametrix_norm": "10411860224297/1099511627776",
+      "variation": "5017632191997/549755813888",
+      "radius": "1/32",
+      "uniform_defect": "5090099048973/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "43/64",
+        "1/4"
+      ],
+      "center_defect": "1050865789/274877906944",
+      "parametrix_norm": "5064892332603/549755813888",
+      "variation": "2394307551157/274877906944",
+      "radius": "1/32",
+      "uniform_defect": "2427935256405/8796093022208",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "45/64",
+        "1/4"
+      ],
+      "center_defect": "3947567693/1099511627776",
+      "parametrix_norm": "9864709959911/1099511627776",
+      "variation": "287517765817/34359738368",
+      "radius": "1/32",
+      "uniform_defect": "145732666755/549755813888",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "47/64",
+        "1/4"
+      ],
+      "center_defect": "116221163/34359738368",
+      "parametrix_norm": "9614034063801/1099511627776",
+      "variation": "8864038751337/1099511627776",
+      "radius": "1/32",
+      "uniform_defect": "8983049222249/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "49/64",
+        "1/4"
+      ],
+      "center_defect": "1766150001/549755813888",
+      "parametrix_norm": "4686516126013/549755813888",
+      "variation": "8545471671621/1099511627776",
+      "radius": "1/16",
+      "uniform_defect": "8601988471653/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "53/64",
+        "1/4"
+      ],
+      "center_defect": "1605038879/549755813888",
+      "parametrix_norm": "2229127449369/274877906944",
+      "variation": "7958184924315/1099511627776",
+      "radius": "1/16",
+      "uniform_defect": "8009546168443/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "57/64",
+        "1/4"
+      ],
+      "center_defect": "1490924509/549755813888",
+      "parametrix_norm": "8497696238259/1099511627776",
+      "variation": "7432128501153/1099511627776",
+      "radius": "1/16",
+      "uniform_defect": "7479838085441/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "61/64",
+        "1/4"
+      ],
+      "center_defect": "2843916803/1099511627776",
+      "parametrix_norm": "8129549646095/1099511627776",
+      "variation": "6955071252025/1099511627776",
+      "radius": "1/16",
+      "uniform_defect": "7000573920873/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1",
+        "1/4"
+      ],
+      "center_defect": "352925375/137438953472",
+      "parametrix_norm": "122960381745/17179869184",
+      "variation": "6627705804745/1099511627776",
+      "radius": "1/16",
+      "uniform_defect": "6672880252745/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1",
+        "3/16"
+      ],
+      "center_defect": "2566377199/1099511627776",
+      "parametrix_norm": "7561868588739/1099511627776",
+      "variation": "1598544811339/274877906944",
+      "radius": "1/16",
+      "uniform_defect": "1608810320135/4398046511104",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1",
+        "1/8"
+      ],
+      "center_defect": "602226427/274877906944",
+      "parametrix_norm": "3621606189553/549755813888",
+      "variation": "47867242403/8589934592",
+      "radius": "1/16",
+      "uniform_defect": "96336711233/274877906944",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1",
+        "1/16"
+      ],
+      "center_defect": "2277655249/1099511627776",
+      "parametrix_norm": "6915392112785/1099511627776",
+      "variation": "2913791230813/549755813888",
+      "radius": "1/16",
+      "uniform_defect": "2932012472805/8796093022208",
+      "accepted": true,
+      "physical_certificate": false
+    }
+  ],
+  "inverse_free_norm_bound": "3266385568255/549755813888",
+  "background_H_error": "261274084234784152502402477679497182266460835674497243893907439923629741786195253552642888864507027359308446206960486579338540983500036135059016004243194601247476476485016542816244155332808367603/802405556302450717492860132637721635891621884026818732110823746507981322207324509319567897952008742821869380269327195602545443876757741031628692051622185253716254807369088517300975249938794699292672",
+  "conditional_on_RT_background_ball": true,
+  "contour_coverage": true,
+  "upper_boundary_segments": [
+    {
+      "start": [
+        "1/8",
+        "0"
+      ],
+      "end": [
+        "1/8",
+        "1/64"
+      ],
+      "tile": 0
+    },
+    {
+      "start": [
+        "1/8",
+        "1/64"
+      ],
+      "end": [
+        "1/8",
+        "1/32"
+      ],
+      "tile": 1
+    },
+    {
+      "start": [
+        "1/8",
+        "1/32"
+      ],
+      "end": [
+        "1/8",
+        "3/64"
+      ],
+      "tile": 2
+    },
+    {
+      "start": [
+        "1/8",
+        "3/64"
+      ],
+      "end": [
+        "1/8",
+        "1/16"
+      ],
+      "tile": 3
+    },
+    {
+      "start": [
+        "1/8",
+        "1/16"
+      ],
+      "end": [
+        "1/8",
+        "5/64"
+      ],
+      "tile": 4
+    },
+    {
+      "start": [
+        "1/8",
+        "5/64"
+      ],
+      "end": [
+        "1/8",
+        "3/32"
+      ],
+      "tile": 5
+    },
+    {
+      "start": [
+        "1/8",
+        "3/32"
+      ],
+      "end": [
+        "1/8",
+        "7/64"
+      ],
+      "tile": 6
+    },
+    {
+      "start": [
+        "1/8",
+        "7/64"
+      ],
+      "end": [
+        "1/8",
+        "1/8"
+      ],
+      "tile": 7
+    },
+    {
+      "start": [
+        "1/8",
+        "1/8"
+      ],
+      "end": [
+        "1/8",
+        "9/64"
+      ],
+      "tile": 8
+    },
+    {
+      "start": [
+        "1/8",
+        "9/64"
+      ],
+      "end": [
+        "1/8",
+        "5/32"
+      ],
+      "tile": 9
+    },
+    {
+      "start": [
+        "1/8",
+        "5/32"
+      ],
+      "end": [
+        "1/8",
+        "11/64"
+      ],
+      "tile": 10
+    },
+    {
+      "start": [
+        "1/8",
+        "11/64"
+      ],
+      "end": [
+        "1/8",
+        "3/16"
+      ],
+      "tile": 11
+    },
+    {
+      "start": [
+        "1/8",
+        "3/16"
+      ],
+      "end": [
+        "1/8",
+        "13/64"
+      ],
+      "tile": 12
+    },
+    {
+      "start": [
+        "1/8",
+        "13/64"
+      ],
+      "end": [
+        "1/8",
+        "7/32"
+      ],
+      "tile": 13
+    },
+    {
+      "start": [
+        "1/8",
+        "7/32"
+      ],
+      "end": [
+        "1/8",
+        "15/64"
+      ],
+      "tile": 14
+    },
+    {
+      "start": [
+        "1/8",
+        "15/64"
+      ],
+      "end": [
+        "1/8",
+        "1/4"
+      ],
+      "tile": 15
+    },
+    {
+      "start": [
+        "1/8",
+        "1/4"
+      ],
+      "end": [
+        "9/64",
+        "1/4"
+      ],
+      "tile": 16
+    },
+    {
+      "start": [
+        "9/64",
+        "1/4"
+      ],
+      "end": [
+        "5/32",
+        "1/4"
+      ],
+      "tile": 17
+    },
+    {
+      "start": [
+        "5/32",
+        "1/4"
+      ],
+      "end": [
+        "11/64",
+        "1/4"
+      ],
+      "tile": 18
+    },
+    {
+      "start": [
+        "11/64",
+        "1/4"
+      ],
+      "end": [
+        "3/16",
+        "1/4"
+      ],
+      "tile": 19
+    },
+    {
+      "start": [
+        "3/16",
+        "1/4"
+      ],
+      "end": [
+        "13/64",
+        "1/4"
+      ],
+      "tile": 20
+    },
+    {
+      "start": [
+        "13/64",
+        "1/4"
+      ],
+      "end": [
+        "7/32",
+        "1/4"
+      ],
+      "tile": 21
+    },
+    {
+      "start": [
+        "7/32",
+        "1/4"
+      ],
+      "end": [
+        "15/64",
+        "1/4"
+      ],
+      "tile": 22
+    },
+    {
+      "start": [
+        "15/64",
+        "1/4"
+      ],
+      "end": [
+        "1/4",
+        "1/4"
+      ],
+      "tile": 23
+    },
+    {
+      "start": [
+        "1/4",
+        "1/4"
+      ],
+      "end": [
+        "17/64",
+        "1/4"
+      ],
+      "tile": 24
+    },
+    {
+      "start": [
+        "17/64",
+        "1/4"
+      ],
+      "end": [
+        "9/32",
+        "1/4"
+      ],
+      "tile": 25
+    },
+    {
+      "start": [
+        "9/32",
+        "1/4"
+      ],
+      "end": [
+        "19/64",
+        "1/4"
+      ],
+      "tile": 26
+    },
+    {
+      "start": [
+        "19/64",
+        "1/4"
+      ],
+      "end": [
+        "5/16",
+        "1/4"
+      ],
+      "tile": 27
+    },
+    {
+      "start": [
+        "5/16",
+        "1/4"
+      ],
+      "end": [
+        "21/64",
+        "1/4"
+      ],
+      "tile": 28
+    },
+    {
+      "start": [
+        "21/64",
+        "1/4"
+      ],
+      "end": [
+        "23/64",
+        "1/4"
+      ],
+      "tile": 29
+    },
+    {
+      "start": [
+        "23/64",
+        "1/4"
+      ],
+      "end": [
+        "25/64",
+        "1/4"
+      ],
+      "tile": 30
+    },
+    {
+      "start": [
+        "25/64",
+        "1/4"
+      ],
+      "end": [
+        "27/64",
+        "1/4"
+      ],
+      "tile": 31
+    },
+    {
+      "start": [
+        "27/64",
+        "1/4"
+      ],
+      "end": [
+        "29/64",
+        "1/4"
+      ],
+      "tile": 32
+    },
+    {
+      "start": [
+        "29/64",
+        "1/4"
+      ],
+      "end": [
+        "31/64",
+        "1/4"
+      ],
+      "tile": 33
+    },
+    {
+      "start": [
+        "31/64",
+        "1/4"
+      ],
+      "end": [
+        "33/64",
+        "1/4"
+      ],
+      "tile": 34
+    },
+    {
+      "start": [
+        "33/64",
+        "1/4"
+      ],
+      "end": [
+        "35/64",
+        "1/4"
+      ],
+      "tile": 35
+    },
+    {
+      "start": [
+        "35/64",
+        "1/4"
+      ],
+      "end": [
+        "37/64",
+        "1/4"
+      ],
+      "tile": 36
+    },
+    {
+      "start": [
+        "37/64",
+        "1/4"
+      ],
+      "end": [
+        "39/64",
+        "1/4"
+      ],
+      "tile": 37
+    },
+    {
+      "start": [
+        "39/64",
+        "1/4"
+      ],
+      "end": [
+        "41/64",
+        "1/4"
+      ],
+      "tile": 38
+    },
+    {
+      "start": [
+        "41/64",
+        "1/4"
+      ],
+      "end": [
+        "43/64",
+        "1/4"
+      ],
+      "tile": 39
+    },
+    {
+      "start": [
+        "43/64",
+        "1/4"
+      ],
+      "end": [
+        "45/64",
+        "1/4"
+      ],
+      "tile": 40
+    },
+    {
+      "start": [
+        "45/64",
+        "1/4"
+      ],
+      "end": [
+        "47/64",
+        "1/4"
+      ],
+      "tile": 41
+    },
+    {
+      "start": [
+        "47/64",
+        "1/4"
+      ],
+      "end": [
+        "49/64",
+        "1/4"
+      ],
+      "tile": 42
+    },
+    {
+      "start": [
+        "49/64",
+        "1/4"
+      ],
+      "end": [
+        "53/64",
+        "1/4"
+      ],
+      "tile": 43
+    },
+    {
+      "start": [
+        "53/64",
+        "1/4"
+      ],
+      "end": [
+        "57/64",
+        "1/4"
+      ],
+      "tile": 44
+    },
+    {
+      "start": [
+        "57/64",
+        "1/4"
+      ],
+      "end": [
+        "61/64",
+        "1/4"
+      ],
+      "tile": 45
+    },
+    {
+      "start": [
+        "61/64",
+        "1/4"
+      ],
+      "end": [
+        "1",
+        "1/4"
+      ],
+      "tile": 46
+    },
+    {
+      "start": [
+        "1",
+        "1/4"
+      ],
+      "end": [
+        "1",
+        "3/16"
+      ],
+      "tile": 47
+    },
+    {
+      "start": [
+        "1",
+        "3/16"
+      ],
+      "end": [
+        "1",
+        "1/8"
+      ],
+      "tile": 48
+    },
+    {
+      "start": [
+        "1",
+        "1/8"
+      ],
+      "end": [
+        "1",
+        "1/16"
+      ],
+      "tile": 49
+    },
+    {
+      "start": [
+        "1",
+        "1/16"
+      ],
+      "end": [
+        "1",
+        "0"
+      ],
+      "tile": 50
+    }
+  ],
+  "lower_boundary_by_real_conjugation": true,
+  "infinite_tail_bounds": null,
+  "physical_certificate": false
+}

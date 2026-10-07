@@ -1,0 +1,94 @@
+{
+  "selected": "build/spectrum/rt-A-6x18.dat",
+  "sharp": "build/spectrum/rt-sharp-6x18.dat",
+  "selected_sha256": "a3335d9550f9567db287c1ae105674a5914446f9d3772d3955e3628a747c5846",
+  "sharp_sha256": "d17d842008ce994b46d8890fe947e0498ddc91604807d40fcb24d63e87c29cd4",
+  "selected_dimension": 333,
+  "sharp_dimension": 135,
+  "weights": [
+    "129/128",
+    "9/8"
+  ],
+  "positive_sharp_roots": [
+    [
+      0.39346536456509784,
+      -1.989637447719027
+    ],
+    [
+      0.39346536456509784,
+      1.989637447719027
+    ],
+    [
+      0.4010610988518373,
+      -0.9985711672726425
+    ],
+    [
+      0.4010610988518373,
+      0.9985711672726425
+    ],
+    [
+      0.02588822745787784,
+      -1.4801032483740122
+    ],
+    [
+      0.02588822745787784,
+      1.4801032483740122
+    ],
+    [
+      0.40109953548902405,
+      -0.0
+    ],
+    [
+      0.04171791893734064,
+      -0.49772220507190673
+    ],
+    [
+      0.04171791893734064,
+      0.49772220507190673
+    ]
+  ],
+  "selected_modes": [
+    {
+      "s": 0.03381105725099656,
+      "constraint_ratio": 0.08223135237995247,
+      "nearest_sharp_s": [
+        0.40109953548902405,
+        -0.0
+      ],
+      "sharp_distance": 0.36728847823802746,
+      "propagated_relative_residual": 0.6901990359353269
+    },
+    {
+      "s": 0.1440113339566977,
+      "constraint_ratio": 0.05280724729037385,
+      "nearest_sharp_s": [
+        0.40109953548902405,
+        -0.0
+      ],
+      "sharp_distance": 0.25708820153232637,
+      "propagated_relative_residual": 0.8311071466425438
+    },
+    {
+      "s": 0.40438546717017454,
+      "constraint_ratio": 0.11491440075633544,
+      "nearest_sharp_s": [
+        0.40109953548902405,
+        -0.0
+      ],
+      "sharp_distance": 0.003285931681150489,
+      "propagated_relative_residual": 0.6675948040529619
+    },
+    {
+      "s": 0.7311839086677148,
+      "constraint_ratio": 0.05495537194769506,
+      "nearest_sharp_s": [
+        0.40109953548902405,
+        -0.0
+      ],
+      "sharp_distance": 0.3300843731786907,
+      "propagated_relative_residual": 1.3659884251326628
+    }
+  ],
+  "physical_certificate": false,
+  "limitation": "finite truncation, approximate background, floating point eigenvectors"
+}

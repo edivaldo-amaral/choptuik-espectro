@@ -1,0 +1,10 @@
+{
+  "kappa1": 1.015625,
+  "kappa2": 1.25,
+  "sup": 1.8486948321804029,
+  "resto_F": 0.6837185469835615,
+  "bound_l2": 2.5324133791639643,
+  "norma_l1": 12.402361399041169,
+  "ganho": 4.897447431404587,
+  "nota": "diagnostico; as duas parcelas sao somas finitas certificaveis"
+}

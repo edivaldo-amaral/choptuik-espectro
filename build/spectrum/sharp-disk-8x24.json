@@ -1,0 +1,20 @@
+{
+  "center": "733/1000",
+  "radius": "1/32",
+  "center_defect": "577299183117182879/79228162514264337593543950336",
+  "inverse_candidate_norm": "37077511621291/4398046511104",
+  "uniform_defect": "20872783440761222008629536671/79228162514264337593543950336",
+  "uniform_defect_decimal": 0.2634515654329767,
+  "accepted": true,
+  "inverse_bound": "667929070085885530416395321344/58355379073503115584914413665",
+  "background_error_included": false,
+  "infinite_tail_included": false,
+  "physical_certificate": false,
+  "matrix": "build/spectrum/rt-sharp-8x24.dat",
+  "dimension": 252,
+  "weights": [
+    "129/128",
+    "9/8"
+  ],
+  "sha256": "fd27e0221aafc94b5701ca1fb2f210dbfed5d20f43334436fcc7323ce1931e62"
+}

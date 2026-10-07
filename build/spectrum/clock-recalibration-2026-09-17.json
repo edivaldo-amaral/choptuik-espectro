@@ -1,0 +1,101 @@
+{
+  "note": "DIAGNOSTICO de custo apos corrigir CPU_ENERGY_PERF_POLICY_ON_AC=performance",
+  "date": "2026-09-17",
+  "convolutions_per_application": 18,
+  "cpu_before_description": "EPP=power, 900-1000 MHz sob carga (medida original)",
+  "cpu_now": {
+    "idle": {
+      "epp": [
+        "performance"
+      ],
+      "governor": [
+        "performance"
+      ],
+      "mhz_idle": [
+        3102.014,
+        3099.041,
+        3099.999,
+        3100.164
+      ]
+    },
+    "after_bench": {
+      "epp": [
+        "performance"
+      ],
+      "governor": [
+        "performance"
+      ],
+      "mhz_idle": [
+        3100.759,
+        3097.835,
+        3100.001,
+        3100.171
+      ]
+    }
+  },
+  "seconds_per_full_application_1core_before": {
+    "24x72": 0.10857319831848145,
+    "64x200": 0.3035612106323242,
+    "107x384": 0.6592957973480225
+  },
+  "seconds_per_full_application_1core_after": {
+    "24x72": 0.06155974000000697,
+    "64x200": 0.19703507200000558,
+    "107x384": 0.4541508020000151
+  },
+  "raw_after": {
+    "24x72": {
+      "best": 0.06155974000000697,
+      "median": 0.0644852789999959,
+      "runs": [
+        0.06668672899996864,
+        0.06946873399999731,
+        0.06174088199998096,
+        0.0644852789999959,
+        0.06155974000000697
+      ]
+    },
+    "64x200": {
+      "best": 0.19703507200000558,
+      "median": 0.20310795099999268,
+      "runs": [
+        0.2048519360000114,
+        0.20310795099999268,
+        0.19703507200000558,
+        0.1990329310000334,
+        0.20577395899999829
+      ]
+    },
+    "107x384": {
+      "best": 0.4541508020000151,
+      "median": 0.4620280340000136,
+      "runs": [
+        0.45564335699998537,
+        0.46222111299999824,
+        0.4620280340000136,
+        0.4541508020000151,
+        0.46735152600001584
+      ]
+    }
+  },
+  "speedup": {
+    "24x72": 1.7637046277074782,
+    "64x200": 1.5406455690909464,
+    "107x384": 1.4517111814942925
+  },
+  "speedup_median": 1.5406455690909464,
+  "exact_c_kernel_R1_12rows_seconds": {
+    "before_depth60_two_chains": 45.0,
+    "after_depth61_alone_normalized_to_depth60": 17.65,
+    "after_depth62_with_sibling_normalized_to_depth60": 17.48,
+    "note": "normalizado por depth/60; a medida original era com a cadeia irma competindo",
+    "speedup_alone": 2.55,
+    "speedup_with_sibling": 2.574
+  },
+  "speedup_summary": {
+    "fft_float_memory_bound": 1.54,
+    "exact_integer_alu_bound": 2.57,
+    "clock_ratio_nominal": 3.26,
+    "lesson": "o clock subiu ~3,3x; o FFT ganhou 1,5x (banda de memoria) e a aritmetica exata 2,5x"
+  }
+}

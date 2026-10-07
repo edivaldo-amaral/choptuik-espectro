@@ -1,0 +1,28 @@
+<frozen site>:101: RuntimeWarning: Unexpected value in sys.prefix, expected <repo>/.venv, got <repo>/scripts/../.venv
+<frozen site>:101: RuntimeWarning: Unexpected value in sys.exec_prefix, expected <repo>/.venv, got <repo>/scripts/../.venv
+  [Gamma2 (TeX) simetrico] grau<=2 jatos=0: OK (termos residuais 0, 0.0s)
+  [Omega^+ FC == Omega^+ 2D (f23ljf3lfj)] grau<=1 jatos=1: OK (termos residuais 0, 0.0s)
+  [Omega^+ FC == Omega^+ 2D (f23ljf3lfj)] grau<=2 jatos=0: OK (termos residuais 0, 0.0s)
+  [P Omega^+ = -Omega^-] grau<=1 jatos=1: OK (termos residuais 0, 0.0s)
+  [P Omega^+ = -Omega^-] grau<=2 jatos=0: OK (termos residuais 0, 0.0s)
+  [identidade sharp homogenea RT off-shell] grau<=1 jatos=2: OK (termos residuais 0, 0.0s)
+  [identidade sharp homogenea RT off-shell] grau<=2 jatos=1: OK (termos residuais 0, 0.0s)
+  [identidade sharp homogenea RT off-shell] grau<=3 jatos=0: OK (termos residuais 0, 0.0s)
+  [G(w,Ic) == Gamma2^sharp(w,c)] grau<=2 jatos=0: OK (termos residuais 0, 0.0s)
+  [K(s)C(s)h - M(s)L(s)h + G(h,e(w)) = 0] grau<=1 jatos=2: OK (termos residuais 0, 0.0s)
+  [K(s)C(s)h - M(s)L(s)h + G(h,e(w)) = 0] grau<=2 jatos=1: OK (termos residuais 0, 0.1s)
+  [K(s)C(s)h - M(s)L(s)h + G(h,e(w)) = 0] grau<=3 jatos=0: OK (termos residuais 0, 0.0s)
+  [dC/ds = (0,-xi h2)  (logo M1=C1)] grau<=1 jatos=1: OK (termos residuais 0, 0.0s)
+  [dC/ds = (0,-xi h2)  (logo M1=C1)] grau<=2 jatos=0: OK (termos residuais 0, 0.0s)
+  [gauge: DOmega[mu(Z+1)w] (s=mu) = mu(Z+1)Omega] grau<=1 jatos=2: OK (termos residuais 0, 0.0s)
+  [gauge: DOmega[mu(Z+1)w] (s=mu) = mu(Z+1)Omega] grau<=2 jatos=1: OK (termos residuais 0, 0.1s)
+  [gauge: L(mu)(Z+1)w=(Z+2)F, C(mu)(Z+1)w=(Z+1)c] grau<=1 jatos=2: OK (termos residuais 0, 0.0s)
+  [gauge: L(mu)(Z+1)w=(Z+2)F, C(mu)(Z+1)w=(Z+1)c] grau<=2 jatos=1: OK (termos residuais 0, 0.1s)
+  [fase: DOmega[dtau w] (s=0) = dtau Omega] grau<=1 jatos=2: OK (termos residuais 0, 0.0s)
+  [fase: DOmega[dtau w] (s=0) = dtau Omega] grau<=2 jatos=1: OK (termos residuais 0, 0.0s)
+  [reconstrucao: compatibilidade (2,2),(3,3),(4,4)] grau<=1 jatos=1: OK (termos residuais 0, 0.0s)
+  [reconstrucao: compatibilidade (2,2),(3,3),(4,4)] grau<=2 jatos=0: OK (termos residuais 0, 0.0s)
+  [W: D^s W - W(w2-w3) = (O1-O2-O2s)/2] grau<=1 jatos=1: OK (termos residuais 0, 0.0s)
+  [W: D^s W - W(w2-w3) = (O1-O2-O2s)/2] grau<=2 jatos=0: OK (termos residuais 0, 0.0s)
+  [tabelas dos macros RT == TeX] divergencias: 0
+TODAS OK

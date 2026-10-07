@@ -1,0 +1,27 @@
+recursao inverte J_livre: erro relativo 5.81488360225114e-16
+m=    0 passo=1 Ntot=7096: ||J^-1 P_(n>=N)|| = 0.012803   cota cauda_Rinv = 0.015317   razao 0.836   (adj 1.5e-15)
+m=    0 passo=1 Ntot=16096: ||J^-1 P_(n>=N)|| = 0.012803   cota cauda_Rinv = 0.015317   razao 0.836   (adj 1.5e-15)
+m=    0 passo=2 Ntot=7096: ||J^-1 P_(n>=N)|| = 0.006486   cota cauda_Rinv = 0.007709   razao 0.841   (adj 2.5e-15)
+m=    0 passo=2 Ntot=16096: ||J^-1 P_(n>=N)|| = 0.006486   cota cauda_Rinv = 0.007709   razao 0.841   (adj 2.5e-15)
+m=    1 passo=1 Ntot=7096: ||J^-1 P_(n>=N)|| = 0.012803   cota cauda_Rinv = 0.015317   razao 0.836   (adj 1.2e-15)
+m=    1 passo=1 Ntot=16096: ||J^-1 P_(n>=N)|| = 0.012803   cota cauda_Rinv = 0.015317   razao 0.836   (adj 1.2e-15)
+m=    2 passo=1 Ntot=7096: ||J^-1 P_(n>=N)|| = 0.012803   cota cauda_Rinv = 0.015317   razao 0.836   (adj 4.3e-15)
+m=    2 passo=1 Ntot=16096: ||J^-1 P_(n>=N)|| = 0.012803   cota cauda_Rinv = 0.015317   razao 0.836   (adj 4.3e-15)
+m=    2 passo=2 Ntot=7096: ||J^-1 P_(n>=N)|| = 0.006486   cota cauda_Rinv = 0.007709   razao 0.841   (adj 3.7e-16)
+m=    2 passo=2 Ntot=16096: ||J^-1 P_(n>=N)|| = 0.006486   cota cauda_Rinv = 0.007709   razao 0.841   (adj 3.7e-16)
+m=   -7 passo=1 Ntot=7096: ||J^-1 P_(n>=N)|| = 0.012803   cota cauda_Rinv = 0.015317   razao 0.836   (adj 2.4e-15)
+m=   -7 passo=1 Ntot=16096: ||J^-1 P_(n>=N)|| = 0.012803   cota cauda_Rinv = 0.015317   razao 0.836   (adj 2.4e-15)
+m=   40 passo=1 Ntot=7096: ||J^-1 P_(n>=N)|| = 0.012793   cota cauda_Rinv = 0.015311   razao 0.836   (adj 1.0e-15)
+m=   40 passo=1 Ntot=16096: ||J^-1 P_(n>=N)|| = 0.012793   cota cauda_Rinv = 0.015311   razao 0.836   (adj 1.0e-15)
+m= -150 passo=2 Ntot=7096: ||J^-1 P_(n>=N)|| = 0.006415   cota cauda_Rinv = 0.007669   razao 0.836   (adj 1.5e-15)
+m= -150 passo=2 Ntot=16096: ||J^-1 P_(n>=N)|| = 0.006415   cota cauda_Rinv = 0.007669   razao 0.836   (adj 1.5e-15)
+m=  399 passo=1 Ntot=7096: ||J^-1 P_(n>=N)|| = 0.011849   cota cauda_Rinv = 0.014749   razao 0.803   (adj 9.2e-16)
+m=  399 passo=1 Ntot=16096: ||J^-1 P_(n>=N)|| = 0.011849   cota cauda_Rinv = 0.014749   razao 0.803   (adj 9.2e-16)
+m=  400 passo=1: ||J_m^-1|| (modo inteiro, trunc 6000) = 0.022693   cota uniforme = 0.052491   razao 0.432
+m=  400 passo=2: ||J_m^-1|| (modo inteiro, trunc 6000) = 0.011916   cota uniforme = 0.052491   razao 0.227
+m= -400 passo=1: ||J_m^-1|| (modo inteiro, trunc 6000) = 0.022693   cota uniforme = 0.052491   razao 0.432
+m= -400 passo=2: ||J_m^-1|| (modo inteiro, trunc 6000) = 0.011916   cota uniforme = 0.052491   razao 0.227
+m=  401 passo=1: ||J_m^-1|| (modo inteiro, trunc 6000) = 0.022637   cota uniforme = 0.052360   razao 0.432
+m=  700 passo=1: ||J_m^-1|| (modo inteiro, trunc 6000) = 0.012988   cota uniforme = 0.029995   razao 0.433
+m=  700 passo=2: ||J_m^-1|| (modo inteiro, trunc 6000) = 0.006814   cota uniforme = 0.029995   razao 0.227
+m= 1023 passo=1: ||J_m^-1|| (modo inteiro, trunc 6000) = 0.008893   cota uniforme = 0.020524   razao 0.433

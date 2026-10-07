@@ -1,0 +1,8 @@
+{
+  "matriz": "<repo>/build/spectrum/rt-A-6x18.dat",
+  "sha256": "a3335d9550f9567db287c1ae105674a5914446f9d3772d3955e3628a747c5846",
+  "sha256_pipeline": "18802db7f583420bed68e4e4cd35f109f737bf69f9f6773bbcfbca0e7e567da9",
+  "inicio": 1789622797.302579,
+  "limite_memoria_virtual_bytes": 1610612736,
+  "cache": "polinomio-novo.txt"
+}

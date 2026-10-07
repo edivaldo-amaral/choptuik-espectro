@@ -1,0 +1,10 @@
+{
+ "ok": true,
+ "pontos": 23,
+ "cauda": "build/faixaB/cauda/T3_0_75.json",
+ "pior_theta": 0.998836366325554,
+ "max_dtheta": 6.661338147750939e-16,
+ "exatos": 11,
+ "tempo_s": 778,
+ "disco": "build/faixaB/discos/disco_0_75.json"
+}

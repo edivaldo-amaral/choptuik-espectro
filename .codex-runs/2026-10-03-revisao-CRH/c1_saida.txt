@@ -1,0 +1,21 @@
+[OK] (a) u_+(psi_eps) = u + eps
+[OK] (a) u_-(psi_eps) = u + eps
+[OK] (a) eixo: Xi(xi=0) = 0
+[OK] (b) forma nula -2e^{-2z}(du_-du_+ + du_+du_-)/(mu^2(u_++u_-)^2) = forma RT
+[OK] (c) e^{-2zeta_eps} = e^{-2 zeta o psi} S^2/(S+2eps)^2
+[OK] (c) parte radial de psi^*g = forma RT com zeta_eps
+[OK] (c) W_eps = W o psi_eps (o fator (u_++u_-)^2 cancela)
+[OK] (c) Q_eps = Q o psi * (Xi/xi)^2, com Xi/xi independente de xi
+[OK] (c) Xi/xi nao depende de xi
+[OK] (d) d/deps omega1_eps = e^(mu tau)(Z+1)omega1
+[OK] (d) d/deps omega2+_eps = e^(mu tau)(Z+1)omega2+
+[OK] (d) d/deps omega2-_eps = e^(mu tau)(Z+1)omega2-
+[OK] (d) d/deps omega3+_eps = e^(mu tau)(Z+1)omega3+
+[OK] (d) d/deps omega3-_eps = e^(mu tau)(Z+1)omega3-
+[OK] (d) d/deps omega4+_eps = e^(mu tau)(Z+1)omega4+
+[OK] (d) d/deps omega4-_eps = e^(mu tau)(Z+1)omega4-
+[OK] (d) delta zeta = e^{mu tau}(Z zeta - 1)
+[OK] (d) delta Q = e^{mu tau}(Z Q + 2Q)
+[OK] (e) X0^tau = d/deps T = e^{mu tau}/mu
+[OK] (e) X0^xi = d/deps Xi = xi e^{mu tau}
+TUDO OK

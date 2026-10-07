@@ -1,0 +1,4 @@
+Kc_Z 20x80, fundo truncado (20,40) dim  2280: 1 raiz(es) no disco: 0.4010247311-0.0e+00j;  cond. do autovalor 4.13;  proxima raiz a 0.6159 do centro (raio 0,05)
+K 20x80, fundo completo            dim  2280: 1 raiz(es) no disco: 0.4010247330-0.0e+00j;  cond. do autovalor 4.13;  proxima raiz a 0.6159 do centro (raio 0,05)
+Kc 24x96, fundo truncado           dim  3312: 1 raiz(es) no disco: 0.4010247311-0.0e+00j;  cond. do autovalor 4.25;  proxima raiz a 0.6159 do centro (raio 0,05)
+Kc 16x64, fundo truncado           dim  1440: 1 raiz(es) no disco: 0.4010247312-0.0e+00j;  cond. do autovalor 3.99;  proxima raiz a 0.6159 do centro (raio 0,05)

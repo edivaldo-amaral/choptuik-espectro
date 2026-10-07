@@ -1,0 +1,25 @@
+# ambientes e caches
+.venv/
+.cache/
+__pycache__/
+*.pyc
+
+# Lean
+.lake/
+formal/.lake/
+formal/lake-manifest.json
+*.olean
+
+# logs de execucao (efemeros); os do Codex ficam como trilha de auditoria
+*.log
+!.codex-runs/**/*.log
+
+# binarios compilados
+*.so
+build/sharp-matrix
+build/spectrum/columnwise-phase2/columnwise_kernel
+
+# artefatos pesados e REGENERAVEIS do build (~93 MB de matrizes RT).
+# Os certificados .json/.jsonl de build/ SAO versionados: custaram horas de CPU.
+build/**/*.dat
+build/**/*.constraints

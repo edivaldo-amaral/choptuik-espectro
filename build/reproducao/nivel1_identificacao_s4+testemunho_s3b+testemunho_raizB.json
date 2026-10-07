@@ -1,0 +1,57 @@
+{
+ "identificacao_s4": {
+  "ok": true,
+  "tempo_s": 27,
+  "iguais": {
+   "dist": true,
+   "r": true,
+   "identificado": true
+  },
+  "novo": {
+   "dist": 1.8155323972938447e-05,
+   "r": 6.0635576493216294e-05,
+   "identificado": true
+  },
+  "saida": [
+   "IDENTIFICADO: o autopar do NK e o de gauge; mu* e raiz ALGEBRICAMENTE SIMPLES de L, autoespaco span(g*)"
+  ]
+ },
+ "testemunho_s3b": {
+  "ok": true,
+  "tempo_s": 273,
+  "iguais": {
+   "c_ref": true,
+   "perda": true,
+   "folga": true,
+   "certificado": true
+  },
+  "novo": {
+   "c_ref": 0.17173920320637387,
+   "perda": 0.0019809273186032652,
+   "folga": 0.1697582758877706,
+   "certificado": true
+  },
+  "saida": [
+   "||Pi_F C(lambda*) h*|| >= 0.17174 - 1.981e-03 = 0.16976  ->  TESTEMUNHO: o autovetor de L em lambda* VIOLA as constraints"
+  ]
+ },
+ "testemunho_raizB": {
+  "ok": true,
+  "tempo_s": 285,
+  "iguais": {
+   "c_ref": true,
+   "perda": true,
+   "folga": true,
+   "certificado": true
+  },
+  "novo": {
+   "c_ref": 0.35518896384184756,
+   "perda": 0.0004953218096264587,
+   "folga": 0.3546936420322211,
+   "certificado": true
+  },
+  "saida": [
+   "||Pi_F C(lambda*) h*|| >= 0.35519 - 4.953e-04 = 0.35469  ->  TESTEMUNHO: o autovetor de L em lambda* VIOLA as constraints"
+  ]
+ }
+}

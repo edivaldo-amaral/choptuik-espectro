@@ -1,0 +1,6 @@
+tiles gravados: 156; marcados ok: 154; discos aceitos (check_cover.reverifica E a minha): 154; recusados: 0; divergencias entre as duas reverificacoes: 0
+theta: max 0.996115, min 0.612676; rZ min 0.01473
+1) 10^5 uniformes: descobertos 0  [9s]
+2) 9715 pontos nas bordas e sobre a circunferencia de D: descobertos (acumulado) 0  [10s]
+3) 10000 pontos em/perto de 211 vertices: descobertos (acumulado) 0  [11s]
+RESUMO R5: todos os pontos cobertos

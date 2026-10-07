@@ -1,0 +1,12 @@
+{
+ "L_real_toro": {
+  "ok": true,
+  "tempo_s": 1045,
+  "iguais": {
+   "cauda_max": true,
+   "qT": true,
+   "defeito": true,
+   "contrai": true
+  }
+ }
+}

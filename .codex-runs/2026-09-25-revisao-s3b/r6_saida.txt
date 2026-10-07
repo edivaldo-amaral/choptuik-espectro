@@ -1,0 +1,45 @@
+(a) verified_inverse contra Arb (400 bits; OK = cota >= limite superior do enclosure)
+  aleatoria bem condicionada ||H^-1||              verdadeiro 1.975033614018e+00  cota 1.975035589052e+00  razao 1.000001  OK
+  aleatoria bem condicionada ||H^-1 X|| (30x20)    verdadeiro 1.490886865489e+01  cota 1.490888356358e+01  razao 1.000001  OK
+  aleatoria ||H^-1 x|| (vetor)                     verdadeiro 8.228311968106e+00  cota 8.228320196418e+00  razao 1.000001  OK
+  mal condicionada cond 1e+04: ||H^-1||            verdadeiro 1.000000000000e+04  cota 1.002001002000e+04  razao 1.002001  OK
+  mal condicionada cond 1e+04: ||H^-1 X||          verdadeiro 5.018980259876e+04  cota 5.029023249414e+04  razao 1.002001  OK
+  mal condicionada cond 1e+08: ||H^-1||            nao verificou (RuntimeError: cota_loewner nao verificou) -- aceitavel (sem cota falsa)
+  mal condicionada cond 1e+08: ||H^-1 X||          nao verificou (RuntimeError: cota_loewner nao verificou) -- aceitavel (sem cota falsa)
+  mal condicionada cond 1e+11: ||H^-1||            nao verificou (RuntimeError: cota_loewner nao verificou) -- aceitavel (sem cota falsa)
+  mal condicionada cond 1e+11: ||H^-1 X||          nao verificou (RuntimeError: cota_loewner nao verificou) -- aceitavel (sem cota falsa)
+  mal condicionada cond 1e+13: ||H^-1||            nao verificou (RuntimeError: cota_loewner nao verificou) -- aceitavel (sem cota falsa)
+  mal condicionada cond 1e+13: ||H^-1 X||          nao verificou (RuntimeError: cota_loewner nao verificou) -- aceitavel (sem cota falsa)
+  mal condicionada cond 1e+15: ||H^-1||            nao verificou (RuntimeError: cota_loewner nao verificou) -- aceitavel (sem cota falsa)
+  mal condicionada cond 1e+15: ||H^-1 X||          nao verificou (RuntimeError: cota_loewner nao verificou) -- aceitavel (sem cota falsa)
+  triangular tipo J_mu (40)                        verdadeiro 1.920250601639e+00  cota 1.920252521889e+00  razao 1.000001  OK
+  triangular tipo J_mu pesada (40)                 verdadeiro 8.422038305335e-01  cota 8.422046727374e-01  razao 1.000001  OK
+  escalas 1e-6..1e6 nas linhas                     nao verificou (RuntimeError: cota_loewner nao verificou) -- aceitavel (sem cota falsa)
+  X minusculo (1e-200)                             nao verificou (RuntimeError: cota_loewner nao verificou) -- aceitavel (sem cota falsa)
+  com erro_X = 1e-3                                verdadeiro 1.223810493727e+01  cota 1.224026950217e+01  razao 1.000177  OK
+  bordejada [[H,h],[l*,0]]                         verdadeiro 1.171282460324e+01  cota 1.171283631606e+01  razao 1.000001  OK
+    cota_norma:
+  cota_norma 20x30 escala 1e+00 (valores singulares 1..1e-12)  verdadeiro 1.000000000000e+00  cota 1.000001000000e+00  OK
+  cota_norma 30x30 escala 1e-10 (valores singulares 1..1e-12)  verdadeiro 1.000000000000e-10  cota 1.000001000000e-10  OK
+  cota_norma 25x10 escala 1e+12 (valores singulares 1..1e-12)  verdadeiro 1.000000000000e+12  cota 1.000001000000e+12  OK
+  Loewner S = projecao, chute 0,95 x verdadeiro: verdadeiro 2.381240863842e+00  cota 2.382800551018e+00  OK
+  (a): todas as cotas acima do verdadeiro
+(b) fundo_L: cota de Young de B_d (x kappa1^|d|) contra a norma do bloco pesado montado
+  d = -40: Young 1.0346e-09; bloco montado (n < 260) max paridade ~ 2.2818e-10
+  d = -17: Young 3.7097e-04; bloco montado (n < 260) max paridade ~ 1.5374e-04
+  d =  -1: Young 3.0242e+00; bloco montado (n < 260) max paridade ~ 1.5853e+00
+  d =  +0: Young 4.7183e+00; bloco montado (n < 260) max paridade ~ 1.3229e+00
+  d =  +1: Young 3.0242e+00; bloco montado (n < 260) max paridade ~ 1.5853e+00
+  d =  +2: Young 1.3812e+00; bloco montado (n < 260) max paridade ~ 3.5196e-01
+  d = +16: Young 6.3387e-04; bloco montado (n < 260) max paridade ~ 1.4428e-04
+  d = +17: Young 3.7097e-04; bloco montado (n < 260) max paridade ~ 1.5374e-04
+  d = +30: Young 2.6920e-07; bloco montado (n < 260) max paridade ~ 5.9714e-08
+  d = +40: Young 1.0346e-09; bloco montado (n < 260) max paridade ~ 2.2818e-10
+  maior razao bloco/Young: 0.5800 (tem de ser <= 1)
+  dB_L(16) = {'arred': 4.5886117543391864e-14, 'resto': 0.002302214203253492, 'rt': 1.1920928955078125e-06, 'total': 0.0023036366368245054};  sum_d k1^|d| Young(d) = 18.0729 (simbolo usado: 3,964043)
+  Young(d) por |d| (maior paridade de sinal): 8:5.2e-02, 12:5.8e-03, 16:6.3e-04, 17:3.7e-04, 18:2.1e-04, 20:6.9e-05, 21:4.0e-05, 24:7.5e-06, 30:2.7e-07, 40:1.0e-09
+(c) erro de RT: cota de Young de dB por unidade da norma de RT (soma dos 4 campos)
+  ||C_j||_2 = 1.5811, 5.0128, 2.2361, 4.0000;  max = 5.0128  (usado: 40)
+  Frobenius: 2.1213, 6.2450, 2.2361, 4.8990
+  => ||dB||_Young <= max_j ||C_j||_2 * ||d omega||_RT (Young e subaditiva; o max sobre a bola l1 de RT e
+     atingido num coeficiente so). RT: ||RefB omega|| <= 2^-25 e a correcao <= 2^-277 (soma dos campos).

@@ -1,0 +1,29 @@
+1. free_tail (m, n, radial=Fraction(9, 8), mu_min=Fraction(1, 6), mu_max=Fraction(17, 100)) -> parametros: ['m', 'n', 'radial', 'mu_min', 'mu_max']
+   free_tail(8, 24, radial=9/8) = 6.120000
+   free_tail(64, 192, radial=9/8) = 0.792746
+   free_tail(256, 1536, radial=65/64) = 0.761719
+2. RefA: m em [0, 40], n em [0, 100]
+   component_majorant (65/64, 5/4): entradas com fourier = 1 <= originais: True; maior razao 0.990445; cota de coluna 19.688344 <= 20.272810
+   sharp_majorant (129/128, 9/8): entradas com fourier = 1 <= originais: True; maior razao 0.996555; cota de coluna 4.552011 <= 4.622369
+   monotonia no peso de Fourier: OK
+3. convolucao em l2 com peso 1.0^|m|: norma 3.753753 <= sum kappa^|k| |b_k| = 5.882685
+3. convolucao em l2 com peso 1.015625^|m|: norma 3.822358 <= sum kappa^|k| |b_k| = 6.045925
+3. convolucao em l2 com peso 1.2^|m|: norma 4.853255 <= sum kappa^|k| |b_k| = 8.583695
+   sum |b_k| = 5.882685
+4. h = exp(-1/sin^2(tau/4))/(2 - xi)  (precisao dupla: so coeficientes acima de ~1e-15 sao usados)
+   |g_m| m =   10: 8.202e-05   m^6 |g_m| = 8.202e+01   -log|g_m|/m^(2/3) = 2.027   -log|g_m|/m = 0.9409
+   |g_m| m =   20: 2.237e-07   m^6 |g_m| = 1.432e+01   -log|g_m|/m^(2/3) = 2.078   -log|g_m|/m = 0.7656
+   |g_m| m =   40: 9.620e-10   m^6 |g_m| = 3.940e+00   -log|g_m|/m^(2/3) = 1.775   -log|g_m|/m = 0.5191
+   |g_m| m =   80: 1.131e-14   m^6 |g_m| = 2.964e-03   -log|g_m|/m^(2/3) = 1.730   -log|g_m|/m = 0.4014
+   |g_m| m =  100: 1.785e-16   m^6 |g_m| = 1.785e-04   -log|g_m|/m^(2/3) = 1.683   -log|g_m|/m = 0.3626
+   -log|g_m|/m^(2/3) ~ 1.68, quase constante, e -log|g_m|/m -> 0: decaimento superpolinomial e NAO geometrico
+   (Gevrey 3/2: o ponto de sela de exp(-16/tau^2 - i m tau/2) da exp(-C m^(2/3))). kappa1^m |g_m| cresce para
+   m > (C/log kappa1)^3:
+      kappa1 = 1.010000: m* ~ 4.84e+06; a serie sum kappa1^m |g_m| diverge. Com kappa1 = 1 converge.
+      kappa1 = 1.015625: m* ~ 1.28e+06; a serie sum kappa1^m |g_m| diverge. Com kappa1 = 1 converge.
+      kappa1 = 1.007812: m* ~ 1.01e+07; a serie sum kappa1^m |g_m| diverge. Com kappa1 = 1 converge.
+   |f_n| n =   5: 7.974e-04   rho^n |f_n| = 0.5774  (rho = 2 + sqrt 3 = 3,732)
+   |f_n| n =  10: 1.101e-06   rho^n |f_n| = 0.5774  (rho = 2 + sqrt 3 = 3,732)
+   |f_n| n =  20: 2.101e-12   rho^n |f_n| = 0.5774  (rho = 2 + sqrt 3 = 3,732)
+   |f_n| n =  28: 5.004e-17   rho^n |f_n| = 0.5174  (rho = 2 + sqrt 3 = 3,732)
+   soma truncada (m <= 100, n <= 28) de |h_mn| k2^n, k2 = 1.5: 0.275242;  com o fator de J |i m/2 + mu(n+1)|: 0.139386

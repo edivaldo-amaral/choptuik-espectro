@@ -1,0 +1,16 @@
+  -0_25: t_p do rig - t_p de tp_*.json (maquina): max 1.0e-06 (>= 0 exigido)
+-0_25      rig em lab   (16 pontos), certF: sha OK, posto 1325, k 1200, rJ 125, qTT cert 0.339548 (fator 0.339548), resto_F antigo 9.217e-05, theta max 0.999100
+  0: t_p do rig - t_p de tp_*.json (maquina): max 0.0e+00 (>= 0 exigido)
+0          rig em lab2  (12 pontos), certF: SEM sha256_F, posto 1325, k 1200, rJ 125, qTT cert 0.339583 (fator 0.339583), resto_F antigo 9.215e-05, theta max 0.999154
+  0_25: t_p do rig - t_p de tp_*.json (maquina): max 0.0e+00 (>= 0 exigido)
+0_25       rig em lab2  (18 pontos), certF: SEM sha256_F, posto 1325, k 1200, rJ 125, qTT cert 0.339548 (fator 0.339548), resto_F antigo 9.214e-05, theta max 0.999158
+0_55p0_25  rig em lab   (15 pontos), certF: sha OK, posto 1325, k 1200, rJ 125, qTT cert 0.287826 (fator 0.287825), resto_F antigo 9.062e-05, theta max 0.957041
+  0_55-0_25: t_p do rig - t_p de tp_*.json (maquina): max 0.0e+00 (>= 0 exigido)
+0_55-0_25  rig em joao  (15 pontos), certF: sha OK, posto 1325, k 1200, rJ 125, qTT cert 0.287826 (fator 0.287825), resto_F antigo 9.062e-05, theta max 0.950100
+1_0        rig em lab   (10 pontos), certF: sha OK, posto 1325, k 1200, rJ 125, qTT cert 0.255771 (fator 0.255771), resto_F antigo 8.933e-05, theta max 0.889500
+1_5        rig em lab   (4 pontos), certF: sha OK, posto 1325, k 1200, rJ 125, qTT cert 0.227477 (fator 0.227476), resto_F antigo 8.789e-05, theta max 0.886056
+2_0        rig em lab   (2 pontos), certF: sha OK, posto 1325, k 1200, rJ 125, qTT cert 0.204744 (fator 0.204743), resto_F antigo 8.645e-05, theta max 0.806709
+2_5        rig em lab   (2 pontos), certF: sha OK, posto 1325, k 1200, rJ 125, qTT cert 0.186092 (fator 0.186092), resto_F antigo 8.504e-05, theta max 0.756919
+3_0        rig em lab   (2 pontos), certF: sha OK, posto 1325, k 1200, rJ 125, qTT cert 0.170692 (fator 0.170521), resto_F antigo 8.367e-05, theta max 0.721362
+raizes de schur.json por maquina: [0.4010247330375902, 0.4010247330374815, 0.4010247330374815]
+nenhuma inconsistencia

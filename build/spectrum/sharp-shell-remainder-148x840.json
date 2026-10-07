@@ -1,0 +1,20 @@
+{
+  "bridge_outer": [
+    148,
+    840
+  ],
+  "remaining_shell_dimension": 184626,
+  "delta_upper": "989223/1000000",
+  "left_factor_upper": "78083637/250000",
+  "right_factor_upper": "2242237/100000",
+  "target_error": "1/1000000000000",
+  "neumann_degree": 3785,
+  "terms": 3786,
+  "propagated_error_upper": "992351/1000000000000000000",
+  "target_verified_exactly": true,
+  "finite_shell_parametrix_constructed": false,
+  "full_sharp_invertibility": false,
+  "physical_certificate": false,
+  "conditional_on_input_block_bounds_and_RT_ball": true,
+  "bridge_sha256": "b6d9d5dc1d53987abb8d3e11ec02620a3d6de016cdcc4eb59ff54fdc1fbe0ce2"
+}

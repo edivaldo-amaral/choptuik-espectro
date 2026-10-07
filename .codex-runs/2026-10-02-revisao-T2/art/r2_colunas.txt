@@ -1,0 +1,16 @@
+colunas n >= 4096, m = 0, passo 1: max soma 0.013041; max soma/cota 0.9992
+colunas n >= 4096, m = 0, passo 2: max soma 0.006606; max soma/cota 1.0000
+colunas n >= 4096, m = 1, passo 1: max soma 0.013041; max soma/cota 0.9992
+colunas n >= 4096, m = 1, passo 2: max soma 0.006606; max soma/cota 1.0000
+colunas n >= 4096, m = 2, passo 1: max soma 0.013041; max soma/cota 0.9992
+colunas n >= 4096, m = 2, passo 2: max soma 0.006606; max soma/cota 1.0000
+colunas n >= 4096, m = 7, passo 1: max soma 0.013040; max soma/cota 0.9992
+colunas n >= 4096, m = 7, passo 2: max soma 0.006606; max soma/cota 1.0000
+colunas n >= 4096, m = 1023, passo 1: max soma 0.008643; max soma/cota 0.7018
+colunas n >= 4096, m = 1023, passo 2: max soma 0.004491; max soma/cota 0.7175
+modo m = 1024, passo 1: max soma de coluna 0.009216  cota 0.009766
+modo m = 1024, passo 2: max soma de coluna 0.004915  cota 0.005428
+modo m = 1025, passo 1: max soma de coluna 0.009207  cota 0.009766
+modo m = 1025, passo 2: max soma de coluna 0.004911  cota 0.005428
+modo m = 3000, passo 1: max soma de coluna 0.002242  cota 0.009766
+modo m = 3000, passo 2: max soma de coluna 0.001348  cota 0.005428

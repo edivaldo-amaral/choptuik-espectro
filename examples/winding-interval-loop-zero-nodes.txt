@@ -1,0 +1,28 @@
+# Regressão do contrato do certificado intervalar de winding.
+# NÃO é um certificado do espectro de Choptuik: são valores de f inventados.
+# As coordenadas 'point' sao o contorno no plano z. Aqui elas sao tao
+# inventadas quanto os valores de f: o que esta regressao exerce e o
+# CONTRATO do certificado (geometria fechada, nao degenerada, coerente
+# com o encadeamento das caixas), nao um contorno espectral.
+#
+# Quadrado [-4,-2] x [-1,1] no semiplano esquerdo, percorrido no sentido
+# anti-horário. Ele cruza o eixo real negativo DUAS vezes, com sinais opostos,
+# e a origem fica fora: winding = 0. É uma regressão mais forte que um laço no
+# semiplano direito, porque exercita os dois sinais e o cancelamento.
+#
+# Consumido por:
+#   scripts/make_winding_certificate.py examples/winding-interval-loop-zero-nodes.txt \
+#     --increments examples/winding-interval-loop-zero-increments.txt
+name loopZero
+target 0
+node-radius 1/10
+edge-radius 1/10
+
+node -4 -1
+point 1 0
+node -2 -1
+point 0 1
+node -2  1
+point -1 0
+node -4  1
+point 0 -1

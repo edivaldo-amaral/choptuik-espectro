@@ -1,0 +1,8 @@
+  deflacao: raiz -0.00000000+4.20e-16i -> -1; ||v_w|| 1.49, ||u_w|| 13.9
+  deflacao: raiz 0.16830708-1.94e-16i -> -1; ||v_w|| 1.67, ||u_w|| 7.7
+  Z = 32x128 (14016): lambda da truncagem nan; ||V_b|| 34.800; rho 8.9e-13  [sem borda]
+   [877s]
+  Z' <- T: a = 0.3655;  T <- Z: b = 0.3487
+   [3805s]
+  ||V_b|| 34.800;  residuo: Z 0.00e+00, T 0.00e+00   [3872s]
+  DADOS-Z 0.365525,0.348697,34.7995,8.91e-13,0,0  (lambda da truncagem nan)

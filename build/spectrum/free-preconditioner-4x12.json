@@ -1,0 +1,18 @@
+{
+  "matrix": "build/spectrum/rt-A-4x12.dat",
+  "dimension": 138,
+  "base": "0",
+  "center": "1",
+  "mu": "90359175/536870912",
+  "fourier_cutoff": 4,
+  "chebyshev_cutoff": 12,
+  "inverse_defect": "492418366102688847707327689656233/938343320984597466562444221297712535961600",
+  "finite_inverse_bound": "74251122635965106611927903460472698752204800/938343320492179100459755373590384846305367",
+  "input_tail_bound": "108/11",
+  "transfer_floor": "2592/11",
+  "transfer_majorant": "45350538779563944523329816516417235984277681176224/938343320492179100459755373590384846305367",
+  "finite_center_accepted": true,
+  "conditional_transfer_inequality": false,
+  "physical_certificate": false,
+  "limitation": "centro real; fundo RefA; erro do fundo exato e contorno nao certificados"
+}

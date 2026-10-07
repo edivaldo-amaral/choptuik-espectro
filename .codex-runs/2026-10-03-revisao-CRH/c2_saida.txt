@@ -1,0 +1,15 @@
+175 entradas lidas; 174 discos validos; descartadas: 1
+   descartada: ('disco_0_75.json', [0.291688, 0.75], 0.0, '11006375561196300887', True)
+2. cobertura do segmento fechado Re s = 0, Im s em [-1/4, 3/4]: SIM; 69 cordas na cadeia gulosa; 76 discos tocam o eixo
+   sobreposicao minima entre cordas consecutivas da cadeia: 1.058e-05
+   corda extrema inferior vai ate -0.265642; superior ate 0.751709
+3. s = 0: contido no interior de 2 discos; melhor folga 0.01796 (p = 0.0+0.004714i, r = 0.022676, theta = 0.99216, build/rouche_L_rig/discos_v2/disco_0.json)
+      p = 0.0+0.004714i  r = 0.022676  |p| = 0.004714  folga = 0.017962  theta = 0.99216  build/rouche_L_rig/discos_v2/disco_0.json
+      p = 0.0-0.017065i  r = 0.022210  |p| = 0.017065  folga = 0.005145  theta = 0.99737  build/rouche_L_rig/discos_v2/disco_0.json
+   discos com ponto-centro p EXATAMENTE em 0: 0  (o "disco_0.json" e o centro de CAUDA c = 0)
+3. s = -i/4: contido no interior de 2 discos; melhor folga 0.01564 (p = 0.0+-0.25i, r = 0.015642, theta = 0.99837, build/rouche_L_rig/discos_v2/disco_-0_25.json)
+3. s = i/4: contido no interior de 4 discos; melhor folga 0.01559 (p = 0.0+0.25i, r = 0.015587, theta = 0.99841, build/rouche_L_rig/discos_v2/disco_0_25.json)
+3. s = i/2: contido no interior de 1 discos; melhor folga 0.00040 (p = 0.0+0.502449i, r = 0.002847, theta = 0.99907, build/faixaB/discos/disco_0_5.json)
+3. s = 3i/4: contido no interior de 2 discos; melhor folga 0.00969 (p = 0.0+0.75i, r = 0.009690, theta = 0.99884, build/faixaB/discos/disco_0_75.json)
+4. |e_ij| <= 1.380e-07; delta = (1.0, 1.1683070790); em Re s >= 0: |fator1| >= 0.999999862, |fator2| >= 0.999999839, |q(s)| >= 0.999999701 > 0: True
+   q(0) ~ 1.0 (com e = 0): o polo de det(I + L^-1 E) em 0 e simples

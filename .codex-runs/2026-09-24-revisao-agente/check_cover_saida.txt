@@ -1,0 +1,3 @@
+154 discos certificados
+celulas resolvidas: 1770; sem cobertura: 0
+COBERTURA COMPLETA

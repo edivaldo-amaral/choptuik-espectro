@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Se usar este trabalho, cite-o como abaixo."
+title: "Espectro da solução de Choptuik: contagem rigorosa dos modos instáveis (T2)"
+authors:
+  - family-names: "Gonçalves"
+    given-names: "Edivaldo Amaral"
+    affiliation: "Instituto Federal de Mato Grosso (IFMT)"
+license: MIT
+date-released: 2026-10-07
+references:
+  - type: article
+    title: "Choptuik's critical spacetime exists"
+    authors:
+      - family-names: "Reiterer"
+        given-names: "Michael"
+      - family-names: "Trubowitz"
+        given-names: "Eugene"
+    journal: "Communications in Mathematical Physics"
+    volume: 368
+    year: 2019
+    identifiers:
+      - type: other
+        value: "arXiv:1203.3766"

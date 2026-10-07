@@ -1,0 +1,21 @@
+<frozen site>:101: RuntimeWarning: Unexpected value in sys.prefix, expected <repo>/.venv, got <repo>/scripts/../.venv
+<frozen site>:101: RuntimeWarning: Unexpected value in sys.exec_prefix, expected <repo>/.venv, got <repo>/scripts/../.venv
+test_chain_needs_derivative_of_constraint (test_root_constraints.RootConstraintTests.test_chain_needs_derivative_of_constraint) ... ok
+test_coordinate_gauge_has_no_polynomial_jordan_extension (test_root_constraints.RootConstraintTests.test_coordinate_gauge_has_no_polynomial_jordan_extension) ... ok
+test_intertwining_nonzero_constraint_map (test_root_constraints.RootConstraintTests.test_intertwining_nonzero_constraint_map) ... ok
+test_division_does_not_invert_arbitrary_residual (test_sharp_propagation.SharpPropagationTests.test_division_does_not_invert_arbitrary_residual) ... ok
+test_exact_zero_background_has_no_correction (test_sharp_propagation.SharpPropagationTests.test_exact_zero_background_has_no_correction) ... ok
+test_expanded_source_operator (test_sharp_propagation.SharpPropagationTests.test_expanded_source_operator) ... ok
+test_explicit_forcing_sign (test_sharp_propagation.SharpPropagationTests.test_explicit_forcing_sign) ... ok
+test_full_floquet_linearized_identity_with_background_defect (test_sharp_propagation.SharpPropagationTests.test_full_floquet_linearized_identity_with_background_defect) ... ok
+test_full_nonlinear_identity_off_shell (test_sharp_propagation.SharpPropagationTests.test_full_nonlinear_identity_off_shell) ... ok
+test_identity_for_additional_rational_backgrounds (test_sharp_propagation.SharpPropagationTests.test_identity_for_additional_rational_backgrounds) ... ok
+test_selected_constraint_reconstruction (test_sharp_propagation.SharpPropagationTests.test_selected_constraint_reconstruction) ... ok
+test_phase_offshell_covariance (test_gauge_action.GaugeActionTests.test_phase_offshell_covariance) ... ok
+test_selected_and_constraint_covariance (test_gauge_action.GaugeActionTests.test_selected_and_constraint_covariance) ... ok
+test_translation_full_offshell_covariance (test_gauge_action.GaugeActionTests.test_translation_full_offshell_covariance) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.491s
+
+OK

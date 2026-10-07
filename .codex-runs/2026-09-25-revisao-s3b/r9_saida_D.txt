@@ -1,0 +1,23 @@
+c_ref = ||Pi_F C(lambda0) h0|| >= 0.17174   (F = 12x48, |h0| = 1.000000)
+c_Z = ||Pi_F C Q0 P_Z|| <= 10.0488
+  c_J[-15..0] <= 0.0000
+  c_J[1..15] <= 0.0000
+  c_J[16..31] <= 0.0000
+  c_J[32..47] <= 0.0000
+  c_J[48..63] <= 0.0000
+  c_J[-31..-16] <= 0.0000
+  c_J[-47..-32] <= 0.0000
+  c_J[-63..-48] <= 0.0000
+c_far <= 2.3e-10
+perdas: Z 2.82e-03, cauda 2.56e-10, far 4.0e-14, lambda 4.21e-04; total 3.245e-03
+||Pi_F C(lambda*) h*|| >= 0.17174 - 3.245e-03 = 0.16849  ->  TESTEMUNHO: o autovetor de L em lambda* VIOLA as constraints
+exit 0
+F True [12, 48]
+c_ref True 0.17173920320637387
+cZ True 10.048800125943956
+cJ True 0.0
+c_far True 2.2671763151994126e-10
+nC1 True 1.5
+perda True 0.0032445286748799215
+folga True 0.16849467453149394
+certificado True True

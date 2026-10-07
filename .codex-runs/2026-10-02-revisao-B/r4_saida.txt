@@ -1,0 +1,17 @@
+T3.parcial (Joao) == T3.joao.json (lab2): True
+T3.json (lab2) == build/faixaB/cauda/T3_0_5.json: True
+janelas: Joao 14, lab2 20, copia antiga do lab2 no Joao 9
+em comum (8): ['80..95', '96..111', '112..127', '128..143', '144..159', '160..175', '176..191', '192..199']
+  80..95      : nV 1.2777768606 / 1.2777768606  TZ 0 / 0  K 0.0367932 / 0.0367932  identicos: True
+  96..111     : nV 1.2279052947 / 1.2279052947  TZ 0 / 0  K 0.0257854 / 0.0257854  identicos: True
+  112..127    : nV 1.1932516881 / 1.1932516881  TZ 0 / 0  K 0.0188355 / 0.0188355  identicos: True
+  128..143    : nV 1.1527658052 / 1.1527658052  TZ 0 / 0  K 0.0130873 / 0.0130873  identicos: True
+  144..159    : nV 1.1152202150 / 1.1152202150  TZ 0 / 0  K 0.00926428 / 0.00926428  identicos: True
+  160..175    : nV 1.0879070409 / 1.0879070409  TZ 0 / 0  K 0.00687068 / 0.00687068  identicos: True
+  176..191    : nV 1.0672300161 / 1.0672300161  TZ 0 / 0  K 0.00510466 / 0.00510466  identicos: True
+  192..199    : nV 1.0540854382 / 1.0540854382  TZ 0 / 0  K 0.0038107 / 0.0038107  identicos: True
+(a) janelas em comum bit a bit iguais: True; maior diferenca relativa 0.00e+00
+(b) T3.json: 26 janelas; sem checkpoint: []; entradas que nao batem com nenhum checkpoint: []
+    origem: -15..0:joao, 1..15:joao, 16..31:joao, 32..47:joao, 48..63:joao, 64..79:joao, 80..95:joao+lab2, 96..111:joao+lab2, 112..127:joao+lab2, 128..143:joao+lab2, 144..159:joao+lab2, 160..175:joao+lab2, 176..191:joao+lab2, 192..199:joao+lab2, -31..-16:lab2, -47..-32:lab2, -63..-48:lab2, -79..-64:lab2, -95..-80:lab2, -111..-96:lab2, -127..-112:lab2, -143..-128:lab2, -159..-144:lab2, -175..-160:lab2, -191..-176:lab2, -199..-192:lab2
+(c) a copia antiga de T3.lab2.json no Joao (9 janelas) e subconjunto identico da do lab2: True
+lam0 [0.0, 0.5], rouche True, eps_fundo_L 4.7e-08, nQZ 7.4805, Qfar 0.1315, eps_mu 4.017e-08

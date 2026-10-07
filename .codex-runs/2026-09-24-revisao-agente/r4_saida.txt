@@ -1,0 +1,39 @@
+== A/B: cota_gram com Gram nao hermitiano; quase singular / topo aglomerado
+   n= 10 quase singular  : cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+   n= 10 topo aglomerado : cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+   n= 10 topo 1e-13      : cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+   n= 50 quase singular  : cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+   n= 50 topo aglomerado : cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+   n= 50 topo 1e-13      : cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+   n=120 quase singular  : cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+   n=120 topo aglomerado : cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+   n=120 topo 1e-13      : cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+   n=250 quase singular  : cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+   n=250 topo aglomerado : cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+   n=250 topo 1e-13      : cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+   n=400 quase singular  : cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+   n=400 topo aglomerado : cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+   n=400 topo 1e-13      : cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+
+== C: falso positivo? primeiro t com t^2 = lam_max (1 - eps); passar de primeira seria ERRO
+   n= 20 espalhado       : eps em 1e-3..0 -> nenhum aceite abaixo da verdade
+   n= 20 topo aglomerado : eps em 1e-3..0 -> nenhum aceite abaixo da verdade
+   n=100 espalhado       : eps em 1e-3..0 -> nenhum aceite abaixo da verdade
+   n=100 topo aglomerado : eps em 1e-3..0 -> nenhum aceite abaixo da verdade
+   n=300 espalhado       : eps em 1e-3..0 -> nenhum aceite abaixo da verdade
+   n=300 topo aglomerado : eps em 1e-3..0 -> nenhum aceite abaixo da verdade
+   42 tentativas, falsos positivos: 0
+
+== D: cota_norma(X), X complexo (verdade: lam_max(X^* X) com X^* X em Arb)
+   60x40 aglomerado     : cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+   200x120 quase singular : cota 1.000000999999  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+   400x300 aglomerado     : cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+   300x400 aglomerado     : cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+   150x150 posto 1 + ruido: cota 1.000001000000  verdade em [1.000000000000, 1.000000000000]  cota/verdade-1 = 1.00e-06  OK
+
+== E: escalas extremas (underflow / grande)
+   escala 1e-280: cota^2/sup = 1.000002  OK
+   escala 1e-150: cota^2/sup = 1.000002  OK
+   escala 1e+140: cota^2/sup = 1.000002  OK
+
+RESUMO R4: nenhuma cota abaixo da verdade rigorosa; max sqrt(inf)/cota = 0.9999990000; 42 tentativas de falso positivo, nenhuma  [115s]

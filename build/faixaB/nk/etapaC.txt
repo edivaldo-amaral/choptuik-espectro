@@ -1,0 +1,5 @@
+pesos 1: T<-T 0.4299, T<-Z' 0.6494, Z'<-T 0.4234, T<-far 0.6776, far<-T 0.0963, beta 0.5184  ->  theta = 0.911526
+pesos sqrt(u/z): T<-T 0.4193, T<-Z' 0.4168, Z'<-T 0.7714, T<-far 0.5770, far<-T 0.1786, beta 0.5184  ->  theta = 0.983739
+PERRON (3 niveis, pesos 1) verificado em racionais: theta = 0.911526
+Z2 = 1.550e+02; Y = 5.962e-06 (Z' 5.96e-06, T 4.09e-06); raio r = 7.807e-05
+NK VERIFICADO: zero unico (y*, lambda*) com ||x* - x0|| <= r; |lambda* - [0.0414194105346554, 0.5]| <= 3.665e-05; DF(x*) invertivel: lambda* algebricamente simples.

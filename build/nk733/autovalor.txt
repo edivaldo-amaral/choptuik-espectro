@@ -1,0 +1,4 @@
+it 0: ||residuo|| 2.95e-11, delta lambda 2.95e-11, lambda 0.7331796596606928-6.649e-17j  [76s]
+it 1: ||residuo|| 1.41e-15, delta lambda 1.95e-16, lambda 0.7331796596606927+1.201e-16j  [211s]
+it 2: ||residuo|| 1.62e-15, delta lambda 2.06e-16, lambda 0.7331796596606924+2.257e-16j  [283s]
+LAMBDA 0.7331796596606924 2.257e-16

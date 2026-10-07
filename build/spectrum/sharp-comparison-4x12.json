@@ -1,0 +1,68 @@
+{
+  "selected": "build/spectrum/rt-A-4x12.dat",
+  "sharp": "build/spectrum/rt-sharp-4x12.dat",
+  "selected_sha256": "1ed91635189fe58e6d605424b32ab4cf5068966d21cf15dfd41bfa46e4d5ec98",
+  "sharp_sha256": "efa8aaa2d5de88e39b06b0ca4f2ff6fb8836d61f2ff094105f180c2b800a0ae5",
+  "selected_dimension": 138,
+  "sharp_dimension": 54,
+  "weights": [
+    "129/128",
+    "9/8"
+  ],
+  "positive_sharp_roots": [
+    [
+      0.39336796918848127,
+      -0.9895503717187054
+    ],
+    [
+      0.39336796918848127,
+      0.9895503717187054
+    ],
+    [
+      0.401299570097626,
+      -0.0
+    ],
+    [
+      0.02163273872502855,
+      -0.48049812885394744
+    ],
+    [
+      0.02163273872502855,
+      0.48049812885394744
+    ]
+  ],
+  "selected_modes": [
+    {
+      "s": 0.23179250432095128,
+      "constraint_ratio": 0.12628504713198907,
+      "nearest_sharp_s": [
+        0.401299570097626,
+        -0.0
+      ],
+      "sharp_distance": 0.16950706577667474,
+      "propagated_relative_residual": 0.9007660919942508
+    },
+    {
+      "s": 0.43869817497342295,
+      "constraint_ratio": 0.17185801287568156,
+      "nearest_sharp_s": [
+        0.401299570097626,
+        -0.0
+      ],
+      "sharp_distance": 0.03739860487579694,
+      "propagated_relative_residual": 0.7340089027121822
+    },
+    {
+      "s": 0.7096266582190907,
+      "constraint_ratio": 0.10669405577486477,
+      "nearest_sharp_s": [
+        0.401299570097626,
+        -0.0
+      ],
+      "sharp_distance": 0.30832708812146464,
+      "propagated_relative_residual": 1.2455350207895117
+    }
+  ],
+  "physical_certificate": false,
+  "limitation": "finite truncation, approximate background, floating point eigenvectors"
+}

@@ -1,0 +1,5 @@
+(a) escala zeta -> zeta + c: delta omega = 0 nas 7: True
+(a) translacao phi -> phi + c: delta omega = 0 nas 7: True
+(b) Christoffel(e^{2c} g) = Christoffel(g): True => Ric(e^{2c} g) = Ric(g) = 2 dphi dphi; Box_{e^{2c}g} = e^{-2c} Box_g
+(c) s = 0: o modo de escala escala como o fundo sob Theta^2 (fator e^{-4K}); o de translacao e invariante.
+(d) ver docstring: Passo 5 do Lema G (GAUGE_GLOBAL.md par. 3) => nao sao de gauge.

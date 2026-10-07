@@ -1,0 +1,5 @@
+(T5) w aleatorio, mu = 0.37: d_tau -> +i m/2, (Z + 1)c_w: ||C_w(mu)(Z+1)w - rhs|| / ||C_w(mu)(Z+1)w|| = 2.24e-16
+(T5) w aleatorio, mu = 0.37: controle d_tau -> -i m/2: ||C_w(mu)(Z+1)w - rhs|| / ||C_w(mu)(Z+1)w|| = 1.46e-02
+(T5) w aleatorio, mu = 0.37: controle (Z + 2)c_w: ||C_w(mu)(Z+1)w - rhs|| / ||C_w(mu)(Z+1)w|| = 4.62e-02
+(T5) c(RefA) (constraints no fundo RefA, sem pesos) = 1.574e-11; ||RefA|| = 5.246e-01
+(T5) ||C_A(mu_A) g_A|| = 4.438e-11 (sem pesos); ||(Z_A + 1)c(RefA)|| = 4.438e-11

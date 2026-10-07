@@ -1,0 +1,24 @@
+== (a) entrada de B_rad(d = 0) de c1 n = 401 para c2 n' = 0
+   B_t[(c2, n'), (c1, 401)] para n' = [0, 2, 78, 400]: [0.336614, -0.336614, -0.336614, 0.537245]
+   (2 mu = 0.336614); pesado por sqrt(omega(n')/omega(401)): [1.0350727544102913e-21, 1.5443416327871096e-21, 1.0112711739705586e-17, 0.4775513250536625]
+
+== (b) termo que falta, medido (truncagem n_c < Nc + 700), e (c) cota fechada
+   caixa pequena  Z <- far : medido 1.675e-03   cota fechada 6.871e-01
+   caixa pequena  T1 <- far: medido 2.304e-03   cota fechada 2.824e+00
+   laboratorio    Z <- far : medido 1.125e-16   cota fechada 1.888e-14
+   laboratorio    T1 <- far: medido 9.993e-13   cota fechada 2.334e-10
+
+== (d) os 154 tiles com o termo somado (racionais exatos, v gravado)
+   154 tiles; pior theta com o termo (x2 de folga): 0.9961146191; falhas: 0
+
+== (2) norma_Bd_young (d != 0) contra a norma verdadeira pesada de B_d (n < 400)
+   d = +2: verdade 4.17139e-01  Young 8.45962e-01  razao 0.4931
+   d = -2: verdade 4.17139e-01  Young 8.45962e-01  razao 0.4931
+   d = +4: verdade 1.17165e-01  Young 2.32654e-01  razao 0.5036
+   d = +8: verdade 9.11547e-03  Young 1.86643e-02  razao 0.4884
+   d = -12: verdade 7.09322e-04  Young 1.50337e-03  razao 0.4718
+   d = +14: verdade 1.97897e-04  Young 4.25777e-04  razao 0.4648
+   d = +20: verdade 4.29881e-06  Young 9.59482e-06  razao 0.4480
+   d = +30: verdade 7.27271e-09  Young 1.69187e-08  razao 0.4299
+   d = +40: verdade 1.23058e-11  Young 2.93954e-11  razao 0.4186
+   d =  0 (com mu R_x): verdade 1.34898  Young 2.55759  (nao usado no certificado atual)

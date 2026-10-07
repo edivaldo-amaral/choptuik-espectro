@@ -1,0 +1,8 @@
+(1) particao REGIOES_B cobre [0,3] x [1/4,3/4]: True [0s]
+(2a) janela -47..-32, c = 1, q = (1.1+0.75j), r = 0.1: d = 0.8566; nQm (T3) = 0.215704, max ||Q0(c) P_m|| (SVD, revisor) = 0.215493; d nQm = 0.1848; cota rho_J = 0.1517 (autor: 0,1517) [5s]
+(2b) janela -15..0, c = 0,5i, q = (0.3+0.5625j), r = 0.0625: d = 0.3689, q_ZJ(s) <= 0.2097, q_JJ(s) <= 0.3154, q_ZJ(c) = 0.1966; cota rho_J = 0.1486 (autor: 0,1486 no pior ponto da regiao 1) [9s]
+(3) janela -47..-32 (dim 11200): LU de I + X(1) pronta [66s]
+    s = (1.1+0.75j): ||(I + X(c))^-1 (X(c) - X(s))|| ~ 0.1105  (d = |s - c| = 0.7566) [99s]
+    s = (0.8+0.75j): ||(I + X(c))^-1 (X(c) - X(s))|| ~ 0.1202  (d = |s - c| = 0.7762) [131s]
+    s = (1.2+0.75j): ||(I + X(c))^-1 (X(c) - X(s))|| ~ 0.1112  (d = |s - c| = 0.7762) [163s]
+fim [163s]

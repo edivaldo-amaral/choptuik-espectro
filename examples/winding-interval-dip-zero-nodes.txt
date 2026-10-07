@@ -1,0 +1,26 @@
+# Regressão do caso "mesmo sinal de Im no semiplano esquerdo".
+# NÃO é um certificado do espectro de Choptuik: são valores de f inventados.
+# As coordenadas 'point' sao o contorno no plano z. Aqui elas sao tao
+# inventadas quanto os valores de f: o que esta regressao exerce e o
+# CONTRATO do certificado (geometria fechada, nao degenerada, coerente
+# com o encadeamento das caixas), nao um contorno espectral.
+#
+# Retângulo [-30,-10] x [-10,10] percorrido no sentido anti-horário, origem
+# fora (todo o contorno tem Re < 0). A aresta 0 mergulha até Im = -13/2 com os
+# DOIS nós em Im > 0. Antes do lema `edgeCrossing_eq_zero_of_sameSignIm` isso
+# devolvia `none` e forçava refinamento; agora classifica como 0, que é o valor
+# demonstrado. A diretiva `edge` liga-se à aresta que COMEÇA no último `node`.
+name dipContour
+target 0
+node-radius 1
+edge-radius 1
+
+node -10  10
+point 1 0
+edge -31 -9 -13/2 11
+node -30  10
+point 0 1
+node -30 -10
+point -1 0
+node -10 -10
+point 0 -1

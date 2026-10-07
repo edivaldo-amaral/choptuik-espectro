@@ -1,0 +1,13 @@
+rig_+0_0000+0_2500i_B.json               c=0.25j  shaA OK  shaF=certF OK  v2  6 pts  tp.json OK  fase1: faltam 0, abaixo 0, |rig - log| max 3.9e-07, rig vs tp.json OK  discos ['disco_0_25.json'] (6 pts, coerentes)
+rig_+0_0000+0_5000i_B.json               c=0.5j  shaA OK  shaF=certF OK  v2  28 pts  tp.json OK  fase1: faltam 0, abaixo 0, |rig - log| max 4.9e-07, rig vs tp.json OK  discos ['disco_0_5.json'] (28 pts, coerentes)
+rig_+0_0000+0_5000i_B4.json              c=0.5j  shaA OK  shaF=certF OK  v2  2 pts  tp.json OK  fase1: faltam 0, abaixo 0, |rig - log| max 3.6e-07, rig vs tp.json OK  discos ['disco_0_5_b.json'] (2 pts, coerentes)
+rig_+0_0000+0_7500i_B.json               c=0.75j  shaA OK  shaF=certF OK  v2  23 pts  tp.json OK  fase1: faltam 0, abaixo 0, |rig - log| max 4.5e-07, rig vs tp.json OK  discos ['disco_0_75.json'] (23 pts, coerentes)
+rig_+0_5500+0_7500i_B.json               c=(0.55+0.75j)  shaA OK  shaF=certF OK  v2  9 pts  tp.json OK  fase1: faltam 0, abaixo 0, |rig - log| max 4.3e-07, rig vs tp.json OK  discos ['disco_0_55p0_75.json'] (9 pts, coerentes)
+rig_+0_5500+0_7500i_B2.json              c=(0.55+0.75j)  shaA OK  shaF=certF OK  v2  2 pts  tp.json OK  fase1: faltam 0, abaixo 0, |rig - log| max 4.7e-07, rig vs tp.json OK  discos ['disco_0_55p0_75_b.json'] (2 pts, coerentes)
+rig_+0_5500+0_7500i_B3.json              c=(0.55+0.75j)  shaA OK  shaF=certF OK  v2  2 pts  tp.json OK  fase1: faltam 0, abaixo 0, |rig - log| max 4.6e-07, rig vs tp.json OK  discos ['disco_0_55p0_75_c.json'] (2 pts, coerentes)
+rig_+2_5000+0_0000i_B.json               c=(2.5+0j)  shaA OK  shaF=certF OK  v2  1 pts  tp.json OK  fase1: faltam 0, abaixo 0, |rig - log| max 3.0e-07, rig vs tp.json OK  discos ['disco_2_5.json'] (1 pts, coerentes)
+rig_+1_0000+0_0000i_Bteste.json          c=(1+0j)  shaA OK  shaF=certF OK  v2  1 pts  tp.json OK  fase1: faltam 0, abaixo 0, |rig - log| max 1.6e-07, rig vs tp.json OK  discos ['disco_1_0.json'] (1 pts, coerentes)
+rig_+1_5000+0_0000i_Bteste.json          c=(1.5+0j)  shaA OK  shaF=certF OK  v2  2 pts  tp.json OK  fase1: faltam 0, abaixo 0, |rig - log| max 3.8e-07, rig vs tp.json OK  discos ['disco_1_5.json'] (2 pts, coerentes)
+rig_+2_0000+0_0000i_Bteste.json          c=(2+0j)  shaA OK  shaF=certF OK  v2  1 pts  tp.json OK  fase1: faltam 0, abaixo 0, |rig - log| max 3.7e-07, rig vs tp.json OK  discos ['disco_2_0.json'] (1 pts, coerentes)
+rig_+3_0000+0_0000i_Bteste.json          c=(3+0j)  shaA OK  shaF=certF OK  v2  2 pts  tp.json OK  fase1: faltam 0, abaixo 0, |rig - log| max 3.4e-07, rig vs tp.json OK  discos ['disco_3_0.json'] (2 pts, coerentes)
+problemas: nenhum

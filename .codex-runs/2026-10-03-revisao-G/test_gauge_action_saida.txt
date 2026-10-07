@@ -1,0 +1,8 @@
+test_phase_offshell_covariance (test_gauge_action.GaugeActionTests.test_phase_offshell_covariance) ... ok
+test_selected_and_constraint_covariance (test_gauge_action.GaugeActionTests.test_selected_and_constraint_covariance) ... ok
+test_translation_full_offshell_covariance (test_gauge_action.GaugeActionTests.test_translation_full_offshell_covariance) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.133s
+
+OK

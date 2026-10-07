@@ -1,0 +1,48 @@
+R9: reproducao de nk_L3_C.py e nk_L3_D.py com --dir numa COPIA de build/s3b/rig (rig_copia/)
+sha256 dos originais (nao alterados):
+798b6934ce3f727286fa8673f261c63cd4e3704d67ab9465871d270b8c219392  build/s3b/rig/Z.json
+a7b9fea998742a17ad7e6eb519cd5a30b4735afdf78dbb79ee01071daa37b969  build/s3b/rig/T3.json
+d113646e695da79ee9a51f14ffd38d1556a24c7cc761ab797889f8606e5c0ccf  build/s3b/rig/h0w.npy
+ac025d5e472262ad08e50fce2edc40d9c8133032181f59b707c66a2ccaa4f2ff  build/s3b/rig/C3.json
+7cd334f9c9414772ddbe0b0d9186b965cfed862efad22174e0a06762c54d674e  build/s3b/rig/D.json
+
+== nk_L3_C.py --dir rig_copia
+pesos 1: T<-T 0.3997, T<-Z' 0.5739, Z'<-T 0.3789, T<-far 0.6398, far<-T 0.0950, beta 0.4951  ->  theta = 0.839826
+pesos sqrt(u/z): T<-T 0.3909, T<-Z' 0.3611, Z'<-T 0.6687, T<-far 0.5264, far<-T 0.1708, beta 0.4951  ->  theta = 0.892776
+PERRON (3 niveis, pesos 1) verificado em racionais: theta = 0.839826
+Z2 = 1.168e+02; Y = 5.440e-05 (Z' 5.44e-05, T 8.31e-06); raio r = 6.194e-04
+NK VERIFICADO: zero unico (y*, lambda*) com ||x* - x0|| <= r; |lambda* - 0.401024733| <= 2.807e-04; DF(x*) invertivel: lambda* algebricamente simples.
+exit 0
+
+== nk_L3_D.py --dir rig_copia
+c_ref = ||Pi_F C(lambda0) h0|| >= 0.17174   (F = 12x48, |h0| = 1.000000)
+c_Z = ||Pi_F C Q0 P_Z|| <= 10.0488
+  c_J[-15..0] <= 0.0000
+  c_J[1..15] <= 0.0000
+  c_J[16..31] <= 0.0000
+  c_J[32..47] <= 0.0000
+  c_J[48..63] <= 0.0000
+  c_J[-31..-16] <= 0.0000
+  c_J[-47..-32] <= 0.0000
+  c_J[-63..-48] <= 0.0000
+c_far <= 2.3e-10
+perdas: Z 2.82e-03, cauda 2.56e-10, far 4.0e-14, lambda 4.21e-04; total 3.245e-03
+||Pi_F C(lambda*) h*|| >= 0.17174 - 3.245e-03 = 0.16849  ->  TESTEMUNHO: o autovetor de L em lambda* VIOLA as constraints
+exit 0
+F True [12, 48]
+c_ref True 0.17173920320637387
+cZ True 10.048800125943956
+cJ True 0.0
+c_far True 2.2671763151994126e-10
+nC1 True 1.5
+perda True 0.0032445286748799215
+folga True 0.16849467453149394
+certificado True True
+
+sha256 dos originais depois das rodadas:
+798b6934ce3f727286fa8673f261c63cd4e3704d67ab9465871d270b8c219392  build/s3b/rig/Z.json
+a7b9fea998742a17ad7e6eb519cd5a30b4735afdf78dbb79ee01071daa37b969  build/s3b/rig/T3.json
+d113646e695da79ee9a51f14ffd38d1556a24c7cc761ab797889f8606e5c0ccf  build/s3b/rig/h0w.npy
+ac025d5e472262ad08e50fce2edc40d9c8133032181f59b707c66a2ccaa4f2ff  build/s3b/rig/C3.json
+7cd334f9c9414772ddbe0b0d9186b965cfed862efad22174e0a06762c54d674e  build/s3b/rig/D.json
+Obs.: build/s3b/rig/C.txt (log antigo) mostra theta 0,839802 e r 6,187e-4; o C3.json (e esta reproducao) dao 0,839826 e 6,194e-4: o C.txt esta desatualizado.

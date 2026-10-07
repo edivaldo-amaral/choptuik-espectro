@@ -1,0 +1,49 @@
+dEZ 3.110e-08  dET 1.295e-06  nE 4.455  nQx 62.381  rt 4.70e-08 arred40 4.59e-14
+c=0.25j p=0.0000+0.1258j r=1.672e-02: sup_disco ||Q0(s) P_far|| <= 0.131698
+c=0.25j p=0.0000+0.2500j r=1.559e-02: sup_disco ||Q0(s) P_far|| <= 0.131667
+c=0.25j p=0.1341+0.2500j r=2.905e-02: sup_disco ||Q0(s) P_far|| <= 0.129685
+c=0j p=0.0000+0.0047j r=2.268e-02: sup_disco ||Q0(s) P_far|| <= 0.131766
+c=0j p=0.0000+0.0882j r=1.773e-02: sup_disco ||Q0(s) P_far|| <= 0.131719
+c=(1+0j) p=0.8201+0.2500j r=8.081e-02: sup_disco ||Q0(s) P_far|| <= 0.119828
+c=(1+0j) p=0.8906-0.2500j r=1.003e-01: sup_disco ||Q0(s) P_far|| <= 0.119100
+   Qf_s do autor 0.133960 -> substituido por 0.131698
+c=0.25j p=0.000000+0.125763j r=1.6721e-02: theta_autor(JSON) 0.999158 | minha remontagem 0.995560 (max dif. relativa das entradas 1.7e-02) | com termos de deflacao faltantes 0.995666 (delta 1.1e-04)
+   M (minha)   = [['0.000474531', '0.555506', '4.10784e-05'], ['0.651032', '0.481462', '0.683342'], ['0.0121983', '0.0975808', '0.522057']]
+   M (autor)   = [['0.000474531', '0.555506', '4.12675e-05'], ['0.651032', '0.481939', '0.695011'], ['0.0121983', '0.0976738', '0.531024']]
+   tau 1070.78 E 0.422025 EF 0.523266 nT: fl 0.481458 CW racional 0.481461
+   qz janela 0: autor (cert) 0.196700, meu (fl) 0.196631
+   qz janela 1: autor (cert) 0.196461, meu (fl) 0.196458
+   Qf_s do autor 0.131748 -> substituido por 0.131667
+c=0.25j p=0.000000+0.250000j r=1.5591e-02: theta_autor(JSON) 0.998521 | minha remontagem 0.998209 (max dif. relativa das entradas 9.9e-04) | com termos de deflacao faltantes 0.998313 (delta 1.0e-04)
+   M (minha)   = [['0.000925246', '0.631223', '8.37538e-05'], ['0.651032', '0.436719', '0.683183'], ['0.0121984', '0.0964404', '0.521934']]
+   M (autor)   = [['0.000925246', '0.631223', '8.37669e-05'], ['0.651032', '0.436934', '0.683598'], ['0.0121984', '0.0965356', '0.522253']]
+   tau 2087.82 E 0.421262 EF 0.616801 nT: fl 0.436716 CW racional 0.436718
+   Qf_s do autor 0.134360 -> substituido por 0.129685
+c=0.25j p=0.134121+0.250000j r=2.9054e-02: theta_autor(JSON) 0.999073 | minha remontagem 0.992016 (max dif. relativa das entradas 3.5e-02) | com termos de deflacao faltantes 0.992124 (delta 1.1e-04)
+   M (minha)   = [['0.000428248', '0.540927', '4.08546e-05'], ['0.651032', '0.489782', '0.67296'], ['0.0121984', '0.0978015', '0.514079']]
+   M (autor)   = [['0.000428248', '0.540927', '4.12074e-05'], ['0.651032', '0.490265', '0.697074'], ['0.0121984', '0.0978923', '0.532609']]
+   tau 966.34 E 0.414355 EF 0.505835 nT: fl 0.489775 CW racional 0.489781
+   Qf_s do autor 0.131954 -> substituido por 0.131766
+c=0j p=0.000000+0.004714j r=2.2676e-02: theta_autor(JSON) 0.992247 | minha remontagem 0.991675 (max dif. relativa das entradas 1.4e-03) | com termos de deflacao faltantes 0.991779 (delta 1.0e-04)
+   M (minha)   = [['0.000930182', '0.573369', '5.61092e-05'], ['0.669443', '0.44455', '0.682791'], ['0.017224', '0.0998052', '0.522324']]
+   M (autor)   = [['0.000930182', '0.573369', '5.61317e-05'], ['0.669443', '0.444962', '0.683763'], ['0.017224', '0.0998763', '0.523073']]
+   tau 1524.78 E 0.416324 EF 0.559736 nT: fl 0.444549 CW racional 0.444549
+   qz janela 0: autor (cert) 0.196786, meu (fl) 0.196647
+   qz janela 1: autor (cert) 0.196551, meu (fl) 0.196546
+   Qf_s do autor 0.133336 -> substituido por 0.131719
+c=0j p=0.000000+0.088203j r=1.7729e-02: theta_autor(JSON) 0.999154 | minha remontagem 0.996365 (max dif. relativa das entradas 1.2e-02) | com termos de deflacao faltantes 0.996471 (delta 1.1e-04)
+   M (minha)   = [['0.000631321', '0.537674', '3.91736e-05'], ['0.669443', '0.474285', '0.68255'], ['0.017224', '0.102275', '0.522139']]
+   M (autor)   = [['0.000631321', '0.537674', '3.93043e-05'], ['0.669443', '0.474759', '0.690882'], ['0.017224', '0.102377', '0.528551']]
+   tau 1034.88 E 0.414756 EF 0.512706 nT: fl 0.474284 CW racional 0.474284
+   Qf_s do autor 0.121697 -> substituido por 0.119828
+c=(1+0j) p=0.820080+0.250000j r=8.0807e-02: theta_autor(JSON) 0.862385 | minha remontagem 0.858872 (max dif. relativa das entradas 1.5e-02) | com termos de deflacao faltantes 0.858969 (delta 9.7e-05)
+   M (minha)   = [['5.19137e-05', '0.432706', '2.80112e-05'], ['0.507339', '0.450347', '0.603644'], ['0.00208264', '0.0961854', '0.475003']]
+   M (autor)   = [['5.19137e-05', '0.432706', '2.80796e-05'], ['0.507339', '0.450794', '0.612999'], ['0.00208264', '0.0962807', '0.482411']]
+   tau 468.46 E 0.344107 EF 0.387331 nT: fl 0.450347 CW racional 0.450347
+   qz janela 0: autor (cert) 0.143741, meu (fl) 0.143740
+   qz janela 1: autor (cert) 0.143659, meu (fl) 0.143659
+   Qf_s do autor 0.121465 -> substituido por 0.119100
+c=(1+0j) p=0.890575-0.250000j r=1.0028e-01: theta_autor(JSON) 0.855099 | minha remontagem 0.850684 (max dif. relativa das entradas 1.9e-02) | com termos de deflacao faltantes 0.850781 (delta 9.7e-05)
+   M (minha)   = [['4.16985e-05', '0.420205', '2.31699e-05'], ['0.507339', '0.446186', '0.599999'], ['0.00208264', '0.0960596', '0.472116']]
+   M (autor)   = [['4.16985e-05', '0.420205', '2.32394e-05'], ['0.507339', '0.446626', '0.611842'], ['0.00208264', '0.0961547', '0.481494']]
+   tau 376.28 E 0.343382 EF 0.378213 nT: fl 0.446186 CW racional 0.446186

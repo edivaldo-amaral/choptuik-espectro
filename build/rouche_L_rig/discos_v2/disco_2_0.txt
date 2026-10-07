@@ -1,0 +1,2 @@
+p = 1.9661+0.2500i: raio 4.995e-01, theta (racional) 0.800166  [Z<-T 0.3668, T<-T 0.4576, T<-Z 0.4330, tau 19.9, pesos 1]
+p = 1.9710-0.2500i: raio 4.995e-01, theta (racional) 0.799309  [Z<-T 0.3650, T<-T 0.4574, T<-Z 0.4330, tau 19.6, pesos 1]

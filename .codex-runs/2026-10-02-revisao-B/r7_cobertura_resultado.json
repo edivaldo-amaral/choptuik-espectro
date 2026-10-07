@@ -1,0 +1,45 @@
+{
+ "coberto": true,
+ "n_discos": 174,
+ "usados": 93,
+ "arestas": [
+  [
+   "inferior Im=1/4",
+   17
+  ],
+  [
+   "direita Re=3",
+   1
+  ],
+  [
+   "superior Im=3/4",
+   30
+  ],
+  [
+   "esquerda Re=0",
+   45
+  ]
+ ],
+ "tmax": 516.5419223062185,
+ "t_epsB": 0.030829546005415914,
+ "arquivos": [
+  "discos/disco_0_25.json",
+  "discos/disco_0_5.json",
+  "discos/disco_0_55p0_75.json",
+  "discos/disco_0_55p0_75_b.json",
+  "discos/disco_0_55p0_75_c.json",
+  "discos/disco_0_5_b.json",
+  "discos/disco_0_75.json",
+  "discos/disco_1_0.json",
+  "discos/disco_1_5.json",
+  "discos/disco_2_0.json",
+  "discos/disco_2_5.json",
+  "discos/disco_3_0.json",
+  "discos_v2/disco_0_25.json",
+  "discos_v2/disco_0_55p0_25.json",
+  "discos_v2/disco_1_0.json",
+  "discos_v2/disco_1_5.json",
+  "discos_v2/disco_2_5.json",
+  "discos_v2/disco_3_0.json"
+ ]
+}

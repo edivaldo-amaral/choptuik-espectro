@@ -1,0 +1,5 @@
+reproduz build/t2/radius_transfer_s3_1.json: True
+t_m = 0.0146484375  t_n = 0.019770563827190626  antigo = 0.03515625  cauda forte = 0.019770563827190626 True
+defeito forte (beta+ + 31/10) * cauda = 0.266546741518184
+cauda fraca = 0.03734439834024896 True  defeito fraco = 0.8546964120087869
+|s| maximo (forte): 40.19824691358025  (fraco): 6.990907189542484

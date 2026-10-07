@@ -1,0 +1,35 @@
+  nivel Z reaproveitado: a 0.3735, b 0.3657, ||V_b|| 20.665, rho 3.2e-14, Y_Z 2.99e-11, r_T 2.53e-06
+    janela 1/25 (modos -199..-184): diagonal 0.1043
+    janela 2/25 (modos -183..-168): diagonal 0.1243
+    janela 3/25 (modos -167..-152): diagonal 0.1476
+    janela 4/25 (modos -151..-136): diagonal 0.1722
+    janela 5/25 (modos -135..-120): diagonal 0.2064
+    janela 6/25 (modos -119..-104): diagonal 0.2403
+    janela 7/25 (modos -103..-88): diagonal 0.2785
+    janela 8/25 (modos -87..-72): diagonal 0.3313
+    janela 9/25 (modos -71..-56): diagonal 0.4093
+    janela 10/25 (modos -55..-40): diagonal 0.5370
+    janela 11/25 (modos -39..-24): diagonal 0.6328
+    janela 12/25 (modos -23..-8): diagonal 0.3840
+    janela 13/25 (modos -7..8): diagonal 0.2265
+    janela 14/25 (modos 9..24): diagonal 0.4005
+    janela 15/25 (modos 25..40): diagonal 0.6343
+    janela 16/25 (modos 41..56): diagonal 0.5240
+    janela 17/25 (modos 57..72): diagonal 0.4019
+    janela 18/25 (modos 73..88): diagonal 0.3264
+    janela 19/25 (modos 89..104): diagonal 0.2751
+    janela 20/25 (modos 105..120): diagonal 0.2377
+    janela 21/25 (modos 121..136): diagonal 0.2030
+    janela 22/25 (modos 137..152): diagonal 0.1696
+    janela 23/25 (modos 153..168): diagonal 0.1455
+    janela 24/25 (modos 169..184): diagonal 0.1226
+    janela 25/25 (modos 185..199): diagonal 0.1030
+  T <- T por janelas (W = 16): 0.9519  (maior bloco 0.6343);  far <- T: 0.0938;  ||Q0 P_T|| 0.306
+   [9642s]
+  ||Q0 P_far|| <= max(radial 0.1249, Fourier 0.1050);  beta = 0.4951
+  N0 (Zb, T, far) =
+[[0.     0.3735 0.    ]
+ [0.3657 0.9519 0.4951]
+ [0.     0.0938 0.4951]]
+  v = [0.3267 1.     0.1448];  theta0 = 1.1431
+  residuo: Z' 2.99e-11, T 2.53e-06;  Y = 2.53e-06;  raio NK ~ Y/(1 - theta0) = inf   [9674s]

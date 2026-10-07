@@ -1,0 +1,22 @@
+mu=1/6 n=0: s_n=1/6 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=1/6 n=1: s_n=0 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=1/6 n=2: s_n=-1/6 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=1/6 n=3: s_n=-1/3 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=1/6 n=4: s_n=-1/2 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=1/6 n=5: s_n=-2/3 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=1/6 n=6: s_n=-5/6 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=17/100 n=0: s_n=17/100 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=17/100 n=1: s_n=0 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=17/100 n=2: s_n=-17/100 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=17/100 n=3: s_n=-17/50 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=17/100 n=4: s_n=-51/100 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=17/100 n=5: s_n=-17/25 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=17/100 n=6: s_n=-17/20 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=90359175/536870912 n=0: s_n=90359175/536870912 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=90359175/536870912 n=1: s_n=0 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=90359175/536870912 n=2: s_n=-90359175/536870912 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=90359175/536870912 n=3: s_n=-90359175/268435456 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=90359175/536870912 n=4: s_n=-271077525/536870912 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=90359175/536870912 n=5: s_n=-90359175/134217728 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+mu=90359175/536870912 n=6: s_n=-451795875/536870912 (= mu(1-n): True); tau ok=True; xi ok=True; multiplicador e^(4 pi s) ok=True
+FALHAS: 0

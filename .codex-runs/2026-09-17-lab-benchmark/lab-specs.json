@@ -1,0 +1,62 @@
+{
+  "data": "2026-09-17",
+  "executado_por": "Claude (sessao interativa), por ssh; o Codex nao foi lancado",
+  "alvo": {
+    "host": "ComputadorHP",
+    "endereco": "<host>",
+    "usuario": "usuario",
+    "os": "Ubuntu 20.04.6 LTS (focal)",
+    "kernel": "5.15.0-139-generic",
+    "cpu": {
+      "modelo": "Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz",
+      "microarquitetura": "Haswell (2013)",
+      "cpus_logicos": 8,
+      "nucleos_fisicos": 4,
+      "threads_por_nucleo": 2,
+      "soquetes": 1,
+      "mhz_min": 800.0,
+      "mhz_max_nominal": 3900.0,
+      "mhz_medido_ocioso": 839,
+      "mhz_medido_sob_carga_total_8_threads": 3692,
+      "l3_cache": "8 MiB",
+      "scaling_driver": "intel_cpufreq (intel_pstate passivo)",
+      "governor": "ondemand (todos os 8)",
+      "energy_performance_preference": "ausente (intel_pstate em modo passivo; nao ha o arquivo)",
+      "clock_estrangulado": false,
+      "nota_clock": "ao contrario do notebook antes de 17/09, o clock NAO esta estrangulado: sobe a 3692 MHz em todos os 8 threads sob carga total, 94.7% do maximo nominal"
+    },
+    "memoria": {"ram_total": "15 GiB", "ram_disponivel_medida": "13 GiB", "swap": "38 GiB"},
+    "disco": {"raiz_livre": "336 GiB", "home_livre": "55 GiB"},
+    "software_encontrado": {
+      "python_sistema": "3.8.10",
+      "numpy_sistema": "1.24.4",
+      "scipy_sistema": "1.10.1",
+      "gmpy2": "ausente (nao e usado pelos dois benchmarks)",
+      "gcc": "9.4.0",
+      "libgmp_dev": "ja instalado (cabecalho em /usr/include/x86_64-linux-gnu/gmp.h)",
+      "rsync": "presente"
+    },
+    "software_instalado_por_esta_tarefa": {
+      "uv": "~/.local/bin/uv (instalacao de usuario, sem root)",
+      "cpython": "3.14.6 via uv, em ~/.local/share/uv/python (sem root, sem PPA, sem tocar no /usr/bin/python3 do sistema)",
+      "venv": "~/Choptuik/.venv com numpy==2.5.3 e scipy==1.18.1, identico ao requirements.txt do projeto",
+      "motivo": "o Python do sistema e 3.8.10; o caminho exato e ~50% Python puro e o 3.8 e 1.27x mais lento que o 3.14 nesse codigo. Sem igualar a pilha, a comparacao mediria software, nao hardware.",
+      "reversivel": "sim: rm -rf ~/.local/bin/uv ~/.local/share/uv ~/Choptuik"
+    }
+  },
+  "referencia": {
+    "host": "notebook local (Manjaro)",
+    "cpu": {
+      "modelo": "Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz",
+      "microarquitetura": "Kaby Lake (2017)",
+      "cpus_logicos": 4,
+      "nucleos_fisicos": 2,
+      "mhz_max": 3100.0,
+      "scaling_driver": "intel_pstate (ativo)",
+      "governor": "performance",
+      "energy_performance_preference": "performance (corrigido em 17/09)"
+    },
+    "memoria": {"ram_total": "7.6 GiB"},
+    "software": {"python": "3.14.6", "numpy": "2.5.3", "scipy": "1.18.1"}
+  }
+}

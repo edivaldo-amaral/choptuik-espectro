@@ -1,0 +1,194 @@
+{
+  "nota": "DIAGNOSTICO; e_TP, e_PT e a_fin vem de medidas existentes, V e parametro",
+  "data": "2026-09-20",
+  "separacao": [
+    42,
+    102
+  ],
+  "e_TP": "1931/100000000",
+  "e_PT": "809/1000000",
+  "a_fin": "57/2500000000",
+  "aspecto": "27/5",
+  "linhas": [
+    {
+      "beta": "23",
+      "beta_nome": "23 (uniforme)",
+      "V": "1",
+      "nucleo": "567x3061",
+      "caixa": "609x3163",
+      "rho": 0.999318,
+      "fator": 46.88
+    },
+    {
+      "beta": "23",
+      "beta_nome": "23 (uniforme)",
+      "V": "2",
+      "nucleo": "703x3796",
+      "caixa": "745x3898",
+      "rho": 0.999374,
+      "fator": 70.68
+    },
+    {
+      "beta": "23",
+      "beta_nome": "23 (uniforme)",
+      "V": "5",
+      "nucleo": "984x5313",
+      "caixa": "1026x5415",
+      "rho": 0.999949,
+      "fator": 135.22
+    },
+    {
+      "beta": "23",
+      "beta_nome": "23 (uniforme)",
+      "V": "10",
+      "nucleo": "1308x7063",
+      "caixa": "1350x7165",
+      "rho": 0.999584,
+      "fator": 235.42
+    },
+    {
+      "beta": "103717/10000",
+      "beta_nome": "10,372 (piso da reponderacao, hoje)",
+      "V": "1",
+      "nucleo": "260x1404",
+      "caixa": "302x1506",
+      "rho": 0.999219,
+      "fator": 11.07
+    },
+    {
+      "beta": "103717/10000",
+      "beta_nome": "10,372 (piso da reponderacao, hoje)",
+      "V": "2",
+      "nucleo": "324x1749",
+      "caixa": "366x1851",
+      "rho": 0.998137,
+      "fator": 16.49
+    },
+    {
+      "beta": "103717/10000",
+      "beta_nome": "10,372 (piso da reponderacao, hoje)",
+      "V": "5",
+      "nucleo": "455x2457",
+      "caixa": "497x2559",
+      "rho": 0.998648,
+      "fator": 30.95
+    },
+    {
+      "beta": "103717/10000",
+      "beta_nome": "10,372 (piso da reponderacao, hoje)",
+      "V": "10",
+      "nucleo": "605x3267",
+      "caixa": "647x3369",
+      "rho": 0.99987,
+      "fator": 53.05
+    },
+    {
+      "beta": "4189/500",
+      "beta_nome": "8,378 (2b completo)",
+      "V": "1",
+      "nucleo": "212x1144",
+      "caixa": "254x1246",
+      "rho": 0.99753,
+      "fator": 7.7
+    },
+    {
+      "beta": "4189/500",
+      "beta_nome": "8,378 (2b completo)",
+      "V": "2",
+      "nucleo": "264x1425",
+      "caixa": "306x1527",
+      "rho": 0.99804,
+      "fator": 11.37
+    },
+    {
+      "beta": "4189/500",
+      "beta_nome": "8,378 (2b completo)",
+      "V": "5",
+      "nucleo": "371x2003",
+      "caixa": "413x2105",
+      "rho": 0.999319,
+      "fator": 21.16
+    },
+    {
+      "beta": "4189/500",
+      "beta_nome": "8,378 (2b completo)",
+      "V": "10",
+      "nucleo": "494x2667",
+      "caixa": "536x2769",
+      "rho": 0.999926,
+      "fator": 36.12
+    },
+    {
+      "beta": "5",
+      "beta_nome": "5,000",
+      "V": "1",
+      "nucleo": "130x702",
+      "caixa": "172x804",
+      "rho": 0.994271,
+      "fator": 3.37
+    },
+    {
+      "beta": "5",
+      "beta_nome": "5,000",
+      "V": "2",
+      "nucleo": "162x874",
+      "caixa": "204x976",
+      "rho": 0.999137,
+      "fator": 4.85
+    },
+    {
+      "beta": "5",
+      "beta_nome": "5,000",
+      "V": "5",
+      "nucleo": "229x1236",
+      "caixa": "271x1338",
+      "rho": 0.999118,
+      "fator": 8.82
+    },
+    {
+      "beta": "5",
+      "beta_nome": "5,000",
+      "V": "10",
+      "nucleo": "306x1652",
+      "caixa": "348x1754",
+      "rho": 0.998546,
+      "fator": 14.86
+    },
+    {
+      "beta": "3",
+      "beta_nome": "3,000",
+      "V": "1",
+      "nucleo": "81x437",
+      "caixa": "123x539",
+      "rho": 0.994198,
+      "fator": 1.61
+    },
+    {
+      "beta": "3",
+      "beta_nome": "3,000",
+      "V": "2",
+      "nucleo": "102x550",
+      "caixa": "144x652",
+      "rho": 0.995285,
+      "fator": 2.29
+    },
+    {
+      "beta": "3",
+      "beta_nome": "3,000",
+      "V": "5",
+      "nucleo": "145x783",
+      "caixa": "187x885",
+      "rho": 0.995488,
+      "fator": 4.03
+    },
+    {
+      "beta": "3",
+      "beta_nome": "3,000",
+      "V": "10",
+      "nucleo": "194x1047",
+      "caixa": "236x1149",
+      "rho": 0.997436,
+      "fator": 6.6
+    }
+  ]
+}

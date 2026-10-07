@@ -1,0 +1,11 @@
+regiao 0 (centro 0.25j, [0.0, 0.3] x [0.15, 0.25]): max rho_J no bordo <= 0.1051 (janela -15..0, s = (0.3+0.2j))  OK  [347s, 9 pontos]
+regiao 1 (centro 0j, [0.0, 0.3] x [-0.15, 0.15]): max rho_J no bordo <= 0.1488 (janela -15..0, s = (0.3+0.1j))  OK  [692s, 18 pontos]
+regiao 2 (centro (-0-0.25j), [0.0, 0.3] x [-0.25, -0.15]): max rho_J no bordo <= 0.1065 (janela -15..0, s = (0.3-0.2j))  OK  [921s, 24 pontos]
+regiao 3 (centro (0.55+0.25j), [0.3, 0.8] x [0.0, 0.25]): max rho_J no bordo <= 0.0755 (janela -47..-32, s = (0.8+0.0625j))  OK  [1461s, 38 pontos]
+regiao 4 (centro (0.55-0.25j), [0.3, 0.8] x [-0.25, 0.0]): max rho_J no bordo <= 0.0754 (janela 32..47, s = (0.8-0.0625j))  OK  [1809s, 47 pontos]
+regiao 5 (centro (1+0j), [0.8, 1.2] x [-0.25, 0.25]): max rho_J no bordo <= 0.0584 (janela -47..-32, s = (1.1-0.25j))  OK  [2269s, 59 pontos]
+regiao 6 (centro (1.5+0j), [1.2, 1.8] x [-0.25, 0.25]): max rho_J no bordo <= 0.0585 (janela -47..-32, s = (1.8-0.125j))  OK  [2617s, 68 pontos]
+regiao 7 (centro (2+0j), [1.8, 2.2] x [-0.25, 0.25]): max rho_J no bordo <= 0.0391 (janela -47..-32, s = (2.1-0.25j))  OK  [2882s, 75 pontos]
+regiao 8 (centro (2.5+0j), [2.2, 2.8] x [-0.25, 0.25]): max rho_J no bordo <= 0.0405 (janela -47..-32, s = (2.8-0.125j))  OK  [3234s, 84 pontos]
+regiao 9 (centro (3+0j), [2.8, 3.0] x [-0.25, 0.25]): max rho_J no bordo <= 0.0280 (janela -47..-32, s = (2.9-0.25j))  OK  [3431s, 89 pontos]
+todas as janelas sem zeros em Omega

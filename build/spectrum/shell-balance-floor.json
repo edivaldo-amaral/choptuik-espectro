@@ -1,0 +1,65 @@
+{
+  "note": "DIAGNOSTICO float; piso de Perron para a norma de coluna",
+  "centers": {
+    "(0.125+0.25j)": {
+      "colnorm_atual": 54.692893945522826,
+      "piso_perron": 9.47974565022654,
+      "collatz_wielandt": {
+        "rho": 9.47974565022654,
+        "cw_lower": 9.479745650226551,
+        "cw_upper": 9.4797456502266,
+        "support": 1388,
+        "dim": 1422
+      },
+      "alvo_k0": 0.6,
+      "razao_piso_alvo": 15.799576083710901,
+      "colnorm_com_peso_exponencial": 1.399182478458483e+41,
+      "ajuste_do_peso_otimo": {
+        "log_a_por_m": -0.38771692462418184,
+        "log_b_por_n": -2.7638628894058646,
+        "r2": 0.07641107542735026
+      },
+      "ganho_maximo_de_repesagem": 5.76944740539698
+    },
+    "1.0": {
+      "colnorm_atual": 58.40634440586621,
+      "piso_perron": 12.272775164813037,
+      "collatz_wielandt": {
+        "rho": 12.272775164813037,
+        "cw_lower": 12.272775164812963,
+        "cw_upper": 12.27277516481317,
+        "support": 1388,
+        "dim": 1422
+      },
+      "alvo_k0": 0.6,
+      "razao_piso_alvo": 20.454625274688397,
+      "colnorm_com_peso_exponencial": 1.971831692621268e+41,
+      "ajuste_do_peso_otimo": {
+        "log_a_por_m": -0.38748386574834903,
+        "log_b_por_n": -2.7737194243899665,
+        "r2": 0.07695378727299185
+      },
+      "ganho_maximo_de_repesagem": 4.759016898909837
+    },
+    "0.733": {
+      "colnorm_atual": 56.81995836920751,
+      "piso_perron": 10.912220291981217,
+      "collatz_wielandt": {
+        "rho": 10.912220291981217,
+        "cw_lower": 10.912220291981189,
+        "cw_upper": 10.912220291981269,
+        "support": 1388,
+        "dim": 1422
+      },
+      "alvo_k0": 0.6,
+      "razao_piso_alvo": 18.187033819968697,
+      "colnorm_com_peso_exponencial": 1.729176297059243e+41,
+      "ajuste_do_peso_otimo": {
+        "log_a_por_m": -0.38630602226399,
+        "log_b_por_n": -2.770224332371591,
+        "r2": 0.07675134309391984
+      },
+      "ganho_maximo_de_repesagem": 5.207002502594393
+    }
+  }
+}

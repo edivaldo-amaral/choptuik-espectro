@@ -1,0 +1,27 @@
+# Regressão do contrato do certificado intervalar de winding.
+# NÃO é um certificado do espectro de Choptuik: são valores de f inventados.
+# As coordenadas 'point' sao o contorno no plano z. Aqui elas sao tao
+# inventadas quanto os valores de f: o que esta regressao exerce e o
+# CONTRATO do certificado (geometria fechada, nao degenerada, coerente
+# com o encadeamento das caixas), nao um contorno espectral.
+#
+# Quadrado de valores de f percorrido no sentido anti-horário em torno de 0.
+# O único cruzamento do eixo real negativo é o lado esquerdo, com Im passando
+# de positivo para negativo, logo winding = +1.
+#
+# Consumido por:
+#   scripts/make_winding_certificate.py examples/winding-interval-square-plus1-nodes.txt \
+#     --increments examples/winding-interval-square-plus1-increments.txt
+name squarePlusOne
+target 1
+node-radius 1/10
+edge-radius 1/10
+
+node  1  1
+point 1 0
+node -1  1
+point 0 1
+node -1 -1
+point -1 0
+node  1 -1
+point 0 -1

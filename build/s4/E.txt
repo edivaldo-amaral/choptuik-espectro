@@ -1,0 +1,5 @@
+g_A: ||P_Z g|| = 2.60435, cauda 6.86e-07; ||g* - g_A|| <= 2.51e-08; ||g_n - h0|| <= 2.83e-07
+||L_A(lambda0) h0|| = 3.709e-06 (arredondamento 6.7e-11); com RT e mu: 3.757e-06; ||B_*|| <= 3.9640
+||y_g - y0|| <= 4.876e-06
+||x_g - x0||_v <= 1.816e-05;  raio NK r = 6.064e-05, unicidade ate (1 - theta)/(2 Z2) = 3.262e-04  (theta + 2 Z2 rho = 0.902443)
+IDENTIFICADO: o autopar do NK e o de gauge; mu* e raiz ALGEBRICAMENTE SIMPLES de L, autoespaco span(g*)

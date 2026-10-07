@@ -1,0 +1,15 @@
+cobertura (Arb): OK; menor sobreposicao angular entre discos vizinhos: 3.940e-07 rad (semi-arco coberto ~ 0.19635, passo 0.39270)
+  caixa F' = 40x200: dim 11700; ponto s = 0.351000+0.000000j (tile 8)
+  max |P_(nao Z) Q0 P_Z| = 0.0e+00 (tem de ser 0: K_livre triangular superior)
+  normas numericas dos blocos de A^-1 (H - A) (Z, T1, T2'):
+ [[3.67125e-06 3.93248e-01 8.31117e-05]
+ [1.78080e-01 4.51807e-01 2.23312e-01]
+ [7.91527e-13 3.65684e-02 2.54744e-01]]
+  cotas N' do JSON (Z, T1, T2, far):
+ [[1.39713e-03 6.15571e-01 4.27030e-04 1.62446e-04]
+ [1.78125e-01 4.89895e-01 2.37618e-01 5.25541e-06]
+ [4.50950e-05 1.07665e-01 6.42572e-01 3.81022e-01]
+ [4.50946e-05 1.52872e-05 3.78039e-02 3.81022e-01]]
+  todas as normas numericas <= N' correspondente: True
+  razao de Perron numerica (sem o far) com o v do tile: 0.7632;  theta' do JSON: 0.8126
+  ||A^-1 (H - A)|| na norma max_i ||x_i||/v_i (so Z, T1, T2'), direto: 0.7632 (cota superior da norma induzida)

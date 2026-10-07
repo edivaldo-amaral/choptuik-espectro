@@ -1,0 +1,11 @@
+NK733-FIM autovalor
+lambda0 0.7331796596606924 (parte imaginaria descartada: 2.257e-16)
+NK733-FIM nkZ
+dados-Z: 0.346385,8.85014,8.37e-15,1.84e-15,2.46e-06
+NK733-FIM nk3
+NK733-FIM etapaA
+NK733-FIM tQ
+NK733-FIM q
+NK733-FIM etapaB-juncao
+NK733-FIM etapaC
+NK733-TUDO

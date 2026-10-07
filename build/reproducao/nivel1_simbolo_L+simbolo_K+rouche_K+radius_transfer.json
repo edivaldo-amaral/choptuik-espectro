@@ -1,0 +1,52 @@
+{
+ "simbolo_L": {
+  "ok": true,
+  "tempo_s": 0,
+  "iguais": {
+   "R_fundo": true,
+   "norma_fundo": true
+  },
+  "R_fundo": 2.949198291318669,
+  "norma_fundo": 3.9641333006483443
+ },
+ "simbolo_K": {
+  "ok": true,
+  "R_fundo": 1.4395790214062592,
+  "norma_fundo": 1.6496703617472475,
+  "nota": "recalculo em Arb: nivel 2"
+ },
+ "rouche_K": {
+  "ok": true,
+  "tiles": 16,
+  "pior_theta": 0.8125577399343802,
+  "certificado": true,
+  "contagem": {
+   "banda": "20,40",
+   "c": 0.401,
+   "rho": 0.05,
+   "dim": 2280,
+   "dK": 2.3231519846307807e-05,
+   "nVb": 5.2152987053934226,
+   "eps_c": 0.00012118318847859052,
+   "beta": 5.13001967060012,
+   "nVbe": 1.7588906202690544,
+   "q": 0.2566221667184846,
+   "K": 12,
+   "resto": 0.0003856973232145676,
+   "esquerda": 0.0003856973253574754,
+   "direita": 0.08790094376622505,
+   "raiz_aprox": "(0.40102473111108405-1.2333469514206693e-17j)",
+   "certificado": true
+  },
+  "nota": "recalculo dos tiles: nivel 2"
+ },
+ "radius_transfer": {
+  "ok": true,
+  "tempo_s": 0,
+  "iguais": {
+   "strong_defect": true,
+   "weak_defect": true,
+   "both_contract": true
+  }
+ }
+}

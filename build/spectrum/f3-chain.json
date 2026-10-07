@@ -1,0 +1,14 @@
+{
+  "kappa1": "65/64",
+  "kappa2": "5/4",
+  "grade": 5760,
+  "resto_F": 0.683718546981,
+  "sup_grade": 1.8501367147037961,
+  "L_theta": 16.564043431105436,
+  "L_phi": 87.55931962236973,
+  "folga_lipschitz": 0.05679048479789245,
+  "sup_bound": 1.9069271995016885,
+  "M_fundo": 2.5906457464826884,
+  "R": 6.781141492965377,
+  "nota": "Resto exato; sup por grade mais Lipschitz, avaliacao em float"
+}

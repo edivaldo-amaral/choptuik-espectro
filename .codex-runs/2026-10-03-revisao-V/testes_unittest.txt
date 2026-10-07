@@ -1,0 +1,13 @@
+test_W_residual_identity_and_linearization_offshell (test_geometric_reconstruction.GeometricReconstructionTests.test_W_residual_identity_and_linearization_offshell) ... ok
+test_closed_form_residuals_without_on_shell_assumption (test_geometric_reconstruction.GeometricReconstructionTests.test_closed_form_residuals_without_on_shell_assumption) ... ok
+test_geometric_residual_combinations_are_invertible (test_geometric_reconstruction.GeometricReconstructionTests.test_geometric_residual_combinations_are_invertible) ... ok
+test_reconstruct_definitions_at_constant_W (test_geometric_reconstruction.GeometricReconstructionTests.test_reconstruct_definitions_at_constant_W) ... ok
+test_reconstruction_of_jets_includes_previous_potential (test_geometric_reconstruction.GeometricReconstructionTests.test_reconstruction_of_jets_includes_previous_potential) ... ok
+test_chain_needs_derivative_of_constraint (test_root_constraints.RootConstraintTests.test_chain_needs_derivative_of_constraint) ... ok
+test_coordinate_gauge_has_no_polynomial_jordan_extension (test_root_constraints.RootConstraintTests.test_coordinate_gauge_has_no_polynomial_jordan_extension) ... ok
+test_intertwining_nonzero_constraint_map (test_root_constraints.RootConstraintTests.test_intertwining_nonzero_constraint_map) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.146s
+
+OK

@@ -1,0 +1,5 @@
+Z = 32x128 (14016); dB_L banda 16: 2.30e-03; sem resto: 4.70e-08; eps_mu 3.6e-08   [0s]
+Q0 em Z: ||Q_ZZ|| <= 1.1842, erro <= 6.1e-10   [2s]
+Mh montada: ||M - Mh|| <= 9.51e-08   [15s]
+tQ: estimativa ||Mh^-1 [Q_ZZ; 0]|| ~ 8.1023 (t_V ||Q_ZZ|| = 10.48)   [59s]
+tQ RIGOROSO: ||Mh^-1 [Q_ZZ; 0]|| <= 8.11045 (Loewner 8.11045); gravado em Z.json   [205s]

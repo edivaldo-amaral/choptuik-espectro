@@ -1,0 +1,8 @@
+# faixa B so com os discos de build/faixaB/discos
+fora, mais perto do bordo: -0.2453+0.5000i (dist 2.453e-01), 0.1683+1.0000i (dist 2.500e-01), 0.4010+1.0000i (dist 2.500e-01), 0.7332+0.0000i (dist 2.500e-01)
+max t(s) no contorno <= 516.542 (disco (PosixPath('build/faixaB/discos/disco_0_75.json'), [0.0, 0.75])); t eps_B <= 3.083e-02  OK
+zeros de A + s em Omega = 1: 0.041419+5.00e-01i
+# faixa A so com discos_v2
+fora, mais perto do bordo: -0.1683+0.0000i (dist 1.683e-01), 0.0414+0.5000i (dist 2.500e-01), 0.0414-0.5000i (dist 2.500e-01), -0.3366+0.0000i (dist 3.366e-01)
+max t(s) no contorno <= 559.151 (disco (PosixPath('build/rouche_L_rig/discos_v2/disco_-0_25.json'), [0.0, -0.25])); t eps_B <= 3.337e-02  OK
+zeros de A + s em Omega = 2: 0.401025-4.41e-12i, 0.733180+8.49e-13i

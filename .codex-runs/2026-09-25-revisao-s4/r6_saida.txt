@@ -1,0 +1,6 @@
+m =  -5: max|J_m(mu + i) - J_(m+2)(mu)| = 0.0e+00;  max_d |B(m+d <- m) - B(m+2+d <- m+2)| = 0.0e+00
+m =  -2: max|J_m(mu + i) - J_(m+2)(mu)| = 0.0e+00;  max_d |B(m+d <- m) - B(m+2+d <- m+2)| = 0.0e+00
+m =   0: max|J_m(mu + i) - J_(m+2)(mu)| = 0.0e+00;  max_d |B(m+d <- m) - B(m+2+d <- m+2)| = 0.0e+00
+m =   3: max|J_m(mu + i) - J_(m+2)(mu)| = 0.0e+00;  max_d |B(m+d <- m) - B(m+2+d <- m+2)| = 0.0e+00
+m =   7: max|J_m(mu + i) - J_(m+2)(mu)| = 0.0e+00;  max_d |B(m+d <- m) - B(m+2+d <- m+2)| = 0.0e+00
+=> sigma(L) invariante por s -> s + i; mu + i j (j inteiro) sao raizes de L com o mesmo autovetor deslocado.

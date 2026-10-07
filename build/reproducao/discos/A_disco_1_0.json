@@ -1,0 +1,10 @@
+{
+ "ok": true,
+ "pontos": 10,
+ "cauda": "build/rouche_L_rig/cauda/T3_1_0.json",
+ "pior_theta": 0.8784638680587468,
+ "max_dtheta": 0.0,
+ "exatos": 10,
+ "tempo_s": 358,
+ "disco": "build/rouche_L_rig/discos_v2/disco_1_0.json"
+}

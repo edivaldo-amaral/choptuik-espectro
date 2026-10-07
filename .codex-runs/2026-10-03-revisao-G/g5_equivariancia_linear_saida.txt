@@ -1,0 +1,4 @@
+OK    delta zeta: [X_f](tau+4pi) = [X_f~](tau) 
+OK    delta W: [X_f](tau+4pi) = [X_f~](tau) 
+OK    delta phi: [X_f](tau+4pi) = [X_f~](tau) 
+TUDO OK

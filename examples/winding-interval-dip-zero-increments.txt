@@ -1,0 +1,8 @@
+# Gerado por scripts/make_winding_certificate.py a partir de
+# examples/winding-interval-dip-zero-nodes.txt. Cada linha é o incremento de uma aresta, calculado a
+# partir do enclosure racional, não fornecido à mão.
+# winding = 0
+0
+1
+0
+-1

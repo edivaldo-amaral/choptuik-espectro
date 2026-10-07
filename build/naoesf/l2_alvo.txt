@@ -1,0 +1,37 @@
+21x32 (n = 2688, 5s), alvo (-0.005+0.147j): perto do alvo, residuo de vinculo:
+   s = -0.0060485 +0.1468013i   kappa*Delta = -0.0760   vinculo 9.3e-01
+   s = -0.0062588 +0.3532998i   kappa*Delta = -0.0787   vinculo 8.2e-01
+   s = -0.1893151 +0.0213106i   kappa*Delta = -2.3790   vinculo 9.2e-01
+   s = -0.2063912 +0.0000000i   kappa*Delta = -2.5936   vinculo 9.7e-01
+   s = -0.1893151 -0.0213106i   kappa*Delta = -2.3790   vinculo 9.2e-01
+   s = +0.2069705 -0.0000000i   kappa*Delta = +2.6009   vinculo 9.7e-01
+   s = -0.0060485 -0.1468013i   kappa*Delta = -0.0760   vinculo 9.3e-01
+   s = -0.3157230 +0.1765302i   kappa*Delta = -3.9675   vinculo 8.2e-01
+25x40 (n = 4000, 18s), alvo (-0.005+0.147j): perto do alvo, residuo de vinculo:
+   s = -0.0047249 +0.1468908i   kappa*Delta = -0.0594   vinculo 8.4e-01
+   s = +0.0187487 -0.0000000i   kappa*Delta = +0.2356   vinculo 1.0e+00
+   s = -0.0046902 +0.3531454i   kappa*Delta = -0.0589   vinculo 6.1e-01
+   s = -0.2149716 +0.0380043i   kappa*Delta = -2.7014   vinculo 8.0e-01
+   s = -0.2149716 -0.0380043i   kappa*Delta = -2.7014   vinculo 8.0e-01
+   s = -0.0047249 -0.1468908i   kappa*Delta = -0.0594   vinculo 8.4e-01
+   s = +0.3238122 +0.0631441i   kappa*Delta = +4.0691   vinculo 9.6e-01
+   s = +0.3333574 +0.1991120i   kappa*Delta = +4.1891   vinculo 9.6e-01
+29x48 (n = 5568, 27s), alvo (-0.005+0.147j): perto do alvo, residuo de vinculo:
+   s = -0.0047172 +0.1474236i   kappa*Delta = -0.0593   vinculo 5.3e-01
+   s = -0.0047284 +0.3525745i   kappa*Delta = -0.0594   vinculo 2.4e-01
+   s = -0.1795256 +0.0000000i   kappa*Delta = -2.2560   vinculo 9.8e-01
+   s = -0.2038765 +0.0317807i   kappa*Delta = -2.5620   vinculo 4.7e-01
+   s = +0.2171791 +0.0510470i   kappa*Delta = +2.7292   vinculo 9.8e-01
+   s = +0.2054211 -0.0000000i   kappa*Delta = +2.5814   vinculo 9.8e-01
+   s = -0.2038765 -0.0317807i   kappa*Delta = -2.5620   vinculo 4.7e-01
+   s = +0.2339545 +0.0000000i   kappa*Delta = +2.9400   vinculo 9.8e-01
+33x56 (n = 7392, 51s), alvo (-0.005+0.147j): perto do alvo, residuo de vinculo:
+   s = -0.0047800 +0.1473416i   kappa*Delta = -0.0601   vinculo 1.8e-01
+   s = -0.0080012 +0.2537844i   kappa*Delta = -0.1005   vinculo 9.8e-01
+   s = +0.1229756 +0.1376945i   kappa*Delta = +1.5454   vinculo 9.8e-01
+   s = +0.0202823 +0.0000000i   kappa*Delta = +0.2549   vinculo 1.0e+00
+   s = +0.1755463 +0.0675673i   kappa*Delta = +2.2060   vinculo 9.8e-01
+   s = -0.0047777 +0.3526579i   kappa*Delta = -0.0600   vinculo 5.5e-02
+   s = -0.2047174 +0.0316636i   kappa*Delta = -2.5726   vinculo 1.1e-01
+   s = +0.1303651 +0.3524448i   kappa*Delta = +1.6382   vinculo 9.7e-01
+FIM

@@ -1,0 +1,7 @@
+paridades do fundo: {'omega1 so n impar': True, 'omega1..3 so m par': True, 'omega4 so m impar': True}
+min W* na malha 800x821: 0.168307 em tau=0.0000, xi=0.0000
+max W* na malha: 0.474205
+min W* em 0 <= xi <= 41/40: 0.168307
+min W* em |xi - 1| < 0.01: 0.428502
+erro de RefA (RT): |dW| <= (41/80)*(1+2)*2^-24 = 9.164214134216308e-08
+W* > 0 na malha: OK (nao rigoroso; a afirmacao rigorosa e (d) de RT)

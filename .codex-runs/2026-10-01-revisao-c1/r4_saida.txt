@@ -1,0 +1,82 @@
+d=0.020 s=0.0200+0.2500j janela -3..0 (central) : verdadeiro 1.254e-01 <= cota 2.400e-01 (razao 0.523); erro rel. da identidade 1.8e-14
+d=0.020 s=0.0200+0.2500j janela 1..3 (central)  : verdadeiro 1.662e-01 <= cota 2.614e-01 (razao 0.636); erro rel. da identidade 1.9e-14
+d=0.020 s=0.0200+0.2500j janela 4..7            : verdadeiro 2.652e-01 <= cota 2.797e-01 (razao 0.948); erro rel. da identidade 2.3e-14
+d=0.020 s=0.0200+0.2500j janela -7..-4          : verdadeiro 4.472e-01 <= cota 4.768e-01 (razao 0.938); erro rel. da identidade 2.3e-14
+d=0.020 s=0.0200+0.2500j janela 8..9            : verdadeiro 4.027e-02 <= cota 4.153e-02 (razao 0.970); erro rel. da identidade 4.6e-14
+d=0.020 s=0.0200+0.2500j janela -9..-8          : verdadeiro 5.650e-02 <= cota 5.851e-02 (razao 0.966); erro rel. da identidade 2.9e-14
+   N[4..7 <- 1..3 (central)]: N(s) 2.7746e+00 <= cota 3.0131e+00  (N(c) 2.8516e+00; razao do incremento -0.476)
+   N[-3..0 (central) <- 1..3 (central)]: N(s) 1.0154e+00 <= cota 1.1220e+00  (N(c) 1.0350e+00; razao do incremento -0.226)
+   N[1..3 (central) <- 4..7]: N(s) 1.5958e+00 <= cota 1.6846e+00  (N(c) 1.6324e+00; razao do incremento -0.702)
+d=0.020 s=0.0100+0.2673j janela -3..0 (central) : verdadeiro 1.269e-01 <= cota 2.416e-01 (razao 0.525); erro rel. da identidade 2.1e-14
+d=0.020 s=0.0100+0.2673j janela 1..3 (central)  : verdadeiro 1.688e-01 <= cota 2.624e-01 (razao 0.643); erro rel. da identidade 2.0e-14
+d=0.020 s=0.0100+0.2673j janela 4..7            : verdadeiro 2.667e-01 <= cota 2.797e-01 (razao 0.954); erro rel. da identidade 2.6e-14
+d=0.020 s=0.0100+0.2673j janela -7..-4          : verdadeiro 4.552e-01 <= cota 4.768e-01 (razao 0.955); erro rel. da identidade 2.3e-14
+d=0.020 s=0.0100+0.2673j janela 8..9            : verdadeiro 4.030e-02 <= cota 4.153e-02 (razao 0.970); erro rel. da identidade 4.3e-14
+d=0.020 s=0.0100+0.2673j janela -9..-8          : verdadeiro 5.722e-02 <= cota 5.851e-02 (razao 0.978); erro rel. da identidade 2.7e-14
+   N[4..7 <- 1..3 (central)]: N(s) 2.8325e+00 <= cota 3.0144e+00  (N(c) 2.8516e+00; razao do incremento -0.117)
+   N[-3..0 (central) <- 1..3 (central)]: N(s) 1.0355e+00 <= cota 1.1231e+00  (N(c) 1.0350e+00; razao do incremento 0.006)
+   N[1..3 (central) <- 4..7]: N(s) 1.5998e+00 <= cota 1.6846e+00  (N(c) 1.6324e+00; razao do incremento -0.626)
+d=0.020 s=0.0100+0.2327j janela -3..0 (central) : verdadeiro 1.276e-01 <= cota 2.416e-01 (razao 0.528); erro rel. da identidade 1.7e-14
+d=0.020 s=0.0100+0.2327j janela 1..3 (central)  : verdadeiro 1.684e-01 <= cota 2.627e-01 (razao 0.641); erro rel. da identidade 1.9e-14
+d=0.020 s=0.0100+0.2327j janela 4..7            : verdadeiro 2.694e-01 <= cota 2.797e-01 (razao 0.963); erro rel. da identidade 2.0e-14
+d=0.020 s=0.0100+0.2327j janela -7..-4          : verdadeiro 4.505e-01 <= cota 4.768e-01 (razao 0.945); erro rel. da identidade 2.3e-14
+d=0.020 s=0.0100+0.2327j janela 8..9            : verdadeiro 4.075e-02 <= cota 4.153e-02 (razao 0.981); erro rel. da identidade 5.0e-14
+d=0.020 s=0.0100+0.2327j janela -9..-8          : verdadeiro 5.659e-02 <= cota 5.851e-02 (razao 0.967); erro rel. da identidade 2.8e-14
+   N[4..7 <- 1..3 (central)]: N(s) 2.7917e+00 <= cota 3.0147e+00  (N(c) 2.8516e+00; razao do incremento -0.367)
+   N[-3..0 (central) <- 1..3 (central)]: N(s) 1.0147e+00 <= cota 1.1234e+00  (N(c) 1.0350e+00; razao do incremento -0.230)
+   N[1..3 (central) <- 4..7]: N(s) 1.6282e+00 <= cota 1.6846e+00  (N(c) 1.6324e+00; razao do incremento -0.082)
+d=0.050 s=0.0500+0.2500j janela -3..0 (central) : verdadeiro 3.006e-01 <= cota 6.207e-01 (razao 0.484); erro rel. da identidade 8.4e-15
+d=0.050 s=0.0500+0.2500j janela 1..3 (central)  : verdadeiro 3.984e-01 <= cota 6.800e-01 (razao 0.586); erro rel. da identidade 6.9e-15
+d=0.050 s=0.0500+0.2500j janela 4..7            : verdadeiro 6.421e-01 <= cota 7.344e-01 (razao 0.874); erro rel. da identidade 7.8e-15
+d=0.050 s=0.0500+0.2500j janela -7..-4          : verdadeiro 1.077e+00 <= cota 1.266e+00 (razao 0.850); erro rel. da identidade 8.4e-15
+d=0.050 s=0.0500+0.2500j janela 8..9            : verdadeiro 9.884e-02 <= cota 1.068e-01 (razao 0.925); erro rel. da identidade 1.5e-14
+d=0.050 s=0.0500+0.2500j janela -9..-8          : verdadeiro 1.382e-01 <= cota 1.510e-01 (razao 0.916); erro rel. da identidade 1.1e-14
+   N[4..7 <- 1..3 (central)]: N(s) 2.6677e+00 <= cota 3.2625e+00  (N(c) 2.8516e+00; razao do incremento -0.447)
+   N[-3..0 (central) <- 1..3 (central)]: N(s) 9.8800e-01 <= cota 1.2497e+00  (N(c) 1.0350e+00; razao do incremento -0.219)
+   N[1..3 (central) <- 4..7]: N(s) 1.5438e+00 <= cota 1.7695e+00  (N(c) 1.6324e+00; razao do incremento -0.647)
+d=0.050 s=0.0250+0.2933j janela -3..0 (central) : verdadeiro 3.089e-01 <= cota 6.291e-01 (razao 0.491); erro rel. da identidade 5.9e-15
+d=0.050 s=0.0250+0.2933j janela 1..3 (central)  : verdadeiro 4.133e-01 <= cota 6.853e-01 (razao 0.603); erro rel. da identidade 6.2e-15
+d=0.050 s=0.0250+0.2933j janela 4..7            : verdadeiro 6.510e-01 <= cota 7.344e-01 (razao 0.886); erro rel. da identidade 9.9e-15
+d=0.050 s=0.0250+0.2933j janela -7..-4          : verdadeiro 1.124e+00 <= cota 1.266e+00 (razao 0.888); erro rel. da identidade 8.5e-15
+d=0.050 s=0.0250+0.2933j janela 8..9            : verdadeiro 9.899e-02 <= cota 1.068e-01 (razao 0.927); erro rel. da identidade 1.4e-14
+d=0.050 s=0.0250+0.2933j janela -9..-8          : verdadeiro 1.426e-01 <= cota 1.510e-01 (razao 0.945); erro rel. da identidade 1.3e-14
+   N[4..7 <- 1..3 (central)]: N(s) 2.8034e+00 <= cota 3.2694e+00  (N(c) 2.8516e+00; razao do incremento -0.115)
+   N[-3..0 (central) <- 1..3 (central)]: N(s) 1.0362e+00 <= cota 1.2560e+00  (N(c) 1.0350e+00; razao do incremento 0.005)
+   N[1..3 (central) <- 4..7]: N(s) 1.5531e+00 <= cota 1.7695e+00  (N(c) 1.6324e+00; razao do incremento -0.579)
+d=0.050 s=0.0250+0.2067j janela -3..0 (central) : verdadeiro 3.132e-01 <= cota 6.291e-01 (razao 0.498); erro rel. da identidade 7.4e-15
+d=0.050 s=0.0250+0.2067j janela 1..3 (central)  : verdadeiro 4.110e-01 <= cota 6.869e-01 (razao 0.598); erro rel. da identidade 8.8e-15
+d=0.050 s=0.0250+0.2067j janela 4..7            : verdadeiro 6.669e-01 <= cota 7.344e-01 (razao 0.908); erro rel. da identidade 1.1e-14
+d=0.050 s=0.0250+0.2067j janela -7..-4          : verdadeiro 1.096e+00 <= cota 1.266e+00 (razao 0.866); erro rel. da identidade 7.3e-15
+d=0.050 s=0.0250+0.2067j janela 8..9            : verdadeiro 1.017e-01 <= cota 1.068e-01 (razao 0.953); erro rel. da identidade 1.1e-14
+d=0.050 s=0.0250+0.2067j janela -9..-8          : verdadeiro 1.388e-01 <= cota 1.510e-01 (razao 0.919); erro rel. da identidade 1.4e-14
+   N[4..7 <- 1..3 (central)]: N(s) 2.7046e+00 <= cota 3.2714e+00  (N(c) 2.8516e+00; razao do incremento -0.350)
+   N[-3..0 (central) <- 1..3 (central)]: N(s) 9.8583e-01 <= cota 1.2578e+00  (N(c) 1.0350e+00; razao do incremento -0.221)
+   N[1..3 (central) <- 4..7]: N(s) 1.6215e+00 <= cota 1.7695e+00  (N(c) 1.6324e+00; razao do incremento -0.080)
+d=0.100 s=0.1000+0.2500j janela -3..0 (central) : verdadeiro 5.621e-01 <= cota 1.336e+00 (razao 0.421); erro rel. da identidade 3.4e-15
+d=0.100 s=0.1000+0.2500j janela 1..3 (central)  : verdadeiro 7.453e-01 <= cota 1.473e+00 (razao 0.506); erro rel. da identidade 3.9e-15
+d=0.100 s=0.1000+0.2500j janela 4..7            : verdadeiro 1.220e+00 <= cota 1.603e+00 (razao 0.761); erro rel. da identidade 4.6e-15
+d=0.100 s=0.1000+0.2500j janela -7..-4          : verdadeiro 2.028e+00 <= cota 2.824e+00 (razao 0.718); erro rel. da identidade 3.8e-15
+d=0.100 s=0.1000+0.2500j janela 8..9            : verdadeiro 1.918e-01 <= cota 2.243e-01 (razao 0.855); erro rel. da identidade 8.4e-15
+d=0.100 s=0.1000+0.2500j janela -9..-8          : verdadeiro 2.669e-01 <= cota 3.190e-01 (razao 0.837); erro rel. da identidade 6.1e-15
+   N[4..7 <- 1..3 (central)]: N(s) 2.5092e+00 <= cota 3.7128e+00  (N(c) 2.8516e+00; razao do incremento -0.398)
+   N[-3..0 (central) <- 1..3 (central)]: N(s) 9.4721e-01 <= cota 1.4643e+00  (N(c) 1.0350e+00; razao do incremento -0.205)
+   N[1..3 (central) <- 4..7]: N(s) 1.4644e+00 <= cota 1.9316e+00  (N(c) 1.6324e+00; razao do incremento -0.562)
+d=0.100 s=0.0500+0.3366j janela -3..0 (central) : verdadeiro 5.906e-01 <= cota 1.363e+00 (razao 0.433); erro rel. da identidade 3.8e-15
+d=0.100 s=0.0500+0.3366j janela 1..3 (central)  : verdadeiro 7.974e-01 <= cota 1.491e+00 (razao 0.535); erro rel. da identidade 3.2e-15
+d=0.100 s=0.0500+0.3366j janela 4..7            : verdadeiro 1.252e+00 <= cota 1.603e+00 (razao 0.781); erro rel. da identidade 3.9e-15
+d=0.100 s=0.0500+0.3366j janela -7..-4          : verdadeiro 2.197e+00 <= cota 2.824e+00 (razao 0.778); erro rel. da identidade 3.7e-15
+d=0.100 s=0.0500+0.3366j janela 8..9            : verdadeiro 1.924e-01 <= cota 2.243e-01 (razao 0.858); erro rel. da identidade 8.8e-15
+d=0.100 s=0.0500+0.3366j janela -9..-8          : verdadeiro 2.835e-01 <= cota 3.190e-01 (razao 0.889); erro rel. da identidade 5.1e-15
+   N[4..7 <- 1..3 (central)]: N(s) 2.7534e+00 <= cota 3.7357e+00  (N(c) 2.8516e+00; razao do incremento -0.111)
+   N[-3..0 (central) <- 1..3 (central)]: N(s) 1.0371e+00 <= cota 1.4851e+00  (N(c) 1.0350e+00; razao do incremento 0.005)
+   N[1..3 (central) <- 4..7]: N(s) 1.4810e+00 <= cota 1.9316e+00  (N(c) 1.6324e+00; razao do incremento -0.506)
+d=0.100 s=0.0500+0.1634j janela -3..0 (central) : verdadeiro 6.068e-01 <= cota 1.363e+00 (razao 0.445); erro rel. da identidade 3.9e-15
+d=0.100 s=0.0500+0.1634j janela 1..3 (central)  : verdadeiro 7.887e-01 <= cota 1.496e+00 (razao 0.527); erro rel. da identidade 3.2e-15
+d=0.100 s=0.0500+0.1634j janela 4..7            : verdadeiro 1.311e+00 <= cota 1.603e+00 (razao 0.818); erro rel. da identidade 4.4e-15
+d=0.100 s=0.0500+0.1634j janela -7..-4          : verdadeiro 2.095e+00 <= cota 2.824e+00 (razao 0.742); erro rel. da identidade 3.7e-15
+d=0.100 s=0.0500+0.1634j janela 8..9            : verdadeiro 2.029e-01 <= cota 2.243e-01 (razao 0.905); erro rel. da identidade 1.0e-14
+d=0.100 s=0.0500+0.1634j janela -9..-8          : verdadeiro 2.691e-01 <= cota 3.190e-01 (razao 0.843); erro rel. da identidade 5.9e-15
+   N[4..7 <- 1..3 (central)]: N(s) 2.5665e+00 <= cota 3.7426e+00  (N(c) 2.8516e+00; razao do incremento -0.320)
+   N[-3..0 (central) <- 1..3 (central)]: N(s) 9.4158e-01 <= cota 1.4914e+00  (N(c) 1.0350e+00; razao do incremento -0.205)
+   N[1..3 (central) <- 4..7]: N(s) 1.6093e+00 <= cota 1.9316e+00  (N(c) 1.6324e+00; razao do incremento -0.077)
+pior razao verdadeiro/cota (diagonal) e incremento/cota (fora): 0.981  ->  OK

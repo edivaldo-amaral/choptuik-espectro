@@ -1,0 +1,14 @@
+OK  D^+1 do jato = h1 + tau h0
+OK  D^-1 do jato = h1 + tau h0
+OK  recorrencia T_s z1 = a(h1) - z0
+OK  d_xi z1 = b(h1)
+OK  compat. ordem 1: T_s b(h1) - d_xi a(h1) + b(h0) = 0
+OK  dOmega3^- - dOmega3^+ do jato = -2 mu xi [(T_s b1 - d_xi a1 + b0) + tau(T_s b0 - d_xi a0)]
+OK  dOmega_1^+ do jato = [dO(h1) + d_s dO(h0)] + tau dO(h0)
+OK  dOmega_2^+ do jato = [dO(h1) + d_s dO(h0)] + tau dO(h0)
+OK  dOmega_2s^+ do jato = [dO(h1) + d_s dO(h0)] + tau dO(h0)
+OK  dOmega_3^+ do jato = [dO(h1) + d_s dO(h0)] + tau dO(h0)
+OK  dOmega_4^+ do jato = [dO(h1) + d_s dO(h0)] + tau dO(h0)
+OK  V5 delta g^{-1} do documento = derivada de g^{-1}
+OK  V5 (Theta^2)^* delta g = e^{4pi s} e^{-4K} delta g (no ponto (x1,0,0), x1 generico)
+TODAS AS VERIFICACOES CONFEREM

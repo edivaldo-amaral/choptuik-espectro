@@ -1,0 +1,22 @@
+== R1a: formula fechada contra np.linalg.inv (e contra signed_operator.Jrad)
+   pior erro relativo (max entrada) formula/inv: 2.46e-15  (passos 1 e 2, n ate 40/81, 15 sigmas)  -> OK
+   max |1 - v_k/d_k| com Re sigma >= 0: 1.000000000000000 (<= 1)
+
+== R1b: cotas da forma fechada contra a norma verdadeira pesada (truncagem 1400)
+   (colunas N <= n < Ntr com linhas completas: J e triangular superior, entao a norma truncada
+    e cota INFERIOR da verdadeira; uma violacao aqui seria real)
+   cauda_Rinv: 336 casos, max verdade/cota = 0.9714
+      s=0.25j, m=198, N=24, passo=1: verdade 0.08473  cota 0.08722  razao 0.9714
+      s=0.25j, m=198, N=80, passo=1: verdade 0.08473  cota 0.08722  razao 0.9714
+      s=0.25j, m=198, N=160, passo=1: verdade 0.08473  cota 0.08722  razao 0.9714
+      s=0.25j, m=198, N=400, passo=1: verdade 0.08473  cota 0.08722  razao 0.9714
+   Rinv_uniforme: 24 casos, max verdade/cota = 0.3932
+      s=0.0, m=-202: verdade 0.08328  cota 0.21180
+      s=0.25j, m=-202: verdade 0.08348  cota 0.21232
+      s=0.0, m=200: verdade 0.08410  cota 0.21392
+   descida(J, Nc): (24,77) verdade 6.83e-04 cota 1.72e-01; (36,77) verdade 2.81e-03 cota 7.42e-01; (65,77) verdade 1.15e-01 cota 2.41e+01; (61,400) verdade 2.51e-19 cota 4.49e-16; (121,400) verdade 2.94e-16 cota 5.64e-13; (160,400) verdade 3.27e-14 cota 5.72e-11; (201,400) verdade 4.13e-12 cota 7.29e-09; (380,400) verdade 1.10e-02 cota 1.10e+01
+
+== R1c: rederivacao independente das cotas (Schur com majorantes da forma fechada)
+   Rinv_uniforme e descida: formulas conferem com a minha derivacao (ver RELATORIO)
+
+RESUMO R1: nenhuma violacao; pior verdade/cota global 0.9714  [623s]

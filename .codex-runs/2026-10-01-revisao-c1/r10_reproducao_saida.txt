@@ -1,0 +1,14 @@
+disco_1_0 reproduzido identico (theta racional e r): False
+--- rouche_L_cobertura.py
+96 discos certificados
+  aresta esquerda Re s = 0: coberta
+  aresta superior Im s = 1/4: coberta
+  aresta direita Re s = 3: coberta
+  aresta inferior Im s = -1/4: coberta
+CONTORNO COBERTO
+--- rouche_L_contagem.py rouche
+max t(s) no contorno <= 560.289 (disco (PosixPath('build/rouche_L_rig/discos/disco_-0_25.json'), [0.0, -0.25])); t eps_B <= 3.344e-02  OK
+zeros de A + s em Omega = 2: 0.401025-4.41e-12i, 0.733180+8.49e-13i
+--- contagem rouche com o eps_B PROPRIO (r8)
+max t(s) no contorno <= 560.289 (disco (PosixPath('build/rouche_L_rig/discos/disco_-0_25.json'), [0.0, -0.25])); t eps_B <= 3.443e-03  OK
+zeros de A + s em Omega = 2: 0.401025-4.41e-12i, 0.733180+8.49e-13i

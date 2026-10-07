@@ -1,0 +1,10 @@
+c=0.25j p=0.0000+0.1258j r=1.672e-02 d=0.141 s=0.0000+0.1258j: max_m ||Q0_m(s)P_far|| (trunc.) = 0.12237 (m=0; em c: 0.12237); Qf_s do autor = 0.13396 (Qf(c) = 0.13148); cauda_Rinv fechada em s = 0.13148
+c=0.25j p=0.0000+0.1258j r=1.672e-02 d=0.141 s=0.0000+0.1425j: max_m ||Q0_m(s)P_far|| (trunc.) = 0.12237 (m=0; em c: 0.12237); Qf_s do autor = 0.13396 (Qf(c) = 0.13148); cauda_Rinv fechada em s = 0.13148
+c=0.25j p=0.0000+0.1258j r=1.672e-02 d=0.141 s=0.0000+0.1091j: max_m ||Q0_m(s)P_far|| (trunc.) = 0.12237 (m=0; em c: 0.12237); Qf_s do autor = 0.13396 (Qf(c) = 0.13148); cauda_Rinv fechada em s = 0.13148
+c=0j p=0.0000+0.0882j r=1.773e-02 d=0.106 s=0.0000+0.0882j: max_m ||Q0_m(s)P_far|| (trunc.) = 0.12237 (m=0; em c: 0.12237); Qf_s do autor = 0.13334 (Qf(c) = 0.13148); cauda_Rinv fechada em s = 0.13148
+c=0j p=0.0000+0.0882j r=1.773e-02 d=0.106 s=0.0000+0.1059j: max_m ||Q0_m(s)P_far|| (trunc.) = 0.12237 (m=0; em c: 0.12237); Qf_s do autor = 0.13334 (Qf(c) = 0.13148); cauda_Rinv fechada em s = 0.13148
+c=0j p=0.0000+0.0882j r=1.773e-02 d=0.106 s=0.0000+0.0705j: max_m ||Q0_m(s)P_far|| (trunc.) = 0.12237 (m=0; em c: 0.12237); Qf_s do autor = 0.13334 (Qf(c) = 0.13148); cauda_Rinv fechada em s = 0.13148
+c=(1+0j) p=1.1754-0.2500j r=2.208e-01 d=0.526 s=1.1754-0.2500j: max_m ||Q0_m(s)P_far|| (trunc.) = 0.10715 (m=0; em c: 0.10918); Qf_s do autor = 0.12377 (Qf(c) = 0.11620); cauda_Rinv fechada em s = 0.11388
+c=(1+0j) p=1.1754-0.2500j r=2.208e-01 d=0.526 s=1.3960-0.2500j: max_m ||Q0_m(s)P_far|| (trunc.) = 0.10471 (m=0; em c: 0.10918); Qf_s do autor = 0.12377 (Qf(c) = 0.11620); cauda_Rinv fechada em s = 0.11108
+c=(1+0j) p=1.1754-0.2500j r=2.208e-01 d=0.526 s=0.9548-0.2500j: max_m ||Q0_m(s)P_far|| (trunc.) = 0.10971 (m=0; em c: 0.10918); Qf_s do autor = 0.12377 (Qf(c) = 0.11620); cauda_Rinv fechada em s = 0.11681
+pior razao verdadeiro/Qf_s = 0.9177

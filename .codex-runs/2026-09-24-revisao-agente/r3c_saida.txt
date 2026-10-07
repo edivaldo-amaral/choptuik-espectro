@@ -1,0 +1,3 @@
+caixa 16x200 (dim 4500): ||P_F B P_F|| = 1.55739  contra NORMA_B = 1.64967
+caixa 40x60 (dim 3510): ||P_F B P_F|| = 1.50887  contra NORMA_B = 1.64967
+caixa 24x120 (dim 4140): ||P_F B P_F|| = 1.54947  contra NORMA_B = 1.64967

@@ -1,0 +1,21 @@
+discos usados: build/faixaB/discos/*.json (faixa B) + build/rouche_L_rig/discos_v2/*.json (faixa A, so a aresta Im = 1/4 pertence a dOmega_B; incluir todos so aumenta o max de t, a favor da seguranca)
+build/faixaB/discos/disco_0_25.json
+build/faixaB/discos/disco_0_55p0_75_b.json
+build/faixaB/discos/disco_0_55p0_75_c.json
+build/faixaB/discos/disco_0_55p0_75.json
+build/faixaB/discos/disco_0_5_b.json
+build/faixaB/discos/disco_0_5.json
+build/faixaB/discos/disco_0_75.json
+build/faixaB/discos/disco_1_0.json
+build/faixaB/discos/disco_1_5.json
+build/faixaB/discos/disco_2_0.json
+build/faixaB/discos/disco_2_5.json
+build/faixaB/discos/disco_3_0.json
+--- so faixa B:
+fora, mais perto do bordo: -0.2453+0.5000i (dist 2.453e-01), 0.1683+1.0000i (dist 2.500e-01), 0.4010+1.0000i (dist 2.500e-01), 0.7332+0.0000i (dist 2.500e-01)
+max t(s) no contorno <= 516.542 (disco (PosixPath('build/faixaB/discos/disco_0_75.json'), [0.0, 0.75])); t eps_B <= 3.083e-02  OK
+zeros de A + s em Omega = 1: 0.041419+5.00e-01i
+--- faixa B + faixa A:
+fora, mais perto do bordo: -0.2453+0.5000i (dist 2.453e-01), 0.1683+1.0000i (dist 2.500e-01), 0.4010+1.0000i (dist 2.500e-01), 0.7332+0.0000i (dist 2.500e-01)
+max t(s) no contorno <= 559.151 (disco (PosixPath('build/rouche_L_rig/discos_v2/disco_-0_25.json'), [0.0, -0.25])); t eps_B <= 3.337e-02  OK
+zeros de A + s em Omega = 1: 0.041419+5.00e-01i

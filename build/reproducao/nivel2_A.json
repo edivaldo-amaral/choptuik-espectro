@@ -1,0 +1,14 @@
+{
+ "sha256_nova": "70791ce0c30f8065f93770c36ff89c1d8290978c5abf84ab0570313bc09fd002",
+ "sha256_ref": "70791ce0c30f8065f93770c36ff89c1d8290978c5abf84ab0570313bc09fd002",
+ "identica": true,
+ "dmax": 0.0,
+ "amax": 34.96985925540503,
+ "parametros": {
+  "Z": "32x128",
+  "F": "200x400",
+  "deflacao": "0,0.16831",
+  "phi": "biortogonal",
+  "vetores": "refA"
+ }
+}

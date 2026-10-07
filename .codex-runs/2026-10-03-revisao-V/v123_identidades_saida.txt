@@ -1,0 +1,47 @@
+OK  I1 logW sigma=+1: True
+OK  I1 logW sigma=-1: True
+OK  I2 logW linearizada sigma=+1: True
+OK  I2b dividida por W (termo -resid*dW/W^2) sigma=+1: True
+OK  I2 logW linearizada sigma=-1: True
+OK  I2b dividida por W (termo -resid*dW/W^2) sigma=-1: True
+OK  I3 compat (i,j)=(3,3): True
+OK  I3 compat (i,j)=(4,4): True
+OK  I3 compat (i,j)=(2,2): True
+OK  I3 controle par errado (i,j)=(4,3) deve ser False: False
+OK  I3 controle par errado (i,j)=(2,4) deve ser False: False
+OK  I3 controle par errado (i,j)=(3,2) deve ser False: False
+OK  I3 controle dOmega1^- - dOmega1^+ independente de a,b (deve ser False: nao e zero): False
+OK  I4 a(D_s z) = T_s z: True
+OK  I4 b(D_s z) = d_xi z: True
+OK  I4 reciproca sigma=+: True
+OK  I4 reciproca sigma=-: True
+OK  I5 P Omega_1^(+1) = -Omega_1^(-1): True
+OK  I5 P Omega_2^(+1) = -Omega_2^(-1): True
+OK  I5 P Omega_2s^(+1) = -Omega_2s^(-1): True
+OK  I5 P Omega_3^(+1) = -Omega_3^(-1): True
+OK  I5 P Omega_4^(+1) = -Omega_4^(-1): True
+OK  I5 lin P dOmega_1^(+1) = -dOmega_1^(-1): True
+OK  I5 lin P dOmega_2^(+1) = -dOmega_2^(-1): True
+OK  I5 lin P dOmega_2s^(+1) = -dOmega_2s^(-1): True
+OK  I5 lin P dOmega_3^(+1) = -dOmega_3^(-1): True
+OK  I5 lin P dOmega_4^(+1) = -dOmega_4^(-1): True
+OK  I5 P Omega_1^(-1) = -Omega_1^(+1): True
+OK  I5 P Omega_2^(-1) = -Omega_2^(+1): True
+OK  I5 P Omega_2s^(-1) = -Omega_2s^(+1): True
+OK  I5 P Omega_3^(-1) = -Omega_3^(+1): True
+OK  I5 P Omega_4^(-1) = -Omega_4^(+1): True
+OK  I5 lin P dOmega_1^(-1) = -dOmega_1^(+1): True
+OK  I5 lin P dOmega_2^(-1) = -dOmega_2^(+1): True
+OK  I5 lin P dOmega_2s^(-1) = -dOmega_2s^(+1): True
+OK  I5 lin P dOmega_3^(-1) = -dOmega_3^(+1): True
+OK  I5 lin P dOmega_4^(-1) = -dOmega_4^(+1): True
+OK  I6 dOmega^+_1 parte par em xi=0 e zero: True
+OK  I6 dOmega^+_2 em xi=0 e zero: True
+OK  I6 dOmega^+_3 em xi=0 e zero: True
+OK  I6 dOmega^+_4 em xi=0 e zero: True
+OK  I6 controle dOmega^+_1 parte impar (derivada em xi=0) em xi=0 nao e identicamente zero (deve ser False): False
+OK  I6 controle dOmega^+_2sharp em xi=0 nao e identicamente zero (deve ser False): False
+OK  I7 C linha 1 livre = mu(xi d_xi + 2) h1: True
+OK  I7 C linha 2 livre = -xi(dt+s+mu)h2 + mu(xi-xi^2)dxi h2 + 2mu(h2-h3): True
+OK  CN I3 com Omega3 alterado (deve ser False): False
+TODAS AS VERIFICACOES CONFEREM

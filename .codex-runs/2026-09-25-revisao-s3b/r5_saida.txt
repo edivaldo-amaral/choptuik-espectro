@@ -1,0 +1,58 @@
+== r5_1..15.txt
+janela 1..15: dim 6936   [5s]
+  ||Hh^-1||: verdadeiro ~ 1.20389   cota T3 1.20728   [17s]
+  ||I - Hh^-1 H_II|| (banda 17..40): ~ 0.000e+00   cota T3 (diagonal) 4.643e-03;  ||resto_II|| ~ nan   [18s]
+  ||Hh_I^-1 P_I B Q0 P_J||, J = -15..0: ~ 0.06722   cota T3 0.07256   [39s]
+  ||Hh_I^-1 P_I B Q0 P_J||, J = 16..31: ~ 0.09412   cota T3 0.09534   [60s]
+Traceback (most recent call last):
+  File "<home>/revisao_s3b/r5_blocos.py", line 181, in <module>
+    main()
+    ~~~~^^
+  File "<home>/revisao_s3b/r5_blocos.py", line 163, in main
+    iJ = nomes.index(J); mJ = janela(J)
+ValueError: list.index(x): x not in list
+== r5_m15..0.txt
+janela -15..0: dim 7616   [5s]
+  ||Hh^-1||: verdadeiro ~ 1.20382   cota T3 1.20777   [21s]
+  ||I - Hh^-1 H_II|| (banda 17..40): ~ 0.000e+00   cota T3 (diagonal) 5.343e-03;  ||resto_II|| ~ nan   [21s]
+  ||Hh_I^-1 P_I B Q0 P_J||, J = -31..-16: ~ 0.09855   cota T3 0.09976   [45s]
+  ||Hh_I^-1 P_I B Q0 P_J||, J = 1..15: ~ 0.07182   cota T3 0.07677   [67s]
+Traceback (most recent call last):
+  File "<home>/revisao_s3b/r5_blocos.py", line 181, in <module>
+    main()
+    ~~~~^^
+  File "<home>/revisao_s3b/r5_blocos.py", line 163, in main
+    iJ = nomes.index(J); mJ = janela(J)
+ValueError: list.index(x): x not in list
+== r5_32..47.txt
+janela 32..47: dim 11200   [8s]
+  ||Hh^-1||: verdadeiro ~ 1.69163   cota T3 1.69180   [50s]
+  ||I - Hh^-1 H_II|| (banda 17..40): ~ 0.000e+00   cota T3 (diagonal) 9.606e-04;  ||resto_II|| ~ nan   [51s]
+  ||Hh_I^-1 P_I B Q0 P_J||, J = 16..31: ~ 0.25080   cota T3 0.25252   [89s]
+  ||Hh_I^-1 P_I B Q0 P_J||, J = 48..63: ~ 0.24858   cota T3 0.24927   [138s]
+  ||Hh_I^-1 P_I B Q0 P_Z||: ~ 0.35968   cota T3 0.36720   [196s]
+== r5_64..79.txt
+janela 64..79: dim 11200   [8s]
+  ||Hh^-1||: verdadeiro ~ 1.33514   cota T3 1.33530   [52s]
+  ||I - Hh^-1 H_II|| (banda 17..40): ~ 0.000e+00   cota T3 (diagonal) 4.064e-04;  ||resto_II|| ~ nan   [53s]
+  ||Hh^-1 P_alto||: ~ 1.27552   cota T3 1.28079   [65s]
+  ||Hh_I^-1 P_I B Q0 P_J||, J = 48..63: ~ 0.19532   cota T3 0.19587   [114s]
+== r5b_32..47.txt
+janela 32..47: dim 11200   [8s]
+  ||Hh^-1||: verdadeiro ~ 1.69163   cota T3 1.69180   [50s]
+  ||I - Hh^-1 H_II|| (banda 17..40): ~ 0.000e+00   cota T3 (diagonal) 9.606e-04;  ||resto_II|| ~ nan   [51s]
+  ||Hh_I^-1 P_I B Q0 P_J||, J = 1..15: ~ 0.00001   cota T3 0.00651   [87s]
+  ||Hh_I^-1 P_I B Q0 P_J||, J = -15..0: ~ 0.00000   cota T3 0.00748   [120s]
+== r5b_m15..0.txt
+janela -15..0: dim 7616   [5s]
+  ||Hh^-1||: verdadeiro ~ 1.20382   cota T3 1.20777   [21s]
+  ||I - Hh^-1 H_II|| (banda 17..40): ~ 0.000e+00   cota T3 (diagonal) 5.343e-03;  ||resto_II|| ~ nan   [22s]
+  ||Hh_I^-1 P_I B Q0 P_Z||: ~ 0.10858   cota T3 0.11393   [63s]
+== r5b_m47..m32.txt
+janela -47..-32: dim 11200   [9s]
+  ||Hh^-1||: verdadeiro ~ 1.69163   cota T3 1.69180   [53s]
+  ||I - Hh^-1 H_II|| (banda 17..40): ~ 0.000e+00   cota T3 (diagonal) 9.606e-04;  ||resto_II|| ~ nan   [53s]
+  ||Hh^-1 P_alto||: ~ 1.17285   cota T3 1.17900   [66s]
+  ||Hh_I^-1 P_I B Q0 P_J||, J = -63..-48: ~ 0.26197   cota T3 0.26266   [115s]
+  ||Hh_I^-1 P_I B Q0 P_Z||: ~ 0.34355   cota T3 0.35106   [174s]
+(rodado no PC do laboratorio em ~/revisao_s3b, OPENBLAS_NUM_THREADS=4; o erro de argparse com '--' so interrompeu as entradas seguintes dessas rodadas, refeitas em r5b_*)

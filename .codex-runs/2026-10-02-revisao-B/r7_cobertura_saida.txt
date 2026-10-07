@@ -1,0 +1,8 @@
+174 discos (ok, r > 0) em 22 arquivos
+  aresta inferior Im=1/4: coberta por uma cadeia de 17 discos (cantos incluidos)
+  aresta direita Re=3: coberta por uma cadeia de 1 discos (cantos incluidos)
+  aresta superior Im=3/4: coberta por uma cadeia de 30 discos (cantos incluidos)
+  aresta esquerda Re=0: coberta por uma cadeia de 45 discos (cantos incluidos)
+CONTORNO COBERTO (verificador do revisor)
+max t(s) nos 93 discos da cadeia <= 516.542 (discos/disco_0_75.json, p = 0.0+0.75i); t eps_B <= 3.0830e-02 < 1: True
+arquivos usados: ['discos/disco_0_25.json', 'discos/disco_0_5.json', 'discos/disco_0_55p0_75.json', 'discos/disco_0_55p0_75_b.json', 'discos/disco_0_55p0_75_c.json', 'discos/disco_0_5_b.json', 'discos/disco_0_75.json', 'discos/disco_1_0.json', 'discos/disco_1_5.json', 'discos/disco_2_0.json', 'discos/disco_2_5.json', 'discos/disco_3_0.json', 'discos_v2/disco_0_25.json', 'discos_v2/disco_0_55p0_25.json', 'discos_v2/disco_1_0.json', 'discos_v2/disco_1_5.json', 'discos_v2/disco_2_5.json', 'discos_v2/disco_3_0.json']

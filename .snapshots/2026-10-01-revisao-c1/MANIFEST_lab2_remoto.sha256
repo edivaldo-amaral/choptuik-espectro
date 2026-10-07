@@ -1,0 +1,48 @@
+70791ce0c30f8065f93770c36ff89c1d8290978c5abf84ab0570313bc09fd002  rouche_L/A.npy
+875c67361369e875af80c8912f69a88927acc8face7a073d420be4fd69f83fb6  rouche_L/T.npy
+a962b23cb47db2f932fadc9e7f2d3624ed057012fcf29d647109131f5d59ac21  rouche_L/U.npy
+d86df4108be5699f7740adae7c8cf0e63688840a713d8fc5281c4c0aa2731ad5  rouche_L/defl.npy
+75f8bc16c9b2b72b63e47759c5c39863029515f271414694027e2a23ae4dc5b9  rouche_L/F_+0_0000+0_0000i.npy
+4c7a7517cb4c15e5b45062632a6654438c68ae6d7844b0e56f21d0d64ac3c8a8  rouche_L/F_+0_0000+0_2500i.npy
+03a0b6a53b1011f9bf5ed648ecc8f1fbe9c0e5a16a073528f8550aa7680fff3d  rouche_L/F_+0_0000-0_2500i.npy
+83085b94c1f9b061487e3d1b572be0d0ee609a95d6a35f2318a955fcec11c0ed  rouche_L/F_+0_5500+0_2500i.npy
+b0f0e04671f8c8830401166e46be656f8509f768a74daa0f09f0294aa6634a2a  rouche_L/F_+0_5500-0_2500i.npy
+e35473e3ce9022e842a0e57a59981c73f83053d6b5108ce2b84e8acdf5ae68a2  rouche_L/F_+1_0000+0_0000i.npy
+db33f003ae88486d3edbb7c07de59f7b2d2531b2dde95faff75bea86e1d1a0f8  rouche_L/F_+1_5000+0_0000i.npy
+f26d367563df96cdfec1365b0e8e580add294795567286a834e4e2d40ff83708  rouche_L/F_+2_0000+0_0000i.npy
+c2b83826f7c858e03518f6fd6b24eaa8ca95e08a9909c9540068eb5f7d799a74  rouche_L/F_+2_5000+0_0000i.npy
+5161b8fa2f054398bdbb19fcca144fa2fa7435323642222d43ff4b040004ca03  rouche_L/F_+3_0000+0_0000i.npy
+75716f46318539462cbaa5e14084478e75432d68b7f32541d2e11a48036ea901  certF_extra/F_+0_5500+0_2500i.npy
+666eee373c74da4dfe03f8bfe9c0597d4031ea0966b6a5b946175d67c3825f03  certF_extra/F_+1_0000+0_0000i.npy
+e0eca8a55d64cce86f57118ab26e3f534e7a0b006b690836deb80859be6f3231  certF_extra/F_+1_5000+0_0000i.npy
+a20febe1500d6c75100a6f90417716f41ca68e28a8aab12da342e7cb153c99bf  certF_extra/F_+2_0000+0_0000i.npy
+3fd05c4c485eb34b5ae43e9ef1e322615e2b510d9897e8139e0399f49d81a918  certF_extra/F_+2_5000+0_0000i.npy
+21c8ef91dbd036ea3e6727ca7e2e112b6988932d697337273ead73ad99e86fc2  certF_extra/F_+3_0000+0_0000i.npy
+-rw-r--r-- 1 usuario usuario  194 Sep 30 14:54 rouche_L/F_+0_0000+0_0000i.json
+-rw-r--r-- 1 usuario usuario  195 Sep 30 15:03 rouche_L/F_+0_0000+0_2500i.json
+-rw-r--r-- 1 usuario usuario  196 Sep 30 15:12 rouche_L/F_+0_0000-0_2500i.json
+-rw-r--r-- 1 usuario usuario  129 Sep 26 13:23 rouche_L/F_+0_5500+0_2500i.json
+-rw-r--r-- 1 usuario usuario  131 Sep 26 13:38 rouche_L/F_+0_5500-0_2500i.json
+-rw-r--r-- 1 usuario usuario  128 Sep 26 13:45 rouche_L/F_+1_0000+0_0000i.json
+-rw-r--r-- 1 usuario usuario  129 Sep 26 13:53 rouche_L/F_+1_5000+0_0000i.json
+-rw-r--r-- 1 usuario usuario  128 Sep 26 14:00 rouche_L/F_+2_0000+0_0000i.json
+-rw-r--r-- 1 usuario usuario  128 Sep 26 14:07 rouche_L/F_+2_5000+0_0000i.json
+-rw-r--r-- 1 usuario usuario  128 Sep 26 14:15 rouche_L/F_+3_0000+0_0000i.json
+-rw-r--r-- 1 usuario usuario  655 Sep 30 22:43 rouche_L/certF_+0_0000-0_2500i.json
+-rw-r--r-- 1 usuario usuario 1230 Sep 30 22:33 rouche_L/contagem.json
+-rw-r--r-- 1 usuario usuario   31 Sep 30 15:17 rouche_L/globais.json
+-rw-r--r-- 1 usuario usuario 1388 Sep 26 17:19 rouche_L/pontos_+0_0000+0_0000i.json
+-rw-r--r-- 1 usuario usuario 1384 Sep 26 17:44 rouche_L/pontos_+0_0000+0_2500i.json
+-rw-r--r-- 1 usuario usuario 1535 Sep 26 19:51 rouche_L/pontos_+0_0000-0_2500i.json
+-rw-r--r-- 1 usuario usuario  721 Sep 26 21:39 rouche_L/pontos_+0_5500+0_2500i.json
+-rw-r--r-- 1 usuario usuario  725 Sep 26 23:28 rouche_L/pontos_+0_5500-0_2500i.json
+-rw-r--r-- 1 usuario usuario  851 Sep 27 01:23 rouche_L/pontos_+1_0000+0_0000i.json
+-rw-r--r-- 1 usuario usuario  853 Sep 27 03:18 rouche_L/pontos_+1_5000+0_0000i.json
+-rw-r--r-- 1 usuario usuario  853 Sep 27 05:09 rouche_L/pontos_+2_0000+0_0000i.json
+-rw-r--r-- 1 usuario usuario  856 Sep 27 07:30 rouche_L/pontos_+2_5000+0_0000i.json
+-rw-r--r-- 1 usuario usuario  992 Sep 27 09:38 rouche_L/pontos_+3_0000+0_0000i.json
+-rw-r--r-- 1 usuario usuario 5776 Sep 30 20:44 rouche_L/rig_+0_0000+0_0000i_rig.json
+-rw-r--r-- 1 usuario usuario 8814 Sep 30 22:26 rouche_L/rig_+0_0000+0_2500i_rig.json
+-rw-r--r-- 1 usuario usuario  660 Sep 26 14:40 rouche_L/schur.json
+-rw-r--r-- 1 usuario usuario  541 Sep 30 20:21 rouche_L/tp_+0_0000+0_0000i_rig.json
+-rw-r--r-- 1 usuario usuario  960 Sep 30 21:52 rouche_L/tp_+0_0000+0_2500i_rig.json

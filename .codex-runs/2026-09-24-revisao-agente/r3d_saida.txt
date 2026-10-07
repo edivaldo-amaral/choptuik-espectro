@@ -1,0 +1,3 @@
+s2 = (0.1+0.1j): ||P_far B Q0 P_T2|| = 1.013131e-01   cota alfa_f2 = 5.165570e-01   razao 0.1961   [58s]
+s2 = 0.25j: ||P_far B Q0 P_T2|| = 1.044974e-01   cota alfa_f2 = 5.661815e-01   razao 0.1846   [117s]
+s2 = (1.125+0.125j): ||P_far B Q0 P_T2|| = 8.404516e-02   cota alfa_f2 = 3.114965e-01   razao 0.2698   [173s]

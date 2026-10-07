@@ -1,0 +1,5 @@
+12x36 (com sinal), dim 1422: ||B_L|| truncada = 3.69352   (F3: <= 3,9641)
+24x72 (com sinal), dim 5868: ||B_L|| truncada = 3.82078   (F3: <= 3,9641)
+40x120 (com sinal), dim 16500: ||B_L|| truncada = 3.85010   (F3: <= 3,9641)
+60x180 (com sinal), dim 37350: ||B_L|| truncada = 3.85933   (F3: <= 3,9641)
+80x240 (com sinal), dim 66600: ||B_L|| truncada = 3.86255   (F3: <= 3,9641)

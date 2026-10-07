@@ -1,0 +1,6 @@
+p = 0.0000-0.2500i: raio 1.564e-02, theta (racional) 0.998373  [Z<-T 0.6269, T<-T 0.4388, T<-Z 0.6517, tau 2162.7, pesos 1]
+p = 0.0000-0.2331i: raio 1.592e-02, theta (racional) 0.998043  [Z<-T 0.6171, T<-T 0.4446, T<-Z 0.6517, tau 2026.4, pesos 1]
+p = 0.0000-0.2161i: raio 1.609e-02, theta (racional) 0.997798  [Z<-T 0.6067, T<-T 0.4505, T<-Z 0.6517, tau 1887.0, pesos 1]
+p = 0.0000-0.1983i: raio 1.654e-02, theta (racional) 0.997421  [Z<-T 0.5951, T<-T 0.4572, T<-Z 0.6517, tau 1733.4, pesos 1]
+p = 0.0000-0.1794i: raio 1.658e-02, theta (racional) 0.997068  [Z<-T 0.5826, T<-T 0.4643, T<-Z 0.6517, tau 1572.1, pesos 1]
+p = 0.0000-0.1606i: raio 1.657e-02, theta (racional) 0.996657  [Z<-T 0.5697, T<-T 0.4716, T<-Z 0.6517, tau 1408.1, pesos 1]

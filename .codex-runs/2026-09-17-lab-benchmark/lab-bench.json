@@ -1,0 +1,72 @@
+{
+  "data": "2026-09-17",
+  "executado_por": "Claude (sessao interativa), por ssh; o Codex nao foi lancado",
+  "pilha_igualada": "Python 3.14.6, numpy 2.5.3, scipy 1.18.1 nas DUAS maquinas (venv criado no laboratorio com uv, sem root)",
+  "unidades": "segundos de relogio; 'aplicacao' = uma aplicacao matriz-livre completa de B (18 convolucoes FFT); 'linha' = uma linha n da R1 do setor A com M=160, m_lo=107, depth 61",
+
+  "float_1_nucleo_melhor_de_5": {
+    "notebook_i5_7200U": {"24x72": 0.06155974, "64x200": 0.197035072, "107x384": 0.454150802},
+    "lab_i7_4770":       {"24x72": 0.05089766, "64x200": 0.13835466,  "107x384": 0.303173056},
+    "ganho_lab_sobre_notebook": {"24x72": 1.2095, "64x200": 1.4241, "107x384": 1.4980},
+    "ganho_mediano": 1.4241
+  },
+
+  "float_escalonamento_por_processos_vazao_aplicacoes_por_s": {
+    "notebook_2_nucleos_fisicos": {"1": 5.010006, "2": 8.438395, "4": 10.548299},
+    "notebook_fator":             {"1": 1.0, "2": 1.684, "4": 2.105},
+    "lab_4_nucleos_fisicos":      {"1": 7.230319, "2": 13.027689, "4": 20.084839, "8": 21.290874},
+    "lab_fator":                  {"1": 1.0, "2": 1.802, "4": 2.778, "8": 2.945},
+    "nota": "o 8 do laboratorio e hyperthreading: acrescenta so 6% sobre 4 processos. O teto real da maquina e 2,94 nucleos efetivos de 4 fisicos (74% de eficiencia)."
+  },
+
+  "exato_nucleo_C_12_linhas_1_worker_depth61": {
+    "notebook_segundos": [14.617240, 14.444484, 14.435553],
+    "lab_segundos": [10.419690, 10.386545, 10.253740],
+    "melhor_notebook": 14.435553,
+    "melhor_lab": 10.253740,
+    "normalizado_depth60_notebook": 14.1989,
+    "normalizado_depth60_lab": 10.0856,
+    "ganho_por_nucleo": 1.4078,
+    "referencia_documentada_notebook_depth60": 17.5,
+    "nota_referencia": "a medida de hoje no notebook (14,2 s normalizados) e 1,23x mais rapida que os 17,5 s registrados na §7; a comparacao usada aqui e a par, as duas maquinas medidas hoje com a mesma pilha"
+  },
+
+  "exato_escalonamento_OMP_workers_32_linhas_lab": {
+    "segundos": {"1": 25.117439, "2": 16.786943, "4": 12.875793, "8": 12.905398},
+    "fator": {"1": 1.0, "2": 1.496, "4": 1.951, "8": 1.946},
+    "nota": "--workers vira OMP_NUM_THREADS de UMA chamada do nucleo C; o laco sobre blocos de linhas e serial em Python. Amdahl: parte serial ~35% do tempo de 1 thread, teto ~2,85x."
+  },
+
+  "exato_escalonamento_por_processos_sharding_de_linhas": {
+    "lab_32_linhas_segundos": {"1": 25.133832, "2": 13.607130, "4": 8.547273, "8": 9.222395},
+    "lab_32_linhas_fator": {"1": 1.0, "2": 1.847, "4": 2.941, "8": 2.725},
+    "lab_64_linhas_4_processos_segundos": 15.479596,
+    "notebook_16_linhas_segundos": {"1": 19.022273, "2": 12.054312, "4": 11.332659},
+    "notebook_16_linhas_fator": {"1": 1.0, "2": 1.578, "4": 1.679},
+    "vazao_linhas_por_s": {"lab_32_4proc": 3.7439, "lab_64_4proc": 4.1345, "notebook_16_4proc": 1.4118},
+    "vazao_lab_sobre_notebook": {"conservador_32_vs_16": 2.652, "com_partida_amortizada_64_vs_16": 2.928},
+    "nota": "dividir as linhas entre processos independentes (1 thread cada) rende 2,94x; --workers rende 1,95x. E esta a forma certa de usar os nucleos do laboratorio."
+  },
+
+  "memoria": {
+    "exato_4_processos_pico_total_KB": 239020,
+    "exato_por_processo_MB": 58.3,
+    "float_pico_por_processo_MB": {"lab_107x384": 138.6, "notebook_107x384": 142.0},
+    "veredito": "muito abaixo de 1 GB por processo; 8 processos do caminho float somam ~1,1 GB dos 15 GB da maquina"
+  },
+
+  "rederivacao_arquitetura_c": {
+    "base_documentada": {"h_nucleo_por_regiao_certificada": 228, "criterio_h_relogio_por_regiao": 2,
+                         "total_h_nucleo": [34000, 58000], "fonte": "docs/G_PARAMETRIX_FEASIBILITY.md §7"},
+    "h_nucleo_lab_por_regiao": 160.1,
+    "relogio_por_regiao_lab_h": {"8_processos": 54.4, "4_processos": 57.6},
+    "fator_de_falha_do_criterio_no_lab": 27.2,
+    "relogio_por_regiao_notebook_h_medido": 108.3,
+    "fator_de_falha_do_criterio_no_notebook": 54.1,
+    "ganho_de_relogio_notebook_para_lab": 1.99,
+    "total_no_lab": {"h_nucleo_lab": [23900, 40700], "h_relogio": [8108, 13835],
+                     "dias_de_relogio": [338, 576], "anos": [0.93, 1.58]},
+    "nucleos_lab_para_atingir_2h_por_regiao": {"escala_ideal": 80, "com_eficiencia_medida_de_74pc": 109},
+    "total_em_1000_nucleos_lab": {"horas": [32.4, 55.3], "dias": [1.4, 2.3]}
+  }
+}

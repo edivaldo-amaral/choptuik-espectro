@@ -1,0 +1,20 @@
+RefA lido: mu = 90359175/536870912 = 0.16830707900226116; campos: (2^-70, 41x101), (2^-70, 41x101), (2^-70, 41x101), (2^-70, 41x101)  [0s]
+RefA+RefB lido: mu (TwoExp 649) = 0.16830707896344995755; campos: (2^-650, 450x1350), (2^-650, 450x1350), (2^-650, 450x1350), (2^-650, 450x1350)  [4s]
+RefB = (RefA+RefB) - RefA calculado em inteiros; conferencia Fraction do maior coeficiente: erro relativo 0.0e+00
+paridade dos coeficientes NAO nulos de RefB (conta por campo): v1: {'m_par': 108089, 'm_impar': 0, 'n_par': 0, 'n_impar': 108089}; v2: {'m_par': 215780, 'm_impar': 0, 'n_par': 107967, 'n_impar': 107813}; v3: {'m_par': 216404, 'm_impar': 0, 'n_par': 108282, 'n_impar': 108122}; v4: {'m_par': 0, 'm_impar': 216216, 'n_par': 108186, 'n_impar': 108030}
+paridade em RefA (nao nulos):
+  v1: m pares 1025, m impares 0, n pares 0, n impares 1025
+  v2: m pares 2050, m impares 0, n pares 1032, n impares 1018
+  v3: m pares 2075, m impares 0, n pares 1047, n impares 1028
+  v4: m pares 0, m impares 1977, n pares 997, n impares 980
+||RefB||_L = 2.350632e-10   (autor: 2,3506e-10)
+teste xi d_xi (coef. simetricos) contra chebder: max erro 1.1e-13
+||(Z_A + 1) RefB||_L = 2.454216e-08   (autor: 2,4542e-08)
+tabela propria (do artigo) == signed_operator_L.TABELA: True
+||B_L(RefB)|| <= 4.670165e-08  (Young, |d| <= 449; autor: 4,6748e-08 com fator 1,001)
+  maiores termos d: d=41: 2.24e-09, d=42: 1.16e-09, d=4: 9.87e-10, d=2: 9.77e-10, d=6: 9.43e-10
+  parte de ||RefB||_L fora da caixa 41x101 de RefA: 2.33e-10
+Corr: pesos W_j = [5.0, 17.0, 3.0, 12.0]; ||B_L(Corr)|| <= max W_j * 2^-277 = 7.00e-83  (< 1e-60: True)
+|MU_80 - mu_(A+B)| = 2.158e-81;  |mu* - MU_80| <= 2.162e-81  (<= 1e-80: True)
+|mu_A - mu_(A+B)| = 3.881119e-11;  DELTA_MU = 3.881507e-11;  |mu_A - mu*| <= 3.881119e-11 <= DELTA_MU: True
+  [6s]

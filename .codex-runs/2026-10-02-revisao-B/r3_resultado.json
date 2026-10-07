@@ -1,0 +1,293 @@
+{
+ "rigs": [
+  {
+   "rig": "rig_+0_0000+0_2500i_B.json",
+   "c": [
+    0.0,
+    0.25
+   ],
+   "versao": 2,
+   "sha_A": true,
+   "sha_F_certF": true,
+   "certF": "certF_+0_0000+0_2500i.json",
+   "n_pontos": 6,
+   "tp_json_mesmos_pontos": true,
+   "n_tp_json": 1,
+   "fase1_faltando": [],
+   "tp_abaixo_fase1": [],
+   "folga_rel_max": 5.854082552048112e-09,
+   "dif_abs_log": 3.91414125999745e-07,
+   "tp_incoerente": [],
+   "discos": [
+    "disco_0_25.json"
+   ],
+   "pontos_discos": 6,
+   "discos_coerentes": true
+  },
+  {
+   "rig": "rig_+0_0000+0_5000i_B.json",
+   "c": [
+    0.0,
+    0.5
+   ],
+   "versao": 2,
+   "sha_A": true,
+   "sha_F_certF": true,
+   "certF": "certF_+0_0000+0_5000i.json",
+   "n_pontos": 28,
+   "tp_json_mesmos_pontos": true,
+   "n_tp_json": 1,
+   "fase1_faltando": [],
+   "tp_abaixo_fase1": [],
+   "folga_rel_max": 3.2661688909030318e-09,
+   "dif_abs_log": 4.936305231240112e-07,
+   "tp_incoerente": [],
+   "discos": [
+    "disco_0_5.json"
+   ],
+   "pontos_discos": 28,
+   "discos_coerentes": true
+  },
+  {
+   "rig": "rig_+0_0000+0_5000i_B4.json",
+   "c": [
+    0.0,
+    0.5
+   ],
+   "versao": 2,
+   "sha_A": true,
+   "sha_F_certF": true,
+   "certF": "certF_+0_0000+0_5000i.json",
+   "n_pontos": 2,
+   "tp_json_mesmos_pontos": true,
+   "n_tp_json": 1,
+   "fase1_faltando": [],
+   "tp_abaixo_fase1": [],
+   "folga_rel_max": 1.882783262630028e-09,
+   "dif_abs_log": 3.6230730415809376e-07,
+   "tp_incoerente": [],
+   "discos": [
+    "disco_0_5_b.json"
+   ],
+   "pontos_discos": 2,
+   "discos_coerentes": true
+  },
+  {
+   "rig": "rig_+0_0000+0_7500i_B.json",
+   "c": [
+    0.0,
+    0.75
+   ],
+   "versao": 2,
+   "sha_A": true,
+   "sha_F_certF": true,
+   "certF": "certF_+0_0000+0_7500i.json",
+   "n_pontos": 23,
+   "tp_json_mesmos_pontos": true,
+   "n_tp_json": 1,
+   "fase1_faltando": [],
+   "tp_abaixo_fase1": [],
+   "folga_rel_max": 1.4160892014558613e-08,
+   "dif_abs_log": 4.477225843402266e-07,
+   "tp_incoerente": [],
+   "discos": [
+    "disco_0_75.json"
+   ],
+   "pontos_discos": 23,
+   "discos_coerentes": true
+  },
+  {
+   "rig": "rig_+0_5500+0_7500i_B.json",
+   "c": [
+    0.55,
+    0.75
+   ],
+   "versao": 2,
+   "sha_A": true,
+   "sha_F_certF": true,
+   "certF": "certF_+0_5500+0_7500i.json",
+   "n_pontos": 9,
+   "tp_json_mesmos_pontos": true,
+   "n_tp_json": 2,
+   "fase1_faltando": [],
+   "tp_abaixo_fase1": [],
+   "folga_rel_max": 2.204187210530506e-08,
+   "dif_abs_log": 4.2550373180461065e-07,
+   "tp_incoerente": [],
+   "discos": [
+    "disco_0_55p0_75.json"
+   ],
+   "pontos_discos": 9,
+   "discos_coerentes": true
+  },
+  {
+   "rig": "rig_+0_5500+0_7500i_B2.json",
+   "c": [
+    0.55,
+    0.75
+   ],
+   "versao": 2,
+   "sha_A": true,
+   "sha_F_certF": true,
+   "certF": "certF_+0_5500+0_7500i.json",
+   "n_pontos": 2,
+   "tp_json_mesmos_pontos": true,
+   "n_tp_json": 2,
+   "fase1_faltando": [],
+   "tp_abaixo_fase1": [],
+   "folga_rel_max": 9.576559545365626e-10,
+   "dif_abs_log": 4.650950629070394e-07,
+   "tp_incoerente": [],
+   "discos": [
+    "disco_0_55p0_75_b.json"
+   ],
+   "pontos_discos": 2,
+   "discos_coerentes": true
+  },
+  {
+   "rig": "rig_+0_5500+0_7500i_B3.json",
+   "c": [
+    0.55,
+    0.75
+   ],
+   "versao": 2,
+   "sha_A": true,
+   "sha_F_certF": true,
+   "certF": "certF_+0_5500+0_7500i.json",
+   "n_pontos": 2,
+   "tp_json_mesmos_pontos": true,
+   "n_tp_json": 1,
+   "fase1_faltando": [],
+   "tp_abaixo_fase1": [],
+   "folga_rel_max": 1.1738746197309524e-08,
+   "dif_abs_log": 4.5506015666774147e-07,
+   "tp_incoerente": [],
+   "discos": [
+    "disco_0_55p0_75_c.json"
+   ],
+   "pontos_discos": 2,
+   "discos_coerentes": true
+  },
+  {
+   "rig": "rig_+2_5000+0_0000i_B.json",
+   "c": [
+    2.5,
+    0.0
+   ],
+   "versao": 2,
+   "sha_A": true,
+   "sha_F_certF": true,
+   "certF": "certF_+2_5000+0_0000i.json",
+   "n_pontos": 1,
+   "tp_json_mesmos_pontos": true,
+   "n_tp_json": 1,
+   "fase1_faltando": [],
+   "tp_abaixo_fase1": [],
+   "folga_rel_max": 3.4027270623404604e-07,
+   "dif_abs_log": 3.048533799843156e-07,
+   "tp_incoerente": [],
+   "discos": [
+    "disco_2_5.json"
+   ],
+   "pontos_discos": 1,
+   "discos_coerentes": true
+  },
+  {
+   "rig": "rig_+1_0000+0_0000i_Bteste.json",
+   "c": [
+    1.0,
+    0.0
+   ],
+   "versao": 2,
+   "sha_A": true,
+   "sha_F_certF": true,
+   "certF": "certF_+1_0000+0_0000i.json",
+   "n_pontos": 1,
+   "tp_json_mesmos_pontos": true,
+   "n_tp_json": 1,
+   "fase1_faltando": [],
+   "tp_abaixo_fase1": [],
+   "folga_rel_max": 0.0,
+   "dif_abs_log": 1.5646648687805964e-07,
+   "tp_incoerente": [],
+   "discos": [
+    "disco_1_0.json"
+   ],
+   "pontos_discos": 1,
+   "discos_coerentes": true
+  },
+  {
+   "rig": "rig_+1_5000+0_0000i_Bteste.json",
+   "c": [
+    1.5,
+    0.0
+   ],
+   "versao": 2,
+   "sha_A": true,
+   "sha_F_certF": true,
+   "certF": "certF_+1_5000+0_0000i.json",
+   "n_pontos": 2,
+   "tp_json_mesmos_pontos": true,
+   "n_tp_json": 1,
+   "fase1_faltando": [],
+   "tp_abaixo_fase1": [],
+   "folga_rel_max": 0.0,
+   "dif_abs_log": 3.7919117623630427e-07,
+   "tp_incoerente": [],
+   "discos": [
+    "disco_1_5.json"
+   ],
+   "pontos_discos": 2,
+   "discos_coerentes": true
+  },
+  {
+   "rig": "rig_+2_0000+0_0000i_Bteste.json",
+   "c": [
+    2.0,
+    0.0
+   ],
+   "versao": 2,
+   "sha_A": true,
+   "sha_F_certF": true,
+   "certF": "certF_+2_0000+0_0000i.json",
+   "n_pontos": 1,
+   "tp_json_mesmos_pontos": true,
+   "n_tp_json": 1,
+   "fase1_faltando": [],
+   "tp_abaixo_fase1": [],
+   "folga_rel_max": 2.777113843333012e-07,
+   "dif_abs_log": 3.7483205428401334e-07,
+   "tp_incoerente": [],
+   "discos": [
+    "disco_2_0.json"
+   ],
+   "pontos_discos": 1,
+   "discos_coerentes": true
+  },
+  {
+   "rig": "rig_+3_0000+0_0000i_Bteste.json",
+   "c": [
+    3.0,
+    0.0
+   ],
+   "versao": 2,
+   "sha_A": true,
+   "sha_F_certF": true,
+   "certF": "certF_+3_0000+0_0000i.json",
+   "n_pontos": 2,
+   "tp_json_mesmos_pontos": true,
+   "n_tp_json": 1,
+   "fase1_faltando": [],
+   "tp_abaixo_fase1": [],
+   "folga_rel_max": 5.170368442275475e-07,
+   "dif_abs_log": 3.4037466123404414e-07,
+   "tp_incoerente": [],
+   "discos": [
+    "disco_3_0.json"
+   ],
+   "pontos_discos": 2,
+   "discos_coerentes": true
+  }
+ ],
+ "problemas": []
+}

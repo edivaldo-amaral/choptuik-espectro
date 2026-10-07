@@ -1,0 +1,8 @@
+nz = ||P_Z g_A|| = 2.6043546204 (E.json 2.6043546204);  cauda ||g_A - P_Z g_A|| = 6.856173e-07 (E.json 6.856199e-07)
+||h0w.npy|| = 1.000000000000000;  ||h0w - P_Z g_A/nz|| = 2.37e-16
+gauge_h0w_32x128.npy (entrada da etapa A) normalizado == rig/h0w.npy: False (dif 4.4e-16)
+||d_tau RefA||_L = 0.373452; |1/mu* - 1/mu_A| <= 1.3701e-09; e = ||g* - g_A|| <= 2.505385e-08 (E.json 2.505622e-08; o autor usa 1000 ||RefB|| para ||d_tau RefB||, eu 449/2)
+||g_n - h0|| <= 2.824980e-07 (E.json 2.825008e-07);  ||g_n|| <= 1.00000028
+||L_A(lambda0) h0|| = 3.708878e-06 (E.json rA 3.708878e-06)   [43s]
+||y_g - y0|| <= 4.876413e-06 (E.json 4.876425e-06); dist = 1.815528e-05 (E.json 1.815532e-05); r = 6.063558e-05; theta + 2 Z2 max(dist, r) = 0.902443
+folga: unicidade vale ate rho = (1 - theta)/(2 Z2) = 3.2624e-04, isto e 18.0 vezes dist

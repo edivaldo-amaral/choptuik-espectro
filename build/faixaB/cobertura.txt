@@ -1,0 +1,6 @@
+174 discos certificados
+  aresta esquerda Re s = 0: coberta
+  aresta superior Im s = 3/4: coberta
+  aresta direita Re s = 3: coberta
+  aresta inferior Im s = 1/4: coberta
+CONTORNO COBERTO

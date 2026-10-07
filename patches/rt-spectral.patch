@@ -1,0 +1,186 @@
+--- a/choptuik.c
++++ b/choptuik.c
+@@ -90,6 +90,11 @@
+ void GothicA_apply(MultiField*);
+ void GothicA_eval(DyadicQ*,unsigned long m, unsigned long n);
+ 
++/* Exploratory (non-rigorous) Galerkin matrix for the Floquet pencil.
++ * The matrix is written with exact dyadic entries; truncating it is not a
++ * proof of spectral completeness. */
++void SPECTRAL_MATRIX(Sector, const char*);
++
+ // --------------------------------------------------------------------------------------
+ 
+ void AUXINV_INNER_install_indices(void);
+@@ -300,6 +305,13 @@
+ 
+ 	if(argc==4)
+ 	{
++		if(strcmp(argv[1],"SpectralMatrix")==0)
++		{
++			__READ__SEC__
++			SPECTRAL_MATRIX(arg_sec,argv[3]);
++			return 0;
++		}
++
+ 		if(strcmp(argv[1],"ImproveRef")==0)
+ 		{
+ 			// argv[2] = input filename
+@@ -333,6 +345,7 @@
+ 	printf("choptuik AUXINV_INNER|SHARP_AUXINV_INNER\n");
+ 	printf("choptuik EXTERIOR_ESTIMATE|INV|SHARP_EXTERIOR_ESTIMATE|SHARP_INV offm_offn_numm_numn\n");
+ 	printf("choptuik ImproveRef file_in file_out\n");
++	printf("choptuik SpectralMatrix 0_0_numm_numn output_file\n");
+ 
+ 	// Terminate program without freeing/deallocating memory.
+ 	// The operating system will take care of it.
+@@ -341,6 +354,149 @@
+ 	// Otherwise, data left in the buffers may be lost.
+ }
+ 
++/* L_A(s) = L_A(0) + s I in the same-half-echo-symmetry sector.  The
++ * eigenvalues q of this matrix correspond at the Galerkin level to Floquet
++ * exponents s=-q.  This uses refA, not the tiny RT correction ball, and is
++ * therefore only a locator for a later interval certificate. */
++void SPECTRAL_MATRIX(Sector sec, const char* filename)
++{
++	assert(sec.off_m==0 && sec.off_n==0);
++	assert(Sector_subset(sec,outer_Sector));
++
++	IndexDOF index;
++	IndexDOF_build_VBold_alloc(&index,sec);
++	unsigned long dim=(unsigned long)IndexDOF_num(&index);
++	FILE* f=fopen_write_nonexistent_file(filename);
++	char* constraint_filename=malloc(strlen(filename)+13);
++	assert(constraint_filename!=NULL);
++	assert(sprintf(constraint_filename,"%s.constraints",filename)>0);
++	FILE* fc=fopen_write_nonexistent_file(constraint_filename);
++	MultiField background;
++	MultiField_copy_alloc(&background,&(refA.mf));
++	Sector background_sec=Sector_new(0,0,
++		_MINIMUM_(2*sec.num_m,outer_Sector.num_m),
++		_MINIMUM_(2*sec.num_n,outer_Sector.num_n));
++	MultiField_shrink(&background,background_sec);
++
++	fprintf(f,"CHOPTUIK_RT_SPECTRAL_MATRIX_V1\n");
++	fprintf(f,"dimension %lu\n",dim);
++	fprintf(f,"sector %lu %lu %lu %lu\n",sec.off_m,sec.off_n,sec.num_m,sec.num_n);
++	fprintf(f,"background RefA.dat\n");
++	fprintf(f,"BEGIN_ADDRESSES\n");
++	for(unsigned long p=0;p<dim;p++)
++	{
++		address ad=index.__forward[p];
++		fprintf(f,"%lu %lu %lu %lu %lu\n",p,ad.d,ad.k,ad.m,ad.n);
++	}
++	fprintf(f,"BEGIN_ENTRIES\n");
++	IndexDOF sharp_index;
++	IndexDOF_build_VBold_SHARP_alloc(&sharp_index,sec);
++	unsigned long sharp_dim=(unsigned long)IndexDOF_num(&sharp_index);
++	fprintf(fc,"CHOPTUIK_RT_SPECTRAL_CONSTRAINTS_V1\n");
++	fprintf(fc,"rows %lu\n",sharp_dim);
++	fprintf(fc,"columns %lu\n",dim);
++	fprintf(fc,"BEGIN_ADDRESSES\n");
++	for(unsigned long p=0;p<sharp_dim;p++)
++	{
++		address ad=sharp_index.__forward[p];
++		fprintf(fc,"%lu %lu %lu %lu %lu\n",p,ad.d,ad.k,ad.m,ad.n);
++	}
++	fprintf(fc,"BEGIN_ENTRIES\n");
++
++	for(unsigned long col=0;col<dim;col++)
++	{
++		MultiField basis,out;
++		IndexDOF_index_to_MultiField_alloc(&basis,col,&index);
++		Multifield_enlarge_attach_zeros(&basis,sec);
++
++		/* out = O_mu basis + mu*S*Gamma1(basis)
++		 *             + 2*S*Xi*Gamma2(refA,basis). */
++		MultiField_copy_alloc(&out,&basis);
++		MultiField_NoENL_JBold(&out,&(refA.mu));
++		MultiField_NoENL_c_SBold_GAMMA1_add_to(&out,&basis,&(refA.mu));
++		MultiField_NoENL_c_SBold_Xi_GAMMA2_add_to(&out,&background,&basis,2);
++
++		/* Full residual before S, needed to detect constraint-violating roots. */
++		MultiField full;
++		MultiField_copy_alloc(&full,&basis);
++		MultiField_HBold(&full,&(refA.mu));
++		MultiField_c_GAMMA2_add_to(&full,&background,&basis,2);
++		MultiField_TimesXi(&full);
++		MultiField_c_GAMMA1_add_to(&full,&basis,&(refA.mu));
++		Field shift_constraint;
++		Field_copy_alloc(&shift_constraint,(basis.comp)+1);
++		Field_TimesXi(&shift_constraint);
++		Field_mult_c(&shift_constraint,-1);
++
++		for(unsigned long row=0;row<dim;row++)
++		{
++			address ad=index.__forward[row];
++			Field* field=(out.comp)+ad.d;
++			if(!Sector_contains_point(field->sec,ad.m,ad.n)) continue;
++			unsigned long u=ad.m-(field->sec).off_m;
++			unsigned long v=ad.n-(field->sec).off_n;
++			mpz_t* coeff=(ad.k==_Re_)?&((field->data)[u][v].Re):&((field->data)[u][v].Im);
++			if(mpz_sgn(*coeff)==0) continue;
++			fprintf(f,"%lu %lu ",row,col);
++			mpz_out_str(f,10,*coeff);
++			fprintf(f," %ld\n",field->TwoExp);
++		}
++		for(unsigned long row=0;row<sharp_dim;row++)
++		{
++			address ad=sharp_index.__forward[row];
++			Field* field=(ad.d==0)?(full.comp)+0:(full.comp)+2;
++			if(Sector_contains_point(field->sec,ad.m,ad.n))
++			{
++				unsigned long u=ad.m-(field->sec).off_m;
++				unsigned long v=ad.n-(field->sec).off_n;
++				mpz_t* coeff=(ad.k==_Re_)?&((field->data)[u][v].Re):&((field->data)[u][v].Im);
++				if(mpz_sgn(*coeff)!=0)
++				{
++					/* S-sharp row 1 is -P applied to full row 2. */
++					int sign=(ad.d==1 && ad.n%2==0)?-1:1;
++					fprintf(fc,"0 %lu %lu ",row,col);
++					if(sign<0)
++					{
++						mpz_t negated;
++						mpz_init(negated);
++						mpz_neg(negated,*coeff);
++						mpz_out_str(fc,10,negated);
++						mpz_clear(negated);
++					}
++					else mpz_out_str(fc,10,*coeff);
++					fprintf(fc," %ld\n",field->TwoExp);
++				}
++			}
++			/* d/ds of the first sharp row vanishes.  The second is -Xi*h2. */
++			if(ad.d==1 && Sector_contains_point(shift_constraint.sec,ad.m,ad.n))
++			{
++				unsigned long u=ad.m-shift_constraint.sec.off_m;
++				unsigned long v=ad.n-shift_constraint.sec.off_n;
++				mpz_t* coeff=(ad.k==_Re_)?&(shift_constraint.data[u][v].Re):&(shift_constraint.data[u][v].Im);
++				if(mpz_sgn(*coeff)!=0)
++				{
++					fprintf(fc,"1 %lu %lu ",row,col);
++					mpz_out_str(fc,10,*coeff);
++					fprintf(fc," %ld\n",shift_constraint.TwoExp);
++				}
++			}
++		}
++
++		Field_free(&shift_constraint);
++		MultiField_free(&full);
++		MultiField_free(&out);
++		MultiField_free(&basis);
++		if((col%100)==0) { fprintf(stderr,"spectral column %lu/%lu\r",col,dim); fflush(stderr); }
++	}
++	fprintf(stderr,"spectral columns %lu/%lu\n",dim,dim);
++	fclose(f);
++	fclose(fc);
++	free(constraint_filename);
++	MultiField_free(&background);
++	IndexDOF_free(&sharp_index);
++	IndexDOF_free(&index);
++}
++
+ // --------------------------------------------------------------------------------------
+ 
+ FILE* fopen_write_nonexistent_file(const char* filename)

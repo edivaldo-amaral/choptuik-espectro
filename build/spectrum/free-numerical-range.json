@@ -1,0 +1,24 @@
+{
+  "lambda0": "-1777/20000",
+  "R_J_bound": "1777/20000",
+  "blocos": [
+    {
+      "N": 18,
+      "positiva": true,
+      "menor_pivo": "86287597207/335544320000"
+    },
+    {
+      "N": 20,
+      "positiva": true,
+      "menor_pivo": "86287597207/335544320000"
+    },
+    {
+      "N": 30,
+      "positiva": true,
+      "menor_pivo": "86287597207/335544320000"
+    }
+  ],
+  "nota": "bloco finito; a cauda n>N exige argumento separado",
+  "mu": "90359175/536870912",
+  "kappa2": "5/4"
+}

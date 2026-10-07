@@ -1,0 +1,1197 @@
+{
+  "matrix": "build/spectrum/rt-A-6x18.dat",
+  "sha256": "a3335d9550f9567db287c1ae105674a5914446f9d3772d3955e3628a747c5846",
+  "finite_crown_dimension": 195,
+  "core": [
+    4,
+    12
+  ],
+  "weights": [
+    916,
+    4096,
+    243,
+    1233
+  ],
+  "inverse_free_error": "13/1099511627776",
+  "tiles": [
+    {
+      "center": [
+        "1/8",
+        "0"
+      ],
+      "center_defect": "1400096695/137438953472",
+      "variation": "18414013326487/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "19130862834327/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "1/64"
+      ],
+      "center_defect": "6699890295/549755813888",
+      "variation": "9588539990817/549755813888",
+      "radius": "1/64",
+      "uniform_defect": "10017332969697/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "1/32"
+      ],
+      "center_defect": "15499297441/1099511627776",
+      "variation": "155779559215/8589934592",
+      "radius": "1/64",
+      "uniform_defect": "327058415871/1099511627776",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "3/64"
+      ],
+      "center_defect": "8737863695/549755813888",
+      "variation": "20668567271417/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "21787013824377/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "1/16"
+      ],
+      "center_defect": "2427960125/137438953472",
+      "variation": "21364474949735/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "22607590533735/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "5/64"
+      ],
+      "center_defect": "21630943045/1099511627776",
+      "variation": "11013329425597/549755813888",
+      "radius": "1/64",
+      "uniform_defect": "11705519603037/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "3/32"
+      ],
+      "center_defect": "3025697885/137438953472",
+      "variation": "11327764142297/549755813888",
+      "radius": "1/64",
+      "uniform_defect": "12102342800857/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "7/64"
+      ],
+      "center_defect": "13649961981/549755813888",
+      "variation": "2907268150643/137438953472",
+      "radius": "1/64",
+      "uniform_defect": "3125667542339/8796093022208",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "1/8"
+      ],
+      "center_defect": "15449806153/549755813888",
+      "variation": "5960543745757/274877906944",
+      "radius": "1/64",
+      "uniform_defect": "6454937542653/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "9/64"
+      ],
+      "center_defect": "8722848631/274877906944",
+      "variation": "6095936190881/274877906944",
+      "radius": "1/64",
+      "uniform_defect": "6654198503265/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "5/32"
+      ],
+      "center_defect": "39427368959/1099511627776",
+      "variation": "6221886774791/274877906944",
+      "radius": "1/64",
+      "uniform_defect": "6852724678135/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "11/64"
+      ],
+      "center_defect": "5608760481/137438953472",
+      "variation": "25349152096477/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "28220837462749/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "3/16"
+      ],
+      "center_defect": "25409573607/549755813888",
+      "variation": "25779464185357/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "29031889607053/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "13/64"
+      ],
+      "center_defect": "58382587729/1099511627776",
+      "variation": "3271917283501/137438953472",
+      "radius": "1/64",
+      "uniform_defect": "3738977985333/8796093022208",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "7/32"
+      ],
+      "center_defect": "4201907533/68719476736",
+      "variation": "26558726081291/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "30861479395083/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "15/64"
+      ],
+      "center_defect": "19322355989/274877906944",
+      "variation": "6731607591459/274877906944",
+      "radius": "1/64",
+      "uniform_defect": "7968238374755/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/8",
+        "1/4"
+      ],
+      "center_defect": "89262860793/1099511627776",
+      "variation": "13631503390959/549755813888",
+      "radius": "1/64",
+      "uniform_defect": "16487914936335/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "9/64",
+        "1/4"
+      ],
+      "center_defect": "39300569395/549755813888",
+      "variation": "817141726031/34359738368",
+      "radius": "1/64",
+      "uniform_defect": "974344003611/2199023255552",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "5/32",
+        "1/4"
+      ],
+      "center_defect": "34508761159/549755813888",
+      "variation": "25104470236761/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "29521591665113/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "11/64",
+        "1/4"
+      ],
+      "center_defect": "60254725291/1099511627776",
+      "variation": "24130190550323/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "27986492968947/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "3/16",
+        "1/4"
+      ],
+      "center_defect": "13103508621/274877906944",
+      "variation": "11607577916665/549755813888",
+      "radius": "1/64",
+      "uniform_defect": "13284827020153/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "13/64",
+        "1/4"
+      ],
+      "center_defect": "45686194937/1099511627776",
+      "variation": "22346697698709/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "25270614174677/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "7/32",
+        "1/4"
+      ],
+      "center_defect": "9943350523/274877906944",
+      "variation": "21529331149121/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "24074828883009/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "15/64",
+        "1/4"
+      ],
+      "center_defect": "17322932281/549755813888",
+      "variation": "20760101772943/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "22977437104911/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1/4",
+        "1/4"
+      ],
+      "center_defect": "30116146279/1099511627776",
+      "variation": "20030343132463/1099511627776",
+      "radius": "1/64",
+      "uniform_defect": "21957776494319/70368744177664",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "17/64",
+        "1/4"
+      ],
+      "center_defect": "26585250869/1099511627776",
+      "variation": "2417967715073/137438953472",
+      "radius": "1/64",
+      "uniform_defect": "2630649722025/8796093022208",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "9/32",
+        "1/4"
+      ],
+      "center_defect": "23497888215/1099511627776",
+      "variation": "9345664117025/549755813888",
+      "radius": "1/64",
+      "uniform_defect": "10097596539905/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "19/64",
+        "1/4"
+      ],
+      "center_defect": "20678436215/1099511627776",
+      "variation": "2258917078567/137438953472",
+      "radius": "1/64",
+      "uniform_defect": "2424344568287/8796093022208",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "5/16",
+        "1/4"
+      ],
+      "center_defect": "18266913787/1099511627776",
+      "variation": "8761494515757/549755813888",
+      "radius": "1/64",
+      "uniform_defect": "9346035756941/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "21/64",
+        "1/4"
+      ],
+      "center_defect": "16093486827/1099511627776",
+      "variation": "17010658961111/1099511627776",
+      "radius": "1/32",
+      "uniform_defect": "17525650539575/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "23/64",
+        "1/4"
+      ],
+      "center_defect": "6140515987/549755813888",
+      "variation": "4011498829191/274877906944",
+      "radius": "1/32",
+      "uniform_defect": "4109747084983/8796093022208",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "25/64",
+        "1/4"
+      ],
+      "center_defect": "9300503979/1099511627776",
+      "variation": "3789263182873/274877906944",
+      "radius": "1/32",
+      "uniform_defect": "3863667214705/8796093022208",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "27/64",
+        "1/4"
+      ],
+      "center_defect": "7014624827/1099511627776",
+      "variation": "14336731762465/1099511627776",
+      "radius": "1/32",
+      "uniform_defect": "14561199756929/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "29/64",
+        "1/4"
+      ],
+      "center_defect": "5535564067/1099511627776",
+      "variation": "13578482009685/1099511627776",
+      "radius": "1/32",
+      "uniform_defect": "13755620059829/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "31/64",
+        "1/4"
+      ],
+      "center_defect": "4259542247/1099511627776",
+      "variation": "12874143123907/1099511627776",
+      "radius": "1/32",
+      "uniform_defect": "13010448475811/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "33/64",
+        "1/4"
+      ],
+      "center_defect": "3216584011/1099511627776",
+      "variation": "12222611269801/1099511627776",
+      "radius": "1/32",
+      "uniform_defect": "12325541958153/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "35/64",
+        "1/4"
+      ],
+      "center_defect": "1239747963/549755813888",
+      "variation": "22685420043/2147483648",
+      "radius": "1/32",
+      "uniform_defect": "182723108307/549755813888",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "37/64",
+        "1/4"
+      ],
+      "center_defect": "1895544107/1099511627776",
+      "variation": "5524990839317/549755813888",
+      "radius": "1/32",
+      "uniform_defect": "5555319545029/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "39/64",
+        "1/4"
+      ],
+      "center_defect": "1483279813/1099511627776",
+      "variation": "10524204753759/1099511627776",
+      "radius": "1/32",
+      "uniform_defect": "10571669707775/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "41/64",
+        "1/4"
+      ],
+      "center_defect": "569468139/549755813888",
+      "variation": "5017632191997/549755813888",
+      "radius": "1/32",
+      "uniform_defect": "5035855172445/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "43/64",
+        "1/4"
+      ],
+      "center_defect": "226267121/274877906944",
+      "variation": "2394307551157/274877906944",
+      "radius": "1/32",
+      "uniform_defect": "2401548099029/8796093022208",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "45/64",
+        "1/4"
+      ],
+      "center_defect": "735484925/1099511627776",
+      "variation": "287517765817/34359738368",
+      "radius": "1/32",
+      "uniform_defect": "144126625371/549755813888",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "47/64",
+        "1/4"
+      ],
+      "center_defect": "36788619/68719476736",
+      "variation": "8864038751337/1099511627776",
+      "radius": "1/32",
+      "uniform_defect": "8882874524265/35184372088832",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "49/64",
+        "1/4"
+      ],
+      "center_defect": "240157067/549755813888",
+      "variation": "8545471671621/1099511627776",
+      "radius": "1/16",
+      "uniform_defect": "8553156697765/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "53/64",
+        "1/4"
+      ],
+      "center_defect": "153370883/549755813888",
+      "variation": "7958184924315/1099511627776",
+      "radius": "1/16",
+      "uniform_defect": "7963092792571/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "57/64",
+        "1/4"
+      ],
+      "center_defect": "26860547/137438953472",
+      "variation": "7432128501153/1099511627776",
+      "radius": "1/16",
+      "uniform_defect": "7435566651169/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "61/64",
+        "1/4"
+      ],
+      "center_defect": "196825663/1099511627776",
+      "variation": "6955071252025/1099511627776",
+      "radius": "1/16",
+      "uniform_defect": "6958220462633/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1",
+        "1/4"
+      ],
+      "center_defect": "260999117/1099511627776",
+      "variation": "6627705804745/1099511627776",
+      "radius": "1/16",
+      "uniform_defect": "6631881790617/17592186044416",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1",
+        "3/16"
+      ],
+      "center_defect": "104130677/1099511627776",
+      "variation": "1598544811339/274877906944",
+      "radius": "1/16",
+      "uniform_defect": "1598961334047/4398046511104",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1",
+        "1/8"
+      ],
+      "center_defect": "25208975/549755813888",
+      "variation": "47867242403/8589934592",
+      "radius": "1/16",
+      "uniform_defect": "191494178587/549755813888",
+      "accepted": true,
+      "physical_certificate": false
+    },
+    {
+      "center": [
+        "1",
+        "1/16"
+      ],
+      "center_defect": "6477549/274877906944",
+      "variation": "2913791230813/549755813888",
+      "radius": "1/16",
+      "uniform_defect": "2913998512381/8796093022208",
+      "accepted": true,
+      "physical_certificate": false
+    }
+  ],
+  "contour_coverage": true,
+  "upper_boundary_segments": [
+    {
+      "start": [
+        "1/8",
+        "0"
+      ],
+      "end": [
+        "1/8",
+        "1/64"
+      ],
+      "tile": 0
+    },
+    {
+      "start": [
+        "1/8",
+        "1/64"
+      ],
+      "end": [
+        "1/8",
+        "1/32"
+      ],
+      "tile": 1
+    },
+    {
+      "start": [
+        "1/8",
+        "1/32"
+      ],
+      "end": [
+        "1/8",
+        "3/64"
+      ],
+      "tile": 2
+    },
+    {
+      "start": [
+        "1/8",
+        "3/64"
+      ],
+      "end": [
+        "1/8",
+        "1/16"
+      ],
+      "tile": 3
+    },
+    {
+      "start": [
+        "1/8",
+        "1/16"
+      ],
+      "end": [
+        "1/8",
+        "5/64"
+      ],
+      "tile": 4
+    },
+    {
+      "start": [
+        "1/8",
+        "5/64"
+      ],
+      "end": [
+        "1/8",
+        "3/32"
+      ],
+      "tile": 5
+    },
+    {
+      "start": [
+        "1/8",
+        "3/32"
+      ],
+      "end": [
+        "1/8",
+        "7/64"
+      ],
+      "tile": 6
+    },
+    {
+      "start": [
+        "1/8",
+        "7/64"
+      ],
+      "end": [
+        "1/8",
+        "1/8"
+      ],
+      "tile": 7
+    },
+    {
+      "start": [
+        "1/8",
+        "1/8"
+      ],
+      "end": [
+        "1/8",
+        "9/64"
+      ],
+      "tile": 8
+    },
+    {
+      "start": [
+        "1/8",
+        "9/64"
+      ],
+      "end": [
+        "1/8",
+        "5/32"
+      ],
+      "tile": 9
+    },
+    {
+      "start": [
+        "1/8",
+        "5/32"
+      ],
+      "end": [
+        "1/8",
+        "11/64"
+      ],
+      "tile": 10
+    },
+    {
+      "start": [
+        "1/8",
+        "11/64"
+      ],
+      "end": [
+        "1/8",
+        "3/16"
+      ],
+      "tile": 11
+    },
+    {
+      "start": [
+        "1/8",
+        "3/16"
+      ],
+      "end": [
+        "1/8",
+        "13/64"
+      ],
+      "tile": 12
+    },
+    {
+      "start": [
+        "1/8",
+        "13/64"
+      ],
+      "end": [
+        "1/8",
+        "7/32"
+      ],
+      "tile": 13
+    },
+    {
+      "start": [
+        "1/8",
+        "7/32"
+      ],
+      "end": [
+        "1/8",
+        "15/64"
+      ],
+      "tile": 14
+    },
+    {
+      "start": [
+        "1/8",
+        "15/64"
+      ],
+      "end": [
+        "1/8",
+        "1/4"
+      ],
+      "tile": 15
+    },
+    {
+      "start": [
+        "1/8",
+        "1/4"
+      ],
+      "end": [
+        "9/64",
+        "1/4"
+      ],
+      "tile": 16
+    },
+    {
+      "start": [
+        "9/64",
+        "1/4"
+      ],
+      "end": [
+        "5/32",
+        "1/4"
+      ],
+      "tile": 17
+    },
+    {
+      "start": [
+        "5/32",
+        "1/4"
+      ],
+      "end": [
+        "11/64",
+        "1/4"
+      ],
+      "tile": 18
+    },
+    {
+      "start": [
+        "11/64",
+        "1/4"
+      ],
+      "end": [
+        "3/16",
+        "1/4"
+      ],
+      "tile": 19
+    },
+    {
+      "start": [
+        "3/16",
+        "1/4"
+      ],
+      "end": [
+        "13/64",
+        "1/4"
+      ],
+      "tile": 20
+    },
+    {
+      "start": [
+        "13/64",
+        "1/4"
+      ],
+      "end": [
+        "7/32",
+        "1/4"
+      ],
+      "tile": 21
+    },
+    {
+      "start": [
+        "7/32",
+        "1/4"
+      ],
+      "end": [
+        "15/64",
+        "1/4"
+      ],
+      "tile": 22
+    },
+    {
+      "start": [
+        "15/64",
+        "1/4"
+      ],
+      "end": [
+        "1/4",
+        "1/4"
+      ],
+      "tile": 23
+    },
+    {
+      "start": [
+        "1/4",
+        "1/4"
+      ],
+      "end": [
+        "17/64",
+        "1/4"
+      ],
+      "tile": 24
+    },
+    {
+      "start": [
+        "17/64",
+        "1/4"
+      ],
+      "end": [
+        "9/32",
+        "1/4"
+      ],
+      "tile": 25
+    },
+    {
+      "start": [
+        "9/32",
+        "1/4"
+      ],
+      "end": [
+        "19/64",
+        "1/4"
+      ],
+      "tile": 26
+    },
+    {
+      "start": [
+        "19/64",
+        "1/4"
+      ],
+      "end": [
+        "5/16",
+        "1/4"
+      ],
+      "tile": 27
+    },
+    {
+      "start": [
+        "5/16",
+        "1/4"
+      ],
+      "end": [
+        "21/64",
+        "1/4"
+      ],
+      "tile": 28
+    },
+    {
+      "start": [
+        "21/64",
+        "1/4"
+      ],
+      "end": [
+        "23/64",
+        "1/4"
+      ],
+      "tile": 29
+    },
+    {
+      "start": [
+        "23/64",
+        "1/4"
+      ],
+      "end": [
+        "25/64",
+        "1/4"
+      ],
+      "tile": 30
+    },
+    {
+      "start": [
+        "25/64",
+        "1/4"
+      ],
+      "end": [
+        "27/64",
+        "1/4"
+      ],
+      "tile": 31
+    },
+    {
+      "start": [
+        "27/64",
+        "1/4"
+      ],
+      "end": [
+        "29/64",
+        "1/4"
+      ],
+      "tile": 32
+    },
+    {
+      "start": [
+        "29/64",
+        "1/4"
+      ],
+      "end": [
+        "31/64",
+        "1/4"
+      ],
+      "tile": 33
+    },
+    {
+      "start": [
+        "31/64",
+        "1/4"
+      ],
+      "end": [
+        "33/64",
+        "1/4"
+      ],
+      "tile": 34
+    },
+    {
+      "start": [
+        "33/64",
+        "1/4"
+      ],
+      "end": [
+        "35/64",
+        "1/4"
+      ],
+      "tile": 35
+    },
+    {
+      "start": [
+        "35/64",
+        "1/4"
+      ],
+      "end": [
+        "37/64",
+        "1/4"
+      ],
+      "tile": 36
+    },
+    {
+      "start": [
+        "37/64",
+        "1/4"
+      ],
+      "end": [
+        "39/64",
+        "1/4"
+      ],
+      "tile": 37
+    },
+    {
+      "start": [
+        "39/64",
+        "1/4"
+      ],
+      "end": [
+        "41/64",
+        "1/4"
+      ],
+      "tile": 38
+    },
+    {
+      "start": [
+        "41/64",
+        "1/4"
+      ],
+      "end": [
+        "43/64",
+        "1/4"
+      ],
+      "tile": 39
+    },
+    {
+      "start": [
+        "43/64",
+        "1/4"
+      ],
+      "end": [
+        "45/64",
+        "1/4"
+      ],
+      "tile": 40
+    },
+    {
+      "start": [
+        "45/64",
+        "1/4"
+      ],
+      "end": [
+        "47/64",
+        "1/4"
+      ],
+      "tile": 41
+    },
+    {
+      "start": [
+        "47/64",
+        "1/4"
+      ],
+      "end": [
+        "49/64",
+        "1/4"
+      ],
+      "tile": 42
+    },
+    {
+      "start": [
+        "49/64",
+        "1/4"
+      ],
+      "end": [
+        "53/64",
+        "1/4"
+      ],
+      "tile": 43
+    },
+    {
+      "start": [
+        "53/64",
+        "1/4"
+      ],
+      "end": [
+        "57/64",
+        "1/4"
+      ],
+      "tile": 44
+    },
+    {
+      "start": [
+        "57/64",
+        "1/4"
+      ],
+      "end": [
+        "61/64",
+        "1/4"
+      ],
+      "tile": 45
+    },
+    {
+      "start": [
+        "61/64",
+        "1/4"
+      ],
+      "end": [
+        "1",
+        "1/4"
+      ],
+      "tile": 46
+    },
+    {
+      "start": [
+        "1",
+        "1/4"
+      ],
+      "end": [
+        "1",
+        "3/16"
+      ],
+      "tile": 47
+    },
+    {
+      "start": [
+        "1",
+        "3/16"
+      ],
+      "end": [
+        "1",
+        "1/8"
+      ],
+      "tile": 48
+    },
+    {
+      "start": [
+        "1",
+        "1/8"
+      ],
+      "end": [
+        "1",
+        "1/16"
+      ],
+      "tile": 49
+    },
+    {
+      "start": [
+        "1",
+        "1/16"
+      ],
+      "end": [
+        "1",
+        "0"
+      ],
+      "tile": 50
+    }
+  ],
+  "lower_boundary_by_real_conjugation": true,
+  "infinite_tail_bounds": null,
+  "physical_certificate": false
+}

@@ -1,0 +1,10 @@
+L componente 0: max |TF(L h) - S dOmega^+| relativo = 7.19e-16   (max |.| = 1.729e+01)
+L componente 1: max |TF(L h) - S dOmega^+| relativo = 3.79e-16   (max |.| = 4.686e+01)
+L componente 2: max |TF(L h) - S dOmega^+| relativo = 3.88e-16   (max |.| = 7.362e+01)
+L componente 3: max |TF(L h) - S dOmega^+| relativo = 9.59e-16   (max |.| = 6.759e+01)
+C componente 0: max |TF(C h) - S# dOmega^+| relativo = 6.14e-16   (max |.| = 1.448e+01)
+C componente 1: max |TF(C h) - S# dOmega^+| relativo = 4.06e-16   (max |.| = 1.956e+01)
+CONFERE
+controle (a) s+0,01: discrepancia 1.45e-01 (deve ser >> 1e-10)
+controle (b) Omega3 alterado: discrepancia 1.27e+00 (deve ser >> 1e-10)
+CONTROLES OK

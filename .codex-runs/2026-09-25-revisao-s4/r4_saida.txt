@@ -1,0 +1,16 @@
+mu_A = 0.16830707900226116; Z.json lam0 = 0.16830707900226116 (True); C3.json lambda0 = 0.16830707900226116 (True)
+EPS_FUNDO_L no ambiente desta conta = 4.7e-08; Z.json dB_L.rt = 4.7e-08; T3.json dB_L.rt = 4.7e-08; E.json rt = 4.7e-08
+eps_mu_L(mu_A) = 2.8207923225094177e-08; eps_mu_L(0,401) = 3.155588268178366e-08; Z.json eps_mu = 2.8207923225094177e-08 (True); T3.json eps_mu = 2.8207923225094177e-08 (True)
+dB_L(banda 16) recalculado = {'arred': 4.5886117543391864e-14, 'resto': 0.002302214203253492, 'rt': 4.7e-08, 'total': 0.002302491429419708}; igual ao de Z.json: True; ao de T3.json: True
+T3 beta = 0.5099021184462313; recalculado (NORMA_BL + rt) Qfar(Z.json) + eps_mu(mu_A) = 0.5099021184462313; igual: True
+T3 pert = 0.002302519637342933; dB_L.total + eps_mu = 0.002302519637342933; igual: True
+Qfar(mu_A) recalculado = 0.12863182467814108; Z.json Qfar = 0.12863182467814108; igual: True; (em 0,401 seria 0.124892)
+contraste S3b (lambda0 = 0,401): T3 beta = 0.495079, eps_mu = 3.156e-08, rt = 1.192e-06
+checkpoints: lab 11 janelas, lab2 15; intersecao []; uniao == nomes de T3: True; 26 janelas: True
+T3.json = juncao exata dos checkpoints (N com rho na diagonal): True
+nk3_mu.json: nomes iguais aos de T3: True; beta estimado 0.50990208 (T3 0.50990212)
+nV certificado = estimativa(nk3_mu) * 1,0001 * 1,002^k * (1 + 1e-12), k inteiro, em todas as 26 janelas: SIM
+  k por janela (nV): [1, 1, 0, 0, 0, 0, 1, 2, 2, 1, 4, 6, 5, 5, 1, 0, 0, 1, 1, 1, 2, 1, 2, 5, 6, 5]
+Q.json original: {'qZT': 0.18411896367750913, 'qTT': 0.32192818632506454, 'qZf': 3.213706277508965e-25, 'nQx_extra': 0.17892339357547327}
+Q.json recalculado (nk_L3_q.py --dir rig_copia, lam0 de Z.json = mu_A): {'qZT': 0.18411896367750913, 'qTT': 0.32192818632506454, 'qZf': 3.213706277508965e-25, 'nQx_extra': 0.17892339357547327}
+identicos: True

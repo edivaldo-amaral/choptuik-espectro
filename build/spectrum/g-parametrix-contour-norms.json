@@ -1,0 +1,197 @@
+{
+  "note": "DIAGNOSTICO float; nao e prova",
+  "resolvent": {
+    "0.125+0i": {
+      "norm_QHinv": 6273.593036290003,
+      "norm_Hinv": 7722.042914056748
+    },
+    "0.125+0.125i": {
+      "norm_QHinv": 1980.9136389694079,
+      "norm_Hinv": 2412.279853236243
+    },
+    "0.125+0.25i": {
+      "norm_QHinv": 878.6064833319856,
+      "norm_Hinv": 1081.2759237108232
+    },
+    "0.5+0.25i": {
+      "norm_QHinv": 895.8542224965232,
+      "norm_Hinv": 1197.7807844896881
+    },
+    "1+0.25i": {
+      "norm_QHinv": 129.43571713782566,
+      "norm_Hinv": 180.11145197958407
+    },
+    "1+0.125i": {
+      "norm_QHinv": 206.19725792386384,
+      "norm_Hinv": 290.3460166653769
+    },
+    "1+0i": {
+      "norm_QHinv": 165.69912713913658,
+      "norm_Hinv": 232.59105539277775
+    },
+    "0.125+0.5i": {
+      "norm_QHinv": 1030.5014134531345,
+      "norm_Hinv": 1369.8408439728817
+    },
+    "0.125+0.75i": {
+      "norm_QHinv": 526.2497198135386,
+      "norm_Hinv": 851.3285475273796
+    },
+    "0.5+0.75i": {
+      "norm_QHinv": 522.4374208212994,
+      "norm_Hinv": 893.0444626263084
+    },
+    "1+0.75i": {
+      "norm_QHinv": 91.72615218053689,
+      "norm_Hinv": 155.94764181767863
+    },
+    "1+0.5i": {
+      "norm_QHinv": 83.70534059435842,
+      "norm_Hinv": 120.92149552194503
+    },
+    "0.5+0.5i": {
+      "norm_QHinv": 266.87259615920465,
+      "norm_Hinv": 356.8877114804714
+    }
+  },
+  "shell": {
+    "core6x18 s=0.125+0i": {
+      "norm_HOO_inv": 14.382731248890133,
+      "neumann32_best_defect": 1.71894659460667e-07,
+      "radius_proj": 0.01170202287442177
+    },
+    "core6x18 s=0.125+0.125i": {
+      "norm_HOO_inv": 17.454135676631452,
+      "neumann32_best_defect": 1.5223781967365783e-06,
+      "radius_proj": 0.009642804770938734
+    },
+    "core6x18 s=0.125+0.25i": {
+      "norm_HOO_inv": 19.531568063642027,
+      "neumann32_best_defect": 1.5512067492339503e-05,
+      "radius_proj": 0.008617048445014033
+    },
+    "core6x18 s=0.5+0.25i": {
+      "norm_HOO_inv": 11.436999237799483,
+      "neumann32_best_defect": 0.0007517833954036009,
+      "radius_proj": 0.014704954073888431
+    },
+    "core6x18 s=1+0.25i": {
+      "norm_HOO_inv": 8.141400537110774,
+      "neumann32_best_defect": 4.737286543721127e-05,
+      "radius_proj": 0.020672009078352205
+    },
+    "core6x18 s=1+0.125i": {
+      "norm_HOO_inv": 7.5759486634536914,
+      "neumann32_best_defect": 2.025098326975058e-05,
+      "radius_proj": 0.022215524166671764
+    },
+    "core6x18 s=1+0i": {
+      "norm_HOO_inv": 6.9890474489451035,
+      "neumann32_best_defect": 8.979589088864105e-06,
+      "radius_proj": 0.024081331383614273
+    },
+    "core6x18 s=0.125+0.5i": {
+      "norm_HOO_inv": 23.10322121293427,
+      "neumann32_best_defect": 0.0019292693458292133,
+      "radius_proj": 0.00727095013140469
+    },
+    "core6x18 s=0.125+0.75i": {
+      "norm_HOO_inv": 28.705205126778228,
+      "neumann32_best_defect": 0.22458483983252583,
+      "radius_proj": 0.0045464876507749176
+    },
+    "core6x18 s=0.5+0.75i": {
+      "norm_HOO_inv": 15.034835399059823,
+      "neumann32_best_defect": 0.046215868732905896,
+      "radius_proj": 0.010677111978380038
+    },
+    "core6x18 s=1+0.75i": {
+      "norm_HOO_inv": 10.181027779936095,
+      "neumann32_best_defect": 0.007664490196860633,
+      "radius_proj": 0.01640473777847156
+    },
+    "core6x18 s=1+0.5i": {
+      "norm_HOO_inv": 9.221825612975197,
+      "neumann32_best_defect": 0.0004754314715565275,
+      "radius_proj": 0.018242273014067917
+    },
+    "core6x18 s=0.5+0.5i": {
+      "norm_HOO_inv": 12.94399490568051,
+      "neumann32_best_defect": 0.003789390117621223,
+      "radius_proj": 0.012953442815925564
+    },
+    "core8x24 s=0.125+0i": {
+      "norm_HOO_inv": 7.721563190039019,
+      "neumann32_best_defect": 3.907561160827034e-10,
+      "radius_proj": 0.021797021509014376
+    },
+    "core8x24 s=0.125+0.125i": {
+      "norm_HOO_inv": 8.989339526535211,
+      "neumann32_best_defect": 2.9730987089939782e-09,
+      "radius_proj": 0.01872296379562145
+    },
+    "core8x24 s=0.125+0.25i": {
+      "norm_HOO_inv": 10.049460054164904,
+      "neumann32_best_defect": 2.3089603400648486e-08,
+      "radius_proj": 0.01674787244379007
+    },
+    "core8x24 s=0.5+0.25i": {
+      "norm_HOO_inv": 6.986794208441124,
+      "neumann32_best_defect": 1.3793957997953377e-05,
+      "radius_proj": 0.024088981635976135
+    },
+    "core8x24 s=1+0.25i": {
+      "norm_HOO_inv": 5.56434490340095,
+      "neumann32_best_defect": 1.610484545694115e-05,
+      "radius_proj": 0.030246933172653662
+    },
+    "core8x24 s=1+0.125i": {
+      "norm_HOO_inv": 5.275504098949432,
+      "neumann32_best_defect": 7.84709235435211e-06,
+      "radius_proj": 0.03190325609159983
+    },
+    "core8x24 s=1+0i": {
+      "norm_HOO_inv": 4.981739939043318,
+      "neumann32_best_defect": 3.578724555583175e-06,
+      "radius_proj": 0.03378467738922274
+    },
+    "core8x24 s=0.125+0.5i": {
+      "norm_HOO_inv": 11.62842962889411,
+      "neumann32_best_defect": 1.7953484534528665e-06,
+      "radius_proj": 0.014473732241041521
+    },
+    "core8x24 s=0.125+0.75i": {
+      "norm_HOO_inv": 12.894659057927957,
+      "neumann32_best_defect": 0.00020011300389187806,
+      "radius_proj": 0.01304985248630107
+    },
+    "core8x24 s=0.5+0.75i": {
+      "norm_HOO_inv": 8.508751098006906,
+      "neumann32_best_defect": 0.005587177879568558,
+      "radius_proj": 0.019669951028734287
+    },
+    "core8x24 s=1+0.75i": {
+      "norm_HOO_inv": 6.654582467865977,
+      "neumann32_best_defect": 0.0007751602930131361,
+      "radius_proj": 0.02527230143283764
+    },
+    "core8x24 s=1+0.5i": {
+      "norm_HOO_inv": 6.12244797847571,
+      "neumann32_best_defect": 9.032345092011186e-05,
+      "radius_proj": 0.02748767772592338
+    },
+    "core8x24 s=0.5+0.5i": {
+      "norm_HOO_inv": 7.741253922469138,
+      "neumann32_best_defect": 0.0004337440367498664,
+      "radius_proj": 0.02173214811131547
+    }
+  },
+  "beta_eta_total": 10.381078709386989,
+  "beta_eta_only_m_nonzero_plus_gamma1": 9.71353518173519,
+  "benchmark_seconds_per_full_application_1core": {
+    "24x72": 0.10857319831848145,
+    "64x200": 0.3035612106323242,
+    "107x384": 0.6592957973480225
+  },
+  "convolutions_per_application": 18
+}

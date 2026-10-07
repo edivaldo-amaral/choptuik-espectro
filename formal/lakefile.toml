@@ -1,0 +1,7 @@
+name = "ChoptuikFormal"
+version = "0.1.0"
+defaultTargets = ["ChoptuikFormal"]
+
+[[lean_lib]]
+name = "ChoptuikFormal"
+

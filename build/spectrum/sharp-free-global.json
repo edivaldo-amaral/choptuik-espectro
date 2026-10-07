@@ -1,0 +1,29 @@
+{
+  "center": "0",
+  "radius": "0",
+  "center_defect": "37956382270903119/4951760157141521099596496896",
+  "inverse_candidate_norm": "836194705473067/140737488355328",
+  "uniform_defect": "37956382270903119/4951760157141521099596496896",
+  "uniform_defect_decimal": 7.665230355747686e-12,
+  "accepted": true,
+  "inverse_bound": "29420985656075673385507487744/4951760157103564717325593777",
+  "background_error_included": false,
+  "background_operator_error": "0",
+  "infinite_tail_included": false,
+  "physical_certificate": false,
+  "operator": "Jsharp_muRefA, NOT Ksharp",
+  "mu": "90359175/536870912",
+  "box": [
+    12,
+    36
+  ],
+  "weights": [
+    "129/128",
+    "9/8"
+  ],
+  "address_source_sha256": "aaaa6f933e4e12d3d5eb557d9e9130f22a50eddf1d6995bdfa55ca7ea4fbf338",
+  "input_tail_bound": "153/37",
+  "global_inverse_bound": "29420985656075673385507487744/4951760157103564717325593777",
+  "global_inverse_bound_decimal": 5.941520736594986,
+  "global_claim_requires_analytic_free_tail": true
+}

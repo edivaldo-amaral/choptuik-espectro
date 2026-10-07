@@ -1,0 +1,8 @@
+(T0) simetria de S Xi Gamma2: ||G(v,w) - G(w,v)|| / ||G(v,w)|| = 2.33e-16
+(T1) w aleatorio (4x9), mu = 0.37: convencao do autor: d_tau -> +i m/2, (Z + 2)F: ||L_w(mu)(Z+1)w - (Z+k)F_w|| / ||L_w(mu)(Z+1)w|| = 1.43e-16
+(T1) w aleatorio (4x9), mu = 0.37: controle: d_tau -> -i m/2: ||L_w(mu)(Z+1)w - (Z+k)F_w|| / ||L_w(mu)(Z+1)w|| = 1.48e-02
+(T1) w aleatorio (4x9), mu = 0.37: controle: (Z + 1)F no lado direito: ||L_w(mu)(Z+1)w - (Z+k)F_w|| / ||L_w(mu)(Z+1)w|| = 4.13e-02
+(T2) defeito do codigo em RefA: ||F(RefA)|| = 6.319e-11 (sem pesos; ||RefA|| = 5.246e-01)   [61s]
+(T2) ||L_A(mu_A) g_A|| = 6.9017e-10, ||(Z_A + 2)F(RefA)|| = 6.9017e-10, diferenca 1.15e-15; ||g_A|| = 1.5598e+00; ||L_A g_A||/||g_A|| = 4.42e-10  (sem pesos, saida completa)   [92s]
+(T4) g_A (gauge_vector_L) contra (Z_A + 1)RefA proprio: diferenca relativa 1.2e-16
+  [93s]

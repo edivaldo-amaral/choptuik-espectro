@@ -1,0 +1,132 @@
+{
+ "cobertura_A": {
+  "ok": true,
+  "tempo_s": 0,
+  "saida": [
+   "96 discos certificados",
+   "  aresta esquerda Re s = 0: coberta",
+   "  aresta superior Im s = 1/4: coberta",
+   "  aresta direita Re s = 3: coberta",
+   "  aresta inferior Im s = -1/4: coberta",
+   "CONTORNO COBERTO"
+  ]
+ },
+ "contagem_A": {
+  "ok": true,
+  "tempo_s": 0,
+  "saida": [
+   "fora, mais perto do bordo: -0.1683+0.0000i (dist 1.683e-01), 0.0414+0.5000i (dist 2.500e-01), 0.0414-0.5000i (dist 2.500e-01), -0.3366+0.0000i (dist 3.366e-01)",
+   "max t(s) no contorno <= 559.151 (disco (PosixPath('build/rouche_L_rig/discos_v2/disco_-0_25.json'), [0.0, -0.25])); t eps_B <= 3.337e-02  OK",
+   "zeros de A + s em Omega = 2: 0.401025-4.41e-12i, 0.733180+8.49e-13i"
+  ],
+  "zeros": [
+   "zeros de A + s em Omega = 2: 0.401025-4.41e-12i, 0.733180+8.49e-13i"
+  ]
+ },
+ "cobertura_B": {
+  "ok": true,
+  "tempo_s": 0,
+  "saida": [
+   "174 discos certificados",
+   "  aresta esquerda Re s = 0: coberta",
+   "  aresta superior Im s = 3/4: coberta",
+   "  aresta direita Re s = 3: coberta",
+   "  aresta inferior Im s = 1/4: coberta",
+   "CONTORNO COBERTO"
+  ]
+ },
+ "contagem_B": {
+  "ok": true,
+  "tempo_s": 0,
+  "saida": [
+   "fora, mais perto do bordo: -0.2453+0.5000i (dist 2.453e-01), 0.1683+1.0000i (dist 2.500e-01), 0.4010+1.0000i (dist 2.500e-01), 0.7332+0.0000i (dist 2.500e-01)",
+   "max t(s) no contorno <= 559.151 (disco (PosixPath('build/rouche_L_rig/discos_v2/disco_-0_25.json'), [0.0, -0.25])); t eps_B <= 3.337e-02  OK",
+   "zeros de A + s em Omega = 1: 0.041419+5.00e-01i"
+  ],
+  "zeros": [
+   "zeros de A + s em Omega = 1: 0.041419+5.00e-01i"
+  ]
+ },
+ "F1": {
+  "ok": true,
+  "tempo_s": 31,
+  "iguais": {
+   "c1_re": true,
+   "c1_im": true,
+   "cota_inferior": true,
+   "certificado": true,
+   "c1_cone_re": true,
+   "c1_cone_im": true,
+   "certificado_cone": true
+  }
+ },
+ "R5": {
+  "ok": true,
+  "tempo_s": 0,
+  "iguais": {
+   "linhas": true
+  }
+ },
+ "nk_0733": {
+  "ok": true,
+  "tempo_s": 0,
+  "iguais": {
+   "theta": true,
+   "r": true,
+   "erro_lambda": true
+  },
+  "saida": [
+   "PERRON (3 niveis, pesos 1) verificado em racionais: theta = 0.805721",
+   "NK VERIFICADO: zero unico (y*, lambda*) com ||x* - x0|| <= r; |lambda* - 0.7331796596606924| <= 1.016e-05; DF(x*) invertivel: lambda* algebricamente simples."
+  ]
+ },
+ "nk_raizB": {
+  "ok": true,
+  "tempo_s": 0,
+  "iguais": {
+   "theta": true,
+   "r": true,
+   "erro_lambda": true
+  },
+  "saida": [
+   "PERRON (3 niveis, pesos 1) verificado em racionais: theta = 0.911526",
+   "NK VERIFICADO: zero unico (y*, lambda*) com ||x* - x0|| <= r; |lambda* - [0.0414194105346554, 0.5]| <= 3.665e-05; DF(x*) invertivel: lambda* algebricamente simples."
+  ]
+ },
+ "nk_s4": {
+  "ok": true,
+  "tempo_s": 0,
+  "iguais": {
+   "theta": true,
+   "r": true,
+   "erro_lambda": true
+  },
+  "saida": [
+   "PERRON (3 niveis, pesos 1) verificado em racionais: theta = 0.880172",
+   "NK VERIFICADO: zero unico (y*, lambda*) com ||x* - x0|| <= r; |lambda* - 0.16830707900226116| <= 2.816e-05; DF(x*) invertivel: lambda* algebricamente simples."
+  ]
+ },
+ "nk_s3b": {
+  "ok": true,
+  "tempo_s": 0,
+  "iguais": {
+   "theta": true,
+   "r": true,
+   "erro_lambda": true
+  },
+  "saida": [
+   "PERRON (3 niveis, pesos 1) verificado em racionais: theta = 0.839936",
+   "NK VERIFICADO: zero unico (y*, lambda*) com ||x* - x0|| <= r; |lambda* - 0.401024733| <= 1.714e-04; DF(x*) invertivel: lambda* algebricamente simples."
+  ]
+ },
+ "s3a": {
+  "ok": true,
+  "tempo_s": 4,
+  "saida": [
+   "pior theta reverificado: 0.9961189",
+   "154 discos certificados",
+   "celulas resolvidas: 1770; sem cobertura: 0",
+   "COBERTURA COMPLETA"
+  ]
+ }
+}

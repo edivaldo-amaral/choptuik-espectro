@@ -1,0 +1,4 @@
+(i)   D contido no retangulo de S3a: True  (Re em [0.276, 0.526], |Im| < 0.125)
+(ii)  |lambda* - c| <= 3.054e-04 < 0,05 e < 1/8: True
+(iii) |float(0,401) - 0,401| = 2.31e-17; os 16 discos cobrem as circunferencias |s - c| = rho +- 1e-9 (pontas dos arcos, Arb; quase-convexidade como no codigo): True
+(iv)  Y_L -> X_K com norma <= 1: True;  X_L (com sinal) -> X_K: razao de pesos em m = -M vale (130/129)^(2M) -> infinito (ex.: M = 200: 21.95), logo X_L nao esta em X_K: o lema A3 e necessario para levar o autovetor de L ao espaco de K.

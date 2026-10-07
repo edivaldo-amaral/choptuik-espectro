@@ -1,0 +1,11 @@
+{
+  "operador": "L",
+  "R_fundo": 2.949198291318669,
+  "norma_fundo": 3.9641333006483443,
+  "faixas": [
+    "build/spectrum/symbol-L-faixa0.json",
+    "build/spectrum/symbol-L-faixa1.json",
+    "build/spectrum/symbol-L-faixa2.json",
+    "build/spectrum/symbol-L-faixa3.json"
+  ]
+}

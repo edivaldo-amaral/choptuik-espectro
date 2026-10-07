@@ -1,0 +1,3 @@
+Revisão concluída. Os sete itens foram classificados como **OK**; não encontrei ERROS ou LACUNAS sustentáveis por contraexemplo ou cota violada.
+
+Relatório: [RELATORIO.md](<repo>/.codex-runs/2026-09-24-revisao-s3a/RELATORIO.md)

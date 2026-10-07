@@ -1,0 +1,6 @@
+(a) max |B(m+d,m) - B(par+d,par)| = 0.0
+(b) J: max |J_B(s)(m+1) - J_A(s+i/2)(m)| = 0.0
+    B: max |B_B(m+1+d, m+1) - B_A(m+d, m)| = 0.0
+    C: max |C_B(s)(m+1 <- mi+1) - C_A(s+i/2)(m <- mi)| = 0.0
+(c) ||Mx||/||x|| = 1.015625  kappa1 = 1.015625
+(d) max |J_A(s+i)(m) - J_A(s)(m+2)| = 1.1102230246251565e-16
