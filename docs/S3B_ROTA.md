@@ -419,7 +419,11 @@ ordem (`nk_L3_q.py`: ‖P_Z Q0 P_T‖ = 0,169 em vez de 1,92), os números finai
 
 | θ | Z2 | Y | r | \|λ* − 0,401024733\| | discriminante | testemunho |
 |---:|---:|---:|---:|---:|---:|---:|
-| 0,839936 | 42,96 | 5,44·10⁻⁵ | 3,78·10⁻⁴ | <= 1,71·10⁻⁴ | 0,0163 | >= 0,16976 |
+| 0,839937 | 42,97 | 5,45·10⁻⁵ | 3,79·10⁻⁴ | <= 1,72·10⁻⁴ | 0,0163 | >= 0,16975 |
+
+(08/10: valores arredondados para fora a partir de `rig/C3.json` e `rig/D.json`: θ = 0,83993625,
+Z2 = 42,9646, Y = 5,4406·10⁻⁵, r = 3,7832·10⁻⁴, erro de λ = 1,7144·10⁻⁴, testemunho = 0,169758. A tabela
+anterior arredondava alguns deles para o mais próximo, para dentro.)
 
 A cota do símbolo `NORMA_BL` pode ser até 23% maior sem que o NK deixe de fechar. A ressalva
 sobre cadeias de Jordan das outras raízes de L em D está respondida por

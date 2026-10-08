@@ -10,7 +10,7 @@ o resultado, como se chegou a ele, o que está revisado, o que falta e os caminh
 
 **Em uma frase.** Na realização espectral de Reiterer–Trubowitz (RT), a solução crítica de Choptuik do
 colapso esférico de um campo escalar sem massa tem **exatamente um modo instável físico**, módulo gauge.
-Ele é real, simples e está em s ∈ [0,73316950; 0,73318982]. A prova é assistida por computador e todas
+Ele é real, simples e está em s ∈ [0,73316949; 0,73318983]. A prova é assistida por computador e todas
 as peças estão revisadas de forma independente (`T2_ENUNCIADO.md`).
 
 **O espectro em Re s > 0, por classe de Floquet do período completo:**
@@ -28,7 +28,8 @@ as peças estão revisadas de forma independente (`T2_ENUNCIADO.md`).
 - As contagens são N_A = 3 e N_B = 1, por Rouché de operadores com referência finita, deflação de
   Brauer e contagem por Schur.
 
-**Conferência externa.** γ = 1/λ, com λ = 4πλ*/Δ, cai em [0,373939; 0,373950]. É o expoente crítico
+**Conferência externa.** γ = 1/λ, com λ = 2πλ*/K = 4πλ*/Δ e Δ = 2K de RT, cai em [0,373955; 0,373966] (corrigido em 07/10: antes
+se usava Δ ≈ 3,4453). É o expoente crítico
 medido por Choptuik e calculado por Gundlach (0,374). A relação γ = 1/λ é heurística, da teoria de escala,
 e não faz parte do teorema.
 
@@ -152,7 +153,7 @@ transforma o resultado em algo publicável, e o artigo então se apoia nele.
   - μ* = 0,168307078963…;
   - s_K ≈ 0,40102;
   - s_B ≈ 0,04142;
-  - λ* ∈ [0,73316950; 0,73318982].
+  - λ* ∈ [0,73316949; 0,73318983].
 - **Contagens:** N_A = 3 (96 discos, θ <= 0,99842); N_B = 1 (78 discos efetivos).
 - **Cotas:** F3: R_L <= 2,93; R♯ <= 1,765; K injetivo por 154 tiles (S3a), mais o Rouché de K no disco de
   S3b.

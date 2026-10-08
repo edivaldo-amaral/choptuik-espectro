@@ -1,0 +1,37 @@
+% ---- theorem environments (thmtools, so that cleveref names each kind correctly)
+\declaretheorem[name=Theorem,numberwithin=section]{theorem}
+\declaretheorem[name=Proposition,sibling=theorem]{proposition}
+\declaretheorem[name=Lemma,sibling=theorem]{lemma}
+\declaretheorem[name=Corollary,sibling=theorem]{corollary}
+\declaretheorem[name=Definition,sibling=theorem,style=definition]{definition}
+\declaretheorem[name=Remark,sibling=theorem,style=remark]{remark}
+\declaretheorem[name=Main Theorem,numbered=no]{mainthm}
+\declaretheorem[name=Theorem,numbered=no]{introthm}
+
+% ---- drafting aids (remove before submission)
+\newcommand{\todo}[1]{{\color{BrickRed}[\textbf{TODO:} #1]}}
+\newcommand{\src}[1]{{\color{Gray}\footnotesize[\texttt{#1}]}}
+
+% ---- notation
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\renewcommand{\Re}{\operatorname{Re}}
+\renewcommand{\Im}{\operatorname{Im}}
+\newcommand{\gbar}{\bar g}
+\newcommand{\phibar}{\bar\phi}
+\newcommand{\omegabar}{\bar\omega}
+\newcommand{\Mhat}{\widehat M}
+\newcommand{\Lop}{L}             % linearized RT family
+\newcommand{\Cop}{C}             % linearized constraints
+\newcommand{\Kop}{K}             % constraint propagation operator
+\newcommand{\Lie}{\mathcal{L}}
+\newcommand{\sphys}{s_{\ast}}    % the physical root
+\newcommand{\sK}{s_{K}}
+\newcommand{\sB}{s_{B}}
+\newcommand{\Dom}{\mathcal{D}}
+\newcommand{\Yp}{Y_{+}}
+\newcommand{\mult}{\operatorname{m}}
+
+% DOI links in the bibliography (amsplain prints the note field)
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{\texttt{doi:#1}}}

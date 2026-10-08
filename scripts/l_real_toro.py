@@ -33,7 +33,7 @@ def main():
     ap.add_argument('--N', type=int, default=4096)
     ap.add_argument('--m0', type=int, default=400)
     ap.add_argument('--S', type=float, default=3.1, help='cota de |s| na região (|3 + 0,75i| < 3,1)')
-    ap.add_argument('--nB', type=float, default=3.9641 + 1e-6, help='||B_L||_toro (F3) + folga; a contracao vale para ||B|| ate ~15,9, entao o erro do fundo (~1e-6) e irrelevante')
+    ap.add_argument('--nB', type=float, default=3.9642, help='||B_L||_toro: a cota certificada do simbolo e 3,9641333 (symbol-L-2048x4096.json), arredondada para cima; antes 3,964101, abaixo dela (revisao do artigo, 08/10, I-3). A contracao vale para ||B|| ate ~15,9')
     ap.add_argument('--saida', type=Path, default=Path('build/t2/l_real_toro.json'))
     a = ap.parse_args()
     t0 = time.time()

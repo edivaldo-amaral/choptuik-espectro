@@ -1,0 +1,323 @@
+\section{The background and the Reiterer--Trubowitz formulation}\label{sec:setting}
+
+This section fixes notation. \Cref{sec:setting-background,sec:setting-system} recall the parts
+of~\cite{RT2019} that we use, with their notation wherever possible. \Cref{sec:setting-linear,sec:setting-sectors,sec:setting-constraints,sec:setting-realizations}
+define the objects of the Main Theorem: the linearized family $L(s)$, the constraint map $C(s)$, the
+constraint propagation operator $K(s)$, the Floquet classes and the function spaces.
+Section numbers in references to~\cite{RT2019} are those of its arXiv version 1203.3766v1, whose source we
+used throughout.
+
+\subsection{The Choptuik spacetime}\label{sec:setting-background}
+
+Let
+\[
+  M=\{(u_-,u_+)\in\R^2:\ u_+<0,\ u_+<u_-<-u_+/81\},\qquad
+  \xi=\frac{u_+-u_-}{u_++u_-}.
+\]
+Reiterer and Trubowitz~\cite[Main result]{RT2019} prove the existence of constants $K,\mu>0$, known to
+$80$ digits ($K\approx1.72272620$, $\mu\approx0.16830708$), and of real analytic functions
+$\phi,\zeta,Q$ on $M$ with $\mu+Q\xi^2>0$, such that the spherically symmetric metric
+\begin{equation}\label{eq:metric}
+  \gbar=e^{-2\zeta}\Big(-\frac{2\,(du_-\otimes du_++du_+\otimes du_-)}{\mu^2(u_++u_-)^2}
+  +\frac{\xi^2}{(\mu+Q\xi^2)^2}\,g_{S^2}\Big)
+\end{equation}
+on $M\times S^2$ and the scalar field $\phibar=\phi$ solve
+$\operatorname{Ric}_g=2\,d\phi\otimes d\phi$, $\Box_g\phi=0$. The map
+$\Theta(u_-,u_+)=e^{-2\pi\mu}(u_-,u_+)$ satisfies
+\[
+  \Theta^*\gbar=e^{-2K}\gbar,\qquad \phibar\circ\Theta=-\phibar,
+\]
+and the scalar curvature is not identically zero, so the spacetime is not flat and blows up at the
+singular point $(u_-,u_+)=(0,0)$, which is not in $M$. The boundary $u_+=u_-$ is the axis of symmetry, a
+removable coordinate singularity. The null hypersurface $u_-=0$ is the past light cone of the singular
+point; $M$ contains a neighbourhood of it.
+
+\emph{Coordinates.} We use the coordinates $(\tau,\xi)$ of~\cite{RT2019}, defined by
+\begin{equation}\label{eq:tauxi}
+  u_\sigma=-(1+\sigma\xi)\,e^{-\mu\tau},\qquad\sigma=\pm.
+\end{equation}
+In them $\Theta$ is the translation $\tau\mapsto\tau+2\pi$, the axis is $\xi=0$, the light cone $u_-=0$ is
+$\xi=1$, and the condition $u_-<-u_+/81$ becomes $\xi<41/40$. Replacing $\xi\ge0$ by the Cartesian
+variable $x\in\R^3$ with $|x|=\xi$, the spacetime becomes the open set
+\[
+  \Mhat=\R_\tau\times B_{41/40}(0)\subset\R\times\R^3,
+\]
+on which $\gbar$ and $\phibar$ are real analytic, including at the axis $x=0$ and across the light cone
+$|x|=1$~\cite{RT2019}. All perturbations below are defined on $\Mhat$.
+
+\emph{Logarithmic time.} Since $\Theta$ rescales lengths by $e^{-K}$ and acts by $\tau\mapsto\tau+2\pi$,
+the time $T=K\tau/2\pi$ is the usual logarithmic time of critical collapse, in which $\Theta$ is a
+translation by $K$. The scalar field returns to itself under $\Theta^2$, so the echoing period is
+$\Delta=2K=3.44545240\ldots$, in agreement with the numerical value $3.445452402(3)$ of
+Mart\'in-Garc\'ia and Gundlach~\cite{MartinGarciaGundlach2003}, as already noted in~\cite{RT2019}.
+
+\subsection{Frame variables and the system}\label{sec:setting-system}
+
+Reiterer and Trubowitz write the equations as a first order system, quadratically nonlinear, for the
+constant $\mu$ and four functions $\omega=(\omega_1,\omega_2,\omega_3,\omega_4)$ of $(\tau,\xi)$. With the
+radial null vector fields
+\[
+  D^\sigma=\sigma\,\partial_\tau+\mu(1+\sigma\xi)\,\partial_\xi,\qquad\sigma=\pm,
+\]
+and the reflection $(Pf)(\tau,\xi)=f(\tau,-\xi)$, they are
+\begin{equation}\label{eq:omega}
+\begin{aligned}
+  \omega_1&=2\xi Q+(D^-+D^+)\big(\zeta+\log(\mu+\xi^2Q)\big),&
+  \omega_2^\sigma&=D^\sigma\big(\zeta+\log(\mu+\xi^2Q)\big)-\sigma\mu,\\
+  \omega_3^\sigma&=D^\sigma\zeta-\sigma\mu,&
+  \omega_4^\sigma&=D^\sigma\phi,
+\end{aligned}
+\end{equation}
+with $\omega_i^-=\omega_i$ and $\omega_i^+=-P\omega_i$ for $i=2,3,4$~\cite[\S2]{RT2019}. The
+Einstein--scalar field equations are equivalent to the vanishing of ten explicit functions
+$\Omega_i^\sigma(\mu,\omega)$, $i\in\{1,2,2\sharp,3,4\}$, each of the form
+\[
+  \Omega_i^\sigma=\xi\,(D^\sigma+\sigma\mu)(\text{one component of }\omega)
+  +\mu\,(\text{linear in }\omega)+\xi\,(\text{quadratic in }\omega).
+\]
+The reflection symmetry reduces them to the five equations $\Omega^+=0$, posed on the cylinder
+$(\R/4\pi\Z)\times(-\xi_*,\xi_*)$, $\xi_*>1$, for functions with the symmetries
+\begin{equation}\label{eq:symmetries}
+  \omega_1,\omega_2,\omega_3\ \text{$2\pi$-periodic},\qquad \omega_4\ \text{$2\pi$-antiperiodic},\qquad
+  P\omega_1=-\omega_1.
+\end{equation}
+
+\emph{Series.} Each $\omega_i$ is expanded as a Fourier series in $\tau$ with period $4\pi$ and a
+Chebyshev series in $\xi$:
+\begin{equation}\label{eq:series}
+  v(\tau,\xi)=\sum_{m,n\in\Z}v_{mn}\,e^{im\tau/2}e^{in\theta},\qquad \xi=\cos\theta,\qquad
+  v_{m,-n}=v_{mn}.
+\end{equation}
+The symmetries~\eqref{eq:symmetries} say that $\omega_1,\omega_2,\omega_3$ contain only even $m$,
+$\omega_4$ only odd $m$, and $\omega_1$ only odd $n$. In these coordinates $\partial_\tau$ acts by
+$im/2$, the reflection by $(-1)^n$, multiplication by $\xi$ by averaging the neighbours $n\pm1$, and
+products of functions by convolution of coefficients.
+
+\emph{The selected system and the constraints.} Reiterer and Trubowitz split the five equations
+$\Omega^+=0$ into a part with as many equations as unknowns and a remainder, the constraints, by two
+selection operators $S$ and $S^\sharp$: $\Omega^+=0$ if and only if $S\Omega^+=0$ and $S^\sharp\Omega^+=0$.
+The selected part is
+\begin{equation}\label{eq:F}
+  F(\mu,\omega):=S\,\Omega^+(\mu,\omega)
+  =O_\mu\,\omega+\mu\,S\Gamma_1\omega+S\Xi\,\Gamma_2(\omega,\omega),
+\end{equation}
+where:
+\begin{itemize}[leftmargin=*]
+\item $O_\mu=\partial_\tau+\mu D_O$, with $D_O=\operatorname{diag}(\xi\partial_\xi+1,\
+  (1+\xi)\partial_\xi+1,\ (1+\xi)\partial_\xi+1,\ (1+\xi)\partial_\xi+1)$, is the free part;
+\item $\Gamma_1$ is linear and $\Gamma_2$ is symmetric bilinear; both are built from reflections and
+  pointwise products, without derivatives;
+\item $\Xi$ is multiplication by $\xi$, and $S$ contains the regularized division by $\xi$,
+  $R_\xi f=(f-f|_{\xi=0})/\xi$.
+\end{itemize}
+The explicit formulas are in~\cite[\S3]{RT2019}. We write $F^\sharp(\mu,\omega):=S^\sharp\Omega^+(\mu,\omega)$
+for the constraints.
+
+\emph{The background.} Reiterer and Trubowitz construct a solution
+$(\mu,\omegabar)$ of $F=0$, $F^\sharp=0$, as a fixed point of a contraction in a weighted $\ell^1$ space
+of coefficients with weights $(65/64)^{|m|}(5/4)^{|n|}$, near explicit numerical data, and from it the
+spacetime of \cref{sec:setting-background}~\cite[\S\S4--5]{RT2019}. The solution is normalized by the
+condition $\operatorname{Re}(\omegabar_4)_{10}=0$, which fixes the translation invariance in $\tau$. Their final
+bounds are
+\begin{equation}\label{eq:RTball}
+  |\mu-(\mu_A+\mu_B)|\le2^{-277},\qquad \|\omegabar-(\omega_A+\omega_B)\|\le2^{-277},\qquad
+  \|\omega_B\|\le2^{-25},
+\end{equation}
+where $(\mu_A,\omega_A)$ and $(\mu_B,\omega_B)$ are explicit data published with~\cite{RT2019}, and the
+norm is their weighted $\ell^1$ norm. Most of our bounds use only $(\mu_A,\omega_A)$ and the consequence
+$\|\omegabar-\omega_A\|\le2^{-25}+2^{-277}$.
+
+\subsection{The linearized family}\label{sec:setting-linear}
+
+A perturbation of Floquet type is $\omega=\omegabar+\epsilon\,e^{s\tau}h$, where $h$ is a $4\pi$-periodic
+multifield. Here $\mu$ is held fixed, and so are the coordinates $(\tau,\xi)$: perturbations of $\mu$ would
+move the null coordinates~\eqref{eq:tauxi}. That this is no loss of generality for physical modes is part
+of \cref{sec:physical}. The normalization of the phase is not imposed on $h$.
+
+\begin{definition}[The linearized family]\label{def:L}
+For $s\in\C$ and a $4\pi$-periodic multifield $h$ with $Ph_1=-h_1$, set
+\[
+  L(s)h:=e^{-s\tau}\,D_\omega F(\mu,\omegabar)\big[e^{s\tau}h\big],\qquad
+  C(s)h:=e^{-s\tau}\,D_\omega F^\sharp(\mu,\omegabar)\big[e^{s\tau}h\big].
+\]
+\end{definition}
+
+\begin{lemma}[$L$ and $C$ are affine in $s$]\label{lem:affine}
+$L(s)=L(0)+s\,I$ and $C(s)=C_0+s\,C_1$, where
+\[
+  L(0)=J+B,\qquad J=O_\mu,\qquad B=\mu\,S\Gamma_1+2\,S\Xi\,\Gamma_2(\omegabar,\cdot\,),
+\]
+and $C_0,C_1$ are given explicitly in \cref{app:formulas}.
+\end{lemma}
+
+\begin{proof}
+In~\eqref{eq:F}, the only derivative in $\tau$ is the one in $O_\mu$, with coefficient one. The operators
+$\Gamma_1$, $\Gamma_2(\omegabar,\cdot)$, $\Xi$ and $S$ act in $\xi$ and by pointwise products, so they
+commute with multiplication by $e^{s\tau}$, and $e^{-s\tau}\partial_\tau e^{s\tau}=\partial_\tau+s$. In
+$\Omega^+=\Xi H_\mu\omega+\mu\Gamma_1\omega+\Xi\Gamma_2(\omega,\omega)$ the derivative $\partial_\tau$ occurs
+only in $H_\mu=H_1\partial_\tau+(\text{terms in }\xi)$, where $H_1$ is a constant matrix of identities and
+reflections~\cite[\S\S2--3]{RT2019}. Hence the same computation gives $C(s)=C_0+sC_1$ with
+$C_1=S^\sharp\Xi H_1$.
+\end{proof}
+
+A root of $L$ is a point $s_0$ at which $L(s_0)$ has a nontrivial kernel in the realizations of
+\cref{sec:setting-realizations}. By \cref{lem:affine}, the roots of $L$ are the points $s_0$ with
+$-s_0\in\sigma(L(0))$, and a Jordan chain of $L$ at $s_0$, that is $L(s_0)h_0=0$ and
+$L(s_0)h_j=-h_{j-1}$, is a Jordan chain of the operator $L(0)$ at the eigenvalue $-s_0$. The
+\emph{algebraic multiplicity} $\mult(s_0)$ is the dimension of the generalized eigenspace
+$\bigcup_k\ker(L(0)+s_0)^k$. It is finite, and the roots are isolated, by \cref{prop:fredholm}.
+
+\subsection{Floquet classes and the two sectors}\label{sec:setting-sectors}
+
+A multifield $h$ is $4\pi$-periodic, so it contains all Fourier indices $m$; the background contains
+only the indices allowed by~\eqref{eq:symmetries}. Accordingly, the space of profiles splits as
+$X=X_A\oplus X_B$:
+\begin{itemize}[leftmargin=*]
+\item \emph{sector A}, with the symmetry of the background: $h_1,h_2,h_3$ with even $m$ and $h_4$ with
+  odd $m$;
+\item \emph{sector B}, with the opposite symmetry: $h_1,h_2,h_3$ with odd $m$ and $h_4$ with even $m$.
+\end{itemize}
+Since $\omegabar$ belongs to sector A, both sectors are invariant under $L(s)$ and $C(s)$; we write
+$L_A,L_B$ and $C_A,C_B$ for the restrictions. In terms of the half period $\tau\mapsto\tau+2\pi$, sector A
+consists of the profiles with the same symmetry as the background, and sector B of those with the opposite
+one.
+
+Multiplication by $e^{i\tau/2}$ is the shift $m\mapsto m+1$ of the Fourier index. It preserves the
+spaces of \cref{sec:setting-realizations} up to a constant factor, commutes with every operation
+in $\xi$ and with multiplication by functions of $\tau$, and conjugates $\partial_\tau$ to
+$\partial_\tau+i/2$. Hence
+\begin{equation}\label{eq:shift}
+  e^{-i\tau/2}\,L(s)\,e^{i\tau/2}=L(s+\tfrac{i}{2}),\qquad
+  e^{-i\tau/2}\,C(s)\,e^{i\tau/2}=C(s+\tfrac{i}{2}),
+\end{equation}
+and the shift exchanges the two sectors.
+
+\begin{lemma}[Reduction to sector A]\label{lem:sectorB}
+For every $s\in\C$,
+\[
+  \mult_L(s)=\mult_{L_A}(s)+\mult_{L_A}(s+\tfrac{i}{2}),
+\]
+and $L_A$ is $i$-periodic: $\mult_{L_A}(s+i)=\mult_{L_A}(s)$. The conjugation~\eqref{eq:shift} maps the
+Jordan chains of $L_B$ at $s$ onto those of $L_A$ at $s+\tfrac i2$, and it maps the chains satisfying the
+constraints onto chains satisfying the constraints.
+\end{lemma}
+
+\begin{proof}
+The splitting $X=X_A\oplus X_B$ reduces $L(s)$, so multiplicities add. The shift by one Fourier index
+maps $X_B$ onto $X_A$ and, by~\eqref{eq:shift}, conjugates $L_B(s)$ to $L_A(s+\tfrac i2)$ and $C_B(s)$
+to $C_A(s+\tfrac i2)$; conjugation preserves kernels, Jordan chains and their lengths. The shift by two
+indices maps $X_A$ to itself and gives the $i$-periodicity. The details for the realizations used below,
+where the shift is an isometry up to the factor $\kappa_1$, are in \cref{app:lemmas}.
+\end{proof}
+
+Consequently the roots of $L$, counted per Floquet class $s+\tfrac{i}{2}\Z$, correspond to the roots of
+$L_A$ counted modulo $i\Z$. All computations are done for $L_A$ in the strip
+\[
+  \widetilde Q=\{-\tfrac14<\Im s\le\tfrac34\},
+\]
+whose lower part $\{-\tfrac14<\Im s\le\tfrac14\}$ carries the sector-A roots (the \emph{A band}) and whose upper
+half carries the sector-B roots, shifted by $\tfrac i2$ (the \emph{B band}). For instance, the root $\sB$
+of the Main Theorem appears as $\sB+\tfrac i2$ in the B band.
+
+\emph{Reality.} The coefficients of $\omegabar$ satisfy the reality condition
+$v_{-m,-n}=\overline{v_{mn}}$~\cite{RT2019}; hence $\overline{L_A(\bar s)\,\bar h}=L_A(s)h$ for the
+corresponding conjugation of coefficients, and the roots of $L_A$ are symmetric under $s\mapsto\bar s$.
+For $L_B$ the same argument, combined with the shift, gives the symmetry $s\mapsto\bar s+i$ in the B band
+(\cref{app:lemmas}). These symmetries are what make the four roots of the Main Theorem real.
+
+\subsection{Constraint propagation}\label{sec:setting-constraints}
+
+The equations $\Omega^+=0$ are not independent. Reiterer and Trubowitz show that if $F(\mu,\omega)=0$,
+then $\omega^\sharp=F^\sharp(\mu,\omega)$ satisfies the linear homogeneous system
+\begin{equation}\label{eq:sharp}
+  O_\mu^\sharp\,\omega^\sharp+\mu\,R_\xi\Gamma_1^\sharp\,\omega^\sharp+\Gamma_2^\sharp(\omega,\omega^\sharp)=0,
+\end{equation}
+where $O_\mu^\sharp=\partial_\tau+\mu\operatorname{diag}(\xi\partial_\xi+1,(1+\xi)\partial_\xi+1)$, and
+$\Gamma^\sharp_1,\Gamma^\sharp_2$ are again algebraic~\cite[\S3]{RT2019}. Linearizing this identity at
+$(\mu,\omegabar)$, without assuming $F(\mu,\omega)=0$, gives the following lemma, proved in
+\cref{app:lemmas}.
+
+\begin{lemma}[Propagation of the constraints]\label{lem:KCML}
+Let
+\[
+  K(s)=J^\sharp+B^\sharp+s\,I,\qquad J^\sharp=O^\sharp_\mu,\qquad
+  B^\sharp=\mu\,R_\xi\Gamma_1^\sharp+\Gamma_2^\sharp(\omegabar,\cdot\,).
+\]
+There is an explicit affine family $M(s)=M_0+sM_1$ (\cref{app:formulas}) such that
+\begin{equation}\label{eq:KCML}
+  K(s)\,C(s)=M(s)\,L(s)
+\end{equation}
+as closed operators from the domain of $L$ in $Y(a,b)$ to the domain of $K$ in $Y(a',b')$, for all weights
+$1<a'<a$, $1<b'<b$ (\cref{sec:setting-realizations}).
+\end{lemma}
+
+In particular, if $L(s)h=0$ and $K(s)$ is injective on its domain in the smaller space, then $C(s)h=0$:
+an eigenvector of $L$ satisfies the constraints at every $s$ which is not a root of $K$. The loss of
+radius from $(a,b)$ to $(a',b')$ is harmless, because all our certificates for $K$ are formulated in the
+smaller space $(129/128,9/8)$.
+
+\subsection{Realizations and the Fredholm property}\label{sec:setting-realizations}
+
+We use two families of coefficient spaces. For weights $a,b>1$:
+\begin{itemize}[leftmargin=*]
+\item $Y(a,b)$ is the weighted $\ell^1$ space of~\cite{RT2019}, with norm
+  $\sum_i\eta_i\sum_{m,n}a^{|m|}b^{|n|}|(h_i)_{mn}|$; the component weights $\eta_i>0$ give equivalent
+  norms and only affect constants (\cref{app:lemmas}). We write $\Yp=Y(65/64,5/4)$ for the space of the
+  existence proof.
+\item $\mathbb T(a,b)$, the \emph{torus space}, is the weighted $\ell^2$ space with \emph{signed} Fourier
+  index,
+  \[
+    \|h\|^2_{\mathbb T(a,b)}=\sum_i\sum_{m,n\in\Z}a^{2m}b^{2n}\,|(h_i)_{mn}|^2 .
+  \]
+  It is $L^2$ of the torus $\{|w|=a\}\times\{|z|=b\}$ in the variables $w=e^{i\tau/2}$, $z=e^{i\theta}$,
+  $\xi=(z+z^{-1})/2$. On it, multiplication by an analytic function, the reflection $P$ and the division by
+  $\xi$ act pointwise, which makes several bounds sharp (\cref{sec:counting}).
+\end{itemize}
+The inclusion $Y(a,b)\subset\mathbb T(a,b)$ has norm at most one.
+
+\begin{proposition}[Fredholm property]\label{prop:fredholm}
+In each of the spaces $Y(a,b)$ and $\mathbb T(a,b)$ with $1\le a\le65/64$ and $1<b\le5/4$:
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=*]
+\item $J$ is closed on its maximal domain $\Dom$, which coincides with the closure of the trigonometric
+  polynomials in the graph norm, and $J+z$ is invertible for real $z\ge0$, with compact inverse;
+\item $B$ is bounded, so $L(s)=J+B+s$ is closed on the fixed domain $\Dom$ for all $s$;
+\item with $Q=(J+z_0)^{-1}$ for a fixed $z_0>0$, the family $L(s)Q=I+(B+s-z_0)Q$ is an analytic
+  family of Fredholm operators of index zero, invertible for real $s$ large.
+\end{enumerate}
+Consequently the roots of $L$ are isolated and have finite algebraic multiplicity. The same holds for
+$K(s)$ in the corresponding sharp spaces.
+\end{proposition}
+
+The proof is in \cref{app:lemmas}. The key point of~(i) is that the homogeneous solutions of $J+z$ in each
+Fourier mode are multiples of $(1+\xi)^{-1-(z+im/2)/\mu}$ or $\xi^{-1-(z+im/2)/\mu}$, which are singular at
+$\xi=-1$ or $\xi=0$, inside the Bernstein ellipse; so $J+z$ is injective on the maximal domain.
+
+The certificates of \cref{sec:counting,sec:roots} are computed in the torus space, while the existence
+proof, and with it the physical interpretation, lives in $\Yp$. The following lemma shows that the
+choice does not matter in the region where we count.
+
+\begin{lemma}[Independence of the realization]\label{lem:Lreal}
+For $|s|\le 3.1$, the kernels and the Jordan chains of $L(s)$ in $\Yp$ and in $\mathbb T(65/64,5/4)$
+coincide. Hence, in the disc $|s|\le3.1$, the roots of $L$ and their algebraic multiplicities are the same
+in the two realizations.
+\end{lemma}
+
+\begin{proof}[Sketch]
+Write $H(s)=I+(B+s)Q$ with $Q=J^{-1}$, the same operator in both spaces, and split the coefficients into a
+finite box $G=\{|m|<1024,\ n<4096\}$ and its complement $T=I-G$. In both spaces
+$\|T(H(s)-I)T\|<1$ for $|s|\le3.1$: the bound is $0.371$ in the torus, from a bound
+$\|B\|\le3.9642$ certified through the symbol of $B$ (\cref{sec:counting}), and $0.2666$ in $\Yp$, from a bound on the
+background part computed from the data and the published ball of~\cite{RT2019} (\cref{app:recovery}); both use closed forms for $\|QT\|$. If $H(s)x=0$ with $x$ in the
+torus space, then $Gx$ is a finite vector, $Tx$ is the unique torus solution of
+$THT\,Tx=-THGx$, and the Neumann series solves the same equation in $\Yp$; by uniqueness the two
+solutions agree, so $x\in\Yp$. Chains are handled by induction, since the right-hand side
+$-h_{j-1}$ is already in the strong space. The converse is the inclusion. Details, and the rational
+verification of the constants, are in \cref{app:lemmas}.
+\end{proof}
+
+\begin{remark}\label{rem:radius}
+The same \emph{radius recovery} argument shows more: an element of the kernel, or of a Jordan chain, in
+a space of smaller radius automatically lies in the space of larger radius, for every $s$
+(\cref{sec:physical}, \cref{lem:recovery}). It is used in \cref{sec:physical} to show that physical modes,
+which are only assumed analytic in some unspecified neighbourhood, produce eigenvectors in $\Yp$.
+\end{remark}

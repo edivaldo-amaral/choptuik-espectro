@@ -95,7 +95,7 @@ Próximos passos:
   B → A, o quociente e KC = ML conferem. As 11 lacunas eram de enunciado e citação, e foram corrigidas
   (classe de período completo de largura 1/2 com s_B real, hipóteses escondidas, H-rec e H-gauge como
   matemática não feita).
-- **NK em 0,7332:** λ* ∈ [0,73316950; 0,73318982], simples (`C1_REAVALIACAO.md` §12).
+- **NK em 0,7332:** λ* ∈ [0,73316949; 0,73318983], simples (`C1_REAVALIACAO.md` §12).
 
 Com isso a parte assistida por computador de T2 está completa. O que resta é matemática fora do
 certificado: H-rec (ida) e H-gauge (global), e a formalização dos passos em papel 1–3 e 12.

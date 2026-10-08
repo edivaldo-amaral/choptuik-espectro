@@ -1,0 +1,13 @@
+passo      0:   3 arquivos, digest 75d22969ac3c9d81 | tabela 3 75d22969ac3c9d81 | digests.json 75d22969ac3c9d81 -> OK
+passo      4:   3 arquivos, digest 60a87d3e0b88faf5 | tabela 3 60a87d3e0b88faf5 | digests.json 60a87d3e0b88faf5 -> OK
+passo      5:   9 arquivos, digest 36f8d957cb877592 | tabela 9 36f8d957cb877592 | digests.json 36f8d957cb877592 -> OK
+passo      6:  57 arquivos, digest 049583a01c4e4dad | tabela 57 049583a01c4e4dad | digests.json 049583a01c4e4dad -> OK
+passo  7, 10:  85 arquivos, digest b46c12bd39b8e7f5 | tabela 85 b46c12bd39b8e7f5 | digests.json b46c12bd39b8e7f5 -> OK
+passo      8:  17 arquivos, digest 891bdaa6bcbfb3c5 | tabela 17 891bdaa6bcbfb3c5 | digests.json 891bdaa6bcbfb3c5 -> OK
+passo      9:  16 arquivos, digest f403c34f7c193a60 | tabela 16 f403c34f7c193a60 | digests.json f403c34f7c193a60 -> OK
+passo     11:  13 arquivos, digest 73b3aae0042d6cde | tabela 13 73b3aae0042d6cde | digests.json 73b3aae0042d6cde -> OK
+passo    11a:  19 arquivos, digest 31458d42757f59dd | tabela 19 31458d42757f59dd | digests.json 31458d42757f59dd -> OK
+passo    11b:   1 arquivos, digest e4a65f7b6165c1f2 | tabela 1 e4a65f7b6165c1f2 | digests.json e4a65f7b6165c1f2 -> OK
+passo    11c:   1 arquivos, digest 6b2d83307787fd97 | tabela 1 6b2d83307787fd97 | digests.json 6b2d83307787fd97 -> OK
+arquivos do inventario com sha no disco diferente do inventario: 0
+arquivos do inventario ausentes neste disco (pesados, no Zenodo/lab2): 5: ['A.npy', 'F_+0_0000+0_5000i.npy', 'F_+0_0000+0_7500i.npy', 'F_+0_5500+0_7500i.npy']

@@ -6,7 +6,7 @@ gravitacional esférico de um campo escalar sem massa), na realização de Reite
 ## O resultado: T2
 
 Na realização espectral de RT, **a solução crítica de Choptuik tem exatamente um modo instável físico**,
-módulo gauge. Ele é real, simples e está em **s ∈ [0,73316950; 0,73318982]**.
+módulo gauge. Ele é real, simples e está em **s ∈ [0,73316949; 0,73318983]**.
 - O enunciado completo, as hipóteses e a cadeia da prova estão em [`docs/T2_ENUNCIADO.md`](docs/T2_ENUNCIADO.md).
 - A visão de conjunto está em [`docs/PANORAMA.md`](docs/PANORAMA.md).
 
@@ -20,7 +20,7 @@ módulo gauge. Ele é real, simples e está em **s ∈ [0,73316950; 0,73318982]*
 **Outras afirmações:**
 - não há raízes em Re s >= 2,93;
 - no eixo imaginário, a única raiz de L é a fase s = 0 (simples, de gauge);
-- conferência externa: γ = 1/λ ∈ [0,373939; 0,373950], o expoente crítico conhecido.
+- conferência externa: γ = 1/λ ∈ [0,373955; 0,373966], o expoente crítico conhecido.
 
 **Escopo e modelagem:**
 - perturbações esfericamente simétricas;

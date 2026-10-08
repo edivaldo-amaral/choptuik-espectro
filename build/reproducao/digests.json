@@ -1,0 +1,68 @@
+[
+ {
+  "passo": "0",
+  "descricao": "existencia do fundo (RT): dados publicados",
+  "arquivos": 3,
+  "digest": "75d22969ac3c9d81a2eaaf63e9af2298d34ac5cadc22183bb2f00ca2f17d092f"
+ },
+ {
+  "passo": "4",
+  "descricao": "L-real: recuperacao de raio toro <-> RT",
+  "arquivos": 4,
+  "digest": "ab394b2cb7a9cca241dc28e7aa239efacc771e6f422e835fdb5724ef853405f4"
+ },
+ {
+  "passo": "5",
+  "descricao": "F3: nada em Re s >= 2,93 (simbolo de L em Arb)",
+  "arquivos": 10,
+  "digest": "d4a922dbf5a787875afbd4da13a0cd116a13caac8a866c047603a1b4e78cf777"
+ },
+ {
+  "passo": "6",
+  "descricao": "faixa A: N_A = 3 (Rouche de L)",
+  "arquivos": 58,
+  "digest": "c8a9c24901eb39930e508ce51cd32772dc4cd2f8e56d0de0dbd4a5ae1c562b99"
+ },
+ {
+  "passo": "7, 10",
+  "descricao": "faixa B: N_B = 1 e a raiz B simples (NK)",
+  "arquivos": 86,
+  "digest": "a62dc9d0d789e2fcfb4d6e30511e530bc9fbf5bc02e992b3d52d78ab59223a38"
+ },
+ {
+  "passo": "8",
+  "descricao": "S4: mu* simples, autoespaco span(g*), Dg* = 0",
+  "arquivos": 17,
+  "digest": "891bdaa6bcbfb3c5dc874fa81faf1c94c69b912c86d6c2e260a7654655a7a4e9"
+ },
+ {
+  "passo": "9",
+  "descricao": "s_K simples, viola as constraints (S3b)",
+  "arquivos": 14,
+  "digest": "8d44ed8d74426b3a7c9a8004f4d8b12b1d09505af2b5f06e2336192b3ed58661"
+ },
+ {
+  "passo": "11",
+  "descricao": "K injetivo na faixa A fora de s_K: S3a (tiles), Rouche de K, R# (simbolo de K)",
+  "arquivos": 14,
+  "digest": "02a66ff6aff02482b0a3f0e3e6f84123035e287a21bdeb561e5eead4ecd10cb5"
+ },
+ {
+  "passo": "11a",
+  "descricao": "0,7332 simples (NK de L)",
+  "arquivos": 19,
+  "digest": "31458d42757f59ddadfcb3746f63e1bb3da1408a006d5634bc0151f49a8080d8"
+ },
+ {
+  "passo": "11b",
+  "descricao": "Lema G: fato F1/F1' (omega4 nao nula no centro e no cone)",
+  "arquivos": 1,
+  "digest": "e4a65f7b6165c1f2ca63693e930d1cf0687154ee88c788b839f0c421209da634"
+ },
+ {
+  "passo": "11c",
+  "descricao": "Lema R: R5 (recuperacao de raio de qualquer peso)",
+  "arquivos": 1,
+  "digest": "6b2d83307787fd97671df7042bf03fe06ccad513540073636299e427a286b33f"
+ }
+]

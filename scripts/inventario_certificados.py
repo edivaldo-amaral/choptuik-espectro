@@ -154,18 +154,18 @@ def main():
     rt = '.cache/rt-1203.3766v1'
     passos = [
         ('0', 'existencia do fundo (RT): dados publicados', arquivos(inv, [f'{rt}/arXiv-1203.3766v1.tar.gz', f'{rt}/sourcecode/RefA.dat', f'{rt}/RefAplusB.dat'], 'dado externo (RT, arXiv 1203.3766v1)')),
-        ('4', 'L-real: recuperacao de raio toro <-> RT', arquivos(inv, ['build/t2/l_real_toro.json', 'build/t2/l_real_toro.txt', 'build/t2/radius_transfer_s3_1.json'], 'saida de l_real_toro.py / radius_transfer.py')),
-        ('5', 'F3: nada em Re s >= 2,93 (simbolo de L em Arb)', arquivos(inv, ['build/spectrum/symbol-L-2048x4096.json', 'build/spectrum/symbol-L-faixa*.json', 'build/spectrum/symbol-L-faixa*.log'], 'certificado do simbolo (Arb)')),
+        ('4', 'L-real: recuperacao de raio toro <-> RT', arquivos(inv, ['build/t2/l_real_toro.json', 'build/t2/l_real_toro.txt', 'build/t2/radius_transfer_s3_1.json', 'build/t2/beta_plus.json'], 'saida de l_real_toro.py / radius_transfer.py / independent_component_beta.py (beta+)')),
+        ('5', 'F3: nada em Re s >= 2,93 (simbolo de L em Arb)', arquivos(inv, ['build/spectrum/symbol-L-2048x4096.json', 'build/spectrum/symbol-L-faixa*.json', 'build/spectrum/symbol-L-faixa*.log', 'build/spectrum/free-part-toro.json'], 'certificado do simbolo (Arb) / parte livre')),
         ('6', 'faixa A: N_A = 3 (Rouche de L)', discos(inv, 'build/rouche_L_rig/discos_v2/disco_*.json')
               + arquivos(inv, ['build/rouche_L_rig/cauda/T3_*.json', 'build/rouche_L_rig/janelas_v2.json', 'build/rouche_L_rig/janelas_v2.txt',
                                 'build/rouche_L_rig/cobertura_v2.txt', 'build/rouche_L_rig/contagem.json', 'build/rouche_L_rig/contagem_rouche_v2.txt',
-                                'build/rouche_L_rig/diagT_lab2.npy'], 'cauda / janelas / cobertura / contagem')),
+                                'build/rouche_L_rig/diagT_lab2.npy', 'build/rouche_L_rig/z/lab2/schur.json'], 'cauda / janelas / cobertura / contagem / deflacao')),
         ('7, 10', 'faixa B: N_B = 1 e a raiz B simples (NK)', discos(inv, 'build/faixaB/discos/disco_*.json')
               + arquivos(inv, ['build/faixaB/cauda/T3_*.json', 'build/faixaB/janelas.json', 'build/faixaB/janelas.txt', 'build/faixaB/cobertura.txt',
-                                'build/faixaB/contagem_rouche.txt', 'build/faixaB/nk/*', 'build/faixaB/logs/*'], 'cauda / janelas / cobertura / contagem / NK / logs')),
+                                'build/faixaB/contagem_rouche.txt', 'build/faixaB/nk/*', 'build/faixaB/logs/*', 'build/rouche_L_rig/z/lab2/schur.json'], 'cauda / janelas / cobertura / contagem / NK / logs / deflacao')),
         ('8', 'S4: mu* simples, autoespaco span(g*), Dg* = 0', arquivos(inv, ['build/s4/rig/*', 'build/s4/corr_gauge.json', 'build/s4/nk3_mu.json', 'build/s4/*.txt'], 'NK bordejado de L em mu, identificacao (E), lema de Corr')),
-        ('9', 's_K simples, viola as constraints (S3b)', arquivos(inv, ['build/s3b/rig/*', 'build/s3b/rouche_K_circ.json', 'build/s3b/rouche_K_contagem_20x80.json', 'build/s3b/nk3_32x128.json'], 'Rouche de K no disco, NK de L, testemunho D')),
-        ('11', 'K injetivo na faixa A fora de s_K: S3a (tiles), Rouche de K, R# (simbolo de K)', arquivos(inv, ['build/cobertura_lab/grande-*.json', 'build/cobertura_local/grande-*.json', 'build/tiles_rig/*', 'build/spectrum/symbol-K-1024x2048.json', 'build/spectrum/symbol-K-1024x2048.log'], 'tiles de Perron / simbolo de K')),
+        ('9', 's_K simples, viola as constraints (S3b)', arquivos(inv, ['build/s3b/rig/*', 'build/s3b/nk3_32x128.json'], 'NK de L, testemunho D')),
+        ('11', 'K injetivo na faixa A fora de s_K: S3a (tiles), Rouche de K, R# (simbolo de K)', arquivos(inv, ['build/cobertura_lab/grande-*.json', 'build/cobertura_local/grande-*.json', 'build/s3b/rouche_K_circ.json', 'build/s3b/rouche_K_contagem_20x80.json', 'build/spectrum/symbol-K-1024x2048.json', 'build/spectrum/symbol-K-1024x2048.log', 'build/spectrum/free-part-toro.json'], 'tiles de Perron / Rouche de K no disco / simbolo de K / parte livre')),
         ('11a', '0,7332 simples (NK de L)', arquivos(inv, ['build/nk733/*'], 'NK bordejado de L em 0,7332')),
         ('11b', 'Lema G: fato F1/F1\' (omega4 nao nula no centro e no cone)', arquivos(inv, ['build/t2/gauge_global_centro.json'], 'racionais exatos')),
         ('11c', 'Lema R: R5 (recuperacao de raio de qualquer peso)', arquivos(inv, ['build/t2/radius_recovery_geral.json'], 'racionais exatos')),

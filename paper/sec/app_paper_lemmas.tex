@@ -1,0 +1,137 @@
+\section{Proofs of the structural lemmas}\label{app:lemmas}
+
+\subsection{Sectors, shift and conjugation (\cref{lem:sectorB})}\label{app:sectors}
+
+Let $(Uh)_{mn}=h_{m-1,n}$, i.e.\ $Uh=e^{i\tau/2}h$. In $\mathbb T(a,b)$ the weights $a^{2m}$ give
+$\|Uh\|=a\|h\|$, and in $Y(a,b)$ we have $a^{-1}\|h\|\le\|Uh\|\le a\|h\|$; so $U$ is an isomorphism of each space,
+an isometry up to a constant factor. It commutes with convolution by a field (a sum over $m$), with the reflection
+$P$, with multiplication by $\xi$ and with $R_\xi$, all of which act in $n$ only or are translation invariant in
+$m$; and $U^{-1}\partial_\tau U=\partial_\tau+\tfrac i2$. The free part $J$ therefore satisfies
+$U^{-1}(J+s)U=J+s+\tfrac i2$, $U$ maps the domain of $J$ onto itself, and $U^{-1}L(s)U=L(s+\tfrac i2)$,
+$U^{-1}C(s)U=C(s+\tfrac i2)$. Since $U$ changes the parity of $m$ in every component, it exchanges $X_A$ and $X_B$.
+Conjugation by $U$ maps kernels and Jordan chains to kernels and Jordan chains, and constraint-satisfying ones to
+constraint-satisfying ones. This proves \cref{lem:sectorB}.
+
+\emph{Conjugation.} Let $(\mathcal Ch)_{mn}=\overline{h_{-m,n}}$, which corresponds to complex conjugation of the
+function $h(\tau,\xi)$ for real $\tau,\xi$ (recall $h_{m,-n}=h_{mn}$). The background is real, so
+$\mathcal C L(s)\mathcal C=L(\bar s)$, and $\mathcal C$ preserves both sectors. In $Y(a,b)$, $\mathcal C$ is an
+isometry, so the roots of $L_A$ and of $L_B$ in $Y(a,b)$, with their multiplicities, are invariant under
+$s\mapsto\bar s$. (In the torus space $\mathcal C$ is not an isometry, since the weight $a^{2m}$ is not even in $m$;
+this is why the reality argument of \cref{prop:real} goes through $\Yp$ and \cref{lem:Lreal}.) For the B band,
+$\sigma(L_A)\cap\{\tfrac14<\Im s<\tfrac34\}=\sigma(L_B)+\tfrac i2$, and the invariance of $\sigma(L_B)$ under
+conjugation becomes invariance under $s\mapsto\overline{s-\tfrac i2}+\tfrac i2=\bar s+i$.
+
+\subsection{The Fredholm property (\cref{prop:fredholm})}\label{app:fredholm}
+
+\emph{(i) The free part.} $J+z$ acts on each Fourier mode $m$ and each component separately, as an upper triangular
+operator in $n$ with diagonal $\mu(n+1)+z+im/2$ and first-order off-diagonal structure; the explicit inverses
+of~\cite[\S3]{RT2019} are bounded in $Y(a,b)$, with a bound of the form $C/(\mu+z)$, and in the torus space they are
+bounded mode by mode by closed forms (in the repository). The norm of $Q(I-G)$, where $G$ is the projection
+onto a box $\{|m|<M,\,n<N\}$, tends to zero as $M,N\to\infty$; for instance, with $r=1/b$,
+\[
+  \|Q(I-G)\|\le\max\Big(\frac{3(1+2\mu_{\max})}{M(1-r)},\ \frac{3(1+4/(1-r))}{2\mu_{\min}(N+1)}\Big)
+\]
+in $Y(1,b)$, where $\mu_{\min}\le\mu\le\mu_{\max}$. Hence $Q$ is a norm limit of finite-rank operators and is compact.
+The maximal domain $\Dom_{\max}=\{u:Ju\in Y\}$, with $Ju$ computed termwise, coincides with the closure
+$\Dom_{\min}$ of the trigonometric polynomials in the graph norm: for $z>0$, $Q(z)$ maps $Y$ into $\Dom_{\min}$ and
+inverts $J+z$ there; for $u\in\Dom_{\max}$, $w=u-Q(z)(J+z)u$ satisfies $(J+z)w=0$ as an analytic function, and in
+each Fourier mode the homogeneous solutions are multiples of $(1+\xi)^{-1-(z+im/2)/\mu}$ (components with
+$(1+\xi)\partial_\xi$) or $\xi^{-1-(z+im/2)/\mu}$ (the component with $\xi\partial_\xi$), which are singular at
+$\xi=-1$ or $\xi=0$, inside the Bernstein ellipse of parameter $b>1$. So $w=0$.
+
+\emph{(ii) The background.} $B=\mu S\Gamma_1+2S\Xi\Gamma_2(\omegabar,\cdot)$ is a sum of reflections, the regularized
+division $R_\xi$, multiplication by $\xi$ and convolution with the coefficients of $\omegabar$. The latter lie in
+$\ell^1$ with weights $(65/64)^{|m|}(5/4)^{|n|}$, so convolution is bounded in every $Y(a,b)$ and $\mathbb T(a,b)$
+with $a\le65/64$, $b\le5/4$; $R_\xi$ is bounded for $b>1$~\cite[\S4]{RT2019}.
+
+\emph{(iii)} $L(s)Q=I+(B+s-z_0)Q$ is the identity plus a compact operator, analytic (affine) in $s$, hence Fredholm of
+index zero. For real $s$ large, $L(s)=(J+s)\big(I+(J+s)^{-1}B\big)$ is invertible in $Y(a,b)$ by a Neumann series, since
+$\|(J+s)^{-1}\|\le C/(\mu+s)$; in the torus space, $L(s)$ is invertible for $s>2.9261$ by \cref{thm:counts}~(i). By the analytic Fredholm theorem the roots are isolated and of finite algebraic multiplicity. The same
+argument applies to $K(s)=J^\sharp+B^\sharp+s$ in the sharp spaces.
+
+\subsection{Radius recovery (\cref{lem:Lreal,lem:recovery})}\label{app:recovery}
+
+Let $Y_s\subset Y_w$ be a strong and a weak realization (for \cref{lem:Lreal}, $\Yp\subset\mathbb T(65/64,5/4)$;
+for \cref{lem:recovery}, $\Yp\subset Y(\kappa_1',\kappa_2')$), with the same operator $Q=J^{-1}$, which preserves
+boxes. Write $H(s)=L(s)Q=I+(B+s)Q$, let $G$ be the projection onto a finite box and $T=I-G$, and suppose
+\[
+  \|T(H(s)-I)T\|_{Y_s}<1,\qquad \|T(H(s)-I)T\|_{Y_w}<1 .
+\]
+\emph{Kernels.} Let $H(s)x=0$ with $x\in Y_w$. Then $Gx$ is a finite vector, hence in $Y_s$, and
+$THT\cdot Tx=-THGx$, whose right side is in $Y_s$ because $H$ is bounded on $Y_s$. In $Y_s$ the operator $THT$ on the
+range of $T$ is invertible by a Neumann series, so there is $y\in Y_s$ with $THT\,y=-THGx$. The same equation holds
+in $Y_w$, where its solution is unique; so $Tx=y\in Y_s$, and $h=Qx$ lies in the domain in $Y_s$. The converse
+inclusion is the inclusion of spaces. \emph{Chains.} If $L(s)h_j=-h_{j-1}$ with $h_{j-1}$ already known to be in the
+strong domain, the same argument applies to $x_j=Jh_j$ with the additional strong right-hand side $-Th_{j-1}$.
+
+\emph{Constants for \cref{lem:Lreal}.} Box $G=\{|m|<1024,\,n<4096\}$, $|s|\le3.1$. In the torus space,
+$\|T(H-I)T\|\le(\|B\|+|s|)\|QT\|\le(3.9642+3.1)\cdot0.0525<0.371$, with $\|B\|$ from the symbol (\cref{lem:F3}) and
+$\|QT\|\le0.0525$ from closed forms: the tail $n\ge4096$ in the modes $|m|<400$, and the bound
+$(1+2c_w/(\kappa_2-1))/(|m|/2)$ for the whole mode when $|m|\ge400$. In $\Yp$, with component weights
+$\eta=(916,4096,243,1233)$ and the bound $\beta_+\le5191/500$ on the background part, computed in exact
+arithmetic from the data and the published ball of~\cite{RT2019} (\cref{app:certificates}), the same quantity is
+$\le0.2666$. The weights satisfy $\eta_i\ge243$, so $\|x\|_{\mathbb T}\le\|x\|_{\Yp}/243$.
+
+\emph{Constants for \cref{lem:recovery}.} In the weak space $Y(\kappa_1',\kappa_2')$ the background part is bounded by
+$\beta(\kappa_2')=\beta_+\,D(\kappa_2')/D(5/4)$ with $D(k)=2k/(k^2-1)$, the factor coming from the bound on $R_\xi$; the
+Fourier weight $\kappa_1'\in[1,65/64]$ does not increase the convolution norms, and $\|QT\|$ does not depend on it
+because $Q$ preserves $m$. Since $\|QT\|\to0$ for every $\kappa_2'>1$, for every $S$ and $\kappa_2'$ there is a box with
+$(\beta(\kappa_2')+S)\|QT\|<1$; explicit boxes are computed, e.g.\ $2^{17}\times2^{20}$ for $S=200$ and
+$\kappa_2'=1+2^{-6}$. The rational verification is in the repository (\cref{app:certificates}).
+
+\subsection{Propagation of the constraints (\cref{lem:KCML})}\label{app:KCML}
+
+Let $O=\tfrac12(1-P)$, $E=\tfrac12(1+P)$, $X$ multiplication by $\xi$, and for a residual $q=\Omega^+(\mu,w)$ with
+components $(q_1,q_2,q_{2\sharp},q_3,q_4)$ set $F=Sq$, $c=S^\sharp q=(Oq_1,-Pq_{2\sharp})$ and $e=-Pq$. For residuals of
+the system, the selected components are divisible by $\xi$ (the principal and quadratic terms carry a factor
+$\xi$, and the selected components of $\Gamma_1$ are odd), so that
+\[
+  e=Ic+RF,\qquad Ic=(c_1,0,c_2,0,0),\qquad Rf=(XPf_1,XPf_2,0,XPf_3,XPf_4),
+\]
+using $PX=-XP$ and $Pc_1=-c_1$. Reiterer and Trubowitz prove the differential identity of \cref{eq:sharp} in an
+\emph{off-shell} form~\cite[\S2]{RT2019}: with $J_s=\partial_\tau+s+\mu((1+\xi)\partial_\xi+1)$ and $\mathcal G(w,e)$
+the bilinear map of their identity,
+\[
+  T_s(w)e:=X\big(OJ_se_1,\ J_se_{2\sharp}-PJ_se_2\big)+\mu\big(Ee_1,\ e_1+e_2+Pe_2-2Pe_3\big)+X\mathcal G(w,e)
+\]
+satisfies $T_0(w)e(w)=0$ for every admissible $w$, whether or not $e(w)=0$. The only dependence of $T$ on $w$ is
+through $\mathcal G$, so linearizing at $w$ in the direction $e^{s\tau}h$ gives $T_s(w)e'+X\mathcal G(h,e(w))=0$,
+where $e'$ is the linearized residual. With $F'=L(s)h$, $c'=C(s)h$, $e'=Ic'+RF'$, and
+\[
+  K(s)c:=R_\xi T_s(w)Ic,\qquad M(s)f:=-R_\xi T_s(w)Rf,
+\]
+and $R_\xi X=I$, we obtain $K(s)C(s)h=M(s)L(s)h-R_\xi X\mathcal G(h,e(w))$. At the exact background $e(\omegabar)=0$,
+which is~\eqref{eq:KCML}. The explicit forms of $K$ and $M$ are in \cref{app:formulas}; $K$ has the principal part
+$\operatorname{diag}(\partial_\tau+s+\mu(\xi\partial_\xi+1),\,J_s)$ of~\eqref{eq:sharp}.
+
+\emph{Domains.} $M(s)$ contains derivatives, so the identity holds as an identity of closed operators with a loss of
+radius. For $1<a'<a$, $1<b'<b$, the derivatives are bounded from $Y(a,b)$ to $Y(a',b')$:
+\[
+  \|\partial_\tau\|\le\frac{q_a}{2(1-q_a)^2},\qquad \|\partial_\xi\|\le\frac{2q_b}{(b'-1)(1-q_b)^2},\qquad
+  q_a=a'/a,\ q_b=b'/b,
+\]
+which for $(a,b)=(65/64,5/4)$, $(a',b')=(129/128,9/8)$ are at most $8385$ and $1440$. Hence $C(s)$ and $M(s)$ are bounded
+from the domain of $L$ in $Y(a,b)$ to $Y^\sharp(a',b')$; for $h$ in that domain,
+$J^\sharp C(s)h=M(s)L(s)h-(B^\sharp+s)C(s)h\in Y^\sharp(a',b')$, so $C(s)h$ is in the maximal, hence the closed, domain
+of $K$ there, and~\eqref{eq:KCML} holds. The inclusion $\ell^1(129/128,9/8)\subset\mathbb T^\sharp(129/128,9/8)$ has norm
+$\le1$, since $\kappa_1^m\le\kappa_1^{|m|}$ and $\sqrt{\kappa_2^{2j}+\kappa_2^{-2j}}\le2\kappa_2^j$; the argument $\Dom_{\min}=\Dom_{\max}$
+of \cref{app:fredholm} also holds in the torus space. So $C(s)h$ lies in the domain on which the certificates of
+\cref{prop:Kinj} assert injectivity.
+
+\subsection{The gauge mode (\cref{eq:gaugemode})}\label{app:gauge}
+
+Let $X_0=e^{\mu\tau}Z$, $Z=\mu^{-1}\partial_\tau+\xi\partial_\xi$, $W=\mu+\xi^2Q$ and $F=\zeta+\log W$. The radial
+block of the metric~\eqref{eq:metric} is proportional to $e^{-2\zeta}(u_++u_-)^{-2}du_-du_+$, and $X_0$ translates
+$u_\pm$; the Lie derivative gives $\delta\zeta=e^{\mu\tau}(Z\zeta-1)$. The area radius $e^{-\zeta}\xi/W$ is a scalar,
+so comparing its variation with its derivative along $X_0$ gives $\delta W=e^{\mu\tau}ZW$, hence
+\[
+  \delta Q=e^{\mu\tau}(ZQ+2Q),\qquad \delta F=e^{\mu\tau}(ZF-1),\qquad \delta\phi=e^{\mu\tau}Z\phi .
+\]
+A direct computation gives $[D^\sigma,X_0]=e^{\mu\tau}D^\sigma$. Substituting in~\eqref{eq:omega}, every component
+has the same profile: $\delta\omega_i=e^{\mu\tau}(Z+1)\omega_i$ for $i=2,3,4$, and also for $\omega_1=2\xi Q+2\mu\partial_\xi F$,
+where the extra terms add up to $\omega_1$. More generally, for every admissible $w$,
+\[
+  D\Omega(w)\big[e^{\mu\tau}(Z+1)w\big]=e^{\mu\tau}(Z+1)\,\Omega(w),
+\]
+by the commutator, the quadratic homogeneity of $\Gamma_2$ and the factor $\xi$ in the differential and quadratic
+terms. At the exact background the right-hand side vanishes, which gives $L(\mu)g_*=0$ and $C(\mu)g_*=0$.

@@ -1,0 +1,17 @@
+\section{Table of certificates}\label{app:certificates}
+
+The repository contains, for every step of the proof, the list of files on which the corresponding certificate
+depends, with their sizes and sha256 hashes (\texttt{build/reproducao/inventario.json}, rendered in
+\texttt{docs/REPRODUCAO\_MAPA.md}). The large files are on Zenodo (\cref{sec:computation-data}), and their hashes are
+also in \texttt{build/reproducao/pacote\_dados.json}. The table below gives, for each claim, the check of the
+verification program that re-checks it (\cref{sec:computation-verify}), the number of files, and a digest: the
+first $16$ hexadecimal digits of the sha256 of the sorted lines ``\texttt{sha256}~~path'' of those files, computed by
+\texttt{scripts/digest\_certificados.py}.
+
+\begin{table}[ht]
+\centering
+\small
+\input{sec/app_certificates_table}
+\caption{Certificates of the proof, by claim. The digest identifies the set of files on which each claim depends.}
+\label{tab:digests}
+\end{table}

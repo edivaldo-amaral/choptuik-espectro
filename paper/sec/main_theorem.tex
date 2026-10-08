@@ -1,0 +1,130 @@
+\section{Main result}\label{sec:main}
+
+Throughout, $(\gbar,\phibar)$ denotes the solution of the Einstein--scalar field equations
+$\operatorname{Ric}_{g}=2\,d\phi\otimes d\phi$, $\Box_{g}\phi=0$ constructed by Reiterer and
+Trubowitz~\cite{RT2019} on the spherically symmetric manifold $\Mhat$ of \cref{sec:setting}, with
+self-similarity constant $K\approx 1.7227$ and null rescaling constant $\mu\approx 0.16831$ (both known to
+$80$ digits). As in~\cite{RT2019}, we call it the \emph{Choptuik spacetime}. The discrete self-similarity
+$\Theta$ acts by $\tau\mapsto\tau+2\pi$ in the coordinates $(\tau,\xi)$ of RT, rescales lengths by $e^{-K}$
+and reverses the sign of $\phibar$; the full period of the background is therefore $\Theta^{2}$, that is,
+$\tau\mapsto\tau+4\pi$.
+
+A perturbation is of \emph{Floquet type with exponent $s\in\C$} if it is $e^{s\tau}$ times a profile which is
+$4\pi$-periodic in $\tau$ (\cref{def:physical-mode}). Since $e^{i\tau/2}$ is itself $4\pi$-periodic, the
+exponent is defined only modulo $\tfrac{i}{2}\Z$; we call the classes of $\C/\tfrac{i}{2}\Z$ \emph{Floquet
+classes}, and count everything per class. In terms of the logarithmic time $T$ in which $\Theta$ is the
+translation by $K$, the factor $e^{s\tau}$ is $e^{\lambda T}$ with
+\begin{equation}\label{eq:lambda}
+  \lambda=\frac{2\pi s}{K}.
+\end{equation}
+
+The family $L(s)$, $s\in\C$, is the linearization of the Reiterer--Trubowitz system about the background,
+acting on Floquet profiles (\cref{def:L}); $C(s)$ is the corresponding linearized constraint map. Physical
+Floquet modes and gauge transformations are defined in \cref{sec:physical}
+(\cref{def:physical-mode,def:gauge}).
+
+\begin{mainthm}
+Let $(\gbar,\phibar)$ be the Choptuik spacetime of~\cite{RT2019}. Consider spherically symmetric linear
+perturbations of Floquet type, with $L$ realized in $\Yp$ or, equivalently in the region considered, in the torus
+space (\cref{sec:setting-realizations}); physical modes in the regularity class of \cref{def:physical-mode}, smooth in
+$\tau$ and real analytic in $\xi$ up to and across the light cone; and gauge transformations as in
+\cref{def:gauge}.
+\begin{enumerate}[label=\textup{(\arabic*)},leftmargin=*]
+\item \textbf{Roots of $L$.} Modulo $\tfrac{i}{2}\Z$, the roots of $L$ in the half plane $\Re s>0$, counted
+  with algebraic multiplicity, are exactly four. Each of them is algebraically simple and has a real
+  representative:
+  \begin{center}
+  \begin{tabular}{@{}lll@{}}
+  \toprule
+  root & enclosure & eigenvector of $L$ \\
+  \midrule
+  $s=\mu$ & $\mu=0.168307078963\ldots$ (exact) & $g_*=(1+Z)\omegabar$, pure gauge \\
+  $s=\sB$ & $|\sB-0.0414194105|\le 3.7\cdot10^{-5}$ & violates the constraints \\
+  $s=\sK$ & $|\sK-0.401024733|\le 1.72\cdot10^{-4}$ & violates the constraints \\
+  $s=\sphys$ & $\sphys\in[0.73316949,\ 0.73318983]$ & satisfies the constraints \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+  On the imaginary axis, the only root of $L$ is $s\equiv 0$; it is algebraically simple, with eigenvector
+  $\partial_\tau\omegabar$, the infinitesimal translation of the phase.
+\item \textbf{Physical modes.} The space of physical Floquet modes with $\Re s>0$, modulo gauge, is
+  one-dimensional: it consists of the modes with exponent $\sphys$, and there are no generalized modes
+  \textup{(}Jordan chains\textup{)} of length $\ge2$. If the past light cone of the singularity is held fixed
+  (\cref{def:conefixed}), the quotient by the smaller group of cone-preserving gauge transformations is
+  two-dimensional: the additional class has exponent $\mu$ and is tangent to the one-parameter family of
+  exact solutions obtained by translating the singular point, all of which are isometric to
+  $(\gbar,\phibar)$. It is therefore not a second instability of the critical solution, but the effect of
+  fixing the time of the singularity.
+\end{enumerate}
+\end{mainthm}
+
+Here $Z=\mu^{-1}\partial_\tau+\xi\partial_\xi$. The eigenvector $g_*$ is a profile; the corresponding Floquet
+mode $e^{\mu\tau}g_*$ is the Lie derivative of the background along $X_0=\partial_{u_-}+\partial_{u_+}=e^{\mu\tau}(\mu^{-1}\partial_\tau+\xi\partial_\xi)$,
+the generator of translations of the singular point $(u_-,u_+)=(0,0)$ (\cref{lem:cone}).
+
+\begin{remark}[The critical exponent]\label{rem:gamma}
+By~\eqref{eq:lambda} and the value of $K$ from~\cite{RT2019}, the unique unstable physical mode grows like
+$e^{\lambda T}$ with
+\[
+  \lambda=\frac{2\pi\sphys}{K}\in[2.674040,\ 2.674115],\qquad
+  \frac{1}{\lambda}\in[0.373955,\ 0.373966].
+\]
+The scaling argument of critical collapse relates a single unstable mode to the mass-scaling exponent by
+$\gamma=1/\lambda$~\cite{KoikeHaraAdachi1995,Gundlach1997}. Choptuik measured $\gamma\approx0.37$ in his
+simulations~\cite{Choptuik1993}. Gundlach computed the unstable mode by numerical perturbation theory and found
+$\lambda_1=-2.674\pm0.009$, hence $\gamma=-1/\lambda_1=0.374\pm0.001$~\cite{Gundlach1997}; the sign is that of his
+time variable, in which the growing mode has negative exponent, so his $-\lambda_1$ corresponds to our
+$\lambda$. Our interval lies within his error bar. This agreement is an external check, not part of the theorem: the
+scaling argument concerns the nonlinear evolution, which we do not study.
+\end{remark}
+
+\begin{remark}[What is, and is not, asserted]\label{rem:scope}
+\begin{enumerate}[label=(\alph*),leftmargin=*]
+\item The theorem is \emph{spectral}: it counts Floquet modes of the linearized equations. It asserts
+  nothing about the linearized evolution semigroup, nor about the nonlinear dynamics.
+\item Only spherically symmetric perturbations are considered. Nonspherical perturbations are discussed
+  in \cref{sec:discussion}.
+\item Physical modes are taken in the class of \cref{def:physical-mode}: smooth in $\tau$ and real
+  analytic in $\xi$, with a complex neighbourhood uniform in $\tau$. Merely smooth dependence on $\xi$
+  across the light cone and at the axis is not covered (\cref{sec:discussion}).
+\item Reiterer and Trubowitz prove existence of $(\gbar,\phibar)$ near their numerical data; local
+  uniqueness is not formally stated in~\cite{RT2019}. The theorem is about their solution.
+\item The roots of $L$ which violate the constraints are not physical: the corresponding solutions of
+  the evolution part of the system do not solve the Einstein equations. The root $\mu$ is a coordinate
+  effect of the moving light cone: its mode is pure gauge, and it survives only in the quotient by the smaller
+  group of cone-preserving gauge transformations, which is the second count in~(2).
+\end{enumerate}
+\end{remark}
+
+\begin{remark}[Neutral modes]\label{rem:neutral}
+Part~(1) on the imaginary axis concerns the roots of $L$ only. At $s=0$ there are two further exact
+symmetries of the equations, the global scaling $\delta g=2\gbar$ and the shift $\delta\phi=\mathrm{const}$,
+which are physical perturbations with $\delta\omega=0$ and are therefore invisible to $L$. The gauge and
+reconstruction lemmas of \cref{sec:physical} are proved for $\Re s>0$ only, so part~(2) has no analogue on
+the axis.
+\end{remark}
+
+\begin{remark}[Dependence on computation]\label{rem:computation}
+The proof is computer assisted in two places: the existence of the background with explicit bounds, which
+we take from~\cite{RT2019}, and the bounds of \cref{sec:counting,sec:roots}, which are new. All of the
+latter are produced in interval arithmetic (Arb~\cite{Arb}) or exact rational arithmetic, or as a posteriori
+bounds on floating-point computations with rigorous rounding control. Certificates, the verification
+program and the data are publicly available (\cref{sec:computation}).
+\end{remark}
+
+\subsection{Structure of the proof}\label{sec:main-structure}
+The proof has three layers.
+\begin{enumerate}[label=(\roman*),leftmargin=*]
+\item \emph{Geometry} (\cref{sec:physical}). Every physical Floquet mode with $\Re s>0$ can be put, by a
+  gauge transformation, into the form used by Reiterer and Trubowitz, and then corresponds to an element of
+  $\ker L(s)\cap\ker C(s)$; conversely every such element comes from a physical mode. The only gauge modes
+  with $\Re s>0$ are the multiples of $e^{\mu\tau}g_*$ (\cref{lem:gauge}). This reduces
+  part~(2) to part~(1) together with the behaviour of the constraints on each root space.
+\item \emph{Counting} (\cref{sec:counting}). The number of roots of $L$ in the right half plane is
+  computed by an operator version of Rouch\'e's theorem with a finite-dimensional reference, after a
+  rank-two (Brauer) deflation of the two gauge roots $0$ and $\mu$.
+\item \emph{Identification} (\cref{sec:roots}). Each root is localized and shown to be simple by a
+  Newton--Kantorovich argument, and its eigenvector is shown either to violate the constraints (by an
+  explicit lower bound), or to be pure gauge, or, for $\sphys$, to satisfy them on the whole root space
+  (through the injectivity of the constraint propagation operator $K$).
+\end{enumerate}

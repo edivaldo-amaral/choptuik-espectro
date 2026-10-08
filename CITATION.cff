@@ -4,7 +4,8 @@ title: "Espectro da solução de Choptuik: contagem rigorosa dos modos instávei
 authors:
   - family-names: "Gonçalves"
     given-names: "Edivaldo Amaral"
-    affiliation: "Instituto Federal de Mato Grosso (IFMT)"
+    affiliation: "Instituto Federal de Mato Grosso (IFMT), Cuiabá, Mato Grosso, Brazil"
+    orcid: "https://orcid.org/0009-0007-9117-9833"
 license: MIT
 date-released: 2026-10-07
 references:
@@ -16,6 +17,7 @@ references:
       - family-names: "Trubowitz"
         given-names: "Eugene"
     journal: "Communications in Mathematical Physics"
+    doi: "10.1007/s00220-019-03413-8"
     volume: 368
     year: 2019
     identifiers:

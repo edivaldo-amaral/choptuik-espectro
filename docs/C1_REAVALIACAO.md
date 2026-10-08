@@ -212,7 +212,7 @@ No teste em 12×48, o resolvente cai para 36 em s = 0, 42 em 0,1i, 49 em 0,25i e
 No certificado, v e g são os vetores explícitos de RefA na caixa Z:
 
 - ‖P_Z(v* − v_A)‖ <= ‖∂τRefB‖ + ‖∂τCorr‖ = 1,46·10⁻⁹ (`gauge_refB.py`, lema de Corr);
-- ‖g* − g_A‖ <= 2,5·10⁻⁸ (etapa E de S4);
+- ‖g* − g_A‖ <= 2,51·10⁻⁸ (etapa E de S4: e = 2,5056·10⁻⁸; o código lê o valor exato de `E.json`);
 - as caudas fora de Z entram nas linhas de T.
 
 **Peças.**
@@ -275,7 +275,7 @@ são 0,401 e 0,733.
 cobre as quatro arestas de ∂Ω (a meia-corda de cada disco numa aresta é cotada por baixo).
 
 **Contabilidade de Brauer.** Com φ_i* x_j^A = δ_ij (biortogonal), δ = (1, 1 + μ_A) e
-e_ij = φ_i*(x_j − x_j^A), vale |e_ij| <= ‖φ_i‖ · ‖P_Z(x_j − x_j^A)‖ <= 5,5 · 2,5·10⁻⁸ (φ_i fica na
+e_ij = φ_i*(x_j − x_j^A), vale |e_ij| <= ‖φ_i‖ · ‖P_Z(x_j − x_j^A)‖ <= 5,5 · 2,51·10⁻⁸ (φ_i fica na
 caixa Z). Então
 q(s) = (s + 1 + e_00)(s − μ* + δ_1(1 + e_11)) − δ_0 δ_1 e_01 e_10,
 e em Re s >= 0 os dois fatores têm módulo >= 1 − 10⁻⁶ (|μ* − μ_A| <= 3,9·10⁻¹¹, `DELTA_MU`). Logo q
@@ -458,7 +458,7 @@ zero (0,733) vem da contagem de Schur e não do Rouché; o Rouché garante só q
 | centro | discos | θ máximo | raios | t_p máximo |
 |---|---:|---:|---|---:|
 | 0,25i | 6 | 0,99778 | 0,0118–0,0181 | 66 |
-| 0,5i | 28 + 2 | 0,99907 | 0,0028–0,0090 | 202 |
+| 0,5i | 28 + 2 | 0,99908 (0,9990738) | 0,0028–0,0090 | 202 |
 | 0,75i | 23 | 0,99884 | 0,0077–0,0191 | 86 |
 | 0,55 + 0,75i | 9 + 2 + 2 | 0,95810 | 0,030–0,080 | 30 |
 | 1,0 | 1 | 0,98057 | 0,1227 | 7,3 |
@@ -571,11 +571,12 @@ iteração inversa na matriz pesada. Artefatos em `build/nk733/`, com `MANIFEST.
 | Z2 / Y | 10,32 / 4,19·10⁻⁶ |
 | raio | r = 2,158·10⁻⁵ |
 
-**Resultado:** há um único zero (y*, λ*) com ‖x* − x0‖ <= r e **|λ* − 0,7331796596606924| <= 1,016·10⁻⁵**,
+**Resultado:** há um único zero (y*, λ*) com ‖x* − x0‖ <= r e **|λ* − 0,7331796596606924| <= 1,0163·10⁻⁵** (exato 1,01623·10⁻⁵; o "1,016" anterior arredondava para baixo),
 e DF(x*) é invertível, logo λ* é algebricamente simples. Como N_A = 3 e as outras duas raízes (μ*, S4;
 s_K, S3b) estão em discos disjuntos deste, λ* é a terceira raiz da faixa A.
-- Pela simetria de conjugação na realização de RT (L-real), λ* é real: λ* ∈ [0,73316950; 0,73318982].
-- **Conferência externa:** com Δ ≈ 3,4453, γ = Δ/(4πλ*) ≈ 0,3739.
+- Pela simetria de conjugação na realização de RT (L-real), λ* é real: λ* ∈ [0,73316949; 0,73318983].
+- **Conferência externa:** com Δ = 2K = 3,445452… de RT, γ = Δ/(4πλ*) ∈ [0,373955; 0,373966] (corrigido em
+  07/10; o valor anterior usava Δ ≈ 3,4453).
 
 A etapa B (26 janelas da cauda) foi dividida entre o laboratorio2 (em ordem direta) e o PC 3 (em
 ordem reversa, `etapaB_joao.txt`), com junção dos checkpoints no laboratorio2. O PC 3 foi desligado

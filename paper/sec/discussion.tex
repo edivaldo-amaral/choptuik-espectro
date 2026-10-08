@@ -1,0 +1,80 @@
+\section{Discussion}\label{sec:discussion}
+
+\subsection{What the theorem says about critical collapse}
+
+In the standard picture of critical collapse~\cite{GundlachMartinGarcia2007}, initial data near the threshold of
+black hole formation evolve for a long time close to the critical solution, and the deviation is dominated by its
+single growing mode, $e^{\lambda T}$. If the initial data depend on a parameter $p$, the black hole mass then
+scales like $(p-p_*)^\gamma$ with $\gamma=1/\lambda$, modulated by a periodic wiggle in the discretely self-similar
+case. The Main Theorem supplies the spectral input of this picture for spherically symmetric scalar field
+collapse: there is exactly one unstable mode, it is simple, and $\lambda\in[2.674040,\,2.674115]$. Turning the
+picture into a theorem needs further ingredients, among them the following; the regularity question of
+\cref{sec:discussion-regularity} and the neutral modes of \cref{rem:neutral} would also have to be addressed.
+\begin{enumerate}[label=(\alph*),leftmargin=*]
+\item \emph{Linear stability in the evolution sense.} Absence of other roots of $L$ in $\Re s>0$ does not by
+  itself give decay of the linearized flow on a complement of the unstable and gauge modes: the operator is not
+  self-adjoint, and one needs resolvent bounds along vertical lines, or a completeness statement for the Floquet
+  modes, rather than the location of eigenvalues alone. Reiterer has given an abstract framework for finite
+  codimension stability of time-periodic symmetric hyperbolic equations with a compact resolvent sufficiently far to the right in the complex
+  plane, motivated by discretely self-similar spacetimes~\cite{Reiterer2015}; whether its hypotheses hold for the
+  present formulation is not addressed here.
+\item \emph{Nonlinear stability:} a codimension-one stable manifold of the critical solution.
+\item \emph{Global aspects.} The solution of~\cite{RT2019} is constructed on a neighbourhood of the past light cone
+  of the singularity; the threshold picture concerns asymptotically flat data.
+\end{enumerate}
+The numerical agreement of $1/\lambda$ with the measured exponent $\gamma\approx0.374$ is therefore a consistency
+check, not a consequence.
+
+\subsection{Nonspherical perturbations}
+
+Reiterer and Trubowitz describe the numerical evidence on general perturbations as inconclusive~\cite{RT2019},
+citing the linear analysis of Mart\'in-Garc\'ia and Gundlach~\cite{MartinGarciaGundlach1999}, who found all
+nonspherical perturbations to decay, and the axisymmetric nonlinear evolutions
+of~\cite{ChoptuikHirschmannLieblingPretorius2003}. The delicate sector is the polar (even) sector with $\ell=2$,
+whose least damped mode was found at $\kappa\Delta\approx-0.07$, close to the imaginary axis.
+
+As a first step toward extending the Main Theorem, we have written the Gerlach--Sengupta
+equations~\cite{GerlachSengupta1979} on the background of~\cite{RT2019}, in the variables $\omega$ and $\mu$, and
+solved them numerically by spectral collocation, keeping the light cone inside the domain and filtering spurious
+solutions by regularity and by the constraints. This computation is \emph{not} rigorous and is not part of the
+theorem. In both sectors, for $\ell=2$ and $\ell=3$, it is consistent with the values
+of~\cite{MartinGarciaGundlach1999} within the precision of their finite-difference computation; for instance
+$\kappa\Delta\approx-2.320$ against their $-2.30$ for the axial mode with $\ell=2$. For the polar mode with $\ell=2$
+it gives
+\[
+  s\approx-0.004764\pm0.147345\,i,\qquad \kappa\Delta=4\pi\Re s\approx-0.0599,
+\]
+against their $-0.07$, and stable under refinement of our discretization to about $2\cdot10^{-5}$, which is
+numerical evidence and not a certified bound: the mode is damped, but at a distance of only $0.005$ from the
+axis. A rigorous count for $\ell\ge1$ appears feasible with the methods of this paper, using a deflation and a
+Newton--Kantorovich enclosure for this mode, the constraint structure in the certificate, and a bound uniform in
+large $\ell$. Together with the Main Theorem it would give exactly one unstable mode for general linear perturbations,
+in the spectral sense.
+
+\subsection{Regularity}\label{sec:discussion-regularity}
+
+The class of physical modes in \cref{def:physical-mode} requires analyticity in $\xi$ across the light cone and
+at the axis, with a complex neighbourhood that may be arbitrarily thin. Whether every Floquet mode with
+$\Re s>0$ that is merely smooth in $\xi$ is analytic is an open regularity question for a hyperbolic system that is
+periodic in $\tau$. Our radius recovery (\cref{lem:recovery}) works for every weight $\kappa_2'>1$, but its bound on
+the free part degenerates like $1/(\kappa_2'-1)$, so it does not reach $\kappa_2'=1$.
+
+\subsection{On the method}
+
+What made the count feasible on ordinary computers was a combination of choices of formulation.
+\begin{itemize}[leftmargin=*]
+\item \emph{A finite reference instead of a majorant of the exterior.} An earlier approach bounded the resolvent of
+  the finite section and the operator outside it separately; it required truncations and constants out of reach
+  without high-performance computing. Comparing $L$ with a block-diagonal reference whose zeros are those of a
+  finite matrix needs only bounds along the contour.
+\item \emph{A space in which the background is pointwise.} On the torus space the numerical range of the background
+  reduces to the symbol, which gave the exclusion bound $2.93$, against $414$ from block-by-block majorants.
+\item \emph{The Perron criterion} for block matrices of norms, instead of the spectral norm of such a matrix.
+\item \emph{Deflation of the gauge roots,} which lie on or near the contour.
+\item \emph{Constraints through $K$.} In a floating-point diagnostic on the truncation $12\times36$, the maximum
+  over the boundary of $[1/8,1]\times[-1/4,1/4]$ of the weighted norm of $J(\,\cdot\,+s)^{-1}$ was about $1800$ for
+  $L$ and $14$ for $K$, each in the space where its certificate is formulated. The physical classification is therefore obtained by
+  proving $K$ injective, rather than by bounding the constraints on root spaces of $L$.
+\end{itemize}
+Several other routes were tried and closed, with measured lower bounds on their cost. They are documented in the
+repository, for readers who might attempt similar computations.

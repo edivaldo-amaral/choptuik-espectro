@@ -1,0 +1,269 @@
+\section{Counting the roots}\label{sec:counting}
+
+This section proves the counting part of the Main Theorem. All statements are for the torus realization
+$\mathbb T(65/64,5/4)$ of $L_A$ and, for $K$, the sharp torus $\mathbb T^\sharp(129/128,9/8)$; by
+\cref{lem:Lreal} the counts are the same in the realization $\Yp$ of~\cite{RT2019}. We write
+\[
+  \Omega_A=(0,3)\times(-\tfrac14,\tfrac14),\qquad \Omega_B=(0,3)\times(\tfrac14,\tfrac34)
+\]
+for the A and B bands of \cref{sec:setting-sectors}, truncated at $\Re s=3$, and $N(L,\Omega)$ for the
+number of roots in $\Omega$ counted with algebraic multiplicity.
+
+\begin{theorem}[Counts]\label{thm:counts}
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=*]
+\item $L(s)$ is invertible for $\Re s>2.9261$ and $K(s)$ is invertible for $\Re s>1.765$, for all $\Im s$.
+\item $N(L_A,\Omega_A)=3$ and $N(L_A,\Omega_B)=1$.
+\item $L_A$ has no roots on $\partial\Omega_A\cup\partial\Omega_B$ other than $s=0$, which is an algebraically
+  simple root.
+\end{enumerate}
+\end{theorem}
+
+\begin{corollary}\label{cor:four}
+Modulo $\tfrac i2\Z$, $L$ has exactly four roots in $\{\Re s>0\}$, counted with algebraic multiplicity. On the
+imaginary axis its only root is $s\equiv0$, which is algebraically simple.
+\end{corollary}
+
+\begin{proof}
+By \cref{lem:sectorB}, the roots of $L$ modulo $\tfrac i2\Z$ correspond, with multiplicities, to the roots of
+$L_A$ modulo $i\Z$, which are counted in the strip $\widetilde Q=\{-\tfrac14<\Im s\le\tfrac34\}$. By~(i)
+there are none with $\Re s\ge3$, and by~(iii) none on the lines $\Im s=\tfrac14$ and $\Im s=-\tfrac14\equiv\tfrac34$
+with $0<\Re s<3$. So the roots with $\Re s>0$ are those in $\Omega_A\cup\Omega_B$, and there are $3+1$ of
+them. On the axis, the segment $\{\Re s=0,\ -\tfrac14\le\Im s\le\tfrac34\}$ is a full period of $L_A$ and lies
+in $\partial\Omega_A\cup\partial\Omega_B$, so~(iii) applies.
+\end{proof}
+
+The proof of \cref{thm:counts}~(i) is in \cref{sec:counting-large}. Parts (ii) and (iii) are proved in
+\cref{sec:counting-rouche,sec:counting-reference,sec:counting-windows,sec:counting-finite} by an
+operator version of Rouch\'e's theorem: after a rank-two deflation of the roots $0$ and $\mu$, $L_A$ is
+compared on $\partial\Omega$ with a reference whose zeros are the eigenvalues of a $14016\times14016$
+matrix, and these are counted from a Schur decomposition with certified residual.
+
+\subsection{Large real part}\label{sec:counting-large}
+
+On the torus space the background operators are pointwise. With $w=e^{i\tau/2}$ and $z=e^{i\theta}$ on the
+torus $|w|=a$, $|z|=b$, multiplication by a field $f$ becomes multiplication by its analytic extension
+$f(w,z)$, the reflection $P$ becomes $z\mapsto-z$, and the division by $\xi$ becomes multiplication by
+$1/\xi(z)$, $\xi(z)=(z+z^{-1})/2$, which is bounded since $b>1$. Consequently
+$\Re\langle -Bx,x\rangle$ is the integral over the torus of a Hermitian form in the seven values
+$(x_1(z),x_2(\pm z),x_3(\pm z),x_4(\pm z))$ (using $x_1(-z)=-x_1(z)$), with coefficients given by the background,
+and
+\[
+  \max\Re W(-B)\le\sup_{\text{torus}}\lambda_{\max}\big(N^{-1/2}\operatorname{Herm}(-\mathcal S)N^{-1/2}\big),
+\]
+where $\mathcal S$ is the $7\times7$ symbol and $N$ accounts for the multiplicity of the values. Here
+$W(T)=\{\langle Tx,x\rangle:\|x\|=1\}$ is the numerical range. This bound captures all cancellations
+between components and Fourier phases.
+
+\begin{lemma}[Numerical range of the background]\label{lem:F3}
+In $\mathbb T(65/64,5/4)$, $\max\Re W(-B)\le2.9492$ and $\|B\|\le3.9642$; for the free part,
+$\max\Re W(-J)\le-0.02319$. In $\mathbb T^\sharp(129/128,9/8)$, $\max\Re W(-B^\sharp)\le1.4396$ and
+$\|B^\sharp\|\le1.6497$, and $\max\Re W(-K(0))\le 1.765$.
+\end{lemma}
+
+\begin{proof}[Method of proof]
+The supremum of $\lambda_{\max}$ of the symbol over the torus is bounded on a grid of $2048\times4096$
+centres for $L$ and $1024\times2048$ for $K$. At each centre the symbol is evaluated in ball arithmetic (Arb), and the inequality is verified by a
+$LDL^{\mathsf T}$ factorization in balls of the shifted matrix. Between centres, Lipschitz constants of the
+background fields, computed in exact rational arithmetic, give the slack, also evaluated in ball arithmetic.
+The Lipschitz slack added between centres is at most $0.0772$ for $L$ and $0.0536$ for $K$. The free part is handled by a closed
+form. Details and file references are in \cref{sec:computation}.
+\end{proof}
+
+\begin{proof}[Proof of \cref{thm:counts}~(i)]
+For $x$ in the domain, $\Re\langle L(s)x,x\rangle\ge(\Re s-2.9492+0.02319)\|x\|^2$, so
+$\|L(s)x\|\ge(\Re s-2.9261)\|x\|$, and $L(s)$ is injective for $\Re s>2.9261$. Since $L(s)$ is Fredholm of
+index zero (\cref{prop:fredholm}), it is invertible. The argument for $K$ is the same.
+\end{proof}
+
+The bound $2.9261$ should be compared with the largest root, $\sphys\approx0.733$: the exclusion is not sharp,
+which is why the rectangles $\Omega_A,\Omega_B$ extend to $\Re s=3$. Before the symbol was used, block-by-block
+majorants gave a bound larger by two orders of magnitude.
+
+\subsection{Rouch\'e's theorem for operator families, and deflation}\label{sec:counting-rouche}
+
+We use the operator version of Rouch\'e's theorem of Gohberg and Sigal~\cite{GohbergSigal1971}, in its
+homotopy form. Let $\Omega$ be a bounded domain with piecewise smooth boundary, and $H,R$ analytic families of
+Fredholm operators of index zero on a neighbourhood of $\overline\Omega$. Suppose moreover that $H-R$ is compact. If
+$R+t(H-R)$ is invertible on $\partial\Omega$ for every $t\in[0,1]$, then $H$ and $R$ have the same number of zeros in $\Omega$, counted with
+algebraic multiplicity. A sufficient condition is $\|R(s)^{-1}(H(s)-R(s))\|<1$ on $\partial\Omega$.
+
+\emph{Normalization.} The free part $J+s$ is triangular in the Chebyshev index within each Fourier mode, with
+diagonal $\mu(n+1)+s+im/2$, so $Q_0(s):=(J+s)^{-1}$ is analytic and invertible in $\Re s>-\mu$. The family
+$H(s)=\widetilde L(s)Q_0(s)$ has the same zeros as $\widetilde L$, with the same multiplicities, and
+$H(s)=I+(B+E)Q_0(s)$, with $E=\widetilde L-L$ the deflation below, is the identity plus a compact operator.
+
+\emph{Deflation.} The roots $0$ and $\mu$ are known exactly: $L(s)x_0=s\,x_0$ for $x_0=\partial_\tau\omegabar$
+(translation invariance in $\tau$), and $L(s)x_1=(s-\mu)\,x_1$ for $x_1=g_*$ (\cref{sec:physical-defs}). The
+root $0$ lies on $\partial\Omega_A$, and the root $\mu$ keeps the resolvent large between $0$ and $\mu$. We
+remove both by a finite-rank perturbation.
+
+\begin{lemma}[Brauer deflation]\label{lem:brauer}
+Let $\phi_0,\phi_1$ be bounded functionals and $\delta_0,\delta_1\in\C$, and set
+$\widetilde L(s)=L(s)+\delta_0x_0\phi_0^*+\delta_1x_1\phi_1^*$. Then
+\[
+  \det\big(I+L(s)^{-1}(\widetilde L(s)-L(s))\big)=\frac{q(s)}{s(s-\mu)},
+\]
+where $q$ is the quadratic polynomial $\det\big(\operatorname{diag}(s,s-\mu)+[\delta_j\phi_i^*x_j]_{ij}\big)$, and
+for every $s_0$ the algebraic multiplicities satisfy
+\[
+  \mult_{\widetilde L}(s_0)=\mult_L(s_0)+\operatorname{ord}_{s_0}\frac{q(s)}{s(s-\mu)} .
+\]
+\end{lemma}
+
+\begin{proof}
+Since $L(s)^{-1}x_0=x_0/s$ and $L(s)^{-1}x_1=x_1/(s-\mu)$, the perturbation $L(s)^{-1}(\widetilde L-L)$ has
+rank two with range in $\operatorname{span}\{x_0,x_1\}$, and the determinant reduces to a $2\times2$
+determinant. The multiplicity formula is the logarithmic-residue form of the Gohberg--Sigal theory for the
+factorization $\widetilde L=L\,(I+L^{-1}(\widetilde L-L))$, in which the second factor is a finite-rank
+meromorphic perturbation of the identity whose logarithmic multiplicity is the order of its determinant.
+\end{proof}
+
+We take $\phi_i$ supported in the finite box $Z$ below, biorthogonal to explicit approximations $x_j^A$ computed
+from the data $\omega_A$ ($\phi_i^*x_j^A=\delta_{ij}$), and $(\delta_0,\delta_1)=(1,1+\mu_A)$. With
+$e_{ij}=\phi_i^*(x_j-x_j^A)$,
+\[
+  q(s)=(s+1+e_{00})\big(s-\mu+\delta_1(1+e_{11})\big)-\delta_0\delta_1e_{01}e_{10},
+\]
+so the two deflated roots move to approximately $-1$. The errors satisfy $\|P_Z(x_0-x_0^A)\|\le1.5\cdot10^{-9}$
+and $\|x_1-x_1^A\|\le2.51\cdot10^{-8}$, so $|e_{ij}|\le\|\phi_i\|\,\|x_j-x_j^A\|\le5.51\cdot2.51\cdot10^{-8}$, and both factors of $q$ have modulus
+$\ge1-10^{-6}$ in $\Re s\ge0$. Hence $q$ has no zeros in $\Re s\ge0$, and by \cref{lem:brauer}
+\begin{equation}\label{eq:brauer-count}
+  N(L_A,\Omega_A)=N(\widetilde L_A,\Omega_A)+1,\qquad N(L_A,\Omega_B)=N(\widetilde L_A,\Omega_B),
+\end{equation}
+the $+1$ coming from the pole of $q(s)/(s(s-\mu))$ at $\mu\in\Omega_A$. Moreover, at every $s$ with $\Re s\ge0$ where
+$\widetilde L_A(s)$ is invertible, $\mult_L(s)=1$ if $s\in\{0,\mu\}$ and $\mult_L(s)=0$ otherwise. In the certificates the
+deflation uses $x_j^A$, and the differences $x_j-x_j^A$ are carried as perturbations.
+
+\subsection{The reference and its verification on the contour}\label{sec:counting-reference}
+
+Partition the coefficient space of sector A into
+\begin{itemize}[leftmargin=*]
+\item the finite box $Z=\{|m|\le31,\ 0\le n<128\}$, of dimension $14016$;
+\item $26$ \emph{windows} $J$ of at most $16$ consecutive Fourier modes, covering the rest of the box
+  $\{|m|<200,\ n<400\}$;
+\item the \emph{far} part, the complement.
+\end{itemize}
+Let $P_Z,P_J,P_{\mathrm{far}}$ be the coordinate projections and $\widehat H_{ab}(s)=P_aH(s)P_b$. The reference is the
+block-diagonal family
+\[
+  R(s)=\operatorname{diag}\big(\widehat H_{ZZ}(s),\ \widehat H_{JJ}(s)\ (J\text{ windows}),\ I_{\mathrm{far}}\big).
+\]
+It is analytic in $\Re s>-\mu$, and its zeros in $\Omega$ are those of the blocks. In the certificates the finite
+block is taken one step further from the operator: with $W$ the diagonal matrix of the weights, $\widehat H_{ZZ}$ is
+replaced by $R_Z(s)=W^{-1}(\mathsf A+s)W\,(P_Z(J+s)P_Z)^{-1}$, where $\mathsf A$ is the stored floating-point matrix that
+approximates $W\widetilde L_Z(0)W^{-1}$, built from the data $\omega_A$ and the vectors $x_j^A$ and taken as an exact
+matrix. The difference $P_Z\widetilde LP_Z-W^{-1}\mathsf AW$, due to the background error, the deflation vectors and
+the rounding in the assembly, is part of $H-R$ and is bounded in the entries below.
+
+\begin{lemma}[The finite block]\label{lem:ZZ}
+$\widehat H_{ZZ}(s)=\widetilde L_Z(s)\,(P_Z(J+s)P_Z)^{-1}$, where $\widetilde L_Z(s)=P_Z\widetilde L(s)P_Z$ is the
+$14016\times14016$ truncation. In particular the zeros of $\widehat H_{ZZ}$ in $\Omega$, with multiplicities, are
+the points $s$ with $-s$ an eigenvalue of the matrix $\widetilde L_Z(0)$, counted with algebraic multiplicity. The same
+holds for $R_Z$, with $\mathsf A$ in place of $W\widetilde L_Z(0)W^{-1}$.
+\end{lemma}
+
+\begin{proof}
+$J+s$ preserves the Fourier index and is upper triangular in $n$, so the range of $P_Z$ is invariant under
+$J+s$ and under $Q_0(s)$: $Q_0(s)P_Z=P_ZQ_0(s)P_Z=(P_Z(J+s)P_Z)^{-1}$. Hence
+$\widehat H_{ZZ}(s)=P_Z\widetilde L(s)Q_0(s)P_Z=P_Z\widetilde L(s)P_Z\,(P_Z(J+s)P_Z)^{-1}$, and the second factor is
+invertible and analytic in $\Re s>-\mu$.
+\end{proof}
+
+\emph{The Perron criterion.} To verify that $R+t(H-R)$ is invertible on $\partial\Omega$ for all $t\in[0,1]$, we
+use approximate inverses of the diagonal blocks, $V_Z(s)\approx\widehat H_{ZZ}(s)^{-1}$, $V_J\approx\widehat
+H_{JJ}(c)^{-1}$ at a fixed centre $c$, and $I$ for the far part, and bound all block entries.
+
+\begin{lemma}[Perron criterion]\label{lem:perron}
+Let $X=\bigoplus_iX_i$, $A=R+E$ with $R=\operatorname{diag}(R_i)$, and let $V_i$ be bounded operators with
+$\|I-V_iR_i\|\le\rho_i$ and $\|V_iE_{ij}\|\le n_{ij}$. If the spectral radius $\theta$ of the nonnegative matrix
+$\operatorname{diag}(\rho_i)+(n_{ij})$ is $<1$, then $R+tE$ is injective for all $t\in[0,1]$; if $R+tE$ is Fredholm of
+index zero, it is invertible.
+\end{lemma}
+
+\begin{proof}
+With $V=\operatorname{diag}(V_i)$, $V(R+tE)=I-\big((I-VR)-tVE\big)$. In the norm
+$\max_iw_i^{-1}\|x_i\|$, with $w$ a positive Perron vector of a slightly larger matrix, the operator in
+parentheses has norm $\le\theta+\epsilon<1$, since its block norms are entrywise bounded by the matrix above
+(and are increasing in $t$). So $V(R+tE)$ is invertible, and $R+tE$ is injective.
+\end{proof}
+
+The levels are $Z$, the windows and the far part; this is the \emph{three-level Perron} bound. The entries are
+computed as follows (\cref{sec:computation}).
+\begin{itemize}[leftmargin=*]
+\item \emph{Level $Z$.} $V_Z(s)$ is applied through a Schur decomposition of $\mathsf A$, used
+  only as a solver; residuals are certified a posteriori. A bound $t_p\ge\|(\mathsf A+p)^{-1}\|$ is certified by a Loewner-order inequality $t^2MM^*-I\succeq0$ (with preconditioning near the
+  B-band root). The coupling $Z\leftarrow$ tail is factored as a low-rank part $F\Phi$ with a certified
+  remainder; with the scaling $D_Z=J_Z(c)Q_{ZZ}(s)$, the entry tail$\,\leftarrow Z$ becomes independent of $s$.
+\item \emph{Windows.} Each $V_J$ is the exact inverse of the computed block at the centre, and the blocks are
+  bounded by block-Jacobi estimates; the dependence on $s$ is bounded by $\rho_J(s)\le\rho_J(c)+d\,K_J/(1-d\,n_{Q,J})$,
+  $d=|s-c|$, with constants computed at the centre (and a refined formula for the central windows).
+\item \emph{Far part.} Closed forms for $\|Q_0(s)P_{\mathrm{far}}\|$, uniform on discs.
+\item \emph{Background and deflation errors.} The difference between $\omegabar$ and the data, and the errors
+  $x_j-x_j^A$, enter as global perturbations of all entries.
+\end{itemize}
+
+\emph{Discs.} The bound of \cref{lem:perron} is made uniform on a disc around each point $p$ of the contour:
+the variation of the level-$Z$ entries is controlled to first order by structured quantities computed by Schur
+solves, and to second order by the resolvent bound, using that $\sigma_{\min}(\widetilde L_Z+s)$ is
+$1$-Lipschitz in $s$. For each disc the radius is chosen by bisection on a floating-point estimate of $\theta$, with target $0.999$; the
+certified rational bounds are then computed for the chosen radius, and may exceed the target slightly, as long as they
+stay below $1$. The contour of $\Omega_A$ is
+covered by $96$ discs, with $\max\theta\le0.99842$, and that of $\Omega_B$ by the $96$ discs of $\Omega_A$ on its
+lower edge and $78$ further discs, with $\max\theta\le0.99908$; the radii range from $0.0028$ near the B-band
+root to $0.4995$ at $\Re s\ge2$. Coverage of the four edges by the union of the discs is checked in rational
+arithmetic. This proves that $R+t(H-R)$ is invertible on $\partial\Omega_A$ and on $\partial\Omega_B$, hence
+\[
+  N(\widetilde L_A,\Omega)=N(R,\Omega)\qquad(\Omega=\Omega_A,\Omega_B),
+\]
+and that $\widetilde L_A$ is invertible on $\partial\Omega_A\cup\partial\Omega_B$. By the remark after
+\eqref{eq:brauer-count}, this is \cref{thm:counts}~(iii).
+
+\subsection{The windows have no zeros}\label{sec:counting-windows}
+
+The Perron criterion on the contour gives $N(\widetilde L,\Omega)=N(R,\Omega)=N(\widehat H_{ZZ},\Omega)+
+\sum_JN(\widehat H_{JJ},\Omega)$, but says nothing about zeros of the window blocks inside $\Omega$.
+
+\begin{lemma}\label{lem:windows}
+For every window $J$, $\widehat H_{JJ}(s)$ is invertible for all $s\in\overline{\Omega_A}\cup\overline{\Omega_B}$.
+\end{lemma}
+
+\begin{proof}
+Partition each band into $10$ rectangles $\Omega_k$, one for each tail centre $c_k$. On $\Omega_k$ the function
+$F_k(s)=I-V_J(c_k)\widehat H_{JJ}(s)$ is analytic, so $\|F_k(s)\|$ is subharmonic and attains its maximum on
+$\partial\Omega_k$. On the boundary, $\|F_k\|$ is bounded by the same sensitivity estimates as in the discs,
+evaluated on discs around sample points of the boundary. The maximum is $0.1488$ in the A band and $0.1517$ in the B band.
+So $\|F_k\|<1$ on $\Omega_k$, and $\widehat H_{JJ}(s)$ is invertible.
+\end{proof}
+
+\subsection{The finite count}\label{sec:counting-finite}
+
+It remains to count the eigenvalues of the stored matrix $\mathsf A$ in $-\Omega$. A floating-point Schur decomposition $\mathsf A\approx UTU^*$ gives the matrix $\mathsf B=UTU^{-1}$,
+whose eigenvalues are exactly the diagonal entries of $T$ (with $U$ invertible).
+
+\begin{lemma}[Finite count]\label{lem:schur}
+Let $\varepsilon_B\ge\|\mathsf A-\mathsf B\|$ and $t(s)\ge\|(\mathsf A+s)^{-1}\|$ on $\partial\Omega$. If
+$\sup_{\partial\Omega}t(s)\,\varepsilon_B<1$, then $\mathsf A$ has exactly $\#\{i:-T_{ii}\in\Omega\}$ eigenvalues
+in $-\Omega$, with multiplicity.
+\end{lemma}
+
+\begin{proof}
+$\mathsf A+s+t'(\mathsf B-\mathsf A)$ is invertible on $\partial\Omega$ for $t'\in[0,1]$, by a Neumann series, so the
+number of eigenvalues inside does not change along the homotopy.
+\end{proof}
+
+We have $\varepsilon_B\le\|\mathsf AU-UT\|_F/\sqrt{1-\|I-U^*U\|_F}$ with $\|\mathsf AU-UT\|_F\le5.97\cdot10^{-5}$ and
+$\|I-U^*U\|_F\le1.31\cdot10^{-6}$, and $t(s)\le t_p/(1-rt_p)$ on each disc, so $\sup t\le559.2$ and
+$t\,\varepsilon_B\le0.0334$. The diagonal of $T$ has exactly two entries $-T_{ii}$ in $\Omega_A$, at
+$0.401025\ldots$ and $0.733180\ldots$, and exactly one in $\Omega_B$, at $0.0414194\ldots+0.5i$; the nearest
+entry outside $\Omega_A$ is at distance $0.168$ from its boundary. Hence $N(\widehat H_{ZZ},\Omega_A)=2$ and
+$N(\widehat H_{ZZ},\Omega_B)=1$.
+
+\begin{proof}[Proof of \cref{thm:counts}~(ii)]
+By \cref{lem:windows,lem:schur,lem:ZZ}, $N(R,\Omega_A)=2$ and $N(R,\Omega_B)=1$. By the Perron verification on the
+contours, $N(\widetilde L_A,\Omega)=N(R,\Omega)$, and by~\eqref{eq:brauer-count},
+$N(L_A,\Omega_A)=2+1=3$ and $N(L_A,\Omega_B)=1$.
+\end{proof}
+
+The positions $0.401$, $0.733$ and $0.0414+0.5i$ of the finite reference are not used in the count; the roots of
+$L$ are localized independently in \cref{sec:roots}. The Rouch\'e argument only guarantees that there are three
+roots in $\Omega_A$ and one in $\Omega_B$.

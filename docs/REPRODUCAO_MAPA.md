@@ -1,6 +1,6 @@
 # Mapa alegação → artefato (gerado por `scripts/inventario_certificados.py`; não editar)
 
-Gerado em 03/10/2026 19:16. "NB": no notebook (repositório). "lab2": no laboratorio2. "A BUSCAR": em nenhum dos dois (PC do laboratório ou PC 3).
+Gerado em 08/10/2026 19:45. "NB": no notebook (repositório). "lab2": no laboratorio2. "A BUSCAR": em nenhum dos dois (PC do laboratório ou PC 3).
 
 ## Passo 0: existencia do fundo (RT): dados publicados
 
@@ -14,33 +14,35 @@ Gerado em 03/10/2026 19:16. "NB": no notebook (repositório). "lab2": no laborat
 
 ## Passo 4: L-real: recuperacao de raio toro <-> RT
 
-3 artefatos, 0.0 MB no notebook; 0 a buscar.
+4 artefatos, 0.0 MB no notebook; 0 a buscar.
 
 | artefato | papel | NB | lab2 | sha256 |
 |---|---|---|---|---|
-| `build/t2/l_real_toro.json` | saida de l_real_toro.py / radius_transfer.py | sim | — | 04da36395eb4 |
-| `build/t2/l_real_toro.txt` | saida de l_real_toro.py / radius_transfer.py | sim | — | b0c66db80e17 |
-| `build/t2/radius_transfer_s3_1.json` | saida de l_real_toro.py / radius_transfer.py | sim | — | c542e14567d2 |
+| `build/t2/l_real_toro.json` | saida de l_real_toro.py / radius_transfer.py / independent_component_beta.py (beta+) | sim | sim | ddc5f548734f |
+| `build/t2/l_real_toro.txt` | saida de l_real_toro.py / radius_transfer.py / independent_component_beta.py (beta+) | sim | — | b0c66db80e17 |
+| `build/t2/radius_transfer_s3_1.json` | saida de l_real_toro.py / radius_transfer.py / independent_component_beta.py (beta+) | sim | — | c542e14567d2 |
+| `build/t2/beta_plus.json` | saida de l_real_toro.py / radius_transfer.py / independent_component_beta.py (beta+) | sim | — | 0c3d1a535aee |
 
 ## Passo 5: F3: nada em Re s >= 2,93 (simbolo de L em Arb)
 
-9 artefatos, 0.0 MB no notebook; 0 a buscar.
+10 artefatos, 0.0 MB no notebook; 0 a buscar.
 
 | artefato | papel | NB | lab2 | sha256 |
 |---|---|---|---|---|
-| `build/spectrum/symbol-L-2048x4096.json` | certificado do simbolo (Arb) | sim | — | dbb11520fe1d |
-| `build/spectrum/symbol-L-faixa0.json` | certificado do simbolo (Arb) | sim | — | 9ad85f0051db |
-| `build/spectrum/symbol-L-faixa1.json` | certificado do simbolo (Arb) | sim | — | e2c51742ac8f |
-| `build/spectrum/symbol-L-faixa2.json` | certificado do simbolo (Arb) | sim | — | c33de082cf12 |
-| `build/spectrum/symbol-L-faixa3.json` | certificado do simbolo (Arb) | sim | — | ddfd9a5b78f6 |
-| `build/spectrum/symbol-L-faixa0.log` | certificado do simbolo (Arb) | sim | — | 4e9d2252527c |
-| `build/spectrum/symbol-L-faixa1.log` | certificado do simbolo (Arb) | sim | — | 3d731078f691 |
-| `build/spectrum/symbol-L-faixa2.log` | certificado do simbolo (Arb) | sim | — | 36b77774a256 |
-| `build/spectrum/symbol-L-faixa3.log` | certificado do simbolo (Arb) | sim | — | 0562ce9ae84d |
+| `build/spectrum/symbol-L-2048x4096.json` | certificado do simbolo (Arb) / parte livre | sim | — | dbb11520fe1d |
+| `build/spectrum/symbol-L-faixa0.json` | certificado do simbolo (Arb) / parte livre | sim | — | 9ad85f0051db |
+| `build/spectrum/symbol-L-faixa1.json` | certificado do simbolo (Arb) / parte livre | sim | — | e2c51742ac8f |
+| `build/spectrum/symbol-L-faixa2.json` | certificado do simbolo (Arb) / parte livre | sim | — | c33de082cf12 |
+| `build/spectrum/symbol-L-faixa3.json` | certificado do simbolo (Arb) / parte livre | sim | — | ddfd9a5b78f6 |
+| `build/spectrum/symbol-L-faixa0.log` | certificado do simbolo (Arb) / parte livre | sim | — | 4e9d2252527c |
+| `build/spectrum/symbol-L-faixa1.log` | certificado do simbolo (Arb) / parte livre | sim | — | 3d731078f691 |
+| `build/spectrum/symbol-L-faixa2.log` | certificado do simbolo (Arb) / parte livre | sim | — | 36b77774a256 |
+| `build/spectrum/symbol-L-faixa3.log` | certificado do simbolo (Arb) / parte livre | sim | — | 0562ce9ae84d |
+| `build/spectrum/free-part-toro.json` | certificado do simbolo (Arb) / parte livre | sim | — | 08a6c2b98140 |
 
 ## Passo 6: faixa A: N_A = 3 (Rouche de L)
 
-57 artefatos, 0.6 MB no notebook; 0 a buscar.
+58 artefatos, 0.6 MB no notebook; 0 a buscar.
 
 | artefato | papel | NB | lab2 | sha256 |
 |---|---|---|---|---|
@@ -85,26 +87,27 @@ Gerado em 03/10/2026 19:16. "NB": no notebook (repositório). "lab2": no laborat
 | `build/rouche_L_rig/F/F_+2_0000+0_0000i.npy` | fator F do disco (pesado) | sim | sim | a20febe1500d |
 | `build/rouche_L_rig/F/F_+1_5000+0_0000i.npy` | fator F do disco (pesado) | sim | sim | e0eca8a55d64 |
 | `build/rouche_L_rig/F/F_+0_5500-0_2500i.npy` | fator F do disco (pesado) | sim | — | f348b31153ba |
-| `build/rouche_L_rig/cauda/T3_-0_25.json` | cauda / janelas / cobertura / contagem | sim | — | 00a1bdcae716 |
-| `build/rouche_L_rig/cauda/T3_0.json` | cauda / janelas / cobertura / contagem | sim | — | ff6c36dd4c26 |
-| `build/rouche_L_rig/cauda/T3_0_25.json` | cauda / janelas / cobertura / contagem | sim | — | fe7373634f02 |
-| `build/rouche_L_rig/cauda/T3_0_55-0_25.json` | cauda / janelas / cobertura / contagem | sim | — | 39af959a3899 |
-| `build/rouche_L_rig/cauda/T3_0_55p0_25.json` | cauda / janelas / cobertura / contagem | sim | — | 5434f00ecbc8 |
-| `build/rouche_L_rig/cauda/T3_1_0.json` | cauda / janelas / cobertura / contagem | sim | — | 1527a56ca362 |
-| `build/rouche_L_rig/cauda/T3_1_5.json` | cauda / janelas / cobertura / contagem | sim | — | 1143e86575f5 |
-| `build/rouche_L_rig/cauda/T3_2_0.json` | cauda / janelas / cobertura / contagem | sim | — | 72ed580103e3 |
-| `build/rouche_L_rig/cauda/T3_2_5.json` | cauda / janelas / cobertura / contagem | sim | — | 732ed020579a |
-| `build/rouche_L_rig/cauda/T3_3_0.json` | cauda / janelas / cobertura / contagem | sim | — | 2d1922fcd41b |
-| `build/rouche_L_rig/janelas_v2.json` | cauda / janelas / cobertura / contagem | sim | — | 9313b2353f29 |
-| `build/rouche_L_rig/janelas_v2.txt` | cauda / janelas / cobertura / contagem | sim | — | 22656d936bc4 |
-| `build/rouche_L_rig/cobertura_v2.txt` | cauda / janelas / cobertura / contagem | sim | — | 41eb15c99e32 |
-| `build/rouche_L_rig/contagem.json` | cauda / janelas / cobertura / contagem | sim | sim | 8fdaeff2c9ac |
-| `build/rouche_L_rig/contagem_rouche_v2.txt` | cauda / janelas / cobertura / contagem | sim | — | 05b3af208490 |
-| `build/rouche_L_rig/diagT_lab2.npy` | cauda / janelas / cobertura / contagem | sim | — | 1da4a1f2f653 |
+| `build/rouche_L_rig/cauda/T3_-0_25.json` | cauda / janelas / cobertura / contagem / deflacao | sim | — | 00a1bdcae716 |
+| `build/rouche_L_rig/cauda/T3_0.json` | cauda / janelas / cobertura / contagem / deflacao | sim | — | ff6c36dd4c26 |
+| `build/rouche_L_rig/cauda/T3_0_25.json` | cauda / janelas / cobertura / contagem / deflacao | sim | — | fe7373634f02 |
+| `build/rouche_L_rig/cauda/T3_0_55-0_25.json` | cauda / janelas / cobertura / contagem / deflacao | sim | — | 39af959a3899 |
+| `build/rouche_L_rig/cauda/T3_0_55p0_25.json` | cauda / janelas / cobertura / contagem / deflacao | sim | — | 5434f00ecbc8 |
+| `build/rouche_L_rig/cauda/T3_1_0.json` | cauda / janelas / cobertura / contagem / deflacao | sim | — | 1527a56ca362 |
+| `build/rouche_L_rig/cauda/T3_1_5.json` | cauda / janelas / cobertura / contagem / deflacao | sim | — | 1143e86575f5 |
+| `build/rouche_L_rig/cauda/T3_2_0.json` | cauda / janelas / cobertura / contagem / deflacao | sim | — | 72ed580103e3 |
+| `build/rouche_L_rig/cauda/T3_2_5.json` | cauda / janelas / cobertura / contagem / deflacao | sim | — | 732ed020579a |
+| `build/rouche_L_rig/cauda/T3_3_0.json` | cauda / janelas / cobertura / contagem / deflacao | sim | — | 2d1922fcd41b |
+| `build/rouche_L_rig/janelas_v2.json` | cauda / janelas / cobertura / contagem / deflacao | sim | — | 9313b2353f29 |
+| `build/rouche_L_rig/janelas_v2.txt` | cauda / janelas / cobertura / contagem / deflacao | sim | — | 22656d936bc4 |
+| `build/rouche_L_rig/cobertura_v2.txt` | cauda / janelas / cobertura / contagem / deflacao | sim | — | 41eb15c99e32 |
+| `build/rouche_L_rig/contagem.json` | cauda / janelas / cobertura / contagem / deflacao | sim | sim | 8fdaeff2c9ac |
+| `build/rouche_L_rig/contagem_rouche_v2.txt` | cauda / janelas / cobertura / contagem / deflacao | sim | — | 05b3af208490 |
+| `build/rouche_L_rig/diagT_lab2.npy` | cauda / janelas / cobertura / contagem / deflacao | sim | — | 1da4a1f2f653 |
+| `build/rouche_L_rig/z/lab2/schur.json` | cauda / janelas / cobertura / contagem / deflacao | sim | sim | 122606360ef3 |
 
 ## Passo 7, 10: faixa B: N_B = 1 e a raiz B simples (NK)
 
-85 artefatos, 0.6 MB no notebook; 0 a buscar.
+86 artefatos, 0.6 MB no notebook; 0 a buscar.
 
 | artefato | papel | NB | lab2 | sha256 |
 |---|---|---|---|---|
@@ -151,48 +154,49 @@ Gerado em 03/10/2026 19:16. "NB": no notebook (repositório). "lab2": no laborat
 | `F_+0_5500+0_7500i.npy` | fator F do disco (pesado) | — | sim | c7d6d61a938a |
 | `build/rouche_L_rig/F/F_+1_5000+0_0000i.npy` | fator F do disco (pesado) | sim | sim | e0eca8a55d64 |
 | `F_+0_0000+0_5000i.npy` | fator F do disco (pesado) | — | sim | f9e76bc45f71 |
-| `build/faixaB/cauda/T3_0_5.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | — | 9dafe4d13705 |
-| `build/faixaB/cauda/T3_0_55p0_75.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | — | 18addacdd925 |
-| `build/faixaB/cauda/T3_0_55p0_75_lab2.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | — | 18addacdd925 |
-| `build/faixaB/cauda/T3_0_55p0_75_labpc.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | — | 40c7af467f6b |
-| `build/faixaB/cauda/T3_0_75.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | — | ab87417cd89f |
-| `build/faixaB/janelas.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | — | 07853798f22b |
-| `build/faixaB/janelas.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | — | 61df39ac0a67 |
-| `build/faixaB/cobertura.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | — | 122095b652df |
-| `build/faixaB/contagem_rouche.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | — | 7a4dd1bd87ac |
-| `build/faixaB/nk/C3.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | 0f981c8ea3f2 |
-| `build/faixaB/nk/D.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | 613823fbe3a5 |
-| `build/faixaB/nk/Q.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | f142e9b0bcea |
-| `build/faixaB/nk/T3.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | 358a3603d2a3 |
-| `build/faixaB/nk/Z.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | b254b9250f99 |
-| `build/faixaB/nk/etapaA.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | d5042f94fd65 |
-| `build/faixaB/nk/etapaB.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | 128c4ce66312 |
-| `build/faixaB/nk/etapaC.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | 6972c914a4d5 |
-| `build/faixaB/nk/etapaD.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | 9fa65577c9b7 |
-| `build/faixaB/nk/fim.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | 05983365a8b1 |
-| `build/faixaB/nk/h0w.npy` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | 5fbf30e5a2bf |
-| `build/faixaB/nk/nk3.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | 9c5140b66e20 |
-| `build/faixaB/nk/nk3_B.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | 89fd2a90d49d |
-| `build/faixaB/nk/nkZ.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | 930be1c680c7 |
-| `build/faixaB/nk/q.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | 3d346c6339b4 |
-| `build/faixaB/nk/tQ.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | 9c6c1565c00a |
-| `build/faixaB/logs/B_0_55p0_75_lab2.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | — | d46bba786077 |
-| `build/faixaB/logs/MANIFEST_logs.sha256` | cauda / janelas / cobertura / contagem / NK / logs | sim | — | 05179cad464e |
-| `build/faixaB/logs/certF_0.55+0.75j.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | f87cf64dcbb0 |
-| `build/faixaB/logs/certF_0.5j.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | 619324785ec2 |
-| `build/faixaB/logs/certF_0.75j.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | ee7c3662d760 |
-| `build/faixaB/logs/fator2_lab2.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | — | 2e3e4182269b |
-| `build/faixaB/logs/fim_caudaB_joao.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | — | cf0422cdc0ec |
-| `build/faixaB/logs/fim_caudaB_lab2.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | — | 38e21075c5dc |
-| `build/faixaB/logs/rig_B_joao.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | — | 86748e90741b |
-| `build/faixaB/logs/rig_B_lab2.txt` | cauda / janelas / cobertura / contagem / NK / logs | sim | — | 6cebd27dc177 |
-| `build/faixaB/logs/tp_+0_0000+0_2500i_B.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | 5a043d6eab99 |
-| `build/faixaB/logs/tp_+0_0000+0_5000i_B.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | c89e8106b142 |
-| `build/faixaB/logs/tp_+0_0000+0_5000i_B4.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | ee416c180937 |
-| `build/faixaB/logs/tp_+0_0000+0_7500i_B.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | be48e7206140 |
-| `build/faixaB/logs/tp_+0_5500+0_7500i_B.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | 01ba28156fce |
-| `build/faixaB/logs/tp_+0_5500+0_7500i_B3.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | c5725820656c |
-| `build/faixaB/logs/tp_+2_5000+0_0000i_B.json` | cauda / janelas / cobertura / contagem / NK / logs | sim | sim | 2d506f347dc7 |
+| `build/faixaB/cauda/T3_0_5.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | — | 9dafe4d13705 |
+| `build/faixaB/cauda/T3_0_55p0_75.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | — | 18addacdd925 |
+| `build/faixaB/cauda/T3_0_55p0_75_lab2.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | — | 18addacdd925 |
+| `build/faixaB/cauda/T3_0_55p0_75_labpc.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | — | 40c7af467f6b |
+| `build/faixaB/cauda/T3_0_75.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | — | ab87417cd89f |
+| `build/faixaB/janelas.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | — | 07853798f22b |
+| `build/faixaB/janelas.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | — | 61df39ac0a67 |
+| `build/faixaB/cobertura.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | — | 122095b652df |
+| `build/faixaB/contagem_rouche.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | — | 7a4dd1bd87ac |
+| `build/faixaB/nk/C3.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | 0f981c8ea3f2 |
+| `build/faixaB/nk/D.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | 613823fbe3a5 |
+| `build/faixaB/nk/Q.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | f142e9b0bcea |
+| `build/faixaB/nk/T3.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | 358a3603d2a3 |
+| `build/faixaB/nk/Z.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | b254b9250f99 |
+| `build/faixaB/nk/etapaA.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | d5042f94fd65 |
+| `build/faixaB/nk/etapaB.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | 128c4ce66312 |
+| `build/faixaB/nk/etapaC.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | 6972c914a4d5 |
+| `build/faixaB/nk/etapaD.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | 9fa65577c9b7 |
+| `build/faixaB/nk/fim.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | 05983365a8b1 |
+| `build/faixaB/nk/h0w.npy` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | 5fbf30e5a2bf |
+| `build/faixaB/nk/nk3.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | 9c5140b66e20 |
+| `build/faixaB/nk/nk3_B.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | 89fd2a90d49d |
+| `build/faixaB/nk/nkZ.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | 930be1c680c7 |
+| `build/faixaB/nk/q.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | 3d346c6339b4 |
+| `build/faixaB/nk/tQ.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | 9c6c1565c00a |
+| `build/faixaB/logs/B_0_55p0_75_lab2.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | — | d46bba786077 |
+| `build/faixaB/logs/MANIFEST_logs.sha256` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | — | 05179cad464e |
+| `build/faixaB/logs/certF_0.55+0.75j.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | f87cf64dcbb0 |
+| `build/faixaB/logs/certF_0.5j.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | 619324785ec2 |
+| `build/faixaB/logs/certF_0.75j.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | ee7c3662d760 |
+| `build/faixaB/logs/fator2_lab2.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | — | 2e3e4182269b |
+| `build/faixaB/logs/fim_caudaB_joao.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | — | cf0422cdc0ec |
+| `build/faixaB/logs/fim_caudaB_lab2.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | — | 38e21075c5dc |
+| `build/faixaB/logs/rig_B_joao.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | — | 86748e90741b |
+| `build/faixaB/logs/rig_B_lab2.txt` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | — | 6cebd27dc177 |
+| `build/faixaB/logs/tp_+0_0000+0_2500i_B.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | 5a043d6eab99 |
+| `build/faixaB/logs/tp_+0_0000+0_5000i_B.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | c89e8106b142 |
+| `build/faixaB/logs/tp_+0_0000+0_5000i_B4.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | ee416c180937 |
+| `build/faixaB/logs/tp_+0_0000+0_7500i_B.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | be48e7206140 |
+| `build/faixaB/logs/tp_+0_5500+0_7500i_B.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | 01ba28156fce |
+| `build/faixaB/logs/tp_+0_5500+0_7500i_B3.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | c5725820656c |
+| `build/faixaB/logs/tp_+2_5000+0_0000i_B.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | 2d506f347dc7 |
+| `build/rouche_L_rig/z/lab2/schur.json` | cauda / janelas / cobertura / contagem / NK / logs / deflacao | sim | sim | 122606360ef3 |
 
 ## Passo 8: S4: mu* simples, autoespaco span(g*), Dg* = 0
 
@@ -220,46 +224,45 @@ Gerado em 03/10/2026 19:16. "NB": no notebook (repositório). "lab2": no laborat
 
 ## Passo 9: s_K simples, viola as constraints (S3b)
 
-16 artefatos, 0.3 MB no notebook; 0 a buscar.
+14 artefatos, 0.3 MB no notebook; 0 a buscar.
 
 | artefato | papel | NB | lab2 | sha256 |
 |---|---|---|---|---|
-| `build/s3b/rig/A.txt` | Rouche de K no disco, NK de L, testemunho D | sim | sim | 0cd6efe7726c |
-| `build/s3b/rig/B_final.txt` | Rouche de K no disco, NK de L, testemunho D | sim | sim | 89267979f639 |
-| `build/s3b/rig/B_gamer.txt` | Rouche de K no disco, NK de L, testemunho D | sim | — | 35b5075ae35c |
-| `build/s3b/rig/C.txt` | Rouche de K no disco, NK de L, testemunho D | sim | — | 31e92307bdb1 |
-| `build/s3b/rig/C3.json` | Rouche de K no disco, NK de L, testemunho D | sim | sim | b254f330ba62 |
-| `build/s3b/rig/D.json` | Rouche de K no disco, NK de L, testemunho D | sim | sim | fe0b93510622 |
-| `build/s3b/rig/D.txt` | Rouche de K no disco, NK de L, testemunho D | sim | — | 397e66fcea45 |
-| `build/s3b/rig/Q.json` | Rouche de K no disco, NK de L, testemunho D | sim | sim | da084bbaf168 |
-| `build/s3b/rig/T3.gamer.json` | Rouche de K no disco, NK de L, testemunho D | sim | — | 610e6aa19a7a |
-| `build/s3b/rig/T3.json` | Rouche de K no disco, NK de L, testemunho D | sim | sim | a7b9fea99874 |
-| `build/s3b/rig/Z.json` | Rouche de K no disco, NK de L, testemunho D | sim | sim | 798b6934ce3f |
-| `build/s3b/rig/fim.txt` | Rouche de K no disco, NK de L, testemunho D | sim | sim | 2193eed49607 |
-| `build/s3b/rig/h0w.npy` | Rouche de K no disco, NK de L, testemunho D | sim | sim | d113646e695d |
-| `build/s3b/rouche_K_circ.json` | Rouche de K no disco, NK de L, testemunho D | sim | — | f7e35e6ceae5 |
-| `build/s3b/rouche_K_contagem_20x80.json` | Rouche de K no disco, NK de L, testemunho D | sim | — | ec901c246375 |
-| `build/s3b/nk3_32x128.json` | Rouche de K no disco, NK de L, testemunho D | sim | — | 1ebdba802a15 |
+| `build/s3b/rig/A.txt` | NK de L, testemunho D | sim | sim | 0cd6efe7726c |
+| `build/s3b/rig/B_final.txt` | NK de L, testemunho D | sim | sim | 89267979f639 |
+| `build/s3b/rig/B_gamer.txt` | NK de L, testemunho D | sim | — | 35b5075ae35c |
+| `build/s3b/rig/C.txt` | NK de L, testemunho D | sim | — | 31e92307bdb1 |
+| `build/s3b/rig/C3.json` | NK de L, testemunho D | sim | sim | b254f330ba62 |
+| `build/s3b/rig/D.json` | NK de L, testemunho D | sim | sim | fe0b93510622 |
+| `build/s3b/rig/D.txt` | NK de L, testemunho D | sim | — | 397e66fcea45 |
+| `build/s3b/rig/Q.json` | NK de L, testemunho D | sim | sim | da084bbaf168 |
+| `build/s3b/rig/T3.gamer.json` | NK de L, testemunho D | sim | — | 610e6aa19a7a |
+| `build/s3b/rig/T3.json` | NK de L, testemunho D | sim | sim | a7b9fea99874 |
+| `build/s3b/rig/Z.json` | NK de L, testemunho D | sim | sim | 798b6934ce3f |
+| `build/s3b/rig/fim.txt` | NK de L, testemunho D | sim | sim | 2193eed49607 |
+| `build/s3b/rig/h0w.npy` | NK de L, testemunho D | sim | sim | d113646e695d |
+| `build/s3b/nk3_32x128.json` | NK de L, testemunho D | sim | — | 1ebdba802a15 |
 
 ## Passo 11: K injetivo na faixa A fora de s_K: S3a (tiles), Rouche de K, R# (simbolo de K)
 
-13 artefatos, 0.3 MB no notebook; 0 a buscar.
+14 artefatos, 0.3 MB no notebook; 0 a buscar.
 
 | artefato | papel | NB | lab2 | sha256 |
 |---|---|---|---|---|
-| `build/cobertura_lab/grande-0-0.json` | tiles de Perron / simbolo de K | sim | — | b1bda9126984 |
-| `build/cobertura_lab/grande-1-0.json` | tiles de Perron / simbolo de K | sim | — | 6fae81f691f3 |
-| `build/cobertura_lab/grande-2-0.json` | tiles de Perron / simbolo de K | sim | — | 620347db64d7 |
-| `build/cobertura_lab/grande-3-0.json` | tiles de Perron / simbolo de K | sim | — | 24360f40d2a0 |
-| `build/cobertura_lab/grande-4-0.json` | tiles de Perron / simbolo de K | sim | — | 80a7631bcb8e |
-| `build/cobertura_lab/grande-5-0.json` | tiles de Perron / simbolo de K | sim | — | 9e0012c5d2e4 |
-| `build/cobertura_lab/grande-6-0.json` | tiles de Perron / simbolo de K | sim | — | 9938f71a2d98 |
-| `build/cobertura_lab/grande-7-0.json` | tiles de Perron / simbolo de K | sim | — | 8af3ccdc623d |
-| `build/cobertura_local/grande-7-0.json` | tiles de Perron / simbolo de K | sim | — | 3fde43038008 |
-| `build/tiles_rig/tile-0_2-r0_04.json` | tiles de Perron / simbolo de K | sim | — | 539225f969a5 |
-| `build/tiles_rig/tile-0_2-r0_04.log` | tiles de Perron / simbolo de K | sim | — | aaa0d8c75470 |
-| `build/spectrum/symbol-K-1024x2048.json` | tiles de Perron / simbolo de K | sim | — | 2b5d68edf68e |
-| `build/spectrum/symbol-K-1024x2048.log` | tiles de Perron / simbolo de K | sim | — | 7b3f81f60f71 |
+| `build/cobertura_lab/grande-0-0.json` | tiles de Perron / Rouche de K no disco / simbolo de K / parte livre | sim | — | b1bda9126984 |
+| `build/cobertura_lab/grande-1-0.json` | tiles de Perron / Rouche de K no disco / simbolo de K / parte livre | sim | — | 6fae81f691f3 |
+| `build/cobertura_lab/grande-2-0.json` | tiles de Perron / Rouche de K no disco / simbolo de K / parte livre | sim | — | 620347db64d7 |
+| `build/cobertura_lab/grande-3-0.json` | tiles de Perron / Rouche de K no disco / simbolo de K / parte livre | sim | — | 24360f40d2a0 |
+| `build/cobertura_lab/grande-4-0.json` | tiles de Perron / Rouche de K no disco / simbolo de K / parte livre | sim | — | 80a7631bcb8e |
+| `build/cobertura_lab/grande-5-0.json` | tiles de Perron / Rouche de K no disco / simbolo de K / parte livre | sim | — | 9e0012c5d2e4 |
+| `build/cobertura_lab/grande-6-0.json` | tiles de Perron / Rouche de K no disco / simbolo de K / parte livre | sim | — | 9938f71a2d98 |
+| `build/cobertura_lab/grande-7-0.json` | tiles de Perron / Rouche de K no disco / simbolo de K / parte livre | sim | — | 8af3ccdc623d |
+| `build/cobertura_local/grande-7-0.json` | tiles de Perron / Rouche de K no disco / simbolo de K / parte livre | sim | — | 3fde43038008 |
+| `build/s3b/rouche_K_circ.json` | tiles de Perron / Rouche de K no disco / simbolo de K / parte livre | sim | — | f7e35e6ceae5 |
+| `build/s3b/rouche_K_contagem_20x80.json` | tiles de Perron / Rouche de K no disco / simbolo de K / parte livre | sim | — | ec901c246375 |
+| `build/spectrum/symbol-K-1024x2048.json` | tiles de Perron / Rouche de K no disco / simbolo de K / parte livre | sim | — | 2b5d68edf68e |
+| `build/spectrum/symbol-K-1024x2048.log` | tiles de Perron / Rouche de K no disco / simbolo de K / parte livre | sim | — | 7b3f81f60f71 |
+| `build/spectrum/free-part-toro.json` | tiles de Perron / Rouche de K no disco / simbolo de K / parte livre | sim | — | 08a6c2b98140 |
 
 ## Passo 11a: 0,7332 simples (NK de L)
 

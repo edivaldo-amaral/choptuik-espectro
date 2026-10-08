@@ -1,0 +1,112 @@
+\section{Introduction}\label{sec:intro}
+
+\subsection{Critical collapse}
+
+In 1993 Choptuik studied numerically the gravitational collapse of a spherically symmetric massless scalar field
+and found, at the threshold between dispersion and black hole formation, a universal solution with three striking
+features~\cite{Choptuik1993}: it is approached, in all the one-parameter families of initial data that were evolved, when the
+parameter is tuned to the threshold; it is discretely self-similar, reproducing itself on smaller and smaller scales with an echoing period
+$\Delta\approx3.44$; and near the threshold the mass of the black hole scales like $(p-p_*)^\gamma$ with a universal
+exponent $\gamma\approx0.37$. These \emph{critical phenomena} have since been found in many matter models, and are
+reviewed in~\cite{GundlachMartinGarcia2007}. For the spherically symmetric Einstein--scalar field system, Christodoulou proved that
+sufficiently small data disperse and sufficiently large data form trapped surfaces~\cite{Christodoulou1986,
+Christodoulou1991,Christodoulou1993}.
+
+The standard explanation is dynamical~\cite{KoikeHaraAdachi1995,Gundlach1997}. The critical solution is a fixed
+point (in the discretely self-similar case, a periodic orbit) of the evolution in logarithmic time, with a stable
+manifold of codimension one, which is the threshold itself, and a \emph{single} unstable mode, growing like
+$e^{\lambda T}$. A near-critical solution stays close to the critical one until the unstable mode has grown to a
+fixed size, and dimensional analysis then gives $\gamma=1/\lambda$, with a periodic modulation in the discretely
+self-similar case. Gundlach computed the perturbations of Choptuik's solution numerically and found exactly one growing mode,
+with $\gamma=0.374\pm0.001$~\cite{Gundlach1997}, and Mart\'in-Garc\'ia and Gundlach found numerically that all
+nonspherical perturbations decay~\cite{MartinGarciaGundlach1999}. A necessary ingredient of this picture is that the
+critical solution has exactly one unstable mode; it is this spectral statement that we prove, for spherically
+symmetric perturbations.
+
+\subsection{Existence, and the open spectral question}
+
+The existence of Choptuik's spacetime was proved by Reiterer and Trubowitz~\cite{RT2019}, with a computer-assisted
+argument in the tradition of Lanford's proof of the Feigenbaum conjectures~\cite{Lanford1982}. They construct a
+real analytic, discretely self-similar solution on a neighbourhood of the past light cone of the singularity, as
+the fixed point of a contraction near high-precision numerical data, and determine its echoing constant and a
+second invariant to $80$ digits. About perturbations they write: ``We do not study perturbations about the
+Choptuik spacetime, that are relevant for many of the (conjectured) properties of the solution. Our paper can be
+the starting point for a rigorous investigation of this kind. This would be interesting, because current
+numerical results seem to be inconclusive''~\cite[\S1]{RT2019}.
+
+This paper carries out such an investigation for spherically symmetric perturbations.
+
+\subsection{The result}
+
+We work with the solution of~\cite{RT2019}, in their coordinates $(\tau,\xi)$ and variables $\omega$, in which the
+self-similarity is the translation $\tau\mapsto\tau+2\pi$. Linear perturbations of Floquet type,
+$e^{s\tau}$ times a periodic profile, are governed by a family of operators $L(s)$, the linearization of the
+Reiterer--Trubowitz system, together with a linearized constraint map $C(s)$. The exponent $s$ corresponds to the
+growth rate $\lambda=2\pi s/K$ in the usual logarithmic time, where $e^{-K}$ is the factor by which the
+self-similarity rescales lengths.
+
+\begin{introthm}[informal version of the Main Theorem, \cref{sec:main}]
+Under spherically symmetric linear perturbations that are smooth in time and analytic in the radial variable up to
+and across the light cone, and modulo gauge, Choptuik's spacetime has exactly one unstable mode. The mode is real and algebraically simple, and its growth rate satisfies
+\[
+  \lambda\in[2.674040,\ 2.674115],\qquad 1/\lambda\in[0.373955,\ 0.373966].
+\]
+More precisely, per Floquet class the operator $L$ has exactly four roots in the half plane $\Re s>0$, each simple
+and with a real representative: a gauge mode, which is the translation of the time of the singularity; two roots whose eigenvectors
+violate the constraints; and the physical unstable mode. On the imaginary axis, $L$ has only the root $s=0$, the
+translation of the phase. If the light cone of the singularity is held fixed, the gauge mode is no longer removed by the
+smaller group of gauge transformations, and the count becomes two; the additional class corresponds to translating
+the time of the singularity, not to a second instability.
+\end{introthm}
+
+The value of $1/\lambda$ agrees with the measured and computed critical exponent; this is an external check, since
+the relation $\gamma=1/\lambda$ concerns the nonlinear evolution. The theorem is spectral: it locates the roots of
+$L$ and identifies the physical ones, but says nothing about the linearized evolution semigroup or the nonlinear
+dynamics. It concerns spherically symmetric perturbations only, in the regularity class stated above. These
+limitations are discussed in \cref{sec:discussion}.
+
+\subsection{Strategy}
+
+The proof has three parts.
+
+\emph{From the geometric problem to the operator} (\cref{sec:physical}). A physical mode is a solution of the
+linearized Einstein--scalar field equations of Floquet type, and only its class modulo gauge transformations is
+meaningful. We show that every such mode with $\Re s>0$ can be put in the form of~\cite{RT2019} by a gauge
+transformation, and then corresponds to an element of $\ker L(s)\cap\ker C(s)$; that conversely every such element
+comes from a physical mode; and that the only gauge modes with $\Re s>0$ are the multiples of one explicit mode at
+$s=\mu$, the infinitesimal translation of the singular point. The gauge completeness is global on the domain
+of~\cite{RT2019} and uses that the light cone lies inside it. The physical multiplicity of a root is then a matter
+of linear algebra on its root space.
+
+\emph{Counting} (\cref{sec:counting}). The roots of $L$ with large real part are excluded by a bound on the
+numerical range, computed in a function space in which the background acts pointwise. In the remaining bounded
+region, the roots are counted with an operator version of Rouch\'e's theorem due to Gohberg and
+Sigal~\cite{GohbergSigal1971}: after a rank-two deflation of the two gauge roots, $L$ is compared along the
+boundary with a block-diagonal reference whose zeros are the eigenvalues of a $14016\times14016$ matrix, and these
+are counted from a Schur decomposition with a certified residual.
+
+\emph{Identification} (\cref{sec:roots}). Each root is enclosed, and shown to be algebraically simple, by a bordered
+Newton--Kantorovich argument. The eigenvectors at two of them are shown to violate the constraints by explicit lower
+bounds. For the remaining root, the constraints cannot be checked on an approximate eigenvector; instead, an
+identity $KC=ML$ propagates the constraints, and a separate certificate shows that the constraint propagation
+operator $K$ is injective there.
+
+All the computations are done in exact rational arithmetic, in ball arithmetic, or as a posteriori bounds on
+floating-point computations. They take a few days on ordinary computers.
+
+\subsection{What is new}
+
+The tools are classical; what is new is their combination for this operator, and the results. The paper turns into a
+theorem a spectral picture that was known only numerically: it gives a rigorous count of the unstable modes of
+Choptuik's spacetime; a rigorous enclosure of the
+physical growth rate; the classification of all the roots with positive real part; and the passage from the geometric
+problem to the operator, including the completeness of the gauge. The certificates, a verification program that
+re-checks them, the data and a reproduction guide are publicly available (\cref{sec:computation-data}).
+
+\subsection{Organization}
+
+\Cref{sec:setting} recalls the formulation of~\cite{RT2019} and defines $L$, $C$ and $K$. \Cref{sec:main} states the
+Main Theorem. \Cref{sec:physical} relates physical modes to the operator, \cref{sec:counting} counts the roots and
+\cref{sec:roots} identifies them and completes the proof. \Cref{sec:computation} describes the computations, their
+verification and the use of AI assistants, and \cref{sec:discussion} discusses the limitations and the nonspherical
+problem. The appendices contain the proofs of the structural lemmas, explicit formulas and the list of certificates.

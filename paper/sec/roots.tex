@@ -1,0 +1,195 @@
+\section{Identification of the roots}\label{sec:roots}
+
+By \cref{thm:counts}, $L_A$ has three roots in $\Omega_A$ and one in $\Omega_B$. This section localizes each of
+them, proves that each is algebraically simple, and determines the behaviour of its eigenvector with respect to
+the constraints. Together with \cref{prop:physmult} this proves the Main Theorem (\cref{sec:roots-proof}).
+
+\subsection{Bordered Newton--Kantorovich}\label{sec:roots-nk}
+
+Fix $c_0$ with $\Re c_0>-\mu$, let $Q_0=(J+c_0)^{-1}$, and let $\ell$ be a bounded functional. Eigenpairs
+$(h,\lambda)$ of $L$ with $\ell(h)=1$ correspond, through $h=Q_0y$, to zeros of the bordered map
+\[
+  F(y,\lambda)=\big(L(\lambda)Q_0\,y,\ \ell(Q_0y)-1\big).
+\]
+Since $L(\lambda)=L(0)+\lambda$, $F$ is quadratic, with
+$DF(y,\lambda)[\eta,\nu]=\big(L(\lambda)Q_0\eta+\nu\,Q_0y,\ \ell(Q_0\eta)\big)$ and a constant second derivative.
+
+\begin{lemma}[Simplicity from the bordered system]\label{lem:bordered}
+If $F(y_*,\lambda_*)=0$, then $DF(y_*,\lambda_*)$ is invertible if and only if $\lambda_*$ is an algebraically
+simple root of $L$.
+\end{lemma}
+
+\begin{proof}
+Let $h_*=Q_0y_*$. If $DF[\eta,\nu]=0$ with $\nu\neq0$, then $k=Q_0\eta/\nu$ satisfies $L(\lambda_*)k=-h_*$,
+a Jordan chain of length two. If $\nu=0$, then $Q_0\eta\in\ker L(\lambda_*)$ and $\ell(Q_0\eta)=0$; if the
+kernel is spanned by $h_*$, where $\ell(h_*)=1$, this forces $\eta=0$. Hence $DF$ is injective if and only if
+$\ker L(\lambda_*)=\C h_*$ and there is no Jordan chain, i.e.\ if and only if $\lambda_*$ is algebraically
+simple. $DF$ is a finite-rank perturbation of a Fredholm operator of index zero, so injectivity is
+equivalent to invertibility.
+\end{proof}
+
+We use the Newton--Kantorovich theorem in the following standard form~\cite{NakaoPlumWatanabe2019}. Let
+$x_0=(y_0,\lambda_0)$ be an approximate zero and $\mathcal A$ an approximate inverse of $DF(x_0)$, and suppose, in
+some norm,
+\[
+  \|I-\mathcal A\,DF(x_0)\|\le\theta,\qquad \tfrac12\|\mathcal A\,D^2F\|\le Z_2,\qquad \|\mathcal A F(x_0)\|\le Y.
+\]
+If $\mathcal A$ is injective (here it is invertible by construction) and $(1-\theta)^2>4Z_2Y$, then $T(x)=x-\mathcal AF(x)$ is a contraction of the ball $B(x_0,r)$,
+$r=\big(1-\theta-\sqrt{(1-\theta)^2-4Z_2Y}\big)/(2Z_2)$, so $F$ has a unique zero $x_*$ there, and
+$\|I-\mathcal A\,DF(x_*)\|<1$, so $DF(x_*)$ is invertible. Uniqueness holds in every ball $B(x_0,\rho)$ with
+$\theta+2Z_2\rho<1$.
+
+The norm is a weighted maximum of block norms over the same three levels as in \cref{sec:counting-reference}:
+the bordered finite box $Z'$ ($Z$ plus the bordering row and column), the $26$ windows, and the far part. The
+bound $\theta$ is the Perron root of the matrix of block bounds, verified in rational arithmetic, and $\mathcal A$
+is built from the exact inverse of the computed bordered matrix on $Z'$ and of the computed window blocks. The
+centre $\lambda_0$ is an eigenvalue of the truncation $32\times128$ refined by bordered Newton iteration, and
+$h_0$ is obtained by inverse iteration on the weighted matrix.
+
+\begin{proposition}[Localization and simplicity]\label{prop:nk}
+For each line of the table, there is a unique zero $x_*=(y_*,\lambda_*)$ of $F$ in $B(x_0,r)$, and $\lambda_*$ is an
+algebraically simple root of $L_A$ with
+\begin{center}
+\begin{tabular}{@{}lllllll@{}}
+\toprule
+root & $\lambda_0$ & $\theta$ & $Z_2$ & $Y$ & $r$ & $|\lambda_*-\lambda_0|\le$ \\
+\midrule
+$\mu$ & $\mu_A=0.16830707\ldots$ & $0.880172$ & $183.66$ & $6.60\cdot10^{-6}$ & $6.07\cdot10^{-5}$ & $2.82\cdot10^{-5}$ \\
+$\sK$ & $0.401024733$ & $0.839937$ & $42.97$ & $5.45\cdot10^{-5}$ & $3.79\cdot10^{-4}$ & $1.72\cdot10^{-4}$ \\
+$\sphys$ & $0.7331796596606924$ & $0.805721$ & $10.33$ & $4.19\cdot10^{-6}$ & $2.16\cdot10^{-5}$ & $1.0163\cdot10^{-5}$ \\
+$\sB+\frac i2$ & $0.0414194105346554+0.5i$ & $0.91153$ & $155.02$ & $5.97\cdot10^{-6}$ & $7.81\cdot10^{-5}$ & $3.67\cdot10^{-5}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+All quantities are rounded outward from the exact rational values in the certificate files: upward for $\theta$,
+$Z_2$, $Y$, $r$ and the error of $\lambda$. The values of $Z_2$ bound $\|\mathcal A\,D^2F\|$ itself, which is
+conservative by a factor two. The three roots in the first three lines are the three roots of $L_A$ in $\Omega_A$, and the last one is the root in
+$\Omega_B$.
+\end{proposition}
+
+\begin{proof}
+The Newton--Kantorovich conditions are verified with the quantities in the table (\cref{sec:computation}), and
+\cref{lem:bordered} gives simplicity. The intervals of the first three lines are pairwise disjoint and contained
+in $\Omega_A$, and each contains a simple root; since $N(L_A,\Omega_A)=3$, these are all the roots in $\Omega_A$.
+Likewise for $\Omega_B$, where $N(L_A,\Omega_B)=1$.
+\end{proof}
+
+\subsection{The gauge root}\label{sec:roots-gauge}
+
+\begin{proposition}[The gauge root]\label{prop:mu}
+$\mu$ is an algebraically simple root of $L_A$, and $\ker L_A(\mu)=\C\,g_*$, with $g_*=(1+Z)\omegabar$.
+\end{proposition}
+
+\begin{proof}
+$L(\mu)g_*=0$ exactly (\cref{sec:physical-defs}), and $g_*$ lies in the domain, since $g_*-g_A$ is small in norm,
+where $g_A=(1+Z)\omega_A$ is computed from the data, and $J+\lambda_0$ is injective on the maximal domain. Normalize
+$g_n=g_*/\ell(g_*)$ and let $x_g=(Q_0^{-1}g_n,\mu)$, an exact zero of $F$. We show that $x_g\in B(x_0,r)$ for the first
+line of \cref{prop:nk}; then $x_g=x_*$ by uniqueness, so the simple root found there is exactly $\mu$, with
+eigenvector $g_*$. From the eigenvalue equation,
+\[
+  y_g-y_0=-B(g_n-h_0)-L(\lambda_0)h_0+(\lambda_0-\mu)g_n-\delta\mu\,J_1(g_n-h_0),
+\]
+where $\delta\mu=\mu-\mu_A$ and $J_1$ is the derivative of $J$ in $\mu$. The terms are bounded by
+$\|g_*-g_A\|\le2.51\cdot10^{-8}$, which uses the published bounds of~\cite{RT2019} on the difference between
+$\omegabar$ and the data together with a bound on $(1+Z)$ of the correction, and by the computed residual
+$\|L(\lambda_0)h_0\|\le3.76\cdot10^{-6}$. The result is $\|x_g-x_0\|\le1.82\cdot10^{-5}$, inside the ball $B(x_0,\rho)$, $\rho=3.26\cdot10^{-4}$, on which
+$\theta+2Z_2\rho<1$ and the zero of $F$ is unique.
+\end{proof}
+
+\subsection{Roots that violate the constraints}\label{sec:roots-witness}
+
+\begin{proposition}[Constraint witnesses]\label{prop:witness}
+Let $h_*=Q_0y_*$ be the eigenvector of \cref{prop:nk} at $\sK$, respectively at $\sB+\tfrac i2$. Then, in
+$\mathbb T^\sharp(129/128,9/8)$,
+\[
+  \|\Pi_F\,C(\sK)h_*\|\ge0.16975,\qquad \|\Pi_F\,C(\sB+\tfrac i2)h_*\|\ge0.35469,
+\]
+where $\Pi_F$ is the projection onto the box $F=\{|m|<12,\ n<48\}$. In particular both eigenvectors violate the
+constraints, and so does the eigenvector of $L$ at $\sB$ (\cref{lem:sectorB}).
+\end{proposition}
+
+\begin{proof}
+At the centre, $c_{\mathrm{ref}}=\|\Pi_FC(\lambda_0)h_0\|$ is computed rigorously on the box. The difference
+$\Pi_F\big(C(\lambda_*)h_*-C(\lambda_0)h_0\big)$ is bounded level by level using the Newton--Kantorovich ball:
+the level $Z'$ through $\|\Pi_FCQ_0P_Z\|$, the windows through the decay of the columns (tail columns start at
+$n=128$ and reach the box only through the factor $(5/4)^{-80}$), the far part by closed forms, and the variation
+of $\lambda$ through $C_1$. For $\sK$: $c_{\mathrm{ref}}\ge0.17173$, and the losses total less than $1.99\cdot10^{-3}$.
+For $\sB$: $c_{\mathrm{ref}}\ge0.35518$, and the losses total less than $4.96\cdot10^{-4}$.
+\end{proof}
+
+\subsection{The physical root: injectivity of $K$}\label{sec:roots-K}
+
+The eigenvector at $\sphys$ cannot be shown to satisfy the constraints by a lower bound; instead we show that it
+cannot violate them. By~\eqref{eq:KCML}, if $L(s)h=0$ then $K(s)C(s)h=0$, so $C(s)h\neq0$ is only possible at a
+root of $K$.
+
+\begin{proposition}[Injectivity of $K$]\label{prop:Kinj}
+In $\mathbb T^\sharp(129/128,9/8)$, $K(s)$ is injective for every $s$ with $\Re s\ge0$ and $0\le\Im s\le\tfrac14$,
+except at one point $s=\sK'$, with $|\sK'-0.401|<0.05$, which is an algebraically simple root of $K$.
+\end{proposition}
+
+\begin{proof}
+The region is covered by three certificates.
+\begin{itemize}[leftmargin=*]
+\item $\Re s>1.765$: \cref{thm:counts}~(i).
+\item $\{0\le\Re s\le1.765,\ 0\le\Im s\le\tfrac14\}$ minus the open disc $|s-0.401|<0.05$: a cover by $154$
+  tiles. On each tile, injectivity of $K(s)$ follows from \cref{lem:perron} applied to $K(s)Q_0(c)$, with four
+  levels (a finite box, two shells and the far part) and a Perron root $\le0.99612$; the cover is checked in rational
+  arithmetic by a quadtree.
+\item The disc $|s-0.401|\le0.05$: an operator Rouch\'e argument on its boundary circle, as in
+  \cref{sec:counting-reference}, with reference $\operatorname{diag}(\widehat H_{ZZ}(s),I,I,I)$ on a box
+  $Z=20\times80$ and Perron roots $\le0.8126$ on $16$ tiles covering the circle (the signed norm is not symmetric
+  under conjugation, so the whole circle is covered). The finite reference is counted by a bordered scalar
+  Rouch\'e argument: the truncation has exactly one eigenvalue in the disc, simple, near $0.4010247311$.
+\end{itemize}
+\end{proof}
+
+\begin{corollary}\label{cor:sK}
+$\sK'=\sK$, and the eigenvector of $L$ at $\sphys$ satisfies $C(\sphys)h=0$.
+\end{corollary}
+
+\begin{proof}
+The eigenvectors of \cref{prop:nk} are computed in the torus space; since $|\sK|,|\sphys|\le3.1$, they lie in the
+domain of $L$ in $\Yp$ by \cref{lem:Lreal}, so \cref{lem:KCML} applies to them with $(a,b)=(65/64,5/4)$ and
+$(a',b')=(129/128,9/8)$. By \cref{prop:witness}, $C(\sK)h_*\neq0$, and $K(\sK)C(\sK)h_*=M(\sK)L(\sK)h_*=0$, so $\sK$ is
+a root of $K$ in the region of \cref{prop:Kinj}; hence $\sK=\sK'$. Since $\sphys$ is real and $|\sphys-0.401|>0.33$,
+$K(\sphys)$ is injective, so $C(\sphys)h=0$ for the eigenvector $h$. Here $C(\sphys)h$ lies in the domain of $K$ in $Y^\sharp(129/128,9/8)\subset\mathbb T^\sharp(129/128,9/8)$, where
+\cref{prop:Kinj} applies (\cref{app:KCML}).
+\end{proof}
+
+\subsection{Reality}\label{sec:roots-reality}
+
+\begin{proposition}\label{prop:real}
+$\sK$, $\sphys$ are real, and $\Im(\sB+\tfrac i2)=\tfrac12$, i.e.\ the root $\sB$ of $L$ is real.
+\end{proposition}
+
+\begin{proof}
+In the realization $\Yp$, the conjugation $h_{mn}\mapsto\overline{h_{-m,-n}}$ is an isometry, and
+$\overline{L_A(\bar s)}=L_A(s)$ in the sense of \cref{sec:setting-sectors}; so the roots of $L_A$ in $\Yp$, with
+multiplicities, are symmetric under $s\mapsto\bar s$, and those in the B band under $s\mapsto\bar s+i$. By
+\cref{lem:Lreal} the same holds in the torus realization for $|s|\le3.1$. In $\Omega_A$ the roots are $\mu,\sK,\sphys$,
+with $\sK$ and $\sphys$ in discs of radius $<2\cdot10^{-4}$ about real centres; the conjugate of $\sK$ is a root in the
+same disc, hence equal to $\sK$, and likewise for $\sphys$. In $\Omega_B$ there is a single root, so it is fixed by
+$s\mapsto\bar s+i$, whose fixed set is $\Im s=\tfrac12$.
+\end{proof}
+
+\subsection{Proof of the Main Theorem}\label{sec:roots-proof}
+
+\emph{Part~(1).} By \cref{cor:four}, modulo $\tfrac i2\Z$ there are four roots in $\Re s>0$, with multiplicity. By
+\cref{prop:nk,prop:mu,prop:real}, they are $\mu$, $\sK$, $\sphys$ (sector A) and $\sB$ (sector B, appearing as
+$\sB+\tfrac i2$ for $L_A$), all real and algebraically simple, with the stated enclosures; the interval for
+$\sphys$ is $\lambda_0\pm1.0163\cdot10^{-5}$, rounded outward to eight digits. The eigenvectors at $\sK$ and $\sB$ violate the constraints
+(\cref{prop:witness}); the eigenvector at $\mu$ is $g_*$, i.e.\ $e^{\mu\tau}g_*$ is the gauge mode $G_*$
+(\cref{prop:mu}); the eigenvector at $\sphys$ satisfies the constraints (\cref{cor:sK}). The statement on the
+imaginary axis is \cref{cor:four}, with eigenvector $\partial_\tau\omegabar$ at $s=0$.
+
+\emph{Part~(2).} All four roots are simple, so \cref{prop:physmult} applies in its simple form:
+\begin{itemize}[leftmargin=*]
+\item at $\sK$ and $\sB$, $C(s)h\neq0$, so the physical multiplicity is $0$;
+\item at $\mu$, $h=g_*$ spans $\mathcal G_\mu$, so it is $0$, and $1$ in the cone-fixed setting;
+\item at $\sphys$, $C(\sphys)h=0$ and $\sphys\not\equiv\mu\pmod{\tfrac i2\Z}$, so $\mathcal G_{\sphys}=0$ and it is $1$.
+\end{itemize}
+By \cref{thm:correspondence}, the physical Floquet modes with $\Re s>0$, modulo gauge, form a one-dimensional space,
+with exponent $\sphys$; since $\sphys$ is simple, there are no generalized modes. In the cone-fixed setting the
+count is two, the additional mode being $\Lie_{X_0}(\gbar,\phibar)$, which by \cref{lem:cone} is tangent to the
+translations of the singular point. \qed

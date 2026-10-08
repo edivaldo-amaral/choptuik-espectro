@@ -58,7 +58,8 @@ estabilidade linear no sentido de evolução.
 
 **Localizações.**
 - μ*, s_K e s_B são certificadas por NK: raios 6·10⁻⁵ (μ*, S4), 3,8·10⁻⁴ (s_K, S3b) e 3,7·10⁻⁵ (s_B).
-- 0,7332: NK de L (03/10, `build/nk733/C3.json`): **λ* ∈ [0,73316950; 0,73318982]**
+- 0,7332: NK de L (03/10, `build/nk733/C3.json`): **λ* ∈ [0,73316949; 0,73318983]** (corrigido em 08/10: o intervalo antes enunciado, [0,73316950; 0,73318982],
+  arredondava para dentro o exato [0,7331694974; 0,7331898219] de C3.json; achado na leitura do artigo pelo ChatGPT)
   (|λ* − 0,7331796596606924| <= 1,02·10⁻⁵), algebricamente simples, θ = 0,806 e raio 2,2·10⁻⁵.
   Como N_A = 3 e μ* e s_K estão certificadas em outros discos, esta é a terceira raiz da faixa A.
 
@@ -69,8 +70,10 @@ estabilidade linear no sentido de evolução.
 - Faixa B: a faixa é invariante por s ↦ conj(s) + i, cujo conjunto fixo é Im s = 1/2. Logo
   Im = 1/2 em L_A, e s_B é real.
 
-**Conferência externa** (não faz parte da prova). Com o período do eco de Choptuik, Δ ≈ 3,4453, o
-tempo logarítmico é τ_log = (Δ/4π)τ. A raiz física dá λ = 4πλ*/Δ ∈ [2,67416; 2,67424], ou seja γ = 1/λ ≈ 0,3739,
+**Conferência externa** (não faz parte da prova). Com o período do eco Δ = 2K = 3,445452402… de RT, o
+tempo logarítmico é τ_log = (Δ/4π)τ. A raiz física dá λ = 4πλ*/Δ = 2πλ*/K ∈ [2,674040; 2,674115], ou seja
+γ = 1/λ ∈ [0,373955; 0,373966] (Arb, 07/10; antes se usava Δ ≈ 3,4453, o valor numérico, o que deslocava a
+quarta casa),
 o expoente crítico conhecido do campo escalar. A raiz de gauge dá 4πμ*/Δ ≈ 0,614: o expoente de um
 modo de gauge depende das coordenadas, e não é o "1" do gauge de fatiamento usual.
 

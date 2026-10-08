@@ -1,0 +1,19 @@
+[D = (A+s0) (posto 1 em E)] KC-ML: 2.8e-14; K0 D - D A: 2.5e-16; dim fisica (amostragem) 1; formula dim E - posto(D|E) = 1
+   k=1: cadeia 2.9e-16; u'+Au 4.3e-16; c(tau) - formula de jato 3.4e-16; D h_i - jato_i 9.5e-16
+   k=2: cadeia 5.1e-16; u'+Au 9.0e-16; c(tau) - formula de jato 1.8e-15; D h_i - jato_i 1.2e-15
+   k=3: cadeia 5.3e-16; u'+Au 1.1e-15; c(tau) - formula de jato 4.9e-15; D h_i - jato_i 1.4e-15
+[D = (A+s0)^2 (posto... ker maior)] KC-ML: 2.2e-14; K0 D - D A: 1.3e-16; dim fisica (amostragem) 2; formula dim E - posto(D|E) = 2
+   k=1: cadeia 5.6e-16; u'+Au 8.4e-16; c(tau) - formula de jato 7.3e-16; D h_i - jato_i 1.7e-15
+   k=2: cadeia 4.4e-16; u'+Au 8.9e-16; c(tau) - formula de jato 1.3e-15; D h_i - jato_i 2.0e-15
+   k=3: cadeia 6.1e-16; u'+Au 9.9e-16; c(tau) - formula de jato 1.4e-15; D h_i - jato_i 1.6e-15
+[D = 0 (tudo fisico)] KC-ML: 1.8e-14; K0 D - D A: 0.0e+00; dim fisica (amostragem) 3; formula dim E - posto(D|E) = 3
+   k=1: cadeia 3.8e-16; u'+Au 6.1e-16; c(tau) - formula de jato 6.4e-16; D h_i - jato_i 1.7e-15
+   k=2: cadeia 5.3e-16; u'+Au 9.1e-16; c(tau) - formula de jato 8.8e-16; D h_i - jato_i 2.9e-15
+   k=3: cadeia 4.7e-16; u'+Au 5.6e-16; c(tau) - formula de jato 1.5e-15; D h_i - jato_i 1.7e-15
+[D = I (nada fisico)] KC-ML: 2.8e-14; K0 D - D A: 0.0e+00; dim fisica (amostragem) 0; formula dim E - posto(D|E) = 0
+   k=1: cadeia 5.4e-16; u'+Au 9.8e-16; c(tau) - formula de jato 6.7e-16; D h_i - jato_i 2.6e-15
+   k=2: cadeia 3.1e-16; u'+Au 5.0e-16; c(tau) - formula de jato 2.4e-15; D h_i - jato_i 1.0e-15
+   k=3: cadeia 3.3e-16; u'+Au 5.0e-16; c(tau) - formula de jato 2.8e-15; D h_i - jato_i 1.2e-15
+[2x2, D = e2^T, C1 h0 = D h1] KC-ML 0.0e+00; dim fisica 1; contagem com jato 1; contagem ingenua (C(s0)h_j = 0) 2
+[2x2, D = 0, C1 h0 != 0] KC-ML 0.0e+00; dim fisica 2; contagem com jato 2; contagem ingenua (C(s0)h_j = 0) 1
+TUDO CONFERE: formula de R7, restricoes de jato e Prop. 4.12 no modelo; a contagem ingenua erra nos 2x2.

@@ -1,0 +1,69 @@
+\documentclass[11pt]{amsart}
+% Draft for Comm. Math. Phys.; converted to the Springer Nature template at submission.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools,thmtools}
+\usepackage[margin=1.15in]{geometry}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true,linkcolor=MidnightBlue,citecolor=MidnightBlue,urlcolor=MidnightBlue]{hyperref}
+\usepackage[capitalise,nameinlink]{cleveref}
+
+\input{macros}
+
+\title[One unstable mode for Choptuik's spacetime]{Exactly one unstable mode: a computer-assisted spectral
+count for Choptuik's critical spacetime under spherically symmetric perturbations}
+\author{Edivaldo Amaral Gon\c{c}alves}
+\address{Instituto Federal de Mato Grosso (IFMT), Cuiab\'a, Mato Grosso, Brazil}
+\email{edivaldo.goncalves@ifmt.edu.br}
+\urladdr{https://orcid.org/0009-0007-9117-9833}
+\thanks{Instituto Federal de Mato Grosso (IFMT), Cuiab\'a, Mato Grosso, Brazil.\newline
+E-mail: \texttt{edivaldo.goncalves@ifmt.edu.br}.\quad
+ORCID: \href{https://orcid.org/0009-0007-9117-9833}{0009-0007-9117-9833}.}
+\date{Draft of \today}
+
+\begin{document}
+
+\begin{abstract}
+Choptuik's spacetime, the discretely self-similar solution at the threshold of black hole formation in the
+collapse of a massless scalar field, is expected to have exactly one unstable mode, whose growth rate $\lambda$
+determines the critical exponent $\gamma=1/\lambda\approx0.374$. The existence of this spacetime was proved by
+Reiterer and Trubowitz with a computer-assisted argument. We prove, also with computer assistance, that in their
+realization the solution has exactly one unstable mode, modulo gauge, under spherically symmetric linear
+perturbations that are smooth in time and analytic in the radial variable up to and across the light cone. The
+mode is real and simple, with $\lambda\in[2.674040,\,2.674115]$, so that
+$1/\lambda\in[0.373955,\,0.373966]$. More precisely, per Floquet class the linearized operator has exactly four
+roots with positive real part: a gauge mode, which translates the time of the singularity; two roots whose
+eigenvectors violate the constraints; and the physical mode. The count uses an operator version of Rouch\'e's
+theorem with a finite-dimensional reference, a rank-two deflation of the gauge roots, Newton--Kantorovich
+enclosures, and bounds in rational and ball arithmetic. The passage from the geometric problem to the operator
+rests on a global completeness result for the gauge and an explicit reconstruction of the perturbations. The
+certificates, a verification program and the data are publicly available.
+\end{abstract}
+
+\maketitle
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+\input{sec/introduction}
+\input{sec/setting}
+\input{sec/main_theorem}
+\input{sec/physical_modes}
+\input{sec/counting}
+\input{sec/roots}
+\input{sec/computation}
+\input{sec/discussion}
+
+\input{sec/declarations}
+
+\appendix
+\input{sec/app_paper_lemmas}
+\input{sec/app_formulas}
+\input{sec/app_certificates}
+
+\bibliographystyle{amsplain}
+\bibliography{refs}
+
+\end{document}

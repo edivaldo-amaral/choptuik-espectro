@@ -1,0 +1,6 @@
+Lema 5.4 (modelo de matrizes):
+  outros=[-0.4, 0.73, (1.1+0.3j)] jordan0=False: |det - q/(s(s-mu))| <= 6.4e-13; raizes(L~) vs raizes(L) - {0,mu} + zeros(q): 4.8e-15; zeros de q [-2.4928+3.0911j -1.204 +1.3415j]
+  outros=[-0.4, 0.73, (1.1+0.3j)] jordan0=True: |det - q/(s(s-mu))| <= 1.9e-12; raizes(L~) vs raizes(L) - {0,mu} + zeros(q): 4.5e-08; zeros de q [-1.4669-1.0524j  1.2377+1.0974j]
+  outros=[-0.4, -1.0, 0.5] jordan0=False: |det - q/(s(s-mu))| <= 7.8e-13; raizes(L~) vs raizes(L) - {0,mu} + zeros(q): 4.2e-15; zeros de q [ 5.5117+0.2111j -1.8105+1.6005j]
+Rouche de K: rZ = 0.009801723835; pior distancia (analitica, meio do arco) = 0.009801714033; amostrada = 0.009801714033; folga = 9.80e-09; raio dos centros = 6.9e-18 de 0.05
+OK

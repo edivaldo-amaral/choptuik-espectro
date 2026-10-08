@@ -1,0 +1,9 @@
+tiles marcados ok mas RECUSADOS na reverificacao: {'sem dados': 4}
+pior theta reverificado: 0.9961189
+154 discos certificados
+celulas resolvidas: 2871; sem cobertura: 0
+COBERTURA COMPLETA
+
+real	0m6,276s
+user	0m6,332s
+sys	0m0,020s

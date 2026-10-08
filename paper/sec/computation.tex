@@ -1,0 +1,168 @@
+\section{Rigorous computation and reproducibility}\label{sec:computation}
+
+This section describes what the computer-assisted parts of the proof consist of, what has to be trusted, and how
+a reader can check them.
+
+\subsection{Arithmetic and trust base}\label{sec:computation-arith}
+
+Three kinds of computation enter the certificates.
+\begin{enumerate}[label=(\alph*),leftmargin=*]
+\item \emph{Exact rational arithmetic} (Python's \texttt{fractions}): the final inequalities of every
+  certificate, namely the Perron conditions $Nv\le\theta v$ with $\theta<1$ of
+  \cref{lem:perron}, the Newton--Kantorovich conditions of \cref{sec:roots-nk}, the covers of the contours and of
+  the region of \cref{prop:Kinj}, the deflation polynomial $q$, and the fact F1.
+\item \emph{Ball arithmetic} with Arb~\cite{Arb}, through \texttt{python-flint}: the symbol bounds of
+  \cref{lem:F3}, and the slack between grid points.
+\item \emph{A posteriori bounds on floating-point computations.} Large linear algebra (dimension $14016$ for the
+  finite reference, windows of dimension up to $11200$) is done in IEEE double precision. Floating-point results
+  are used only as approximate inverses, solvers or test vectors, and every quantity that enters a certificate is
+  bounded rigorously: residuals are computed with entrywise rounding bounds of the standard form
+  $\gamma_n\||M||X|\|$~\cite{Higham2002}; norms of inverses are bounded by verified Loewner inequalities
+  $t^2MM^*-I\succeq0$, whose positive definiteness is verified by Rump's method~\cite{Rump2006} applied to the
+  realification; and the coupling factors are certified as in \cref{sec:counting-reference}.
+\end{enumerate}
+The trust base is therefore: the correctness of the bounds published in~\cite{RT2019}, which we use as stated;
+IEEE~754 arithmetic with rounding to nearest, as assumed by the a posteriori bounds; Arb; and the Python code of the
+verification program, which is short for each check and is available for inspection. No part of the final chain
+is formalized in a proof assistant.
+
+Because the floating-point entries depend on the BLAS library and on the number of threads, re-running a
+certificate on another machine reproduces the rational $\theta$ only up to $\sim10^{-16}$, not exactly; the
+criterion for a successful reproduction is $\theta<1$ with a difference at the scale of rounding.
+
+\subsection{The certificates}\label{sec:computation-certs}
+
+\Cref{tab:certs} lists the computed certificates, the results they establish, and their approximate cost. The
+computations were run on five commodity computers, with four to six cores and $7$--$31$\,GB of memory; the whole
+chain takes a few days on three or four such machines. The largest single computations are the Schur
+decomposition of the finite reference and the Loewner bounds on its resolvent (hours per contour centre), and the
+tails with $26$ dense windows (three to six hours per centre).
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{@{}p{0.29\textwidth}p{0.35\textwidth}p{0.27\textwidth}@{}}
+\toprule
+certificate & establishes & cost \\
+\midrule
+symbols of $B$ and $B^\sharp$ (Arb, grids $2048\times4096$ and $1024\times2048$) & \cref{lem:F3}; \cref{thm:counts}~(i) & hours, 4 processes \\
+radius recovery and transfer & \cref{lem:Lreal,lem:recovery} & minutes \\
+finite reference: matrix, Schur, residual & \cref{lem:schur} & hours \\
+level $Z$ on $174$ discs (Loewner, Schur solves) & \cref{thm:counts}~(ii),(iii) & $\sim$9 min per point \\
+low-rank coupling factors ($13$ centres) & \cref{sec:counting-reference} & $\sim$1 h per centre \\
+tails, $26$ windows ($13$ centres) & \cref{sec:counting-reference} & 3--6 h per centre \\
+windows inside the bands & \cref{lem:windows} & hours \\
+bordered NK at $\mu,\sK,\sphys,\sB$ & \cref{prop:nk,prop:mu} & 3--6 h each \\
+constraint witnesses & \cref{prop:witness} & minutes \\
+$154$ tiles and Rouch\'e for $K$ & \cref{prop:Kinj} & $\sim$1 day, 3 machines \\
+F1 & \cref{lem:F1} & seconds \\
+\bottomrule
+\end{tabular}
+\caption{Computed certificates. File names and sha256 hashes are listed in \cref{app:certificates}.}
+\label{tab:certs}
+\end{table}
+
+\subsection{The verification program}\label{sec:computation-verify}
+
+The repository contains a verification program with two levels.
+
+\emph{Level 1} re-checks, in exact rational arithmetic and with the code of the repository, the final inequalities
+of the certificates from the stored certificate files (small JSON files):
+\begin{itemize}[leftmargin=*]
+\item the three-level Perron bound at each of the $175$ points of the $22$ disc files of the two bands ($174$ discs of
+  positive radius, and one entry of radius zero that is not used in the cover);
+\item the covers of $\partial\Omega_A$ and $\partial\Omega_B$;
+\item the finite counts;
+\item the window bounds;
+\item the four Newton--Kantorovich certificates, the witnesses and the identification of the gauge root;
+\item the $154$ tiles and their cover of the region of \cref{prop:Kinj} outside the disc $|s-0.401|<0.05$ of the
+  Rouch\'e argument for $K$;
+\item the deflation polynomial $q$ of \cref{sec:counting-rouche};
+\item the radius recovery and transfer bounds, the bound $\beta_+$ on the background part, and F1.
+\end{itemize}
+Some certificates enter level 1 only through their stored values, and are recomputed only at level 2: the symbol
+bounds and the free parts (level 1 recombines the stored bands), and the Perron bounds of the $16$ tiles of the
+Rouch\'e argument for $K$.
+It takes about two hours on four cores. All checks pass: the worst Perron root on the discs is $0.999074$, with
+differences to the stored values $\le7.8\cdot10^{-16}$, and the Newton--Kantorovich data, witnesses and tiles are
+reproduced identically.
+
+\emph{Level 2} recomputes the intermediate certificates from the data of~\cite{RT2019}. As a sample, we recomputed
+from scratch on a different machine:
+\begin{itemize}[leftmargin=*]
+\item the reference matrix, identical bit for bit to the stored one;
+\item the Schur residual bound, identical;
+\item the tail of the contour centre $3.0$ ($26$ windows and the far level, $5.3$ hours), identical in every field.
+\end{itemize}
+
+\subsection{Data and code availability}\label{sec:computation-data}
+
+The code, the certificate files, the verification program and a reproduction guide are available at
+\url{https://github.com/edivaldo-amaral/choptuik-espectro} (MIT licence)~\cite{Repo2026}. The large data files, namely the reference
+matrix, its Schur factors and the coupling factors ($16$\,GiB), are deposited at Zenodo, DOI
+\href{https://doi.org/10.5281/zenodo.23222363}{10.5281/zenodo.23222363} (CC BY 4.0)~\cite{Zenodo2026}, with sha256 hashes that are
+also recorded in the certificate files. The data of~\cite{RT2019} are not redistributed; a script downloads them
+from the arXiv source of~\cite{RT2019} and checks their sha256 hashes.
+\todo{Repository and Zenodo record become public with the preprint.}
+
+\subsection{Independent AI-assisted checks}\label{sec:computation-reviews}
+
+Before being used, the certificates and the lemmas were checked by AI agents independent of those that produced the
+work, with the exceptions listed below. These checks are not reviews by human experts. The protocol was designed so
+that a check produces verifiable evidence rather than an opinion:
+\begin{itemize}[leftmargin=*]
+\item the checking agent ran on a different model from the one that produced the work, with a clean context;
+\item it was given the precisely stated claims, the derivations under review, and the code and data, but not
+  the author's conclusions or earlier audits;
+\item it had to deliver one artifact per claim: an independent derivation, an independent implementation, or a
+  direct computation of the true quantity to compare with the bound;
+\item a snapshot with sha256 manifest was taken before each check and compared after it.
+\end{itemize}
+There were ten such checks:
+\begin{itemize}[leftmargin=*]
+\item the tiles of \cref{prop:Kinj} (an earlier check of them with another tool was superficial and is not
+  counted);
+\item the certificates at $\sK$ (with the Rouch\'e argument for $K$) and at $\mu$;
+\item the Rouch\'e arguments of the two bands, including the certificate at $\sB$;
+\item the structural lemmas and the chain of the proof;
+\item the gauge lemma, the forward reconstruction and the converse;
+\item the modelling assumptions.
+\end{itemize}
+Two parts have not been checked on their own. The Newton--Kantorovich certificate at $\sphys$ uses the same code as
+the one at $\sB$, which was checked. The symbol computations of \cref{lem:F3} were examined only in their use, not
+recomputed. None of the checks overturned a result. All of them found gaps, mostly of traceability or of statement,
+and some of derivation: for instance, one found that an early version of the tiles used the dyadic approximation of
+$\mu$ instead of the true value, and another that the deflation error outside the finite box had been omitted. All
+were corrected before the results were used; the reports and artifacts are in the repository.
+
+\subsection{Use of AI assistants}\label{sec:computation-ai}
+
+This work was done with extensive use of AI assistants, between September and October 2026. We describe their role
+as required by the journal's policy.
+
+\emph{Scope.} The assistants wrote most of the code, carried out most of the derivations and computations, prepared
+the documentation, and drafted this manuscript. Their contribution is substantial and not limited to language
+editing.
+
+\emph{The author's role.} The author posed the problem, the unstable spectrum of the solution of~\cite{RT2019}, which
+its authors left open; directed the project and chose among the approaches; ran the computations on the author's own
+and on borrowed machines; checked the arguments and the results; and takes full responsibility for the content of
+this paper.
+
+\emph{Tools.} The main assistant was Claude (Anthropic), used through the Claude Code environment, with the models
+\texttt{claude-opus-5} and later \texttt{claude-opus-5-5}. OpenAI's Codex agent was used in the first exploratory
+session and during a three-day interval, with the models \texttt{gpt-5.6-luna}, \texttt{gpt-5.6-sol},
+\texttt{gpt-6-astra} and \texttt{gpt-reserve}; everything produced in that interval was audited and re-derived or
+checked before use. The checks of \cref{sec:computation-reviews} were done by Claude agents running
+\texttt{claude-fable-5-1}, a model different from the one that produced the work. At the author's request, a draft of the
+manuscript was also read by ChatGPT (OpenAI, model Sol 6.1); its comments were checked against the certificates and
+the sources before being incorporated. The model identifiers are those recorded in the session logs; a dated account of the sessions is in the file \texttt{paper/AI\_USE.md} of the
+repository.
+
+\emph{Limits of the verification.} The analytic arguments are given in this paper; some routine estimates appear in
+sketched form, with their constants checked by code in the repository (\cref{app:lemmas}). Every computed bound is
+produced by code that can be inspected and re-run from the certificate files and data, and all of them have been
+re-checked by the verification program (level~1 of \cref{sec:computation-verify}); a sample of the intermediate
+certificates has been recomputed from the data of~\cite{RT2019} (level~2). The lemmas and most certificates were also
+examined by the checks of \cref{sec:computation-reviews}, with the exceptions listed there. None of this replaces
+peer review; the aim is that trust in the result should not depend on the process that produced it.

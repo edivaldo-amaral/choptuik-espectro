@@ -1,0 +1,139 @@
+| grandeza | impresso | exato (arquivo) | tipo | seguro? | local | nota |
+|---|---|---|---|---|---|---|
+| mu_A (RefA.dat) = 722873400*2^-32 | 0.16830707900226116 | 0.168307079 | ~ | SIM | roots.tex:57 (lambda0 de mu) |  |
+| |mu_{A+B} - mu80| <= 1e-80 (consistencia RT) | 1e-80 | 2.158036328e-81 | sup | SIM | setting.tex:18 |  |
+| mu = 0.168307078963... (enunciado) | 0.168307078963 | 0.168307079 | ~ | SIM | main_theorem.tex:41 |  |
+| mu ~ 0.16830708 | 0.16830708 | 0.168307079 | ~ | SIM | setting.tex:18 |  |
+| mu ~ 0.16831 | 0.16831 | 0.168307079 | ~ | SIM | main_theorem.tex:6 |  |
+| K ~ 1.72272620 | 1.72272620 | 1.722726201 | ~ | SIM | setting.tex:18 |  |
+| Delta = 2K = 3.44545240... | 3.44545240 | 3.445452402 | ~ | SIM | setting.tex:51 (truncado) |  |
+| |mu - mu_A| (usado nos tiles: 3.9e-11) | 3.9e-11 | 3.881119229e-11 | sup | SIM | scripts/check_cover.py (nao impresso) |  |
+| NK mu: theta | 0.880172 | 0.8801715532 | sup | SIM | roots.tex:57-60 |  |
+| NK mu: Z2 | 183.66 | 183.6513908 | sup | SIM | roots.tex:57-60 |  |
+| NK mu: Y | 6.60e-6 | 6.590634904e-06 | sup | SIM | roots.tex:57-60 |  |
+| NK mu: r | 6.07e-5 | 6.063557649e-05 | sup | SIM | roots.tex:57-60 |  |
+| NK mu: erro | 2.82e-5 | 2.816008518e-05 | sup | SIM | roots.tex:57-60 |  |
+| NK mu: (1-th)^2>4 Z2 Y, Y+th r+Z2 r^2<=r, th+2Z2 r<1 | - | True | cond | SIM | roots.tex:37-40 | raio de unicidade (1-th)/(2Z2) = 3.2624e-04 |
+| NK sK: theta | 0.839937 | 0.8399362509 | sup | SIM | roots.tex:57-60 |  |
+| NK sK: Z2 | 42.97 | 42.96462472 | sup | SIM | roots.tex:57-60 |  |
+| NK sK: Y | 5.45e-5 | 5.440559375e-05 | sup | SIM | roots.tex:57-60 |  |
+| NK sK: r | 3.79e-4 | 0.0003783174934 | sup | SIM | roots.tex:57-60 |  |
+| NK sK: erro | 1.72e-4 | 0.0001714420929 | sup | SIM | roots.tex:57-60 |  |
+| NK sK: (1-th)^2>4 Z2 Y, Y+th r+Z2 r^2<=r, th+2Z2 r<1 | - | True | cond | SIM | roots.tex:37-40 | raio de unicidade (1-th)/(2Z2) = 1.8627e-03 |
+| NK sphys: theta | 0.805721 | 0.8057209581 | sup | SIM | roots.tex:57-60 |  |
+| NK sphys: Z2 | 10.33 | 10.32324992 | sup | SIM | roots.tex:57-60 |  |
+| NK sphys: Y | 4.19e-6 | 4.187180548e-06 | sup | SIM | roots.tex:57-60 |  |
+| NK sphys: r | 2.16e-5 | 2.157716512e-05 | sup | SIM | roots.tex:57-60 |  |
+| NK sphys: erro | 1.0163e-5 | 1.016225537e-05 | sup | SIM | roots.tex:57-60 |  |
+| NK sphys: (1-th)^2>4 Z2 Y, Y+th r+Z2 r^2<=r, th+2Z2 r<1 | - | True | cond | SIM | roots.tex:37-40 | raio de unicidade (1-th)/(2Z2) = 9.4098e-03 |
+| NK sB: theta | 0.91153 | 0.911526223 | sup | SIM | roots.tex:57-60 |  |
+| NK sB: Z2 | 155.02 | 155.011052 | sup | SIM | roots.tex:57-60 |  |
+| NK sB: Y | 5.97e-6 | 5.962062565e-06 | sup | SIM | roots.tex:57-60 |  |
+| NK sB: r | 7.81e-5 | 7.806534055e-05 | sup | SIM | roots.tex:57-60 |  |
+| NK sB: erro | 3.67e-5 | 3.665490959e-05 | sup | SIM | roots.tex:57-60 |  |
+| NK sB: (1-th)^2>4 Z2 Y, Y+th r+Z2 r^2<=r, th+2Z2 r<1 | - | True | cond | SIM | roots.tex:37-40 | raio de unicidade (1-th)/(2Z2) = 2.8538e-04 |
+| lambda0 sK | 7224219352420611/18014398509481984 | 0.401024733 | eq | SIM | roots.tex:58 |  |
+| lambda0 sphys | 6603895284087043/9007199254740992 | 0.7331796597 | eq | SIM | roots.tex:59 |  |
+| lambda0 sB (Re) | 5969166139192949/144115188075855872 | 0.04141941053 | eq | SIM | roots.tex:60 |  |
+| lambda0 mu = mu_A | 90359175/536870912 | 0.168307079 | eq | SIM | roots.tex:57 |  |
+| |sB - 0.0414194105| <= 3.7e-5 | 3.7e-5 | 3.665494425e-05 | sup | SIM | main_theorem.tex:42 |  |
+| |sK - 0.401024733| <= 1.72e-4 | 1.72e-4 | 0.0001714420929 | sup | SIM | main_theorem.tex:43 |  |
+| sphys >= 0.73316949 | 0.73316949 | 0.7331694974 | inf | SIM | main_theorem.tex:44 |  |
+| sphys <= 0.73318983 | 0.73318983 | 0.7331898219 | sup | SIM | main_theorem.tex:44 |  |
+| raio dos discos de sK, sphys < 2e-4 | 2e-4 | 0.0001714420929 | lt | SIM | roots.tex:168 |  |
+| lambda >= 2.674040 | 2.674040 | 2.674040605 | inf | SIM | main_theorem.tex:69; intro:52; resumo |  |
+| lambda <= 2.674115 | 2.674115 | 2.674114734 | sup | SIM | main_theorem.tex:69; intro:52; resumo |  |
+| 1/lambda >= 0.373955 | 0.373955 | 0.3739555328 | inf | SIM | main_theorem.tex:70; intro:52; resumo |  |
+| 1/lambda <= 0.373966 | 0.373966 | 0.3739658994 | sup | SIM | main_theorem.tex:70; intro:52; resumo |  |
+| lambda a partir do intervalo impresso de s* | - | [[2.6740405783935418234659447248716892839617953303773372075914614170250882629784709974876046830063729709077815399945346902 +/- 2.17e-119], [2.6741147631299586711455846636745217506538228217518349039410495734078944955390607798881163347672871956984999786855747196 +/- 4.50e-119]] | ~ | - | main_theorem.tex:44 | so informativo |
+| max Re W(-B) <= 2.9492 | 2.9492 | 2.949198291 | sup | SIM | counting.tex:58 |  |
+| ||B|| <= 3.9642 | 3.9642 | 3.964133301 | sup | SIM | counting.tex:58; setting.tex:309; app A.3 |  |
+| folga de Lipschitz de L "0.0771" (o texto chama de minima; e a MAXIMA somada) | 0.0771 | 0.07719709923 | sup | NAO | counting.tex:68 | a folga entra somada na cota; o seguro e arredondar para cima |
+| max Re W(-J) <= -0.0232 (certificado gravado, mu >= 1/6) | -0.0232 | -0.02319604177 | sup | NAO | counting.tex:59 | com mu verdadeiro: -mu*lambda0 = -0.023424 |
+| max Re W(-J) <= -0.0232 (com mu verdadeiro) | -0.0232 | -0.02342434821 | sup | SIM | counting.tex:59 |  |
+| L(s) invertivel para Re s > 2.926 (certificado gravado) | 2.926 | 2.92600225 | sup | NAO | counting.tex:14,74 |  |
+| L(s) invertivel para Re s > 2.926 (mu verdadeiro) | 2.926 | 2.925773943 | sup | SIM | counting.tex:14,74 |  |
+| max Re W(-B#) <= 1.4396 | 1.4396 | 1.439579021 | sup | SIM | counting.tex:59 |  |
+| ||B#|| <= 1.6497 | 1.6497 | 1.649670362 | sup | SIM | counting.tex:60 |  |
+| max Re W(-K(0)) <= 1.765 | 1.765 | 1.764567284 | sup | SIM | counting.tex:60; roots.tex:132 |  |
+| folga de Lipschitz de K "0.0535" | 0.0535 | 0.05357842536 | sup | NAO | counting.tex:68 |  |
+| grade do simbolo de K | 2048x4096 (texto e Tabela 1) | 1024x2048 | eq | NAO | counting.tex:64; computation.tex:48 | a grade de K gravada e 1024x2048 |
+| discos da faixa A | 96 | 96 | eq | SIM | counting.tex:206 |  |
+| discos adicionais da faixa B | 78 | 78 | eq | SIM | counting.tex:206 |  |
+| pontos nos arquivos de discos | 175 | 175 | eq | SIM | computation.tex:72 |  |
+| arquivos de discos | 22 | 22 | eq | SIM | computation.tex:72 |  |
+| max theta faixa A | 0.99842 | 0.9984139627 | sup | SIM | counting.tex:206 |  |
+| max theta faixa B (discos proprios) | 0.99908 | 0.9990737751 | sup | SIM | counting.tex:207 |  |
+| pior Perron nos discos | 0.999074 | 0.9990737751 | sup | SIM | computation.tex:82 |  |
+| menor raio | 0.0028 | 0.002846756844 | inf | SIM | counting.tex:208 | descritivo |
+| maior raio | 0.4995 | 0.4995 | sup | SIM | counting.tex:208 | descritivo |
+| diferenca nivel 1 vs gravado | 7.8e-16 | 7.771561172e-16 | sup | SIM | computation.tex:83 |  |
+| max rho_J faixa A | 0.1488 | 0.1487851522 | sup | SIM | counting.tex:229 |  |
+| max rho_J faixa B | 0.1517 | 0.1516644604 | sup | SIM | counting.tex:229 |  |
+| retangulos por faixa | 10 | 10 | eq | SIM | counting.tex:226 |  |
+| retangulos por faixa (B) | 10 | 10 | eq | SIM | counting.tex:226 |  |
+| ||AU - UT||_F <= 5.97e-5 | 5.97e-5 | 5.968446026e-05 | sup | SIM | counting.tex:250 |  |
+| ||I - U*U||_F <= 1.30e-6 | 1.30e-6 | 1.304499575e-06 | sup | NAO | counting.tex:251 |  |
+| eps_B gravado >= eps_R/sqrt(1-eps_G) (consistencia) | 8807877462688737/147573952589676412928 | 5.968449919e-05 | sup | SIM | contagem.json |  |
+| sup t <= 559.2 | 559.2 | 559.151 | sup | SIM | counting.tex:251 | valor do TXT (3 casas) |
+| t eps_B <= 0.0334 | 0.0334 | 0.03337 | sup | SIM | counting.tex:252 | valor do TXT (4 alg.) |
+| t eps_B recomputado = 559.151*eps_B | 0.0334 | 0.03337264744 | sup | SIM | counting.tex:252 |  |
+| -T_ii em Omega_A: 0.401025... | 0.401025 | 0.401024733 | ~ | SIM | counting.tex:253 |  |
+| -T_ii em Omega_A: 0.733180... | 0.733180 | 0.7331796597 | ~ | SIM | counting.tex:253 |  |
+| distancia da entrada mais proxima fora de Omega_A | 0.168 | 0.1683070789 | inf | SIM | counting.tex:254 |  |
+| ||P_Z(x0 - x0^A)|| <= 1.5e-9 (dtauB = 1.4563e-9 + arred.) | 1.5e-9 | 1.456300829e-09 | sup | SIM | counting.tex:127 |  |
+| ||x1 - x1^A|| <= 2.51e-8 | 2.51e-8 | 2.50562234e-08 | sup | SIM | counting.tex:128; roots.tex:92 |  |
+| ||phi_i|| <= 5.5 (implicito em |e_ij| <= 5.5*2.51e-8) | 5.5 | 5.501278143 | sup | NAO | counting.tex:128 |  |
+| fatores de q com modulo >= 1 - 1e-6 | 0.999999 | 0.9999998612 | inf | SIM | counting.tex:129 |  |
+| ||L(lambda0) h0|| <= 3.76e-6 | 3.76e-6 | 3.756540289e-06 | sup | SIM | roots.tex:94 |  |
+| ||x_g - x0|| <= 1.82e-5 | 1.82e-5 | 1.815532397e-05 | sup | SIM | roots.tex:94 |  |
+| r (E.json) <= 6.07e-5 | 6.07e-5 | 6.063557649e-05 | sup | SIM | roots.tex:94 |  |
+| dist < r (identificacao) | 6.0635576493216294e-05 | 1.815532397e-05 | lt | SIM | roots.tex:94 |  |
+| testemunho sK: ||Pi_F C h|| >= 0.16975 | 0.16975 | 0.1697582759 | inf | SIM | roots.tex:103 |  |
+| testemunho sK: c_ref >= 0.17173 | 0.17173 | 0.1717392032 | inf | SIM | roots.tex:114-115 |  |
+| testemunho sK: perdas < 1.99e-3 | 1.99e-3 | 0.001980927319 | lt | SIM | roots.tex:114-115 |  |
+| testemunho sK: folga = c_ref - perda | 0.1697582758877706 | 0.1697582759 | ~ | SIM | D.json |  |
+| caixa F do testemunho sK | {|m|<12, n<48} | [12, 48] | eq | SIM | roots.tex:105 |  |
+| testemunho sB: ||Pi_F C h|| >= 0.35469 | 0.35469 | 0.354693642 | inf | SIM | roots.tex:103 |  |
+| testemunho sB: c_ref >= 0.35518 | 0.35518 | 0.3551889638 | inf | SIM | roots.tex:114-115 |  |
+| testemunho sB: perdas < 4.96e-4 | 4.96e-4 | 0.0004953218096 | lt | SIM | roots.tex:114-115 |  |
+| testemunho sB: folga = c_ref - perda | 0.3546936420322211 | 0.354693642 | ~ | SIM | D.json |  |
+| caixa F do testemunho sB | {|m|<12, n<48} | [12, 48] | eq | SIM | roots.tex:105 |  |
+| Rouche de K: raio do circulo | 3602879701896397/72057594037927936 | 0.05 | eq | SIM | roots.tex:126,137 |  |
+| Rouche de K: Perron <= 0.8126 | 0.8126 | 0.8125577399 | sup | SIM | roots.tex:139 |  |
+| Rouche de K: tiles no circulo | 16 | 16 | eq | SIM | roots.tex:139 |  |
+| Rouche de K: caixa Z | 20x80 | [20, 80] | eq | SIM | roots.tex:139 |  |
+| Rouche de K: autovalor ~ 0.4010247311 | 0.4010247311 | 0.4010247311 | ~ | SIM | roots.tex:141 |  |
+| tiles certificados | 154 | 154 | eq | SIM | roots.tex:133 |  |
+| pior Perron dos tiles <= 0.99612 | 0.99612 | 0.9961189 | sup | SIM | roots.tex:135 | reverificado por check_cover (7 casas) |
+| ||QT||_toro <= 0.0525 | 0.0525 | 0.05249587972 | sup | SIM | app_paper_lemmas.tex:69 |  |
+| defeito toro < 0.371 (gravado, com nB = 3.9641010) | 0.371 | 0.3708361964 | lt | SIM | setting.tex:308 |  |
+| defeito toro < 0.371 com ||B|| certificado 3.9641333 | 0.371 | 0.3708378921 | lt | SIM | setting.tex:308 |  |
+| nB usado em l_real_toro >= ||B|| certificado | 3.9641010000000003 | 3.964133301 | sup | NAO | build/t2/l_real_toro.json | o certificado gravado usou ||B|| = 3.9641+1e-6, abaixo da cota do simbolo |
+| defeito forte em Y+ <= 0.2665 | 0.2665 | 0.2665467415 | sup | NAO | setting.tex:309; app_paper_lemmas.tex:72 |  |
+| defeito fraco (radius_transfer) < 1 | 1 | 0.854696412 | lt | SIM | radius_transfer_s3_1.json |  |
+| caixa de R5 para S=200, k2=1+2^-6 | 2^17 x 2^20 | 131072 x 1048576 | eq | SIM | physical_modes.tex:234; app A.3 |  |
+| R5: todas as linhas contraem | - | True | eq | SIM | radius_recovery_geral.json |  |
+| ||d_tau|| <= 8385 | 8385 | 8385 | sup | SIM | app_paper_lemmas.tex:112 |  |
+| ||d_xi|| <= 1440 | 1440 | 1440 | sup | SIM | app_paper_lemmas.tex:112 |  |
+| F1: Re c1(omega_A,4(.,0)) = 0.072916... | 0.072916 | 0.07291599447 | ~ | SIM | physical_modes.tex:100 | truncado |
+| F1: Im c1(omega_A,4(.,0)) >= 0.493046 | 0.493046 | 0.4930463216 | inf | SIM | physical_modes.tex:93,100 |  |
+| F1: Re c1(.,-1) = -0.079473... | -0.079473 | -0.07947288223 | ~ | SIM | physical_modes.tex:100 |  |
+| F1: Im c1(.,-1) >= 0.097753 | 0.097753 | 0.09775273945 | inf | NAO | physical_modes.tex:94,100 |  |
+| F1: 2^-25 + 2^-277 < 3e-8 | 3e-8 | 2.980232239e-08 | lt | SIM | physical_modes.tex:101 |  |
+| F1: c1_re igual ao gravado | 43042006046198055061/590295810358705651712 | 0.07291599447 | eq | SIM | gauge_global_centro.json |  |
+| F1: c1_im igual ao gravado | 291043177964010739899/590295810358705651712 | 0.4930463216 | eq | SIM | gauge_global_centro.json |  |
+| F1: c1_cone_re igual ao gravado | -46912509415479427391/590295810358705651712 | -0.07947288223 | eq | SIM | gauge_global_centro.json |  |
+| F1: c1_cone_im igual ao gravado | 7212879068567455617/73786976294838206464 | 0.09775273945 | eq | SIM | gauge_global_centro.json |  |
+
+125 linhas; 10 com "NAO":
+  - folga de Lipschitz de L "0.0771" (o texto chama de minima; e a MAXIMA somada) | impresso 0.0771 | exato 0.07719709923 | counting.tex:68
+  - max Re W(-J) <= -0.0232 (certificado gravado, mu >= 1/6) | impresso -0.0232 | exato -0.02319604177 | counting.tex:59
+  - L(s) invertivel para Re s > 2.926 (certificado gravado) | impresso 2.926 | exato 2.92600225 | counting.tex:14,74
+  - folga de Lipschitz de K "0.0535" | impresso 0.0535 | exato 0.05357842536 | counting.tex:68
+  - grade do simbolo de K | impresso 2048x4096 (texto e Tabela 1) | exato 1024x2048 | counting.tex:64; computation.tex:48
+  - ||I - U*U||_F <= 1.30e-6 | impresso 1.30e-6 | exato 1.304499575e-06 | counting.tex:251
+  - ||phi_i|| <= 5.5 (implicito em |e_ij| <= 5.5*2.51e-8) | impresso 5.5 | exato 5.501278143 | counting.tex:128
+  - nB usado em l_real_toro >= ||B|| certificado | impresso 3.9641010000000003 | exato 3.964133301 | build/t2/l_real_toro.json
+  - defeito forte em Y+ <= 0.2665 | impresso 0.2665 | exato 0.2665467415 | setting.tex:309; app_paper_lemmas.tex:72
+  - F1: Im c1(.,-1) >= 0.097753 | impresso 0.097753 | exato 0.09775273945 | physical_modes.tex:94,100

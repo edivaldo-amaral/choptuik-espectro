@@ -1,0 +1,2 @@
+qui 08 out 2026 15:31:15 -04
+linhas nao-OK acima (vazio = tudo OK); total de entradas: 1159

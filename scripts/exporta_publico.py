@@ -29,6 +29,8 @@ EXCLUI = [
     re.compile(r'^\.snapshots/.*sources\.tar\.gz$'),
     re.compile(r'^prompt\.MD$'),                 # prompt interno do loop de setembro
     re.compile(r'^probe_result\.json$'),          # benchmark da maquina local
+    re.compile(r'^\.codex-runs/.*\.pdf$'),          # PDFs de terceiros e rascunhos copiados para as revisoes
+    re.compile(r'^paper/ESTRUTURA\.md$'),          # nota interna de planejamento do artigo
 ]
 TROCAS = [
     (re.compile(r'\b100\.(?:\d{1,3})\.(?:\d{1,3})\.(?:\d{1,3})\b'), '<host>'),

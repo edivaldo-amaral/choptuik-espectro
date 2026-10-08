@@ -1,0 +1,40 @@
+\section{Explicit formulas}\label{app:formulas}
+
+\subsection{Weights}
+The existence proof of~\cite{RT2019} uses $(\kappa_1,\kappa_2)=(65/64,5/4)$. Our strong space is $\Yp=Y(65/64,5/4)$
+with component weights $\eta=(916,4096,243,1233)$; the sharp certificates use $(129/128,9/8)$. The real semi-axis
+of the Bernstein ellipse of parameter $5/4$ is $\tfrac12(\tfrac54+\tfrac45)=\tfrac{41}{40}$, the radius of the
+domain $\Mhat$.
+
+\subsection{The constraint map}
+With the encoding $h_i^-=h_i$, $h_i^+=-Ph_i$ ($i=2,3,4$), $D^+=\partial_\tau+\mu(1+\xi)\partial_\xi$, and the
+formulas~\eqref{eq:omega} and~\cite[\S2]{RT2019} for $\Omega_1^+$ and $\Omega_{2\sharp}^+$,
+\[
+  C(s)h=\Big(\tfrac12(1-P)\,\delta\Omega_1^+[h],\ -P\,\delta\Omega_{2\sharp}^+[h]\Big),
+\]
+where
+\begin{align*}
+  \delta\Omega_1^+[h]&=\xi(D^++s+\mu)h_1+2\mu h_1+\tfrac14\xi\,\delta\mathcal Q_1[h],\\
+  \delta\Omega_{2\sharp}^+[h]&=\xi(D^++s+\mu)h_2^++2\mu(h_2^+-h_3^+)
+    +\xi\,\delta\big(-(\omega_2^+)^2+2\omega_3^+\omega_2^+-(\omega_4^+)^2\big)[h],
+\end{align*}
+$\delta(\cdot)[h]$ denotes the derivative at $\omegabar$ in the direction $h$, and
+$\mathcal Q_1=\omega_1^2-2\omega_2^-\omega_1-6\omega_2^+\omega_1+4\omega_3^+\omega_1+(\omega_2^-)^2-2\omega_2^+\omega_2^-
+-4\omega_3^+\omega_2^-+(\omega_2^+)^2+4\omega_3^+\omega_2^+-4(\omega_4^+)^2$. In particular $C(s)=C_0+sC_1$ with
+\[
+  C_1h=\big(0,\ -\xi h_2\big),
+\]
+since $\xi h_1$ is even and $P\xi P=-\xi$.
+
+\subsection{The operators $K$ and $M$}
+With $J_s=\partial_\tau+s+\mu((1+\xi)\partial_\xi+1)$, $X$ multiplication by $\xi$,
+$\mathcal G_I=\mathcal G(\omegabar,Ic)$ and $\mathcal G_R=\mathcal G(\omegabar,Rf)$ (\cref{app:KCML}), and using that
+$c_1$ and $f_1$ are odd:
+\begin{align*}
+  (K(s)c)_1&=\big(\partial_\tau+s+\mu(\xi\partial_\xi+1)\big)c_1+(\mathcal G_I)_1,\\
+  (K(s)c)_2&=J_sc_2+\mu R_\xi c_1+(\mathcal G_I)_2,\\
+  (M(s)f)_1&=-\mu(\xi\partial_\xi+2)Pf_1-(\mathcal G_R)_1,\\
+  (M(s)f)_2&=PJ_s(XPf_2)-\mu(Pf_1+Pf_2-f_2+2f_3)-(\mathcal G_R)_2 .
+\end{align*}
+$\mathcal G_I$ is the bilinear term $\Gamma_2^\sharp(\omegabar,\cdot)$ of~\eqref{eq:sharp}. The first component of $M$ does
+not contain $s$, and $M_1f=(0,-\xi f_2)=C_1f$, in agreement with the relation $M_1=C_1$ of \cref{sec:physical-count}.

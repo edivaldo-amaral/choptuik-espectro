@@ -40,16 +40,18 @@
   "artefatos": [
    {
     "caminho": "build/t2/l_real_toro.json",
-    "papel": "saida de l_real_toro.py / radius_transfer.py",
-    "tamanho": 266,
-    "sha256": "04da36395eb438a27b0a7662c90158c39f450da26ac553e86b3e132fcd92f9f2",
+    "papel": "saida de l_real_toro.py / radius_transfer.py / independent_component_beta.py (beta+)",
+    "tamanho": 254,
+    "sha256": "ddc5f548734faf858d353c07fd0fc03d5484e0e480cfa1dfb695a58541adeb7e",
     "notebook": true,
-    "laboratorio2": [],
+    "laboratorio2": [
+     "build/t2/l_real_toro.json"
+    ],
     "status": "ok"
    },
    {
     "caminho": "build/t2/l_real_toro.txt",
-    "papel": "saida de l_real_toro.py / radius_transfer.py",
+    "papel": "saida de l_real_toro.py / radius_transfer.py / independent_component_beta.py (beta+)",
     "tamanho": 305,
     "sha256": "b0c66db80e17962ca8e3be02f690d31b38037d03aabfb7dcf170a7194fce0534",
     "notebook": true,
@@ -58,9 +60,18 @@
    },
    {
     "caminho": "build/t2/radius_transfer_s3_1.json",
-    "papel": "saida de l_real_toro.py / radius_transfer.py",
+    "papel": "saida de l_real_toro.py / radius_transfer.py / independent_component_beta.py (beta+)",
     "tamanho": 430,
     "sha256": "c542e14567d26fad5fcc01505e1220631328feb20d964374fa4b446a12e77feb",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/t2/beta_plus.json",
+    "papel": "saida de l_real_toro.py / radius_transfer.py / independent_component_beta.py (beta+)",
+    "tamanho": 5823,
+    "sha256": "0c3d1a535aeef26adf0585761db681c8b3f18ee335499befa4b9ed74d8018fb4",
     "notebook": true,
     "laboratorio2": [],
     "status": "ok"
@@ -73,7 +84,7 @@
   "artefatos": [
    {
     "caminho": "build/spectrum/symbol-L-2048x4096.json",
-    "papel": "certificado do simbolo (Arb)",
+    "papel": "certificado do simbolo (Arb) / parte livre",
     "tamanho": 281,
     "sha256": "dbb11520fe1df50ccba6be5b9e71cf21700c615fe6c5fa0dddfd8719262f5177",
     "notebook": true,
@@ -82,7 +93,7 @@
    },
    {
     "caminho": "build/spectrum/symbol-L-faixa0.json",
-    "papel": "certificado do simbolo (Arb)",
+    "papel": "certificado do simbolo (Arb) / parte livre",
     "tamanho": 356,
     "sha256": "9ad85f0051dbe61b9029a09d1541a714a01726df2bc6be7e9d5fa0c532928748",
     "notebook": true,
@@ -91,7 +102,7 @@
    },
    {
     "caminho": "build/spectrum/symbol-L-faixa1.json",
-    "papel": "certificado do simbolo (Arb)",
+    "papel": "certificado do simbolo (Arb) / parte livre",
     "tamanho": 359,
     "sha256": "e2c51742ac8f60af6bfe13cf8958cc2565139292414e89ac66357b74ec7d0ade",
     "notebook": true,
@@ -100,7 +111,7 @@
    },
    {
     "caminho": "build/spectrum/symbol-L-faixa2.json",
-    "papel": "certificado do simbolo (Arb)",
+    "papel": "certificado do simbolo (Arb) / parte livre",
     "tamanho": 361,
     "sha256": "c33de082cf12733bac27915498d108d2a48e0d0ab175987adc330063e1051abf",
     "notebook": true,
@@ -109,7 +120,7 @@
    },
    {
     "caminho": "build/spectrum/symbol-L-faixa3.json",
-    "papel": "certificado do simbolo (Arb)",
+    "papel": "certificado do simbolo (Arb) / parte livre",
     "tamanho": 361,
     "sha256": "ddfd9a5b78f6ffb098a676b0f2ed9b97f79eaae0f7e2dcb02e9bd4d7edba47fe",
     "notebook": true,
@@ -118,7 +129,7 @@
    },
    {
     "caminho": "build/spectrum/symbol-L-faixa0.log",
-    "papel": "certificado do simbolo (Arb)",
+    "papel": "certificado do simbolo (Arb) / parte livre",
     "tamanho": 390,
     "sha256": "4e9d2252527c7ab7c946023727b3f7a595420efec40e7817927179a0042c7de4",
     "notebook": true,
@@ -127,7 +138,7 @@
    },
    {
     "caminho": "build/spectrum/symbol-L-faixa1.log",
-    "papel": "certificado do simbolo (Arb)",
+    "papel": "certificado do simbolo (Arb) / parte livre",
     "tamanho": 420,
     "sha256": "3d731078f6914ff8490f64e1dd8914625f45a6d34cfc2c81e1adbfad3bbbbd81",
     "notebook": true,
@@ -136,7 +147,7 @@
    },
    {
     "caminho": "build/spectrum/symbol-L-faixa2.log",
-    "papel": "certificado do simbolo (Arb)",
+    "papel": "certificado do simbolo (Arb) / parte livre",
     "tamanho": 437,
     "sha256": "36b77774a2567b7b50fd13cae3502944f64b07e56f611dfdba169959ce274bdd",
     "notebook": true,
@@ -145,9 +156,18 @@
    },
    {
     "caminho": "build/spectrum/symbol-L-faixa3.log",
-    "papel": "certificado do simbolo (Arb)",
+    "papel": "certificado do simbolo (Arb) / parte livre",
     "tamanho": 437,
     "sha256": "0562ce9ae84dd45e49a9b90fbeee30bd59777bc978b25ee007896ae19b5b6221",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/spectrum/free-part-toro.json",
+    "papel": "certificado do simbolo (Arb) / parte livre",
+    "tamanho": 1748,
+    "sha256": "08a6c2b9814031d446de8f10cb9acfdd963a3fe0dc2508ed28bb19dd5708ad23",
     "notebook": true,
     "laboratorio2": [],
     "status": "ok"
@@ -572,7 +592,7 @@
    },
    {
     "caminho": "build/rouche_L_rig/cauda/T3_-0_25.json",
-    "papel": "cauda / janelas / cobertura / contagem",
+    "papel": "cauda / janelas / cobertura / contagem / deflacao",
     "tamanho": 25236,
     "sha256": "00a1bdcae7165922bf31b714af06ee727dc871ecfa0e951767d9d6a506be48de",
     "notebook": true,
@@ -581,7 +601,7 @@
    },
    {
     "caminho": "build/rouche_L_rig/cauda/T3_0.json",
-    "papel": "cauda / janelas / cobertura / contagem",
+    "papel": "cauda / janelas / cobertura / contagem / deflacao",
     "tamanho": 25223,
     "sha256": "ff6c36dd4c26bda2c962eaba27911253f17b246434941a604933005081b457f7",
     "notebook": true,
@@ -590,7 +610,7 @@
    },
    {
     "caminho": "build/rouche_L_rig/cauda/T3_0_25.json",
-    "papel": "cauda / janelas / cobertura / contagem",
+    "papel": "cauda / janelas / cobertura / contagem / deflacao",
     "tamanho": 25209,
     "sha256": "fe7373634f0285312d97e1e4b426f03ac6a36efde0d6d572cac7e60ba2eb61ac",
     "notebook": true,
@@ -599,7 +619,7 @@
    },
    {
     "caminho": "build/rouche_L_rig/cauda/T3_0_55-0_25.json",
-    "papel": "cauda / janelas / cobertura / contagem",
+    "papel": "cauda / janelas / cobertura / contagem / deflacao",
     "tamanho": 25264,
     "sha256": "39af959a38994872520f53ce03b8d3358d2df363ad5a663e45ff8fafa6395ea4",
     "notebook": true,
@@ -608,7 +628,7 @@
    },
    {
     "caminho": "build/rouche_L_rig/cauda/T3_0_55p0_25.json",
-    "papel": "cauda / janelas / cobertura / contagem",
+    "papel": "cauda / janelas / cobertura / contagem / deflacao",
     "tamanho": 25223,
     "sha256": "5434f00ecbc88ec0ce52edd736737c5a5ac49d1a0fd96922b03878174f5da381",
     "notebook": true,
@@ -617,7 +637,7 @@
    },
    {
     "caminho": "build/rouche_L_rig/cauda/T3_1_0.json",
-    "papel": "cauda / janelas / cobertura / contagem",
+    "papel": "cauda / janelas / cobertura / contagem / deflacao",
     "tamanho": 25237,
     "sha256": "1527a56ca362fea174c1279d8bb612a9c421446cd86929807ae063ab7bb3d23a",
     "notebook": true,
@@ -626,7 +646,7 @@
    },
    {
     "caminho": "build/rouche_L_rig/cauda/T3_1_5.json",
-    "papel": "cauda / janelas / cobertura / contagem",
+    "papel": "cauda / janelas / cobertura / contagem / deflacao",
     "tamanho": 25248,
     "sha256": "1143e86575f5822f1f65c272e918ca785aff3c511b3777f54300b301c4cc3254",
     "notebook": true,
@@ -635,7 +655,7 @@
    },
    {
     "caminho": "build/rouche_L_rig/cauda/T3_2_0.json",
-    "papel": "cauda / janelas / cobertura / contagem",
+    "papel": "cauda / janelas / cobertura / contagem / deflacao",
     "tamanho": 25247,
     "sha256": "72ed580103e341def9ea9a91f459e19611ec55acc0b98d290ff43abb55e03fac",
     "notebook": true,
@@ -644,7 +664,7 @@
    },
    {
     "caminho": "build/rouche_L_rig/cauda/T3_2_5.json",
-    "papel": "cauda / janelas / cobertura / contagem",
+    "papel": "cauda / janelas / cobertura / contagem / deflacao",
     "tamanho": 25259,
     "sha256": "732ed020579ad1760aaf6a39376a173301be1ea38d6a54299f0e1900f697c443",
     "notebook": true,
@@ -653,7 +673,7 @@
    },
    {
     "caminho": "build/rouche_L_rig/cauda/T3_3_0.json",
-    "papel": "cauda / janelas / cobertura / contagem",
+    "papel": "cauda / janelas / cobertura / contagem / deflacao",
     "tamanho": 25256,
     "sha256": "2d1922fcd41b68c05846d8eca4d4ad74560c52f9256c8153ae229286b576d4c0",
     "notebook": true,
@@ -662,7 +682,7 @@
    },
    {
     "caminho": "build/rouche_L_rig/janelas_v2.json",
-    "papel": "cauda / janelas / cobertura / contagem",
+    "papel": "cauda / janelas / cobertura / contagem / deflacao",
     "tamanho": 4553,
     "sha256": "9313b2353f29de632130a6f2d2833b4d16decbfc807bbabcde132f5404846cbb",
     "notebook": true,
@@ -671,7 +691,7 @@
    },
    {
     "caminho": "build/rouche_L_rig/janelas_v2.txt",
-    "papel": "cauda / janelas / cobertura / contagem",
+    "papel": "cauda / janelas / cobertura / contagem / deflacao",
     "tamanho": 1457,
     "sha256": "22656d936bc43c77543eeb924d2576e9d2893f3daaba1057c0cc82afaee3fe2c",
     "notebook": true,
@@ -680,7 +700,7 @@
    },
    {
     "caminho": "build/rouche_L_rig/cobertura_v2.txt",
-    "papel": "cauda / janelas / cobertura / contagem",
+    "papel": "cauda / janelas / cobertura / contagem / deflacao",
     "tamanho": 188,
     "sha256": "41eb15c99e320484b0bd446888250a011f27e8e27244b5652c3a23a417837904",
     "notebook": true,
@@ -689,7 +709,7 @@
    },
    {
     "caminho": "build/rouche_L_rig/contagem.json",
-    "papel": "cauda / janelas / cobertura / contagem",
+    "papel": "cauda / janelas / cobertura / contagem / deflacao",
     "tamanho": 1230,
     "sha256": "8fdaeff2c9acb52d9f1aff0d0e09e6415d06ca1361769f3b31d353708a9fadbc",
     "notebook": true,
@@ -700,7 +720,7 @@
    },
    {
     "caminho": "build/rouche_L_rig/contagem_rouche_v2.txt",
-    "papel": "cauda / janelas / cobertura / contagem",
+    "papel": "cauda / janelas / cobertura / contagem / deflacao",
     "tamanho": 209,
     "sha256": "05b3af208490d7b6586445ebc987d09bf3e8995e088409fede279cfc6a5b8a3f",
     "notebook": true,
@@ -709,11 +729,23 @@
    },
    {
     "caminho": "build/rouche_L_rig/diagT_lab2.npy",
-    "papel": "cauda / janelas / cobertura / contagem",
+    "papel": "cauda / janelas / cobertura / contagem / deflacao",
     "tamanho": 224384,
     "sha256": "1da4a1f2f6530e4a13b4d1ecd4c237822b0e32b084f4cf2cb2ff5a2b987f690b",
     "notebook": true,
     "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/z/lab2/schur.json",
+    "papel": "cauda / janelas / cobertura / contagem / deflacao",
+    "tamanho": 660,
+    "sha256": "122606360ef3f426cab7486192ea3985ca8e80c9e606c7c7319775b10d702c43",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_phi_esquerdo/schur.json",
+     "build/rouche_L/schur.json"
+    ],
     "status": "ok"
    }
   ]
@@ -1161,7 +1193,7 @@
    },
    {
     "caminho": "build/faixaB/cauda/T3_0_5.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 25148,
     "sha256": "9dafe4d13705971905da05139de21f4b18b0db5f2e52808f9b87fd7102466f0f",
     "notebook": true,
@@ -1170,7 +1202,7 @@
    },
    {
     "caminho": "build/faixaB/cauda/T3_0_55p0_75.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 25221,
     "sha256": "18addacdd92564d1021e4158da955a3c24ef43145526e59b860e4895e58a980e",
     "notebook": true,
@@ -1179,7 +1211,7 @@
    },
    {
     "caminho": "build/faixaB/cauda/T3_0_55p0_75_lab2.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 25221,
     "sha256": "18addacdd92564d1021e4158da955a3c24ef43145526e59b860e4895e58a980e",
     "notebook": true,
@@ -1188,7 +1220,7 @@
    },
    {
     "caminho": "build/faixaB/cauda/T3_0_55p0_75_labpc.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 25224,
     "sha256": "40c7af467f6b99716bd5659a5e8d952c7ef05fb0871156c5292afd5f4250b04f",
     "notebook": true,
@@ -1197,7 +1229,7 @@
    },
    {
     "caminho": "build/faixaB/cauda/T3_0_75.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 25201,
     "sha256": "ab87417cd89fe8f6e0f85e0b5a924f64b9b8fc739af2190fd151c7ba38d39be3",
     "notebook": true,
@@ -1206,7 +1238,7 @@
    },
    {
     "caminho": "build/faixaB/janelas.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 4549,
     "sha256": "07853798f22bc72517d7583020ccb51fd551a644d41852aea1cd0a9011cdaf76",
     "notebook": true,
@@ -1215,7 +1247,7 @@
    },
    {
     "caminho": "build/faixaB/janelas.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 1667,
     "sha256": "61df39ac0a671088f005d2d343a67173856ab6ca11969eb6fa5da39382e322c9",
     "notebook": true,
@@ -1224,7 +1256,7 @@
    },
    {
     "caminho": "build/faixaB/cobertura.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 188,
     "sha256": "122095b652df4a44b01ff1c4b18d9fecfc17c2339f7242e08e39d5476af9b4d1",
     "notebook": true,
@@ -1233,7 +1265,7 @@
    },
    {
     "caminho": "build/faixaB/contagem_rouche.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 1371,
     "sha256": "7a4dd1bd87acd6846c71539716b39a218a397e899b5657c08c833bd66b2c4dbc",
     "notebook": true,
@@ -1242,7 +1274,7 @@
    },
    {
     "caminho": "build/faixaB/nk/C3.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 2426,
     "sha256": "0f981c8ea3f289967dcd6024c38b505374b2876881dde8eb032816516bdaeaa9",
     "notebook": true,
@@ -1254,7 +1286,7 @@
    },
    {
     "caminho": "build/faixaB/nk/D.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 556,
     "sha256": "613823fbe3a514ffda9efd299d3c4ebb2d6ba808bd864e99118cedab23166e3e",
     "notebook": true,
@@ -1265,7 +1297,7 @@
    },
    {
     "caminho": "build/faixaB/nk/Q.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 167,
     "sha256": "f142e9b0bcea4d57b02f09279b433775a07e36f1ae1cf101da2b5453e2744a4a",
     "notebook": true,
@@ -1278,7 +1310,7 @@
    },
    {
     "caminho": "build/faixaB/nk/T3.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 24567,
     "sha256": "358a3603d2a30a94a0937fb6d4a27dd71c1e44c52e86fdcb5f3297b51f315134",
     "notebook": true,
@@ -1294,7 +1326,7 @@
    },
    {
     "caminho": "build/faixaB/nk/Z.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 770,
     "sha256": "b254b9250f9972dbb88f83555f5fe360f397a35a6680679ca767921af48ec4e5",
     "notebook": true,
@@ -1307,7 +1339,7 @@
    },
    {
     "caminho": "build/faixaB/nk/etapaA.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 961,
     "sha256": "d5042f94fd65320f6292138a8720ddf1d2cc106580d30b7e987b49134fc722b8",
     "notebook": true,
@@ -1318,7 +1350,7 @@
    },
    {
     "caminho": "build/faixaB/nk/etapaB.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 5001,
     "sha256": "128c4ce663123fbda4fc3d91650d65753e532d2c8a002079928ebff24f0a5492",
     "notebook": true,
@@ -1329,7 +1361,7 @@
    },
    {
     "caminho": "build/faixaB/nk/etapaC.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 546,
     "sha256": "6972c914a4d54333fd8bc47b22d50385fb24dade77774440837cc350bf9f6f6d",
     "notebook": true,
@@ -1341,7 +1373,7 @@
    },
    {
     "caminho": "build/faixaB/nk/etapaD.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 526,
     "sha256": "9fa65577c9b7efac5f90ed5b0e7c898e98a1e5b5a80bdc228ca209d7304667d4",
     "notebook": true,
@@ -1352,7 +1384,7 @@
    },
    {
     "caminho": "build/faixaB/nk/fim.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 273,
     "sha256": "05983365a8b1c51b5d2bdfd56b19fcb02c2d11c5af3fee7106d313131427fa80",
     "notebook": true,
@@ -1371,7 +1403,7 @@
    },
    {
     "caminho": "build/faixaB/nk/h0w.npy",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 224384,
     "sha256": "5fbf30e5a2bf89b556decc82d3881346522931de3b44cef87b8bb08ad0a3cc4a",
     "notebook": true,
@@ -1384,7 +1416,7 @@
    },
    {
     "caminho": "build/faixaB/nk/nk3.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 3845,
     "sha256": "9c5140b66e205570cebd6e6e046b99f9486fcd4283f75daf9de0442d840f010c",
     "notebook": true,
@@ -1395,7 +1427,7 @@
    },
    {
     "caminho": "build/faixaB/nk/nk3_B.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 17145,
     "sha256": "89fd2a90d49d1ff38d01071482132e0058fa4b5b9721f47284880cbfd55b0be5",
     "notebook": true,
@@ -1406,7 +1438,7 @@
    },
    {
     "caminho": "build/faixaB/nk/nkZ.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 310,
     "sha256": "930be1c680c78e05f42b829a46c983ea3ef9a75b1f117d48468525d103a0e951",
     "notebook": true,
@@ -1417,7 +1449,7 @@
    },
    {
     "caminho": "build/faixaB/nk/q.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 126,
     "sha256": "3d346c6339b49649835fe2272366449c1cb90509dfe5c75d01a55324436eb2cf",
     "notebook": true,
@@ -1428,7 +1460,7 @@
    },
    {
     "caminho": "build/faixaB/nk/tQ.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 355,
     "sha256": "9c6c1565c00a9ed87700a7dc204bdcadeee571dec6edd62f5d970cfce31f5da1",
     "notebook": true,
@@ -1440,7 +1472,7 @@
    },
    {
     "caminho": "build/faixaB/logs/B_0_55p0_75_lab2.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 4966,
     "sha256": "d46bba786077b937fe793f06924742863d14a8408da9bd0bf1d6568a4757f072",
     "notebook": true,
@@ -1449,7 +1481,7 @@
    },
    {
     "caminho": "build/faixaB/logs/MANIFEST_logs.sha256",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 1399,
     "sha256": "05179cad464ef124be7765cc071eef3e428d67e3c0bc621b4d022a02410f0627",
     "notebook": true,
@@ -1458,7 +1490,7 @@
    },
    {
     "caminho": "build/faixaB/logs/certF_0.55+0.75j.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 1521,
     "sha256": "f87cf64dcbb03435cdc73776e4def1e7fa9cca8a0099c950eeacef6b17b3ceaf",
     "notebook": true,
@@ -1469,7 +1501,7 @@
    },
    {
     "caminho": "build/faixaB/logs/certF_0.5j.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 1497,
     "sha256": "619324785ec25ec66af3c9bffcd84efce8b2b5aa446df2beacdcd642263aec86",
     "notebook": true,
@@ -1480,7 +1512,7 @@
    },
    {
     "caminho": "build/faixaB/logs/certF_0.75j.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 1500,
     "sha256": "ee7c3662d76035f37b9d03725ee7afb4d126dde0bfda2217cb972b848dd9122a",
     "notebook": true,
@@ -1491,7 +1523,7 @@
    },
    {
     "caminho": "build/faixaB/logs/fator2_lab2.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 585,
     "sha256": "2e3e4182269b7333233b9643c66f3fcbebc210c1430cdc68cd19919129d150bb",
     "notebook": true,
@@ -1500,7 +1532,7 @@
    },
    {
     "caminho": "build/faixaB/logs/fim_caudaB_joao.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 77,
     "sha256": "cf0422cdc0ec9937784c925b42bed72d8a3a4b9ab2b8b652b7dcde2e86f02ea4",
     "notebook": true,
@@ -1509,7 +1541,7 @@
    },
    {
     "caminho": "build/faixaB/logs/fim_caudaB_lab2.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 379,
     "sha256": "38e21075c5dcd4099c4a2ad1f757535be05932c91fd4328c366c1b9cdb5d47bf",
     "notebook": true,
@@ -1518,7 +1550,7 @@
    },
    {
     "caminho": "build/faixaB/logs/rig_B_joao.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 630,
     "sha256": "86748e90741b97b97a1101b41803820e560dbfd83f5c92facf0219bfb4326cfe",
     "notebook": true,
@@ -1527,7 +1559,7 @@
    },
    {
     "caminho": "build/faixaB/logs/rig_B_lab2.txt",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 27213,
     "sha256": "6cebd27dc1771b25cce8b2f857297e0b74e9d469130b9308b1cac6c343bc9446",
     "notebook": true,
@@ -1536,7 +1568,7 @@
    },
    {
     "caminho": "build/faixaB/logs/tp_+0_0000+0_2500i_B.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 427,
     "sha256": "5a043d6eab991131444fa73280fb769eb396ce56c9cd6a7a04331aa5273304f4",
     "notebook": true,
@@ -1547,7 +1579,7 @@
    },
    {
     "caminho": "build/faixaB/logs/tp_+0_0000+0_5000i_B.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 1741,
     "sha256": "c89e8106b142c4455a212848172fedb3f82c061efaa550f78f62c4cc939c4a08",
     "notebook": true,
@@ -1558,7 +1590,7 @@
    },
    {
     "caminho": "build/faixaB/logs/tp_+0_0000+0_5000i_B4.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 193,
     "sha256": "ee416c1809370c656ca59fcd7035f41b63a0274d2f162aedb7d504939ef058f7",
     "notebook": true,
@@ -1569,7 +1601,7 @@
    },
    {
     "caminho": "build/faixaB/logs/tp_+0_0000+0_7500i_B.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 1437,
     "sha256": "be48e72061402ffca8ba2f90e8e275d1b6d3db01fbb8d0912127db5848033f06",
     "notebook": true,
@@ -1580,7 +1612,7 @@
    },
    {
     "caminho": "build/faixaB/logs/tp_+0_5500+0_7500i_B.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 619,
     "sha256": "01ba28156fce24f634fd28da482cee52f1fcf28bf563bdd28398398b012a957b",
     "notebook": true,
@@ -1591,7 +1623,7 @@
    },
    {
     "caminho": "build/faixaB/logs/tp_+0_5500+0_7500i_B3.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 191,
     "sha256": "c5725820656cdaa25f47060127eadeed6562f64dec5da4b6cd6a7e714ae91bd1",
     "notebook": true,
@@ -1602,12 +1634,24 @@
    },
    {
     "caminho": "build/faixaB/logs/tp_+2_5000+0_0000i_B.json",
-    "papel": "cauda / janelas / cobertura / contagem / NK / logs",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
     "tamanho": 129,
     "sha256": "2d506f347dc7650cf35f36336fa923ad97c6b0f775cf2e9637a275e51d06880f",
     "notebook": true,
     "laboratorio2": [
      "build/rouche_L_v2/tp_+2_5000+0_0000i_B.json"
+    ],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/rouche_L_rig/z/lab2/schur.json",
+    "papel": "cauda / janelas / cobertura / contagem / NK / logs / deflacao",
+    "tamanho": 660,
+    "sha256": "122606360ef3f426cab7486192ea3985ca8e80c9e606c7c7319775b10d702c43",
+    "notebook": true,
+    "laboratorio2": [
+     "build/rouche_L_phi_esquerdo/schur.json",
+     "build/rouche_L/schur.json"
     ],
     "status": "ok"
    }
@@ -1813,7 +1857,7 @@
   "artefatos": [
    {
     "caminho": "build/s3b/rig/A.txt",
-    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "papel": "NK de L, testemunho D",
     "tamanho": 586,
     "sha256": "0cd6efe7726c317d8e61593053f9dec7f6863911e8747c85fbb41c6eca3fac2c",
     "notebook": true,
@@ -1824,7 +1868,7 @@
    },
    {
     "caminho": "build/s3b/rig/B_final.txt",
-    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "papel": "NK de L, testemunho D",
     "tamanho": 1844,
     "sha256": "89267979f639d9d4b41c6576574192d95d0d5ab0d25ac3b87bb48326c151a67a",
     "notebook": true,
@@ -1835,7 +1879,7 @@
    },
    {
     "caminho": "build/s3b/rig/B_gamer.txt",
-    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "papel": "NK de L, testemunho D",
     "tamanho": 4485,
     "sha256": "35b5075ae35c09be87f5711c975d3a2554caddd0cac55faee1bf128fec83affc",
     "notebook": true,
@@ -1844,7 +1888,7 @@
    },
    {
     "caminho": "build/s3b/rig/C.txt",
-    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "papel": "NK de L, testemunho D",
     "tamanho": 532,
     "sha256": "31e92307bdb186489281c70e3e25cc8b8647b2627357e396005a818cb2683bfe",
     "notebook": true,
@@ -1853,7 +1897,7 @@
    },
    {
     "caminho": "build/s3b/rig/C3.json",
-    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "papel": "NK de L, testemunho D",
     "tamanho": 2377,
     "sha256": "b254f330ba625a05e6b095db94da4a629cc7d2d9fed07a1c0cd59476bdae2195",
     "notebook": true,
@@ -1865,7 +1909,7 @@
    },
    {
     "caminho": "build/s3b/rig/D.json",
-    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "papel": "NK de L, testemunho D",
     "tamanho": 556,
     "sha256": "fe0b93510622d51fec270749cdffa8456196ccefe2c64dc272a14122388db92c",
     "notebook": true,
@@ -1876,7 +1920,7 @@
    },
    {
     "caminho": "build/s3b/rig/D.txt",
-    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "papel": "NK de L, testemunho D",
     "tamanho": 526,
     "sha256": "397e66fcea45b41fc2218d2d4c619ab3983b71cc0331400240259dbce15e1460",
     "notebook": true,
@@ -1885,7 +1929,7 @@
    },
    {
     "caminho": "build/s3b/rig/Q.json",
-    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "papel": "NK de L, testemunho D",
     "tamanho": 127,
     "sha256": "da084bbaf16851c9244ef9168d0e723f25ea7609584d3b11c6f01cee10116cc5",
     "notebook": true,
@@ -1898,7 +1942,7 @@
    },
    {
     "caminho": "build/s3b/rig/T3.gamer.json",
-    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "papel": "NK de L, testemunho D",
     "tamanho": 9509,
     "sha256": "610e6aa19a7a7f4e45237f4e02647bad07f80459a4a44a642be89b927091d74d",
     "notebook": true,
@@ -1907,7 +1951,7 @@
    },
    {
     "caminho": "build/s3b/rig/T3.json",
-    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "papel": "NK de L, testemunho D",
     "tamanho": 24067,
     "sha256": "a7b9fea998742a17ad7e6eb519cd5a30b4735afdf78dbb79ee01071daa37b969",
     "notebook": true,
@@ -1923,7 +1967,7 @@
    },
    {
     "caminho": "build/s3b/rig/Z.json",
-    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "papel": "NK de L, testemunho D",
     "tamanho": 740,
     "sha256": "798b6934ce3f727286fa8673f261c63cd4e3704d67ab9465871d270b8c219392",
     "notebook": true,
@@ -1936,7 +1980,7 @@
    },
    {
     "caminho": "build/s3b/rig/fim.txt",
-    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "papel": "NK de L, testemunho D",
     "tamanho": 11,
     "sha256": "2193eed4960709ad4959a0d23cc267506ce697de5305cd05f47390ec422167f3",
     "notebook": true,
@@ -1955,7 +1999,7 @@
    },
    {
     "caminho": "build/s3b/rig/h0w.npy",
-    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "papel": "NK de L, testemunho D",
     "tamanho": 224384,
     "sha256": "d113646e695da79ee9a51f14ffd38d1556a24c7cc761ab797889f8606e5c0ccf",
     "notebook": true,
@@ -1967,26 +2011,8 @@
     "status": "ok"
    },
    {
-    "caminho": "build/s3b/rouche_K_circ.json",
-    "papel": "Rouche de K no disco, NK de L, testemunho D",
-    "tamanho": 39708,
-    "sha256": "f7e35e6ceae52031f1b178bc14e1a076ebcbc220ab09a15f90228fbfb57dc031",
-    "notebook": true,
-    "laboratorio2": [],
-    "status": "ok"
-   },
-   {
-    "caminho": "build/s3b/rouche_K_contagem_20x80.json",
-    "papel": "Rouche de K no disco, NK de L, testemunho D",
-    "tamanho": 1550,
-    "sha256": "ec901c24637511a737bb05fd10f9ca08736406d7253b697212e87f1399d75174",
-    "notebook": true,
-    "laboratorio2": [],
-    "status": "ok"
-   },
-   {
     "caminho": "build/s3b/nk3_32x128.json",
-    "papel": "Rouche de K no disco, NK de L, testemunho D",
+    "papel": "NK de L, testemunho D",
     "tamanho": 17152,
     "sha256": "1ebdba802a15805a3077f4aab75d79e63299af01dc017c92ed381ced85600128",
     "notebook": true,
@@ -2001,7 +2027,7 @@
   "artefatos": [
    {
     "caminho": "build/cobertura_lab/grande-0-0.json",
-    "papel": "tiles de Perron / simbolo de K",
+    "papel": "tiles de Perron / Rouche de K no disco / simbolo de K / parte livre",
     "tamanho": 72795,
     "sha256": "b1bda9126984834f0b8473c6484c6b5c23ed64bd033e5d1ec7cd7cf312986ba3",
     "notebook": true,
@@ -2010,7 +2036,7 @@
    },
    {
     "caminho": "build/cobertura_lab/grande-1-0.json",
-    "papel": "tiles de Perron / simbolo de K",
+    "papel": "tiles de Perron / Rouche de K no disco / simbolo de K / parte livre",
     "tamanho": 58762,
     "sha256": "6fae81f691f38fbb6ab29c1845fb09d0d760d9b43a6648664cc2293dbb0bb63a",
     "notebook": true,
@@ -2019,7 +2045,7 @@
    },
    {
     "caminho": "build/cobertura_lab/grande-2-0.json",
-    "papel": "tiles de Perron / simbolo de K",
+    "papel": "tiles de Perron / Rouche de K no disco / simbolo de K / parte livre",
     "tamanho": 29608,
     "sha256": "620347db64d7dd3009fc825874fb246e38fec4cf66d58054d22f3abd5d8405dc",
     "notebook": true,
@@ -2028,7 +2054,7 @@
    },
    {
     "caminho": "build/cobertura_lab/grande-3-0.json",
-    "papel": "tiles de Perron / simbolo de K",
+    "papel": "tiles de Perron / Rouche de K no disco / simbolo de K / parte livre",
     "tamanho": 29594,
     "sha256": "24360f40d2a06bf9faca8c3ebc6e414f8d245a8bbb29dec58d01732fe82f8e42",
     "notebook": true,
@@ -2037,7 +2063,7 @@
    },
    {
     "caminho": "build/cobertura_lab/grande-4-0.json",
-    "papel": "tiles de Perron / simbolo de K",
+    "papel": "tiles de Perron / Rouche de K no disco / simbolo de K / parte livre",
     "tamanho": 29631,
     "sha256": "80a7631bcb8e49da79dc5b1454630ae83292dba97fd2b5de33d69dae127d9391",
     "notebook": true,
@@ -2046,7 +2072,7 @@
    },
    {
     "caminho": "build/cobertura_lab/grande-5-0.json",
-    "papel": "tiles de Perron / simbolo de K",
+    "papel": "tiles de Perron / Rouche de K no disco / simbolo de K / parte livre",
     "tamanho": 29635,
     "sha256": "9e0012c5d2e46146569473a11f5181dcc088226425988be9044c99810c5d0c5b",
     "notebook": true,
@@ -2055,7 +2081,7 @@
    },
    {
     "caminho": "build/cobertura_lab/grande-6-0.json",
-    "papel": "tiles de Perron / simbolo de K",
+    "papel": "tiles de Perron / Rouche de K no disco / simbolo de K / parte livre",
     "tamanho": 29574,
     "sha256": "9938f71a2d9831ad241f98d024cf70f7c739c557b0f3618020aeefd49ea62ed2",
     "notebook": true,
@@ -2064,7 +2090,7 @@
    },
    {
     "caminho": "build/cobertura_lab/grande-7-0.json",
-    "papel": "tiles de Perron / simbolo de K",
+    "papel": "tiles de Perron / Rouche de K no disco / simbolo de K / parte livre",
     "tamanho": 7807,
     "sha256": "8af3ccdc623dda06b34f309586344d3c635a024ce3135d5df17dd70241a4f0c3",
     "notebook": true,
@@ -2073,7 +2099,7 @@
    },
    {
     "caminho": "build/cobertura_local/grande-7-0.json",
-    "papel": "tiles de Perron / simbolo de K",
+    "papel": "tiles de Perron / Rouche de K no disco / simbolo de K / parte livre",
     "tamanho": 1738,
     "sha256": "3fde43038008339080e28e9e707a9a1268214339597e57ee8a7ccb6a6bbfaa10",
     "notebook": true,
@@ -2081,26 +2107,26 @@
     "status": "ok"
    },
    {
-    "caminho": "build/tiles_rig/tile-0_2-r0_04.json",
-    "papel": "tiles de Perron / simbolo de K",
-    "tamanho": 2642,
-    "sha256": "539225f969a5fe9fdd7ed3be0b7d1f8e89ba1bb358b1cf239c785e07c9d11123",
+    "caminho": "build/s3b/rouche_K_circ.json",
+    "papel": "tiles de Perron / Rouche de K no disco / simbolo de K / parte livre",
+    "tamanho": 39708,
+    "sha256": "f7e35e6ceae52031f1b178bc14e1a076ebcbc220ab09a15f90228fbfb57dc031",
     "notebook": true,
     "laboratorio2": [],
     "status": "ok"
    },
    {
-    "caminho": "build/tiles_rig/tile-0_2-r0_04.log",
-    "papel": "tiles de Perron / simbolo de K",
-    "tamanho": 315,
-    "sha256": "aaa0d8c75470d25a8589124f319000e2007106ebcac7f07ecfd036d5a8c5c2ac",
+    "caminho": "build/s3b/rouche_K_contagem_20x80.json",
+    "papel": "tiles de Perron / Rouche de K no disco / simbolo de K / parte livre",
+    "tamanho": 1550,
+    "sha256": "ec901c24637511a737bb05fd10f9ca08736406d7253b697212e87f1399d75174",
     "notebook": true,
     "laboratorio2": [],
     "status": "ok"
    },
    {
     "caminho": "build/spectrum/symbol-K-1024x2048.json",
-    "papel": "tiles de Perron / simbolo de K",
+    "papel": "tiles de Perron / Rouche de K no disco / simbolo de K / parte livre",
     "tamanho": 287,
     "sha256": "2b5d68edf68e6d9f713340e27226a6f85399a6eedd43d305b34afd2c51e8efc4",
     "notebook": true,
@@ -2109,9 +2135,18 @@
    },
    {
     "caminho": "build/spectrum/symbol-K-1024x2048.log",
-    "papel": "tiles de Perron / simbolo de K",
+    "papel": "tiles de Perron / Rouche de K no disco / simbolo de K / parte livre",
     "tamanho": 804,
     "sha256": "7b3f81f60f7114bbe23e84730abbd6bb9f8db2aad05338e11df621e926bbc874",
+    "notebook": true,
+    "laboratorio2": [],
+    "status": "ok"
+   },
+   {
+    "caminho": "build/spectrum/free-part-toro.json",
+    "papel": "tiles de Perron / Rouche de K no disco / simbolo de K / parte livre",
+    "tamanho": 1748,
+    "sha256": "08a6c2b9814031d446de8f10cb9acfdd963a3fe0dc2508ed28bb19dd5708ad23",
     "notebook": true,
     "laboratorio2": [],
     "status": "ok"

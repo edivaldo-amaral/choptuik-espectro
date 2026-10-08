@@ -238,8 +238,32 @@ def check_script_json(cmd, saida_rel, chaves):
     return rc == 0 and all(iguais.values()), dict(tempo_s=t, iguais=iguais)
 
 
+def check_deflacao_q():
+    """Brauer (secao 5.2 do artigo): q(s) = (s + d0(1 + e00))(s - mu + d1(1 + e11)) - d0 d1 e01 e10 nao se anula em
+    Re s >= 0. Cota em racionais com |e_ij| <= ||phi_i|| (||P_Z(x_j - x_j^A)|| + arredondamento), dados de
+    schur.json (defl_refA), E.json de S4 (erro de g*) e o erro de d_tau RefB (gauge_refB), |mu - mu_A| <= 3,9e-11
+    (revisao do artigo, 08/10, E-2)."""
+    from fractions import Fraction as Fr
+    t0 = time.time()
+    d = json.loads((RAIZ/'build/rouche_L_rig/z/lab2/schur.json').read_text())['defl_refA']
+    eE = json.loads((RAIZ/'build/s4/rig/E.json').read_text())['e']
+    unit = 2.0**-53
+    errZ = [1.4563e-09 + 1e-60 + unit*d['norma_x'][0]*10, eE + unit*d['norma_x'][1]*10]
+    e = max(Fr(nphi)*Fr(err) for nphi in d['norma_phi'] for err in errZ)
+    d0, d1 = Fr(d['delta'][0]), Fr(d['delta'][1])
+    dmu = Fr(39, 10**12)
+    f0 = d0*(1 - e)                       # |s + d0(1 + e00)| em Re s >= 0
+    f1 = d1*(1 - e) - (d1 - 1) - dmu      # |s - mu + d1(1 + e11)|, com mu <= mu_A + dmu e d1 = 1 + mu_A
+    cota = f0*f1 - d0*d1*e*e
+    return cota > 0, dict(tempo_s=round(time.time() - t0, 3), e_max=float(e), min_q=float(cota))
+
+
 def check_s3a():
-    rc, out, t = roda([PY, '-W', 'ignore', 'scripts/check_cover.py', 'build/cobertura_lab', 'build/cobertura_local'])
+    # o disco excluido e o do Rouche de K (rho = 0,05, build/s3b/rouche_K_circ.json); o padrao de check_cover (1/8)
+    # deixava a coroa 0,05 <= |s - 0,401| < 1/8 sem conferencia (revisao do artigo, 08/10, E-1)
+    rk = json.loads((RAIZ/'build/s3b/rouche_K_circ.json').read_text())
+    rc, out, t = roda([PY, '-W', 'ignore', 'scripts/check_cover.py', 'build/cobertura_lab', 'build/cobertura_local',
+                       '--disco', f"{rk['c']},{rk['rho']}"])
     linhas = out.strip().splitlines()
     ok = rc == 0 and any('COMPLETA' in l for l in linhas)
     return ok, dict(tempo_s=t, saida=linhas[-4:])
@@ -321,6 +345,9 @@ CHECKS = {
     'F1': lambda: check_script_json([PY, 'scripts/gauge_global_centro.py'], 'build/t2/gauge_global_centro.json',
                                     ['c1_re', 'c1_im', 'cota_inferior', 'certificado', 'c1_cone_re', 'c1_cone_im', 'certificado_cone']),
     'R5': lambda: check_script_json([PY, 'scripts/radius_recovery_geral.py'], 'build/t2/radius_recovery_geral.json', ['linhas']),
+    'deflacao_q': check_deflacao_q,
+    'beta_plus': lambda: check_script_json([PY, 'scripts/independent_component_beta.py', '--out', 'build/t2/beta_plus.json'],
+                                           'build/t2/beta_plus.json', ['beta_eta', 'beta_eta_le_5191_500', 'sharp_beta']),
     'testemunho_s3b': lambda: check_etapa('build/s3b/rig', 'nk_L3_D.py', 'D.json', ['c_ref', 'perda', 'folga', 'certificado']),
     'testemunho_raizB': lambda: check_etapa('build/faixaB/nk', 'nk_L3_D.py', 'D.json', ['c_ref', 'perda', 'folga', 'certificado']),
     'identificacao_s4': lambda: check_etapa('build/s4/rig', 'nk_L3_E.py', 'E.json', ['dist', 'r', 'identificado']),

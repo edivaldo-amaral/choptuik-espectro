@@ -1,0 +1,18 @@
+10.1007/s00220-019-03413-8 | Choptuik’s Critical Spacetime Exists | Communications in Mathematical Physics | v 368 | n 1 | p 143-186 | [2019, 5] | Reiterer M, Trubowitz E
+10.1103/PhysRevLett.70.9 | Universality and scaling in gravitational collapse of a massless scalar field | Physical Review Letters | v 70 | n 1 | p 9-12 | [1993, 1, 4] | Choptuik M
+10.1103/PhysRevD.55.695 | Understanding critical collapse of a scalar field | Physical Review D | v 55 | n 2 | p 695-713 | [1997, 1, 15] | Gundlach C
+10.1103/PhysRevLett.74.5170 | Critical Behavior in Gravitational Collapse of Radiation Fluid: A Renormalization Group (Linear Perturbation)  | Physical Review Letters | v 74 | n 26 | p 5170-5173 | [1995, 6, 26] | Koike T, Hara T, Adachi S
+10.1109/TC.2017.2690633 | Arb: Efficient Arbitrary-Precision Midpoint-Radius Interval Arithmetic | IEEE Transactions on Computers | v 66 | n 8 | p 1281-1292 | [2017, 8, 1] | Johansson F
+10.1103/PhysRevD.68.024011 | Global structure of Choptuik’s critical solution in scalar field collapse | Physical Review D | v 68 | n 2 | p 024011 | [2003, 7, 7] | Martín-García J, Gundlach C
+10.1070/SM1971v013n04ABEH003702 | AN OPERATOR GENERALIZATION OF THE LOGARITHMIC RESIDUE THEOREM AND THE THEOREM OF ROUCHÉ | Mathematics of the USSR-Sbornik | v 13 | n 4 | p 603-625 | [1971, 4, 30] | Gohberg I, Sigal E
+10.1007/978-981-13-7669-6 | Numerical Verification Methods and Computer-Assisted Proofs for Partial Differential Equations | Springer Series in Computational Mathema | v None | n None | p None | [2019] | Nakao M, Plum M, Watanabe Y
+10.1007/s10543-006-0056-1 | Verification of Positive Definiteness | BIT Numerical Mathematics | v 46 | n 2 | p 433-452 | [2006, 6] | Rump S
+10.1137/1.9780898718027 | Accuracy and Stability of Numerical Algorithms |  | v None | n None | p None | [2002, 1, 1] | Higham N
+10.12942/lrr-2007-5 | Critical Phenomena in Gravitational Collapse | Living Reviews in Relativity | v 10 | n 1 | p 5 | [2007, 12] | Gundlach C, Martín-García J
+10.1103/PhysRevD.59.064031 | All nonspherical perturbations of the Choptuik spacetime decay | Physical Review D | v 59 | n 6 | p 064031 | [1999, 2, 25] | Martín-García J, Gundlach C
+10.1103/PhysRevD.68.044007 | Critical collapse of the massless scalar field in axisymmetry | Physical Review D | v 68 | n 4 | p 044007 | [2003, 8, 7] | Choptuik M, Hirschmann E, Liebling S, Pretorius F
+10.1103/PhysRevD.19.2268 | Gauge-invariant perturbations on most general spherically symmetric space-times | Physical Review D | v 19 | n 8 | p 2268-2272 | [1979, 4, 15] | Gerlach U, Sengupta U
+10.1007/BF01205930 | The problem of a self-gravitating scalar field | Communications in Mathematical Physics | v 105 | n 3 | p 337-361 | [1986, 9] | Christodoulou D
+10.1002/cpa.3160440305 | The formation of black holes and singularities in spherically symmetric gravitational collapse | Communications on Pure and Applied Mathe | v 44 | n 3 | p 339-373 | [1991, 4] | Christodoulou D
+10.1002/cpa.3160460803 | Bounded variation solutions of the spherically symmetric einstein‐scalar field equations | Communications on Pure and Applied Mathe | v 46 | n 8 | p 1131-1220 | [1993, 9] | Christodoulou D
+10.1090/S0273-0979-1982-15008-X | A computer-assisted proof of the Feigenbaum conjectures | Bulletin of the American Mathematical So | v 6 | n 3 | p 427-435 | [1982, 5, 1] | Lanford III O
