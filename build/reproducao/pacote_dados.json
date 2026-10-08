@@ -7,130 +7,233 @@
    "papel": "matriz de referencia A (Z = 32x128, deflacao de Brauer de fase e mu; n = 14016)",
    "sha256": "70791ce0c30f8065f93770c36ff89c1d8290978c5abf84ab0570313bc09fd002",
    "bytes": 3143172224,
-   "origem": "laboratorio2:build/rouche_L/A.npy (copias identicas no PC do laboratorio); reconstruida dos dados de RT, identica bit a bit (build/reproducao/nivel2_A.json)"
+   "origem": "laboratorio2:build/rouche_L/A.npy (copias identicas no PC do laboratorio); reconstruida dos dados de RT, identica bit a bit (build/reproducao/nivel2_A.json)",
+   "zenodo": {
+    "arquivo": "A.npy",
+    "md5": "e4c01db997f4630f95c6f72a6ba5d442"
+   }
   },
   {
    "arquivo": "rouche_L/T.npy",
    "papel": "fator triangular da decomposicao de Schur A = U T U*",
    "sha256": "875c67361369e875af80c8912f69a88927acc8face7a073d420be4fd69f83fb6",
    "bytes": 3143172224,
-   "origem": "laboratorio2:build/rouche_L/T.npy"
+   "origem": "laboratorio2:build/rouche_L/T.npy",
+   "zenodo": {
+    "arquivo": "T.npy",
+    "md5": "46cb56051ec6e0f8a467e02611c9c11b"
+   }
   },
   {
    "arquivo": "rouche_L/U.npy",
    "papel": "fator unitario da decomposicao de Schur (residuo certificado: build/rouche_L_rig/contagem.json, refeito identico em build/reproducao/nivel2_contagem.json)",
    "sha256": "a962b23cb47db2f932fadc9e7f2d3624ed057012fcf29d647109131f5d59ac21",
    "bytes": 3143172224,
-   "origem": "laboratorio2:build/rouche_L/U.npy"
+   "origem": "laboratorio2:build/rouche_L/U.npy",
+   "zenodo": {
+    "partes": [
+     {
+      "arquivo": "U.npy.part00",
+      "md5": "23d33a29427e592e34382d231017a037"
+     },
+     {
+      "arquivo": "U.npy.part01",
+      "md5": "7e8557b365592019e7df320be339673a"
+     },
+     {
+      "arquivo": "U.npy.part02",
+      "md5": "2b4c8e1d9f77bbf63b3acf79286263b3"
+     },
+     {
+      "arquivo": "U.npy.part03",
+      "md5": "70370ac156a3ca59f5dbddf4194b05eb"
+     },
+     {
+      "arquivo": "U.npy.part04",
+      "md5": "4037c5069ab6f752d60e1bb40042d172"
+     },
+     {
+      "arquivo": "U.npy.part05",
+      "md5": "c4367d16df3fc7d7b91cadd17ded2f49"
+     }
+    ],
+    "remontar": "cat U.npy.part0* > U.npy; conferir o sha256"
+   }
   },
   {
    "arquivo": "rouche_L/defl.npy",
    "papel": "vetores de deflacao",
    "sha256": "d86df4108be5699f7740adae7c8cf0e63688840a713d8fc5281c4c0aa2731ad5",
    "bytes": 897184,
-   "origem": "laboratorio2:build/rouche_L/defl.npy"
+   "origem": "laboratorio2:build/rouche_L/defl.npy",
+   "zenodo": {
+    "arquivo": "defl.npy",
+    "md5": "53467d342b0d919243a166e22c49b078"
+   }
   },
   {
    "arquivo": "rouche_L/schur.json",
    "papel": "parametros da referencia e dados da deflacao",
    "sha256": "122606360ef3f426cab7486192ea3985ca8e80c9e606c7c7319775b10d702c43",
    "bytes": null,
-   "origem": "laboratorio2:build/rouche_L/schur.json"
+   "origem": "laboratorio2:build/rouche_L/schur.json",
+   "zenodo": {
+    "arquivo": "schur.json",
+    "md5": "808193dde881e7a2838bc3d5fc0b053b"
+   }
   },
   {
    "arquivo": "F/F_+0_0000-0_2500i.npy",
    "papel": "fator de posto baixo F do disco (certificado em certF_*.json)",
    "sha256": "03a0b6a53b1011f9bf5ed648ecc8f1fbe9c0e5a16a073528f8550aa7680fff3d",
    "bytes": 594278528,
-   "origem": "notebook:build/rouche_L_rig/F/F_+0_0000-0_2500i.npy; laboratorio2:build/rouche_L/F_+0_0000-0_2500i.npy"
+   "origem": "notebook:build/rouche_L_rig/F/F_+0_0000-0_2500i.npy; laboratorio2:build/rouche_L/F_+0_0000-0_2500i.npy",
+   "zenodo": {
+    "arquivo": "F_+0_0000-0_2500i.npy",
+    "md5": "197f4ba7b37452db7b9d5e4326e64f65"
+   }
   },
   {
    "arquivo": "F/F_+3_0000+0_0000i.npy",
    "papel": "fator de posto baixo F do disco (certificado em certF_*.json)",
    "sha256": "21c8ef91dbd036ea3e6727ca7e2e112b6988932d697337273ead73ad99e86fc2",
    "bytes": 594278528,
-   "origem": "notebook:build/rouche_L_rig/F/F_+3_0000+0_0000i.npy; laboratorio2:build/certF_extra/F_+3_0000+0_0000i.npy"
+   "origem": "notebook:build/rouche_L_rig/F/F_+3_0000+0_0000i.npy; laboratorio2:build/certF_extra/F_+3_0000+0_0000i.npy",
+   "zenodo": {
+    "arquivo": "F_+3_0000+0_0000i.npy",
+    "md5": "2401444f6e97d7653cab3040b9a8c7a6"
+   }
   },
   {
    "arquivo": "F/F_+2_5000+0_0000i.npy",
    "papel": "fator de posto baixo F do disco (certificado em certF_*.json)",
    "sha256": "3fd05c4c485eb34b5ae43e9ef1e322615e2b510d9897e8139e0399f49d81a918",
    "bytes": 594278528,
-   "origem": "notebook:build/rouche_L_rig/F/F_+2_5000+0_0000i.npy; laboratorio2:build/certF_extra/F_+2_5000+0_0000i.npy"
+   "origem": "notebook:build/rouche_L_rig/F/F_+2_5000+0_0000i.npy; laboratorio2:build/certF_extra/F_+2_5000+0_0000i.npy",
+   "zenodo": {
+    "arquivo": "F_+2_5000+0_0000i.npy",
+    "md5": "50c1f4af5f10bf1c4821379fa779abed"
+   }
   },
   {
    "arquivo": "F/F_+0_0000+0_2500i.npy",
    "papel": "fator de posto baixo F do disco (certificado em certF_*.json)",
    "sha256": "4c7a7517cb4c15e5b45062632a6654438c68ae6d7844b0e56f21d0d64ac3c8a8",
    "bytes": 594278528,
-   "origem": "notebook:build/rouche_L_rig/F/F_+0_0000+0_2500i.npy; laboratorio2:build/rouche_L/F_+0_0000+0_2500i.npy"
+   "origem": "notebook:build/rouche_L_rig/F/F_+0_0000+0_2500i.npy; laboratorio2:build/rouche_L/F_+0_0000+0_2500i.npy",
+   "zenodo": {
+    "arquivo": "F_+0_0000+0_2500i.npy",
+    "md5": "d94e64767359e16144d1cc13e1ed3d84"
+   }
   },
   {
    "arquivo": "F/F_+1_0000+0_0000i.npy",
    "papel": "fator de posto baixo F do disco (certificado em certF_*.json)",
    "sha256": "666eee373c74da4dfe03f8bfe9c0597d4031ea0966b6a5b946175d67c3825f03",
    "bytes": 594278528,
-   "origem": "notebook:build/rouche_L_rig/F/F_+1_0000+0_0000i.npy; laboratorio2:build/certF_extra/F_+1_0000+0_0000i.npy"
+   "origem": "notebook:build/rouche_L_rig/F/F_+1_0000+0_0000i.npy; laboratorio2:build/certF_extra/F_+1_0000+0_0000i.npy",
+   "zenodo": {
+    "arquivo": "F_+1_0000+0_0000i.npy",
+    "md5": "88ffe130465300e130d24d7d873c08a1"
+   }
   },
   {
    "arquivo": "F/F_+0_5500+0_2500i.npy",
    "papel": "fator de posto baixo F do disco (certificado em certF_*.json)",
    "sha256": "75716f46318539462cbaa5e14084478e75432d68b7f32541d2e11a48036ea901",
    "bytes": 594278528,
-   "origem": "notebook:build/rouche_L_rig/F/F_+0_5500+0_2500i.npy; laboratorio2:build/certF_extra/F_+0_5500+0_2500i.npy"
+   "origem": "notebook:build/rouche_L_rig/F/F_+0_5500+0_2500i.npy; laboratorio2:build/certF_extra/F_+0_5500+0_2500i.npy",
+   "zenodo": {
+    "arquivo": "F_+0_5500+0_2500i.npy",
+    "md5": "1533a74ea2cd0fd79d037d3bc44128b5"
+   }
   },
   {
    "arquivo": "F/F_+0_0000+0_0000i.npy",
    "papel": "fator de posto baixo F do disco (certificado em certF_*.json)",
    "sha256": "75f8bc16c9b2b72b63e47759c5c39863029515f271414694027e2a23ae4dc5b9",
    "bytes": 594278528,
-   "origem": "notebook:build/rouche_L_rig/F/F_+0_0000+0_0000i.npy; laboratorio2:build/rouche_L/F_+0_0000+0_0000i.npy"
+   "origem": "notebook:build/rouche_L_rig/F/F_+0_0000+0_0000i.npy; laboratorio2:build/rouche_L/F_+0_0000+0_0000i.npy",
+   "zenodo": {
+    "arquivo": "F_+0_0000+0_0000i.npy",
+    "md5": "9f317bdc430c4a8553a519f9644cb149"
+   }
   },
   {
    "arquivo": "F/F_+2_0000+0_0000i.npy",
    "papel": "fator de posto baixo F do disco (certificado em certF_*.json)",
    "sha256": "a20febe1500d6c75100a6f90417716f41ca68e28a8aab12da342e7cb153c99bf",
    "bytes": 594278528,
-   "origem": "notebook:build/rouche_L_rig/F/F_+2_0000+0_0000i.npy; laboratorio2:build/certF_extra/F_+2_0000+0_0000i.npy"
+   "origem": "notebook:build/rouche_L_rig/F/F_+2_0000+0_0000i.npy; laboratorio2:build/certF_extra/F_+2_0000+0_0000i.npy",
+   "zenodo": {
+    "arquivo": "F_+2_0000+0_0000i.npy",
+    "md5": "86b1fa7eb344b5e6133d5b5f36552e36"
+   }
   },
   {
    "arquivo": "F/F_+1_5000+0_0000i.npy",
    "papel": "fator de posto baixo F do disco (certificado em certF_*.json)",
    "sha256": "e0eca8a55d64cce86f57118ab26e3f534e7a0b006b690836deb80859be6f3231",
    "bytes": 594278528,
-   "origem": "notebook:build/rouche_L_rig/F/F_+1_5000+0_0000i.npy; laboratorio2:build/certF_extra/F_+1_5000+0_0000i.npy"
+   "origem": "notebook:build/rouche_L_rig/F/F_+1_5000+0_0000i.npy; laboratorio2:build/certF_extra/F_+1_5000+0_0000i.npy",
+   "zenodo": {
+    "arquivo": "F_+1_5000+0_0000i.npy",
+    "md5": "a9d9e46db377c9dd308a0bc23ac9dcc3"
+   }
   },
   {
    "arquivo": "F/F_+0_5500-0_2500i.npy",
    "papel": "fator de posto baixo F do disco (certificado em certF_*.json)",
    "sha256": "f348b31153bad908ca98c4340c668c478335f60f9e49bdc767fccc88054f2388",
    "bytes": 594278528,
-   "origem": "notebook:build/rouche_L_rig/F/F_+0_5500-0_2500i.npy"
+   "origem": "notebook:build/rouche_L_rig/F/F_+0_5500-0_2500i.npy",
+   "zenodo": {
+    "arquivo": "F_+0_5500-0_2500i.npy",
+    "md5": "216dc3cb1c8a3ac546151ecc1c1ff8f6"
+   }
   },
   {
    "arquivo": "F/F_+0_0000+0_7500i.npy",
    "papel": "fator de posto baixo F do disco (certificado em certF_*.json)",
    "sha256": "5cebfbd7ba51467d5e3372a0e53a483a8b7f8defe4dd527151abd8cda1925bf1",
    "bytes": 594278528,
-   "origem": "laboratorio2:build/rouche_L_v2/F_+0_0000+0_7500i.npy"
+   "origem": "laboratorio2:build/rouche_L_v2/F_+0_0000+0_7500i.npy",
+   "zenodo": {
+    "arquivo": "F_+0_0000+0_7500i.npy",
+    "md5": "4e87c24fbdb9d8f5bda3f96deca17f33"
+   }
   },
   {
    "arquivo": "F/F_+0_5500+0_7500i.npy",
    "papel": "fator de posto baixo F do disco (certificado em certF_*.json)",
    "sha256": "c7d6d61a938a863d45164ffb399c6f1e39930aa8143ded75ccea76754832ad58",
    "bytes": 594278528,
-   "origem": "laboratorio2:build/rouche_L_v2/F_+0_5500+0_7500i.npy"
+   "origem": "laboratorio2:build/rouche_L_v2/F_+0_5500+0_7500i.npy",
+   "zenodo": {
+    "arquivo": "F_+0_5500+0_7500i.npy",
+    "md5": "f42cb90948a66f9f02dbb21fc494cf4f"
+   }
   },
   {
    "arquivo": "F/F_+0_0000+0_5000i.npy",
    "papel": "fator de posto baixo F do disco (certificado em certF_*.json)",
    "sha256": "f9e76bc45f71fa43e576f8064579ef5d4b8093cbe3b5f2723e151b367b84c900",
    "bytes": 594278528,
-   "origem": "laboratorio2:build/rouche_L_v2/F_+0_0000+0_5000i.npy"
+   "origem": "laboratorio2:build/rouche_L_v2/F_+0_0000+0_5000i.npy",
+   "zenodo": {
+    "arquivo": "F_+0_0000+0_5000i.npy",
+    "md5": "ee49403cc5a34d64aca0fedf87e1f25c"
+   }
   }
  ],
  "tambem": [
   "trilha bruta das revisoes: .codex-runs/**/*.log",
   "snapshots das revisoes: .snapshots/**/sources.tar.gz"
- ]
+ ],
+ "zenodo": {
+  "doi": "10.5281/zenodo.23222363",
+  "id": 23222363,
+  "estado": "rascunho (nao publicado) ate o artigo",
+  "arquivos": 24
+ }
 }

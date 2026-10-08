@@ -19,6 +19,14 @@
 6. **Trilha de revisões:** como sugerido (TAREFA, RELATORIO e scripts; os logs brutos e os snapshots vão
    para o Zenodo).
 
+## Estado (07/10/2026)
+
+- **GitHub (privado):** https://github.com/edivaldo-amaral/choptuik-espectro. Tem um único commit
+  inicial, feito da árvore limpa (`scripts/exporta_publico.py`).
+- **Para atualizar:** `scripts/atualiza_publico.sh`. Ele exporta, sincroniza com o clone
+  `~/choptuik-publico` e mostra o diff; o commit e o push são feitos à mão, depois da revisão.
+- **Tornar público:** só quando o artigo for ao arXiv, por decisão explícita do autor.
+
 ## O que já está pronto
 
 - o inventário alegação → artefato (`docs/REPRODUCAO_MAPA.md`, `scripts/inventario_certificados.py`; o

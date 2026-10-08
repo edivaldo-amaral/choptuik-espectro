@@ -76,7 +76,9 @@ arquivos. O artigo é Reiterer & Trubowitz, *Choptuik's critical spacetime exist
 - **Resíduo de Schur** (ε_R, ε_G, ε_B e os zeros em Ω), refeito a partir de A, T e U: **idêntico**
   (`build/reproducao/nivel2_contagem.json`, no laboratorio2). T e U são dados; o certificado é o
   resíduo.
-- **Cauda T3 do centro 3,0,** refeita do zero com `nk_L3_T.py --rouche`: em curso no PC do laboratório.
+- **Cauda T3 do centro 3,0** (as 26 janelas fortes por Loewner e o nível far, 5,3 h), refeita do zero com
+  `nk_L3_T.py --rouche`: **idêntica** à gravada, com diferença relativa zero em todos os campos
+  (`build/reproducao/nivel2_T3_3_0.json`, no PC do laboratório).
 
 **O que só o nível 2 recalcula:**
 - os símbolos em Arb (as faixas);
