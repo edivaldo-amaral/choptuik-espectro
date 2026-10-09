@@ -1,0 +1,130 @@
+\section{Resultado principal}\label{sec:main}
+
+Em todo o texto, $(\gbar,\phibar)$ denota a solução das equações de Einstein--campo escalar
+$\operatorname{Ric}_{g}=2\,d\phi\otimes d\phi$, $\Box_{g}\phi=0$ construída por Reiterer e
+Trubowitz~\cite{RT2019} na variedade esfericamente simétrica $\Mhat$ da \cref{sec:setting}, com
+constante de autossimilaridade $K\approx 1.7227$ e constante de reescala nula $\mu\approx 0.16831$ (ambas conhecidas
+com $80$ dígitos). Como em~\cite{RT2019}, nós a chamamos de \emph{espaço-tempo de Choptuik}. A autossimilaridade
+discreta $\Theta$ age por $\tau\mapsto\tau+2\pi$ nas coordenadas $(\tau,\xi)$ de RT, reescala os comprimentos por
+$e^{-K}$ e inverte o sinal de $\phibar$; o período completo do fundo é, portanto, $\Theta^{2}$, isto é,
+$\tau\mapsto\tau+4\pi$.
+
+Uma perturbação é \emph{do tipo de Floquet com expoente $s\in\C$} se ela é $e^{s\tau}$ vezes um perfil
+$4\pi$-periódico em $\tau$ (\cref{def:physical-mode}). Como $e^{i\tau/2}$ é ele próprio $4\pi$-periódico, o
+expoente só está definido módulo $\tfrac{i}{2}\Z$; chamamos as classes de $\C/\tfrac{i}{2}\Z$ de \emph{classes de
+Floquet}, e contamos tudo por classe. Em termos do tempo logarítmico $T$, no qual $\Theta$ é a
+translação por $K$, o fator $e^{s\tau}$ é $e^{\lambda T}$ com
+\begin{equation}\label{eq:lambda}
+  \lambda=\frac{2\pi s}{K}.
+\end{equation}
+
+A família $L(s)$, $s\in\C$, é a linearização do sistema de Reiterer--Trubowitz em torno do fundo,
+agindo sobre perfis de Floquet (\cref{def:L}); $C(s)$ é a aplicação de vínculos linearizada correspondente. Os
+modos de Floquet físicos e as transformações de gauge são definidos na \cref{sec:physical}
+(\cref{def:physical-mode,def:gauge}).
+
+\begin{mainthm}
+Seja $(\gbar,\phibar)$ o espaço-tempo de Choptuik de~\cite{RT2019}. Considere perturbações lineares
+esfericamente simétricas do tipo de Floquet, com $L$ realizado em $\Yp$ ou, de modo equivalente na região considerada,
+no espaço do toro (\cref{sec:setting-realizations}); modos físicos na classe de regularidade da \cref{def:physical-mode},
+suaves em $\tau$ e analíticos reais em $\xi$ até o cone de luz e através dele; e transformações de gauge como na
+\cref{def:gauge}.
+\begin{enumerate}[label=\textup{(\arabic*)},leftmargin=*]
+\item \textbf{Raízes de $L$.} Módulo $\tfrac{i}{2}\Z$, as raízes de $L$ no semiplano $\Re s>0$, contadas
+  com multiplicidade algébrica, são exatamente quatro. Cada uma delas é algebricamente simples e tem um
+  representante real:
+  \begin{center}
+  \begin{tabular}{@{}lll@{}}
+  \toprule
+  raiz & localização certificada & autovetor de $L$ \\
+  \midrule
+  $s=\mu$ & $\mu=0.168307078963\ldots$ (exato) & $g_*=(1+Z)\omegabar$, gauge puro \\
+  $s=\sB$ & $|\sB-0.0414194105|\le 3.7\cdot10^{-5}$ & viola os vínculos \\
+  $s=\sK$ & $|\sK-0.401024733|\le 1.72\cdot10^{-4}$ & viola os vínculos \\
+  $s=\sphys$ & $\sphys\in[0.73316949,\ 0.73318983]$ & satisfaz os vínculos \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+  No eixo imaginário, a única raiz de $L$ é $s\equiv 0$; ela é algebricamente simples, com autovetor
+  $\partial_\tau\omegabar$, a translação infinitesimal da fase.
+\item \textbf{Modos físicos.} O espaço dos modos de Floquet físicos com $\Re s>0$, módulo gauge, tem
+  dimensão um: ele consiste nos modos com expoente $\sphys$, e não há modos generalizados
+  \textup{(}cadeias de Jordan\textup{)} de comprimento $\ge2$. Se o cone de luz passado da singularidade é mantido fixo
+  (\cref{def:conefixed}), o quociente pelo grupo menor das transformações de gauge que preservam o cone tem
+  dimensão dois: a classe adicional tem expoente $\mu$ e é tangente à família a um parâmetro de
+  soluções exatas obtida transladando o ponto singular, todas isométricas a
+  $(\gbar,\phibar)$. Ela não é, portanto, uma segunda instabilidade da solução crítica, mas o efeito de
+  fixar o instante da singularidade.
+\end{enumerate}
+\end{mainthm}
+
+Aqui $Z=\mu^{-1}\partial_\tau+\xi\partial_\xi$. O autovetor $g_*$ é um perfil; o modo de Floquet correspondente
+$e^{\mu\tau}g_*$ é a derivada de Lie do fundo ao longo de $X_0=\partial_{u_-}+\partial_{u_+}=e^{\mu\tau}(\mu^{-1}\partial_\tau+\xi\partial_\xi)$,
+o gerador das translações do ponto singular $(u_-,u_+)=(0,0)$ (\cref{lem:cone}).
+
+\begin{remark}[O expoente crítico]\label{rem:gamma}
+Por~\eqref{eq:lambda} e pelo valor de $K$ de~\cite{RT2019}, o único modo físico instável cresce como
+$e^{\lambda T}$ com
+\[
+  \lambda=\frac{2\pi\sphys}{K}\in[2.674040,\ 2.674115],\qquad
+  \frac{1}{\lambda}\in[0.373955,\ 0.373966].
+\]
+O argumento de escala do colapso crítico relaciona um único modo instável ao expoente de escala da massa por
+$\gamma=1/\lambda$~\cite{KoikeHaraAdachi1995,Gundlach1997}. Choptuik mediu $\gamma\approx0.37$ nas suas
+simulações~\cite{Choptuik1993}. Gundlach calculou o modo instável por teoria de perturbações numérica e encontrou
+$\lambda_1=-2.674\pm0.009$, logo $\gamma=-1/\lambda_1=0.374\pm0.001$~\cite{Gundlach1997}; o sinal é o da sua
+variável de tempo, na qual o modo que cresce tem expoente negativo, de modo que o seu $-\lambda_1$ corresponde ao nosso
+$\lambda$. O nosso intervalo está dentro da barra de erro dele. Essa concordância é uma conferência externa, não parte do
+teorema: o argumento de escala diz respeito à evolução não linear, que não estudamos.
+\end{remark}
+
+\begin{remark}[O que se afirma e o que não se afirma]\label{rem:scope}
+\begin{enumerate}[label=(\alph*),leftmargin=*]
+\item O teorema é \emph{espectral}: ele conta modos de Floquet das equações linearizadas. Não afirma
+  nada sobre o semigrupo da evolução linearizada, nem sobre a dinâmica não linear.
+\item Só são consideradas perturbações esfericamente simétricas. As perturbações não esféricas são discutidas
+  na \cref{sec:discussion}.
+\item Os modos físicos são tomados na classe da \cref{def:physical-mode}: suaves em $\tau$ e analíticos
+  reais em $\xi$, com uma vizinhança complexa uniforme em $\tau$. A dependência apenas suave em $\xi$
+  através do cone de luz e no eixo não é coberta (\cref{sec:discussion}).
+\item Reiterer e Trubowitz provam a existência de $(\gbar,\phibar)$ perto dos seus dados numéricos; a unicidade
+  local não é enunciada formalmente em~\cite{RT2019}. O teorema trata da solução deles.
+\item As raízes de $L$ que violam os vínculos não são físicas: as soluções correspondentes da
+  parte de evolução do sistema não resolvem as equações de Einstein. A raiz $\mu$ é um efeito de coordenadas
+  do cone de luz móvel: o seu modo é gauge puro, e ele sobrevive apenas no quociente pelo grupo menor
+  das transformações de gauge que preservam o cone, que é a segunda contagem em~(2).
+\end{enumerate}
+\end{remark}
+
+\begin{remark}[Modos neutros]\label{rem:neutral}
+A parte~(1) no eixo imaginário diz respeito apenas às raízes de $L$. Em $s=0$ há mais duas simetrias exatas
+das equações, a mudança de escala global $\delta g=2\gbar$ e o deslocamento $\delta\phi=\mathrm{const}$,
+que são perturbações físicas com $\delta\omega=0$ e, portanto, invisíveis para $L$. Os lemas de gauge e de
+reconstrução da \cref{sec:physical} são provados apenas para $\Re s>0$, de modo que a parte~(2) não tem análogo no
+eixo.
+\end{remark}
+
+\begin{remark}[Dependência do cálculo]\label{rem:computation}
+A prova é assistida por computador em dois lugares: a existência do fundo com cotas explícitas, que
+tomamos de~\cite{RT2019}, e as cotas das \cref{sec:counting,sec:roots}, que são novas. Todas as
+últimas são produzidas em aritmética intervalar (Arb~\cite{Arb}) ou em aritmética racional exata, ou como cotas
+a posteriori sobre cálculos em ponto flutuante com controle rigoroso do arredondamento. Os certificados, o programa
+de verificação e os dados estão disponíveis publicamente (\cref{sec:computation}).
+\end{remark}
+
+\subsection{Estrutura da prova}\label{sec:main-structure}
+A prova tem três camadas.
+\begin{enumerate}[label=(\roman*),leftmargin=*]
+\item \emph{Geometria} (\cref{sec:physical}). Todo modo de Floquet físico com $\Re s>0$ pode ser posto, por uma
+  transformação de gauge, na forma usada por Reiterer e Trubowitz, e então corresponde a um elemento de
+  $\ker L(s)\cap\ker C(s)$; reciprocamente, todo elemento desses vem de um modo físico. Os únicos modos de gauge
+  com $\Re s>0$ são os múltiplos de $e^{\mu\tau}g_*$ (\cref{lem:gauge}). Isso reduz a
+  parte~(2) à parte~(1), junto com o comportamento dos vínculos em cada espaço de raízes.
+\item \emph{Contagem} (\cref{sec:counting}). O número de raízes de $L$ no semiplano direito é
+  calculado por uma versão para operadores do teorema de Rouch\'e com uma referência de dimensão finita, após uma
+  deflação de posto dois (de Brauer) das duas raízes de gauge $0$ e $\mu$.
+\item \emph{Identificação} (\cref{sec:roots}). Cada raiz é localizada, e mostra-se que é simples, por um
+  argumento de Newton--Kantorovich, e mostra-se que o seu autovetor ou viola os vínculos (por uma
+  cota inferior explícita), ou é gauge puro, ou, no caso de $\sphys$, os satisfaz em todo o espaço de raízes
+  (pela injetividade do operador de propagação dos vínculos $K$).
+\end{enumerate}

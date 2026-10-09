@@ -1,0 +1,172 @@
+\section{Cálculo rigoroso e reprodutibilidade}\label{sec:computation}
+
+Esta seção descreve em que consistem as partes da prova assistidas por computador, em que é preciso confiar e como
+um leitor pode conferi-las.
+
+\subsection{Aritmética e base de confiança}\label{sec:computation-arith}
+
+Três tipos de cálculo entram nos certificados.
+\begin{enumerate}[label=(\alph*),leftmargin=*]
+\item \emph{Aritmética racional exata} (o módulo \texttt{fractions} do Python): as desigualdades finais de todo
+  certificado, a saber, as condições de Perron $Nv\le\theta v$ com $\theta<1$ do
+  \cref{lem:perron}, as condições de Newton--Kantorovich da \cref{sec:roots-nk}, as coberturas dos contornos e
+  da região da \cref{prop:Kinj}, o polinômio de deflação $q$ e o fato F1.
+\item \emph{Aritmética de bolas} com Arb~\cite{Arb}, por meio do \texttt{python-flint}: as cotas dos símbolos do
+  \cref{lem:F3} e a folga entre os pontos da grade.
+\item \emph{Cotas a posteriori sobre cálculos em ponto flutuante.} A álgebra linear de grande porte (dimensão $14016$ para a
+  referência finita, janelas de dimensão até $11200$) é feita em dupla precisão IEEE. Os resultados em ponto flutuante
+  são usados apenas como inversas aproximadas, resolvedores ou vetores de teste, e toda quantidade que entra num certificado é
+  cotada rigorosamente: os resíduos são calculados com cotas de arredondamento entrada a entrada da forma padrão
+  $\gamma_n\||M||X|\|$~\cite{Higham2002}; as normas de inversas são cotadas por desigualdades de Loewner verificadas,
+  $t^2MM^*-I\succeq0$, cuja positividade definida é verificada pelo método de Rump~\cite{Rump2006} aplicado à
+  realificação; e os fatores de acoplamento são certificados como na \cref{sec:counting-reference}.
+\end{enumerate}
+A base de confiança é, portanto: a correção das cotas publicadas em~\cite{RT2019}, que usamos tal como enunciadas;
+a aritmética IEEE~754 com arredondamento para o mais próximo, como supõem as cotas a posteriori; o Arb; e o código Python do
+programa de verificação, que é curto para cada conferência e está disponível para inspeção. Nenhuma parte da cadeia final
+está formalizada num assistente de provas.
+
+Como as entradas em ponto flutuante dependem da biblioteca BLAS e do número de threads, refazer um
+certificado em outra máquina reproduz o $\theta$ racional apenas a menos de $\sim10^{-16}$, não exatamente; o
+critério de sucesso de uma reprodução é $\theta<1$, com uma diferença na escala do arredondamento.
+
+\subsection{Os certificados}\label{sec:computation-certs}
+
+A \cref{tab:certs} lista os certificados calculados, os resultados que eles estabelecem e o seu custo aproximado. Os
+cálculos foram feitos em cinco computadores comuns, com quatro a seis núcleos e $7$--$31$\,GB de memória; a cadeia
+inteira leva alguns dias em três ou quatro dessas máquinas. Os maiores cálculos individuais são a decomposição de Schur
+da referência finita e as cotas de Loewner do seu resolvente (horas por centro do contorno), e as
+caudas com $26$ janelas densas (três a seis horas por centro).
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{@{}p{0.29\textwidth}p{0.35\textwidth}p{0.27\textwidth}@{}}
+\toprule
+certificado & estabelece & custo \\
+\midrule
+símbolos de $B$ e $B^\sharp$ (Arb, grades $2048\times4096$ e $1024\times2048$) & \cref{lem:F3}; \cref{thm:counts}~(i) & horas, 4 processos \\
+recuperação e transferência do raio & \cref{lem:Lreal,lem:recovery} & minutos \\
+referência finita: matriz, Schur, resíduo & \cref{lem:schur} & horas \\
+nível $Z$ em $174$ discos (Loewner, resoluções de Schur) & \cref{thm:counts}~(ii),(iii) & $\sim$9 min por ponto \\
+fatores de acoplamento de posto baixo ($13$ centros) & \cref{sec:counting-reference} & $\sim$1 h por centro \\
+caudas, $26$ janelas ($13$ centros) & \cref{sec:counting-reference} & 3--6 h por centro \\
+janelas dentro das faixas & \cref{lem:windows} & horas \\
+NK no sistema aumentado em $\mu,\sK,\sphys,\sB$ & \cref{prop:nk,prop:mu} & 3--6 h cada \\
+testemunhos dos vínculos & \cref{prop:witness} & minutos \\
+$154$ células e Rouch\'e para $K$ & \cref{prop:Kinj} & $\sim$1 dia, 3 máquinas \\
+F1 & \cref{lem:F1} & segundos \\
+\bottomrule
+\end{tabular}
+\caption{Certificados calculados. Os nomes dos arquivos e os hashes sha256 estão listados no \cref{app:certificates}.}
+\label{tab:certs}
+\end{table}
+
+\subsection{O programa de verificação}\label{sec:computation-verify}
+
+O repositório contém um programa de verificação com dois níveis.
+
+O \emph{nível 1} refaz, em aritmética racional exata e com o código do repositório, as desigualdades finais
+dos certificados a partir dos arquivos de certificado gravados (pequenos arquivos JSON) e dos dados publicados de~\cite{RT2019}:
+\begin{itemize}[leftmargin=*]
+\item a cota de Perron em três níveis em cada um dos $175$ pontos dos $22$ arquivos de discos das duas faixas ($174$ discos de
+  raio positivo, e uma entrada de raio zero que não é usada na cobertura);
+\item as coberturas de $\partial\Omega_A$ e $\partial\Omega_B$;
+\item as contagens finitas;
+\item as cotas das janelas;
+\item os quatro certificados de Newton--Kantorovich, os testemunhos e a identificação da raiz de gauge;
+\item as $154$ células e a sua cobertura da região da \cref{prop:Kinj} fora do disco $|s-0.401|<0.05$ do
+  argumento de Rouch\'e para $K$;
+\item o polinômio de deflação $q$ da \cref{sec:counting-rouche};
+\item as cotas de recuperação e de transferência do raio, a cota $\beta_+$ da parte do fundo e o F1.
+\end{itemize}
+Alguns certificados entram no nível 1 apenas pelos seus valores gravados, e só são recalculados no nível 2: as cotas dos
+símbolos e das partes livres (o nível 1 recombina as faixas gravadas), e as cotas de Perron das $16$ células do
+argumento de Rouch\'e para $K$.
+Ele leva cerca de duas horas em quatro núcleos. Todas as conferências passam: a pior raiz de Perron nos discos é $0.999074$, com
+diferenças para os valores gravados $\le7.8\cdot10^{-16}$, e, nas máquinas em que foram gerados, os dados de
+Newton--Kantorovich, os testemunhos e as células são reproduzidos de forma idêntica. Em outras plataformas, as
+entradas em ponto flutuante dos certificados podem diferir nos últimos bits, e o mesmo acontece com os racionais recalculados; o programa
+confere então que cada certificado recalculado é válido, não passa das cotas publicadas aqui e concorda com o gravado
+a menos de $10^{-9}$ relativo.
+
+O \emph{nível 2} recalcula os certificados intermediários a partir dos dados de~\cite{RT2019}. Como amostra, recalculamos
+do zero, numa máquina diferente:
+\begin{itemize}[leftmargin=*]
+\item a matriz de referência, idêntica bit a bit à gravada;
+\item a cota do resíduo de Schur, idêntica;
+\item a cauda do centro de contorno $3.0$ ($26$ janelas e o nível distante, $5.3$ horas), idêntica em todos os campos.
+\end{itemize}
+
+\subsection{Disponibilidade de dados e código}\label{sec:computation-data}
+
+O código, os arquivos de certificado, o programa de verificação e um guia de reprodução estão disponíveis em
+\url{https://github.com/edivaldo-amaral/choptuik-espectro} (licença MIT)~\cite{Repo2026}. Os arquivos de dados grandes, a saber, a matriz
+de referência, os seus fatores de Schur e os fatores de acoplamento ($16$\,GiB), estão depositados no Zenodo, DOI
+\href{https://doi.org/10.5281/zenodo.23222363}{10.5281/zenodo.23222363} (CC BY 4.0)~\cite{Zenodo2026}, com hashes sha256 que
+também estão registrados nos arquivos de certificado. Os dados de~\cite{RT2019} não são redistribuídos; um script os baixa
+do fonte de~\cite{RT2019} no arXiv e confere os seus hashes sha256.
+
+\subsection{Conferências independentes assistidas por IA}\label{sec:computation-reviews}
+
+Antes de serem usados, os certificados e os lemas foram conferidos por agentes de IA independentes dos que produziram o
+trabalho, com as exceções listadas abaixo. Essas conferências não são revisões por especialistas humanos. O protocolo foi
+desenhado para que uma conferência produza evidência verificável, e não uma opinião:
+\begin{itemize}[leftmargin=*]
+\item o agente conferente rodava num modelo diferente do que produziu o trabalho, com contexto limpo;
+\item ele recebia as alegações enunciadas com precisão, as derivações sob revisão, o código e os dados, mas não
+  as conclusões do autor nem auditorias anteriores;
+\item ele tinha de entregar um artefato por alegação: uma derivação independente, uma implementação independente ou um
+  cálculo direto da quantidade verdadeira para comparar com a cota;
+\item antes de cada conferência era tirado um snapshot com manifesto sha256, comparado ao final dela.
+\end{itemize}
+Houve doze conferências desse tipo:
+\begin{itemize}[leftmargin=*]
+\item as células da \cref{prop:Kinj} (uma conferência anterior delas, com outra ferramenta, foi superficial e não é
+  contada);
+\item os certificados em $\sK$ (com o argumento de Rouch\'e para $K$), em $\mu$ e em $\sphys$;
+\item os argumentos de Rouch\'e das duas faixas, incluindo o certificado em $\sB$;
+\item os lemas estruturais e a cadeia da prova;
+\item o lema de gauge, a reconstrução direta e a recíproca;
+\item as hipóteses de modelagem;
+\item o manuscrito inteiro, alegação por alegação, contra os arquivos de certificado.
+\end{itemize}
+Uma parte não foi conferida isoladamente: os cálculos dos símbolos do \cref{lem:F3} foram examinados apenas no seu uso,
+não recalculados. Nenhuma das conferências derrubou um resultado. Todas encontraram lacunas, sobretudo de rastreabilidade ou de enunciado,
+e algumas de derivação: por exemplo, uma encontrou que uma versão inicial das células usava a aproximação diádica de
+$\mu$ em vez do valor verdadeiro, e outra que o erro da deflação fora da caixa finita tinha sido omitido. Todas
+foram corrigidas antes de os resultados serem usados; os relatórios e artefatos estão no repositório.
+
+\subsection{Uso de assistentes de IA}\label{sec:computation-ai}
+
+Este trabalho foi feito com uso extensivo de assistentes de IA, entre setembro e outubro de 2026. Descrevemos o seu papel
+como exige a política da revista.
+
+\emph{Escopo.} Os assistentes escreveram a maior parte do código, fizeram a maior parte das derivações e dos cálculos, prepararam
+a documentação e redigiram este manuscrito. A sua contribuição é substancial e não se limita à edição do
+texto.
+
+\emph{O papel do autor.} O autor propôs o problema, o espectro instável da solução de~\cite{RT2019}, que
+os seus autores deixaram em aberto; dirigiu o projeto e escolheu entre as abordagens; rodou os cálculos nas suas próprias
+máquinas e em máquinas emprestadas; conferiu os argumentos e os resultados; e assume total responsabilidade pelo conteúdo
+deste artigo.
+
+\emph{Ferramentas.} O assistente principal foi o Claude (Anthropic), usado por meio do ambiente Claude Code, com os modelos
+\texttt{claude-opus-5} e, depois, \texttt{claude-opus-5-5}. O agente Codex, da OpenAI, foi usado na primeira sessão
+exploratória e durante um intervalo de três dias, com os modelos \texttt{gpt-5.6-luna}, \texttt{gpt-5.6-sol},
+\texttt{gpt-6-astra} e \texttt{gpt-reserve}; tudo o que foi produzido nesse intervalo foi auditado e rederivado ou
+conferido antes do uso. As conferências da \cref{sec:computation-reviews} foram feitas por agentes Claude rodando
+\texttt{claude-fable-5-1}, um modelo diferente do que produziu o trabalho. A pedido do autor, uma versão preliminar do
+manuscrito também foi lida pelo ChatGPT (OpenAI, modelo Sol 6.1); os seus comentários foram conferidos contra os certificados e
+as fontes antes de serem incorporados. Os identificadores dos modelos são os registrados nos logs das sessões; um relato datado das sessões está no arquivo \texttt{paper/AI\_USE.md} do
+repositório. Esta tradução para o português também foi feita com o Claude (\texttt{claude-opus-5-5}) e revisada pelo autor.
+
+\emph{Limites da verificação.} Os argumentos analíticos estão neste artigo; algumas estimativas de rotina aparecem em
+forma de esboço, com as suas constantes conferidas por código no repositório (\cref{app:lemmas}). Toda cota calculada é
+produzida por código que pode ser inspecionado e rodado de novo a partir dos arquivos de certificado e dos dados. As desigualdades finais dos
+certificados são refeitas pelo programa de verificação (nível~1 da \cref{sec:computation-verify}); algumas cotas
+intermediárias entram no nível~1 apenas pelos seus valores gravados, como listado na \cref{sec:computation-verify}, e só são recalculadas
+no nível~2, no qual uma amostra dos certificados intermediários foi recalculada a partir dos dados
+de~\cite{RT2019}. Os lemas e a maior parte dos certificados também foram
+examinados pelas conferências da \cref{sec:computation-reviews}, com as exceções listadas ali. Nada disso substitui a
+revisão por pares; o objetivo é que a confiança no resultado não dependa do processo que o produziu.

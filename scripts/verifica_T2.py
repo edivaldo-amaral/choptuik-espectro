@@ -296,13 +296,18 @@ def check_etapa(pasta, script, saida, chaves, extra=(), cota=None):
 
 
 def check_script_json(cmd, saida_rel, chaves):
-    """roda um script pequeno que grava um JSON e compara chaves com a versao do repositorio."""
-    ref = json.loads((RAIZ/saida_rel).read_text())
-    rc, out, t = roda(cmd)
-    novo = json.loads((RAIZ/saida_rel).read_text())
+    """roda um script pequeno que grava um JSON e compara chaves com a versao do repositorio. O script grava por
+    cima do certificado; os bytes originais sao restaurados no fim, para o sha256 continuar batendo com o
+    inventario (o recalculo e so conferencia)."""
+    caminho = RAIZ/saida_rel
+    bytes_ref = caminho.read_bytes()
+    ref = json.loads(bytes_ref)
+    try:
+        rc, out, t = roda(cmd)
+        novo = json.loads(caminho.read_text())
+    finally:
+        caminho.write_bytes(bytes_ref)
     iguais = {k: proximos(novo.get(k), ref.get(k)) for k in chaves}
-    if not all(iguais.values()) or ESTRITO is False:
-        (RAIZ/saida_rel).write_text(json.dumps(ref, indent=1) + '\n')     # restaura o gravado (o recalculo e so conferencia)
     return rc == 0 and all(iguais.values()), dict(tempo_s=t, iguais=iguais)
 
 

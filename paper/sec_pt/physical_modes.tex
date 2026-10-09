@@ -1,0 +1,443 @@
+\section{Dos modos físicos ao operador}\label{sec:physical}
+
+A parte~(2) do Teorema Principal é um enunciado sobre soluções das equações de Einstein--campo escalar
+linearizadas, enquanto a parte~(1) trata da família $L(s)$. Esta seção prova que, para $\Re s>0$, as duas são
+equivalentes (\cref{thm:correspondence}), e reduz a multiplicidade física de uma raiz de $L$ a álgebra linear
+de dimensão finita no seu espaço de raízes (\cref{prop:physmult}). As únicas entradas assistidas por computador são
+o fato F1 abaixo e a simplicidade da raiz $\mu$, provada na \cref{sec:roots}.
+
+\subsection{Modos físicos e gauge}\label{sec:physical-defs}
+
+Trabalhamos em $\Mhat=\R_\tau\times B_{41/40}(0)$ com as coordenadas cartesianas $(\tau,x)$, $|x|=\xi$, e nas
+coordenadas duplamente nulas $u_\pm$ de~\eqref{eq:tauxi} fora do eixo. Um 2-tensor simétrico, esfericamente
+simétrico e suave em $\Mhat$ tem a forma
+\begin{equation}\label{eq:invariant-tensor}
+  \alpha\,d\tau^2+2\beta\,d\tau\,(x\cdot dx)+\gamma\,(x\cdot dx)^2+d\,|dx|^2,
+\end{equation}
+com coeficientes que são funções de $(\tau,\xi^2)$.
+
+\emph{A forma RT.} O fundo~\eqref{eq:metric} tem componentes nulas $\gbar_{++}=\gbar_{--}$ nas
+coordenadas nulas. Uma perturbação $(\delta g,\delta\phi)$ está \emph{na forma RT} se
+$\delta g_{++}=\delta g_{--}=0$; então a sua parte bidimensional é conforme a $\gbar_{2D}$, e a
+linearização de~\eqref{eq:metric} e~\eqref{eq:omega} com $\mu$ e coordenadas fixos associa a ela
+\emph{variáveis RT} $\delta\omega=D\Omega(\gbar,\phibar)[\delta g,\delta\phi]$, onde
+$\Omega:(g,\phi)\mapsto\omega$ é a aplicação~\eqref{eq:omega}. Explicitamente, $\delta g=(\delta a/a)\gbar_{2D}+\delta
+b\,g_{S^2}$ dá $\delta\zeta=-\delta a/2a$, $\delta W=-W(\delta\zeta+\delta b/2b)$ com $W=\mu+\xi^2Q$,
+$\delta Q=\delta W/\xi^2$, e $\delta\omega$ se obtém derivando~\eqref{eq:omega}
+(\cref{app:lemmas}).
+
+\begin{definition}[Modo de Floquet físico]\label{def:physical-mode}
+Seja $s\in\C$. Um \emph{modo de Floquet físico com expoente $s$} é um par esfericamente simétrico
+$\delta=(\delta g,\delta\phi)$ em $\Mhat$ tal que:
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=*]
+\item $\delta$ resolve as equações de Einstein--campo escalar linearizadas em $(\gbar,\phibar)$;
+\item $(\Theta^2)^*\delta g=e^{4\pi s}e^{-4K}\delta g$ e $(\Theta^2)^*\delta\phi=e^{4\pi s}\delta\phi$;
+\item \emph{(regularidade)} os coeficientes $\alpha,\beta,\gamma,d$ de $\delta g$ em~\eqref{eq:invariant-tensor}
+  e $\delta\phi$, multiplicados por $e^{-s\tau}$ e pelo fator de fundo $e^{2\zeta}$ onde ele se aplica
+  (de modo que são $4\pi$-periódicos por~(ii)), são suaves em $\Mhat$ e pertencem a $C^\infty(\R/4\pi\Z;\mathcal A(E))$
+  para alguma vizinhança complexa $E$ de $[-1,1]$ no plano de $\xi$, onde $\mathcal A(E)$ denota as funções
+  holomorfas limitadas em $E$.
+\end{enumerate}
+Um \emph{modo físico generalizado de ordem $k$} é uma solução de~(i) da forma
+$e^{s\tau}\sum_{j<k}\tau^j\delta_j$, com perfis $\delta_j$ como em~(iii).
+\end{definition}
+
+A condição~(iii) pede suavidade em $\tau$ e analiticidade real em $\xi$ até o cone de luz $\xi=1$ e através
+dele, com uma vizinhança complexa uniforme em $\tau$, mas que pode ser arbitrariamente fina. O fator
+$e^{-4K}$ em~(ii) é o do fundo, $(\Theta^2)^*\gbar=e^{-4K}\gbar$; de modo equivalente,
+$\delta\zeta$, $\delta W/W$ e $\delta\phi$ são $e^{s\tau}$ vezes funções $4\pi$-periódicas.
+
+\begin{definition}[Gauge]\label{def:gauge}
+Uma \emph{transformação de gauge} é $\delta\mapsto\delta+\Lie_X(\gbar,\phibar)$, onde
+$\Lie_X(\gbar,\phibar)=(\Lie_X\gbar,X(\phibar))$ e $X$ é um campo vetorial complexo em $\Mhat$ que é
+\begin{enumerate}[label=\textup{(\alph*)},leftmargin=*]
+\item de classe $C^1$ em $\Mhat$, ou
+\item contínuo em $\Mhat$, de classe $C^1$ fora do cone de luz, e tal que $\Lie_X(\gbar,\phibar)$ está na
+  forma RT com variáveis RT analíticas.
+\end{enumerate}
+O parâmetro $\mu$ e as coordenadas $(\tau,x)$ ficam fixos. Um modo físico é \emph{gauge puro}
+se ele é igual a $\Lie_X(\gbar,\phibar)$ para um tal $X$.
+\end{definition}
+
+\begin{definition}[Cone de luz fixo]\label{def:conefixed}
+No \emph{cenário de cone fixo}, exige-se que os modos físicos deixem o cone de luz nulo em primeira ordem,
+$\delta g_{++}=0$ em $\{u_-=0\}$, e que as transformações de gauge sejam tangentes a ele,
+$X(u_-)=0$ em $\{u_-=0\}$.
+\end{definition}
+
+Manter $\mu$ fixo é essencial: mudar $\mu$ muda as direções nulas
+$\ker(\sigma\,d\xi-\mu(1+\sigma\xi)\,d\tau)$, e uma perturbação na forma RT para um valor de $\mu$ não está na
+forma RT para outro. Fixar $\mu$ e as coordenadas faz parte da identificação do fundo.
+
+Para $X$ tal que $\Lie_X(\gbar,\phibar)$ está na forma RT, escrevemos
+$\delta\omega_X:=D\Omega(\gbar,\phibar)[\Lie_X(\gbar,\phibar)]$. O exemplo básico é
+\begin{equation}\label{eq:X0}
+  X_0=\partial_{u_-}+\partial_{u_+}=e^{\mu\tau}\big(\mu^{-1}\partial_\tau+\xi\partial_\xi\big),
+\end{equation}
+o gerador da translação conjunta das coordenadas nulas, que move o ponto singular $(0,0)$ e
+o cone de luz. Ele é analítico em $\Mhat$, $\Lie_{X_0}(\gbar,\phibar)$ está na forma RT, e
+\begin{equation}\label{eq:gaugemode}
+  G_*:=\delta\omega_{X_0}=e^{\mu\tau}g_*,\qquad g_*=(1+Z)\,\omegabar,\qquad Z=\mu^{-1}\partial_\tau+\xi\partial_\xi .
+\end{equation}
+A identidade~\eqref{eq:gaugemode} é um cálculo direto a partir de~\eqref{eq:omega} (\cref{app:lemmas}). Como
+$\Lie_{X_0}(\gbar,\phibar)$ resolve as equações linearizadas, o passo (R4) do \cref{lem:R} abaixo mostra que
+$e^{\mu\tau}g_*$ é um modo de Floquet de $L$ com expoente $\mu$: $L(\mu)g_*=0$ e $C(\mu)g_*=0$.
+
+\subsection{Modos de gauge}\label{sec:physical-gauge}
+
+O fato seguinte é conferido em aritmética racional exata a partir dos dados de~\cite{RT2019}.
+
+\begin{lemma}[F1]\label{lem:F1}
+$\omegabar_4(\cdot,0)\not\equiv0$ e $\omegabar_4(\cdot,-1)\not\equiv0$. Mais precisamente, os coeficientes de
+Fourier de índice $m=1$ satisfazem $|c_1(\omegabar_4(\cdot,0))|\ge0.493046-3\cdot10^{-8}$ e
+$|c_1(\omegabar_4(\cdot,-1))|\ge0.097752-3\cdot10^{-8}$.
+\end{lemma}
+
+\begin{proof}
+Com $\omega(\tau,\xi)=\sum v_{mn}e^{im\tau/2+in\theta}$, $\xi=\cos\theta$, o coeficiente é
+$c_1=\sum_nv_{1n}i^n$ em $\xi=0$ e $\sum_nv_{1n}(-1)^n$ em $\xi=-1$. Para os dados $\omega_A$ essas somas são
+aproximadamente $0.0729160+0.4930463\,i$ e $-0.0794729+0.0977527\,i$, calculadas exatamente. Por~\eqref{eq:RTball},
+e como os pesos da norma são $\ge1$, $|c_1(\omegabar)-c_1(\omega_A)|\le2^{-25}+2^{-277}<3\cdot10^{-8}$.
+\end{proof}
+
+\begin{lemma}[Completude do gauge]\label{lem:gauge}
+Seja $X$ um campo vetorial como na \cref{def:gauge}\textup{(a)} tal que $\Lie_X(\gbar,\phibar)$ é esfericamente
+simétrico e está na forma RT,
+e suponha que $\delta\omega_X\neq0$ é do tipo de Floquet com expoente $s$, $\Re s>0$, isto é,
+$\delta\omega_X\circ\Theta^2=e^{4\pi s}\delta\omega_X$. Então $e^{4\pi(s-\mu)}=1$ e
+$\Lie_X(\gbar,\phibar)=c\,\Lie_{X_0}(\gbar,\phibar)$ para algum $c\in\C\setminus\{0\}$; em particular,
+$\delta\omega_X=c\,G_*$. Consequentemente, a média de $X$ sobre $SO(3)$ é $cX_0$, e $X-cX_0$ é um campo de Killing de
+$\gbar$ que anula $\phibar$, por exemplo uma rotação. O mesmo vale para $X$ como na
+\cref{def:gauge}\textup{(b)}.
+\end{lemma}
+
+Em palavras: o único modo de gauge com $\Re s>0$ é $e^{\mu\tau}g_*$, com expoente $\mu$, no setor A.
+
+\begin{proof}
+\emph{Passo 0 (simetria).} Tomar a média de $X$ sobre $SO(3)$ com respeito à medida de Haar não muda
+$\Lie_X(\gbar,\phibar)$, porque o fundo e $\Lie_X(\gbar,\phibar)$ são invariantes. A média $\bar X$ é
+$C^1$ e invariante, logo da forma $X^\tau\partial_\tau+X^\xi\partial_\xi$ e tangente ao eixo, e
+$\Lie_{\bar X}(\gbar,\phibar)=\Lie_X(\gbar,\phibar)$. Trocamos $X$ por $\bar X$; as conclusões abaixo dizem respeito a
+$\bar X$, e $X-\bar X$ tem derivada de Lie do fundo nula. (O campo original não precisa ser
+invariante: campos de Killing de rotação podem ser somados sem mudar a perturbação.)
+
+\emph{Passo 1 (transporte).} Em coordenadas nulas, $\gbar_{\pm\pm}=0$ e $\gbar_{+-}\neq0$, de modo que
+$(\Lie_X\gbar)_{++}=2\gbar_{+-}\partial_{u_+}X^{u_-}$ e $(\Lie_X\gbar)_{--}=2\gbar_{+-}\partial_{u_-}X^{u_+}$.
+A forma RT obriga $\partial_{u_+}X^{u_-}=\partial_{u_-}X^{u_+}=0$ em $M$. Os conjuntos de nível
+$\{u_-=v\}\cap M$ e $\{u_+=w\}\cap M$ são intervalos, logo conexos, e assim $X^{u_-}=f_-(u_-)$ e
+$X^{u_+}=f_+(u_+)$ em $M$. Como $u_-$ assume todos os valores reais em $M$, inclusive $0$ no cone de luz,
+$f_-\in C^1(\R)$; e $f_+\in C^1((-\infty,0))$.
+
+\emph{Passo 2 (eixo).} $X$ é tangente ao eixo $u_+=u_-$, logo $f_+=f_-$ em $(-\infty,0)$. Escreva $f:=f_-$.
+
+\emph{Passo 3 (equivariância).} $\Theta$ preserva a forma RT e o referencial de~\cite{RT2019} tem coeficientes
+independentes de $\tau$, de modo que $\Omega(\Theta^*(g,\phi))=\Omega(g,\phi)\circ\Theta$; e $\Omega$ é invariante por
+reescalas conformes constantes de $g$. Derivando, e usando $(\Theta^2)^*\gbar=e^{-4K}\gbar$,
+$\phibar\circ\Theta^2=\phibar$, obtemos $\delta\omega_X\circ\Theta^2=\delta\omega_{(\Theta^2)^*X}$. Como
+$u_\pm\circ\Theta^2=\Lambda u_\pm$ com $\Lambda=e^{-4\pi\mu}$, o campo $(\Theta^2)^*X$ é do mesmo tipo,
+com $f$ trocada por $\Lambda^{-1}f(\Lambda\,\cdot)$.
+
+\emph{Passo 4 (injetividade).} Suponha $\delta\omega_X=0$. Então $D^\sigma(X(\phibar))=\delta\omega_4^\sigma=0$
+para $\sigma=\pm$, de modo que $X(\phibar)=c_2$ é constante no conjunto conexo $M$. Como $D^+u_+=D^-u_-=0$ e
+$D^+u_-=-D^-u_+=2\mu e^{-\mu\tau}$,
+\[
+  X(\phibar)=\frac{e^{\mu\tau}}{2\mu}\big(f(u_-)\,\omegabar_4^+-f(u_+)\,\omegabar_4^-\big).
+\]
+No eixo $u_\pm=-e^{-\mu\tau}$ e $\omegabar_4^\pm(\tau,0)=\mp\omegabar_4(\tau,0)$, o que dá
+$-\mu^{-1}e^{\mu\tau}f(-e^{-\mu\tau})\,\omegabar_4(\tau,0)=c_2$ para todo $\tau$. Como $\omegabar_4(\cdot,0)$ é
+antiperiódica, ela se anula em algum ponto, logo $c_2=0$. Pelo \cref{lem:F1} ela não é identicamente nula e,
+sendo analítica real, tem zeros isolados; portanto $f=0$ num subconjunto denso de $(-\infty,0)$ e, por continuidade, em
+$(-\infty,0]$. Fora do cone, $\{\xi>1\}\cap M$, temos $u_+<0$, logo $f(u_-)\,\omegabar_4^+=0$ ali. Se
+$f(v)\neq0$ para algum $v>0$, então $\omegabar_4^+$ se anula num aberto não vazio, logo identicamente por
+analiticidade, e em particular no eixo, contradizendo o \cref{lem:F1}. Assim $f\equiv0$ e $X=0$. (Para
+$X$ complexo, aplique isso às partes real e imaginária.)
+
+\emph{Passo 5 (homogeneidade).} Se $\delta\omega_X\circ\Theta^2=e^{4\pi s}\delta\omega_X$, os Passos 3 e 4 dão
+$(\Theta^2)^*X=e^{4\pi s}X$, isto é,
+\[
+  f(\Lambda u)=\rho\,f(u)\quad(u\in\R),\qquad \rho=e^{4\pi(s-\mu)},\quad |\rho|=e^{4\pi(\Re s-\mu)}.
+\]
+
+\emph{Passo 6 (regularidade no cone).} $f$ é $C^1$ em $u=0$, porque o cone está dentro de $M$. Iterando,
+$f(\Lambda^ju)=\rho^jf(u)$ com $\Lambda^ju\to0$.
+\begin{itemize}[leftmargin=*]
+\item Se $|\rho|>1$: o lado esquerdo tende a $f(0)$, logo $f(u)=0$.
+\item Se $|\rho|=1$ e $\rho\neq1$: $\rho^j$ não converge, logo $f(u)=0$. Se $\rho=1$: $f(u)=f(0)$.
+\item Se $\Lambda<|\rho|<1$, isto é, $0<\Re s<\mu$: $f(0)=0$, e
+  $f'(0)=\lim_jf(\Lambda^ju)/(\Lambda^ju)=\lim_j(\rho/\Lambda)^jf(u)/u$ com $|\rho/\Lambda|>1$, logo $f(u)=0$.
+\end{itemize}
+Como $\delta\omega_X\neq0$, $f\not\equiv0$, logo $\rho=1$ e $f$ é constante, isto é, $X=cX_0$.
+
+\emph{Variante (b).} Os Passos 1--5 usam apenas a continuidade de $f$ em $u=0$, e o Passo 6 também, para $\Re s\ge\mu$.
+Para $0<\Re s<\mu$: $\delta\phi=X(\phibar)$ é contínua com derivadas analíticas
+$D^\sigma\delta\phi=\delta\omega_4^\sigma$, logo analítica. No eixo,
+$-\mu^{-1}e^{\mu\tau}f(-e^{-\mu\tau})\omegabar_4(\tau,0)$ é analítica, logo $f$ é analítica em $(-\infty,0)$.
+Perto de um ponto $(\tau_0,1)$ do cone com $\omegabar_4^+(\tau_0,1)\neq0$, que existe pelo \cref{lem:F1},
+$f(u_-)=\big(2\mu e^{-\mu\tau}\delta\phi+f(u_+)\omegabar_4^-\big)/\omegabar_4^+$ é analítica, logo $f$ é analítica
+em $0$. Então $f(\Lambda u)=\rho f(u)$ obriga $a_k(\Lambda^k-\rho)=0$ para os coeficientes de Taylor, de modo que
+$f=a_ku^k$ com $s\equiv\mu(1-k)\pmod{\tfrac i2\Z}$, e $\Re s>0$ obriga $k=0$.
+\end{proof}
+
+\begin{remark}[O papel do cone de luz]\label{rem:cone-role}
+A prova usa que o cone de luz está dentro do domínio e que $X$ é contínuo através dele. Se de $X$ se exigisse
+apenas regularidade em $\{\xi<1\}$, então $f(u)=(-u)^{1-s/\mu}$ produziria um ``modo de gauge'' para
+todo $s$. Exigir um gauge que preserve o cone significa $f(0)=0$; isso exclui $f$ constante, e então não há
+modo de gauge algum com $\Re s>0$.
+\end{remark}
+
+O modo de gauge $G_*$ tem um significado geométrico direto.
+
+\begin{lemma}[O cone]\label{lem:cone}
+Seja $\psi_\epsilon(u_-,u_+)=(u_-+\epsilon,u_++\epsilon)$ o fluxo de $X_0$, estendido trivialmente às
+esferas. Para $\epsilon$ pequeno, $(\gbar_\epsilon,\phibar_\epsilon):=\psi_\epsilon^*(\gbar,\phibar)$ é uma solução
+exata das equações de Einstein--campo escalar em subconjuntos compactos de $\Mhat$, isométrica a
+$(\gbar,\phibar)$, discretamente autossimilar em torno do ponto singular deslocado $(-\epsilon,-\epsilon)$, e na forma
+RT com o mesmo $\mu$ e as mesmas coordenadas. As suas variáveis RT resolvem as dez equações $\Omega_i^\sigma=0$, e
+\[
+  \Omega(\gbar_\epsilon,\phibar_\epsilon)=\omegabar+\epsilon\,e^{\mu\tau}g_*+O(\epsilon^2)
+\]
+uniformemente em subconjuntos compactos.
+\end{lemma}
+
+\begin{proof}
+As equações são invariantes por difeomorfismos. A aplicação $\psi_\epsilon$ preserva $du_\pm$ e o eixo
+$\{u_+=u_-\}$, de modo que a parte bidimensional de $\gbar_\epsilon$ continua conforme a $du_-du_+$, e
+$\gbar_\epsilon$ tem a forma~\eqref{eq:metric} com $e^{-2\zeta_\epsilon}=e^{-2\zeta\circ\psi_\epsilon}
+(u_++u_-)^2/(u_++u_-+2\epsilon)^2$ e $Q_\epsilon$ determinado pelo raio de área; a regularidade no eixo
+decorre da regularidade da métrica. A derivada em $\epsilon=0$ é
+$D\Omega[\Lie_{X_0}(\gbar,\phibar)]=G_*$, por~\eqref{eq:gaugemode}.
+\end{proof}
+
+Assim, $e^{\mu\tau}g_*$ é tangente a uma curva de soluções exatas, todas isométricas ao fundo: a mesma
+solução crítica com o instante $T_*$ da singularidade transladado. Com as transformações de gauge da
+\cref{def:gauge} ele é gauge puro. No cenário de cone fixo da \cref{def:conefixed} não é, pois $X_0(u_-)=1$, e ele
+conta como modo físico; esta é a segunda contagem da parte~(2) do Teorema Principal.
+
+\subsection{Reconstrução: dos modos físicos a $\ker L\cap\ker C$}\label{sec:physical-forward}
+
+Precisamos de um enunciado de recuperação do raio para todo $s$, e não só para $|s|\le3.1$ como no \cref{lem:Lreal}.
+
+\begin{lemma}[Recuperação do raio]\label{lem:recovery}
+Sejam $1\le\kappa_1'\le65/64$, $1<\kappa_2'\le9/8$ e $S>0$. Para $|s|\le S$, todo elemento do núcleo de
+$L(s)$, e toda cadeia de Jordan de $L$ em $s$, no domínio de $L$ em $Y(\kappa_1',\kappa_2')$ está no
+domínio de $L$ em $\Yp$.
+\end{lemma}
+
+\begin{proof}[Esboço]
+Como no \cref{lem:Lreal}: com $Q=J^{-1}$, $H(s)=I+(B+s)Q$ e uma caixa finita $G$, basta que
+$\|T(H(s)-I)T\|<1$ nos dois espaços. No espaço fraco isso vale porque $\|QT\|$ tende a zero com $G$,
+uniformemente no peso de Fourier (já que $Q$ preserva $m$), e $\|B\|$ é controlada pela cota
+$\beta_+$ do \cref{app:recovery}, calculada com os dados e a bola publicada de~\cite{RT2019}, reponderada de $5/4$
+para $\kappa_2'$; no espaço forte vale o mesmo com o próprio $\beta_+$. O peso de Fourier $\kappa_1'=1$ é permitido, porque a convolução pelo fundo tem
+norma no máximo $\sum_k|b_k|\le\sum_k\kappa_1^{|k|}|b_k|$. Então a equação do núcleo é resolvida no espaço forte
+por uma série de Neumann em $T$, e a unicidade no espaço fraco identifica as duas soluções; as cadeias seguem por
+indução. Caixas explícitas, por exemplo $G=2^{17}\times2^{20}$ para $S=200$ e $\kappa_2'=1+2^{-6}$, e a
+verificação racional das constantes estão no \cref{app:lemmas}.
+\end{proof}
+
+\begin{lemma}[Reconstrução, sentido direto]\label{lem:R}
+Seja $\delta$ um modo de Floquet físico com expoente $s$, $\Re s>0$. Então:
+\begin{enumerate}[label=\textup{(\arabic*)},leftmargin=*]
+\item existe uma transformação de gauge, por um campo vetorial $X$ da mesma regularidade que $\delta$ (em
+  particular $C^1$ em $\Mhat$) e do tipo de Floquet, tal que $\delta'=\delta+\Lie_X(\gbar,\phibar)$ está na forma
+  RT;
+\item as variáveis RT de $\delta'$ são $\delta\omega'=e^{s\tau}h$ com $h$ no domínio de $L$ em $\Yp$,
+  $L(s)h=0$ e $C(s)h=0$;
+\item $h$ é determinado pela classe de gauge de $\delta$ a menos da direção de gauge
+  $\mathcal G_s$, onde $\mathcal G_s=\C\,e^{(\mu-s)\tau}g_*$ se $s\equiv\mu\pmod{\tfrac i2\Z}$ e
+  $\mathcal G_s=0$ caso contrário; e $h\in\mathcal G_s$ se e só se $\delta$ é gauge puro;
+\item um modo físico generalizado de ordem $k$ dá, do mesmo modo, uma cadeia de Jordan de $L$ em $s$ de comprimento
+  $k$ módulo $\mathcal G_s$, que satisfaz os vínculos de jato~\eqref{eq:jet} abaixo.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+\emph{(R1) Fixação do gauge fora da ressonância.} Procuramos $X$ com $(\delta g+\Lie_X\gbar)_{\pm\pm}=0$, isto
+é, $\partial_{u_+}X^{u_-}=-\delta g_{++}/(2\gbar_{+-})$ e $\partial_{u_-}X^{u_+}=-\delta g_{--}/(2\gbar_{+-})$.
+Com $X^{u_\mp}=e^{(s-\mu)\tau}y_\mp$ e $f_\mp:=-\mu e^{-s\tau}\delta g_{\pm\pm}/\gbar_{+-}$, que são
+$4\pi$-periódicas pela \cref{def:physical-mode}(ii) (tanto $\delta g_{\pm\pm}$ quanto $\gbar_{+-}$ escalam por
+$e^{8\pi\mu}e^{-4K}$ sob $\Theta^2$, a primeira com o fator extra $e^{4\pi s}$), as equações viram
+\[
+  T_{\pm1}(s)\,y_\mp=f_\mp,\qquad T_c(s)=\partial_\tau+\mu(\xi-c)\partial_\xi+s-\mu .
+\]
+Para $\Re s>0$ e $s\notin\mu-\tfrac i2\Z$, a única solução periódica, analítica em $\xi$ perto de $[-1,1]$,
+é
+\begin{equation}\label{eq:transport}
+  y(\tau,\xi)=(\partial_\tau+s-\mu)^{-1}f(\cdot,c)\,(\tau)
+  +\int_0^\infty e^{-(s-\mu)t}\,\big(f-f(\cdot,c)\big)\big(\tau-t,\ c+e^{-\mu t}(\xi-c)\big)\,dt,
+\end{equation}
+onde $(\partial_\tau+s-\mu)^{-1}$ é o multiplicador de Fourier $1/(s-\mu+im/2)$. A integral converge também
+para $0<\Re s<\mu$, porque o integrando se anula em $\xi=c$ e é, portanto, $O(e^{-\Re s\,t})$; o
+caminho característico fica numa vizinhança convexa de $[-1,1]$. A unicidade segue expandindo uma
+solução homogênea em potências de $\xi-c$: o coeficiente de grau $n$ resolve
+$(\partial_\tau+s+\mu(n-1))y_n=0$, o que obriga $y_n=0$. A fórmula comuta com $\partial_\tau$, de modo que $y$
+tem a regularidade de $f$. No eixo, a regularidade cartesiana de $\delta g$ faz de $f_-$ e $Pf_+$ a
+mesma função analítica, e a unicidade dá $y_+=Py_-$, o que significa que $X$ é regular no eixo.
+
+\emph{(R2) Ressonância.} Seja $s_0=\mu-im_0/2$ com $\Re s_0=\mu>0$. Em $\xi=1$ a equação para $y_-$ fica
+$(\partial_\tau-im_0/2)\,y_-(\cdot,1)=f_-(\cdot,1)$, de modo que existe solução periódica se e só se o
+coeficiente $\kappa=(f_-(\cdot,1))_{m_0}$ se anula; nesse caso, a solução é única a menos da soma de
+$e^{im_0\tau/2}$, isto é, a menos da soma de um múltiplo de $X_0$. Suponha $\kappa\neq0$. Então
+$y_-=y_{\mathrm{reg}}+\kappa\tau e^{im_0\tau/2}$, e a mesma constante aparece em $y_+$ porque
+$f_+(\cdot,-1)=f_-(\cdot,1)$; a regularidade no eixo exige a mesma constante nas duas componentes. O
+campo de gauge é $X=X_{\mathrm{reg}}+\kappa\tau X_0$, e
+\[
+  \delta'=A+\tau B,\qquad B=\kappa\Lie_{X_0}(\gbar,\phibar),\qquad
+  A=\delta+\Lie_{X_{\mathrm{reg}}}(\gbar,\phibar)+2\kappa\,d\tau\odot X_0^\flat,
+\]
+ambos na forma RT e do tipo de Floquet. Como $\delta\omega$ é de primeira ordem com $D^\sigma\tau=\sigma$, as variáveis
+RT são $\delta\omega'=e^{s_0\tau}(h_1+\tau h_0)$ com $h_0=\kappa e^{im_0\tau/2}g_*\neq0$, e pelo
+\cref{lem:affine} as equações linearizadas dão $L(s_0)h_0=0$ e $L(s_0)h_1=-h_0$. Multiplicando por
+$e^{-im_0\tau/2}$ (\cref{eq:shift}) e projetando no setor A, onde está $g_*$, obtém-se uma cadeia de Jordan
+de $L_A$ de comprimento dois em $s=\mu$, no domínio em $\Yp$ pelo \cref{lem:recovery}. Isso contradiz a
+simplicidade algébrica da raiz $\mu$ (\cref{prop:mu}). Portanto $\kappa=0$, e a fixação do gauge existe e é
+única a menos de múltiplos de $X_0$.
+
+\emph{(R3) Variáveis RT.} Para $\delta'$ na forma RT, os coeficientes~\eqref{eq:invariant-tensor} dão
+$\delta b=d\,\xi^2$, $\delta\zeta=-\tfrac12\mu^2e^{2\zeta}(\gamma\xi^2+d)$ e
+$\delta Q=-\tfrac12We^{2\zeta}\big(d(2\mu Q+\xi^2Q^2)-\mu^2\gamma\big)$, que são pares e analíticos em $\xi$.
+Portanto $\delta\omega'=e^{s\tau}h$ com $h$ de classe $C^\infty(\R/4\pi\Z;\mathcal A(E'))$ para uma vizinhança
+$E'$ um pouco menor; a codificação $\delta\omega_i^+=-P\delta\omega_i^-$ é automática.
+
+\emph{(R4) Equações.} As definições~\eqref{eq:omega} implicam, após a linearização, as identidades
+$\Omega_1^\sigma=\Omega_2^\sigma+\Omega_{2\sharp}^\sigma$ e $\Omega_j^-=\Omega_j^+$ para $j=2,3,4$, e as
+fórmulas de curvatura de~\cite[\S2]{RT2019} exprimem as equações de Einstein--campo escalar linearizadas pelas
+combinações restantes dos $\Omega$. Como $\delta'$ resolve as equações linearizadas, todos os $\delta\Omega_i^\sigma$
+se anulam fora do eixo e, por continuidade, no eixo. Em particular, $L(s)h=0$ e $C(s)h=0$.
+
+\emph{(R5) O espaço espectral.} Os coeficientes de Fourier de $h$ decaem mais rápido que qualquer potência de $|m|$, e
+os seus coeficientes de Chebyshev decaem como $\varrho^{-n}$, para o parâmetro $\varrho>1$ de uma elipse de Bernstein
+contida em $E'$. Portanto $h\in Y(1,\kappa_2')$ para $1<\kappa_2'<\min(\varrho,9/8)$, e $Jh=-(B+s)h$ está no mesmo
+espaço, de modo que $h$ está no domínio de $L$ ali. Pelo \cref{lem:recovery}, $h$ está no domínio em $\Yp$; em particular, $e^{s\tau}h$ se estende analiticamente a
+$|\xi|<41/40$. Além do cone de luz, para $1<\xi<41/40$, as duas famílias de características $D^\pm$ satisfazem
+$d\xi/d\tau>0$, de modo que as hipersuperfícies $\{\xi=\mathrm{const}\}$ são do tipo espaço, e uma solução do sistema
+linearizado ali é determinada pelos seus dados de Cauchy em $\{\xi=1+\epsilon\}$, uniformemente no círculo de $\tau$ do
+perfil periódico. Como $\delta\omega'$ e $e^{s\tau}h$ coincidem perto de $[-1,1]$ e ambas são soluções suaves, elas
+coincidem em todo $\Mhat$. O mesmo se aplica ao próprio $\delta'$ em (R6).
+
+\emph{(R6) Unicidade módulo gauge.} Se $\delta\omega'=0$, então~\eqref{eq:omega} dão $\delta Q=0$ e
+$\delta\zeta,\delta\phi$ constantes; uma constante não é do tipo de Floquet com $\Re s>0$, logo $\delta'=0$ e $\delta$
+é gauge puro. Se $\delta\omega'=c\,G_*$ (no rótulo $s$), então $\delta+\Lie_{X-cX_0}(\gbar,\phibar)$ tem
+$\delta\omega=0$ e vale a mesma conclusão. Duas fixações de gauge diferem por um campo admissível, cujo
+$\delta\omega$ está em $\mathcal G_s$ pelo \cref{lem:gauge}.
+
+\emph{(R7) Cadeias.} Para um modo generalizado, o transporte é resolvido ordem a ordem,
+$T_c(s)y_j=f_j-y_{j-1}$, com campos de gauge polinomiais em $\tau$. Fora da ressonância toda ordem tem solução.
+Na ressonância, a condição de compatibilidade em cada ordem é forçada como em (R2): um termo secular a mais
+alongaria uma cadeia de Jordan de $L$ em $\mu$, que é simples. Os passos (R3)--(R5) se aplicam a cada perfil e dão
+\[
+  \delta\omega'=e^{s\tau}\sum_{j=0}^{k-1}\frac{\tau^j}{j!}\,h_{k-1-j}.
+\]
+Como $\partial_\tau$ entra nas equações selecionadas e nos vínculos apenas pelos coeficientes constantes
+$1$ e $C_1$ (\cref{lem:affine}), o operador selecionado linearizado leva $e^{s\tau}\tau^jh$ em
+$e^{s\tau}\big(\tau^jL(s)h+j\tau^{j-1}h\big)$, e a aplicação de vínculos linearizada o leva em
+$e^{s\tau}\big(\tau^jC(s)h+j\tau^{j-1}C_1h\big)$. Agrupando as potências de $\tau$, as equações linearizadas viram
+$L(s)h_i=-h_{i-1}$ e os vínculos $C(s)h_i+C_1h_{i-1}=0$ ($h_{-1}=0$): $(h_0,\dots,h_{k-1})$ é uma cadeia de Jordan de
+$L$ em $s$, no domínio em $\Yp$, que satisfaz os vínculos de jato~\eqref{eq:jet}. Para $k=2$ esta é a forma
+$e^{s\tau}(h_1+\tau h_0)$ de (R2). Se
+$h_0\in\mathcal G_s$, então, por (R6), a ordem mais baixa é gauge puro, e a cadeia encurta módulo gauge.
+\end{proof}
+
+\subsection{A recíproca}\label{sec:physical-converse}
+
+\begin{lemma}[Reconstrução, sentido recíproco]\label{lem:V}
+Seja $\Re s>0$, e seja $h$ um multicampo $4\pi$-periódico com $Ph_1=-h_1$, no domínio de $L$ em
+$\Yp$, com $L(s)h=0$ e $C(s)h=0$. Então existe um único $\delta=(\delta g,\delta\phi)$ na forma RT cujas variáveis
+RT são $e^{s\tau}h$, e $\delta$ é um modo de Floquet físico com expoente $s$, analítico real em
+$\Mhat$, inclusive no eixo e no cone de luz. A aplicação $h\mapsto\delta$ é linear e injetiva.
+\end{lemma}
+
+\begin{proof}
+\emph{As dez equações.} As componentes selecionadas de $\delta\Omega^+$ se anulam em $\xi=0$ para todo $h$ com $h_1$
+ímpar, porque as suas partes principal e quadrática carregam um fator $\xi$; assim, nada se perde na divisão
+$R_\xi$ contida em $S$. Portanto $L(s)h=0$ dá $\tfrac12(1+P)\delta\Omega_1^+=\delta\Omega_2^+=\delta\Omega_3^+=
+\delta\Omega_4^+=0$, e $C(s)h=0$ dá $\tfrac12(1-P)\delta\Omega_1^+=\delta\Omega_{2\sharp}^+=0$. Assim
+$\delta\Omega^+=0$, e $P\delta\Omega_i^\sigma=-\delta\Omega_i^{-\sigma}$ dá $\delta\Omega^-=0$.
+
+\emph{Potenciais.} Procuramos $(\delta Q,\delta\zeta,\delta\phi)=e^{s\tau}(q,z,p)$ com
+$\delta\omega=e^{s\tau}h$. Por~\eqref{eq:omega} e~\eqref{eq:metric}, isso significa
+$D^\sigma_s z=h_3^\sigma$, $D_s^\sigma p=h_4^\sigma$ e $D_s^\sigma(z+\delta\log W)=h_2^\sigma$, com
+$D_s^\sigma=D^\sigma+\sigma s$, junto com a relação algébrica para $q$ vinda de $\omega_1$. Com
+$a_i=\tfrac12[(1-\xi)h_i^+-(1+\xi)h_i^-]$ e $b_i=(h_i^++h_i^-)/(2\mu)$, a equação $D_s^\sigma z=h_i^\sigma$ para
+os dois sinais equivale a $(\partial_\tau+s)z=a_i$ e $\partial_\xi z=b_i$. Um cálculo direto dá
+\[
+  -2\mu\xi\big((\partial_\tau+s)b_i-\partial_\xi a_i\big)=\delta\Omega_j^--\delta\Omega_j^+,\qquad (i,j)=(3,3),(4,4),(2,2),
+\]
+de modo que as duas equações são compatíveis. Para $\Re s>0$, $(\partial_\tau+s)$ é invertível nas funções
+$4\pi$-periódicas, com inversa $\int_0^\infty e^{-st}a(\tau-t,\xi)\,dt$, e $z=(\partial_\tau+s)^{-1}a_i$ então também
+satisfaz $\partial_\xi z=b_i$. Não há obstrução de período, porque $e^{4\pi s}\neq1$. O vínculo
+$C(s)h=0$ é necessário para a identidade por trás de $\log W$; as outras compatibilidades decorrem de $L(s)h=0$.
+
+\emph{Geometria.} Com $(q,z,p)$ assim definidos, $\delta$ está na forma RT, tem variáveis RT $e^{s\tau}h$, satisfaz
+a condição de Floquet por construção, e resolve as equações linearizadas pelas fórmulas de curvatura do
+\cref{lem:R}~(R4), já que todos os $\delta\Omega$ se anulam. Como $h\in\Yp$, os perfis são analíticos em $\tau$ numa
+faixa e em $\xi$ dentro da elipse de Bernstein de parâmetro $5/4$, cujo semieixo real é
+$\tfrac12(\tfrac54+\tfrac45)=\tfrac{41}{40}$; $q,z,p$ são pares em $\xi$, de modo que $\delta$ é analítico real em $\Mhat$ em
+coordenadas cartesianas. A injetividade é clara, pois $\delta$ determina as suas variáveis RT.
+\end{proof}
+
+\subsection{Correspondência e multiplicidade física}\label{sec:physical-count}
+
+Combinando os \cref{lem:gauge,lem:R,lem:V}:
+
+\begin{theorem}[Correspondência]\label{thm:correspondence}
+Seja $\Re s>0$. A aplicação $\delta\mapsto h$ do \cref{lem:R} induz um isomorfismo linear
+\[
+  \frac{\{\text{modos de Floquet físicos com expoente }s\}}{\{\text{modos de gauge puro}\}}
+  \;\xrightarrow{\ \cong\ }\;
+  \frac{\ker L(s)\cap\ker C(s)}{\mathcal G_s},
+\]
+com $\mathcal G_s$ como no \cref{lem:R}. Os modos físicos generalizados de ordem $k$ correspondem às cadeias de Jordan de
+$L$ em $s$ de comprimento $k$ que satisfazem os vínculos de jato
+\begin{equation}\label{eq:jet}
+  C(s)h_0=0,\qquad C(s)h_j+C_1h_{j-1}=0\quad(1\le j<k),
+\end{equation}
+módulo $\mathcal G_s$.
+\end{theorem}
+
+Note que os vínculos de jato não são as condições $C(s)h_j=0$ para cada $j$; impor estas últimas pode
+dar a dimensão errada já em exemplos $2\times2$.
+
+Os vínculos são tratados no espaço de raízes inteiro de uma vez. Fixe uma raiz $s_0$ com $\Re s_0>0$, seja $E$ o seu
+espaço de raízes (o autoespaço generalizado de $L(0)$ em $-s_0$, de dimensão finita e contido no domínio em
+$\Yp$), e $A=L(0)|_E$. Comparando as potências de $s$ em~\eqref{eq:KCML}, com $K(s)=K(0)+s$, obtém-se $M_1=C_1$,
+$M_0=C_0+K(0)C_1-C_1L(0)$ e $K(0)C_0=M_0L(0)$. Defina
+\[
+  \mathsf D=C_0-C_1L(0)\quad\text{em }E .
+\]
+Então $K(0)\mathsf D=\mathsf DA$, de modo que $\ker(\mathsf D|_E)$ é $A$-invariante, e para uma cadeia de Jordan
+$Ah_j=-s_0h_j-h_{j-1}$ tem-se $\mathsf Dh_j=C(s_0)h_j+C_1h_{j-1}$. Assim, uma cadeia satisfaz os vínculos de
+jato~\eqref{eq:jet} se e só se está em $\ker(\mathsf D|_E)$.
+
+\begin{proposition}[Multiplicidade física]\label{prop:physmult}
+Seja $s_0$ uma raiz de $L$ com $\Re s_0>0$ e espaço de raízes $E$. A dimensão do espaço dos modos físicos
+generalizados com expoente $s_0$, módulo gauge puro, é
+\[
+  \dim E-\operatorname{rank}(\mathsf D|_E)-\dim(\mathcal G_{s_0}\cap E).
+\]
+Em particular, se $s_0$ é algebricamente simples com autovetor $h$, esse número é $1$ se $C(s_0)h=0$ e
+$h\notin\mathcal G_{s_0}$, e $0$ caso contrário. No cenário de cone fixo da \cref{def:conefixed}, vale o mesmo sem o último
+termo.
+\end{proposition}
+
+\begin{proof}
+Pelo \cref{thm:correspondence}, os modos físicos generalizados módulo gauge correspondem a
+$\ker(\mathsf D|_E)/(\mathcal G_{s_0}\cap E)$, e o teorema do núcleo e da imagem dá a fórmula; aqui $\mathcal G_{s_0}\cap E\subset\ker(\mathsf D|_E)$,
+porque $\mathsf Dg_*=C(\mu)g_*=0$. O quociente não
+exige que $\mathcal G_{s_0}$ tenha um complemento $A$-invariante. Para uma raiz simples, $E=\C h$ e
+$\mathsf Dh=C(s_0)h$.
+
+No cenário de cone fixo, seja $\delta$ um modo físico com $\delta g_{++}=0$ no cone. Então
+$f_-(\cdot,1)=0$ em (R1), de modo que $y_-(\cdot,1)$ resolve $(\partial_\tau+s-\mu)y_-(\cdot,1)=0$; ela se anula fora da
+ressonância, e na ressonância o múltiplo livre de $e^{im_0\tau/2}$ é posto igual a zero. A fixação do gauge
+preserva, portanto, o cone e é única, e a obstrução $\kappa$ de (R2) se anula automaticamente. Não
+há modos de gauge que preservam o cone com $\Re s>0$: na prova do \cref{lem:gauge}, a condição
+$f(0)=0$ exclui a solução constante (\cref{rem:cone-role}). Reciprocamente, os modos do \cref{lem:V} estão na
+forma RT, de modo que $\delta g_{++}=0$ em toda parte. A correspondência do \cref{thm:correspondence} vale então com
+$\mathcal G_s$ trocado por $0$; para $s=\mu$, o elemento $g_*$ corresponde a $\Lie_{X_0}(\gbar,\phibar)$,
+que é um modo físico, mas não um modo de gauge que preserva o cone.
+\end{proof}
+
+A \cref{prop:physmult} reduz a parte~(2) do Teorema Principal à parte~(1) e a três fatos sobre os
+autovetores: os de $\sB$ e $\sK$ violam os vínculos, o de $\mu$ gera $\mathcal G_\mu$, e o
+de $\sphys$ os satisfaz. Eles são provados na \cref{sec:roots}.

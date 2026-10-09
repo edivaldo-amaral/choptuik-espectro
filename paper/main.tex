@@ -1,5 +1,5 @@
 \documentclass[11pt]{amsart}
-% Draft for Comm. Math. Phys.; converted to the Springer Nature template at submission.
+% Comm. Math. Phys.: a primeira submissao e so o PDF; o template da Springer Nature fica para depois do aceite.
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
@@ -14,7 +14,8 @@
 \input{macros}
 \hypersetup{pdftitle={Exactly one unstable mode: a computer-assisted spectral count for Choptuik's critical
 spacetime under spherically symmetric perturbations},pdfauthor={Edivaldo Amaral Gon\c{c}alves},
-pdfkeywords={Choptuik spacetime, critical collapse, computer-assisted proof, spectral count, Rouche theorem}}
+pdfkeywords={Choptuik spacetime, critical collapse, unstable modes, computer-assisted proof, Rouche theorem,
+Newton-Kantorovich method}}
 
 \title[One unstable mode for Choptuik's spacetime]{Exactly one unstable mode: a computer-assisted spectral
 count for Choptuik's critical spacetime under spherically symmetric perturbations}
@@ -25,7 +26,7 @@ count for Choptuik's critical spacetime under spherically symmetric perturbation
 \thanks{Instituto Federal de Mato Grosso (IFMT), Cuiab\'a, Mato Grosso, Brazil.\newline
 E-mail: \texttt{edivaldo.goncalves@ifmt.edu.br}.\quad
 ORCID: \href{https://orcid.org/0009-0007-9117-9833}{0009-0007-9117-9833}.}
-\date{Preprint, version 1, October 2026}
+\date{Preprint, version 2, October 2026}
 
 \begin{document}
 
@@ -62,6 +63,7 @@ certificates, a verification program and the data are publicly available.
 \input{sec/declarations}
 
 \appendix
+\crefalias{section}{appendix}\crefalias{subsection}{subappendix}% amsart: sem isto o cleveref chama os apendices de secoes
 \input{sec/app_paper_lemmas}
 \input{sec/app_formulas}
 \input{sec/app_certificates}

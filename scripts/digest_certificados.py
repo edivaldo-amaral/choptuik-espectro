@@ -6,7 +6,8 @@ artefatos (o sha dos arquivos pesados vem de build/reproducao/pacote_dados.json,
 ordena, e calcula o sha256 do texto. Quem tiver os arquivos pode refazer o inventario e conferir os
 digests; quem so tiver o repositorio confere cada arquivo contra o inventario.
 
-Saida: build/reproducao/digests.json e paper/sec/app_certificates_table.tex (gerado; nao editar a mao).
+Saida: build/reproducao/digests.json, paper/sec/app_certificates_table.tex e paper/sec_pt/app_certificates_table.tex
+(gerados; nao editar a mao).
 """
 from __future__ import annotations
 
@@ -32,12 +33,28 @@ ALEGACOES = {
     '11c': (r'\cref{lem:recovery}', r'\texttt{R5}'),
 }
 
+# alegacoes na versao em portugues do artigo (paper/main_pt.tex); a coluna de verificacao e a mesma
+ALEGACOES_PT = {
+    '0': r'dados de~\cite{RT2019} (\cref{sec:setting-background})',
+    '6': r'\cref{thm:counts}, faixa A',
+    '7, 10': r'\cref{thm:counts}, faixa B; \cref{prop:nk,prop:witness} em $\sB$',
+    '9': r'\cref{prop:nk,prop:witness} em $\sK$',
+    '11a': r'\cref{prop:nk} em $\sphys$',
+}
+VERIF_PT = {'download script': 'script de download'}
+
+
+def tabela(linhas_tex, cabecalho):
+    return '\n'.join(['% gerado por scripts/digest_certificados.py; nao editar a mao',
+                      r'\begin{tabular}{@{}p{0.33\textwidth}p{0.37\textwidth}rl@{}}', r'\toprule',
+                      cabecalho, r'\midrule', *linhas_tex, r'\bottomrule', r'\end{tabular}']) + '\n'
+
 
 def main():
     inv = json.loads((RAIZ / 'build/reproducao/inventario.json').read_text())
     pacote = json.loads((RAIZ / 'build/reproducao/pacote_dados.json').read_text())
     sha_pesado = {Path(it['arquivo']).name: it['sha256'] for it in pacote['itens']}
-    saida, linhas_tex = [], []
+    saida, linhas_tex, linhas_pt = [], [], []
     for passo in inv:
         linhas = []
         for a in passo['artefatos']:
@@ -50,11 +67,13 @@ def main():
         saida.append(dict(passo=passo['passo'], descricao=passo['descricao'], arquivos=len(linhas), digest=digest))
         alegacao, verif = ALEGACOES[passo['passo']]
         linhas_tex.append(f"{alegacao} & {verif} & {len(linhas)} & \\texttt{{{digest[:16]}}} \\\\")
+        linhas_pt.append(f"{ALEGACOES_PT.get(passo['passo'], alegacao)} & {VERIF_PT.get(verif, verif)} & {len(linhas)} & "
+                         f"\\texttt{{{digest[:16]}}} \\\\")
     (RAIZ / 'build/reproducao/digests.json').write_text(json.dumps(saida, indent=1, ensure_ascii=False) + '\n')
-    tex = ['% gerado por scripts/digest_certificados.py; nao editar a mao',
-           r'\begin{tabular}{@{}p{0.33\textwidth}p{0.37\textwidth}rl@{}}', r'\toprule',
-           r'claim & level-1 check & files & digest \\', r'\midrule', *linhas_tex, r'\bottomrule', r'\end{tabular}']
-    (RAIZ / 'paper/sec/app_certificates_table.tex').write_text('\n'.join(tex) + '\n')
+    (RAIZ / 'paper/sec/app_certificates_table.tex').write_text(
+        tabela(linhas_tex, r'claim & level-1 check & files & digest \\'))
+    (RAIZ / 'paper/sec_pt/app_certificates_table.tex').write_text(
+        tabela(linhas_pt, r'alegação & conferência do nível 1 & arquivos & digest \\'))
     for s in saida:
         print(f"{s['passo']:>6}  {s['arquivos']:3d}  {s['digest'][:16]}  {s['descricao']}")
 

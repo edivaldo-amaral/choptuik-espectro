@@ -31,6 +31,7 @@ EXCLUI = [
     re.compile(r'^probe_result\.json$'),          # benchmark da maquina local
     re.compile(r'^\.codex-runs/.*\.pdf$'),          # PDFs de terceiros e rascunhos copiados para as revisoes
     re.compile(r'^paper/ESTRUTURA\.md$'),          # nota interna de planejamento do artigo
+    re.compile(r'^submissao/'),                   # carta ao editor e notas da submissao (revisores sugeridos)
 ]
 TROCAS = [
     (re.compile(r'\b100\.(?:\d{1,3})\.(?:\d{1,3})\.(?:\d{1,3})\b'), '<host>'),
@@ -66,6 +67,11 @@ def main():
     dest = a.destino.resolve()
     if dest == RAIZ or RAIZ in dest.parents:
         raise SystemExit('destino deve ficar fora do repositorio')
+    # a exportacao copia a copia de trabalho: mudancas fora de commit iriam a publico (ja aconteceu com um
+    # certificado reformatado pelo verificador, com sha256 diferente do inventario)
+    sujos = subprocess.run(['git', 'diff', '--name-only', 'HEAD'], cwd=RAIZ, capture_output=True, text=True).stdout.split()
+    if sujos:
+        raise SystemExit('arquivos rastreados com mudancas fora de commit: ' + ', '.join(sujos[:10]))
     if dest.exists():
         shutil.rmtree(dest)
     arquivos = subprocess.run(['git', 'ls-files'], cwd=RAIZ, capture_output=True, text=True).stdout.splitlines()

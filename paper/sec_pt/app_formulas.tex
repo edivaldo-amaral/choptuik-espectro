@@ -1,0 +1,40 @@
+\section{Fórmulas explícitas}\label{app:formulas}
+
+\subsection{Pesos}
+A prova de existência de~\cite{RT2019} usa $(\kappa_1,\kappa_2)=(65/64,5/4)$. O nosso espaço forte é $\Yp=Y(65/64,5/4)$
+com pesos de componentes $\eta=(916,4096,243,1233)$; os certificados $\sharp$ usam $(129/128,9/8)$. O semieixo real
+da elipse de Bernstein de parâmetro $5/4$ é $\tfrac12(\tfrac54+\tfrac45)=\tfrac{41}{40}$, o raio do
+domínio $\Mhat$.
+
+\subsection{A aplicação de vínculos}
+Com a codificação $h_i^-=h_i$, $h_i^+=-Ph_i$ ($i=2,3,4$), $D^+=\partial_\tau+\mu(1+\xi)\partial_\xi$, e as
+fórmulas~\eqref{eq:omega} e~\cite[\S2]{RT2019} para $\Omega_1^+$ e $\Omega_{2\sharp}^+$,
+\[
+  C(s)h=\Big(\tfrac12(1-P)\,\delta\Omega_1^+[h],\ -P\,\delta\Omega_{2\sharp}^+[h]\Big),
+\]
+onde
+\begin{align*}
+  \delta\Omega_1^+[h]&=\xi(D^++s+\mu)h_1+2\mu h_1+\tfrac14\xi\,\delta\mathcal Q_1[h],\\
+  \delta\Omega_{2\sharp}^+[h]&=\xi(D^++s+\mu)h_2^++2\mu(h_2^+-h_3^+)
+    +\xi\,\delta\big(-(\omega_2^+)^2+2\omega_3^+\omega_2^+-(\omega_4^+)^2\big)[h],
+\end{align*}
+$\delta(\cdot)[h]$ denota a derivada em $\omegabar$ na direção $h$, e
+$\mathcal Q_1=\omega_1^2-2\omega_2^-\omega_1-6\omega_2^+\omega_1+4\omega_3^+\omega_1+(\omega_2^-)^2-2\omega_2^+\omega_2^-
+-4\omega_3^+\omega_2^-+(\omega_2^+)^2+4\omega_3^+\omega_2^+-4(\omega_4^+)^2$. Em particular, $C(s)=C_0+sC_1$ com
+\[
+  C_1h=\big(0,\ -\xi h_2\big),
+\]
+já que $\xi h_1$ é par e $P\xi P=-\xi$.
+
+\subsection{Os operadores $K$ e $M$}
+Com $J_s=\partial_\tau+s+\mu((1+\xi)\partial_\xi+1)$, $X$ a multiplicação por $\xi$,
+$\mathcal G_I=\mathcal G(\omegabar,Ic)$ e $\mathcal G_R=\mathcal G(\omegabar,Rf)$ (\cref{app:KCML}), e usando que
+$c_1$ e $f_1$ são ímpares:
+\begin{align*}
+  (K(s)c)_1&=\big(\partial_\tau+s+\mu(\xi\partial_\xi+1)\big)c_1+(\mathcal G_I)_1,\\
+  (K(s)c)_2&=J_sc_2+\mu R_\xi c_1+(\mathcal G_I)_2,\\
+  (M(s)f)_1&=-\mu(\xi\partial_\xi+2)Pf_1-(\mathcal G_R)_1,\\
+  (M(s)f)_2&=PJ_s(XPf_2)-\mu(Pf_1+Pf_2-f_2+2f_3)-(\mathcal G_R)_2 .
+\end{align*}
+$\mathcal G_I$ é o termo bilinear $\Gamma_2^\sharp(\omegabar,\cdot)$ de~\eqref{eq:sharp}. A primeira componente de $M$ não
+contém $s$, e $M_1f=(0,-\xi f_2)=C_1f$, de acordo com a relação $M_1=C_1$ da \cref{sec:physical-count}.

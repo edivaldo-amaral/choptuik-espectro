@@ -8,6 +8,29 @@
   "id": 23251930,
   "doi": "10.5281/zenodo.23251930",
   "estado": "publicado em 09/10/2026",
-  "arquivo": "Goncalves2026_Choptuik_one_unstable_mode_v1.pdf"
+  "arquivo": "Goncalves2026_Choptuik_one_unstable_mode_v1.pdf",
+  "conceito_doi": "10.5281/zenodo.23251929",
+  "versoes": [
+   {
+    "versao": 1,
+    "id": 23251930,
+    "doi": "10.5281/zenodo.23251930",
+    "estado": "publicado em 09/10/2026",
+    "arquivos": [
+     "Goncalves2026_Choptuik_one_unstable_mode_v1.pdf"
+    ]
+   },
+   {
+    "versao": 2,
+    "id": 23270506,
+    "doi": "10.5281/zenodo.23270506",
+    "estado": "publicado em 09/10/2026",
+    "arquivos": [
+     "Goncalves2026_Choptuik_one_unstable_mode_v2.pdf",
+     "Goncalves2026_Choptuik_um_modo_instavel_v2_pt.pdf"
+    ],
+    "nota": "texto submetido a CMP (CIMP-S-26-02514) com apendices citados como Appendix e o dominio da imagem numerica; traducao para o portugues"
+   }
+  ]
  }
 }

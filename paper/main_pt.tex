@@ -1,0 +1,84 @@
+\documentclass[11pt]{amsart}
+% Traducao para o portugues do artigo (main.tex). As secoes estao em sec_pt/, com os mesmos rotulos; os
+% numeros seguem a versao em ingles (ponto decimal). Compilar: pdflatex main_pt && bibtex main_pt && pdflatex main_pt (x2).
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools,thmtools}
+\usepackage[margin=1.15in]{geometry}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true,linkcolor=MidnightBlue,citecolor=MidnightBlue,urlcolor=MidnightBlue]{hyperref}
+\usepackage[brazilian,capitalise,nameinlink]{cleveref}
+
+\def\versaopt{}
+\renewcommand{\datename}{\textit{Data}}
+\makeatletter\def\emailaddrname{{\itshape E-mail}}\makeatother
+\input{macros}
+\hypersetup{pdftitle={Exatamente um modo instável: uma contagem espectral assistida por computador para o espaço-tempo
+crítico de Choptuik sob perturbações esfericamente simétricas},pdfauthor={Edivaldo Amaral Gon\c{c}alves},
+pdfkeywords={espaço-tempo de Choptuik, colapso crítico, modos instáveis, prova assistida por computador, teorema de
+Rouché, método de Newton-Kantorovich}}
+
+\title[Um modo instável para o espaço-tempo de Choptuik]{Exatamente um modo instável: uma contagem espectral
+assistida por computador para o espaço-tempo crítico de Choptuik sob perturbações esfericamente simétricas}
+\author{Edivaldo Amaral Gon\c{c}alves}
+\address{Instituto Federal de Mato Grosso (IFMT), Cuiab\'a, Mato Grosso, Brasil}
+\email{edivaldo.goncalves@ifmt.edu.br}
+\urladdr{https://orcid.org/0009-0007-9117-9833}
+\thanks{Instituto Federal de Mato Grosso (IFMT), Cuiab\'a, Mato Grosso, Brasil.\newline
+E-mail: \texttt{edivaldo.goncalves@ifmt.edu.br}.\quad
+ORCID: \href{https://orcid.org/0009-0007-9117-9833}{0009-0007-9117-9833}.\newline
+Tradução para o português da versão~2 do preprint em inglês, \emph{Exactly one unstable mode: a computer-assisted
+spectral count for Choptuik's critical spacetime under spherically symmetric perturbations}
+(DOI \href{https://doi.org/10.5281/zenodo.23251929}{\nolinkurl{10.5281/zenodo.23251929}}, que reúne todas as versões). Em caso de divergência, vale o texto em
+inglês. Os números seguem a convenção da versão em inglês, com ponto decimal.}
+\date{Preprint, versão 2, outubro de 2026}
+
+\begin{document}
+
+\begin{abstract}
+O espaço-tempo de Choptuik, a solução discretamente autossimilar no limiar de formação de buraco negro no
+colapso de um campo escalar sem massa, deve ter exatamente um modo instável, cuja taxa de crescimento $\lambda$
+determina o expoente crítico $\gamma=1/\lambda\approx0.374$. A existência desse espaço-tempo foi provada por
+Reiterer e Trubowitz com um argumento assistido por computador. Provamos, também com assistência computacional, que na
+realização deles a solução tem exatamente um modo instável, módulo gauge, sob perturbações lineares esfericamente
+simétricas que são suaves no tempo e analíticas na variável radial até o cone de luz e através dele. O
+modo é real e simples, com $\lambda\in[2.674040,\,2.674115]$, de modo que
+$1/\lambda\in[0.373955,\,0.373966]$. Mais precisamente, por classe de Floquet, o operador linearizado tem exatamente quatro
+raízes com parte real positiva: um modo de gauge, que translada o instante da singularidade; duas raízes cujos
+autovetores violam os vínculos; e o modo físico. A contagem usa uma versão para operadores do teorema de Rouch\'e
+com uma referência de dimensão finita, uma deflação de posto dois das raízes de gauge, localizações rigorosas por
+Newton--Kantorovich e cotas em aritmética racional e de bolas. A passagem do problema geométrico ao operador
+se apoia num resultado de completude global do gauge e numa reconstrução explícita das perturbações. Os
+certificados, um programa de verificação e os dados estão disponíveis publicamente.
+\end{abstract}
+
+\maketitle
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+\input{sec_pt/introduction}
+\input{sec_pt/setting}
+\input{sec_pt/main_theorem}
+\input{sec_pt/physical_modes}
+\input{sec_pt/counting}
+\input{sec_pt/roots}
+\input{sec_pt/computation}
+\input{sec_pt/discussion}
+
+\input{sec_pt/declarations}
+
+\appendix
+\crefalias{section}{appendix}\crefalias{subsection}{subappendix}% amsart: sem isto o cleveref chama os apendices de secoes
+\input{sec_pt/app_paper_lemmas}
+\input{sec_pt/app_formulas}
+\input{sec_pt/app_certificates}
+
+\bibliographystyle{amsplain}
+\bibliography{refs}
+
+\end{document}

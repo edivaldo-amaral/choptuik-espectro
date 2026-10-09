@@ -1,4 +1,15 @@
 % ---- theorem environments (thmtools, so that cleveref names each kind correctly)
+% main_pt.tex (the Portuguese translation) defines \versaopt before reading this file.
+\ifdefined\versaopt
+\declaretheorem[name=Teorema,refname={Teorema,Teoremas},numberwithin=section]{theorem}
+\declaretheorem[name=Proposição,refname={Proposição,Proposições},sibling=theorem]{proposition}
+\declaretheorem[name=Lema,refname={Lema,Lemas},sibling=theorem]{lemma}
+\declaretheorem[name=Corolário,refname={Corolário,Corolários},sibling=theorem]{corollary}
+\declaretheorem[name=Definição,refname={Definição,Definições},sibling=theorem,style=definition]{definition}
+\declaretheorem[name=Observação,refname={Observação,Observações},sibling=theorem,style=remark]{remark}
+\declaretheorem[name=Teorema Principal,numbered=no]{mainthm}
+\declaretheorem[name=Teorema,numbered=no]{introthm}
+\else
 \declaretheorem[name=Theorem,numberwithin=section]{theorem}
 \declaretheorem[name=Proposition,sibling=theorem]{proposition}
 \declaretheorem[name=Lemma,sibling=theorem]{lemma}
@@ -7,6 +18,7 @@
 \declaretheorem[name=Remark,sibling=theorem,style=remark]{remark}
 \declaretheorem[name=Main Theorem,numbered=no]{mainthm}
 \declaretheorem[name=Theorem,numbered=no]{introthm}
+\fi
 
 % ---- drafting aids (remove before submission)
 \newcommand{\todo}[1]{{\color{BrickRed}[\textbf{TODO:} #1]}}

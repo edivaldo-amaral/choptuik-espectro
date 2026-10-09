@@ -1,0 +1,80 @@
+\section{Discussão}\label{sec:discussion}
+
+\subsection{O que o teorema diz sobre o colapso crítico}
+
+No quadro padrão do colapso crítico~\cite{GundlachMartinGarcia2007}, dados iniciais perto do limiar de
+formação de buraco negro evoluem por muito tempo perto da solução crítica, e o desvio é dominado pelo seu
+único modo que cresce, $e^{\lambda T}$. Se os dados iniciais dependem de um parâmetro $p$, a massa do buraco negro então
+escala como $(p-p_*)^\gamma$ com $\gamma=1/\lambda$, modulada por uma oscilação periódica no caso discretamente
+autossimilar. O Teorema Principal fornece o ingrediente espectral desse quadro para o colapso esfericamente simétrico do
+campo escalar: há exatamente um modo instável, ele é simples, e $\lambda\in[2.674040,\,2.674115]$. Transformar o
+quadro num teorema exige outros ingredientes, entre eles os seguintes; a questão de regularidade da
+\cref{sec:discussion-regularity} e os modos neutros da \cref{rem:neutral} também teriam de ser tratados.
+\begin{enumerate}[label=(\alph*),leftmargin=*]
+\item \emph{Estabilidade linear no sentido da evolução.} A ausência de outras raízes de $L$ em $\Re s>0$ não dá, por
+  si só, o decaimento do fluxo linearizado num complemento dos modos instável e de gauge: o operador não é
+  autoadjunto, e são necessárias cotas do resolvente ao longo de retas verticais, ou um enunciado de completude para os modos de
+  Floquet, e não apenas a localização dos autovalores. Reiterer deu um arcabouço abstrato para a estabilidade de
+  codimensão finita de equações hiperbólicas simétricas periódicas no tempo, com resolvente compacto suficientemente à direita no plano
+  complexo, motivado pelos espaços-tempos discretamente autossimilares~\cite{Reiterer2015}; se as suas hipóteses valem para a
+  presente formulação não é tratado aqui.
+\item \emph{Estabilidade não linear:} uma variedade estável de codimensão um da solução crítica.
+\item \emph{Aspectos globais.} A solução de~\cite{RT2019} é construída numa vizinhança do cone de luz passado
+  da singularidade; o quadro do limiar diz respeito a dados assintoticamente planos.
+\end{enumerate}
+A concordância numérica de $1/\lambda$ com o expoente medido $\gamma\approx0.374$ é, portanto, uma conferência de
+consistência, e não uma consequência.
+
+\subsection{Perturbações não esféricas}
+
+Reiterer e Trubowitz descrevem a evidência numérica sobre perturbações gerais como inconclusiva~\cite{RT2019},
+citando a análise linear de Mart\'in-Garc\'ia e Gundlach~\cite{MartinGarciaGundlach1999}, que encontraram decaimento de todas
+as perturbações não esféricas, e as evoluções não lineares axissimétricas
+de~\cite{ChoptuikHirschmannLieblingPretorius2003}. O setor delicado é o setor polar (par) com $\ell=2$,
+cujo modo menos amortecido foi encontrado em $\kappa\Delta\approx-0.07$, perto do eixo imaginário.
+
+Como primeiro passo para estender o Teorema Principal, escrevemos as equações de
+Gerlach--Sengupta~\cite{GerlachSengupta1979} sobre o fundo de~\cite{RT2019}, nas variáveis $\omega$ e $\mu$, e
+as resolvemos numericamente por colocação espectral, mantendo o cone de luz dentro do domínio e filtrando soluções
+espúrias pela regularidade e pelos vínculos. Esse cálculo \emph{não} é rigoroso e não faz parte do
+teorema. Nos dois setores, para $\ell=2$ e $\ell=3$, ele é consistente com os valores
+de~\cite{MartinGarciaGundlach1999} dentro da precisão do cálculo por diferenças finitas deles; por exemplo,
+$\kappa\Delta\approx-2.320$ contra o $-2.30$ deles para o modo axial com $\ell=2$. Para o modo polar com $\ell=2$,
+ele dá
+\[
+  s\approx-0.004764\pm0.147345\,i,\qquad \kappa\Delta=4\pi\Re s\approx-0.0599,
+\]
+contra o $-0.07$ deles, e estável sob refinamento da nossa discretização até cerca de $2\cdot10^{-5}$, o que é
+evidência numérica e não uma cota certificada: o modo é amortecido, mas a uma distância de apenas $0.005$ do
+eixo. Uma contagem rigorosa para $\ell\ge1$ parece viável com os métodos deste artigo, usando uma deflação e uma
+localização rigorosa por Newton--Kantorovich para esse modo, a estrutura dos vínculos no certificado e uma cota uniforme para
+$\ell$ grande. Junto com o Teorema Principal, ela daria exatamente um modo instável para perturbações lineares gerais,
+no sentido espectral.
+
+\subsection{Regularidade}\label{sec:discussion-regularity}
+
+A classe de modos físicos da \cref{def:physical-mode} exige analiticidade em $\xi$ através do cone de luz e
+no eixo, com uma vizinhança complexa que pode ser arbitrariamente fina. Se todo modo de Floquet com
+$\Re s>0$ que é apenas suave em $\xi$ é analítico é uma questão de regularidade em aberto para um sistema hiperbólico
+periódico em $\tau$. A nossa recuperação do raio (\cref{lem:recovery}) funciona para todo peso $\kappa_2'>1$, mas a sua cota na
+parte livre degenera como $1/(\kappa_2'-1)$, de modo que ela não alcança $\kappa_2'=1$.
+
+\subsection{Sobre o método}
+
+O que tornou a contagem viável em computadores comuns foi uma combinação de escolhas de formulação.
+\begin{itemize}[leftmargin=*]
+\item \emph{Uma referência finita em vez de um majorante do exterior.} Uma abordagem anterior cotava separadamente o resolvente
+  da seção finita e o operador fora dela; ela exigia truncamentos e constantes fora de alcance
+  sem computação de alto desempenho. Comparar $L$ com uma referência bloco-diagonal cujos zeros são os de uma
+  matriz finita exige apenas cotas ao longo do contorno.
+\item \emph{Um espaço no qual o fundo é pontual.} No espaço do toro, a imagem numérica do fundo
+  se reduz ao símbolo, o que deu a cota de exclusão $2.93$, contra $414$ com majorantes bloco a bloco.
+\item \emph{O critério de Perron} para matrizes de normas de blocos, em vez da norma espectral de uma tal matriz.
+\item \emph{A deflação das raízes de gauge,} que estão no contorno ou perto dele.
+\item \emph{Os vínculos por meio de $K$.} Num diagnóstico em ponto flutuante no truncamento $12\times36$, o máximo
+  sobre a fronteira de $[1/8,1]\times[-1/4,1/4]$ da norma ponderada de $J(\,\cdot\,+s)^{-1}$ foi cerca de $1800$ para
+  $L$ e $14$ para $K$, cada um no espaço em que o seu certificado é formulado. A classificação física é, portanto, obtida
+  provando que $K$ é injetivo, e não cotando os vínculos nos espaços de raízes de $L$.
+\end{itemize}
+Várias outras rotas foram tentadas e encerradas, com cotas inferiores medidas para o seu custo. Elas estão documentadas no
+repositório, para leitores que queiram tentar cálculos semelhantes.

@@ -1,0 +1,41 @@
+{
+ "beta_plus": {
+  "ok": true,
+  "tempo_s": 6,
+  "iguais": {
+   "beta_eta": true,
+   "beta_eta_le_5191_500": true,
+   "sharp_beta": true
+  }
+ },
+ "F1": {
+  "ok": true,
+  "tempo_s": 32,
+  "iguais": {
+   "c1_re": true,
+   "c1_im": true,
+   "cota_inferior": true,
+   "certificado": true,
+   "c1_cone_re": true,
+   "c1_cone_im": true,
+   "certificado_cone": true
+  }
+ },
+ "R5": {
+  "ok": true,
+  "tempo_s": 0,
+  "iguais": {
+   "linhas": true
+  }
+ },
+ "L_real_toro": {
+  "ok": true,
+  "tempo_s": 2063,
+  "iguais": {
+   "cauda_max": true,
+   "qT": true,
+   "defeito": true,
+   "contrai": true
+  }
+ }
+}

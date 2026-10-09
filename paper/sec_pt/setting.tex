@@ -1,0 +1,322 @@
+\section{O fundo e a formulação de Reiterer--Trubowitz}\label{sec:setting}
+
+Esta seção fixa a notação. As \cref{sec:setting-background,sec:setting-system} recordam as partes
+de~\cite{RT2019} que usamos, com a notação de lá sempre que possível. As \cref{sec:setting-linear,sec:setting-sectors,sec:setting-constraints,sec:setting-realizations}
+definem os objetos do Teorema Principal: a família linearizada $L(s)$, a aplicação de vínculos $C(s)$, o
+operador de propagação dos vínculos $K(s)$, as classes de Floquet e os espaços de funções.
+Os números de seção nas referências a~\cite{RT2019} são os da versão 1203.3766v1 do arXiv, cujo fonte usamos
+em todo o trabalho.
+
+\subsection{O espaço-tempo de Choptuik}\label{sec:setting-background}
+
+Sejam
+\[
+  M=\{(u_-,u_+)\in\R^2:\ u_+<0,\ u_+<u_-<-u_+/81\},\qquad
+  \xi=\frac{u_+-u_-}{u_++u_-}.
+\]
+Reiterer e Trubowitz~\cite[Main result]{RT2019} provam a existência de constantes $K,\mu>0$, conhecidas com
+$80$ dígitos ($K\approx1.72272620$, $\mu\approx0.16830708$), e de funções analíticas reais
+$\phi,\zeta,Q$ em $M$ com $\mu+Q\xi^2>0$, tais que a métrica esfericamente simétrica
+\begin{equation}\label{eq:metric}
+  \gbar=e^{-2\zeta}\Big(-\frac{2\,(du_-\otimes du_++du_+\otimes du_-)}{\mu^2(u_++u_-)^2}
+  +\frac{\xi^2}{(\mu+Q\xi^2)^2}\,g_{S^2}\Big)
+\end{equation}
+em $M\times S^2$ e o campo escalar $\phibar=\phi$ resolvem
+$\operatorname{Ric}_g=2\,d\phi\otimes d\phi$, $\Box_g\phi=0$. A aplicação
+$\Theta(u_-,u_+)=e^{-2\pi\mu}(u_-,u_+)$ satisfaz
+\[
+  \Theta^*\gbar=e^{-2K}\gbar,\qquad \phibar\circ\Theta=-\phibar,
+\]
+e a curvatura escalar não é identicamente nula; assim o espaço-tempo não é plano e explode no
+ponto singular $(u_-,u_+)=(0,0)$, que não pertence a $M$. A fronteira $u_+=u_-$ é o eixo de simetria, uma
+singularidade removível das coordenadas. A hipersuperfície nula $u_-=0$ é o cone de luz passado do ponto
+singular; $M$ contém uma vizinhança dele.
+
+\emph{Coordenadas.} Usamos as coordenadas $(\tau,\xi)$ de~\cite{RT2019}, definidas por
+\begin{equation}\label{eq:tauxi}
+  u_\sigma=-(1+\sigma\xi)\,e^{-\mu\tau},\qquad\sigma=\pm.
+\end{equation}
+Nelas $\Theta$ é a translação $\tau\mapsto\tau+2\pi$, o eixo é $\xi=0$, o cone de luz $u_-=0$ é
+$\xi=1$, e a condição $u_-<-u_+/81$ vira $\xi<41/40$. Trocando $\xi\ge0$ pela variável
+cartesiana $x\in\R^3$ com $|x|=\xi$, o espaço-tempo passa a ser o aberto
+\[
+  \Mhat=\R_\tau\times B_{41/40}(0)\subset\R\times\R^3,
+\]
+no qual $\gbar$ e $\phibar$ são analíticas reais, inclusive no eixo $x=0$ e através do cone de luz
+$|x|=1$~\cite{RT2019}. Todas as perturbações abaixo são definidas em $\Mhat$.
+
+\emph{Tempo logarítmico.} Como $\Theta$ reescala os comprimentos por $e^{-K}$ e age por $\tau\mapsto\tau+2\pi$,
+o tempo $T=K\tau/2\pi$ é o tempo logarítmico usual do colapso crítico, no qual $\Theta$ é uma
+translação por $K$. O campo escalar volta a si mesmo sob $\Theta^2$, de modo que o período de eco é
+$\Delta=2K=3.44545240\ldots$, de acordo com o valor numérico $3.445452402(3)$ de
+Mart\'in-Garc\'ia e Gundlach~\cite{MartinGarciaGundlach2003}, como já observado em~\cite{RT2019}.
+
+\subsection{Variáveis de referencial e o sistema}\label{sec:setting-system}
+
+Reiterer e Trubowitz escrevem as equações como um sistema de primeira ordem, quadraticamente não linear, para a
+constante $\mu$ e quatro funções $\omega=(\omega_1,\omega_2,\omega_3,\omega_4)$ de $(\tau,\xi)$. Com os
+campos vetoriais nulos radiais
+\[
+  D^\sigma=\sigma\,\partial_\tau+\mu(1+\sigma\xi)\,\partial_\xi,\qquad\sigma=\pm,
+\]
+e a reflexão $(Pf)(\tau,\xi)=f(\tau,-\xi)$, elas são
+\begin{equation}\label{eq:omega}
+\begin{aligned}
+  \omega_1&=2\xi Q+(D^-+D^+)\big(\zeta+\log(\mu+\xi^2Q)\big),&
+  \omega_2^\sigma&=D^\sigma\big(\zeta+\log(\mu+\xi^2Q)\big)-\sigma\mu,\\
+  \omega_3^\sigma&=D^\sigma\zeta-\sigma\mu,&
+  \omega_4^\sigma&=D^\sigma\phi,
+\end{aligned}
+\end{equation}
+com $\omega_i^-=\omega_i$ e $\omega_i^+=-P\omega_i$ para $i=2,3,4$~\cite[\S2]{RT2019}. As equações de
+Einstein--campo escalar equivalem à anulação de dez funções explícitas
+$\Omega_i^\sigma(\mu,\omega)$, $i\in\{1,2,2\sharp,3,4\}$, cada uma da forma
+\[
+  \Omega_i^\sigma=\xi\,(D^\sigma+\sigma\mu)(\text{uma componente de }\omega)
+  +\mu\,(\text{linear em }\omega)+\xi\,(\text{quadrática em }\omega).
+\]
+A simetria de reflexão as reduz às cinco equações $\Omega^+=0$, postas no cilindro
+$(\R/4\pi\Z)\times(-\xi_*,\xi_*)$, $\xi_*>1$, para funções com as simetrias
+\begin{equation}\label{eq:symmetries}
+  \omega_1,\omega_2,\omega_3\ \text{$2\pi$-periódicas},\qquad \omega_4\ \text{$2\pi$-antiperiódica},\qquad
+  P\omega_1=-\omega_1.
+\end{equation}
+
+\emph{Séries.} Cada $\omega_i$ é expandida em série de Fourier em $\tau$ com período $4\pi$ e em série de
+Chebyshev em $\xi$:
+\begin{equation}\label{eq:series}
+  v(\tau,\xi)=\sum_{m,n\in\Z}v_{mn}\,e^{im\tau/2}e^{in\theta},\qquad \xi=\cos\theta,\qquad
+  v_{m,-n}=v_{mn}.
+\end{equation}
+As simetrias~\eqref{eq:symmetries} dizem que $\omega_1,\omega_2,\omega_3$ contêm apenas $m$ par,
+$\omega_4$ apenas $m$ ímpar, e $\omega_1$ apenas $n$ ímpar. Nessas coordenadas $\partial_\tau$ age por
+$im/2$, a reflexão por $(-1)^n$, a multiplicação por $\xi$ pela média dos vizinhos $n\pm1$, e o
+produto de funções pela convolução dos coeficientes.
+
+\emph{O sistema selecionado e os vínculos.} Reiterer e Trubowitz separam as cinco equações
+$\Omega^+=0$ numa parte com tantas equações quanto incógnitas e num resto, os vínculos, por meio de dois
+operadores de seleção $S$ e $S^\sharp$: $\Omega^+=0$ se e só se $S\Omega^+=0$ e $S^\sharp\Omega^+=0$.
+A parte selecionada é
+\begin{equation}\label{eq:F}
+  F(\mu,\omega):=S\,\Omega^+(\mu,\omega)
+  =O_\mu\,\omega+\mu\,S\Gamma_1\omega+S\Xi\,\Gamma_2(\omega,\omega),
+\end{equation}
+onde:
+\begin{itemize}[leftmargin=*]
+\item $O_\mu=\partial_\tau+\mu D_O$, com $D_O=\operatorname{diag}(\xi\partial_\xi+1,\
+  (1+\xi)\partial_\xi+1,\ (1+\xi)\partial_\xi+1,\ (1+\xi)\partial_\xi+1)$, é a parte livre;
+\item $\Gamma_1$ é linear e $\Gamma_2$ é bilinear simétrica; ambas são construídas com reflexões e
+  produtos pontuais, sem derivadas;
+\item $\Xi$ é a multiplicação por $\xi$, e $S$ contém a divisão regularizada por $\xi$,
+  $R_\xi f=(f-f|_{\xi=0})/\xi$.
+\end{itemize}
+As fórmulas explícitas estão em~\cite[\S3]{RT2019}. Escrevemos $F^\sharp(\mu,\omega):=S^\sharp\Omega^+(\mu,\omega)$
+para os vínculos.
+
+\emph{O fundo.} Reiterer e Trubowitz constroem uma solução
+$(\mu,\omegabar)$ de $F=0$, $F^\sharp=0$ como ponto fixo de uma contração num espaço $\ell^1$ ponderado
+de coeficientes, com pesos $(65/64)^{|m|}(5/4)^{|n|}$, perto de dados numéricos explícitos, e a partir dela o
+espaço-tempo da \cref{sec:setting-background}~\cite[\S\S4--5]{RT2019}. A solução é normalizada pela
+condição $\operatorname{Re}(\omegabar_4)_{10}=0$, que fixa a invariância por translação em $\tau$. As cotas
+finais de lá são
+\begin{equation}\label{eq:RTball}
+  |\mu-(\mu_A+\mu_B)|\le2^{-277},\qquad \|\omegabar-(\omega_A+\omega_B)\|\le2^{-277},\qquad
+  \|\omega_B\|\le2^{-25},
+\end{equation}
+onde $(\mu_A,\omega_A)$ e $(\mu_B,\omega_B)$ são dados explícitos publicados com~\cite{RT2019}, e a
+norma é a norma $\ell^1$ ponderada de lá. A maior parte das nossas cotas usa apenas $(\mu_A,\omega_A)$ e a
+consequência $\|\omegabar-\omega_A\|\le2^{-25}+2^{-277}$.
+
+\subsection{A família linearizada}\label{sec:setting-linear}
+
+Uma perturbação do tipo de Floquet é $\omega=\omegabar+\epsilon\,e^{s\tau}h$, onde $h$ é um multicampo
+$4\pi$-periódico. Aqui $\mu$ fica fixo, assim como as coordenadas $(\tau,\xi)$: perturbações de $\mu$
+moveriam as coordenadas nulas~\eqref{eq:tauxi}. Que isso não restringe a generalidade para os modos físicos é
+parte da \cref{sec:physical}. A normalização da fase não é imposta a $h$.
+
+\begin{definition}[A família linearizada]\label{def:L}
+Para $s\in\C$ e um multicampo $4\pi$-periódico $h$ com $Ph_1=-h_1$, ponha
+\[
+  L(s)h:=e^{-s\tau}\,D_\omega F(\mu,\omegabar)\big[e^{s\tau}h\big],\qquad
+  C(s)h:=e^{-s\tau}\,D_\omega F^\sharp(\mu,\omegabar)\big[e^{s\tau}h\big].
+\]
+\end{definition}
+
+\begin{lemma}[$L$ e $C$ são afins em $s$]\label{lem:affine}
+$L(s)=L(0)+s\,I$ e $C(s)=C_0+s\,C_1$, onde
+\[
+  L(0)=J+B,\qquad J=O_\mu,\qquad B=\mu\,S\Gamma_1+2\,S\Xi\,\Gamma_2(\omegabar,\cdot\,),
+\]
+e $C_0,C_1$ são dados explicitamente no \cref{app:formulas}.
+\end{lemma}
+
+\begin{proof}
+Em~\eqref{eq:F}, a única derivada em $\tau$ é a de $O_\mu$, com coeficiente um. Os operadores
+$\Gamma_1$, $\Gamma_2(\omegabar,\cdot)$, $\Xi$ e $S$ agem em $\xi$ e por produtos pontuais, de modo que
+comutam com a multiplicação por $e^{s\tau}$, e $e^{-s\tau}\partial_\tau e^{s\tau}=\partial_\tau+s$. Em
+$\Omega^+=\Xi H_\mu\omega+\mu\Gamma_1\omega+\Xi\Gamma_2(\omega,\omega)$ a derivada $\partial_\tau$ aparece
+apenas em $H_\mu=H_1\partial_\tau+(\text{termos em }\xi)$, onde $H_1$ é uma matriz constante de identidades e
+reflexões~\cite[\S\S2--3]{RT2019}. Portanto o mesmo cálculo dá $C(s)=C_0+sC_1$ com
+$C_1=S^\sharp\Xi H_1$.
+\end{proof}
+
+Uma raiz de $L$ é um ponto $s_0$ no qual $L(s_0)$ tem núcleo não trivial nas realizações da
+\cref{sec:setting-realizations}. Pelo \cref{lem:affine}, as raízes de $L$ são os pontos $s_0$ com
+$-s_0\in\sigma(L(0))$, e uma cadeia de Jordan de $L$ em $s_0$, isto é, $L(s_0)h_0=0$ e
+$L(s_0)h_j=-h_{j-1}$, é uma cadeia de Jordan do operador $L(0)$ no autovalor $-s_0$. A
+\emph{multiplicidade algébrica} $\mult(s_0)$ é a dimensão do autoespaço generalizado
+$\bigcup_k\ker(L(0)+s_0)^k$. Ela é finita, e as raízes são isoladas, pela \cref{prop:fredholm}.
+
+\subsection{Classes de Floquet e os dois setores}\label{sec:setting-sectors}
+
+Um multicampo $h$ é $4\pi$-periódico, e portanto contém todos os índices de Fourier $m$; o fundo contém
+apenas os índices permitidos por~\eqref{eq:symmetries}. Assim, o espaço dos perfis se decompõe como
+$X=X_A\oplus X_B$:
+\begin{itemize}[leftmargin=*]
+\item \emph{setor A}, com a simetria do fundo: $h_1,h_2,h_3$ com $m$ par e $h_4$ com
+  $m$ ímpar;
+\item \emph{setor B}, com a simetria oposta: $h_1,h_2,h_3$ com $m$ ímpar e $h_4$ com $m$ par.
+\end{itemize}
+Como $\omegabar$ pertence ao setor A, os dois setores são invariantes por $L(s)$ e $C(s)$; escrevemos
+$L_A,L_B$ e $C_A,C_B$ para as restrições. Em termos do meio período $\tau\mapsto\tau+2\pi$, o setor A
+consiste nos perfis com a mesma simetria do fundo, e o setor B nos de simetria oposta.
+
+A multiplicação por $e^{i\tau/2}$ é o deslocamento $m\mapsto m+1$ do índice de Fourier. Ela preserva os
+espaços da \cref{sec:setting-realizations} a menos de um fator constante, comuta com toda operação
+em $\xi$ e com a multiplicação por funções de $\tau$, e conjuga $\partial_\tau$ em
+$\partial_\tau+i/2$. Portanto
+\begin{equation}\label{eq:shift}
+  e^{-i\tau/2}\,L(s)\,e^{i\tau/2}=L(s+\tfrac{i}{2}),\qquad
+  e^{-i\tau/2}\,C(s)\,e^{i\tau/2}=C(s+\tfrac{i}{2}),
+\end{equation}
+e o deslocamento troca os dois setores.
+
+\begin{lemma}[Redução ao setor A]\label{lem:sectorB}
+Para todo $s\in\C$,
+\[
+  \mult_L(s)=\mult_{L_A}(s)+\mult_{L_A}(s+\tfrac{i}{2}),
+\]
+e $L_A$ é $i$-periódico: $\mult_{L_A}(s+i)=\mult_{L_A}(s)$. A conjugação~\eqref{eq:shift} leva as
+cadeias de Jordan de $L_B$ em $s$ sobre as de $L_A$ em $s+\tfrac i2$, e leva as cadeias que satisfazem os
+vínculos em cadeias que satisfazem os vínculos.
+\end{lemma}
+
+\begin{proof}
+A decomposição $X=X_A\oplus X_B$ reduz $L(s)$, de modo que as multiplicidades se somam. O deslocamento de um
+índice de Fourier leva $X_B$ sobre $X_A$ e, por~\eqref{eq:shift}, conjuga $L_B(s)$ a $L_A(s+\tfrac i2)$ e $C_B(s)$
+a $C_A(s+\tfrac i2)$; a conjugação preserva núcleos, cadeias de Jordan e seus comprimentos. O deslocamento de dois
+índices leva $X_A$ nele mesmo e dá a $i$-periodicidade. Os detalhes para as realizações usadas abaixo,
+nas quais o deslocamento é uma isometria a menos do fator $\kappa_1$, estão no \cref{app:lemmas}.
+\end{proof}
+
+Consequentemente, as raízes de $L$, contadas por classe de Floquet $s+\tfrac{i}{2}\Z$, correspondem às raízes de
+$L_A$ contadas módulo $i\Z$. Todos os cálculos são feitos para $L_A$ na faixa
+\[
+  \widetilde Q=\{-\tfrac14<\Im s\le\tfrac34\},
+\]
+cuja parte inferior $\{-\tfrac14<\Im s\le\tfrac14\}$ contém as raízes do setor A (a \emph{faixa A}, \emph{A band}) e cuja metade
+superior contém as raízes do setor B, deslocadas por $\tfrac i2$ (a \emph{faixa B}, \emph{B band}). Por exemplo, a raiz $\sB$
+do Teorema Principal aparece como $\sB+\tfrac i2$ na faixa B.
+
+\emph{Realidade.} Os coeficientes de $\omegabar$ satisfazem a condição de realidade
+$v_{-m,-n}=\overline{v_{mn}}$~\cite{RT2019}; portanto $\overline{L_A(\bar s)\,\bar h}=L_A(s)h$ para a
+conjugação correspondente dos coeficientes, e as raízes de $L_A$ são simétricas por $s\mapsto\bar s$.
+Para $L_B$ o mesmo argumento, combinado com o deslocamento, dá a simetria $s\mapsto\bar s+i$ na faixa B
+(\cref{app:lemmas}). São essas simetrias que tornam reais as quatro raízes do Teorema Principal.
+
+\subsection{Propagação dos vínculos}\label{sec:setting-constraints}
+
+As equações $\Omega^+=0$ não são independentes. Reiterer e Trubowitz mostram que, se $F(\mu,\omega)=0$,
+então $\omega^\sharp=F^\sharp(\mu,\omega)$ satisfaz o sistema linear homogêneo
+\begin{equation}\label{eq:sharp}
+  O_\mu^\sharp\,\omega^\sharp+\mu\,R_\xi\Gamma_1^\sharp\,\omega^\sharp+\Gamma_2^\sharp(\omega,\omega^\sharp)=0,
+\end{equation}
+onde $O_\mu^\sharp=\partial_\tau+\mu\operatorname{diag}(\xi\partial_\xi+1,(1+\xi)\partial_\xi+1)$, e
+$\Gamma^\sharp_1,\Gamma^\sharp_2$ são de novo algébricos~\cite[\S3]{RT2019}. Linearizar essa identidade em
+$(\mu,\omegabar)$, sem supor $F(\mu,\omega)=0$, dá o lema seguinte, provado no
+\cref{app:lemmas}.
+
+\begin{lemma}[Propagação dos vínculos]\label{lem:KCML}
+Sejam
+\[
+  K(s)=J^\sharp+B^\sharp+s\,I,\qquad J^\sharp=O^\sharp_\mu,\qquad
+  B^\sharp=\mu\,R_\xi\Gamma_1^\sharp+\Gamma_2^\sharp(\omegabar,\cdot\,).
+\]
+Existe uma família afim explícita $M(s)=M_0+sM_1$ (\cref{app:formulas}) tal que
+\begin{equation}\label{eq:KCML}
+  K(s)\,C(s)=M(s)\,L(s)
+\end{equation}
+como operadores fechados do domínio de $L$ em $Y(a,b)$ no domínio de $K$ em $Y(a',b')$, para todos os pesos
+$1<a'<a$, $1<b'<b$ (\cref{sec:setting-realizations}).
+\end{lemma}
+
+Em particular, se $L(s)h=0$ e $K(s)$ é injetivo no seu domínio no espaço menor, então $C(s)h=0$:
+um autovetor de $L$ satisfaz os vínculos em todo $s$ que não é raiz de $K$. A perda de
+raio de $(a,b)$ para $(a',b')$ é inofensiva, porque todos os nossos certificados para $K$ são formulados no
+espaço menor $(129/128,9/8)$.
+
+\subsection{Realizações e a propriedade de Fredholm}\label{sec:setting-realizations}
+
+Usamos duas famílias de espaços de coeficientes. Para pesos $a,b>1$:
+\begin{itemize}[leftmargin=*]
+\item $Y(a,b)$ é o espaço $\ell^1$ ponderado de~\cite{RT2019}, com norma
+  $\sum_i\eta_i\sum_{m,n}a^{|m|}b^{|n|}|(h_i)_{mn}|$; os pesos das componentes $\eta_i>0$ dão normas
+  equivalentes e só afetam constantes (\cref{app:lemmas}). Escrevemos $\Yp=Y(65/64,5/4)$ para o espaço da
+  prova de existência.
+\item $\mathbb T(a,b)$, o \emph{espaço do toro} (\emph{torus space}), é o espaço $\ell^2$ ponderado com índice de Fourier
+  \emph{com sinal},
+  \[
+    \|h\|^2_{\mathbb T(a,b)}=\sum_i\sum_{m,n\in\Z}a^{2m}b^{2n}\,|(h_i)_{mn}|^2 .
+  \]
+  Ele é o $L^2$ do toro $\{|w|=a\}\times\{|z|=b\}$ nas variáveis $w=e^{i\tau/2}$, $z=e^{i\theta}$,
+  $\xi=(z+z^{-1})/2$. Nele, a multiplicação por uma função analítica, a reflexão $P$ e a divisão por
+  $\xi$ agem ponto a ponto, o que torna várias cotas ótimas (\cref{sec:counting}).
+\end{itemize}
+A inclusão $Y(a,b)\subset\mathbb T(a,b)$ tem norma no máximo um.
+
+\begin{proposition}[Propriedade de Fredholm]\label{prop:fredholm}
+Em cada um dos espaços $Y(a,b)$ e $\mathbb T(a,b)$ com $1\le a\le65/64$ e $1<b\le5/4$:
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=*]
+\item $J$ é fechado no seu domínio maximal $\Dom$, que coincide com o fecho dos polinômios trigonométricos
+  na norma do gráfico, e $J+z$ é invertível para $z\ge0$ real, com inversa compacta;
+\item $B$ é limitado, de modo que $L(s)=J+B+s$ é fechado no domínio fixo $\Dom$ para todo $s$;
+\item com $Q=(J+z_0)^{-1}$ para um $z_0>0$ fixo, a família $L(s)Q=I+(B+s-z_0)Q$ é uma família
+  analítica de operadores de Fredholm de índice zero, invertível para $s$ real grande.
+\end{enumerate}
+Consequentemente, as raízes de $L$ são isoladas e têm multiplicidade algébrica finita. O mesmo vale para
+$K(s)$ nos espaços $\sharp$ correspondentes.
+\end{proposition}
+
+A prova está no \cref{app:lemmas}. O ponto-chave de~(i) é que as soluções homogêneas de $J+z$ em cada
+modo de Fourier são múltiplos de $(1+\xi)^{-1-(z+im/2)/\mu}$ ou de $\xi^{-1-(z+im/2)/\mu}$, que são singulares em
+$\xi=-1$ ou em $\xi=0$, dentro da elipse de Bernstein; assim $J+z$ é injetivo no domínio maximal.
+
+Os certificados das \cref{sec:counting,sec:roots} são calculados no espaço do toro, enquanto a prova de
+existência, e com ela a interpretação física, vive em $\Yp$. O lema seguinte mostra que a
+escolha não importa na região em que contamos.
+
+\begin{lemma}[Independência da realização]\label{lem:Lreal}
+Para $|s|\le 3.1$, os núcleos e as cadeias de Jordan de $L(s)$ em $\Yp$ e em $\mathbb T(65/64,5/4)$
+coincidem. Portanto, no disco $|s|\le3.1$, as raízes de $L$ e suas multiplicidades algébricas são as mesmas
+nas duas realizações.
+\end{lemma}
+
+\begin{proof}[Esboço]
+Escreva $H(s)=I+(B+s)Q$ com $Q=J^{-1}$, o mesmo operador nos dois espaços, e separe os coeficientes numa
+caixa finita $G=\{|m|<1024,\ n<4096\}$ e no seu complemento $T=I-G$. Nos dois espaços
+$\|T(H(s)-I)T\|<1$ para $|s|\le3.1$: a cota é $0.371$ no toro, a partir de uma cota
+$\|B\|\le3.9642$ certificada pelo símbolo de $B$ (\cref{sec:counting}), e $0.2666$ em $\Yp$, a partir de uma cota na
+parte do fundo calculada com os dados e a bola publicada de~\cite{RT2019} (\cref{app:recovery}); ambas usam formas fechadas para $\|QT\|$. Se $H(s)x=0$ com $x$ no
+espaço do toro, então $Gx$ é um vetor finito, $Tx$ é a única solução no toro de
+$THT\,Tx=-THGx$, e a série de Neumann resolve a mesma equação em $\Yp$; pela unicidade, as duas
+soluções coincidem, e $x\in\Yp$. As cadeias são tratadas por indução, já que o lado direito
+$-h_{j-1}$ já está no espaço forte. A recíproca é a inclusão. Os detalhes, e a verificação
+racional das constantes, estão no \cref{app:lemmas}.
+\end{proof}
+
+\begin{remark}\label{rem:radius}
+O mesmo argumento de \emph{recuperação do raio} (\emph{radius recovery}) mostra mais: um elemento do núcleo, ou de uma cadeia de Jordan, num
+espaço de raio menor está automaticamente no espaço de raio maior, para todo $s$
+(\cref{sec:physical}, \cref{lem:recovery}). Ele é usado na \cref{sec:physical} para mostrar que os modos físicos,
+que só se supõem analíticos numa vizinhança não especificada, produzem autovetores em $\Yp$.
+\end{remark}

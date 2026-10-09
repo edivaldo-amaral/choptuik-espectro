@@ -1,0 +1,138 @@
+\section{Provas dos lemas estruturais}\label{app:lemmas}
+
+\subsection{Setores, deslocamento e conjugação (\cref{lem:sectorB})}\label{app:sectors}
+
+Seja $(Uh)_{mn}=h_{m-1,n}$, isto é, $Uh=e^{i\tau/2}h$. Em $\mathbb T(a,b)$ os pesos $a^{2m}$ dão
+$\|Uh\|=a\|h\|$, e em $Y(a,b)$ temos $a^{-1}\|h\|\le\|Uh\|\le a\|h\|$; assim, $U$ é um isomorfismo de cada espaço,
+uma isometria a menos de um fator constante. Ele comuta com a convolução por um campo (uma soma em $m$), com a reflexão
+$P$, com a multiplicação por $\xi$ e com $R_\xi$, que agem apenas em $n$ ou são invariantes por translação em
+$m$; e $U^{-1}\partial_\tau U=\partial_\tau+\tfrac i2$. A parte livre $J$ satisfaz, portanto,
+$U^{-1}(J+s)U=J+s+\tfrac i2$, $U$ leva o domínio de $J$ sobre si mesmo, e $U^{-1}L(s)U=L(s+\tfrac i2)$,
+$U^{-1}C(s)U=C(s+\tfrac i2)$. Como $U$ muda a paridade de $m$ em toda componente, ele troca $X_A$ e $X_B$.
+A conjugação por $U$ leva núcleos e cadeias de Jordan em núcleos e cadeias de Jordan, e os que satisfazem os vínculos em
+outros que os satisfazem. Isso prova o \cref{lem:sectorB}.
+
+\emph{Conjugação.} Seja $(\mathcal Ch)_{mn}=\overline{h_{-m,n}}$, que corresponde à conjugação complexa da
+função $h(\tau,\xi)$ para $\tau,\xi$ reais (lembre que $h_{m,-n}=h_{mn}$). O fundo é real, de modo que
+$\mathcal C L(s)\mathcal C=L(\bar s)$, e $\mathcal C$ preserva os dois setores. Em $Y(a,b)$, $\mathcal C$ é uma
+isometria, de modo que as raízes de $L_A$ e de $L_B$ em $Y(a,b)$, com as suas multiplicidades, são invariantes por
+$s\mapsto\bar s$. (No espaço do toro, $\mathcal C$ não é uma isometria, já que o peso $a^{2m}$ não é par em $m$;
+é por isso que o argumento de realidade da \cref{prop:real} passa por $\Yp$ e pelo \cref{lem:Lreal}.) Para a faixa B,
+$\sigma(L_A)\cap\{\tfrac14<\Im s<\tfrac34\}=\sigma(L_B)+\tfrac i2$, e a invariância de $\sigma(L_B)$ sob
+conjugação vira invariância por $s\mapsto\overline{s-\tfrac i2}+\tfrac i2=\bar s+i$.
+
+\subsection{A propriedade de Fredholm (\cref{prop:fredholm})}\label{app:fredholm}
+
+\emph{(i) A parte livre.} $J+z$ age em cada modo de Fourier $m$ e em cada componente separadamente, como um operador
+triangular superior em $n$ com diagonal $\mu(n+1)+z+im/2$ e estrutura fora da diagonal de primeira ordem; as inversas
+explícitas de~\cite[\S3]{RT2019} são limitadas em $Y(a,b)$, com uma cota da forma $C/(\mu+z)$, e no espaço do toro são
+limitadas modo a modo por formas fechadas (no repositório). A norma de $Q(I-G)$, onde $G$ é a projeção
+numa caixa $\{|m|<M,\,n<N\}$, tende a zero quando $M,N\to\infty$; por exemplo, com $r=1/b$,
+\[
+  \|Q(I-G)\|\le\max\Big(\frac{3(1+2\mu_{\max})}{M(1-r)},\ \frac{3(1+4/(1-r))}{2\mu_{\min}(N+1)}\Big)
+\]
+em $Y(1,b)$, onde $\mu_{\min}\le\mu\le\mu_{\max}$. Portanto $Q$ é limite em norma de operadores de posto finito e é compacto.
+O domínio maximal $\Dom_{\max}=\{u:Ju\in Y\}$, com $Ju$ calculado termo a termo, coincide com o fecho
+$\Dom_{\min}$ dos polinômios trigonométricos na norma do gráfico: para $z>0$, $Q(z)$ leva $Y$ em $\Dom_{\min}$ e
+inverte $J+z$ ali; para $u\in\Dom_{\max}$, $w=u-Q(z)(J+z)u$ satisfaz $(J+z)w=0$ como função analítica e, em
+cada modo de Fourier, as soluções homogêneas são múltiplos de $(1+\xi)^{-1-(z+im/2)/\mu}$ (componentes com
+$(1+\xi)\partial_\xi$) ou de $\xi^{-1-(z+im/2)/\mu}$ (a componente com $\xi\partial_\xi$), que são singulares em
+$\xi=-1$ ou em $\xi=0$, dentro da elipse de Bernstein de parâmetro $b>1$. Assim $w=0$.
+
+\emph{(ii) O fundo.} $B=\mu S\Gamma_1+2S\Xi\Gamma_2(\omegabar,\cdot)$ é uma soma de reflexões, da divisão regularizada
+$R_\xi$, da multiplicação por $\xi$ e da convolução com os coeficientes de $\omegabar$. Estes estão em
+$\ell^1$ com pesos $(65/64)^{|m|}(5/4)^{|n|}$, de modo que a convolução é limitada em todo $Y(a,b)$ e $\mathbb T(a,b)$
+com $a\le65/64$, $b\le5/4$; $R_\xi$ é limitado para $b>1$~\cite[\S4]{RT2019}.
+
+\emph{(iii)} $L(s)Q=I+(B+s-z_0)Q$ é a identidade mais um operador compacto, analítico (afim) em $s$, logo de Fredholm de
+índice zero. Para $s$ real grande, $L(s)=(J+s)\big(I+(J+s)^{-1}B\big)$ é invertível em $Y(a,b)$ por uma série de Neumann, já que
+$\|(J+s)^{-1}\|\le C/(\mu+s)$; no espaço do toro, $L(s)$ é invertível para $s>2.9261$ pelo \cref{thm:counts}~(i). Pelo teorema
+de Fredholm analítico, as raízes são isoladas e de multiplicidade algébrica finita. O mesmo
+argumento se aplica a $K(s)=J^\sharp+B^\sharp+s$ nos espaços $\sharp$.
+
+\subsection{Recuperação do raio (\cref{lem:Lreal,lem:recovery})}\label{app:recovery}
+
+Sejam $Y_s\subset Y_w$ uma realização forte e uma fraca (para o \cref{lem:Lreal}, $\Yp\subset\mathbb T(65/64,5/4)$;
+para o \cref{lem:recovery}, $\Yp\subset Y(\kappa_1',\kappa_2')$), com o mesmo operador $Q=J^{-1}$, que preserva
+caixas. Escreva $H(s)=L(s)Q=I+(B+s)Q$, seja $G$ a projeção numa caixa finita e $T=I-G$, e suponha
+\[
+  \|T(H(s)-I)T\|_{Y_s}<1,\qquad \|T(H(s)-I)T\|_{Y_w}<1 .
+\]
+\emph{Núcleos.} Seja $H(s)x=0$ com $x\in Y_w$. Então $Gx$ é um vetor finito, logo está em $Y_s$, e
+$THT\cdot Tx=-THGx$, cujo lado direito está em $Y_s$ porque $H$ é limitado em $Y_s$. Em $Y_s$, o operador $THT$ na
+imagem de $T$ é invertível por uma série de Neumann, de modo que existe $y\in Y_s$ com $THT\,y=-THGx$. A mesma equação vale
+em $Y_w$, onde a sua solução é única; assim $Tx=y\in Y_s$, e $h=Qx$ está no domínio em $Y_s$. A inclusão
+recíproca é a inclusão dos espaços. \emph{Cadeias.} Se $L(s)h_j=-h_{j-1}$, com $h_{j-1}$ já sabidamente no
+domínio forte, o mesmo argumento se aplica a $x_j=Jh_j$ com o lado direito forte adicional $-Th_{j-1}$.
+
+\emph{Constantes do \cref{lem:Lreal}.} Caixa $G=\{|m|<1024,\,n<4096\}$, $|s|\le3.1$. No espaço do toro,
+$\|T(H-I)T\|\le(\|B\|+|s|)\|QT\|\le(3.9642+3.1)\cdot0.0525<0.371$, com $\|B\|$ vindo do símbolo (\cref{lem:F3}) e
+$\|QT\|\le0.0525$ vindo de formas fechadas: a cauda $n\ge4096$ nos modos $|m|<400$, e a cota
+$(1+2c_w/(\kappa_2-1))/(|m|/2)$ para o modo inteiro quando $|m|\ge400$. Em $\Yp$, com pesos de componentes
+$\eta=(916,4096,243,1233)$ e a cota $\beta_+\le5191/500$ da parte do fundo, calculada em aritmética
+exata a partir dos dados e da bola publicada de~\cite{RT2019} (\cref{app:certificates}), a mesma quantidade é
+$\le0.2666$. Os pesos satisfazem $\eta_i\ge243$, de modo que $\|x\|_{\mathbb T}\le\|x\|_{\Yp}/243$.
+
+\emph{Constantes do \cref{lem:recovery}.} No espaço fraco $Y(\kappa_1',\kappa_2')$, a parte do fundo é cotada por
+$\beta(\kappa_2')=\beta_+\,D(\kappa_2')/D(5/4)$ com $D(k)=2k/(k^2-1)$, fator que vem da cota de $R_\xi$; o
+peso de Fourier $\kappa_1'\in[1,65/64]$ não aumenta as normas de convolução, e $\|QT\|$ não depende dele,
+porque $Q$ preserva $m$. Como $\|QT\|\to0$ para todo $\kappa_2'>1$, para todos $S$ e $\kappa_2'$ existe uma caixa com
+$(\beta(\kappa_2')+S)\|QT\|<1$; caixas explícitas são calculadas, por exemplo $2^{17}\times2^{20}$ para $S=200$ e
+$\kappa_2'=1+2^{-6}$. A verificação racional está no repositório (\cref{app:certificates}).
+
+\subsection{Propagação dos vínculos (\cref{lem:KCML})}\label{app:KCML}
+
+Sejam $O=\tfrac12(1-P)$, $E=\tfrac12(1+P)$, $X$ a multiplicação por $\xi$ e, para um resíduo $q=\Omega^+(\mu,w)$ com
+componentes $(q_1,q_2,q_{2\sharp},q_3,q_4)$, ponha $F=Sq$, $c=S^\sharp q=(Oq_1,-Pq_{2\sharp})$ e $e=-Pq$. Para resíduos
+do sistema, as componentes selecionadas são divisíveis por $\xi$ (os termos principal e quadrático carregam um fator
+$\xi$, e as componentes selecionadas de $\Gamma_1$ são ímpares), de modo que
+\[
+  e=Ic+RF,\qquad Ic=(c_1,0,c_2,0,0),\qquad Rf=(XPf_1,XPf_2,0,XPf_3,XPf_4),
+\]
+usando $PX=-XP$ e $Pc_1=-c_1$. Reiterer e Trubowitz provam a identidade diferencial da \cref{eq:sharp} numa forma
+\emph{fora da solução}~\cite[\S2]{RT2019}: com $J_s=\partial_\tau+s+\mu((1+\xi)\partial_\xi+1)$ e $\mathcal G(w,e)$
+a aplicação bilinear da identidade deles,
+\[
+  T_s(w)e:=X\big(OJ_se_1,\ J_se_{2\sharp}-PJ_se_2\big)+\mu\big(Ee_1,\ e_1+e_2+Pe_2-2Pe_3\big)+X\mathcal G(w,e)
+\]
+satisfaz $T_0(w)e(w)=0$ para todo $w$ admissível, seja ou não $e(w)=0$. A única dependência de $T$ em $w$ é
+por meio de $\mathcal G$, de modo que linearizar em $w$ na direção $e^{s\tau}h$ dá $T_s(w)e'+X\mathcal G(h,e(w))=0$,
+onde $e'$ é o resíduo linearizado. Com $F'=L(s)h$, $c'=C(s)h$, $e'=Ic'+RF'$, e
+\[
+  K(s)c:=R_\xi T_s(w)Ic,\qquad M(s)f:=-R_\xi T_s(w)Rf,
+\]
+e $R_\xi X=I$, obtemos $K(s)C(s)h=M(s)L(s)h-R_\xi X\mathcal G(h,e(w))$. No fundo exato, $e(\omegabar)=0$,
+o que é~\eqref{eq:KCML}. As formas explícitas de $K$ e $M$ estão no \cref{app:formulas}; $K$ tem a parte principal
+$\operatorname{diag}(\partial_\tau+s+\mu(\xi\partial_\xi+1),\,J_s)$ de~\eqref{eq:sharp}.
+
+\emph{Domínios.} $M(s)$ contém derivadas, de modo que a identidade vale como identidade de operadores fechados com perda de
+raio. Para $1<a'<a$, $1<b'<b$, as derivadas são limitadas de $Y(a,b)$ em $Y(a',b')$:
+\[
+  \|\partial_\tau\|\le\frac{q_a}{2(1-q_a)^2},\qquad \|\partial_\xi\|\le\frac{2q_b}{(b'-1)(1-q_b)^2},\qquad
+  q_a=a'/a,\ q_b=b'/b,
+\]
+que para $(a,b)=(65/64,5/4)$, $(a',b')=(129/128,9/8)$ valem no máximo $8385$ e $1440$. Portanto $C(s)$ e $M(s)$ são limitados
+do domínio de $L$ em $Y(a,b)$ em $Y^\sharp(a',b')$; para $h$ nesse domínio,
+$J^\sharp C(s)h=M(s)L(s)h-(B^\sharp+s)C(s)h\in Y^\sharp(a',b')$, de modo que $C(s)h$ está no domínio maximal, e portanto no fechado,
+de $K$ ali, e~\eqref{eq:KCML} vale. A inclusão $\ell^1(129/128,9/8)\subset\mathbb T^\sharp(129/128,9/8)$ tem norma
+$\le1$, já que $\kappa_1^m\le\kappa_1^{|m|}$ e $\sqrt{\kappa_2^{2j}+\kappa_2^{-2j}}\le2\kappa_2^j$; o argumento $\Dom_{\min}=\Dom_{\max}$
+do \cref{app:fredholm} também vale no espaço do toro. Assim $C(s)h$ está no domínio no qual os certificados da
+\cref{prop:Kinj} afirmam a injetividade.
+
+\subsection{O modo de gauge (\cref{eq:gaugemode})}\label{app:gauge}
+
+Sejam $X_0=e^{\mu\tau}Z$, $Z=\mu^{-1}\partial_\tau+\xi\partial_\xi$, $W=\mu+\xi^2Q$ e $F=\zeta+\log W$. O bloco
+radial da métrica~\eqref{eq:metric} é proporcional a $e^{-2\zeta}(u_++u_-)^{-2}du_-du_+$, e $X_0$ translada
+$u_\pm$; a derivada de Lie dá $\delta\zeta=e^{\mu\tau}(Z\zeta-1)$. O raio de área $e^{-\zeta}\xi/W$ é um escalar,
+de modo que comparar a sua variação com a sua derivada ao longo de $X_0$ dá $\delta W=e^{\mu\tau}ZW$, logo
+\[
+  \delta Q=e^{\mu\tau}(ZQ+2Q),\qquad \delta F=e^{\mu\tau}(ZF-1),\qquad \delta\phi=e^{\mu\tau}Z\phi .
+\]
+Um cálculo direto dá $[D^\sigma,X_0]=e^{\mu\tau}D^\sigma$. Substituindo em~\eqref{eq:omega}, toda componente
+tem o mesmo perfil: $\delta\omega_i=e^{\mu\tau}(Z+1)\omega_i$ para $i=2,3,4$, e também para $\omega_1=2\xi Q+2\mu\partial_\xi F$,
+em que os termos extras somam $\omega_1$. Mais geralmente, para todo $w$ admissível,
+\[
+  D\Omega(w)\big[e^{\mu\tau}(Z+1)w\big]=e^{\mu\tau}(Z+1)\,\Omega(w),
+\]
+pelo comutador, pela homogeneidade quadrática de $\Gamma_2$ e pelo fator $\xi$ nos termos diferenciais e
+quadráticos. No fundo exato, o lado direito se anula, o que dá $L(\mu)g_*=0$ e $C(\mu)g_*=0$.

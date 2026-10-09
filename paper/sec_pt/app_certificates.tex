@@ -1,0 +1,17 @@
+\section{Tabela de certificados}\label{app:certificates}
+
+O repositório contém, para cada passo da prova, a lista dos arquivos dos quais o certificado correspondente
+depende, com os seus tamanhos e hashes sha256 (\texttt{build/reproducao/inventario.json}, apresentada em
+\texttt{docs/REPRODUCAO\_MAPA.md}). Os arquivos grandes estão no Zenodo (\cref{sec:computation-data}), e os seus hashes
+também estão em \texttt{build/reproducao/pacote\_dados.json}. A tabela abaixo dá, para cada alegação, a conferência do
+programa de verificação que a refaz (\cref{sec:computation-verify}), o número de arquivos e um digest: os
+primeiros $16$ dígitos hexadecimais do sha256 das linhas ordenadas ``\texttt{sha256}~~caminho'' desses arquivos, calculado por
+\texttt{scripts/digest\_certificados.py}.
+
+\begin{table}[ht]
+\centering
+\small
+\input{sec_pt/app_certificates_table}
+\caption{Certificados da prova, por alegação. O digest identifica o conjunto de arquivos do qual cada alegação depende.}
+\label{tab:digests}
+\end{table}

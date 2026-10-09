@@ -1,0 +1,196 @@
+\section{Identificação das raízes}\label{sec:roots}
+
+Pelo \cref{thm:counts}, $L_A$ tem três raízes em $\Omega_A$ e uma em $\Omega_B$. Esta seção localiza cada uma
+delas, prova que cada uma é algebricamente simples e determina o comportamento do seu autovetor em relação
+aos vínculos. Junto com a \cref{prop:physmult}, isso prova o Teorema Principal (\cref{sec:roots-proof}).
+
+\subsection{Newton--Kantorovich para o sistema aumentado}\label{sec:roots-nk}
+
+Fixe $c_0$ com $\Re c_0>-\mu$, seja $Q_0=(J+c_0)^{-1}$, e seja $\ell$ um funcional limitado. Os autopares
+$(h,\lambda)$ de $L$ com $\ell(h)=1$ correspondem, por meio de $h=Q_0y$, aos zeros da aplicação do sistema aumentado
+\[
+  F(y,\lambda)=\big(L(\lambda)Q_0\,y,\ \ell(Q_0y)-1\big).
+\]
+Como $L(\lambda)=L(0)+\lambda$, $F$ é quadrática, com
+$DF(y,\lambda)[\eta,\nu]=\big(L(\lambda)Q_0\eta+\nu\,Q_0y,\ \ell(Q_0\eta)\big)$ e derivada segunda constante.
+
+\begin{lemma}[Simplicidade a partir do sistema aumentado]\label{lem:bordered}
+Se $F(y_*,\lambda_*)=0$, então $DF(y_*,\lambda_*)$ é invertível se e só se $\lambda_*$ é uma raiz algebricamente
+simples de $L$.
+\end{lemma}
+
+\begin{proof}
+Seja $h_*=Q_0y_*$. Se $DF[\eta,\nu]=0$ com $\nu\neq0$, então $k=Q_0\eta/\nu$ satisfaz $L(\lambda_*)k=-h_*$,
+uma cadeia de Jordan de comprimento dois. Se $\nu=0$, então $Q_0\eta\in\ker L(\lambda_*)$ e $\ell(Q_0\eta)=0$; se o
+núcleo é gerado por $h_*$, com $\ell(h_*)=1$, isso obriga $\eta=0$. Portanto $DF$ é injetivo se e só se
+$\ker L(\lambda_*)=\C h_*$ e não há cadeia de Jordan, isto é, se e só se $\lambda_*$ é algebricamente
+simples. $DF$ é uma perturbação de posto finito de um operador de Fredholm de índice zero, de modo que a injetividade
+equivale à invertibilidade.
+\end{proof}
+
+Usamos o teorema de Newton--Kantorovich na seguinte forma padrão~\cite{NakaoPlumWatanabe2019}. Sejam
+$x_0=(y_0,\lambda_0)$ um zero aproximado e $\mathcal A$ uma inversa aproximada de $DF(x_0)$, e suponha que, em
+alguma norma,
+\[
+  \|I-\mathcal A\,DF(x_0)\|\le\theta,\qquad \tfrac12\|\mathcal A\,D^2F\|\le Z_2,\qquad \|\mathcal A F(x_0)\|\le Y.
+\]
+Se $\mathcal A$ é injetivo (aqui ele é invertível por construção) e $(1-\theta)^2>4Z_2Y$, então $T(x)=x-\mathcal AF(x)$ é uma contração da bola $B(x_0,r)$,
+$r=\big(1-\theta-\sqrt{(1-\theta)^2-4Z_2Y}\big)/(2Z_2)$, de modo que $F$ tem um único zero $x_*$ ali, e
+$\|I-\mathcal A\,DF(x_*)\|<1$, de modo que $DF(x_*)$ é invertível. A unicidade vale em toda bola $B(x_0,\rho)$ com
+$\theta+2Z_2\rho<1$.
+
+A norma é um máximo ponderado de normas de blocos sobre os mesmos três níveis da \cref{sec:counting-reference}:
+a caixa finita aumentada $Z'$ ($Z$ mais a linha e a coluna acrescentadas), as $26$ janelas e a parte distante. A
+cota $\theta$ é a raiz de Perron da matriz das cotas dos blocos, verificada em aritmética racional, e $\mathcal A$
+é construído a partir da inversa exata da matriz aumentada calculada em $Z'$ e dos blocos calculados das janelas. O
+centro $\lambda_0$ é um autovalor do truncamento $32\times128$ refinado pela iteração de Newton no sistema aumentado, e
+$h_0$ é obtido por iteração inversa na matriz ponderada.
+
+\begin{proposition}[Localização e simplicidade]\label{prop:nk}
+Para cada linha da tabela, existe um único zero $x_*=(y_*,\lambda_*)$ de $F$ em $B(x_0,r)$, e $\lambda_*$ é uma
+raiz algebricamente simples de $L_A$ com
+\begin{center}
+\begin{tabular}{@{}lllllll@{}}
+\toprule
+raiz & $\lambda_0$ & $\theta$ & $Z_2$ & $Y$ & $r$ & $|\lambda_*-\lambda_0|\le$ \\
+\midrule
+$\mu$ & $\mu_A=0.16830707\ldots$ & $0.880172$ & $183.66$ & $6.60\cdot10^{-6}$ & $6.07\cdot10^{-5}$ & $2.82\cdot10^{-5}$ \\
+$\sK$ & $0.401024733$ & $0.839937$ & $42.97$ & $5.45\cdot10^{-5}$ & $3.79\cdot10^{-4}$ & $1.72\cdot10^{-4}$ \\
+$\sphys$ & $0.7331796596606924$ & $0.805721$ & $10.33$ & $4.19\cdot10^{-6}$ & $2.16\cdot10^{-5}$ & $1.0163\cdot10^{-5}$ \\
+$\sB+\frac i2$ & $0.0414194105346554+0.5i$ & $0.91153$ & $155.02$ & $5.97\cdot10^{-6}$ & $7.81\cdot10^{-5}$ & $3.67\cdot10^{-5}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+Todas as quantidades são arredondadas para fora a partir dos valores racionais exatos dos arquivos de certificado: para cima no caso de $\theta$,
+$Z_2$, $Y$, $r$ e do erro de $\lambda$. Os valores de $Z_2$ cotam o próprio $\|\mathcal A\,D^2F\|$, o que é
+conservador por um fator dois. As raízes das três primeiras linhas são as três raízes de $L_A$ em $\Omega_A$, e a última é a raiz em
+$\Omega_B$.
+\end{proposition}
+
+\begin{proof}
+As condições de Newton--Kantorovich são verificadas com as quantidades da tabela (\cref{sec:computation}), e o
+\cref{lem:bordered} dá a simplicidade. Os intervalos das três primeiras linhas são dois a dois disjuntos e contidos
+em $\Omega_A$, e cada um contém uma raiz simples; como $N(L_A,\Omega_A)=3$, essas são todas as raízes em $\Omega_A$.
+O mesmo vale para $\Omega_B$, onde $N(L_A,\Omega_B)=1$.
+\end{proof}
+
+\subsection{A raiz de gauge}\label{sec:roots-gauge}
+
+\begin{proposition}[A raiz de gauge]\label{prop:mu}
+$\mu$ é uma raiz algebricamente simples de $L_A$, e $\ker L_A(\mu)=\C\,g_*$, com $g_*=(1+Z)\omegabar$.
+\end{proposition}
+
+\begin{proof}
+$L(\mu)g_*=0$ exatamente (\cref{sec:physical-defs}), e $g_*$ está no domínio, já que $g_*-g_A$ é pequeno em norma,
+onde $g_A=(1+Z)\omega_A$ é calculado a partir dos dados, e $J+\lambda_0$ é injetivo no domínio maximal. Normalize
+$g_n=g_*/\ell(g_*)$ e seja $x_g=(Q_0^{-1}g_n,\mu)$, um zero exato de $F$. Mostramos que $x_g\in B(x_0,r)$ para a primeira
+linha da \cref{prop:nk}; então $x_g=x_*$ pela unicidade, de modo que a raiz simples encontrada ali é exatamente $\mu$, com
+autovetor $g_*$. Pela equação de autovalor,
+\[
+  y_g-y_0=-B(g_n-h_0)-L(\lambda_0)h_0+(\lambda_0-\mu)g_n-\delta\mu\,J_1(g_n-h_0),
+\]
+onde $\delta\mu=\mu-\mu_A$ e $J_1$ é a derivada de $J$ em relação a $\mu$. Os termos são cotados por
+$\|g_*-g_A\|\le2.51\cdot10^{-8}$, que usa as cotas publicadas de~\cite{RT2019} para a diferença entre
+$\omegabar$ e os dados, junto com uma cota de $(1+Z)$ aplicado à correção, e pelo resíduo calculado
+$\|L(\lambda_0)h_0\|\le3.76\cdot10^{-6}$. O resultado é $\|x_g-x_0\|\le1.82\cdot10^{-5}$, dentro da bola $B(x_0,\rho)$, $\rho=3.26\cdot10^{-4}$, na qual
+$\theta+2Z_2\rho<1$ e o zero de $F$ é único.
+\end{proof}
+
+\subsection{Raízes que violam os vínculos}\label{sec:roots-witness}
+
+\begin{proposition}[Testemunhos dos vínculos, \emph{constraint witnesses}]\label{prop:witness}
+Seja $h_*=Q_0y_*$ o autovetor da \cref{prop:nk} em $\sK$, respectivamente em $\sB+\tfrac i2$. Então, em
+$\mathbb T^\sharp(129/128,9/8)$,
+\[
+  \|\Pi_F\,C(\sK)h_*\|\ge0.16975,\qquad \|\Pi_F\,C(\sB+\tfrac i2)h_*\|\ge0.35469,
+\]
+onde $\Pi_F$ é a projeção na caixa $F=\{|m|<12,\ n<48\}$. Em particular, os dois autovetores violam os
+vínculos, e o mesmo acontece com o autovetor de $L$ em $\sB$ (\cref{lem:sectorB}).
+\end{proposition}
+
+\begin{proof}
+No centro, $c_{\mathrm{ref}}=\|\Pi_FC(\lambda_0)h_0\|$ é calculado rigorosamente na caixa. A diferença
+$\Pi_F\big(C(\lambda_*)h_*-C(\lambda_0)h_0\big)$ é cotada nível a nível usando a bola de Newton--Kantorovich:
+o nível $Z'$ por meio de $\|\Pi_FCQ_0P_Z\|$, as janelas pelo decaimento das colunas (as colunas da cauda começam em
+$n=128$ e só chegam à caixa através do fator $(5/4)^{-80}$), a parte distante por formas fechadas, e a variação
+de $\lambda$ por meio de $C_1$. Para $\sK$: $c_{\mathrm{ref}}\ge0.171739$, e as perdas somam no máximo $1.981\cdot10^{-3}$, o que dá
+$0.171739-0.001981=0.169758$. Para $\sB$: $c_{\mathrm{ref}}\ge0.355188$, e as perdas somam no máximo
+$4.954\cdot10^{-4}$, o que dá $0.355188-0.0004954=0.3546926$.
+\end{proof}
+
+\subsection{A raiz física: injetividade de $K$}\label{sec:roots-K}
+
+Não se pode mostrar por uma cota inferior que o autovetor em $\sphys$ satisfaz os vínculos; em vez disso, mostramos que
+ele não pode violá-los. Por~\eqref{eq:KCML}, se $L(s)h=0$ então $K(s)C(s)h=0$, de modo que $C(s)h\neq0$ só é possível numa
+raiz de $K$.
+
+\begin{proposition}[Injetividade de $K$]\label{prop:Kinj}
+Em $\mathbb T^\sharp(129/128,9/8)$, $K(s)$ é injetivo para todo $s$ com $\Re s\ge0$ e $0\le\Im s\le\tfrac14$,
+exceto num ponto $s=\sK'$, com $|\sK'-0.401|<0.05$, que é uma raiz algebricamente simples de $K$.
+\end{proposition}
+
+\begin{proof}
+A região é coberta por três certificados.
+\begin{itemize}[leftmargin=*]
+\item $\Re s>1.765$: \cref{thm:counts}~(i).
+\item $\{0\le\Re s\le1.765,\ 0\le\Im s\le\tfrac14\}$ menos o disco aberto $|s-0.401|<0.05$: uma cobertura por $154$
+  células (\emph{tiles}). Em cada célula, a injetividade de $K(s)$ decorre do \cref{lem:perron} aplicado a $K(s)Q_0(c)$, com quatro
+  níveis (uma caixa finita, duas camadas e a parte distante) e raiz de Perron $\le0.99612$; a cobertura é conferida em
+  aritmética racional por uma árvore quaternária (\emph{quadtree}).
+\item O disco $|s-0.401|\le0.05$: um argumento de Rouch\'e para operadores no seu círculo de fronteira, como na
+  \cref{sec:counting-reference}, com referência $\operatorname{diag}(\widehat H_{ZZ}(s),I,I,I)$ numa caixa
+  $Z=20\times80$ e raízes de Perron $\le0.8126$ em $16$ células que cobrem o círculo (a norma com sinal não é simétrica
+  sob conjugação, de modo que o círculo inteiro é coberto). A referência finita é contada por um argumento de Rouch\'e
+  escalar para o sistema aumentado: o truncamento tem exatamente um autovalor no disco, simples, perto de $0.4010247311$.
+\end{itemize}
+\end{proof}
+
+\begin{corollary}\label{cor:sK}
+$\sK'=\sK$, e o autovetor de $L$ em $\sphys$ satisfaz $C(\sphys)h=0$.
+\end{corollary}
+
+\begin{proof}
+Os autovetores da \cref{prop:nk} são calculados no espaço do toro; como $|\sK|,|\sphys|\le3.1$, eles estão no
+domínio de $L$ em $\Yp$ pelo \cref{lem:Lreal}, de modo que o \cref{lem:KCML} se aplica a eles com $(a,b)=(65/64,5/4)$ e
+$(a',b')=(129/128,9/8)$. Pela \cref{prop:witness}, $C(\sK)h_*\neq0$, e $K(\sK)C(\sK)h_*=M(\sK)L(\sK)h_*=0$, de modo que $\sK$ é
+uma raiz de $K$ na região da \cref{prop:Kinj}; portanto $\sK=\sK'$. Como $\sphys$ é real e $|\sphys-0.401|>0.33$,
+$K(\sphys)$ é injetivo, de modo que $C(\sphys)h=0$ para o autovetor $h$. Aqui $C(\sphys)h$ está no domínio de $K$ em $Y^\sharp(129/128,9/8)\subset\mathbb T^\sharp(129/128,9/8)$, onde
+a \cref{prop:Kinj} se aplica (\cref{app:KCML}).
+\end{proof}
+
+\subsection{Realidade}\label{sec:roots-reality}
+
+\begin{proposition}\label{prop:real}
+$\sK$ e $\sphys$ são reais, e $\Im(\sB+\tfrac i2)=\tfrac12$, isto é, a raiz $\sB$ de $L$ é real.
+\end{proposition}
+
+\begin{proof}
+Na realização $\Yp$, a conjugação $h_{mn}\mapsto\overline{h_{-m,-n}}$ é uma isometria, e
+$\overline{L_A(\bar s)}=L_A(s)$ no sentido da \cref{sec:setting-sectors}; assim, as raízes de $L_A$ em $\Yp$, com
+multiplicidades, são simétricas por $s\mapsto\bar s$, e as da faixa B por $s\mapsto\bar s+i$. Pelo
+\cref{lem:Lreal}, o mesmo vale na realização do toro para $|s|\le3.1$. Em $\Omega_A$ as raízes são $\mu,\sK,\sphys$,
+com $\sK$ e $\sphys$ em discos de raio $<2\cdot10^{-4}$ em torno de centros reais; a conjugada de $\sK$ é uma raiz no
+mesmo disco, logo igual a $\sK$, e o mesmo para $\sphys$. Em $\Omega_B$ há uma única raiz, de modo que ela é fixada por
+$s\mapsto\bar s+i$, cujo conjunto de pontos fixos é $\Im s=\tfrac12$.
+\end{proof}
+
+\subsection{Prova do Teorema Principal}\label{sec:roots-proof}
+
+\emph{Parte~(1).} Pelo \cref{cor:four}, módulo $\tfrac i2\Z$ há quatro raízes em $\Re s>0$, com multiplicidade. Pelas
+\cref{prop:nk,prop:mu,prop:real}, elas são $\mu$, $\sK$, $\sphys$ (setor A) e $\sB$ (setor B, que aparece como
+$\sB+\tfrac i2$ para $L_A$), todas reais e algebricamente simples, com as localizações enunciadas; o intervalo de
+$\sphys$ é $\lambda_0\pm1.0163\cdot10^{-5}$, arredondado para fora com oito dígitos. Os autovetores em $\sK$ e $\sB$ violam os vínculos
+(\cref{prop:witness}); o autovetor em $\mu$ é $g_*$, isto é, $e^{\mu\tau}g_*$ é o modo de gauge $G_*$
+(\cref{prop:mu}); o autovetor em $\sphys$ satisfaz os vínculos (\cref{cor:sK}). O enunciado sobre o
+eixo imaginário é o \cref{cor:four}, com autovetor $\partial_\tau\omegabar$ em $s=0$.
+
+\emph{Parte~(2).} As quatro raízes são simples, de modo que a \cref{prop:physmult} se aplica na sua forma simples:
+\begin{itemize}[leftmargin=*]
+\item em $\sK$ e $\sB$, $C(s)h\neq0$, de modo que a multiplicidade física é $0$;
+\item em $\mu$, $h=g_*$ gera $\mathcal G_\mu$, de modo que ela é $0$, e $1$ no cenário de cone fixo;
+\item em $\sphys$, $C(\sphys)h=0$ e $\sphys\not\equiv\mu\pmod{\tfrac i2\Z}$, de modo que $\mathcal G_{\sphys}=0$ e ela é $1$.
+\end{itemize}
+Pelo \cref{thm:correspondence}, os modos de Floquet físicos com $\Re s>0$, módulo gauge, formam um espaço de dimensão um,
+com expoente $\sphys$; como $\sphys$ é simples, não há modos generalizados. No cenário de cone fixo, a
+contagem é dois, e o modo adicional é $\Lie_{X_0}(\gbar,\phibar)$, que, pelo \cref{lem:cone}, é tangente às
+translações do ponto singular. \qed

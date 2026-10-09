@@ -1,0 +1,166 @@
+\section{Introdução}\label{sec:intro}
+
+\subsection{Colapso crítico}
+
+Em 1993, Choptuik estudou numericamente o colapso gravitacional de um campo escalar sem massa esfericamente simétrico
+e encontrou, no limiar entre a dispersão e a formação de buraco negro, uma solução universal com três características
+marcantes~\cite{Choptuik1993}: ela é aproximada, em todas as famílias a um parâmetro de dados iniciais que foram evoluídas, quando o
+parâmetro é ajustado ao limiar; ela é discretamente autossimilar, reproduzindo-se em escalas cada vez menores com um período de eco
+$\Delta\approx3.44$; e, perto do limiar, a massa do buraco negro escala como $(p-p_*)^\gamma$ com um
+expoente universal $\gamma\approx0.37$. Esses \emph{fenômenos críticos} foram desde então encontrados em muitos modelos de matéria, e são
+revisados em~\cite{GundlachMartinGarcia2007}. Para o sistema de Einstein--campo escalar esfericamente simétrico, Christodoulou provou que
+dados suficientemente pequenos se dispersam e dados suficientemente grandes formam superfícies aprisionadas~\cite{Christodoulou1986,
+Christodoulou1991,Christodoulou1993}.
+
+A explicação padrão é dinâmica~\cite{KoikeHaraAdachi1995,Gundlach1997}. A solução crítica é um ponto
+fixo (no caso discretamente autossimilar, uma órbita periódica) da evolução no tempo logarítmico, com uma variedade
+estável de codimensão um, que é o próprio limiar, e um \emph{único} modo instável, que cresce como
+$e^{\lambda T}$. Uma solução quase crítica fica perto da crítica até que o modo instável cresça até um
+tamanho fixo, e a análise dimensional dá então $\gamma=1/\lambda$, com uma modulação periódica no caso discretamente
+autossimilar. Gundlach calculou numericamente as perturbações da solução de Choptuik e encontrou exatamente um modo que cresce,
+com $\gamma=0.374\pm0.001$~\cite{Gundlach1997}, e Mart\'in-Garc\'ia e Gundlach encontraram numericamente que todas as
+perturbações não esféricas decaem~\cite{MartinGarciaGundlach1999}. Um ingrediente necessário desse quadro é que a
+solução crítica tenha exatamente um modo instável; é esse enunciado espectral que provamos, para perturbações
+esfericamente simétricas.
+
+\subsection{Existência, e a questão espectral em aberto}
+
+A existência do espaço-tempo de Choptuik foi provada por Reiterer e Trubowitz~\cite{RT2019}, com um argumento
+assistido por computador na tradição da prova de Lanford das conjecturas de Feigenbaum~\cite{Lanford1982}. Eles constroem uma
+solução analítica real e discretamente autossimilar numa vizinhança do cone de luz passado da singularidade, como
+ponto fixo de uma contração perto de dados numéricos de alta precisão, e determinam a sua constante de eco e um
+segundo invariante com $80$ dígitos. Sobre as perturbações, eles escrevem: ``We do not study perturbations about the
+Choptuik spacetime, that are relevant for many of the (conjectured) properties of the solution. Our paper can be
+the starting point for a rigorous investigation of this kind. This would be interesting, because current
+numerical results seem to be inconclusive''~\cite[\S1]{RT2019} (``Não estudamos perturbações do espaço-tempo de
+Choptuik, que são relevantes para muitas das propriedades (conjecturadas) da solução. O nosso artigo pode ser o ponto
+de partida para uma investigação rigorosa desse tipo. Isso seria interessante, porque os resultados numéricos atuais
+parecem inconclusivos'').
+
+Este artigo faz uma investigação desse tipo para perturbações esfericamente simétricas.
+
+\subsection{O resultado}
+
+Trabalhamos com a solução de~\cite{RT2019}, nas suas coordenadas $(\tau,\xi)$ e variáveis $\omega$, nas quais a
+autossimilaridade é a translação $\tau\mapsto\tau+2\pi$. As perturbações lineares do tipo de Floquet,
+$e^{s\tau}$ vezes um perfil periódico, são regidas por uma família de operadores $L(s)$, a linearização do
+sistema de Reiterer--Trubowitz, junto com uma aplicação de vínculos (\emph{constraints}) linearizada $C(s)$. O expoente $s$ corresponde à
+taxa de crescimento $\lambda=2\pi s/K$ no tempo logarítmico usual, onde $e^{-K}$ é o fator pelo qual a
+autossimilaridade reescala os comprimentos.
+
+\begin{introthm}[versão informal do Teorema Principal, \cref{sec:main}]
+Sob perturbações lineares esfericamente simétricas, suaves no tempo e analíticas na variável radial até o cone de luz
+e através dele, e módulo gauge (calibre), o espaço-tempo de Choptuik tem exatamente um modo instável. O modo é real e algebricamente simples, e a sua taxa de crescimento satisfaz
+\[
+  \lambda\in[2.674040,\ 2.674115],\qquad 1/\lambda\in[0.373955,\ 0.373966].
+\]
+Mais precisamente, por classe de Floquet, o operador $L$ tem exatamente quatro raízes no semiplano $\Re s>0$, cada uma simples
+e com um representante real: um modo de gauge, que é a translação do instante da singularidade; duas raízes cujos autovetores
+violam os vínculos; e o modo físico instável. No eixo imaginário, $L$ tem apenas a raiz $s=0$, a
+translação da fase. Se o cone de luz da singularidade é mantido fixo, o modo de gauge deixa de ser removido pelo
+grupo menor de transformações de gauge, e a contagem passa a ser dois; a classe adicional corresponde a transladar
+o instante da singularidade, e não a uma segunda instabilidade.
+\end{introthm}
+
+O valor de $1/\lambda$ concorda com o expoente crítico medido e calculado; esta é uma conferência externa, já que
+a relação $\gamma=1/\lambda$ diz respeito à evolução não linear. O teorema é espectral: ele localiza as raízes de
+$L$ e identifica as físicas, mas não diz nada sobre o semigrupo da evolução linearizada nem sobre a dinâmica não
+linear. Ele trata apenas de perturbações esfericamente simétricas, na classe de regularidade enunciada acima. Essas
+limitações são discutidas na \cref{sec:discussion}.
+
+\subsection{Estratégia}
+
+A prova tem três partes.
+
+\emph{Do problema geométrico ao operador} (\cref{sec:physical}). Um modo físico é uma solução das equações
+de Einstein--campo escalar linearizadas do tipo de Floquet, e só a sua classe módulo transformações de gauge tem
+significado. Mostramos que todo modo desses com $\Re s>0$ pode ser posto na forma de~\cite{RT2019} por uma transformação
+de gauge, e então corresponde a um elemento de $\ker L(s)\cap\ker C(s)$; que, reciprocamente, todo elemento desses
+vem de um modo físico; e que os únicos modos de gauge com $\Re s>0$ são os múltiplos de um modo explícito em
+$s=\mu$, a translação infinitesimal do ponto singular. A completude do gauge é global no domínio
+de~\cite{RT2019} e usa que o cone de luz está contido nele. A multiplicidade física de uma raiz é então uma questão
+de álgebra linear no seu espaço de raízes.
+
+\emph{Contagem} (\cref{sec:counting}). As raízes de $L$ com parte real grande são excluídas por uma cota da
+imagem numérica (\emph{numerical range}), calculada num espaço de funções no qual o fundo (\emph{background}, a solução
+em torno da qual se lineariza) age ponto a ponto. Na região limitada
+restante, as raízes são contadas com uma versão para operadores do teorema de Rouch\'e, devida a Gohberg e
+Sigal~\cite{GohbergSigal1971}: após uma deflação (\emph{deflation}) de posto dois, que afasta as duas raízes de gauge, $L$ é comparado ao longo da
+fronteira com uma referência bloco-diagonal cujos zeros são os autovalores de uma matriz $14016\times14016$, e estes
+são contados a partir de uma decomposição de Schur com resíduo certificado.
+
+\emph{Identificação} (\cref{sec:roots}). Cada raiz é localizada rigorosamente numa bola certificada (\emph{enclosure}), e mostra-se que é
+algebricamente simples, por um argumento de Newton--Kantorovich aplicado a um sistema aumentado (\emph{bordered system}):
+a equação de autovalor acrescida de uma condição de normalização, com o autovalor como incógnita. Mostra-se que os autovetores em duas delas violam os vínculos, por cotas inferiores
+explícitas. Para a raiz restante, os vínculos não podem ser conferidos num autovetor aproximado; em vez disso, uma
+identidade $KC=ML$ propaga os vínculos, e um certificado à parte mostra que o operador de propagação dos vínculos
+$K$ é injetivo ali.
+
+Todos os cálculos são feitos em aritmética racional exata, em aritmética de bolas (\emph{ball arithmetic}), ou como
+cotas a posteriori sobre cálculos em ponto flutuante. Na aritmética de bolas, cada número real é representado por um
+centro $m$ e um raio $r$, isto é, pelo intervalo $[m-r,m+r]$, e cada operação devolve uma bola que contém o resultado
+exato. Eles levam alguns dias em computadores comuns.
+
+\subsection{O que há de novo}
+
+As ferramentas são clássicas; o que é novo é a sua combinação para este operador, e os resultados. O artigo transforma em
+teorema um quadro espectral que só era conhecido numericamente: ele dá uma contagem rigorosa dos modos instáveis do
+espaço-tempo de Choptuik; uma localização rigorosa da
+taxa de crescimento física; a classificação de todas as raízes com parte real positiva; e a passagem do problema
+geométrico ao operador, incluindo a completude do gauge. Os certificados, um programa de verificação que
+os refaz, os dados e um guia de reprodução estão disponíveis publicamente (\cref{sec:computation-data}).
+
+\subsection{Organização}
+
+A \cref{sec:setting} recorda a formulação de~\cite{RT2019} e define $L$, $C$ e $K$. A \cref{sec:main} enuncia o
+Teorema Principal. A \cref{sec:physical} relaciona os modos físicos ao operador, a \cref{sec:counting} conta as raízes e
+a \cref{sec:roots} as identifica e completa a prova. A \cref{sec:computation} descreve os cálculos, a sua
+verificação e o uso de assistentes de IA, e a \cref{sec:discussion} discute as limitações e o problema não
+esférico. Os apêndices contêm as provas dos lemas estruturais, fórmulas explícitas e a lista dos certificados.
+
+\subsection{Terminologia}\label{sec:intro-terms}
+
+Mantivemos em português a maior parte dos termos técnicos. Na primeira ocorrência, damos entre parênteses o
+equivalente em inglês, que é o que se encontra na bibliografia. A \cref{tab:termos} reúne os termos menos usuais e o
+sentido em que são usados aqui.
+
+\begin{table}[tbp]
+\centering
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.2\textwidth}
+  >{\raggedright\arraybackslash}p{0.5\textwidth}@{}}
+\toprule
+termo & em inglês & sentido neste artigo \\
+\midrule
+aritmética de bolas & \emph{ball arithmetic} & cada número real é representado por um centro $m$ e um raio $r$, isto é,
+  pelo intervalo $[m-r,m+r]$; cada operação devolve uma bola que contém o resultado exato \\
+célula (de uma cobertura) & \emph{tile} & cada uma das regiões de uma cobertura em que se verifica uma desigualdade; as
+  células podem se sobrepor \\
+deflação & \emph{deflation} & perturbação de posto finito que afasta raízes já conhecidas (aqui, as de gauge) \\
+espaço do toro & \emph{torus space} & espaço $\ell^2$ ponderado de coeficientes, igual ao $L^2$ de um toro complexo, no
+  qual o fundo age ponto a ponto (\cref{sec:setting-realizations}) \\
+faixa A, faixa B & \emph{A band, B band} & regiões do plano do expoente $s$ que contêm as raízes dos setores A e B
+  (\cref{sec:setting-sectors}) \\
+fundo & \emph{background} & a solução de Reiterer e Trubowitz, em torno da qual se lineariza \\
+gauge (calibre) & \emph{gauge} & liberdade de coordenadas; uma transformação de gauge soma à perturbação a derivada de
+  Lie do fundo ao longo de um campo vetorial (\cref{def:gauge}) \\
+imagem numérica & \emph{numerical range} & o conjunto $W(T)=\{\langle Tx,x\rangle:\ x\in\Dom(T),\ \|x\|=1\}$, onde $\Dom(T)$
+  é o domínio de $T$ \\
+janela, parte distante & \emph{window, far part} & os níveis intermediário e externo da referência usada na contagem
+  (\cref{sec:counting-reference}) \\
+localização rigorosa; bola ou intervalo certificado & \emph{enclosure} & um conjunto que comprovadamente contém o valor
+  exato \\
+recuperação do raio & \emph{radius recovery} & o argumento que leva um autovetor de um espaço de raio menor para o de
+  raio maior (\cref{lem:recovery}) \\
+setor A, setor B & \emph{sector A, sector B} & os perfis com a simetria do fundo e os com a simetria oposta
+  (\cref{sec:setting-sectors}) \\
+sistema aumentado & \emph{bordered system} & a equação de autovalor acrescida de uma condição de normalização, com o
+  autovalor como incógnita (\cref{sec:roots-nk}) \\
+testemunho & \emph{witness} & uma cota inferior que prova que um autovetor viola os vínculos (\cref{prop:witness}) \\
+vínculos & \emph{constraints} & as equações do sistema que ficam fora da parte de evolução: $F^\sharp=0$ no sistema de
+  Reiterer e Trubowitz e $C(s)h=0$ na linearização (\cref{sec:setting-system}) \\
+\bottomrule
+\end{tabular}
+\caption{Termos técnicos usados neste artigo.}
+\label{tab:termos}
+\end{table}
