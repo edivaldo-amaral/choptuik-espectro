@@ -1,0 +1,34 @@
+-15..0: 11/11 quantidades IDENTICAS bit a bit; maior |dif| relativa 0.00e+00
+    nV                 refeito 1.1894734190025997       gravado 1.1894734190025997       =
+    nVhi               refeito 1.0979254032099168       gravado 1.0979254032099168       =
+    rho                refeito 0.0032401876819632865    gravado 0.0032401876819632865    =
+    TZ                 refeito 0.11046758630328075      gravado 0.11046758630328075      =
+    Y                  refeito 5.720614134264043e-08    gravado 5.720614134264043e-08    =
+    N<-1..15           refeito 0.0746831138027634       gravado 0.0746831138027634       =
+    N<-16..31          refeito 0.00105755004567567      gravado 0.00105755004567567      =
+    N<-32..47          refeito 0.000625567164385252     gravado 0.000625567164385252     =
+    N<--31..-16        refeito 0.09803129373781873      gravado 0.09803129373781873      =
+    N<--47..-32        refeito 0.0006255663079552535    gravado 0.0006255663079552535    =
+    N<--63..-48        refeito 0.000446281353208163     gravado 0.000446281353208163     =
+32..47: 11/11 quantidades IDENTICAS bit a bit; maior |dif| relativa 0.00e+00
+    nV                 refeito 1.6314947941838325       gravado 1.6314947941838325       =
+    nVhi               refeito 1.1712265274583697       gravado 1.1712265274583697       =
+    rho                refeito 0.0008580392356968206    gravado 0.0008580392356968206    =
+    TZ                 refeito 0.33813229831896036      gravado 0.33813229831896036      =
+    Y                  refeito 3.841149656683574e-06    gravado 3.841149656683574e-06    =
+    N<--15..0          refeito 0.0044442076004416       gravado 0.0044442076004416       =
+    N<-1..15           refeito 0.004141658440167582     gravado 0.004141658440167582     =
+    N<-16..31          refeito 0.23642737041352102      gravado 0.23642737041352102      =
+    N<-48..63          refeito 0.2363804880891466       gravado 0.2363804880891466       =
+    N<-64..79          refeito 0.00047599961287921955   gravado 0.00047599961287921955   =
+    N<-80..95          refeito 0.0003890962724153885    gravado 0.0003890962724153885    =
+-191..-176: 9/9 quantidades IDENTICAS bit a bit; maior |dif| relativa 0.00e+00
+    nV                 refeito 1.0687650007694887       gravado 1.0687650007694887       =
+    nVhi               refeito 1.069818319492885        gravado 1.069818319492885        =
+    rho                refeito 0.00011533232443715844   gravado 0.00011533232443715844   =
+    TZ                 refeito 0.0                      gravado 0.0                      =
+    Y                  refeito 0.0                      gravado 0.0                      =
+    N<--143..-128      refeito 0.00016439223604936478   gravado 0.00016439223604936478   =
+    N<--159..-144      refeito 0.00014550747044299255   gravado 0.00014550747044299255   =
+    N<--175..-160      refeito 0.049334461909851406     gravado 0.049334461909851406     =
+    N<--199..-192      refeito 0.048554091640307905     gravado 0.048554091640307905     =

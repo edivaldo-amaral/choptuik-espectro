@@ -1,0 +1,4 @@
+== nk_0733
+   OK  {"tempo_s": 1, "iguais": {"theta": true, "r": true, "erro_lambda": true}, "saida": ["PERRON (3 niveis, pesos 1) verificado em racionais: theta = 0.805721", "NK VERIFICADO: zero unico (y*, lambda*) com ||x* - x0|| <= r; |lambda* - 0.7331796596606924| <= 1.016e-05; DF(x*) invertivel: lambda* algebrica
+
+NIVEL 1: TUDO OK (1/1) [1s] -> build/reproducao/nivel1_nk_0733.json

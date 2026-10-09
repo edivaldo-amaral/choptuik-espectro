@@ -103,7 +103,6 @@ matrix, its Schur factors and the coupling factors ($16$\,GiB), are deposited at
 \href{https://doi.org/10.5281/zenodo.23222363}{10.5281/zenodo.23222363} (CC BY 4.0)~\cite{Zenodo2026}, with sha256 hashes that are
 also recorded in the certificate files. The data of~\cite{RT2019} are not redistributed; a script downloads them
 from the arXiv source of~\cite{RT2019} and checks their sha256 hashes.
-\todo{Repository and Zenodo record become public with the preprint.}
 
 \subsection{Independent AI-assisted checks}\label{sec:computation-reviews}
 
@@ -118,19 +117,19 @@ that a check produces verifiable evidence rather than an opinion:
   direct computation of the true quantity to compare with the bound;
 \item a snapshot with sha256 manifest was taken before each check and compared after it.
 \end{itemize}
-There were ten such checks:
+There were twelve such checks:
 \begin{itemize}[leftmargin=*]
 \item the tiles of \cref{prop:Kinj} (an earlier check of them with another tool was superficial and is not
   counted);
-\item the certificates at $\sK$ (with the Rouch\'e argument for $K$) and at $\mu$;
+\item the certificates at $\sK$ (with the Rouch\'e argument for $K$), at $\mu$ and at $\sphys$;
 \item the Rouch\'e arguments of the two bands, including the certificate at $\sB$;
 \item the structural lemmas and the chain of the proof;
 \item the gauge lemma, the forward reconstruction and the converse;
-\item the modelling assumptions.
+\item the modelling assumptions;
+\item the whole manuscript, claim by claim against the certificate files.
 \end{itemize}
-Two parts have not been checked on their own. The Newton--Kantorovich certificate at $\sphys$ uses the same code as
-the one at $\sB$, which was checked. The symbol computations of \cref{lem:F3} were examined only in their use, not
-recomputed. None of the checks overturned a result. All of them found gaps, mostly of traceability or of statement,
+One part has not been checked on its own: the symbol computations of \cref{lem:F3} were examined only in their use,
+not recomputed. None of the checks overturned a result. All of them found gaps, mostly of traceability or of statement,
 and some of derivation: for instance, one found that an early version of the tiles used the dyadic approximation of
 $\mu$ instead of the true value, and another that the deflation error outside the finite box had been omitted. All
 were corrected before the results were used; the reports and artifacts are in the repository.
@@ -161,8 +160,10 @@ repository.
 
 \emph{Limits of the verification.} The analytic arguments are given in this paper; some routine estimates appear in
 sketched form, with their constants checked by code in the repository (\cref{app:lemmas}). Every computed bound is
-produced by code that can be inspected and re-run from the certificate files and data, and all of them have been
-re-checked by the verification program (level~1 of \cref{sec:computation-verify}); a sample of the intermediate
-certificates has been recomputed from the data of~\cite{RT2019} (level~2). The lemmas and most certificates were also
+produced by code that can be inspected and re-run from the certificate files and data. The final inequalities of the
+certificates are re-checked by the verification program (level~1 of \cref{sec:computation-verify}); some intermediate
+bounds enter level~1 only through their stored values, as listed in \cref{sec:computation-verify}, and are recomputed
+only at level~2, where a sample of the intermediate certificates has been recomputed from the data
+of~\cite{RT2019}. The lemmas and most certificates were also
 examined by the checks of \cref{sec:computation-reviews}, with the exceptions listed there. None of this replaces
 peer review; the aim is that trust in the result should not depend on the process that produced it.

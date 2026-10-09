@@ -1,0 +1,12 @@
+artigo, roots.tex: $\sphys$ & $0.7331796596606924$ & $0.805721$ & $10.33$ & $4.19\cdot10^{-6}$ & $2.16\cdot10^{-5}$ & $1.0163\cdot10^{-5}$ \\
+lambda0 (double exato) = 0.7331796596606924287797824035806115716696
+  theta        certificado 8.0572095805e-01  artigo           0.805721  artigo >= certificado: True  (folga relativa 5.21e-08)
+  Z2           certificado 1.0323249916e+01  artigo              10.33  artigo >= certificado: True  (folga relativa 6.54e-04)
+  Y            certificado 4.1871805484e-06  artigo   4.19\cdot10^{-6}  artigo >= certificado: True  (folga relativa 6.73e-04)
+  r            certificado 2.1577165123e-05  artigo   2.16\cdot10^{-5}  artigo >= certificado: True  (folga relativa 1.06e-03)
+  erro_lambda  certificado 1.0162255371e-05  artigo 1.0163\cdot10^{-5}$  artigo >= certificado: True  (folga relativa 7.33e-05)
+  lambda0 do artigo == C3.lambda0: False (decimal do artigo vs double: -2.877978240358061e-17 )
+Teorema Principal: [0.73316949, 0.73318983]
+  com erro do certificado: [0.7331694974053, 0.7331898219161];  lo <= a: True (folga 7.41e-09);  b <= hi: True (folga 8.08e-09)
+  com 1,0163e-5 do artigo: [0.7331694966607, 0.7331898226607];  lo <= a: True (folga 6.66e-09);  b <= hi: True (folga 7.34e-09)
+  arredondamento para fora de lambda0 -+ 1,0163e-5 em 8 casas: [0.73316949, 0.73318983] == artigo: True

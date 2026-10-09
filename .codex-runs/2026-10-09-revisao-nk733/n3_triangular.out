@@ -1,0 +1,20 @@
+m     0 N 128: dim   320; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00
+m     0 N 400: dim  1000; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00;  ||Q(400)[n<128] - inv(J(128))|| / ||.|| = 1.7e-16
+m     1 N 128: dim   128; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00
+m     1 N 400: dim   400; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00;  ||Q(400)[n<128] - inv(J(128))|| / ||.|| = 2.2e-16
+m     5 N 128: dim   128; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00
+m     5 N 400: dim   400; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00;  ||Q(400)[n<128] - inv(J(128))|| / ||.|| = 3.6e-16
+m    31 N 128: dim   128; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00
+m    31 N 400: dim   400; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00;  ||Q(400)[n<128] - inv(J(128))|| / ||.|| = 2.0e-16
+m    32 N 128: dim   320; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00
+m    32 N 400: dim  1000; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00;  ||Q(400)[n<128] - inv(J(128))|| / ||.|| = 7.4e-16
+m    48 N 128: dim   320; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00
+m    48 N 400: dim  1000; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00;  ||Q(400)[n<128] - inv(J(128))|| / ||.|| = 9.6e-16
+m   100 N 128: dim   320; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00
+m   100 N 400: dim  1000; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00;  ||Q(400)[n<128] - inv(J(128))|| / ||.|| = 8.0e-16
+m   199 N 128: dim   128; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00
+m   199 N 400: dim   400; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00;  ||Q(400)[n<128] - inv(J(128))|| / ||.|| = 1.7e-16
+m    -7 N 128: dim   128; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00
+m    -7 N 400: dim   400; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00;  ||Q(400)[n<128] - inv(J(128))|| / ||.|| = 3.5e-16
+m  -150 N 128: dim   320; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00
+m  -150 N 400: dim  1000; max |J| abaixo (n_i > n_j) = 0.0e+00; max |Q| abaixo = 0.0e+00;  ||Q(400)[n<128] - inv(J(128))|| / ||.|| = 6.1e-16

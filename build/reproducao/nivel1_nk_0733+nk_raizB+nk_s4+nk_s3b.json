@@ -1,0 +1,58 @@
+{
+ "nk_0733": {
+  "ok": true,
+  "tempo_s": 1,
+  "iguais": {
+   "theta": true,
+   "r": true,
+   "erro_lambda": true
+  },
+  "todos_iguais": true,
+  "saida": [
+   "PERRON (3 niveis, pesos 1) verificado em racionais: theta = 0.805721",
+   "NK VERIFICADO: zero unico (y*, lambda*) com ||x* - x0|| <= r; |lambda* - 0.7331796596606924| <= 1.016e-05; DF(x*) invertivel: lambda* algebricamente simples."
+  ]
+ },
+ "nk_raizB": {
+  "ok": true,
+  "tempo_s": 1,
+  "iguais": {
+   "theta": true,
+   "r": true,
+   "erro_lambda": true
+  },
+  "todos_iguais": true,
+  "saida": [
+   "PERRON (3 niveis, pesos 1) verificado em racionais: theta = 0.911526",
+   "NK VERIFICADO: zero unico (y*, lambda*) com ||x* - x0|| <= r; |lambda* - [0.0414194105346554, 0.5]| <= 3.665e-05; DF(x*) invertivel: lambda* algebricamente simples."
+  ]
+ },
+ "nk_s4": {
+  "ok": true,
+  "tempo_s": 1,
+  "iguais": {
+   "theta": true,
+   "r": true,
+   "erro_lambda": true
+  },
+  "todos_iguais": true,
+  "saida": [
+   "PERRON (3 niveis, pesos 1) verificado em racionais: theta = 0.880172",
+   "NK VERIFICADO: zero unico (y*, lambda*) com ||x* - x0|| <= r; |lambda* - 0.16830707900226116| <= 2.816e-05; DF(x*) invertivel: lambda* algebricamente simples."
+  ]
+ },
+ "nk_s3b": {
+  "ok": true,
+  "tempo_s": 1,
+  "iguais": {
+   "theta": true,
+   "r": true,
+   "erro_lambda": true
+  },
+  "todos_iguais": true,
+  "saida": [
+   "PERRON (3 niveis, pesos 1) verificado em racionais: theta = 0.839936",
+   "NK VERIFICADO: zero unico (y*, lambda*) com ||x* - x0|| <= r; |lambda* - 0.401024733| <= 1.714e-04; DF(x*) invertivel: lambda* algebricamente simples."
+  ]
+ }
+}

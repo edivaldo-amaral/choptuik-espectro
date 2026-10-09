@@ -1,0 +1,13 @@
+{
+ "arpack": 8.102345538650836,
+ "tQ_gravado": 8.110447889597443,
+ "t_loewner_gravado": 8.110447884189487,
+ "loewner_gravado": {
+  "t": 8.110447884189487,
+  "verificado": true
+ },
+ "loewner_controle_negativo": {
+  "t": 8.094243193112185,
+  "verificado": false
+ }
+}

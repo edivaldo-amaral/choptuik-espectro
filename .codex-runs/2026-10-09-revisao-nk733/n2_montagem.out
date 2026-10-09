@@ -1,0 +1,35 @@
+C3.json gravado: theta 0.8057209580505295  Z2 10.323249915923515  Y 4.187180548361065e-06  r 2.157716512287177e-05  erro_lambda 1.0162255371470263e-05
+theta recalculado da M e v GRAVADAS: 0.8057209572448084  (gravado theta = th*(1+1e-9): 0.8057209580505295 )
+  igual a theta/(1+1e-9)? True
+
+== montagem REVISOR (w = 1)
+    8.414222e-07  3.787659e-01  2.443870e-03    gravado: 8.414222e-07  3.787668e-01  2.443870e-03
+    5.336893e-01  3.785142e-01  6.084423e-01    gravado: 5.336893e-01  3.787492e-01  6.084423e-01
+    2.726727e-03  9.397885e-02  4.753552e-01    gravado: 2.726727e-03  9.407139e-02  4.753552e-01
+   ||N||_2 <= 0.37851409 (float 0.37851409);  ||Nf||_2 <= 0.09387085 (float 0.09387085)
+   theta = 0.805500999 (raio espectral float 0.805500999);  v = [0.4710999451419598, 1.0, 0.2885495260354321]
+   Z2 = 10.325314;  Y = 4.187181e-06 (Z' 8.962e-07, T 4.1872e-06, far 1.63e-07)
+   discriminante (1-theta)^2 - 4 Z2 Y = 3.76569256e-02 > 0
+   r in [2.1552690863e-05, 2.1552690863e-05];  |lambda* - lambda0| <= v0 r <= 1.0153471483e-05
+   no r_sup: Y + theta r + Z2 r^2 <= r: True;  theta + 2 Z2 r < 1: True
+
+== montagem AUTOR (w = 1)
+    8.414222e-07  3.787668e-01  2.443870e-03    gravado: 8.414222e-07  3.787668e-01  2.443870e-03
+    5.336893e-01  3.785142e-01  6.084423e-01    gravado: 5.336893e-01  3.787492e-01  6.084423e-01
+    2.726727e-03  9.397885e-02  4.753552e-01    gravado: 2.726727e-03  9.407139e-02  4.753552e-01
+   ||N||_2 <= 0.37851425 (float 0.37851409);  ||Nf||_2 <= 0.09397885 (float 0.09387085)
+   theta = 0.805501316 (raio espectral float 0.805501316);  v = [0.4711008429152427, 1.0, 0.28854925739507464]
+   theta*(1+1e-9) = 0.805501316390 vs gravado 0.805720958051
+   Z2 = 10.325329;  Y = 4.187181e-06 (Z' 8.962e-07, T 4.1872e-06, far 1.63e-07)
+   discriminante (1-theta)^2 - 4 Z2 Y = 3.76568019e-02 > 0
+   r in [2.1552726180e-05, 2.1552726180e-05];  |lambda* - lambda0| <= v0 r <= 1.0153507470e-05
+   no r_sup: Y + theta r + Z2 r^2 <= r: True;  theta + 2 Z2 r < 1: True
+
+== gravado: discriminante 3.75714449e-02; r gravado 2.157716512287e-05 >= raiz menor 2.157714354573e-05: True; invariante True; contrai True (theta + 2 Z2 r = 0.806166)
+   erro_lambda gravado = v0 r? True;  = 1.016225537147e-05
+   raio de unicidade: theta + 2 Z2 rho < 1  <=>  rho < 9.409781e-03
+
+M gravada >= M do revisor, entrada a entrada (racionais): True
+   folga relativa +1.00e-09  +2.30e-06  +1.00e-09
+   folga relativa +1.00e-09  +6.21e-04  +2.00e-09
+   folga relativa +2.00e-09  +9.85e-04  +1.00e-09

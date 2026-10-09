@@ -1,0 +1,7 @@
+faixas [(0, 512), (512, 1024), (1024, 1536), (1536, 2048)] nphi 2048 ntheta 4096
+t_norma = 1937/500; folga Arb (norma) = 0.0900420664889599
+||B_L(RefA)|| <= t + folga = 3.964042066489
+  + 40 eps_omega (1.1921e-06) = 3.964043258582
+  + 4,7e-8 (CHOPTUIK_EPS_FUNDO_L) = 3.964042113489
+NORMA_BL = 3.964043: NORMA_BL >= t + folga? True (folga 9.335e-07);  NORMA_BL + 4,7e-8 >= t + folga + 4,7e-8 ? sim se o anterior
+  NORMA_BL >= t + folga + 40 eps? False (diferenca -2.586e-07)

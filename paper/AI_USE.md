@@ -11,8 +11,8 @@ tools (Claude Code project logs and Codex session files); dates are in 2026.
 | 16–17 Sep | OpenAI Codex agent | `gpt-6-astra` | delegated tasks whose output is checked mechanically (`.codex-runs/2026-09-16-setorB-6x18/`) |
 | 23 Sep – 8 Oct | Claude Code | `claude-opus-5-5` | main assistant: the counting certificates, the lemmas of Section 4, the reproduction package, the manuscript |
 | 24 Sep | OpenAI Codex agent | `gpt-5.6-luna` | one check of the tiles, which turned out to be superficial and is not counted (`docs/AUDITORIA_S3A_TILES_24SET.md`) |
-| 24 Sep – 3 Oct | Claude agents (clean context) | `claude-fable-5-1` | the ten independent checks of Section 7.5 (`.codex-runs/*revisao*`) |
-| 8 Oct | ChatGPT (OpenAI) | Sol 6.1 | a reading of the draft by the author's request; its comments were checked against the certificates and sources before being incorporated |
+| 24 Sep – 9 Oct | Claude agents (clean context) | `claude-fable-5-1` | the twelve independent checks of Section 7.5 (`.codex-runs/*revisao*`), the last two on the whole manuscript (8 Oct) and on the certificate at s\* (9 Oct) |
+| 8–9 Oct | ChatGPT (OpenAI) | Sol 6.1 | readings of the draft by the author's request; their comments were checked against the certificates and sources before being incorporated |
 
 The author posed the problem, directed the work, chose among the approaches, ran the computations, and checked the
 results.

@@ -1,0 +1,19 @@
+Z.json: SUCESSO
+Q.json: SUCESSO
+T3.json: SUCESSO
+C3.json: SUCESSO
+h0w.npy: SUCESSO
+nk3.json: SUCESSO
+T3.parcial.json: SUCESSO
+T3.joao.json: SUCESSO
+autovalor.txt: SUCESSO
+nkZ.txt: SUCESSO
+nk3.txt: SUCESSO
+etapaA.txt: SUCESSO
+tQ.txt: SUCESSO
+q.txt: SUCESSO
+etapaB.txt: SUCESSO
+etapaB_joao.txt: SUCESSO
+etapaC.txt: SUCESSO
+fim.txt: SUCESSO
+status=0

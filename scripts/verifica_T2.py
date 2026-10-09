@@ -206,9 +206,11 @@ def check_nk(pasta, campos=('theta', 'r', 'erro_lambda')):
         (Path(tmp)/'C3.json').unlink(missing_ok=True)
         rc, out, t = roda([PY, '-W', 'ignore', 'scripts/nk_L3_C.py', '--dir', tmp])
         novo = json.loads((Path(tmp)/'C3.json').read_text()) if (Path(tmp)/'C3.json').exists() else {}
-    iguais = {k: (str(novo.get(k)) == str(ref.get(k))) for k in campos if k in ref}
+    # compara o C3.json inteiro (revisao do NK em 0,7332, 09/10, C-3); 'campos' ficam destacados no relatorio
+    iguais = {k: (str(novo.get(k)) == str(ref.get(k))) for k in ref}
     ok = rc == 0 and 'NK VERIFICADO' in out and all(iguais.values())
-    return ok, dict(tempo_s=t, iguais=iguais, saida=[l for l in out.splitlines() if 'NK' in l or 'PERRON' in l][-2:])
+    return ok, dict(tempo_s=t, iguais={k: v for k, v in iguais.items() if k in campos or not v}, todos_iguais=all(iguais.values()),
+                    saida=[l for l in out.splitlines() if 'NK' in l or 'PERRON' in l][-2:])
 
 
 def check_etapa(pasta, script, saida, chaves, extra=()):

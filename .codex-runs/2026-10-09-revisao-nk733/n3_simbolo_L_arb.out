@@ -1,0 +1,4 @@
+L (2048x4096): folga em Arb  lambda 0.07711998  norma 0.09004207
+   folga gravada (float x 1,001): lambda 0.07719710  norma 0.09013211
+   refeito: max Re W(-B) <= 2.949121   ||B|| <= 3.964043   (gravado: None, None)
+   a folga gravada cobre a de Arb: SIM

@@ -32,7 +32,11 @@ import closed_form as cf
 from tile_certificate import norma2
 
 K1, K2, MU = sl.K1, sl.K2, sl.MU
-NORMA_BL = 3.964043             # ||B_L|| no toro (65/64, 5/4), simbolo com folga em Arb (24/09)
+NORMA_BL = 3.964043             # ||B_L(RefA)|| no toro (65/64, 5/4): t_norma = 1937/500 mais a folga do simbolo
+                                # em Arb (0,0900420665) da 3,9640420665 <= 3,964043. E a cota do fundo DOS DADOS: o
+                                # erro de RT entra a parte (rt, CHOPTUIK_EPS_FUNDO_L), em beta = (NORMA_BL + rt) Qfar
+                                # etc. Nao confundir com 3,9641333 de symbol-L-2048x4096.json, que recombina as
+                                # faixas com a folga gravada (usada no L-real). Revisao do NK em 0,7332, 09/10, I-1.
 BAND_M, BAND_N = 40, 100
 
 

@@ -1,0 +1,43 @@
+lam0: Z 0.7331796596606924  Q 0.7331796596606924  T3 [0.7331796596606924, 0.0]  C3 0.7331796596606924
+OK    um so lambda0 (Z, Q, T3, C3), parte imaginaria 0 em T3
+OK    lambda0 = 0.7331796596606924 (o double do artigo)
+OK    autovalor.txt: LAMBDA igual a lam0
+OK    Z.json: Z 32x128, F 200x400, banda 16
+OK    Z.json: n = 14016
+OK    T3.json: folga_far 60
+OK    eps_fundo_L = 4,7e-8 em Z e T3
+OK    T3.json: rouche False (NK, com residuo)
+OK    T3.json: as 26 janelas sao as de W = 16 (central dividida)
+OK    T3.json: 26 nomes distintos
+OK    janelas cobrem |m| < 200 sem sobreposicao
+OK    T3.json: N com 26 entradas
+OK    T3.json: TZ com 26 entradas
+OK    T3.json: nV com 26 entradas
+OK    T3.json: nVhi com 26 entradas
+OK    T3.json: Y com 26 entradas
+OK    T3.json: nQ com 26 entradas
+OK    T3.json: K com 26 entradas
+OK    T3.json: nQm com 26 entradas
+OK    T3.json: Nf 27 x 26 (25 grupos de F + 2 do far de Fourier)
+OK    T3.json: SZ = janelas com min|m| < 72: [0, 1, 2, 3, 4, 5, 14, 15, 16, 17]
+OK    dB_L (banda 16) igual em Z e T3
+OK    eps_mu igual em Z e T3
+OK    T3 leu nQZ e Qfar deste Z.json
+OK    pert = dB_L.total + eps_mu
+OK    beta = (NORMA_BL + rt) Qfar + eps_mu = 0.4753552171370673 (T3 0.4753552171370673)
+OK    Z.json tem tQ (nk_L2_Z --so-tQ)
+OK    parcial e joao disjuntos (19 + 7)
+OK    parcial U joao = as 26 janelas
+OK    T3.json = juncao EXATA (bit a bit) dos checkpoints, rho na diagonal
+   origem: -15..0:parcial, 1..15:parcial, 16..31:parcial, 32..47:parcial, 48..63:parcial, 64..79:parcial, 80..95:parcial, 96..111:parcial, 112..127:parcial, 128..143:parcial, 144..159:parcial, 160..175:parcial, 176..191:parcial, 192..199:parcial, -31..-16:parcial, -47..-32:parcial, -63..-48:parcial, -79..-64:parcial, -95..-80:parcial, -111..-96:joao, -127..-112:joao, -143..-128:joao, -159..-144:joao, -175..-160:joao, -191..-176:joao, -199..-192:joao
+h0w.npy: shape (14016,), dtype complex128, ||h|| - 1 = -4.44e-16, sha256 afe426551f1f2611
+OK    h0w: 14016 entradas, norma 1
+etapaA: [8.85102, 0.37877, 8.41e-07, 4.22e-07, 0.00244]
+OK    etapaA.txt: t_V, rho, Y_Z batem com Z.json
+   a do log 0.37877 vs Z.json aZ 0.37877; eps_far do log 2.44e-03 vs Z.json epsZ 2.44e-03
+OK    tQ.txt: tQ 8.11045 gravado em Z.json
+OK    q.txt bate com Q.json
+OK    q.txt: nQx_extra sobre 48 <= |m| < 72 (MZ + banda .. MZ + 40)
+OK    logs etapaB*.txt batem com T3.json nas 26 janelas (nV, nVhi, rho, Y)
+
+FALHAS: 0
