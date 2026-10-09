@@ -45,10 +45,15 @@ bash scripts/baixa_dados_rt.sh                      # RT's published data (arXiv
 .venv/bin/python scripts/verifica_T2.py              # level 1: re-checks the final inequalities in exact arithmetic
 ```
 
-Level 1 re-checks, from the certificate files in `build/`, the Perron bound at every point of the contour discs,
+Level 1 re-checks, from the certificate files in `build/` and RT's published data (downloaded and sha256-checked by
+the script above), the Perron bound at every point of the contour discs,
 the covers and the finite counts, the windows, the four Newton–Kantorovich certificates, the witnesses, the 154
 tiles, the deflation polynomial and the structural bounds. It takes about two hours on four cores (`--disco`
-parallelizes the discs). Level 2, which recomputes the certificates from RT's data, and the map from each claim to
+parallelizes the discs). The certificates rationalize floating-point quantities (Perron vectors, approximate
+inverses), so on a machine with a different BLAS or CPU the recomputed rationals differ in the last bits; the verifier
+then checks that each recomputed certificate is valid, is not worse than the bounds published in the paper, and agrees
+with the stored one to 1e-9 relative. `--estrito` requires bit-for-bit identity, which holds on the machines where the
+certificates were generated. Level 2, which recomputes the certificates from RT's data, and the map from each claim to
 its files are described (in Portuguese) in [`docs/REPRODUCAO.md`](docs/REPRODUCAO.md) and
 [`docs/REPRODUCAO_MAPA.md`](docs/REPRODUCAO_MAPA.md); the per-claim sha256 digests are in Appendix C of the paper.
 
@@ -125,14 +130,18 @@ bash scripts/baixa_dados_rt.sh                      # dados publicados de RT (ar
 .venv/bin/python scripts/verifica_T2.py              # nível 1: refaz em racionais as verificações finais
 ```
 
-O nível 1 refaz, a partir dos certificados gravados em `build/`:
+O nível 1 refaz, a partir dos certificados gravados em `build/` e dos dados publicados de RT (baixados e conferidos
+pelo script acima):
 - o θ de cada ponto dos discos dos Rouchés;
 - as coberturas e as contagens;
 - o Perron dos quatro NK;
 - os 154 tiles de S3a;
 - os símbolos e os lemas.
 
-Leva ~6 h num processo (os discos dominam; `--disco` permite paralelizar) e menos de 1 min para o resto.
+Leva ~6 h num processo (os discos dominam; `--disco` permite paralelizar) e menos de 1 min para o resto. Em outra
+máquina (outro BLAS ou CPU), os racionais refeitos mudam no último bit; o verificador confere então que cada
+certificado refeito é válido, não é pior que as cotas publicadas no artigo e fica a 1e-9 relativo do gravado.
+`--estrito` exige igualdade bit a bit.
 Os dados pesados (A, T, U e os fatores F, 16 GiB) estão no Zenodo, DOI 10.5281/zenodo.23222363. O nível 2 (refazer os certificados a partir dos dados de RT) e o mapa de cada alegação para os seus
 arquivos estão em [`docs/REPRODUCAO.md`](docs/REPRODUCAO.md) e [`docs/REPRODUCAO_MAPA.md`](docs/REPRODUCAO_MAPA.md).
 

@@ -1,0 +1,236 @@
+{
+ "cobertura_A": {
+  "ok": true,
+  "tempo_s": 0,
+  "saida": [
+   "96 discos certificados",
+   "  aresta esquerda Re s = 0: coberta",
+   "  aresta superior Im s = 1/4: coberta",
+   "  aresta direita Re s = 3: coberta",
+   "  aresta inferior Im s = -1/4: coberta",
+   "CONTORNO COBERTO"
+  ]
+ },
+ "cobertura_B": {
+  "ok": true,
+  "tempo_s": 0,
+  "saida": [
+   "174 discos certificados",
+   "  aresta esquerda Re s = 0: coberta",
+   "  aresta superior Im s = 3/4: coberta",
+   "  aresta direita Re s = 3: coberta",
+   "  aresta inferior Im s = 1/4: coberta",
+   "CONTORNO COBERTO"
+  ]
+ },
+ "contagem_A": {
+  "ok": true,
+  "tempo_s": 0,
+  "saida": [
+   "fora, mais perto do bordo: -0.1683+0.0000i (dist 1.683e-01), 0.0414+0.5000i (dist 2.500e-01), 0.0414-0.5000i (dist 2.500e-01), -0.3366+0.0000i (dist 3.366e-01)",
+   "max t(s) no contorno <= 559.151 (disco (PosixPath('build/rouche_L_rig/discos_v2/disco_-0_25.json'), [0.0, -0.25])); t eps_B <= 3.337e-02  OK",
+   "zeros de A + s em Omega = 2: 0.401025-4.41e-12i, 0.733180+8.49e-13i"
+  ],
+  "zeros": [
+   "zeros de A + s em Omega = 2: 0.401025-4.41e-12i, 0.733180+8.49e-13i"
+  ]
+ },
+ "contagem_B": {
+  "ok": true,
+  "tempo_s": 0,
+  "saida": [
+   "fora, mais perto do bordo: -0.2453+0.5000i (dist 2.453e-01), 0.1683+1.0000i (dist 2.500e-01), 0.4010+1.0000i (dist 2.500e-01), 0.7332+0.0000i (dist 2.500e-01)",
+   "max t(s) no contorno <= 559.151 (disco (PosixPath('build/rouche_L_rig/discos_v2/disco_-0_25.json'), [0.0, -0.25])); t eps_B <= 3.337e-02  OK",
+   "zeros de A + s em Omega = 1: 0.041419+5.00e-01i"
+  ],
+  "zeros": [
+   "zeros de A + s em Omega = 1: 0.041419+5.00e-01i"
+  ]
+ },
+ "nk_raizB": {
+  "ok": true,
+  "tempo_s": 0,
+  "valido": true,
+  "dentro_do_publicado": {
+   "theta": true,
+   "Z2": true,
+   "Y": true,
+   "r": true,
+   "erro_lambda": true
+  },
+  "proximos_do_gravado": true,
+  "diferentes": [],
+  "saida": [
+   "PERRON (3 niveis, pesos 1) verificado em racionais: theta = 0.911526",
+   "NK VERIFICADO: zero unico (y*, lambda*) com ||x* - x0|| <= r; |lambda* - [0.0414194105346554, 0.5]| <= 3.665e-05; DF(x*) invertivel: lambda* algebricamente simples."
+  ]
+ },
+ "nk_s4": {
+  "ok": true,
+  "tempo_s": 0,
+  "valido": true,
+  "dentro_do_publicado": {
+   "theta": true,
+   "Z2": true,
+   "Y": true,
+   "r": true,
+   "erro_lambda": true
+  },
+  "proximos_do_gravado": true,
+  "diferentes": [],
+  "saida": [
+   "PERRON (3 niveis, pesos 1) verificado em racionais: theta = 0.880172",
+   "NK VERIFICADO: zero unico (y*, lambda*) com ||x* - x0|| <= r; |lambda* - 0.16830707900226116| <= 2.816e-05; DF(x*) invertivel: lambda* algebricamente simples."
+  ]
+ },
+ "testemunho_s3b": {
+  "ok": true,
+  "tempo_s": 362,
+  "iguais": {
+   "c_ref": true,
+   "perda": true,
+   "folga": true,
+   "certificado": true
+  },
+  "novo": {
+   "c_ref": 0.17173920320637387,
+   "perda": 0.0019809273186032618,
+   "folga": 0.16975827588777062,
+   "certificado": true
+  },
+  "saida": [
+   "||Pi_F C(lambda*) h*|| >= 0.17174 - 1.981e-03 = 0.16976  ->  TESTEMUNHO: o autovetor de L em lambda* VIOLA as constraints"
+  ]
+ },
+ "testemunho_raizB": {
+  "ok": true,
+  "tempo_s": 367,
+  "iguais": {
+   "c_ref": true,
+   "perda": true,
+   "folga": true,
+   "certificado": true
+  },
+  "novo": {
+   "c_ref": 0.35518896384184767,
+   "perda": 0.000495321809626457,
+   "folga": 0.3546936420322212,
+   "certificado": true
+  },
+  "saida": [
+   "||Pi_F C(lambda*) h*|| >= 0.35519 - 4.953e-04 = 0.35469  ->  TESTEMUNHO: o autovetor de L em lambda* VIOLA as constraints"
+  ]
+ },
+ "identificacao_s4": {
+  "ok": true,
+  "tempo_s": 23,
+  "iguais": {
+   "dist": true,
+   "r": true,
+   "identificado": true
+  },
+  "novo": {
+   "dist": 1.8155323972938464e-05,
+   "r": 6.0635576493216294e-05,
+   "identificado": true
+  },
+  "saida": [
+   "IDENTIFICADO: o autopar do NK e o de gauge; mu* e raiz ALGEBRICAMENTE SIMPLES de L, autoespaco span(g*)"
+  ]
+ },
+ "s3a": {
+  "ok": true,
+  "tempo_s": 7,
+  "saida": [
+   "pior theta reverificado: 0.9961189",
+   "154 discos certificados",
+   "celulas resolvidas: 2871; sem cobertura: 0",
+   "COBERTURA COMPLETA"
+  ]
+ },
+ "simbolo_L": {
+  "ok": true,
+  "tempo_s": 0,
+  "iguais": {
+   "R_fundo": true,
+   "norma_fundo": true
+  },
+  "R_fundo": 2.949198291318669,
+  "norma_fundo": 3.9641333006483443
+ },
+ "simbolo_K": {
+  "ok": true,
+  "R_fundo": 1.4395790214062592,
+  "norma_fundo": 1.6496703617472475,
+  "nota": "recalculo em Arb: nivel 2"
+ },
+ "rouche_K": {
+  "ok": true,
+  "tiles": 16,
+  "pior_theta": 0.8125577399343802,
+  "certificado": true,
+  "contagem": {
+   "banda": "20,40",
+   "c": 0.401,
+   "rho": 0.05,
+   "dim": 2280,
+   "dK": 2.3231519846307807e-05,
+   "nVb": 5.2152987053934226,
+   "eps_c": 0.00012118318847859052,
+   "beta": 5.13001967060012,
+   "nVbe": 1.7588906202690544,
+   "q": 0.2566221667184846,
+   "K": 12,
+   "resto": 0.0003856973232145676,
+   "esquerda": 0.0003856973253574754,
+   "direita": 0.08790094376622505,
+   "raiz_aprox": "(0.40102473111108405-1.2333469514206693e-17j)",
+   "certificado": true
+  },
+  "nota": "recalculo dos tiles: nivel 2"
+ },
+ "radius_transfer": {
+  "ok": true,
+  "tempo_s": 0,
+  "iguais": {
+   "strong_defect": true,
+   "weak_defect": true,
+   "both_contract": true
+  }
+ },
+ "F1": {
+  "ok": true,
+  "tempo_s": 32,
+  "iguais": {
+   "c1_re": true,
+   "c1_im": true,
+   "cota_inferior": true,
+   "certificado": true,
+   "c1_cone_re": true,
+   "c1_cone_im": true,
+   "certificado_cone": true
+  }
+ },
+ "R5": {
+  "ok": true,
+  "tempo_s": 0,
+  "iguais": {
+   "linhas": true
+  }
+ },
+ "beta_plus": {
+  "ok": true,
+  "tempo_s": 6,
+  "iguais": {
+   "beta_eta": true,
+   "beta_eta_le_5191_500": true,
+   "sharp_beta": true
+  }
+ },
+ "deflacao_q": {
+  "ok": true,
+  "tempo_s": 0.0,
+  "e_max": 1.3784127003547734e-07,
+  "min_q": 0.9999997010787984
+ }
+}

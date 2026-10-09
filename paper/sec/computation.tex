@@ -67,7 +67,7 @@ F1 & \cref{lem:F1} & seconds \\
 The repository contains a verification program with two levels.
 
 \emph{Level 1} re-checks, in exact rational arithmetic and with the code of the repository, the final inequalities
-of the certificates from the stored certificate files (small JSON files):
+of the certificates from the stored certificate files (small JSON files) and the published data of~\cite{RT2019}:
 \begin{itemize}[leftmargin=*]
 \item the three-level Perron bound at each of the $175$ points of the $22$ disc files of the two bands ($174$ discs of
   positive radius, and one entry of radius zero that is not used in the cover);
@@ -84,8 +84,11 @@ Some certificates enter level 1 only through their stored values, and are recomp
 bounds and the free parts (level 1 recombines the stored bands), and the Perron bounds of the $16$ tiles of the
 Rouch\'e argument for $K$.
 It takes about two hours on four cores. All checks pass: the worst Perron root on the discs is $0.999074$, with
-differences to the stored values $\le7.8\cdot10^{-16}$, and the Newton--Kantorovich data, witnesses and tiles are
-reproduced identically.
+differences to the stored values $\le7.8\cdot10^{-16}$, and, on the machines where they were generated, the
+Newton--Kantorovich data, witnesses and tiles are reproduced identically. On other platforms the floating-point
+inputs of the certificates may differ in the last bits, and so do the recomputed rationals; the program then checks
+that each recomputed certificate is valid, does not exceed the bounds published here, and agrees with the stored one
+to $10^{-9}$ relative.
 
 \emph{Level 2} recomputes the intermediate certificates from the data of~\cite{RT2019}. As a sample, we recomputed
 from scratch on a different machine:

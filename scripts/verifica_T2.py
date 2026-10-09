@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 """Verificador de NIVEL 1 da cadeia de T2 (consolidacao, opcao C): refaz, a partir dos certificados gravados (arquivos
-pequenos do repositorio), as verificacoes finais em aritmetica racional, sem recalcular as matrizes pesadas.
+pequenos do repositorio) e dos dados publicados de RT (RefA.dat, baixado e conferido por scripts/baixa_dados_rt.sh),
+as verificacoes finais em aritmetica racional, sem recalcular as matrizes pesadas. Os checks de discos, janelas, F1,
+beta_plus e L_real_toro remontam blocos do operador a partir de RefA.dat; os demais leem so os certificados.
+
+Reprodutibilidade entre maquinas: os certificados racionalizam quantidades de ponto flutuante (vetor de Perron,
+inversos aproximados), que mudam no ultimo bit com o BLAS e a CPU. O criterio padrao e: certificado refeito valido
+em racionais, nao pior que as cotas publicadas no artigo, e a menos de 1e-9 relativo do gravado. Com --estrito,
+exige igualdade bit a bit (o que vale nas maquinas em que os certificados foram gerados).
 
 Nivel 1 (este script): para cada passo de docs/T2_ENUNCIADO.md,
   discos     : theta racional de CADA ponto de disco (faixas A e B) recalculado com o mesmo codigo do certificado
@@ -195,6 +202,53 @@ def check_contagem(faixa):
     return ok, dict(tempo_s=t, saida=linhas[-3:], zeros=zeros)
 
 
+# ---- comparacao com o gravado (09/10/2026, depois da verificacao numa maquina limpa)
+# Os certificados racionalizam quantidades de ponto flutuante (vetor de Perron, inversos aproximados), que dependem do
+# BLAS e da CPU no ultimo bit. Por isso o criterio padrao e: (1) o certificado refeito e valido em racionais; (2) os
+# valores refeitos nao sao piores que os publicados no artigo; (3) diferenca relativa <= TOL_REL para o gravado (pega
+# dados de entrada trocados). --estrito exige igualdade bit a bit (o que vale nas maquinas em que foram gerados).
+TOL_REL = 1e-9
+ESTRITO = False
+
+
+def _num(x):
+    if isinstance(x, bool) or x is None:
+        return None
+    if isinstance(x, (int, float)):
+        return Fr(x)
+    if isinstance(x, str):
+        try:
+            return Fr(x)
+        except (ValueError, ZeroDivisionError):
+            return None
+    return None
+
+
+def proximos(a, b, tol=None):
+    """True se a e b coincidem (estrito) ou diferem no maximo tol relativo, recursivamente em listas e dicts."""
+    tol = TOL_REL if tol is None else tol
+    if ESTRITO:
+        return str(a) == str(b)
+    if isinstance(a, dict) and isinstance(b, dict):
+        return a.keys() == b.keys() and all(proximos(a[k], b[k], tol) for k in a)
+    if isinstance(a, list) and isinstance(b, list):
+        return len(a) == len(b) and all(proximos(x, y, tol) for x, y in zip(a, b))
+    na, nb = _num(a), _num(b)
+    if na is None or nb is None:
+        return a == b
+    escala = max(abs(na), abs(nb))
+    return na == nb or abs(na - nb) <= Fr(tol)*escala
+
+
+# cotas publicadas no artigo (Prop. 6.2 e 6.4, Prop. 6.3): o certificado refeito nao pode ser pior
+PUBLICADO_NK = {
+    'build/s4/rig': dict(theta=0.880172, Z2=183.66, Y=6.60e-6, r=6.07e-5, erro_lambda=2.82e-5),
+    'build/s3b/rig': dict(theta=0.839937, Z2=42.97, Y=5.45e-5, r=3.79e-4, erro_lambda=1.72e-4),
+    'build/nk733': dict(theta=0.805721, Z2=10.33, Y=4.19e-6, r=2.16e-5, erro_lambda=1.0163e-5),
+    'build/faixaB/nk': dict(theta=0.91153, Z2=155.02, Y=5.97e-6, r=7.81e-5, erro_lambda=3.67e-5),
+}
+
+
 def check_nk(pasta, campos=('theta', 'r', 'erro_lambda')):
     """refaz a etapa C (Perron de 3 niveis em racionais) numa copia da pasta e compara com o C3.json gravado."""
     orig = RAIZ/pasta
@@ -206,14 +260,20 @@ def check_nk(pasta, campos=('theta', 'r', 'erro_lambda')):
         (Path(tmp)/'C3.json').unlink(missing_ok=True)
         rc, out, t = roda([PY, '-W', 'ignore', 'scripts/nk_L3_C.py', '--dir', tmp])
         novo = json.loads((Path(tmp)/'C3.json').read_text()) if (Path(tmp)/'C3.json').exists() else {}
-    # compara o C3.json inteiro (revisao do NK em 0,7332, 09/10, C-3); 'campos' ficam destacados no relatorio
-    iguais = {k: (str(novo.get(k)) == str(ref.get(k))) for k in ref}
-    ok = rc == 0 and 'NK VERIFICADO' in out and all(iguais.values())
-    return ok, dict(tempo_s=t, iguais={k: v for k, v in iguais.items() if k in campos or not v}, todos_iguais=all(iguais.values()),
+    # (1) valido: as condicoes de NK verificadas em racionais no recalculo
+    valido = rc == 0 and 'NK VERIFICADO' in out and novo.get('certificado') is True
+    # (2) nao pior que o publicado no artigo
+    pub = PUBLICADO_NK.get(pasta, {})
+    dentro = {k: (_num(novo.get(k)) is not None and _num(novo[k]) <= Fr(v)) for k, v in pub.items()}
+    # (3) proximo do gravado (todas as chaves do C3.json; bit a bit com --estrito)
+    iguais = {k: proximos(novo.get(k), ref.get(k)) for k in ref}
+    ok = valido and all(dentro.values()) and all(iguais.values())
+    return ok, dict(tempo_s=t, valido=valido, dentro_do_publicado=dentro, proximos_do_gravado=all(iguais.values()),
+                    diferentes=[k for k, v in iguais.items() if not v],
                     saida=[l for l in out.splitlines() if 'NK' in l or 'PERRON' in l][-2:])
 
 
-def check_etapa(pasta, script, saida, chaves, extra=()):
+def check_etapa(pasta, script, saida, chaves, extra=(), cota=None):
     """refaz a etapa D (testemunho de constraints) ou E (identificacao de S4) numa copia da pasta do NK e compara
     as chaves com o JSON gravado."""
     orig = RAIZ/pasta
@@ -224,8 +284,14 @@ def check_etapa(pasta, script, saida, chaves, extra=()):
                 shutil.copy(f, tmp)
         rc, out, t = roda([PY, '-W', 'ignore', f'scripts/{script}', '--dir', tmp, *extra])
         novo = json.loads((Path(tmp)/saida).read_text()) if (Path(tmp)/saida).exists() else {}
-    iguais = {k: (str(novo.get(k)) == str(ref.get(k))) for k in chaves}
-    return rc == 0 and all(iguais.values()), dict(tempo_s=t, iguais=iguais, novo={k: novo.get(k) for k in chaves},
+    iguais = {k: proximos(novo.get(k), ref.get(k)) for k in chaves}
+    # cota publicada no artigo (testemunhos: Prop. 6.4; identificacao de mu: Prop. 6.3): o recalculo nao pode ser pior
+    criterio = True
+    if cota:
+        chave, op, v = cota
+        x = _num(novo.get(chave))
+        criterio = x is not None and (x >= Fr(v) if op == '>=' else x <= Fr(v))
+    return rc == 0 and criterio and all(iguais.values()), dict(tempo_s=t, iguais=iguais, novo={k: novo.get(k) for k in chaves},
                                                   saida=out.strip().splitlines()[-1:] if out.strip() else [])
 
 
@@ -234,9 +300,9 @@ def check_script_json(cmd, saida_rel, chaves):
     ref = json.loads((RAIZ/saida_rel).read_text())
     rc, out, t = roda(cmd)
     novo = json.loads((RAIZ/saida_rel).read_text())
-    iguais = {k: novo.get(k) == ref.get(k) for k in chaves}
-    if not all(iguais.values()):
-        (RAIZ/saida_rel).write_text(json.dumps(ref, indent=1) + '\n')     # restaura o gravado
+    iguais = {k: proximos(novo.get(k), ref.get(k)) for k in chaves}
+    if not all(iguais.values()) or ESTRITO is False:
+        (RAIZ/saida_rel).write_text(json.dumps(ref, indent=1) + '\n')     # restaura o gravado (o recalculo e so conferencia)
     return rc == 0 and all(iguais.values()), dict(tempo_s=t, iguais=iguais)
 
 
@@ -301,7 +367,7 @@ def check_simbolo_L():
         out = Path(tmp)/'L.json'
         rc, txt, t = roda([PY, '-W', 'ignore', 'scripts/certify_symbol_numerical_range.py', '--combinar', *ref['faixas'], '--out', str(out)])
         novo = json.loads(out.read_text()) if out.exists() else {}
-    iguais = {k: novo.get(k) == ref.get(k) for k in ('R_fundo', 'norma_fundo')}
+    iguais = {k: proximos(novo.get(k), ref.get(k)) for k in ('R_fundo', 'norma_fundo')}
     ok = rc == 0 and all(iguais.values()) and ref['R_fundo'] <= 2.95 and ref['norma_fundo'] <= 3.9642
     return ok, dict(tempo_s=t, iguais=iguais, R_fundo=ref['R_fundo'], norma_fundo=ref['norma_fundo'])
 
@@ -328,7 +394,7 @@ def check_radius_transfer():
                        'import radius_transfer as rt; print(json.dumps(rt.transfer_bounds(spectral_radius=Q(31, 10))))'])
     novo = json.loads(out.strip().splitlines()[-1]) if rc == 0 else {}
     chaves = ('strong_defect', 'weak_defect', 'both_contract')
-    iguais = {k: novo.get(k) == ref.get(k) for k in chaves}
+    iguais = {k: proximos(novo.get(k), ref.get(k)) for k in chaves}
     return rc == 0 and all(iguais.values()) and ref.get('both_contract') is True, dict(tempo_s=t, iguais=iguais)
 
 
@@ -350,9 +416,12 @@ CHECKS = {
     'deflacao_q': check_deflacao_q,
     'beta_plus': lambda: check_script_json([PY, 'scripts/independent_component_beta.py', '--out', 'build/t2/beta_plus.json'],
                                            'build/t2/beta_plus.json', ['beta_eta', 'beta_eta_le_5191_500', 'sharp_beta']),
-    'testemunho_s3b': lambda: check_etapa('build/s3b/rig', 'nk_L3_D.py', 'D.json', ['c_ref', 'perda', 'folga', 'certificado']),
-    'testemunho_raizB': lambda: check_etapa('build/faixaB/nk', 'nk_L3_D.py', 'D.json', ['c_ref', 'perda', 'folga', 'certificado']),
-    'identificacao_s4': lambda: check_etapa('build/s4/rig', 'nk_L3_E.py', 'E.json', ['dist', 'r', 'identificado']),
+    'testemunho_s3b': lambda: check_etapa('build/s3b/rig', 'nk_L3_D.py', 'D.json', ['c_ref', 'perda', 'folga', 'certificado'],
+                                          cota=('folga', '>=', 0.16975)),
+    'testemunho_raizB': lambda: check_etapa('build/faixaB/nk', 'nk_L3_D.py', 'D.json', ['c_ref', 'perda', 'folga', 'certificado'],
+                                            cota=('folga', '>=', 0.35469)),
+    'identificacao_s4': lambda: check_etapa('build/s4/rig', 'nk_L3_E.py', 'E.json', ['dist', 'r', 'identificado'],
+                                            cota=('dist', '<=', 1.82e-5)),
     'janelas_A': lambda: check_janelas('A'),
     'janelas_B': lambda: check_janelas('B'),
     'L_real_toro': lambda: check_script_json([PY, 'scripts/l_real_toro.py'], 'build/t2/l_real_toro.json', ['cauda_max', 'qT', 'defeito', 'contrai']),
@@ -367,7 +436,11 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--so', default=None, help='lista de checks separados por virgula (padrao: todos)')
     ap.add_argument('--disco', default=None, help='verifica SO este disco (JSON) e grava o resultado (rodada paralela)')
+    ap.add_argument('--estrito', action='store_true', help='exige igualdade bit a bit com os certificados gravados '
+                    '(vale nas maquinas em que foram gerados; em outro BLAS/CPU os racionais mudam no ultimo bit)')
     a = ap.parse_args()
+    global ESTRITO
+    ESTRITO = a.estrito
     if a.disco:
         r = resultado_disco(a.disco)
         print(json.dumps(r)); return
