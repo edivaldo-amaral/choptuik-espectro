@@ -2,6 +2,12 @@
  "id": 23222363,
  "doi": "10.5281/zenodo.23222363",
  "bucket": "https://zenodo.org/api/files/a9ac81e6-6143-457e-926f-cc8cd369db2e",
- "estado": "rascunho (nao publicado)",
- "criado": "2026-10-07"
+ "estado": "publicado em 09/10/2026",
+ "criado": "2026-10-07",
+ "preprint": {
+  "id": 23251930,
+  "doi": "10.5281/zenodo.23251930",
+  "estado": "publicado em 09/10/2026",
+  "arquivo": "Goncalves2026_Choptuik_one_unstable_mode_v1.pdf"
+ }
 }

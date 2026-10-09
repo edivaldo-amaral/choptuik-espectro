@@ -23,3 +23,14 @@ references:
     identifiers:
       - type: other
         value: "arXiv:1203.3766"
+preferred-citation:
+  type: article
+  title: "Exactly one unstable mode: a computer-assisted spectral count for Choptuik's critical spacetime under spherically symmetric perturbations"
+  authors:
+    - family-names: "Gonçalves"
+      given-names: "Edivaldo Amaral"
+      affiliation: "Instituto Federal de Mato Grosso (IFMT), Cuiabá, Mato Grosso, Brazil"
+      orcid: "https://orcid.org/0009-0007-9117-9833"
+  doi: "10.5281/zenodo.23251930"
+  year: 2026
+  notes: "Preprint, version 1. Data: doi:10.5281/zenodo.23222363"

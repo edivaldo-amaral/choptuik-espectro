@@ -31,8 +31,10 @@ perturbations only.
 
 ### The paper
 
-The manuscript (English) is in [`paper/`](paper/): compile with
-`pdflatex main && bibtex main && pdflatex main && pdflatex main`. The large data files are on Zenodo,
+**Preprint:** E. A. Gonçalves, *Exactly one unstable mode: a computer-assisted spectral count for Choptuik's
+critical spacetime under spherically symmetric perturbations*, version 1 (October 2026), Zenodo,
+DOI [10.5281/zenodo.23251930](https://doi.org/10.5281/zenodo.23251930). The LaTeX source is in [`paper/`](paper/)
+(`pdflatex main && bibtex main && pdflatex main && pdflatex main`). The large data files are on Zenodo,
 DOI [10.5281/zenodo.23222363](https://doi.org/10.5281/zenodo.23222363).
 
 ### How to verify
@@ -112,7 +114,8 @@ antes abertas (completude do gauge, reconstrução e cone móvel) são agora lem
 modelo, com contexto limpo, snapshot sha256 e artefato por alegação, inclusive uma revisão do manuscrito
 inteiro, em [`.codex-runs/`](.codex-runs/). Nenhuma quebrou um resultado. Não substituem a revisão por pares.
 
-**O artigo** (em inglês) está em [`paper/`](paper/): `pdflatex main && bibtex main && pdflatex main && pdflatex main`.
+**O artigo** (em inglês) foi publicado como preprint no Zenodo, DOI
+[10.5281/zenodo.23251930](https://doi.org/10.5281/zenodo.23251930); o fonte LaTeX está em [`paper/`](paper/): `pdflatex main && bibtex main && pdflatex main && pdflatex main`.
 
 ### Como verificar
 
@@ -130,8 +133,7 @@ O nível 1 refaz, a partir dos certificados gravados em `build/`:
 - os símbolos e os lemas.
 
 Leva ~6 h num processo (os discos dominam; `--disco` permite paralelizar) e menos de 1 min para o resto.
-Os dados pesados (A, T, U e os fatores F, 16 GiB) estão no Zenodo, DOI 10.5281/zenodo.23222363 (aberto
-junto com o artigo). O nível 2 (refazer os certificados a partir dos dados de RT) e o mapa de cada alegação para os seus
+Os dados pesados (A, T, U e os fatores F, 16 GiB) estão no Zenodo, DOI 10.5281/zenodo.23222363. O nível 2 (refazer os certificados a partir dos dados de RT) e o mapa de cada alegação para os seus
 arquivos estão em [`docs/REPRODUCAO.md`](docs/REPRODUCAO.md) e [`docs/REPRODUCAO_MAPA.md`](docs/REPRODUCAO_MAPA.md).
 
 ### Por onde entrar
